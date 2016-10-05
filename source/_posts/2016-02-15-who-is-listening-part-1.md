@@ -1,6 +1,6 @@
 layout: post
 date: 2016-02-15 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 谁在监听？（第一部分）"
 description: PowerTip of the Day - Who Is Listening? (Part 1)
 categories:
 - powershell
@@ -12,29 +12,29 @@ tags:
 - series
 - translation
 ---
-The good oldfashioned netstat.exe can tell you the ports that applications listen on. The result is plain-text, though. PowerShell can use regular expressions though to split the text into CSV data, and ConvertFrom-Csv can then turn the text into real objects.
+一个过去十分好用的 `netstat.exe` 可以告诉您应用程序在监听哪些端口，不过结果是纯文本。PowerShell 可以用正则表达式将文本分割成 CSV 数据，`ConvertFrom-Csv` 可以将文本转换为真实的对象。
 
-This is just an example of how PowerShell can use even the most basic data:
+这是一个如何用 PowerShell 处理最基础数据的例子：
 
-    #requires -Version 2
-    NETSTAT.EXE -anop tcp| 
-    Select-Object -Skip  4|
-    ForEach-Object -Process {
-      [regex]::replace($_.trim(),'\s+',' ')
-    }|
-    ConvertFrom-Csv -d ' ' -Header 'proto', 'src', 'dst', 'state', 'pid'|
-    Select-Object -Property src, state, @{
-      name = 'process'
-      expression = {
-        (Get-Process -PipelineVariable $_.pid).name
-      }
-    } |
-    Format-List
-    
+```powershell
+#requires -Version 2
+NETSTAT.EXE -anop tcp| 
+Select-Object -Skip  4|
+ForEach-Object -Process {
+  [regex]::replace($_.trim(),'\s+',' ')
+}|
+ConvertFrom-Csv -d ' ' -Header 'proto', 'src', 'dst', 'state', 'pid'|
+Select-Object -Property src, state, @{
+  name = 'process'
+  expression = {
+    (Get-Process -PipelineVariable $_.pid).name
+  }
+} |
+Format-List
+```
 
-The result may look similar to this:
+结果类似如下：
 
-      
     src     : 0.0.0.0:135
     state   : LISTEN
     process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 

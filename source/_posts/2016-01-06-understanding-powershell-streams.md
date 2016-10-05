@@ -1,6 +1,6 @@
 layout: post
 date: 2016-01-06 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 理解 PowerShell 的流"
 description: PowerTip of the Day - Understanding PowerShell Streams
 categories:
 - powershell
@@ -12,32 +12,33 @@ tags:
 - series
 - translation
 ---
-PowerShell provides seven different streams you can use to output information. Streams help sort out information because streams can be muted. In fact, some streams are muted by default. Here is a sample function called Test-Stream. When you run it, it sends information to all seven streams.
+PowerShell 提供七种不同的流，可以用来输出信息。流可以帮助筛选信息，因为流可以不输出。实际上一些流默认是不输出的。以下是一个名为 `Test-Stream` 的示例函数。它运行后会将信息发送给所有七种流。
 
-Please note: Write-Information was added in PowerShell 5.0. Remove the call to Write-Information from the sample if you want to run it in older PowerShell versions!
+请注意：`Write-Information` 是 PowerShell 5.0 新加入的。如果您想在早期的 PowerShell 版本中运行，请移除调用 `Write-Information` 的语句！
 
-    function Test-Stream
-    {
-        #region These are all the same and define return values
-        'Return Value 1'
-        echo 'Return Value 2'
-        'Return Value 3' | Write-Output
-        #endregion
-        
-        Write-Verbose 'Additional Information'
-       Write-Debug 'Developer Information'
-       Write-Host 'Mandatory User Information'
-       Write-Warning 'Warning Information'
-       Write-Error 'Error Information'
-    
-       # new in PowerShell 5.0
-       Write-Information 'Auxiliary Information' 
-    }
-    
+```powershell
+function Test-Stream
+{
+  #region These are all the same and define return values
+  'Return Value 1'
+  echo 'Return Value 2'
+  'Return Value 3' | Write-Output
+  #endregion
 
-Here is what you will most likely see when you run Test-Stream:
+  Write-Verbose 'Additional Information'
+  Write-Debug 'Developer Information'
+  Write-Host 'Mandatory User Information'
+  Write-Warning 'Warning Information'
+  Write-Error 'Error Information'
 
-     
+  # new in PowerShell 5.0
+  Write-Information 'Auxiliary Information' 
+}
+```
+
+这应该是您运行 `Test-Stream` 能看到的结果：
+
+```shell
     PS C:\> Test-Stream
     Return Value 1
     Return Value 2
@@ -67,61 +68,66 @@ Here is what you will most likely see when you run Test-Stream:
     Return Value 3
      
     PS C:\>
-     
+```
 
-As you can see, echo and Write-Output work the same, and in fact are the same (because echo is an alias for Write-Output). They define the return value(s). They can be assigned to a variable. The same is true for unassigned values that your function leaves behind: they go to Write-Output as well.
+如您所见，`echo` 和 `Write-Output` 工作起来效果相同，而且实际上它们确实是相同的（因为`echo` 是 `Write-Output` 的别名）。它们定义了一个或多个返回值。它们可以赋值给一个变量。同理，这个规则适用于函数留下的未赋值的变量：它们也被送到 `Write-Output` 流中。
 
-Write-Host sends text output directly to the console, so it is guaranteed to be always visible. This cmdlet should be used for messages to the user.
+`Write-Host` 直接将输出送到控制台，所以它一定可见。这个 Cmdlet 只能用于向用户传递信息的场景。
 
-The remaining streams are silent. To see the output from the remaining streams, you need to enable them first:
+其他的流是静默的。要查看其它流的输出，您首先需要打开它们：
 
-    $VerbosePreference = 'Continue'
-    $DebugPreference = 'Continue'
-    $InformationPreference = 'Continue'
+```powershell
+$VerbosePreference = 'Continue'
+$DebugPreference = 'Continue'
+$InformationPreference = 'Continue'
+```
+
+当打开之后，`Test-Stream` 将输出这样的信息：
+
+```shell
+PS C:\> Test-Stream
+Return Value 1
+Return Value 2
+Return Value 3
+VERBOSE: Additional Information
+DEBUG: Developer Information
+Mandatory User Information
+Auxiliary Information 
+```
+
+要恢复缺省值，请复位 preference 变量：
+
+```powershell
+$VerbosePreference = 'SilentlyContinue'
+$DebugPreference = 'SilentlyContinue'
+$InformationPreference = 'SilentlyContinue'
+```
+
+
+如果在函数中加入了通用参数，您就可以在调用函数时使用使用 `-Verbose` 和 `-Debug` 开关。`Test-CommonParameter` 演示了如何添加通用参数支持。
+
+```powershell
+function Test-CommonParameter
+{
+    [CmdletBinding()]
+    param()
     
+    "VerbosePreference = $VerbosePreference"
+    "DebugPreference = $DebugPreference"
+}
+```
 
-Once you did this, Test-Stream produces output like this:
+当运行 `Test-CommonParameter` 时，您将立即明白 `-Verbose` 和 `Debug` 通用参数是如何工作的：它们只是改变了本地 preference 变量：
 
-     
-    PS C:\> Test-Stream
-    Return Value 1
-    Return Value 2
-    Return Value 3
-    VERBOSE: Additional Information
-    DEBUG: Developer Information
-    Mandatory User Information
-    Auxiliary Information 
-     
+```powershell
+PS C:\> Test-CommonParameter
+VerbosePreference = SilentlyContinue
+DebugPreference = SilentlyContinue
 
-To restore the default values, reset the preference variables:
-
-    $VerbosePreference = 'SilentlyContinue'
-    $DebugPreference = 'SilentlyContinue'
-    $InformationPreference = 'SilentlyContinue'
-    
-
-If you add the common parameters to your function, you can use -Verbose and -Debug when you call the function. Test-CommonParameter illustrates how you add common parameter support.
-
-    function Test-CommonParameter
-    {
-        [CmdletBinding()]
-        param()
-        
-        "VerbosePreference = $VerbosePreference"
-        "DebugPreference = $DebugPreference"
-    }
-    
-
-When you run Test-CommonParameter, you will immediately understand how the -Verbose and -Debug common parameters work: they simply change the local preference variables:
-
-     
-    PS C:\> Test-CommonParameter
-    VerbosePreference = SilentlyContinue
-    DebugPreference = SilentlyContinue
-    
-    PS C:\> Test-CommonParameters -Debug -Verbose
-    VerbosePreference = Continue
-    DebugPreference = Inquire
+PS C:\> Test-CommonParameters -Debug -Verbose
+VerbosePreference = Continue
+DebugPreference = Inquire
+```
 
 <!--more-->
 本文国际来源：[Understanding PowerShell Streams](http://powershell.com/cs/blogs/tips/archive/2016/01/06/understanding-powershell-streams.aspx)

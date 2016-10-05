@@ -1,6 +1,6 @@
 layout: post
 date: 2016-02-12 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 将对象发送到记事本"
 description: PowerTip of the Day - Sending Objects to Notepad
 categories:
 - powershell
@@ -12,79 +12,64 @@ tags:
 - series
 - translation
 ---
-In a previous tip we showed how you can send text to a fresh Notepad instance. Today, you get an enhanced version of Out-Notepad: you can pipe anything to Notepad now. If it is not a string, Out-Notepad uses the internal PowerShell ETS to convert it to text and show it appropriately:
+在前一个技能里我们演示了如何将文本发送到一个全新的记事本实例中。今天，您会获得一个增强版的 `Out-Notepad`：您现在可以通过管道传输任何东西到记事本了。如果内容不是字符串，`Out-Notepad` 会使用内置的 PowerShell ETS 将它转换为文本并且合适地显示出来：
 
-    #requires -Version 2
-    function Out-Notepad
-    {
-      param
-      (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [Object]
-        [AllowEmptyString()] 
-        $Object,
-    
-        [Int]
-        $Width = 150
-      )
-    
-      begin
-      {
-        $al = New-Object System.Collections.ArrayList
-      }
-    
-      process
-      {
-        $null = $al.Add($Object)
-      }
-      end
-      {
-        $text = $al | 
-        Format-Table -AutoSize -Wrap | 
-        Out-String -Width $Width
-    
-        $process = Start-Process notepad -PassThru
-        $null = $process.WaitForInputIdle()
-    
-    
-        $sig = '
-          [DllImport("user32.dll", EntryPoint = "FindWindowEx")]public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string lpszClass, string lpszWindow);
-          [DllImport("User32.dll")]public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
-        '
-    
-        $type = Add-Type -MemberDefinition $sig -Name APISendMessage2 -PassThru
-        $hwnd = $process.MainWindowHandle
-        [IntPtr]$child = $type::FindWindowEx($hwnd, [IntPtr]::Zero, "Edit", $null)
-        $null = $type::SendMessage($child, 0x000C, 0, $text)
-      }
-    }
-    
+```powershell
+#requires -Version 2
+function Out-Notepad
+{
+  param
+  (
+    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+    [Object]
+    [AllowEmptyString()] 
+    $Object,
 
-You can pipe anything to Out-Notepad. If it is text already, it is displayed as-is:
+    [Int]
+    $Width = 150
+  )
 
-     
+  begin
+  {
+    $al = New-Object System.Collections.ArrayList
+  }
+
+  process
+  {
+    $null = $al.Add($Object)
+  }
+  end
+  {
+    $text = $al | 
+    Format-Table -AutoSize -Wrap | 
+    Out-String -Width $Width
+
+    $process = Start-Process notepad -PassThru
+    $null = $process.WaitForInputIdle()
+
+
+    $sig = '
+      [DllImport("user32.dll", EntryPoint = "FindWindowEx")]public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string lpszClass, string lpszWindow);
+      [DllImport("User32.dll")]public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
+    '
+
+    $type = Add-Type -MemberDefinition $sig -Name APISendMessage2 -PassThru
+    $hwnd = $process.MainWindowHandle
+    [IntPtr]$child = $type::FindWindowEx($hwnd, [IntPtr]::Zero, "Edit", $null)
+    $null = $type::SendMessage($child, 0x000C, 0, $text)
+  }
+}
+```
+
+您现在可以通过管道传输任何东西到 `Out-Notepad`。它将原样显示：
+
     PS C:\> Get-Content $env:windir\system32\drivers\etc\hosts | Out-Notepad
-     
 
-If you pipe object results, Out-Notepad converts them to text and makes sure nothing is cut off. You may want to play with the -Width parameter to choose the page width that works best for you:
+如果您通过管道传送对象，`Out-Notepad` 会将它们转换为文本并且不会截断任何东西。您可能会希望用 `-Width` 参数来确定页宽，以便正常显示：
 
-     
     PS C:\> Get-EventLog -LogName System -EntryType Error, Warning -Newest 10 | Out-Notepad -Width 130 
-     
 
-And you may want to maximize Notepad or disable word wrap to see the correct formatting.
-
- 
-
-Throughout this month, we'd like to point you to three awesome community-driven global PowerShell events taking place this year:
-
-Europe: April 20-22: 3-day PowerShell Conference EU in Hannover, Germany, with more than 30+ speakers including Jeffrey Snover and Bruce Payette, and 60+ sessions: [www.psconf.eu](http://www.psconf.eu).
-
-Asia: October 21-22: 2-day PowerShell Conference Asia in Singapore. Watch latest announcements at [www.psconf.asia](http://www.psconf.asia/)
-
-North America: April 4-6: 3-day PowerShell and DevOps Global Summit in Bellevue, WA, USA with 20+ speakers including many PowerShell Team members: [https://eventloom.com/event/home/PSNA16](https://eventloom.com/event/home/PSNA16)
-
-All events have limited seats available so you may want to register early.
+另外您可能需要最大化记事本或禁用换行来查看正确的格式。
 
 <!--more-->
 本文国际来源：[Sending Objects to Notepad](http://powershell.com/cs/blogs/tips/archive/2016/02/12/sending-objects-to-notepad.aspx)

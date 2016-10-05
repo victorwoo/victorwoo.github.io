@@ -1,6 +1,6 @@
 layout: post
 date: 2016-02-11 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 发送文本到记事本"
 description: PowerTip of the Day - Send Text to Notepad
 categories:
 - powershell
@@ -12,70 +12,58 @@ tags:
 - series
 - translation
 ---
-Notepad can be used to display text results. Typically, you would need to save text results to file, then have Notepad open that file. There is a better way, though: launch an empty Notepad, and send the text via Windows messages directly to the untitled Notepad editor.
+记事本可以用来显示文本结果。通常，您需要将文本保存到文件，然后用记事本打开该文件。不过还有一个更好的办法：打开一个空白的记事本，然后用 Windows 消息直接把文本发送到未命名的记事本编辑器中。
 
-Here is a function called Out-Notepad. Whatever text you submit to this function: it will be shown in an untitled instance of Notepad:
+这个函数称为 `Out-Notepad`。无论您传给这个函数什么文本，它都会在记事本的一个未命名实例中显示：
 
-    #requires -Version 2
-    function Out-Notepad
-    {
-      param
-      (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [String]
-        [AllowEmptyString()] 
-        $Text
-      )
-    
-      begin
-      {
-        $sb = New-Object System.Text.StringBuilder
-      }
-    
-      process
-      {
-        $null = $sb.AppendLine($Text)
-      }
-      end
-      {
-        $text = $sb.ToString()
-    
-        $process = Start-Process notepad -PassThru
-        $null = $process.WaitForInputIdle()
-    
-    
-        $sig = '
-          [DllImport("user32.dll", EntryPoint = "FindWindowEx")]public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string lpszClass, string lpszWindow);
-          [DllImport("User32.dll")]public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
-        '
-    
-        $type = Add-Type -MemberDefinition $sig -Name APISendMessage -PassThru
-        $hwnd = $process.MainWindowHandle
-        [IntPtr]$child = $type::FindWindowEx($hwnd, [IntPtr]::Zero, "Edit", $null)
-        $null = $type::SendMessage($child, 0x000C, 0, $text)
-      }
-    }
-    
+```powershell
+#requires -Version 2
+function Out-Notepad
+{
+  param
+  (
+    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+    [String]
+    [AllowEmptyString()] 
+    $Text
+  )
 
-And here are a couple of sample calls:
+  begin
+  {
+    $sb = New-Object System.Text.StringBuilder
+  }
 
-     
+  process
+  {
+    $null = $sb.AppendLine($Text)
+  }
+  end
+  {
+    $text = $sb.ToString()
+
+    $process = Start-Process notepad -PassThru
+    $null = $process.WaitForInputIdle()
+
+
+    $sig = '
+      [DllImport("user32.dll", EntryPoint = "FindWindowEx")]public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string lpszClass, string lpszWindow);
+      [DllImport("User32.dll")]public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
+    '
+
+    $type = Add-Type -MemberDefinition $sig -Name APISendMessage -PassThru
+    $hwnd = $process.MainWindowHandle
+    [IntPtr]$child = $type::FindWindowEx($hwnd, [IntPtr]::Zero, "Edit", $null)
+    $null = $type::SendMessage($child, 0x000C, 0, $text)
+  }
+}
+```
+
+这是一些示例调用：
+
     PS C:\> Get-Content $env:windir\system32\drivers\etc\hosts | Out-Notepad
-    
+
     PS C:\> Get-Process | Out-String | Out-Notepad 
-     
 
- 
-
-Throughout this month, we'd like to point you to three awesome community-driven global PowerShell events taking place this year:
-
-Europe: April 20-22: 3-day PowerShell Conference EU in Hannover, Germany, with more than 30+ speakers including Jeffrey Snover and Bruce Payette, and 60+ sessions: [www.psconf.eu](http://www.psconf.eu).
-
-Asia: October 21-22: 2-day PowerShell Conference Asia in Singapore. Watch latest announcements at [www.psconf.asia](http://www.psconf.asia/)
-
-North America: April 4-6: 3-day PowerShell and DevOps Global Summit in Bellevue, WA, USA with 20+ speakers including many PowerShell Team members: [https://eventloom.com/event/home/PSNA16](https://eventloom.com/event/home/PSNA16)
-
-All events have limited seats available so you may want to register early.
 
 <!--more-->
 本文国际来源：[Send Text to Notepad](http://powershell.com/cs/blogs/tips/archive/2016/02/11/send-text-to-notepad.aspx)

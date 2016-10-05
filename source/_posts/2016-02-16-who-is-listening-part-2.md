@@ -1,6 +1,6 @@
 layout: post
 date: 2016-02-16 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 谁在监听？（第二部分）"
 description: PowerTip of the Day - Who is Listening? (Part 2)
 categories:
 - powershell
@@ -12,41 +12,41 @@ tags:
 - series
 - translation
 ---
-If you run at least Windows 8 or Windows Server 2012, you can use Get-NetTcpConnection to find out which network ports are in use, and who is listening on these ports.
+如果您的系统是 Windows 8 或 Windows Server 2012 或以上版本，您可以使用 `Get-NetTcpConnection` 来找出哪个网络端口正在使用中，以及谁在监听这些端口。
 
-The script below not only lists the ports in use but also the processes that do the listening. If the process is "svchost", the script finds out the names of the services that are run by this process:
+以下脚本不仅列出正在使用的端口而且列出了正在监听该端口的进程。如果进程是 "svchost"，该脚本还会找出是哪个服务启动了这个进程：
 
-    #requires -Version 3 -Modules NetTCPIP
-    
-    $service = @{}
-    $Process = @{
-      Name = 'Name'
-      Expression = {
-        $id = $_.OwningProcess
-        $name = (Get-Process -Id $id).Name 
-        if ($name -eq 'svchost')
-        {
-          if ($service.ContainsKey($id) -eq $false)
-          {
-            $service.$id = Get-WmiObject -Class win32_Service -Filter "ProcessID=$id" | Select-Object -ExpandProperty Name
-          }
-          $service.$id -join ','
-        }
-        else
-        {
-          $name
-        }
+```powershell
+#requires -Version 3 -Modules NetTCPIP
+
+$service = @{}
+$Process = @{
+  Name = 'Name'
+  Expression = {
+    $id = $_.OwningProcess
+    $name = (Get-Process -Id $id).Name 
+    if ($name -eq 'svchost')
+    {
+      if ($service.ContainsKey($id) -eq $false)
+      {
+        $service.$id = Get-WmiObject -Class win32_Service -Filter "ProcessID=$id" | Select-Object -ExpandProperty Name
       }
+      $service.$id -join ','
     }
-    
-    Get-NetTCPConnection | 
-    Select-Object -Property LocalPort, OwningProcess, $Process | 
-    Sort-Object -Property LocalPort, Name -Unique
-    
+    else
+    {
+      $name
+    }
+  }
+}
 
-The result may look similar to this:
+Get-NetTCPConnection | 
+Select-Object -Property LocalPort, OwningProcess, $Process | 
+Sort-Object -Property LocalPort, Name -Unique
+```
 
-      
+结果类似如下：
+
     LocalPort OwningProcess Name                                                   
     --------- ------------- ----                                                   
           135           916 RpcEptMapper,RpcSs                                     

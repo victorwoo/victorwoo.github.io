@@ -1,6 +1,6 @@
 layout: post
 date: 2016-02-10 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 神奇的下划线变量"
 description: PowerTip of the Day - Magic Underscore Variable
 categories:
 - powershell
@@ -12,56 +12,47 @@ tags:
 - series
 - translation
 ---
-Here is a very special (and very underdocumented) way to use PowerShell parameters. Have a look at this function:
+以下是一个非常特别（并且有详细文档的）的使用 PowerShell 变量的方法。请看这个函数：
 
-    #requires -Version 2
-    
-    function Test-DollarUnderscore
-    {
-      param
-      (
-        [Parameter(Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
-        [string]
-        $Test
-      )
-    
-      process
-      {
-        "received: $Test"
-      }
-    }
-    
+```powershell
+#requires -Version 2
 
-It does not seem to be very unusual at first. You can assign values to the -Test parameter, and the function returns them:
+function Test-DollarUnderscore
+{
+  param
+  (
+    [Parameter(Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+    [string]
+    $Test
+  )
 
-     
-    PS C:\> Test-DollarUnderscore -Test 'Some Data'
-    received: Some Data 
-     
+  process
+  {
+    "received: $Test"
+  }
+}
+```
 
-But now check out what happens when you pipe data into the function:
+它初看起来并没有什么特别之处。您可以将数值赋给 `-Test` 参数，并且该函数返回它们：
 
-     
-    PS C:\> 1..4 | Test-DollarUnderscore -Test { "I am receiving $_" }
-    received: I am receiving 1
-    received: I am receiving 2
-    received: I am receiving 3
-    received: I am receiving 4 
-     
+```powershell
+PS C:\> Test-DollarUnderscore -Test 'Some Data'
+received: Some Data 
+```
 
-The -Test parameter suddenly and automagically accepts script blocks (although the assigned type was a string), and inside of the script block, you have access to the incoming pipeline element.
+但是请看当您通过管道传送一个数据给该函数时发生了什么：
 
-You get this very special parameter support when you set ValueFromPipelineByPropertyName=$true with a mandatory paramater, and the incoming data has no property that matches the parameter.
+```shell
+PS C:\> 1..4 | Test-DollarUnderscore -Test { "I am receiving $_" }
+received: I am receiving 1
+received: I am receiving 2
+received: I am receiving 3
+received: I am receiving 4 
+```
 
- 
+`-Test` 参数瞬间自动神奇地接受脚本块了（虽然赋予的类型是 string）。而且在脚本块中，您可以存取输入管道的数据。
 
-Throughout this month, we'd like to point you to two awesome community-driven global PowerShell events taking place this year: 
-
-Europe: April 20-22: 3-day PowerShell Conference EU in Hannover, Germany, with more than 30+ speakers including Jeffrey Snover and Bruce Payette, and 60+ sessions ([www.psconf.eu](http://www.psconf.eu)). 
-
-Asia: October 21-22: 2-day PowerShell Conference Asia in Singapore. Watch latest annoncements at [www.psconf.asia](http://www.psconf.asia/)
-
-Both events have limited seats available so you may want to register early.
+您能得到这个非常特别的参数支持功能是因为您为一个必选参数设置了 `ValueFromPipelineByPropertyName=$true`，并且输入的数据没有一个属性和该参数匹配。
 
 <!--more-->
 本文国际来源：[Magic Underscore Variable](http://powershell.com/cs/blogs/tips/archive/2016/02/10/magic-underscore-variable.aspx)

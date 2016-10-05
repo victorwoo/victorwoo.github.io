@@ -1,6 +1,6 @@
 layout: post
 date: 2015-12-29 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 清除回收站"
 description: PowerTip of the Day - Clearing Recycle Bin
 categories:
 - powershell
@@ -12,11 +12,11 @@ tags:
 - series
 - translation
 ---
-Before the advent of PowerShell 5.0, to clear the recycler, you would have to manually delete the content of the hidden $Recycle.Bin folder in the root of all drives that have a recycler.
+在 PowerShell 5.0 之前，要清除回收站得手工删除每个驱动器根目录下隐藏的 $Recycle.Bin 文件夹里的内容。
 
-Some authors recommended the use of a COM object called Shell.Application, too, which tends to be unreliable because the recycler may not be visible at all times, depending on your Explorer settings.
+有一些作者推荐使用名为 `Shell.Application` 的 COM 对象。它不一定可靠，因为回收站不一定可见，取决于资源管理器的设置。
 
-Fortunately, PowerShell 5.0 finally comes with a Clear-RecycleBin cmdlet.
+幸运的事，PowerShell 5.0 终于提供了 `Clear-RecycleBin` Cmdlet。
 
 <!--more-->
 本文国际来源：[Clearing Recycle Bin](http://powershell.com/cs/blogs/tips/archive/2015/12/29/clearing-recycle-bin.aspx)

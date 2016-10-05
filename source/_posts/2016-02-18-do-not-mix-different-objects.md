@@ -1,6 +1,6 @@
 layout: post
 date: 2016-02-18 05:00:00
-title: "PowerShell 技能连载 - "
+title: "PowerShell 技能连载 - 不要混合不同的对象"
 description: PowerTip of the Day - Do Not Mix Different Objects!
 categories:
 - powershell
@@ -15,7 +15,7 @@ tags:
 如果您连续输出完全不同的对象，您可能丢失信息。请看这个例子：
 
     #requires -Version 2
-    
+
     $hash = @{
     Name = 'PowerShell Conference EU'
     Date = 'April 20, 2016'

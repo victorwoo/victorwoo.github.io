@@ -1,6 +1,6 @@
 layout: post
 date: 2016-01-01 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 用 Base64 编解码文本"
 description: 'PowerTip of the Day - Encode and Decode Text as Base64 '
 categories:
 - powershell
@@ -12,33 +12,35 @@ tags:
 - series
 - translation
 ---
-Here is a simple way to encode text as a Base64 string:
+以下是将文本用 Base64 编码的简单方法：
 
-    #requires -Version 1
-    
-    $text = 'Hello World!'
-    [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($text), 'InsertLineBreaks')
-    
+```powershell
+#requires -Version 1
 
-The resulting text looks similar to this:
+$text = 'Hello World!'
+[Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($text), 'InsertLineBreaks')
+```
 
-     
+结果字符串看起来大概如下：
+
     SABlAGwAbABvACAAVwBvAHIAbABkACEA 
-     
 
-Text encoding is used whenever you want to simply obfuscate text, or when you want to protect text against accidental formatting changes. PowerShell.exe, for example, can run commands that are Base64-encoded. Here is an example (make sure you enable sound output on your machine):
+文本编码可以用于简易的混淆文本，或是保护文本防止不小心被错误地格式化。例如 PowerShell.exe 可运行 Base64 编码过的命令。以下是一个例子（请打开您机器的声音）：
 
-    powershell.exe -EncodedCommand ZgBvAHIAKAAkAHgAIAA9ACAAMQAwADAAMAA7ACAAJAB4ACAALQBsAHQAIAAxADIAMAAwADAAOwAgACQAeAArAD0AMQAwADAAMAApACAAewAgAFsAUwB5AHMAdABlAG0ALgBDAG8AbgBzAG8AbABlAF0AOgA6AEIAZQBlAHAAKAAkAHgALAAgADMAMAAwACkAOwAgACIAJAB4ACAASAB6ACIAfQA=
-        
-To decode a Base64-encoded string, you can use the code below.
+```shell
+powershell.exe -EncodedCommand ZgBvAHIAKAAkAHgAIAA9ACAAMQAwADAAMAA7ACAAJAB4ACAALQBsAHQAIAAxADIAMAAwADAAOwAgACQAeAArAD0AMQAwADAAMAApACAAewAgAFsAUwB5AHMAdABlAG0ALgBDAG8AbgBzAG8AbABlAF0AOgA6AEIAZQBlAHAAKAAkAHgALAAgADMAMAAwACkAOwAgACIAJAB4ACAASAB6ACIAfQA=
+```
 
-    #requires -Version 1
-    
-    $text = 'SABlAGwAbABvACAAVwBvAHIAbABkACEA'
-    [Text.Encoding]::Unicode.GetString([Convert]::FromBase64String($text))
-    
+要解码一个 Base64 字符串，您可以使用以下代码。
 
-You can also use this code to decode encoded commands and see what they do. Simply assign the encoded command to $test instead.
+```powershell
+#requires -Version 1
+
+$text = 'SABlAGwAbABvACAAVwBvAHIAbABkACEA'
+[Text.Encoding]::Unicode.GetString([Convert]::FromBase64String($text))
+```
+
+您也可以使用这段代码来解码上面那段编码后的命令，看看它做了什么。只需要用编码过的命令替换掉 `$test`。
 
 <!--more-->
 本文国际来源：[Encode and Decode Text as Base64 ](http://powershell.com/cs/blogs/tips/archive/2016/01/01/encode-and-decode-text-as-base64.aspx)

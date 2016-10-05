@@ -1,6 +1,6 @@
 layout: post
 date: 2016-01-11 12:00:00
-title: "PowerShell 技能连载 - ___"
+title: "PowerShell 技能连载 - 查找当前文件系统路径"
 description: PowerTip of the Day - Finding Current File System Path
 categories:
 - powershell
@@ -12,38 +12,30 @@ tags:
 - series
 - translation
 ---
-PowerShell supports not just the file system, so you can set the current path to a different provider (Set-Location). Here is a trick that always gets you the current file system location no matter which provider is currently active:
+PowerShell 不仅支持文件系统，您可以将当前路径设置为别的 provider（用 `Set-Location` 命令）。以下是一个始终返回当前文件系统，无论当前激活的是那个 provider 的技巧：
 
-     
-    PS C:\> cd hkcu:\
-    
-    PS HKCU:\> $ExecutionContext.SessionState.Path
-    
-    CurrentLocation CurrentFileSystemLocation
-    --------------- -------------------------
-    HKCU:\          C:\                      
-    
-    
-    
-    PS HKCU:\> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation
-    
-    Path
-    ----
-    C:\ 
-    
-    
-    
-    PS HKCU:\> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation.Path
-    C:\ 
-     
+```shell
+PS C:\> cd hkcu:\
 
-Throughout this month, we'd like to point you to two awesome community-driven global PowerShell events taking place this year:
+PS HKCU:\> $ExecutionContext.SessionState.Path
 
-Europe: April 20-22: 3-day PowerShell Conference EU in Hannover, Germany, with more than 30+ speakers including Jeffrey Snover and Bruce Payette, and 60+ sessions ([www.psconf.eu](http://www.psconf.eu)).
+CurrentLocation CurrentFileSystemLocation
+--------------- -------------------------
+HKCU:\          C:\                      
 
-Asia: October 21-22: 2-day PowerShell Conference Asia in Singapore. Watch latest annoncements at [www.psconf.asia](http://www.psconf.asia/)
 
-Both events have limited seats available so you may want to register early.
+​    
+PS HKCU:\> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation
+
+Path
+----
+C:\ 
+
+
+​    
+PS HKCU:\> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation.Path
+C:\ 
+```
 
 <!--more-->
 本文国际来源：[Finding Current File System Path](http://powershell.com/cs/blogs/tips/archive/2016/01/11/finding-current-file-system-path.aspx)
