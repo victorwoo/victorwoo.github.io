@@ -36,4 +36,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Skipping Profile on Keystroke](http://powershell.com/cs/blogs/tips/archive/2014/06/16/skipping-profile-on-keystroke.aspx)
+本文国际来源：[Skipping Profile on Keystroke](http://community.idera.com/powershell/powertips/b/tips/posts/skipping-profile-on-keystroke)

@@ -33,4 +33,4 @@ _适用于所有 PowerShell 版本_
       Select-Object -Property *
 
 <!--more-->
-本文国际来源：[Finding AD Users](http://powershell.com/cs/blogs/tips/archive/2014/08/01/finding-ad-users.aspx)
+本文国际来源：[Finding AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-users)

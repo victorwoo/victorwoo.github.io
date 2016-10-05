@@ -46,4 +46,4 @@ Path = 'C:'
     $hashtable.Path
 
 <!--more-->
-本文国际来源：[Simple Replacement for INI Files](http://powershell.com/cs/blogs/tips/archive/2015/08/14/simple-replacement-for-ini-files.aspx)
+本文国际来源：[Simple Replacement for INI Files](http://community.idera.com/powershell/powertips/b/tips/posts/simple-replacement-for-ini-files)

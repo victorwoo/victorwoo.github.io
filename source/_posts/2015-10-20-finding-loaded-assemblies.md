@@ -25,4 +25,4 @@ tags:
 或者，您可以使用 `Add-Type` 命令根据名字或文件地址手动加载程序集。
 
 <!--more-->
-本文国际来源：[Finding Loaded Assemblies ](http://powershell.com/cs/blogs/tips/archive/2015/10/20/finding-loaded-assemblies.aspx)
+本文国际来源：[Finding Loaded Assemblies ](http://community.idera.com/powershell/powertips/b/tips/posts/finding-loaded-assemblies)

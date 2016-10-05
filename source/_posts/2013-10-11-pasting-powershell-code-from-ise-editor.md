@@ -23,4 +23,4 @@ PowerShell ISE 编辑器的代码复制粘贴功能十分强大，例如将代�
 您也可以用鼠标滚轮来调整 ISE 编辑器中的显示字体大小。
 <!--more-->
 
-本文国际来源：[Pasting PowerShell Code from ISE Editor](http://powershell.com/cs/blogs/tips/archive/2013/10/11/pasting-powershell-code-from-ise-editor.aspx)
+本文国际来源：[Pasting PowerShell Code from ISE Editor](http://community.idera.com/powershell/powertips/b/tips/posts/pasting-powershell-code-from-ise-editor)

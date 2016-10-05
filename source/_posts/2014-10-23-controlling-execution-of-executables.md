@@ -46,4 +46,4 @@ PowerShell 将所有可执行程序（扩展名为 EXE 的文件）视为普通�
 当语言模式关闭时，您无法直接存取 .NET 对象。这意味着您无法在当前的 PowerShell 会话中回退该操作。我们将在明天详细介绍语言模式设置。
 
 <!--more-->
-本文国际来源：[Controlling Execution of Executables](http://powershell.com/cs/blogs/tips/archive/2014/10/23/controlling-execution-of-executables.aspx)
+本文国际来源：[Controlling Execution of Executables](http://community.idera.com/powershell/powertips/b/tips/posts/controlling-execution-of-executables)

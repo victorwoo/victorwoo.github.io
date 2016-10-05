@@ -47,4 +47,4 @@ tags:
 请注意这只是一个示例脚本。您可能需要管理员权限才能确实将文件移出 Windows 文件夹。
 
 <!--more-->
-本文国际来源：[Moving Outdated Log Files to Archive](http://powershell.com/cs/blogs/tips/archive/2015/07/02/moving-outdated-log-files-to-archive.aspx)
+本文国际来源：[Moving Outdated Log Files to Archive](http://community.idera.com/powershell/powertips/b/tips/posts/moving-outdated-log-files-to-archive)

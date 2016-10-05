@@ -38,4 +38,4 @@ tags:
       Out-GridView
 
 <!--more-->
-本文国际来源：[Fixing Remoting Sender Information](http://powershell.com/cs/blogs/tips/archive/2015/09/23/fixing-remoting-sender-information.aspx)
+本文国际来源：[Fixing Remoting Sender Information](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-remoting-sender-information)

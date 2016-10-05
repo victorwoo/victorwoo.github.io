@@ -27,4 +27,4 @@ Windows 8 是第一个完整支持本地化的文本到语音引擎的操作系�
 	$speaker.Speak('But I can of course also speak English.')
 
 <!--more-->
-本文国际来源：[Speaking English and German (and Spanish, and you name it)](http://powershell.com/cs/blogs/tips/archive/2014/02/03/speaking-english-and-german-and-spanish-and-you-name-it.aspx)
+本文国际来源：[Speaking English and German (and Spanish, and you name it)](http://community.idera.com/powershell/powertips/b/tips/posts/speaking-english-and-german-and-spanish-and-you-name-it)

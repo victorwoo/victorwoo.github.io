@@ -40,4 +40,4 @@ tags:
     $text.Trim(" .-`t`n`r")
 
 <!--more-->
-本文国际来源：[Removing Whitespace (and Line Breaks)](http://powershell.com/cs/blogs/tips/archive/2015/04/30/removing-whitespace-and-line-breaks.aspx)
+本文国际来源：[Removing Whitespace (and Line Breaks)](http://community.idera.com/powershell/powertips/b/tips/posts/removing-whitespace-and-line-breaks)

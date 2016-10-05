@@ -34,4 +34,4 @@ tags:
 如果您想用这些方法，请将它们放在自启动脚本中（缺省情况下可能不存在）。它的路径可以通过 `$profile` 变量找到。
 
 <!--more-->
-本文国际来源：[Using Paths in Prompts](http://powershell.com/cs/blogs/tips/archive/2015/10/27/using-paths-in-prompts.aspx)
+本文国际来源：[Using Paths in Prompts](http://community.idera.com/powershell/powertips/b/tips/posts/using-paths-in-prompts)

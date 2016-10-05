@@ -25,4 +25,4 @@ tags:
     (Get-History -Count 5).CommandLine | clip.exe
 
 <!--more-->
-本文国际来源：[Copying Command History](http://powershell.com/cs/blogs/tips/archive/2015/10/07/copying-command-history-0.aspx)
+本文国际来源：[Copying Command History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history-0)

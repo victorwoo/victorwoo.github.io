@@ -32,4 +32,4 @@ tags:
 运行 `Get-LoggedOnUser` 命令后能够获得本机上物理登录的用户名。指定 `-ComputerName`（或者 `-Credential`）参数可以获得远程机器上物理登录的用户名。
 
 <!--more-->
-本文国际来源：[Find Physically Logged On User](http://powershell.com/cs/blogs/tips/archive/2015/07/22/find-physically-logged-on-user.aspx)
+本文国际来源：[Find Physically Logged On User](http://community.idera.com/powershell/powertips/b/tips/posts/find-physically-logged-on-user)

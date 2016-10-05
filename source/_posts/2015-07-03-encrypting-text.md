@@ -66,4 +66,4 @@ tags:
 这个方法可以用来安全地保存个人密码，这样您就不用每天都输入了。
 
 <!--more-->
-本文国际来源：[Encrypting Text](http://powershell.com/cs/blogs/tips/archive/2015/07/03/encrypting-text.aspx)
+本文国际来源：[Encrypting Text](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-text)

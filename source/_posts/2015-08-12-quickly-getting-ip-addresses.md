@@ -45,4 +45,4 @@ tags:
     Select-Object -ExpandProperty IPAddressToString
 
 <!--more-->
-本文国际来源：[Quickly Getting IP Addresses](http://powershell.com/cs/blogs/tips/archive/2015/08/12/quickly-getting-ip-addresses.aspx)
+本文国际来源：[Quickly Getting IP Addresses](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-getting-ip-addresses)

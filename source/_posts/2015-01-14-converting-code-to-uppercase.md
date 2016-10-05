@@ -20,4 +20,4 @@ To turn text to all lowercase letters, press CTRL+U.
 要将文本转为全小写，请按 `CTRL+U`。
 
 <!--more-->
-本文国际来源：[Converting Code to Uppercase](http://powershell.com/cs/blogs/tips/archive/2015/01/14/converting-code-to-uppercase.aspx)
+本文国际来源：[Converting Code to Uppercase](http://community.idera.com/powershell/powertips/b/tips/posts/converting-code-to-uppercase)

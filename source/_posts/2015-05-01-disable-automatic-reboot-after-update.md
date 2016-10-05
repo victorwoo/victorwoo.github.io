@@ -37,4 +37,4 @@ tags:
 如果您当前没有管理员权限，那么会弹出提升权限的对话框供您选择使用管理员权限，或是如果您的账户没有管理员权限的时候要求您选择一个有权限的账户。
 
 <!--more-->
-本文国际来源：[Disable Automatic Reboot After Update](http://powershell.com/cs/blogs/tips/archive/2015/05/01/disable-automatic-reboot-after-update.aspx)
+本文国际来源：[Disable Automatic Reboot After Update](http://community.idera.com/powershell/powertips/b/tips/posts/disable-automatic-reboot-after-update)

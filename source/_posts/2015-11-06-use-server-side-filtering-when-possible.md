@@ -34,4 +34,4 @@ tags:
     Get-ADUser -LDAPFilter '(!mail=*)'
 
 <!--more-->
-本文国际来源：[Use Server-Side Filtering When Possible](http://powershell.com/cs/blogs/tips/archive/2015/11/06/use-server-side-filtering-when-possible.aspx)
+本文国际来源：[Use Server-Side Filtering When Possible](http://community.idera.com/powershell/powertips/b/tips/posts/use-server-side-filtering-when-possible)

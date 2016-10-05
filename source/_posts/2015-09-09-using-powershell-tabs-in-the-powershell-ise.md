@@ -27,4 +27,4 @@ tags:
 请注意只有在至少有 2 个以上 PowerShell 宿主时，才会显示 PowerShell 标签。您可能需要先按下 `CTRL` + `T` 才能够看到重命名的效果。
 
 <!--more-->
-本文国际来源：[Using PowerShell Tabs in the PowerShell ISE](http://powershell.com/cs/blogs/tips/archive/2015/09/09/using-powershell-tabs-in-the-powershell-ise.aspx)
+本文国际来源：[Using PowerShell Tabs in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-tabs-in-the-powershell-ise)

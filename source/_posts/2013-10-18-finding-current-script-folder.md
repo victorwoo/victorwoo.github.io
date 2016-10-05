@@ -21,4 +21,4 @@ tags:
 别忘了用“dot-source”语法（在路径之前加点号）。否则只会输出该路径名（而不是执行该路径表示的脚本）。
 <!--more-->
 
-本文国际来源：[Finding Current Script Folder](http://powershell.com/cs/blogs/tips/archive/2013/10/18/finding-current-script-folder.aspx)
+本文国际来源：[Finding Current Script Folder](http://community.idera.com/powershell/powertips/b/tips/posts/finding-current-script-folder)

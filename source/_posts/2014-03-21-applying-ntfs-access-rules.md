@@ -36,4 +36,4 @@ tags:
     } 
     
 <!--more-->
-本文国际来源：[Applying NTFS Access Rules](http://powershell.com/cs/blogs/tips/archive/2014/03/21/applying-ntfs-access-rules.aspx)
+本文国际来源：[Applying NTFS Access Rules](http://community.idera.com/powershell/powertips/b/tips/posts/applying-ntfs-access-rules)

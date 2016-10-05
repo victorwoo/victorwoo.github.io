@@ -55,4 +55,4 @@ Function        Add-PhysicalDisk                                   Storage
 ```
 
 <!--more-->
-本文国际来源：[Reading Disks and Partitions](http://powershell.com/cs/blogs/tips/archive/2014/11/27/reading-disks-and-partitions.aspx)
+本文国际来源：[Reading Disks and Partitions](http://community.idera.com/powershell/powertips/b/tips/posts/reading-disks-and-partitions)

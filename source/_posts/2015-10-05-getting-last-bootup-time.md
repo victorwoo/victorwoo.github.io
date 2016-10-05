@@ -34,4 +34,4 @@ tags:
     [System.Management.ManagementDateTimeConverter]::ToDateTime($lastboot)
 
 <!--more-->
-本文国际来源：[Getting Last Bootup Time](http://powershell.com/cs/blogs/tips/archive/2015/10/05/getting-last-bootup-time.aspx)
+本文国际来源：[Getting Last Bootup Time](http://community.idera.com/powershell/powertips/b/tips/posts/getting-last-bootup-time)

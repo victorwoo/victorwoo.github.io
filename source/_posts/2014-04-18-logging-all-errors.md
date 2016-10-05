@@ -52,4 +52,4 @@ tags:
 ![](/img/2014-04-18-logging-all-errors-001.png)
 
 <!--more-->
-本文国际来源：[Logging All Errors](http://powershell.com/cs/blogs/tips/archive/2014/04/18/logging-all-errors.aspx)
+本文国际来源：[Logging All Errors](http://community.idera.com/powershell/powertips/b/tips/posts/logging-all-errors)

@@ -44,4 +44,4 @@ tags:
 该例子的结果以 MB 而不是字节为单位显示文件的大小，并且添加了一个称为“Age(days)”的列表示文件和文件夹创建以来的天数。
 
 <!--more-->
-本文国际来源：[Creating Great Reports](http://powershell.com/cs/blogs/tips/archive/2014/07/14/creating-great-reports.aspx)
+本文国际来源：[Creating Great Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-great-reports)

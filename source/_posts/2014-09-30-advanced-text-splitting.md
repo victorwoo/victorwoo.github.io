@@ -45,4 +45,4 @@ _适用于 PowerShell 所有版本_
     , and it has commas
 
 <!--more-->
-本文国际来源：[Advanced Text Splitting](http://powershell.com/cs/blogs/tips/archive/2014/09/30/advanced-text-splitting.aspx)
+本文国际来源：[Advanced Text Splitting](http://community.idera.com/powershell/powertips/b/tips/posts/advanced-text-splitting)

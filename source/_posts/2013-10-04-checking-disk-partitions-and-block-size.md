@@ -27,4 +27,4 @@ WMI 是一个装满信息的宝库。以下这行代码将读取本地分区以�
 
 <!--more-->
 
-本文国际来源：[Checking Disk Partitions and Block Size](http://powershell.com/cs/blogs/tips/archive/2013/10/04/checking-disk-partitions-and-block-size.aspx)
+本文国际来源：[Checking Disk Partitions and Block Size](http://community.idera.com/powershell/powertips/b/tips/posts/checking-disk-partitions-and-block-size)

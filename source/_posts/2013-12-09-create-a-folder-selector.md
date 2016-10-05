@@ -26,4 +26,4 @@ tags:
 请注意前两行：当您在 ISE 编辑器中运行代码时不需要它们，但当您从 powershell.exe 中运行代码时需要它们。所以我们保留着两行来确保您的代码在各个 PowerShell 宿主中都能有效运行。
 
 <!--more-->
-本文国际来源：[Create a Folder Selector](http://powershell.com/cs/blogs/tips/archive/2013/12/09/create-a-folder-selector.aspx)
+本文国际来源：[Create a Folder Selector](http://community.idera.com/powershell/powertips/b/tips/posts/create-a-folder-selector)

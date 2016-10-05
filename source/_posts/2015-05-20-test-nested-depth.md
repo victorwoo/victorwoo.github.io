@@ -107,4 +107,4 @@ tags:
 `Test-NestLevel` 总是从当前的代码中返回嵌套的级别到全局作用域。
 
 <!--more-->
-本文国际来源：[Test Nested Depth](http://powershell.com/cs/blogs/tips/archive/2015/05/20/test-nested-depth.aspx)
+本文国际来源：[Test Nested Depth](http://community.idera.com/powershell/powertips/b/tips/posts/test-nested-depth)

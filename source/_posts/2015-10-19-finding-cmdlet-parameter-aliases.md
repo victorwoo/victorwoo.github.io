@@ -24,4 +24,4 @@ PowerShell cmdlet 和函数可以带有参数，并且这些参数可以有（�
       Select-Object -Property Name, Aliases
 
 <!--more-->
-本文国际来源：[Finding Cmdlet Parameter Aliases](http://powershell.com/cs/blogs/tips/archive/2015/10/19/finding-cmdlet-parameter-aliases.aspx)
+本文国际来源：[Finding Cmdlet Parameter Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/finding-cmdlet-parameter-aliases)

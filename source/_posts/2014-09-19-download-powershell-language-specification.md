@@ -25,4 +25,4 @@ _适用于 PowerShell 所有版本_
     Invoke-Item -Path $outfile
 
 <!--more-->
-本文国际来源：[Download PowerShell Language Specification](http://powershell.com/cs/blogs/tips/archive/2014/09/19/download-powershell-language-specification.aspx)
+本文国际来源：[Download PowerShell Language Specification](http://community.idera.com/powershell/powertips/b/tips/posts/download-powershell-language-specification)

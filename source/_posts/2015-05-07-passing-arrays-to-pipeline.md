@@ -70,4 +70,4 @@ tags:
     System.Object[]
 
 <!--more-->
-本文国际来源：[Passing Arrays to Pipeline](http://powershell.com/cs/blogs/tips/archive/2015/05/07/passing-arrays-to-pipeline.aspx)
+本文国际来源：[Passing Arrays to Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/passing-arrays-to-pipeline)

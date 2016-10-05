@@ -113,4 +113,4 @@ PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问�
     Date     : 26.01.2016 21:33:01
 
 <!--more-->
-本文国际来源：[Converting Currencies](http://powershell.com/cs/blogs/tips/archive/2016/02/09/converting-currencies.aspx)
+本文国际来源：[Converting Currencies](http://community.idera.com/powershell/powertips/b/tips/posts/converting-currencies)

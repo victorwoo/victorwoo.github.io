@@ -61,4 +61,4 @@ Format-List
               AdobeIPCBroker...}
 
 <!--more-->
-本文国际来源：[Who Is Listening? (Part 1)](http://powershell.com/cs/blogs/tips/archive/2016/02/15/who-is-listening-part-1.aspx)
+本文国际来源：[Who Is Listening? (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-1)

@@ -33,4 +33,4 @@ tags:
 当您移除“`Continue`”之后的“`outer`”标签时，您会听到频率递增的蜂鸣，并且 `Write-Host` 语句不再被跳过。
 
 <!--more-->
-本文国际来源：["Continue" and Labels](http://powershell.com/cs/blogs/tips/archive/2015/05/18/quot-continue-quot-and-labels.aspx)
+本文国际来源：["Continue" and Labels](http://community.idera.com/powershell/powertips/b/tips/posts/quot-continue-quot-and-labels)

@@ -61,4 +61,4 @@ _适用于 PowerShell ISE 3 或更高版本_
 当您重命名变量时，您脚本的许多别处地方也可能需要更新。例如，当一个变量是函数参数时，所有调用该函数的地方都得修改它们的参数名。
 
 <!--more-->
-本文国际来源：[Renaming Variables](http://powershell.com/cs/blogs/tips/archive/2014/10/06/renaming-variables.aspx)
+本文国际来源：[Renaming Variables](http://community.idera.com/powershell/powertips/b/tips/posts/renaming-variables)

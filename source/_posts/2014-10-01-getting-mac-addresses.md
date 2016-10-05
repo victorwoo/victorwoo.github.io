@@ -34,4 +34,4 @@ _适用于 PowerShell 所有版本_
 当然，也有面向对象的解决方案，例如通过 WMI 查询或者使用 Windows 8.1 或 Server 2012/2012 R2。不过，我们认为所演示的方法是一个有趣的选择并且展示了如何将原始的 CSV 数据转换为真正有用的和语言文化无关的信息。
 
 <!--more-->
-本文国际来源：[Getting MAC Addresses](http://powershell.com/cs/blogs/tips/archive/2014/10/01/getting-mac-addresses.aspx)
+本文国际来源：[Getting MAC Addresses](http://community.idera.com/powershell/powertips/b/tips/posts/getting-mac-addresses)

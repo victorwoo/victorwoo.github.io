@@ -36,4 +36,4 @@ WMI 是一个很好的信息源，但要找到正确的 WMI 类来查询并不�
     Search-WMI -Keyword network
 
 <!--more-->
-本文国际来源：[Search WMI for Useful Information](http://powershell.com/cs/blogs/tips/archive/2015/11/20/search-wmi-for-useful-information.aspx)
+本文国际来源：[Search WMI for Useful Information](http://community.idera.com/powershell/powertips/b/tips/posts/search-wmi-for-useful-information)

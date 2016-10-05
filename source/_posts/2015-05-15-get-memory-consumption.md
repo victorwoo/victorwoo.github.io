@@ -44,4 +44,4 @@ tags:
 关键点在于使用垃圾收集器：它是负责清理内存，但是平时并不是立即清理内存。要粗略计算内存消耗时，需要调用垃圾收集器立即释放所有无用的内存，然后报告当前占用的内存。
 
 <!--more-->
-本文国际来源：[Get Memory Consumption](http://powershell.com/cs/blogs/tips/archive/2015/05/15/get-memory-consumption.aspx)
+本文国际来源：[Get Memory Consumption](http://community.idera.com/powershell/powertips/b/tips/posts/get-memory-consumption)

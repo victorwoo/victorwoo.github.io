@@ -14,4 +14,4 @@ tags:
 ---
 在 PowerShell ISE 4.0 控制台窗格中，按住 `CTRL` 键，然后按 `向上` 键，可以将光标从命令行中移到结果区域中。
 <!--more-->
-本文国际来源：[Keyboard Trick](http://powershell.com/cs/blogs/tips/archive/2013/11/13/keyboard-trick.aspx)
+本文国际来源：[Keyboard Trick](http://community.idera.com/powershell/powertips/b/tips/posts/keyboard-trick)

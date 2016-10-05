@@ -35,4 +35,4 @@ _适用于 PowerShell 所有版本_
       Out-GridView
 
 <!--more-->
-本文国际来源：[Combining Results](http://powershell.com/cs/blogs/tips/archive/2014/09/04/combining-results.aspx)
+本文国际来源：[Combining Results](http://community.idera.com/powershell/powertips/b/tips/posts/combining-results)

@@ -21,4 +21,4 @@ tags:
 在 ISE 编辑器中，选择 文件 > 新建 PowerShell 选项卡。这实际上将创建一个新的 PowerShell 选项卡，以及一个全新的 PowerShell 宿主。这将确保没有任何不希望存在的旧变量和函数存在。
 <!--more-->
 
-本文国际来源：[Resetting PowerShell Host in ISE](http://powershell.com/cs/blogs/tips/archive/2013/10/15/resetting-powershell-host-in-ise.aspx)
+本文国际来源：[Resetting PowerShell Host in ISE](http://community.idera.com/powershell/powertips/b/tips/posts/resetting-powershell-host-in-ise)

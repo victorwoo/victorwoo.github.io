@@ -21,4 +21,4 @@ tags:
 顺便说一下，第三行（在 Program Files 中的）是在 PowerShell 4.0 中才加入的。
 
 <!--more-->
-本文国际来源：[Displaying Path Environment Variables](http://powershell.com/cs/blogs/tips/archive/2013/12/17/displaying-path-environment-variables.aspx)
+本文国际来源：[Displaying Path Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-path-environment-variables)

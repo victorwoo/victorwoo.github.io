@@ -26,4 +26,4 @@ tags:
     $geoip.Response
 
 <!--more-->
-本文国际来源：[Get IP Address Geolocation](http://powershell.com/cs/blogs/tips/archive/2015/04/23/get-ip-address-geolocation.aspx)
+本文国际来源：[Get IP Address Geolocation](http://community.idera.com/powershell/powertips/b/tips/posts/get-ip-address-geolocation)

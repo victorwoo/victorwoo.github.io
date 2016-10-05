@@ -35,4 +35,4 @@ PowerShell 将会启动您的 Web 浏览器并且播放视频。太棒了！
 > 译者注：由于国内暂时不可直接访问 YouTube 服务，验证本脚本需要合适的代理服务器或 VPN。
 
 <!--more-->
-本文国际来源：[Search and View PowerShell Videos](http://powershell.com/cs/blogs/tips/archive/2013/12/25/search-and-view-powershell-videos.aspx)
+本文国际来源：[Search and View PowerShell Videos](http://community.idera.com/powershell/powertips/b/tips/posts/search-and-view-powershell-videos)

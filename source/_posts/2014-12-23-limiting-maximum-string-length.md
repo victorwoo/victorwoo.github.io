@@ -26,4 +26,4 @@ _适用于 PowerShell 所有版本_
     }
 
 <!--more-->
-本文国际来源：[Limiting Maximum String Length ](http://powershell.com/cs/blogs/tips/archive/2014/12/23/limiting-maximum-string-length.aspx)
+本文国际来源：[Limiting Maximum String Length ](http://community.idera.com/powershell/powertips/b/tips/posts/limiting-maximum-string-length)

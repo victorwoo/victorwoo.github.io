@@ -21,4 +21,4 @@ tags:
 [http://powershell.com/cs/media/28/default.aspx](http://powershell.com/cs/media/28/default.aspx)
 
 <!--more-->
-本文国际来源：[Getting Free Cheat Sheets](http://powershell.com/cs/blogs/tips/archive/2014/05/23/getting-free-cheat-sheets.aspx)
+本文国际来源：[Getting Free Cheat Sheets](http://community.idera.com/powershell/powertips/b/tips/posts/getting-free-cheat-sheets)

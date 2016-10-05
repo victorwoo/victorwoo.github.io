@@ -51,4 +51,4 @@ tags:
 要能够从管道中接收多个值，请确保对接收管道输入的参数设置了 `ValueFromPipeline` 属性。下一步，在函数中添加一段 `Process` 脚本块。这段代码充当循环的作用，和 `ForEach-Object` 十分相似，并且作用于管道送过来的每一个对象上。
 
 <!--more-->
-本文国际来源：[Accepting Multiple Input](http://powershell.com/cs/blogs/tips/archive/2014/07/11/accepting-multiple-input.aspx)
+本文国际来源：[Accepting Multiple Input](http://community.idera.com/powershell/powertips/b/tips/posts/accepting-multiple-input)

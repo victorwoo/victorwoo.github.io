@@ -30,4 +30,4 @@ Remove-ADGroupMember -Identity 'SomeGroup' -Members $user
 请注意空数组的使用。一个空数组可以通过“`+=`”运算符一次或多次加入元素，并且该操作符可以接受单个用户也可以接受一个数组。所以您可以向列表添加一个或多个用户——例如过滤查询的结果。
 
 <!--more-->
-本文国际来源：[Removing AD Group Members](http://powershell.com/cs/blogs/tips/archive/2014/12/05/removing-ad-group-members.aspx)
+本文国际来源：[Removing AD Group Members](http://community.idera.com/powershell/powertips/b/tips/posts/removing-ad-group-members)

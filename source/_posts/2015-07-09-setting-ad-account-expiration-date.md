@@ -52,4 +52,4 @@ tags:
     Set-ADUser -Identity $user -AccountExpirationDate $expirationDate -Server $ServerName -Credential $Credential
 
 <!--more-->
-本文国际来源：[Setting AD Account Expiration Date](http://powershell.com/cs/blogs/tips/archive/2015/07/09/setting-ad-account-expiration-date.aspx)
+本文国际来源：[Setting AD Account Expiration Date](http://community.idera.com/powershell/powertips/b/tips/posts/setting-ad-account-expiration-date)

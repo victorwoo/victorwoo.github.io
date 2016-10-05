@@ -33,4 +33,4 @@ tags:
 	WARNING: Creating C:\Users\Tobias\Desktop\hello there.txt
 
 <!--more-->
-本文国际来源：[Accessing All Users Desktop](http://powershell.com/cs/blogs/tips/archive/2013/12/02/accessing-all-users-desktop.aspx)
+本文国际来源：[Accessing All Users Desktop](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-all-users-desktop)

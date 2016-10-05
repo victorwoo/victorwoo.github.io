@@ -22,4 +22,4 @@ _适用于 PowerShell 不同版本_
     [Math]::Min(3,8)
 
 <!--more-->
-本文国际来源：[Important Math Functions](http://powershell.com/cs/blogs/tips/archive/2014/09/09/important-math-functions.aspx)
+本文国际来源：[Important Math Functions](http://community.idera.com/powershell/powertips/b/tips/posts/important-math-functions)

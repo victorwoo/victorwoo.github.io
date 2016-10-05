@@ -62,4 +62,4 @@ tags:
 ![](/img/2014-05-01-finding-default-mapi-client-001.png)
 
 <!--more-->
-本文国际来源：[Finding Default MAPI Client](http://powershell.com/cs/blogs/tips/archive/2014/05/01/finding-default-mapi-client.aspx)
+本文国际来源：[Finding Default MAPI Client](http://community.idera.com/powershell/powertips/b/tips/posts/finding-default-mapi-client)

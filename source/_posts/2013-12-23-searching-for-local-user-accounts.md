@@ -52,4 +52,4 @@ tags:
 	$results | Select-Object -Property Name, LastLogon, Enabled, PasswordNeverExpires
 
 <!--more-->
-本文国际来源：[Searching for Local User Accounts](http://powershell.com/cs/blogs/tips/archive/2013/12/23/searching-for-local-user-accounts.aspx)
+本文国际来源：[Searching for Local User Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/searching-for-local-user-accounts)

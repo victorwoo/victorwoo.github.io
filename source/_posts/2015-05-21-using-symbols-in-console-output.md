@@ -40,4 +40,4 @@ tags:
 请注意“`prompt`”函数必须返回至少一个字符，否则 PowerShell 将使用它的默认提示信息。这是为什么该函数用一个空格作为返回值，并且使用 `Write-Host` 作为彩色输出的原因。
 
 <!--more-->
-本文国际来源：[Using Symbols in Console Output](http://powershell.com/cs/blogs/tips/archive/2015/05/21/using-symbols-in-console-output.aspx)
+本文国际来源：[Using Symbols in Console Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-symbols-in-console-output)

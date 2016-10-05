@@ -31,4 +31,4 @@ tags:
 选择正确的参数很重要。用 `-Add` 参数向属性增加新的值；用 `-Remove` 移除一个已有的值；用 `-Replace` 将属性替换为一个新的值。
 
 <!--more-->
-本文国际来源：[Adding Custom Attributes to AD Objects](http://powershell.com/cs/blogs/tips/archive/2015/07/16/adding-custom-attributes-to-ad-objects.aspx)
+本文国际来源：[Adding Custom Attributes to AD Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-custom-attributes-to-ad-objects)

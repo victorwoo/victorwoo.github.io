@@ -38,4 +38,4 @@ tags:
 现在，`$cred` 中保存的凭据对象可以在任何支持 `-Credential` 参数的 cmdlet 或函数中使用了。
 
 <!--more-->
-本文国际来源：[Encoded Passwords](http://powershell.com/cs/blogs/tips/archive/2015/04/09/encoded-passwords.aspx)
+本文国际来源：[Encoded Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/encoded-passwords)

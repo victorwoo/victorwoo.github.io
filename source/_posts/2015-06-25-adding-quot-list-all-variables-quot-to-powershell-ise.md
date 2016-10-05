@@ -34,4 +34,4 @@ tags:
 当您运行这段代码后，您可以按下 `ALT`+`V` 打开一个网格窗口显示所有打开的脚本中用到的变量。
 
 <!--more-->
-本文国际来源：[Adding "List All Variables" to PowerShell ISE](http://powershell.com/cs/blogs/tips/archive/2015/06/25/adding-quot-list-all-variables-quot-to-powershell-ise.aspx)
+本文国际来源：[Adding "List All Variables" to PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/adding-quot-list-all-variables-quot-to-powershell-ise)

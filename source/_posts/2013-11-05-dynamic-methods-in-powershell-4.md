@@ -72,4 +72,4 @@ tags:
 	} 
 
 <!--more-->
-本文国际来源：[Dynamic Methods in PowerShell 4](http://powershell.com/cs/blogs/tips/archive/2013/11/05/dynamic-methods-in-powershell-4.aspx)
+本文国际来源：[Dynamic Methods in PowerShell 4](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-methods-in-powershell-4)

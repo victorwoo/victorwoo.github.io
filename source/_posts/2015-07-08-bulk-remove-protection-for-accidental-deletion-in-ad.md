@@ -24,4 +24,4 @@ tags:
 注意：这段代码需要免费的 RSAT 工具所带的 ActiveDirectory 模块。
 
 <!--more-->
-本文国际来源：[Bulk-Remove Protection for Accidental Deletion in AD](http://powershell.com/cs/blogs/tips/archive/2015/07/08/bulk-remove-protection-for-accidental-deletion-in-ad.aspx)
+本文国际来源：[Bulk-Remove Protection for Accidental Deletion in AD](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-remove-protection-for-accidental-deletion-in-ad)

@@ -32,4 +32,4 @@ tags:
 如果这对您有用，可以将它改为一个函数，您就可以用 PowerShell 来统计多个 Word 文档共有多少页。
 
 <!--more-->
-本文国际来源：[Counting Pages in a Word Document](http://powershell.com/cs/blogs/tips/archive/2016/02/08/counting-pages-in-a-word-document.aspx)
+本文国际来源：[Counting Pages in a Word Document](http://community.idera.com/powershell/powertips/b/tips/posts/counting-pages-in-a-word-document)

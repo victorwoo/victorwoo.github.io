@@ -27,4 +27,4 @@ _适用于 PowerShell 所有版本_
     explorer.exe "/select,$Path"
 
 <!--more-->
-本文国际来源：[Creating Huge Dummy Files](http://powershell.com/cs/blogs/tips/archive/2014/12/24/creating-huge-dummy-files.aspx)
+本文国际来源：[Creating Huge Dummy Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-huge-dummy-files)

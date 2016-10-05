@@ -51,4 +51,4 @@ This is why the script waits for 15 seconds, and then checks whether the request
         Stop-Process -WhatIf
 
 <!--more-->
-本文国际来源：[Create Benign “Task Kill” Application](http://powershell.com/cs/blogs/tips/archive/2015/07/01/create-benign-task-kill-application.aspx)
+本文国际来源：[Create Benign “Task Kill” Application](http://community.idera.com/powershell/powertips/b/tips/posts/create-benign-task-kill-application)

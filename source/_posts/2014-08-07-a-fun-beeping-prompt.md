@@ -30,4 +30,4 @@ _适用于所有 PowerShell 版本_
 这段代码将会缩短您的 PowerShell 提示符，并且在标题栏上显示当前的路径。这还算是有益的功能。搞破坏的部分是每次执行一条命令，都会发出随机频率的刺耳的三连音:)。
 
 <!--more-->
-本文国际来源：[A Fun Beeping Prompt](http://powershell.com/cs/blogs/tips/archive/2014/08/07/a-fun-beeping-prompt.aspx)
+本文国际来源：[A Fun Beeping Prompt](http://community.idera.com/powershell/powertips/b/tips/posts/a-fun-beeping-prompt)

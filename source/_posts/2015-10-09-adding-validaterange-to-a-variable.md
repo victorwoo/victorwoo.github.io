@@ -34,4 +34,4 @@ tags:
         +  FullyQualifiedErrorId : ValidateSetFailure
 
 <!--more-->
-本文国际来源：[Adding ValidateRange to a Variable](http://powershell.com/cs/blogs/tips/archive/2015/10/09/adding-validaterange-to-a-variable.aspx)
+本文国际来源：[Adding ValidateRange to a Variable](http://community.idera.com/powershell/powertips/b/tips/posts/adding-validaterange-to-a-variable)

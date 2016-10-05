@@ -53,4 +53,4 @@ tags:
 当然，这是个有点黑客的技巧，它总比每次首先得指导您的用户必须使用“.”分隔符来得好。
 
 <!--more-->
-本文国际来源：[Using Comma as Decimal Delimiter](http://powershell.com/cs/blogs/tips/archive/2014/02/05/using-comma-as-decimal-delimiter.aspx)
+本文国际来源：[Using Comma as Decimal Delimiter](http://community.idera.com/powershell/powertips/b/tips/posts/using-comma-as-decimal-delimiter)

@@ -19,4 +19,4 @@ tags:
 另外，还有一个关键字 `return`。它将导致立即退出当前的作用域。所以当您在一个函数中执行 `return`，那么该函数将会退出；而如果您在一个脚本中执行 `return`，那么整个脚本将退出。
 
 <!--more-->
-本文国际来源：[Using break, continue, and return](http://powershell.com/cs/blogs/tips/archive/2014/06/26/using-break-continue-and-return.aspx)
+本文国际来源：[Using break, continue, and return](http://community.idera.com/powershell/powertips/b/tips/posts/using-break-continue-and-return)

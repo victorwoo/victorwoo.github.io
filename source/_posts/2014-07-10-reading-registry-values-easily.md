@@ -24,4 +24,4 @@ tags:
 只需要将 `$Key` 替换成注册表项，将 `$Name` 替换成注册表键，就能读取它的值。
 
 <!--more-->
-本文国际来源：[Reading Registry Values Easily](http://powershell.com/cs/blogs/tips/archive/2014/07/10/reading-registry-values-easily.aspx)
+本文国际来源：[Reading Registry Values Easily](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-easily)

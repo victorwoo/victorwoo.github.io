@@ -56,4 +56,4 @@ _适用于 PowerShell 3.0 及以上版本_
 请注意只有获得了管理员权限才可以获取进程所有者。如果没有货的管理员权限，您只能获得您自己进程的所有者，这样相对意义不大。
 
 <!--more-->
-本文国际来源：[Finding Process Owner](http://powershell.com/cs/blogs/tips/archive/2015/03/03/finding-process-owner.aspx)
+本文国际来源：[Finding Process Owner](http://community.idera.com/powershell/powertips/b/tips/posts/finding-process-owner)

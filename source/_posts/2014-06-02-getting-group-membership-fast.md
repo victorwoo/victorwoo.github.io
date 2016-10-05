@@ -27,4 +27,4 @@ tags:
       } 
 
 <!--more-->
-本文国际来源：[Getting Group Membership - Fast](http://powershell.com/cs/blogs/tips/archive/2014/06/02/getting-group-membership-fast.aspx)
+本文国际来源：[Getting Group Membership - Fast](http://community.idera.com/powershell/powertips/b/tips/posts/getting-group-membership-fast)

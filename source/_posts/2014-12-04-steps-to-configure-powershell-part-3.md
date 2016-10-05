@@ -51,4 +51,4 @@ Invoke-Command -ScriptBlock { "Hello" > c:\IwasHERE.txt } -ComputerName ABC -Cre
 请注意：当您想用非 Kerberos 验证的时候，加入域的计算机需要使用 `-Credential` 参数。
 
 <!--more-->
-本文国际来源：[Steps to Configure PowerShell (Part 3)](http://powershell.com/cs/blogs/tips/archive/2014/12/04/steps-to-configure-powershell-part-3.aspx)
+本文国际来源：[Steps to Configure PowerShell (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/steps-to-configure-powershell-part-3)

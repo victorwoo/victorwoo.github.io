@@ -27,4 +27,4 @@ tags:
 您可以通过管道将任何对象传给 `Out-GridView`。用户可以从界面中选择输出结果的一部分，或者用关键词过滤结果，然后选择结果的一个或多个元素。点击 OK 之后，选中的元素将传输到下一个命令。
 <!--more-->
 
-本文国际来源：[Turn Out-GridView into Selection Dialog](http://powershell.com/cs/blogs/tips/archive/2013/09/17/turn-out-gridview-into-selection-dialog.aspx)
+本文国际来源：[Turn Out-GridView into Selection Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/turn-out-gridview-into-selection-dialog)

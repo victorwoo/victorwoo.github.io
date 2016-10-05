@@ -64,4 +64,4 @@ _适用于所有 PowerShell 版本_
     }
 
 <!--more-->
-本文国际来源：[Converting Special Characters, Part 2](http://powershell.com/cs/blogs/tips/archive/2014/07/22/converting-special-characters-part-2.aspx)
+本文国际来源：[Converting Special Characters, Part 2](http://community.idera.com/powershell/powertips/b/tips/posts/converting-special-characters-part-2)

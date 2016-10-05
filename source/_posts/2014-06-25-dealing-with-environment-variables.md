@@ -32,4 +32,4 @@ tags:
 	USERDOMAIN                     TobiasAir1
 
 <!--more-->
-本文国际来源：[Dealing with Environment Variables](http://powershell.com/cs/blogs/tips/archive/2014/06/25/dealing-with-environment-variables.aspx)
+本文国际来源：[Dealing with Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-environment-variables)

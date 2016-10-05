@@ -50,4 +50,4 @@ PowerShell ISE 只支持行断点：它们的作用是当调试器命中指定�
     Remove-PSBreakpoint -Breakpoint $bp
 
 <!--more-->
-本文国际来源：[Conditional Breakpoints](http://powershell.com/cs/blogs/tips/archive/2015/01/08/conditional-breakpoints.aspx)
+本文国际来源：[Conditional Breakpoints](http://community.idera.com/powershell/powertips/b/tips/posts/conditional-breakpoints)

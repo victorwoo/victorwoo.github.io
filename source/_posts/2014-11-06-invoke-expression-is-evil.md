@@ -39,4 +39,4 @@ _适用于 PowerShell 所有版本_
     }
 
 <!--more-->
-本文国际来源：[Invoke-Expression is Evil](http://powershell.com/cs/blogs/tips/archive/2014/11/06/invoke-expression-is-evil.aspx)
+本文国际来源：[Invoke-Expression is Evil](http://community.idera.com/powershell/powertips/b/tips/posts/invoke-expression-is-evil)

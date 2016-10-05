@@ -49,4 +49,4 @@ tags:
 
 
 <!--more-->
-本文国际来源：[Expanding Variables in Strings](http://powershell.com/cs/blogs/tips/archive/2014/02/26/expanding-variables-in-strings.aspx)
+本文国际来源：[Expanding Variables in Strings](http://community.idera.com/powershell/powertips/b/tips/posts/expanding-variables-in-strings)

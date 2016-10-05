@@ -25,4 +25,4 @@ tags:
       Where-Object { $_.EntryType -eq 'Error' }
 
 <!--more-->
-本文国际来源：[Analyzing (All) Event Log Entries](http://powershell.com/cs/blogs/tips/archive/2015/06/22/analyzing-all-event-log-entries.aspx)
+本文国际来源：[Analyzing (All) Event Log Entries](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-all-event-log-entries)

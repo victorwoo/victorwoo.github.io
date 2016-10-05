@@ -10,6 +10,6 @@ tags: powershell
 * [Understanding the Six PowerShell Profiles](http://vmin.wordpress.com/2012/05/28/understanding-the-six-powershell-profiles-technet-blogs/)
 
 以下是 PowerShell 自动加载模块的相关文章：
-* [Loading Modules Automatically](http://powershell.com/cs/blogs/tips/archive/2013/11/21/loading-modules-automatically.aspx)
-* [Improving Module Auto-loading](http://powershell.com/cs/blogs/tips/archive/2013/11/22/improving-module-auto-loading.aspx)
+* [Loading Modules Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/loading-modules-automatically)
+* [Improving Module Auto-loading](http://community.idera.com/powershell/powertips/b/tips/posts/improving-module-auto-loading)
 * [在所有用户登录时自动运行PowerShell脚本](http://www.pstips.net/run-powershell-scripts-when-each-user-login-on.html)

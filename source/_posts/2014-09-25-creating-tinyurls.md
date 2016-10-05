@@ -25,4 +25,4 @@ _适用于 PowerShell 所有版本_
 只需要将需要缩短的网址赋给 `$OriginalURL`，运行脚本。它将返回对应的短网址。
 
 <!--more-->
-本文国际来源：[Creating TinyURLs](http://powershell.com/cs/blogs/tips/archive/2014/09/25/creating-tinyurls.aspx)
+本文国际来源：[Creating TinyURLs](http://community.idera.com/powershell/powertips/b/tips/posts/creating-tinyurls)

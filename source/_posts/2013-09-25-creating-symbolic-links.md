@@ -54,4 +54,4 @@ tags:
 当您（以管理员身份）运行这段代码时，它将使您能在桌面上访问下载文件夹。请右击符号链接并选择**属性**，并和“普通”的\*.link文件做对比。
 <!--more-->
 
-本文国际来源：[Creating Symbolic Links](http://powershell.com/cs/blogs/tips/archive/2013/09/25/creating-symbolic-links.aspx)
+本文国际来源：[Creating Symbolic Links](http://community.idera.com/powershell/powertips/b/tips/posts/creating-symbolic-links)

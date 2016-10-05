@@ -31,4 +31,4 @@ tags:
 它们的路径基本上相同，除了后者文件名不含宿主名，而只是叫做“profile.ps1”。
 
 <!--more-->
-本文国际来源：[Using Profile Scripts](http://powershell.com/cs/blogs/tips/archive/2014/06/13/using-profile-scripts.aspx)
+本文国际来源：[Using Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-profile-scripts)

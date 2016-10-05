@@ -19,4 +19,4 @@ tags:
     Set-ADUser -Identity username -ChangePasswordAtNextLogon $true
 
 <!--more-->
-本文国际来源：[Force User to Change Password](http://powershell.com/cs/blogs/tips/archive/2015/12/28/force-user-to-change-password.aspx)
+本文国际来源：[Force User to Change Password](http://community.idera.com/powershell/powertips/b/tips/posts/force-user-to-change-password)

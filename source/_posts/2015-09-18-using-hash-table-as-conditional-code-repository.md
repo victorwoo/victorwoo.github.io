@@ -51,4 +51,4 @@ tags:
 
 
 <!--more-->
-本文国际来源：[Using Hash Table as Conditional Code Repository](http://powershell.com/cs/blogs/tips/archive/2015/09/18/using-hash-table-as-conditional-code-repository.aspx)
+本文国际来源：[Using Hash Table as Conditional Code Repository](http://community.idera.com/powershell/powertips/b/tips/posts/using-hash-table-as-conditional-code-repository)

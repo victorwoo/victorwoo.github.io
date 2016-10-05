@@ -30,4 +30,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Getting Active Directory Account Information](http://powershell.com/cs/blogs/tips/archive/2013/10/17/getting-active-directory-account-information.aspx)
+本文国际来源：[Getting Active Directory Account Information](http://community.idera.com/powershell/powertips/b/tips/posts/getting-active-directory-account-information)

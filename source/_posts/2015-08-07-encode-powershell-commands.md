@@ -29,4 +29,4 @@ tags:
     Start-Process -FilePath powershell.exe -ArgumentList $args
 
 <!--more-->
-本文国际来源：[Encode PowerShell Commands](http://powershell.com/cs/blogs/tips/archive/2015/08/07/encode-powershell-commands.aspx)
+本文国际来源：[Encode PowerShell Commands](http://community.idera.com/powershell/powertips/b/tips/posts/encode-powershell-commands)

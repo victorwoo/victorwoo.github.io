@@ -31,4 +31,4 @@ PowerShell 4.0 （Windows 8.1 自带）中的数组原生支持 Foreach 和 Wher
 	@(1..10).Where({$_ -gt 2}, 'skipuntil', 5).Foreach([Timespan])
 
 <!--more-->
-本文国际来源：[Hidden Array Extensions in PowerShell 4.0](http://powershell.com/cs/blogs/tips/archive/2014/01/20/hidden-array-extensions-in-powershell-4-0.aspx)
+本文国际来源：[Hidden Array Extensions in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/hidden-array-extensions-in-powershell-4-0)

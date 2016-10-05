@@ -27,4 +27,4 @@ _适用于 PowerShell 所有版本_
 请注意两个技能都只对缺省的确认对话框有效。如果一个 cmdlet 以 PowerShell 确认框架之外的方式提示确认，您需要参阅 cmdlet 的文档来查找如何禁止它的方法。
 
 <!--more-->
-本文国际来源：[Suppress Confirmation](http://powershell.com/cs/blogs/tips/archive/2015/03/11/suppress-confirmation.aspx)
+本文国际来源：[Suppress Confirmation](http://community.idera.com/powershell/powertips/b/tips/posts/suppress-confirmation)

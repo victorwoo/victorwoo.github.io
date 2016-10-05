@@ -37,4 +37,4 @@ tags:
     False 
     
 <!--more-->
-本文国际来源：[Converting Text Arrays to String](http://powershell.com/cs/blogs/tips/archive/2014/05/19/converting-text-arrays-to-string.aspx)
+本文国际来源：[Converting Text Arrays to String](http://community.idera.com/powershell/powertips/b/tips/posts/converting-text-arrays-to-string)

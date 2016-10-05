@@ -49,4 +49,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Verbose Output for PowerShell Functions](http://powershell.com/cs/blogs/tips/archive/2013/09/19/verbose-output-for-powershell-functions.aspx)
+本文国际来源：[Verbose Output for PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/verbose-output-for-powershell-functions)

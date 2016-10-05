@@ -32,4 +32,4 @@ tags:
 如果您从一个批处理文件或是 VBScript 中运行一段 PowerShell 脚本，该数值型返回值将会赋给 `%ERRORLEVEL%` 环境变量，好比 PowerShell 是一个控制台应用程序一样——实际上 powershell.exe 确实是。
 
 <!--more-->
-本文国际来源：[Receiving Error Level from PowerShell Script](http://powershell.com/cs/blogs/tips/archive/2015/04/29/receiving-error-level-from-powershell-script.aspx)
+本文国际来源：[Receiving Error Level from PowerShell Script](http://community.idera.com/powershell/powertips/b/tips/posts/receiving-error-level-from-powershell-script)

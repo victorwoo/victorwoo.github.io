@@ -62,4 +62,4 @@ tags:
 请注意参数：它使用了 `[AllowEmptyString()]` 属性。它确保可以接受空字符串参数。在 mandatory （必须）参数中，如果没有这个属性，是不允许空字符串的。
 
 <!--more-->
-本文国际来源：[Process Data (Part 3)](http://powershell.com/cs/blogs/tips/archive/2016/02/04/process-data-part-3.aspx)
+本文国际来源：[Process Data (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/process-data-part-3)

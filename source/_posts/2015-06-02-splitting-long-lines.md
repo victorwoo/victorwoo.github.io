@@ -35,4 +35,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Splitting Long Lines](http://powershell.com/cs/blogs/tips/archive/2015/06/02/splitting-long-lines.aspx)
+本文国际来源：[Splitting Long Lines](http://community.idera.com/powershell/powertips/b/tips/posts/splitting-long-lines)

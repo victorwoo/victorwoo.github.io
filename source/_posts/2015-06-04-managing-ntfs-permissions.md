@@ -60,4 +60,4 @@ tags:
     $acl | Set-Acl -Path $path
 
 <!--more-->
-本文国际来源：[Managing NTFS Permissions](http://powershell.com/cs/blogs/tips/archive/2015/06/04/managing-ntfs-permissions.aspx)
+本文国际来源：[Managing NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ntfs-permissions)

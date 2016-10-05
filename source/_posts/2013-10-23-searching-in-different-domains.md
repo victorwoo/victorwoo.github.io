@@ -28,4 +28,4 @@ This example will find all accounts with a SamAccountName that starts with "tobi
 	$searcher.FindAll() 
 
 <!--more-->
-本文国际来源：[Searching in Different Domains](http://powershell.com/cs/blogs/tips/archive/2013/10/23/searching-in-different-domains.aspx)
+本文国际来源：[Searching in Different Domains](http://community.idera.com/powershell/powertips/b/tips/posts/searching-in-different-domains)

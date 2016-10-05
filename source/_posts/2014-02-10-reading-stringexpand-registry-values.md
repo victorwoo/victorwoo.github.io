@@ -33,4 +33,4 @@ tags:
 	$key.GetValueKind('DevicePath')
 
 <!--more-->
-本文国际来源：[Reading StringExpand Registry Values](http://powershell.com/cs/blogs/tips/archive/2014/02/10/reading-stringexpand-registry-values.aspx)
+本文国际来源：[Reading StringExpand Registry Values](http://community.idera.com/powershell/powertips/b/tips/posts/reading-stringexpand-registry-values)

@@ -66,4 +66,4 @@ function Out-Notepad
 
 
 <!--more-->
-本文国际来源：[Send Text to Notepad](http://powershell.com/cs/blogs/tips/archive/2016/02/11/send-text-to-notepad.aspx)
+本文国际来源：[Send Text to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/send-text-to-notepad)

@@ -32,4 +32,4 @@ tags:
 “$this”是您需要扩展的对象。
 
 <!--more-->
-本文国际来源：[Getting DLL File Version Info](http://powershell.com/cs/blogs/tips/archive/2013/12/04/getting-dll-file-version-info.aspx)
+本文国际来源：[Getting DLL File Version Info](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dll-file-version-info)

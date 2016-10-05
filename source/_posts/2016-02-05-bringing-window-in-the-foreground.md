@@ -46,4 +46,4 @@ PowerShell 可以使用 `Add-Type` 来操作 Windows 内置的 API 功能。通�
     Show-Process -Process (Get-Process -Id $PID)
 
 <!--more-->
-本文国际来源：[Bringing Window in the Foreground](http://powershell.com/cs/blogs/tips/archive/2016/02/05/bringing-window-in-the-foreground.aspx)
+本文国际来源：[Bringing Window in the Foreground](http://community.idera.com/powershell/powertips/b/tips/posts/bringing-window-in-the-foreground)

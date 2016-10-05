@@ -24,4 +24,4 @@ tags:
 这也是一个更改 Windows 注册表的模板代码。
 
 <!--more-->
-本文国际来源：[Setting New Windows Registered Owner](http://powershell.com/cs/blogs/tips/archive/2015/09/22/setting-new-windows-registered-owner.aspx)
+本文国际来源：[Setting New Windows Registered Owner](http://community.idera.com/powershell/powertips/b/tips/posts/setting-new-windows-registered-owner)

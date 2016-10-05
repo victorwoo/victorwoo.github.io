@@ -34,4 +34,4 @@ _适用于 PowerShell 所有版本_
       Sort-Object -Property { [version] $_ }
 
 <!--more-->
-本文国际来源：[Sort Things with Type](http://powershell.com/cs/blogs/tips/archive/2015/03/17/sort-things-with-type.aspx)
+本文国际来源：[Sort Things with Type](http://community.idera.com/powershell/powertips/b/tips/posts/sort-things-with-type)

@@ -25,4 +25,4 @@ _适用于 PowerShell 所有版本_
 复制安全描述符操作可能需要管理员权限。请注意第二个文件夹的所有安全规则都会被第一个文件夹的安全信息覆盖。
 
 <!--more-->
-本文国际来源：[Cloning NTFS Permissions ](http://powershell.com/cs/blogs/tips/archive/2014/12/17/cloning-ntfs-permissions.aspx)
+本文国际来源：[Cloning NTFS Permissions ](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-ntfs-permissions)

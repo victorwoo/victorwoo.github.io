@@ -45,4 +45,4 @@ PowerShell 是基于控制台的，但有些时候加入一些简单的对话框
     }
 
 <!--more-->
-本文国际来源：[Display Message Box Dialog](http://powershell.com/cs/blogs/tips/archive/2015/11/09/display-message-box-dialog.aspx)
+本文国际来源：[Display Message Box Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/display-message-box-dialog)

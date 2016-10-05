@@ -21,4 +21,4 @@ tags:
     Get-ChildItem -Path $path -Name 
 
 <!--more-->
-本文国际来源：[Finding Registered Event Sources](http://powershell.com/cs/blogs/tips/archive/2014/04/23/finding-registered-event-sources.aspx)
+本文国际来源：[Finding Registered Event Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-registered-event-sources)

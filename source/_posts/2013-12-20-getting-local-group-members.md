@@ -30,4 +30,4 @@ tags:
 ![](/img/2013-12-20-getting-local-group-members-003.png)
 
 <!--more-->
-本文国际来源：[Getting Local Group Members](http://powershell.com/cs/blogs/tips/archive/2013/12/20/getting-local-group-members.aspx)
+本文国际来源：[Getting Local Group Members](http://community.idera.com/powershell/powertips/b/tips/posts/getting-local-group-members)

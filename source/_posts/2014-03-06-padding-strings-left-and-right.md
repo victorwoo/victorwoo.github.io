@@ -31,4 +31,4 @@ tags:
 ![](/img/2014-03-06-padding-strings-left-and-right-002.png)
 
 <!--more-->
-本文国际来源：[Padding Strings Left and Right](http://powershell.com/cs/blogs/tips/archive/2014/03/06/padding-strings-left-and-right.aspx)
+本文国际来源：[Padding Strings Left and Right](http://community.idera.com/powershell/powertips/b/tips/posts/padding-strings-left-and-right)

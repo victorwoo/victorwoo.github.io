@@ -40,4 +40,4 @@ tags:
 请注意使用工作流需要更多地了解它们的架构和限制。这个例子关注于工作流提供的并行循环技术。
 
 <!--more-->
-本文国际来源：[Using Workflows to Parallelize Code](http://powershell.com/cs/blogs/tips/archive/2016/02/22/using-workflows-to-parallelize-code.aspx)
+本文国际来源：[Using Workflows to Parallelize Code](http://community.idera.com/powershell/powertips/b/tips/posts/using-workflows-to-parallelize-code)

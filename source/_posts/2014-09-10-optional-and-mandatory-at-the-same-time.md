@@ -39,4 +39,4 @@ _适用于 PowerShell 所有版本_
     Connect-Somewhere -Credential test
 
 <!--more-->
-本文国际来源：[Optional and Mandatory at the Same Time](http://powershell.com/cs/blogs/tips/archive/2014/09/10/optional-and-mandatory-at-the-same-time.aspx)
+本文国际来源：[Optional and Mandatory at the Same Time](http://community.idera.com/powershell/powertips/b/tips/posts/optional-and-mandatory-at-the-same-time)

@@ -54,4 +54,4 @@ tags:
 	Find-Service | Out-GridView
 
 <!--more-->
-本文国际来源：[Finding Services in PowerShell](http://powershell.com/cs/blogs/tips/archive/2013/10/30/finding-services-in-powershell.aspx)
+本文国际来源：[Finding Services in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/finding-services-in-powershell)

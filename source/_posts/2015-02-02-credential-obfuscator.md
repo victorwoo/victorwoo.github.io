@@ -49,4 +49,4 @@ _适用于 PowerShell ISE 3.0 及以上版本_
     $cred
 
 <!--more-->
-本文国际来源：[Credential Obfuscator](http://powershell.com/cs/blogs/tips/archive/2015/02/02/credential-obfuscator.aspx)
+本文国际来源：[Credential Obfuscator](http://community.idera.com/powershell/powertips/b/tips/posts/credential-obfuscator)

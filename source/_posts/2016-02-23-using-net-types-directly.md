@@ -37,4 +37,4 @@ Cmdlet 内含了纯 .NET 代码，所以感谢 cmdlet，我们通常无需接触
     $dialog.FileName
 
 <!--more-->
-本文国际来源：[Using .NET Types Directly](http://powershell.com/cs/blogs/tips/archive/2016/02/23/using-net-types-directly.aspx)
+本文国际来源：[Using .NET Types Directly](http://community.idera.com/powershell/powertips/b/tips/posts/using-net-types-directly)

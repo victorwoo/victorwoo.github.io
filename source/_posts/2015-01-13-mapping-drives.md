@@ -23,4 +23,4 @@ _适用于 PowerShell 3.0 及以上版本_
     New-PSDrive -Name k -PSProvider FileSystem -Root \\storage2\vid -Persist -Scope Global
 
 <!--more-->
-本文国际来源：[Mapping Drives](http://powershell.com/cs/blogs/tips/archive/2015/01/13/mapping-drives.aspx)
+本文国际来源：[Mapping Drives](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-drives)

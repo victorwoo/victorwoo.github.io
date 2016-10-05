@@ -49,4 +49,4 @@ tags:
     Out-GridView
 
 <!--more-->
-本文国际来源：[Identifying Risky NTFS Permissions](http://powershell.com/cs/blogs/tips/archive/2015/04/24/identifying-risky-ntfs-permissions.aspx)
+本文国际来源：[Identifying Risky NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-risky-ntfs-permissions)

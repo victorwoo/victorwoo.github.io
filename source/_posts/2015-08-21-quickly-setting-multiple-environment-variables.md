@@ -33,4 +33,4 @@ tags:
 通过类似的方法，您也可以删除环境变量。只需要将空字符串赋值给哈希表中的值即可。
 
 <!--more-->
-本文国际来源：[Quickly Setting Multiple Environment Variables](http://powershell.com/cs/blogs/tips/archive/2015/08/21/quickly-setting-multiple-environment-variables.aspx)
+本文国际来源：[Quickly Setting Multiple Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-setting-multiple-environment-variables)

@@ -30,4 +30,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Finding AD User Accounts](http://powershell.com/cs/blogs/tips/archive/2013/10/16/finding-ad-user-accounts.aspx)
+本文国际来源：[Finding AD User Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-user-accounts)

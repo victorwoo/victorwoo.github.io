@@ -33,4 +33,4 @@ tags:
 `New-Folder` 函数将创建一个新文件夹（如果它不存在），然后使用 `icacls.exe` 来禁止继承、允许 Administrators 组读取以及赋予指定用户完全控制权限。
 
 <!--more-->
-本文国际来源：[Using ICACLS to Secure Folders](http://powershell.com/cs/blogs/tips/archive/2014/01/03/using-icacls-to-secure-folders.aspx)
+本文国际来源：[Using ICACLS to Secure Folders](http://community.idera.com/powershell/powertips/b/tips/posts/using-icacls-to-secure-folders)

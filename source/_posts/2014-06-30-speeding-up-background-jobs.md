@@ -73,4 +73,4 @@ tags:
 总的来说，后台任务适合于做一些简单的事情（例如配置）而不返回任何数据或只返回少量的数据。
 
 <!--more-->
-本文国际来源：[Speeding Up Background Jobs](http://powershell.com/cs/blogs/tips/archive/2014/06/30/speeding-up-background-jobs.aspx)
+本文国际来源：[Speeding Up Background Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-background-jobs)

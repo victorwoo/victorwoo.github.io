@@ -29,4 +29,4 @@ tags:
     Get-Module -ListAvailable | Import-Module -Verbose
 
 <!--more-->
-本文国际来源：[Loading PowerShell Modules](http://powershell.com/cs/blogs/tips/archive/2015/06/16/loading-powershell-modules.aspx)
+本文国际来源：[Loading PowerShell Modules](http://community.idera.com/powershell/powertips/b/tips/posts/loading-powershell-modules)

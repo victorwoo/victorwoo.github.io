@@ -62,4 +62,4 @@ tags:
 有两件事值得一提：千万不要用一个纯数组来收集信息。而是使用一个 `ArraryList` 对象，因为它添加新的元素比较快。并且避免将 `$input` 用于类似用途的自动变量。`$input` 只能用于管道输入并且忽略提交到参数的值。
 
 <!--more-->
-本文国际来源：[Process Data (Part 2)](http://powershell.com/cs/blogs/tips/archive/2016/02/03/process-data-part-2.aspx)
+本文国际来源：[Process Data (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/process-data-part-2)

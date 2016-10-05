@@ -97,4 +97,4 @@ PowerShell 为多数常见的 .NET 类型定义了一个短名字。要查看已
     Unknown                                                        UnknownType
 
 <!--more-->
-本文国际来源：[Simplifying .NET Types](http://powershell.com/cs/blogs/tips/archive/2015/01/15/simplifying-net-types.aspx)
+本文国际来源：[Simplifying .NET Types](http://community.idera.com/powershell/powertips/b/tips/posts/simplifying-net-types)

@@ -44,4 +44,4 @@ If you planned to get a list of stoppable services, the above line would not wor
     PS> Get-Service | Where-Object { !$_.CanStop -and $_.Status -eq 'Running' }
 
 <!--more-->
-本文国际来源：[Finding All Stoppable Services ](http://powershell.com/cs/blogs/tips/archive/2015/02/16/finding-all-stoppable-services.aspx)
+本文国际来源：[Finding All Stoppable Services ](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-stoppable-services)

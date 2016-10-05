@@ -17,4 +17,4 @@ tags:
     ([adsisearcher]"(samaccountname=$env:USERNAME)").FindOne().Properties['displayname']
 
 <!--more-->
-本文国际来源：[Getting Active Directory User Name](http://powershell.com/cs/blogs/tips/archive/2015/06/26/getting-active-directory-user-name.aspx)
+本文国际来源：[Getting Active Directory User Name](http://community.idera.com/powershell/powertips/b/tips/posts/getting-active-directory-user-name)

@@ -29,4 +29,4 @@ PowerShell 不仅是一个自动化操作的语言，而且是另一个用户操
 ![](/img/2014-02-25-using-aliases-to-launch-windows-components-003.png)
 
 <!--more-->
-本文国际来源：[Using Aliases to Launch Windows Components](http://powershell.com/cs/blogs/tips/archive/2014/02/25/using-aliases-to-launch-windows-components.aspx)
+本文国际来源：[Using Aliases to Launch Windows Components](http://community.idera.com/powershell/powertips/b/tips/posts/using-aliases-to-launch-windows-components)

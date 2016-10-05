@@ -26,4 +26,4 @@ tags:
     Write-Host -ForegroundColor Red ('Total Runtime: ' + ($end - $start).TotalSeconds)
     
 <!--more-->
-本文国际来源：[Logging Script Runtime](http://powershell.com/cs/blogs/tips/archive/2014/04/09/logging-script-runtime.aspx)
+本文国际来源：[Logging Script Runtime](http://community.idera.com/powershell/powertips/b/tips/posts/logging-script-runtime)

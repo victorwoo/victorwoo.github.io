@@ -51,4 +51,4 @@ $pictureString
 明天，我们将演示如何将 Base64 编码后的图片加载到内存中，并在自己的 WPF 窗口中显示。
 
 <!--more-->
-本文国际来源：[Encoding Pictures](http://powershell.com/cs/blogs/tips/archive/2016/01/04/encoding-pictures.aspx)
+本文国际来源：[Encoding Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/encoding-pictures)

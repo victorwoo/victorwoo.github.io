@@ -25,4 +25,4 @@ Windows 8.1 发布了一个称为“Defender”的新模块。内置的 cmdlet �
 `Get-MpThreatDetection` 将会列出当前检测到的所有威胁（如果当前没有任何威胁，则返回空）。
 
 <!--more-->
-本文国际来源：[Managing Windows Defender in Windows 8.1](http://powershell.com/cs/blogs/tips/archive/2013/12/24/managing-windows-defender-in-windows-8-1.aspx)
+本文国际来源：[Managing Windows Defender in Windows 8.1](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-defender-in-windows-8-1)

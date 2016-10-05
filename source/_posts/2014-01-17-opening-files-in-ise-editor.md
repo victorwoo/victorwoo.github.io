@@ -27,4 +27,4 @@ tags:
 （顺便提一下：有一个叫做 `psEdit` 的函数使用效果十分相似，但是只在 PowerShell ISE 内部有效，在 PowerShell.exe 控制台中无效。）
 
 <!--more-->
-本文国际来源：[Opening Files in ISE Editor](http://powershell.com/cs/blogs/tips/archive/2014/01/17/opening-files-in-ise-editor.aspx)
+本文国际来源：[Opening Files in ISE Editor](http://community.idera.com/powershell/powertips/b/tips/posts/opening-files-in-ise-editor)

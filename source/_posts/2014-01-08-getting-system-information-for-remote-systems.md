@@ -32,4 +32,4 @@ tags:
 
 
 <!--more-->
-本文国际来源：[Getting System Information for Remote Systems](http://powershell.com/cs/blogs/tips/archive/2014/01/08/getting-system-information-for-remote-systems.aspx)
+本文国际来源：[Getting System Information for Remote Systems](http://community.idera.com/powershell/powertips/b/tips/posts/getting-system-information-for-remote-systems)

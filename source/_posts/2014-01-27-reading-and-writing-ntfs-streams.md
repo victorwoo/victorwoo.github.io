@@ -38,4 +38,4 @@ tags:
 要从一个流中读取隐藏信息，请使用 `Get-Content` 命令，并为 `-Stream` 参数指定存储数据时用的名字。
 
 <!--more-->
-本文国际来源：[Reading and Writing NTFS Streams](http://powershell.com/cs/blogs/tips/archive/2014/01/27/reading-and-writing-ntfs-streams.aspx)
+本文国际来源：[Reading and Writing NTFS Streams](http://community.idera.com/powershell/powertips/b/tips/posts/reading-and-writing-ntfs-streams)

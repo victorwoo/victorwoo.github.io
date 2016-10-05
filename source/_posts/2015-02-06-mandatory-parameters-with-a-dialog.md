@@ -65,4 +65,4 @@ _适用于 PowerShell 所有版本_
     PS>
 
 <!--more-->
-本文国际来源：[Mandatory Parameters with a Dialog](http://powershell.com/cs/blogs/tips/archive/2015/02/06/mandatory-parameters-with-a-dialog.aspx)
+本文国际来源：[Mandatory Parameters with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameters-with-a-dialog)

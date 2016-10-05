@@ -21,4 +21,4 @@ tags:
 这将会把您最后键入的 5 条命令复制到剪贴板中。
 
 <!--more-->
-本文国际来源：[Copying Command History](http://powershell.com/cs/blogs/tips/archive/2014/07/08/copying-command-history.aspx)
+本文国际来源：[Copying Command History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history)

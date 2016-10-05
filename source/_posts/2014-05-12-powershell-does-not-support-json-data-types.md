@@ -47,4 +47,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[PowerShell does not support JSON Data Types](http://powershell.com/cs/blogs/tips/archive/2014/05/12/powershell-does-not-support-json-data-types.aspx)
+本文国际来源：[PowerShell does not support JSON Data Types](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-does-not-support-json-data-types)

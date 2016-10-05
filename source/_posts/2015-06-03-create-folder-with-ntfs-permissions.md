@@ -39,4 +39,4 @@ tags:
     $acl | Set-Acl -Path $path
 
 <!--more-->
-本文国际来源：[Create Folder with NTFS Permissions](http://powershell.com/cs/blogs/tips/archive/2015/06/03/create-folder-with-ntfs-permissions.aspx)
+本文国际来源：[Create Folder with NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/create-folder-with-ntfs-permissions)

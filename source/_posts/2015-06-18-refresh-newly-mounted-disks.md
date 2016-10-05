@@ -19,4 +19,4 @@ tags:
     $null = Get-PSDrive
 
 <!--more-->
-本文国际来源：[Refresh Newly Mounted Disks](http://powershell.com/cs/blogs/tips/archive/2015/06/18/refresh-newly-mounted-disks.aspx)
+本文国际来源：[Refresh Newly Mounted Disks](http://community.idera.com/powershell/powertips/b/tips/posts/refresh-newly-mounted-disks)

@@ -28,4 +28,4 @@ tags:
 当脚本调用“test”函数时，函数定义了一个 `$a` 并且将它的值设为 2。在调用者作用域中，变量 `$a` 的值是 1。通过 `Get-Variable`，函数内可以得到外层作用域中的变量值。
 
 <!--more-->
-本文国际来源：[Getting Variable Value in Parent Scope](http://powershell.com/cs/blogs/tips/archive/2014/05/08/getting-variable-value-in-parent-scope.aspx)
+本文国际来源：[Getting Variable Value in Parent Scope](http://community.idera.com/powershell/powertips/b/tips/posts/getting-variable-value-in-parent-scope)

@@ -34,4 +34,4 @@ tags:
 	New-Object -TypeName PSObject -Property $hashtable
 
 <!--more-->
-本文国际来源：[Ordered Hash Tables and Changing Order](http://powershell.com/cs/blogs/tips/archive/2013/12/27/ordered-hash-tables-and-changing-order.aspx)
+本文国际来源：[Ordered Hash Tables and Changing Order](http://community.idera.com/powershell/powertips/b/tips/posts/ordered-hash-tables-and-changing-order)

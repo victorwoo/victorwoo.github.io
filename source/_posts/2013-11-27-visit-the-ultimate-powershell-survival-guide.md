@@ -17,4 +17,4 @@ tags:
 http://social.technet.microsoft.com/wiki/contents/articles/183.windows-powershell-survival-guide.aspx
 
 <!--more-->
-本文国际来源：[Visit the Ultimate PowerShell Survival Guide](http://powershell.com/cs/blogs/tips/archive/2013/11/27/visit-the-ultimate-powershell-survival-guide.aspx)
+本文国际来源：[Visit the Ultimate PowerShell Survival Guide](http://community.idera.com/powershell/powertips/b/tips/posts/visit-the-ultimate-powershell-survival-guide)

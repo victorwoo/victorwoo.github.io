@@ -67,4 +67,4 @@ _适用于 PowerShell 2.0 及以上版本_
     SystemShipDate : 23.03.2004 07:00:00
 
 <!--more-->
-本文国际来源：[Checking DELL Warranty Online](http://powershell.com/cs/blogs/tips/archive/2015/01/27/checking-dell-warranty-online.aspx)
+本文国际来源：[Checking DELL Warranty Online](http://community.idera.com/powershell/powertips/b/tips/posts/checking-dell-warranty-online)

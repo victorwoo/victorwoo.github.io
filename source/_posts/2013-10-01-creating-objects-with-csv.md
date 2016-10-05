@@ -67,4 +67,4 @@ tags:
 请挑选一个您自己最喜欢的方式——不过请注意最后一个例子需要 PowerShell 3.0 或更高的版本。
 <!--more-->
 
-本文国际来源：[Creating Objects with CSV](http://powershell.com/cs/blogs/tips/archive/2013/10/01/creating-objects-with-csv.aspx)
+本文国际来源：[Creating Objects with CSV](http://community.idera.com/powershell/powertips/b/tips/posts/creating-objects-with-csv)

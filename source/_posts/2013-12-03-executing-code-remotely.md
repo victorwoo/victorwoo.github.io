@@ -39,4 +39,4 @@ tags:
 而当您去掉 `-ComputerName` 参数的注释，代码将会在 `$list` 变量存储的所有计算机上执行。请确保它们存在并且已启用了远程操作功能。当您从远程计算机收到数据时，PowerShell 自动在返回的信息上附加一个 `"PSComputerName"` 属性，用来存储返回信息的计算机名。
 
 <!--more-->
-本文国际来源：[Executing Code Remotely](http://powershell.com/cs/blogs/tips/archive/2013/12/03/executing-code-remotely.aspx)
+本文国际来源：[Executing Code Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/executing-code-remotely)

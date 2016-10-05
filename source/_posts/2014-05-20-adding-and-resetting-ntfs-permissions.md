@@ -58,4 +58,4 @@ tags:
 这将自动打开上下文菜单并列出所有可用的设置。
 
 <!--more-->
-本文国际来源：[Adding and Resetting NTFS Permissions](http://powershell.com/cs/blogs/tips/archive/2014/05/20/adding-and-resetting-ntfs-permissions.aspx)
+本文国际来源：[Adding and Resetting NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/adding-and-resetting-ntfs-permissions)

@@ -39,4 +39,4 @@ tags:
 运行该配置只会创建一个 MOF 文件。要应用该 MOF 文件，请使用 `Start-DSCConfiguration` cmdlet。请使用 `-Wait` 来等待配置生效。否则，该配置将会在后台以任务的方式完成。
 
 <!--more-->
-本文国际来源：[Start to Look at DSC](http://powershell.com/cs/blogs/tips/archive/2014/05/22/start-to-look-at-dsc.aspx)
+本文国际来源：[Start to Look at DSC](http://community.idera.com/powershell/powertips/b/tips/posts/start-to-look-at-dsc)

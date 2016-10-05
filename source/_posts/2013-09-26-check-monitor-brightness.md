@@ -27,4 +27,4 @@ tags:
 如果您为 `-ComputerName` 参数传入一个用逗号分隔的主机名或IP地址列表，您将获得所有具有**local Admin**权限的主机的执行结果。
 <!--more-->
 
-本文国际来源：[Check Monitor Brightness](http://powershell.com/cs/blogs/tips/archive/2013/09/26/check-monitor-brightness.aspx)
+本文国际来源：[Check Monitor Brightness](http://community.idera.com/powershell/powertips/b/tips/posts/check-monitor-brightness)

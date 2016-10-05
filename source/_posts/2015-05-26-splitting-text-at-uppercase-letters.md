@@ -29,4 +29,4 @@ tags:
     $newtext
 
 <!--more-->
-本文国际来源：[Splitting Text at Uppercase Letters](http://powershell.com/cs/blogs/tips/archive/2015/05/26/splitting-text-at-uppercase-letters.aspx)
+本文国际来源：[Splitting Text at Uppercase Letters](http://community.idera.com/powershell/powertips/b/tips/posts/splitting-text-at-uppercase-letters)

@@ -43,4 +43,4 @@ Windows 在系统事件日志中记录了所有的关机事件。您可以从那
     PS> Get-ShutdownInfo |  Out-GridView
 
 <!--more-->
-本文国际来源：[Getting Shutdown Information](http://powershell.com/cs/blogs/tips/archive/2014/08/20/getting-shutdown-information-testing.aspx)
+本文国际来源：[Getting Shutdown Information](http://community.idera.com/powershell/powertips/b/tips/posts/getting-shutdown-information-testing)

@@ -59,4 +59,4 @@ _适用于 PowerShell 2.0 及以上版本_
     Cmdlet          Uninstall-MSIProduct                               MSI
 
 <!--more-->
-本文国际来源：[Cmdlets to Manage MSI Packages](http://powershell.com/cs/blogs/tips/archive/2015/01/26/cmdlets-to-manage-msi-packages.aspx)
+本文国际来源：[Cmdlets to Manage MSI Packages](http://community.idera.com/powershell/powertips/b/tips/posts/cmdlets-to-manage-msi-packages)

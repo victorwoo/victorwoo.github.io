@@ -36,4 +36,4 @@ tags:
     } 
 
 <!--more-->
-本文国际来源：[Getting Executable from Command Line](http://powershell.com/cs/blogs/tips/archive/2014/04/29/getting-executable-from-command-line.aspx)
+本文国际来源：[Getting Executable from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-executable-from-command-line)

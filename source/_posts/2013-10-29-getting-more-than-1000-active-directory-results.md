@@ -29,4 +29,4 @@ tags:
 	  Out-GridView
 
 <!--more-->
-本文国际来源：[Getting More Than 1000 Active Directory Results](http://powershell.com/cs/blogs/tips/archive/2013/10/29/getting-more-than-1000-active-directory-results.aspx)
+本文国际来源：[Getting More Than 1000 Active Directory Results](http://community.idera.com/powershell/powertips/b/tips/posts/getting-more-than-1000-active-directory-results)

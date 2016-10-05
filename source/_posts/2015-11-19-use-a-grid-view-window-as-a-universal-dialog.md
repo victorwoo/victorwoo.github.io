@@ -45,4 +45,4 @@ tags:
 最后，被用户选中的对象将再被拆包。通过这种方法，您可以获取源对象。
 
 <!--more-->
-本文国际来源：[Use a Grid View Window as a Universal Dialog](http://powershell.com/cs/blogs/tips/archive/2015/11/19/use-a-grid-view-window-as-a-universal-dialog.aspx)
+本文国际来源：[Use a Grid View Window as a Universal Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/use-a-grid-view-window-as-a-universal-dialog)

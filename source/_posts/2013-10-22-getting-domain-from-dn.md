@@ -30,4 +30,4 @@ tags:
 	DC=powershell,DC=local
 
 <!--more-->
-本文国际来源：[Getting Domain from DN](http://powershell.com/cs/blogs/tips/archive/2013/10/22/getting-domain-from-dn.aspx)
+本文国际来源：[Getting Domain from DN](http://community.idera.com/powershell/powertips/b/tips/posts/getting-domain-from-dn)

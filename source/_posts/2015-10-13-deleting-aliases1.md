@@ -40,4 +40,4 @@ tags:
     PS C:\>
 
 <!--more-->
-本文国际来源：[Deleting Aliases](http://powershell.com/cs/blogs/tips/archive/2015/10/13/deleting-aliases1.aspx)
+本文国际来源：[Deleting Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-aliases1)

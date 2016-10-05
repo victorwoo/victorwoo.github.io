@@ -25,4 +25,4 @@ PowerShell 通过 `cert:` 驱动器来存取您的证书存储。
 	  Out-GridView
 
 <!--more-->
-本文国际来源：[Finding Expired Certificates](http://powershell.com/cs/blogs/tips/archive/2014/03/25/finding-expired-certificates.aspx)
+本文国际来源：[Finding Expired Certificates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-expired-certificates)

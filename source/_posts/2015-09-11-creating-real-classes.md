@@ -41,4 +41,4 @@ PowerShell 5.0 开始引入了类的概念，不过您也可以在 PowerShell �
 显然，拥有一些技术背景的开发人员对这种技术最感兴趣。
 
 <!--more-->
-本文国际来源：[Creating Real Classes](http://powershell.com/cs/blogs/tips/archive/2015/09/11/creating-real-classes.aspx)
+本文国际来源：[Creating Real Classes](http://community.idera.com/powershell/powertips/b/tips/posts/creating-real-classes)

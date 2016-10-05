@@ -54,4 +54,4 @@ _适用于 PowerShell 3.0 及以上版本_
     "The decrypted secret text: $decryptedText"
 
 <!--more-->
-本文国际来源：[Encrypting Text Information Using Passphrase](http://powershell.com/cs/blogs/tips/archive/2015/04/07/encrypting-text-information-using-passphrase.aspx)
+本文国际来源：[Encrypting Text Information Using Passphrase](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-text-information-using-passphrase)

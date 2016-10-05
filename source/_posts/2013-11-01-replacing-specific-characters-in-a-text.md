@@ -63,4 +63,4 @@ tags:
 	26868
 
 <!--more-->
-本文国际来源：[Replacing Specific Characters in a Text](http://powershell.com/cs/blogs/tips/archive/2013/11/01/replacing-specific-characters-in-a-text.aspx)
+本文国际来源：[Replacing Specific Characters in a Text](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-specific-characters-in-a-text)

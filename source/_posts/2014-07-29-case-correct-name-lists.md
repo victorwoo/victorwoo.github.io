@@ -35,4 +35,4 @@ _适用于所有 PowerShell 版本_
     Fred
 
 <!--more-->
-本文国际来源：[Case-Correct Name Lists](http://powershell.com/cs/blogs/tips/archive/2014/07/29/case-correct-name-lists.aspx)
+本文国际来源：[Case-Correct Name Lists](http://community.idera.com/powershell/powertips/b/tips/posts/case-correct-name-lists)

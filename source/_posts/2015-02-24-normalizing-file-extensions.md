@@ -27,4 +27,4 @@ _适用于 PowerShell 2.0 及以上版本_
     $cleanExtensions
 
 <!--more-->
-本文国际来源：[Normalizing File Extensions](http://powershell.com/cs/blogs/tips/archive/2015/02/24/normalizing-file-extensions.aspx)
+本文国际来源：[Normalizing File Extensions](http://community.idera.com/powershell/powertips/b/tips/posts/normalizing-file-extensions)

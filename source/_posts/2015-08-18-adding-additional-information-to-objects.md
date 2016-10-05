@@ -31,4 +31,4 @@ tags:
     $list | ForEach-Object { 'Process {0} on {1}' -f $_.Name, $_.PC }
 
 <!--more-->
-本文国际来源：[Adding Additional Information to Objects](http://powershell.com/cs/blogs/tips/archive/2015/08/18/adding-additional-information-to-objects.aspx)
+本文国际来源：[Adding Additional Information to Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-additional-information-to-objects)

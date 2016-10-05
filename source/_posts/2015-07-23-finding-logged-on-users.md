@@ -34,4 +34,4 @@ tags:
 执行 `Get-LoggedOnUserSession` 命令将得到当前登录到机器上的所有用户。如指定了 `-Credential`（域名\\用户名）参数，可以访问远程机器。
 
 <!--more-->
-本文国际来源：[Finding Logged On Users](http://powershell.com/cs/blogs/tips/archive/2015/07/23/finding-logged-on-users.aspx)
+本文国际来源：[Finding Logged On Users](http://community.idera.com/powershell/powertips/b/tips/posts/finding-logged-on-users)

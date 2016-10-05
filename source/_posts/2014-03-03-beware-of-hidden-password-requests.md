@@ -25,4 +25,4 @@ tags:
 所以当您的脚本用到了控制台应用程序时，您最好在传统的 PowerShell 控制台中运行它们。
 
 <!--more-->
-本文国际来源：[Beware Of Hidden Password Requests](http://powershell.com/cs/blogs/tips/archive/2014/03/03/beware-of-hidden-password-requests.aspx)
+本文国际来源：[Beware Of Hidden Password Requests](http://community.idera.com/powershell/powertips/b/tips/posts/beware-of-hidden-password-requests)

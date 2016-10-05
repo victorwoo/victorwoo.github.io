@@ -39,4 +39,4 @@ tags:
 新的代码更精炼，但是无法在 PowerShell 2.0 中运行。
 
 <!--more-->
-本文国际来源：[Simplify Parameter Attributes](http://powershell.com/cs/blogs/tips/archive/2015/10/16/simplify-parameter-attributes.aspx)
+本文国际来源：[Simplify Parameter Attributes](http://community.idera.com/powershell/powertips/b/tips/posts/simplify-parameter-attributes)

@@ -21,4 +21,4 @@ Windows 8.1 带来了一系列新的 cmdlet。其中一个可以自动下载并�
 这些 cmdlet 不是 PowerShell 的一部分，而是 Windows 8.1 的一部分，所以在早期版本的操作系统中，您会碰到找不到命令的错误信息。
 
 <!--more-->
-本文国际来源：[Updating Windows Defender Signatures](http://powershell.com/cs/blogs/tips/archive/2014/05/07/updating-windows-defender-signatures.aspx)
+本文国际来源：[Updating Windows Defender Signatures](http://community.idera.com/powershell/powertips/b/tips/posts/updating-windows-defender-signatures)

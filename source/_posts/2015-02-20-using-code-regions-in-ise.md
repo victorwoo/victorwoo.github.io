@@ -28,4 +28,4 @@ PowerShell ISE 已经支持了可折叠的代码区域。当您编写函数、�
 请注意这些特殊的注释是大小写敏感的。在将区域折叠之后，"`#region`" 后的文本将变为折叠区域的标题。
 
 <!--more-->
-本文国际来源：[Using Code Regions in ISE](http://powershell.com/cs/blogs/tips/archive/2015/02/20/using-code-regions-in-ise.aspx)
+本文国际来源：[Using Code Regions in ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-code-regions-in-ise)

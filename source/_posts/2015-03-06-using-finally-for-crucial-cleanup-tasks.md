@@ -63,4 +63,4 @@ _适用于 PowerShell 2.0 及以上版本_
     }
 
 <!--more-->
-本文国际来源：[Using Finally for Crucial Cleanup Tasks](http://powershell.com/cs/blogs/tips/archive/2015/03/06/using-finally-for-crucial-cleanup-tasks.aspx)
+本文国际来源：[Using Finally for Crucial Cleanup Tasks](http://community.idera.com/powershell/powertips/b/tips/posts/using-finally-for-crucial-cleanup-tasks)

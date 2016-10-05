@@ -42,4 +42,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Finding All PowerShell Profile Scripts](http://powershell.com/cs/blogs/tips/archive/2013/10/02/finding-all-powershell-profile-scripts.aspx)
+本文国际来源：[Finding All PowerShell Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-powershell-profile-scripts)

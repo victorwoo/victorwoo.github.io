@@ -48,4 +48,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Setting Monitor Brightness](http://powershell.com/cs/blogs/tips/archive/2013/09/27/setting-monitor-brightness.aspx)
+本文国际来源：[Setting Monitor Brightness](http://community.idera.com/powershell/powertips/b/tips/posts/setting-monitor-brightness)

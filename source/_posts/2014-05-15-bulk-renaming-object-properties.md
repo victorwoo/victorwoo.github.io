@@ -46,4 +46,4 @@ tags:
 所以本质上上，属性并没有被改名（技术上不可能实现）。实际上，该过滤器以新的名字添加了别名属性，并指向原先的属性。
 
 <!--more-->
-本文国际来源：[Bulk Renaming Object Properties](http://powershell.com/cs/blogs/tips/archive/2014/05/15/bulk-renaming-object-properties.aspx)
+本文国际来源：[Bulk Renaming Object Properties](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-object-properties)

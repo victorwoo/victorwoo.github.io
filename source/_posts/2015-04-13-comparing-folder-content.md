@@ -25,4 +25,4 @@ tags:
 该代码属两个文件夹列表，一个来自本机，另一个来自远程计算机。接下来 `Compare-Object` 命令会挑出只在一个文件夹中存在的文件。
 
 <!--more-->
-本文国际来源：[Comparing Folder Content](http://powershell.com/cs/blogs/tips/archive/2015/04/13/comparing-folder-content.aspx)
+本文国际来源：[Comparing Folder Content](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-folder-content)

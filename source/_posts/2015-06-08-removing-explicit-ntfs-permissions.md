@@ -28,4 +28,4 @@ tags:
     $acl | Set-Acl -Path $path
 
 <!--more-->
-本文国际来源：[Removing Explicit NTFS Permissions](http://powershell.com/cs/blogs/tips/archive/2015/06/08/removing-explicit-ntfs-permissions.aspx)
+本文国际来源：[Removing Explicit NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/removing-explicit-ntfs-permissions)

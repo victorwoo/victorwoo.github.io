@@ -30,4 +30,4 @@ tags:
       Select-Object -ExpandProperty Count
 
 <!--more-->
-本文国际来源：[Finding Working Days](http://powershell.com/cs/blogs/tips/archive/2014/07/02/finding-working-days.aspx)
+本文国际来源：[Finding Working Days](http://community.idera.com/powershell/powertips/b/tips/posts/finding-working-days)

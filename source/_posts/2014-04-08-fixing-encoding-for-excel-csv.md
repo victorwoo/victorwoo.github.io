@@ -27,4 +27,4 @@ tags:
 ![](/img/2014-04-08-fixing-encoding-for-excel-csv-003.png)
 
 <!--more-->
-本文国际来源：[Fixing Encoding for Excel CSV](http://powershell.com/cs/blogs/tips/archive/2014/04/08/fixing-encoding-for-excel-csv.aspx)
+本文国际来源：[Fixing Encoding for Excel CSV](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-encoding-for-excel-csv)

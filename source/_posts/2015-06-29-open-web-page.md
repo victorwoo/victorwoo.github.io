@@ -36,4 +36,4 @@ tags:
 那么将会使用您的缺省浏览器来打开该 URL。
 
 <!--more-->
-本文国际来源：[Open Web Page](http://powershell.com/cs/blogs/tips/archive/2015/06/29/open-web-page.aspx)
+本文国际来源：[Open Web Page](http://community.idera.com/powershell/powertips/b/tips/posts/open-web-page)

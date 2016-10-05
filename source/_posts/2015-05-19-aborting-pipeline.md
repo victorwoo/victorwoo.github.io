@@ -58,4 +58,4 @@ tags:
         Get-Chil...
 
 <!--more-->
-本文国际来源：[Aborting Pipeline](http://powershell.com/cs/blogs/tips/archive/2015/05/19/aborting-pipeline.aspx)
+本文国际来源：[Aborting Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/aborting-pipeline)

@@ -35,4 +35,4 @@ tags:
 如果您想用别的名字来获取信息，只需根据需要改变属性名列表。例如您不喜欢“System Boot Time”，那么只需要在脚本中将它重命名为“BootTime”。
 
 <!--more-->
-本文国际来源：[Profiling Systems](http://powershell.com/cs/blogs/tips/archive/2014/03/20/profiling-systems.aspx)
+本文国际来源：[Profiling Systems](http://community.idera.com/powershell/powertips/b/tips/posts/profiling-systems)

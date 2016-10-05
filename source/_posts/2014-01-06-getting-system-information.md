@@ -35,4 +35,4 @@ PowerShell 和现有的控制台程序可以很好地共存。一个最有用的
 ![](/img/2014-01-06-getting-system-information-002.png)
 
 <!--more-->
-本文国际来源：[Getting System Information](http://powershell.com/cs/blogs/tips/archive/2014/01/06/getting-system-information.aspx)
+本文国际来源：[Getting System Information](http://community.idera.com/powershell/powertips/b/tips/posts/getting-system-information)

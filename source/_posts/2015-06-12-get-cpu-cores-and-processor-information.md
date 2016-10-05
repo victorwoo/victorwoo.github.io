@@ -21,4 +21,4 @@ tags:
     Intel(R) Core(TM) i7-26...                          2                         4
 
 <!--more-->
-本文国际来源：[Get CPU Cores and Processor Information](http://powershell.com/cs/blogs/tips/archive/2015/06/12/get-cpu-cores-and-processor-information.aspx)
+本文国际来源：[Get CPU Cores and Processor Information](http://community.idera.com/powershell/powertips/b/tips/posts/get-cpu-cores-and-processor-information)

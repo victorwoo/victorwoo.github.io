@@ -31,4 +31,4 @@ tags:
 当您用这种方法处理其它 URL 时，您可能偶尔会遇到弹出一个安全警告框，提示需要存储 cookie 的权限。要禁止这些对话框出现并静默执行命令，请使用 `-UseBasicParsing` 参数。
 
 <!--more-->
-本文国际来源：[Accessing Web Page Content](http://powershell.com/cs/blogs/tips/archive/2015/09/16/accessing-web-page-content.aspx)
+本文国际来源：[Accessing Web Page Content](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-web-page-content)

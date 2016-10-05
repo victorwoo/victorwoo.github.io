@@ -38,4 +38,4 @@ tags:
 这个方法的好处是在需要覆盖文件的时候，会弹出 shell 的对话框。这个方法也可以解压 CAB 文件。
 
 <!--more-->
-本文国际来源：[Unzipping ZIP Files with any PowerShell Version](http://powershell.com/cs/blogs/tips/archive/2015/07/30/unzipping-zip-files-with-any-powershell-version.aspx)
+本文国际来源：[Unzipping ZIP Files with any PowerShell Version](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files-with-any-powershell-version)

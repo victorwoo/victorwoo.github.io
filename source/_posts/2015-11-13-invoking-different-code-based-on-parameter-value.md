@@ -39,4 +39,4 @@ tags:
 根据您的选择，PowerShell 将会执行合适的脚本块。如您所见，该操作脚本块可以包括任意代码，甚至多页代码。
 
 <!--more-->
-本文国际来源：[Invoking Different Code Based on Parameter Value](http://powershell.com/cs/blogs/tips/archive/2015/11/13/invoking-different-code-based-on-parameter-value.aspx)
+本文国际来源：[Invoking Different Code Based on Parameter Value](http://community.idera.com/powershell/powertips/b/tips/posts/invoking-different-code-based-on-parameter-value)

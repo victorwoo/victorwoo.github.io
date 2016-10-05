@@ -30,4 +30,4 @@ tags:
 它演示了如何使用 `Invoke-WebRequest` 来下载一个网页的 HTML 内容，然后使用正则表达式来抓取网页的内容。
 
 <!--more-->
-本文国际来源：[Getting an Excuse](http://powershell.com/cs/blogs/tips/archive/2016/02/17/getting-an-excuse.aspx)
+本文国际来源：[Getting an Excuse](http://community.idera.com/powershell/powertips/b/tips/posts/getting-an-excuse)

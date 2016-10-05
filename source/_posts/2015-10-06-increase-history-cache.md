@@ -35,4 +35,4 @@ tags:
 历史缓存最大允许的容量是 32KB-1。
 
 <!--more-->
-本文国际来源：[Increase History Cache](http://powershell.com/cs/blogs/tips/archive/2015/10/06/increase-history-cache.aspx)
+本文国际来源：[Increase History Cache](http://community.idera.com/powershell/powertips/b/tips/posts/increase-history-cache)

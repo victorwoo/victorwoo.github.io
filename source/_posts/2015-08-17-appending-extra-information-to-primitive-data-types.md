@@ -28,4 +28,4 @@ tags:
     $a.Time
 
 <!--more-->
-本文国际来源：[Appending Extra Information to Primitive Data Types](http://powershell.com/cs/blogs/tips/archive/2015/08/17/appending-extra-information-to-primitive-data-types.aspx)
+本文国际来源：[Appending Extra Information to Primitive Data Types](http://community.idera.com/powershell/powertips/b/tips/posts/appending-extra-information-to-primitive-data-types)

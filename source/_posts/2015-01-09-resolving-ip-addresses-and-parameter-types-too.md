@@ -53,4 +53,4 @@ _适用于 PowerShell 2.0 及以上版本_
        s
 
 <!--more-->
-本文国际来源：[Resolving IP Addresses (and Parameter Types, Too)](http://powershell.com/cs/blogs/tips/archive/2015/01/09/resolving-ip-addresses-and-parameter-types-too.aspx)
+本文国际来源：[Resolving IP Addresses (and Parameter Types, Too)](http://community.idera.com/powershell/powertips/b/tips/posts/resolving-ip-addresses-and-parameter-types-too)

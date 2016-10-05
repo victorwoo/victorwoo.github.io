@@ -30,4 +30,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Testing Administrator Privileges](http://powershell.com/cs/blogs/tips/archive/2013/09/24/testing-administrator-privileges.aspx)
+本文国际来源：[Testing Administrator Privileges](http://community.idera.com/powershell/powertips/b/tips/posts/testing-administrator-privileges)

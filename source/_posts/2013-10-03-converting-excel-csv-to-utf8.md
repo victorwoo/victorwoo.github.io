@@ -21,4 +21,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Converting Excel CSV to UTF8](http://powershell.com/cs/blogs/tips/archive/2013/10/03/converting-excel-csv-to-utf8.aspx)
+本文国际来源：[Converting Excel CSV to UTF8](http://community.idera.com/powershell/powertips/b/tips/posts/converting-excel-csv-to-utf8)

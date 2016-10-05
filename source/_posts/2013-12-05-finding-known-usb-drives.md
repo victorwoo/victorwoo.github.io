@@ -44,4 +44,4 @@ tags:
 列表越长，说明您的计算机插入过越多种不同的 USB 存储设备。
 
 <!--more-->
-本文国际来源：[Finding Known USB Drives](http://powershell.com/cs/blogs/tips/archive/2013/12/05/finding-known-usb-drives.aspx)
+本文国际来源：[Finding Known USB Drives](http://community.idera.com/powershell/powertips/b/tips/posts/finding-known-usb-drives)

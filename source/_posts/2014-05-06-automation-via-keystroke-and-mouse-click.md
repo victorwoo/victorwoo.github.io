@@ -49,4 +49,4 @@ tags:
 * 只有 WinForm 窗口支持操作子控件，例如特定的文本框和按钮（`Select-ChildWindow`, `Select-Control`）。WPF 窗口也可以接收按键，但是 WPF 中在窗体的 UI 组件之上无法获得支持输入的控件。
 
 <!--more-->
-本文国际来源：[Automation via Keystroke and Mouse Click](http://powershell.com/cs/blogs/tips/archive/2014/05/06/automation-via-keystroke-and-mouse-click.aspx)
+本文国际来源：[Automation via Keystroke and Mouse Click](http://community.idera.com/powershell/powertips/b/tips/posts/automation-via-keystroke-and-mouse-click)

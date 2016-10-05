@@ -33,4 +33,4 @@ tags:
        } -WhatIf
 
 <!--more-->
-本文国际来源：[Bulk File Renaming](http://powershell.com/cs/blogs/tips/archive/2014/06/11/bulk-file-renaming.aspx)
+本文国际来源：[Bulk File Renaming](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-file-renaming)

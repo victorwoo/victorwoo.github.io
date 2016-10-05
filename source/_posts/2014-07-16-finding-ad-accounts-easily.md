@@ -24,4 +24,4 @@ _适用于所有 PowerShell 版本_
 这段代码将查找所有以“dc”开头的计算机账户。`$ldap` 可以是任何合法的 LDAP 查询语句。要查找用户，请将“computer”替换为“user”。
 
 <!--more-->
-本文国际来源：[Finding AD Accounts Easily](http://powershell.com/cs/blogs/tips/archive/2014/07/16/finding-ad-accounts-easily.aspx)
+本文国际来源：[Finding AD Accounts Easily](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-accounts-easily)

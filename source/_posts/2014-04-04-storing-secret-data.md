@@ -44,4 +44,4 @@ tags:
 现在，以其他人的身份试一下。您会发现其他人无法解密该加密文件。而且您在别的机器上也无法解密。
 
 <!--more-->
-本文国际来源：[Storing Secret Data](http://powershell.com/cs/blogs/tips/archive/2014/04/04/storing-secret-data.aspx)
+本文国际来源：[Storing Secret Data](http://community.idera.com/powershell/powertips/b/tips/posts/storing-secret-data)

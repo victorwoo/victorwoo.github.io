@@ -31,4 +31,4 @@ tags:
     $file.Editor.text = (Invoke-WebRequest -Uri 'http://bit.ly/e0Mw9w' -UseBasicParsing).Content
 
 <!--more-->
-本文国际来源：[Why Invoke-Expression is Evil](http://powershell.com/cs/blogs/tips/archive/2015/09/17/why-invoke-expression-is-evil.aspx)
+本文国际来源：[Why Invoke-Expression is Evil](http://community.idera.com/powershell/powertips/b/tips/posts/why-invoke-expression-is-evil)

@@ -40,4 +40,4 @@ tags:
 您将只会获得已加载并且包含动态参数的 cmdlet。
 
 <!--more-->
-本文国际来源：[Finding Cmdlets with Dynamic Parameters](http://powershell.com/cs/blogs/tips/archive/2015/08/03/finding-cmdlets-with-dynamic-parameters.aspx)
+本文国际来源：[Finding Cmdlets with Dynamic Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-cmdlets-with-dynamic-parameters)

@@ -48,4 +48,4 @@ tags:
 该函数使用一些黑客的办法来暴露动态参数，这种方法是受到 Dave Wyatt 的启发。请参见他的文章 [https://davewyatt.wordpress.com/2014/09/01/proxy-functions-for-cmdlets-with-dynamic-parameters/](https://davewyatt.wordpress.com/2014/09/01/proxy-functions-for-cmdlets-with-dynamic-parameters/)。
 
 <!--more-->
-本文国际来源：[Discovering Dynamic Parameters](http://powershell.com/cs/blogs/tips/archive/2015/08/04/discovering-dynamic-parameters.aspx)
+本文国际来源：[Discovering Dynamic Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/discovering-dynamic-parameters)

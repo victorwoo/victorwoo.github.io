@@ -27,4 +27,4 @@ tags:
 这种方法完美地运行于所有您希望通过 PowerShell 调用的 exe 程序。
 
 <!--more-->
-本文国际来源：[Submitting Arguments to EXE Files](http://powershell.com/cs/blogs/tips/archive/2014/03/24/submitting-arguments-to-exe-files.aspx)
+本文国际来源：[Submitting Arguments to EXE Files](http://community.idera.com/powershell/powertips/b/tips/posts/submitting-arguments-to-exe-files)

@@ -49,4 +49,4 @@ tags:
 接下来，您可以将结果另存为 PDF、改进格式，或打印出来。
 
 <!--more-->
-本文国际来源：[Piping Results Straight Into Office Word](http://powershell.com/cs/blogs/tips/archive/2015/11/23/piping-results-straight-into-office-word.aspx)
+本文国际来源：[Piping Results Straight Into Office Word](http://community.idera.com/powershell/powertips/b/tips/posts/piping-results-straight-into-office-word)

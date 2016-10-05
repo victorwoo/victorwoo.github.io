@@ -19,4 +19,4 @@ tags:
 在 PowerShell ISE 中，要纠正这些东西，只需要将光标放置在命令名或参数名处，然后按下 `TAB` 键。Tab 展开功能将会读取原有的代码并将它替换成大小写正确的、名字完整的版本。
 
 <!--more-->
-本文国际来源：[Auto-CaseCorrecting PowerShell Code](http://powershell.com/cs/blogs/tips/archive/2015/10/21/auto-casecorrecting-powershell-code.aspx)
+本文国际来源：[Auto-CaseCorrecting PowerShell Code](http://community.idera.com/powershell/powertips/b/tips/posts/auto-casecorrecting-powershell-code)

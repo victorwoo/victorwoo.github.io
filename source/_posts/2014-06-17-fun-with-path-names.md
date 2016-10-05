@@ -23,4 +23,4 @@ tags:
     $path -split '\\' -notlike '*test*' -join '\'
 
 <!--more-->
-本文国际来源：[Fun with Path Names](http://powershell.com/cs/blogs/tips/archive/2014/06/17/fun-with-path-names.aspx)
+本文国际来源：[Fun with Path Names](http://community.idera.com/powershell/powertips/b/tips/posts/fun-with-path-names)

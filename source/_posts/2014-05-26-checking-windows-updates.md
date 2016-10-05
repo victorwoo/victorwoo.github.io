@@ -73,4 +73,4 @@ tags:
 ![](/img/2014-05-26-checking-windows-updates-001.png)
 
 <!--more-->
-本文国际来源：[Checking Windows Updates](http://powershell.com/cs/blogs/tips/archive/2014/05/26/checking-windows-updates.aspx)
+本文国际来源：[Checking Windows Updates](http://community.idera.com/powershell/powertips/b/tips/posts/checking-windows-updates)

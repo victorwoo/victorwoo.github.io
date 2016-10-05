@@ -19,4 +19,4 @@ _适用于 PowerShell 所有版本_
     Start-Process -FilePath notepad -ArgumentList '/P C:\windows\WindowsUpdate.log'
 
 <!--more-->
-本文国际来源：[Using Notepad to Print Things](http://powershell.com/cs/blogs/tips/archive/2014/11/03/using-notepad-to-print-things.aspx)
+本文国际来源：[Using Notepad to Print Things](http://community.idera.com/powershell/powertips/b/tips/posts/using-notepad-to-print-things)

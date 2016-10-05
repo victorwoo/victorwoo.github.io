@@ -24,4 +24,4 @@ tags:
 请记着您新增的属性需要在使用 `Select-Object` 以及显式地要求显式它们的时候，才会在结果中显示出来。
 
 <!--more-->
-本文国际来源：[Tag Your Objects with Additional Information](http://powershell.com/cs/blogs/tips/archive/2014/02/28/tag-your-objects-with-additional-information.aspx)
+本文国际来源：[Tag Your Objects with Additional Information](http://community.idera.com/powershell/powertips/b/tips/posts/tag-your-objects-with-additional-information)

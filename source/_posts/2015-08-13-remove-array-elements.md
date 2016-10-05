@@ -31,4 +31,4 @@ tags:
       Select-Object -ExpandProperty InputObject
 
 <!--more-->
-本文国际来源：[Remove Array Elements](http://powershell.com/cs/blogs/tips/archive/2015/08/13/remove-array-elements.aspx)
+本文国际来源：[Remove Array Elements](http://community.idera.com/powershell/powertips/b/tips/posts/remove-array-elements)

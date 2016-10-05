@@ -27,4 +27,4 @@ tags:
 在 PowerShell 5.0 中，`New-TemporaryFile` 做了相同的事情，但是它返回了一个文件，这样您可以立即确认确实创建了一个文件，而不是一个文件名。
 
 <!--more-->
-本文国际来源：[Why GetTempFileName() is Evil](http://powershell.com/cs/blogs/tips/archive/2015/10/14/why-gettempfilename-is-evil.aspx)
+本文国际来源：[Why GetTempFileName() is Evil](http://community.idera.com/powershell/powertips/b/tips/posts/why-gettempfilename-is-evil)

@@ -33,4 +33,4 @@ tags:
 	$import.ExportedCommands
 
 <!--more-->
-本文国际来源：[Managing Office365 with PowerShell](http://powershell.com/cs/blogs/tips/archive/2013/12/18/managing-office365-with-powershell.aspx)
+本文国际来源：[Managing Office365 with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-office365-with-powershell)

@@ -39,4 +39,4 @@ tags:
 这段脚本利用了 PowerShell 远程管理技术，所以它需要目标计算机启用了 PowerShell 远程管理，并且您需要这些机器的本地管理员权限。
 
 <!--more-->
-本文国际来源：[gpupdate on Remote Machines](http://powershell.com/cs/blogs/tips/archive/2014/06/06/gpupdate-on-remote-machines.aspx)
+本文国际来源：[gpupdate on Remote Machines](http://community.idera.com/powershell/powertips/b/tips/posts/gpupdate-on-remote-machines)

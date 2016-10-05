@@ -31,4 +31,4 @@ tags:
 这段代码将显示 PowerShell 团队博客数据。
 
 <!--more-->
-本文国际来源：[Reading RSS Feeds](http://powershell.com/cs/blogs/tips/archive/2015/04/16/reading-rss-feeds.aspx)
+本文国际来源：[Reading RSS Feeds](http://community.idera.com/powershell/powertips/b/tips/posts/reading-rss-feeds)

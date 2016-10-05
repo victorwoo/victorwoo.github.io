@@ -21,4 +21,4 @@ Active Directory 内部使用 tick （从 1601 年起的百纳秒数）来表示
 ![](/img/2014-04-10-converting-ticks-into-real-date-001.png)
 
 <!--more-->
-本文国际来源：[Converting Ticks into Real Date](http://powershell.com/cs/blogs/tips/archive/2014/04/10/converting-ticks-into-real-date.aspx)
+本文国际来源：[Converting Ticks into Real Date](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-into-real-date)

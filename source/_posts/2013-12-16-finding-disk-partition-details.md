@@ -31,4 +31,4 @@ tags:
 ![](/img/2013-12-16-finding-disk-partition-details-002.png)
 
 <!--more-->
-本文国际来源：[Finding Disk Partition Details](http://powershell.com/cs/blogs/tips/archive/2013/12/16/finding-disk-partition-details.aspx)
+本文国际来源：[Finding Disk Partition Details](http://community.idera.com/powershell/powertips/b/tips/posts/finding-disk-partition-details)

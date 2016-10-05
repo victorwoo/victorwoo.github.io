@@ -17,4 +17,4 @@ tags:
 要想只看到以您键入的字符开头的变量，请按下 `ESC` 键关闭智能感知菜单，然后按下 `CTRL`+`SPACE` 重新打开它。现在，它将只显示以您键入的字符开头的变量。
 
 <!--more-->
-本文国际来源：[IntelliSense Trick to Show Variables](http://powershell.com/cs/blogs/tips/archive/2014/04/22/intellisense-trick-to-show-variables.aspx)
+本文国际来源：[IntelliSense Trick to Show Variables](http://community.idera.com/powershell/powertips/b/tips/posts/intellisense-trick-to-show-variables)

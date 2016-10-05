@@ -81,4 +81,4 @@ _适用于 PowerShell 所有版本_
     Invoke-Item -Path $path
 
 <!--more-->
-本文国际来源：[Creating Colorful HTML Reports](http://powershell.com/cs/blogs/tips/archive/2014/10/27/creating-colorful-html-reports.aspx)
+本文国际来源：[Creating Colorful HTML Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-colorful-html-reports)

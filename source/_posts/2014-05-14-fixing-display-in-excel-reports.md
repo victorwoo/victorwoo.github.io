@@ -50,4 +50,4 @@ tags:
 还请注意“Message”属性是如何处理的。虽然这个属性看起来没问题，但是它实际上有可能是多行文本。多行信息在 Excel 中将只显示第一行，并以“...”结尾。我们将这些行通过空格连接之后，Excel 便可以显示完整信息了。
 
 <!--more-->
-本文国际来源：[Fixing Display in Excel Reports](http://powershell.com/cs/blogs/tips/archive/2014/05/14/fixing-display-in-excel-reports.aspx)
+本文国际来源：[Fixing Display in Excel Reports](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-display-in-excel-reports)

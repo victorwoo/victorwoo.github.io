@@ -29,4 +29,4 @@ PowerShell 可以查询基于 XML 内容的网站，以下是一个查询电影�
     $xml.Data.Series | Out-GridView
 
 <!--more-->
-本文国际来源：[Finding Information about TV Series](http://powershell.com/cs/blogs/tips/archive/2015/04/14/finding-information-about-tv-series.aspx)
+本文国际来源：[Finding Information about TV Series](http://community.idera.com/powershell/powertips/b/tips/posts/finding-information-about-tv-series)

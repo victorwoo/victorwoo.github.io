@@ -32,4 +32,4 @@ tags:
     $psise.CurrentPowerShellTab.AddOnsMenu.Submenus.Add('Get Command History', $code, 'ALT+C')
 
 <!--more-->
-本文国际来源：[Get Command History as File](http://powershell.com/cs/blogs/tips/archive/2015/07/14/get-command-history-as-file.aspx)
+本文国际来源：[Get Command History as File](http://community.idera.com/powershell/powertips/b/tips/posts/get-command-history-as-file)

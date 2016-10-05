@@ -25,4 +25,4 @@ tags:
     Get-PSSnapin -Registered | Add-PSSnapin -Verbose
 
 <!--more-->
-本文国际来源：[Load Cmdlets from PSSnapins](http://powershell.com/cs/blogs/tips/archive/2015/06/17/load-cmdlets-from-pssnapins.aspx)
+本文国际来源：[Load Cmdlets from PSSnapins](http://community.idera.com/powershell/powertips/b/tips/posts/load-cmdlets-from-pssnapins)

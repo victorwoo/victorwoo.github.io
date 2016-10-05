@@ -25,4 +25,4 @@ PowerShell ISE 是可以通过 `$psISE` 脚本化编程的。这个变量只在 
     $psise.CurrentFile.Editor.Text = $psise.CurrentFile.Editor.Text -replace 'testserver', 'ProductionServer'
 
 <!--more-->
-本文国际来源：[Automating PowerShell ISE](http://powershell.com/cs/blogs/tips/archive/2015/03/04/automating-powershell-ise.aspx)
+本文国际来源：[Automating PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/automating-powershell-ise)

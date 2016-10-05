@@ -19,4 +19,4 @@ tags:
 并没有针对 ISE 编辑器的这个选项，但是当您以不同的凭据运行了 PowerShell 之后，您可以简单地键入命令“`ise`”来以相同的账户运行 ISE 编辑器。
 
 <!--more-->
-本文国际来源：[Launching PowerShell as Different User](http://powershell.com/cs/blogs/tips/archive/2013/11/18/launching-powershell-as-different-user.aspx)
+本文国际来源：[Launching PowerShell as Different User](http://community.idera.com/powershell/powertips/b/tips/posts/launching-powershell-as-different-user)

@@ -32,4 +32,4 @@ _适用于 PowerShell 所有版本_
     S-1-5-80-3880006512-4290199581-164872... C:\Users\MSSQL$SQLEXPRESS
 
 <!--more-->
-本文国际来源：[Read User Profiles from Registry](http://powershell.com/cs/blogs/tips/archive/2015/03/20/read-user-profiles-from-registry.aspx)
+本文国际来源：[Read User Profiles from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/read-user-profiles-from-registry)

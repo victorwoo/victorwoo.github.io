@@ -26,4 +26,4 @@ tags:
     $exists
 
 <!--more-->
-本文国际来源：[Safely Use UNC Paths](http://powershell.com/cs/blogs/tips/archive/2015/04/20/safely-use-unc-paths.aspx)
+本文国际来源：[Safely Use UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/safely-use-unc-paths)

@@ -37,4 +37,4 @@ tags:
 如果该操作成功完成，说明凭据时合法的。如果失败，说明凭据是无效的，或者该计算机根本没有加入域。
 
 <!--more-->
-本文国际来源：[Validating Domain Credentials](http://powershell.com/cs/blogs/tips/archive/2015/04/21/validating-domain-credentials.aspx)
+本文国际来源：[Validating Domain Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/validating-domain-credentials)

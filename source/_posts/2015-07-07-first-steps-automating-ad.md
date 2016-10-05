@@ -65,4 +65,4 @@ tags:
     Get-ADUser -LDAPFilter $ageLimit
 
 <!--more-->
-本文国际来源：[First Steps Automating AD](http://powershell.com/cs/blogs/tips/archive/2015/07/07/first-steps-automating-ad.aspx)
+本文国际来源：[First Steps Automating AD](http://community.idera.com/powershell/powertips/b/tips/posts/first-steps-automating-ad)

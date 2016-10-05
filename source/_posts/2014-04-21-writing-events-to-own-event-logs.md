@@ -37,4 +37,4 @@ tags:
 所以，既然您可以方便地使用工业级强度的 Windows 日志系统，何须费劲地将信息记在纯文本文件中呢？
 
 <!--more-->
-本文国际来源：[Writing Events to Own Event Logs](http://powershell.com/cs/blogs/tips/archive/2014/04/21/writing-events-to-own-event-logs.aspx)
+本文国际来源：[Writing Events to Own Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/writing-events-to-own-event-logs)

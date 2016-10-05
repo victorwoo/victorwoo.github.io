@@ -44,4 +44,4 @@ tags:
     $text.ToString() | Out-GridView
 
 <!--more-->
-本文国际来源：[Define Multiline Text](http://powershell.com/cs/blogs/tips/archive/2015/08/06/define-multiline-text.aspx)
+本文国际来源：[Define Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/define-multiline-text)

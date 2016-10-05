@@ -44,4 +44,4 @@ tags:
     Get-Software -DisplayName *Office* | Out-GridView
 
 <!--more-->
-本文国际来源：[Reading Installed Software from Registry](http://powershell.com/cs/blogs/tips/archive/2015/11/10/reading-installed-software-from-registry.aspx)
+本文国际来源：[Reading Installed Software from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-from-registry)

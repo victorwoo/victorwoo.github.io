@@ -23,4 +23,4 @@ tags:
     Invoke-Item -Path $Destination
 
 <!--more-->
-本文国际来源：[Downloading Files](http://powershell.com/cs/blogs/tips/archive/2015/09/21/downloading-files.aspx)
+本文国际来源：[Downloading Files](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-files)

@@ -24,4 +24,4 @@ tags:
 > 译者注：我在中文操作系统上实验了一下，直接用 `Administrators` 也没有问题的。 
 
 <!--more-->
-本文国际来源：[Create New Local Admin Account on the Fly](http://powershell.com/cs/blogs/tips/archive/2014/01/24/create-new-local-admin-account-on-the-fly.aspx)
+本文国际来源：[Create New Local Admin Account on the Fly](http://community.idera.com/powershell/powertips/b/tips/posts/create-new-local-admin-account-on-the-fly)

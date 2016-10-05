@@ -33,4 +33,4 @@ PowerShell维护着一系列.NET类型的缩写，使您编写代码更加自如
 
 <!--more-->
 
-本文国际来源：[Finding Type Accelerators](http://powershell.com/cs/blogs/tips/archive/2013/09/10/finding-type-accelerators.aspx)
+本文国际来源：[Finding Type Accelerators](http://community.idera.com/powershell/powertips/b/tips/posts/finding-type-accelerators)

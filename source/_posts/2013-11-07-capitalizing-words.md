@@ -32,4 +32,4 @@ tags:
 	[RegEx]::Replace($sentence, $pattern, { param($x) [Byte][Char]$x.Value })
  
 <!--more-->
-本文国际来源：[Capitalizing Words](http://powershell.com/cs/blogs/tips/archive/2013/11/07/capitalizing-words.aspx)
+本文国际来源：[Capitalizing Words](http://community.idera.com/powershell/powertips/b/tips/posts/capitalizing-words)

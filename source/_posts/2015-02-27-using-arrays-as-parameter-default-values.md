@@ -41,4 +41,4 @@ PowerShell 使用逗号来分隔参数，所以在 `param()` 块中的 "1" 之�
     }
 
 <!--more-->
-本文国际来源：[Using Arrays as Parameter Default Values](http://powershell.com/cs/blogs/tips/archive/2015/02/27/using-arrays-as-parameter-default-values.aspx)
+本文国际来源：[Using Arrays as Parameter Default Values](http://community.idera.com/powershell/powertips/b/tips/posts/using-arrays-as-parameter-default-values)

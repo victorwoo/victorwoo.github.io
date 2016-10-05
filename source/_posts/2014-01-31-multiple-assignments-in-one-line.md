@@ -37,4 +37,4 @@ tags:
 现在 `$c` 将包含所有大写形式的服务名。很另类的写法。
 
 <!--more-->
-本文国际来源：[Multiple Assignments in One Line](http://powershell.com/cs/blogs/tips/archive/2014/01/31/multiple-assignments-in-one-line.aspx)
+本文国际来源：[Multiple Assignments in One Line](http://community.idera.com/powershell/powertips/b/tips/posts/multiple-assignments-in-one-line)

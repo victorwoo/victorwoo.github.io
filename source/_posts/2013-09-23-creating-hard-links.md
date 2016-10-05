@@ -60,4 +60,4 @@ tags:
 您可以打开桌面上两个文件中的某一个，做一些修改，然后保存并关闭。当打开另一个文件时，您可以看到一模一样的修改后的内容。您还可以简单地删掉一个镜像文件来移除硬连接。
 <!--more-->
 
-本文国际来源：[Returning Multiple Values](http://powershell.com/cs/blogs/tips/archive/2013/09/09/returning-multiple-values.aspx)
+本文国际来源：[Returning Multiple Values](http://community.idera.com/powershell/powertips/b/tips/posts/returning-multiple-values)

@@ -29,4 +29,4 @@ tags:
 	'??','127.0.0.1','localhost','notthere',$env:COMPUTERNAME | Test-Online
 
 <!--more-->
-本文国际来源：[Pinging Computers](http://powershell.com/cs/blogs/tips/archive/2014/01/30/pinging-computers.aspx)
+本文国际来源：[Pinging Computers](http://community.idera.com/powershell/powertips/b/tips/posts/pinging-computers)

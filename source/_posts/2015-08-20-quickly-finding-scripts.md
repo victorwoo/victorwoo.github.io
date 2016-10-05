@@ -42,4 +42,4 @@ tags:
 要设置一个不同的搜索跟路径，请使用 `-Path` 参数。通过这种方式，您可以很容易地在您的 USB 媒体或是网络路径中搜索。
 
 <!--more-->
-本文国际来源：[Quickly Finding Scripts](http://powershell.com/cs/blogs/tips/archive/2015/08/20/quickly-finding-scripts.aspx)
+本文国际来源：[Quickly Finding Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-finding-scripts)

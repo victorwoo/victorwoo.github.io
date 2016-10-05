@@ -69,4 +69,4 @@ tags:
 否则，`Invoke-Command` 将在指定的远程计算机（支持多台）上运行这段代码。在这个例子中，`Invoke-Command` 将过滤参数传递给远程代码。
 
 <!--more-->
-本文国际来源：[Getting Installed Software Remotely](http://powershell.com/cs/blogs/tips/archive/2015/11/11/getting-installed-software-remotely.aspx)
+本文国际来源：[Getting Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/getting-installed-software-remotely)

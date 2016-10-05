@@ -32,4 +32,4 @@ tags:
 请注意在许多企业环境中，EFS 系统是通过恢复密钥部署的。指定的维护人员可以通过主密钥解密文件。如果没有主密钥，一旦您丢失了您的 EFS 证书，就连您也无法查看或运行加密的脚本。
 
 <!--more-->
-本文国际来源：[Using Encrypting File System (EFS) to Protect Passwords](http://powershell.com/cs/blogs/tips/archive/2014/04/03/using-encrypting-file-system-efs-to-protect-passwords.aspx)
+本文国际来源：[Using Encrypting File System (EFS) to Protect Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/using-encrypting-file-system-efs-to-protect-passwords)

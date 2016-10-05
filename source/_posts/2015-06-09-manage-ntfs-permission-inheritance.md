@@ -40,4 +40,4 @@ tags:
     $acl | Set-Acl -Path $path
 
 <!--more-->
-本文国际来源：[Manage NTFS Permission Inheritance](http://powershell.com/cs/blogs/tips/archive/2015/06/09/manage-ntfs-permission-inheritance.aspx)
+本文国际来源：[Manage NTFS Permission Inheritance](http://community.idera.com/powershell/powertips/b/tips/posts/manage-ntfs-permission-inheritance)

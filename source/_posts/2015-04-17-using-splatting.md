@@ -31,4 +31,4 @@ tags:
     Get-ChildItem @params
 
 <!--more-->
-本文国际来源：[Using Splatting](http://powershell.com/cs/blogs/tips/archive/2015/04/17/using-splatting.aspx)
+本文国际来源：[Using Splatting](http://community.idera.com/powershell/powertips/b/tips/posts/using-splatting)

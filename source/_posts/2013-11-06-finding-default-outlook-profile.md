@@ -18,4 +18,4 @@ PowerShell 可以操作 COM 对象，例如 Outlook 应用程序。以下简单�
 	$outlookApplication.Application.DefaultProfileName 
 
 <!--more-->
-本文国际来源：[Finding Default Outlook Profile](http://powershell.com/cs/blogs/tips/archive/2013/11/06/finding-default-outlook-profile.aspx)
+本文国际来源：[Finding Default Outlook Profile](http://community.idera.com/powershell/powertips/b/tips/posts/finding-default-outlook-profile)

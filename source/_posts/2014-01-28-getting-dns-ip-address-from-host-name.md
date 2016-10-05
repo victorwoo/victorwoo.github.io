@@ -49,4 +49,4 @@ tags:
 注意该函数有一个非常简易的错误处理器。如果您传入了一个无法解析的计算机名，那么什么事也不会发生。如果您需要处理错误信息，请在 catch 代码块中添加代码。
 
 <!--more-->
-本文国际来源：[Getting DNS IP Address from Host Name](http://powershell.com/cs/blogs/tips/archive/2014/01/28/getting-dns-ip-address-from-host-name.aspx)
+本文国际来源：[Getting DNS IP Address from Host Name](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dns-ip-address-from-host-name)

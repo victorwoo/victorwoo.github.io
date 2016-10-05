@@ -66,4 +66,4 @@ PowerShell 可以用 `Export-Csv` 很容易创建 CSV 文件。如果您的系�
 这也会带来另外一个问题：当您以 en-US 语言文化设置运行 Excel 的 `Open()` 方法时，它不再需要 CSV 文件使用您的本地化分隔符。现在它需要的是一个以半角逗号分隔的文件，所以第二个脚本去掉了 `-UseCulture` 设置。
 
 <!--more-->
-本文国际来源：[Converting CSV to Excel File](http://powershell.com/cs/blogs/tips/archive/2015/05/05/converting-csv-to-excel-file.aspx)
+本文国际来源：[Converting CSV to Excel File](http://community.idera.com/powershell/powertips/b/tips/posts/converting-csv-to-excel-file)

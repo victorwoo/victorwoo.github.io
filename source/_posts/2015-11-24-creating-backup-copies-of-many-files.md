@@ -35,4 +35,4 @@ PowerShell 可以为您的文件建立备份。您所需要调整的只是需要
      }
 
 <!--more-->
-本文国际来源：[Creating Backup Copies of Many Files](http://powershell.com/cs/blogs/tips/archive/2015/11/24/creating-backup-copies-of-many-files.aspx)
+本文国际来源：[Creating Backup Copies of Many Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-backup-copies-of-many-files)

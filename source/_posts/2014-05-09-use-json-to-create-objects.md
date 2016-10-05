@@ -42,4 +42,4 @@ JSON 用来描述对象的，类似 XML，但是 JSON 更简单得多.JSON 支�
 ![](/img/2014-05-09-use-json-to-create-objects-001.png)
 
 <!--more-->
-本文国际来源：[Use JSON to Create Objects](http://powershell.com/cs/blogs/tips/archive/2014/05/09/use-json-to-create-objects.aspx)
+本文国际来源：[Use JSON to Create Objects](http://community.idera.com/powershell/powertips/b/tips/posts/use-json-to-create-objects)

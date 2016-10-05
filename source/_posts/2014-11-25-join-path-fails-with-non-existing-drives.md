@@ -49,4 +49,4 @@ $result
 如果您在 Windows 功能中启用了 Hyper-V 的 PowerShell 模块（如前一个技能中描述的一样的），您现在就可以通过 PowerShell 管理虚拟磁盘。
 
 <!--more-->
-本文国际来源：[Join-Path Fails with Nonexistent Drives](http://powershell.com/cs/blogs/tips/archive/2014/11/25/join-path-fails-with-non-existing-drives.aspx)
+本文国际来源：[Join-Path Fails with Nonexistent Drives](http://community.idera.com/powershell/powertips/b/tips/posts/join-path-fails-with-non-existing-drives)

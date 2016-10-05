@@ -41,4 +41,4 @@ Microsoft Windows 8.1 Pro
 ```
 
 <!--more-->
-本文国际来源：[Finding Out Windows Version](http://powershell.com/cs/blogs/tips/archive/2014/11/26/finding-out-windows-version.aspx)
+本文国际来源：[Finding Out Windows Version](http://community.idera.com/powershell/powertips/b/tips/posts/finding-out-windows-version)

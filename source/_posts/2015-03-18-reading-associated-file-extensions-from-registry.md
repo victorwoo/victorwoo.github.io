@@ -26,4 +26,4 @@ PowerShell 代码可以写得十分紧凑。以下是一个从 Windows 注册表
 由于路径名中的“`*`”符，该命令将自动读取 _HKCR_ 路径中以点开头的所有键。
 
 <!--more-->
-本文国际来源：[Reading Associated File Extensions from Registry](http://powershell.com/cs/blogs/tips/archive/2015/03/18/reading-associated-file-extensions-from-registry.aspx)
+本文国际来源：[Reading Associated File Extensions from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/reading-associated-file-extensions-from-registry)

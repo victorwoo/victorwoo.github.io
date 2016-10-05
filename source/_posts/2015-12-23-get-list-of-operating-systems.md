@@ -31,4 +31,4 @@ tags:
 该脚本将从您的 AD 中获取计算机账户并将它们根据操作系统分组，然后将它整理成一个清单。请注意使用 `PageSize` 因为在一个大型的组织中获取所有计算机信息可能会花费很长时间。
 
 <!--more-->
-本文国际来源：[Get List of Operating Systems](http://powershell.com/cs/blogs/tips/archive/2015/12/23/get-list-of-operating-systems.aspx)
+本文国际来源：[Get List of Operating Systems](http://community.idera.com/powershell/powertips/b/tips/posts/get-list-of-operating-systems)

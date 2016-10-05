@@ -54,4 +54,4 @@ tags:
 由于缺省的超时值是 1 秒，您最多等待 1 秒就能等到响应。
 
 <!--more-->
-本文国际来源：[Testing a Network Port](http://powershell.com/cs/blogs/tips/archive/2015/07/24/testing-a-network-port.aspx)
+本文国际来源：[Testing a Network Port](http://community.idera.com/powershell/powertips/b/tips/posts/testing-a-network-port)

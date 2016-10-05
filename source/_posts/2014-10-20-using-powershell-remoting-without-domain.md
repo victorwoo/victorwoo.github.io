@@ -25,4 +25,4 @@ _适用于 PowerShell 3.0 及以上版本_
 当您做了上述改动以后，就可以支持 NTLM 验证了。只需要记住从现在开始，要访问加入域的计算机，您需要通过 `-Credential` 参数提交用户名和密码。
 
 <!--more-->
-本文国际来源：[Using PowerShell Remoting without Domain](http://powershell.com/cs/blogs/tips/archive/2014/10/20/using-powershell-remoting-without-domain.aspx)
+本文国际来源：[Using PowerShell Remoting without Domain](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-remoting-without-domain)

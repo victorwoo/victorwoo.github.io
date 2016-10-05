@@ -41,4 +41,4 @@ PowerShell 5.0 中引入了 ZIP 文件支持，但是如果您安装了 .NET Fra
     }
 
 <!--more-->
-本文国际来源：[Unzipping ZIP Files with PowerShell 3.0 and 4.0](http://powershell.com/cs/blogs/tips/archive/2015/07/29/unzipping-zip-files-with-powershell-3-0-and-4-0.aspx)
+本文国际来源：[Unzipping ZIP Files with PowerShell 3.0 and 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files-with-powershell-3-0-and-4-0)

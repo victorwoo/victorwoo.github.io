@@ -38,4 +38,4 @@ WMI 服务可以用来汇报许多关于计算机硬件的详细信息。通常�
     Intel(R) Corpora... Intel(R) Display... OK                                    3
 
 <!--more-->
-本文国际来源：[WMI Device Inventory ](http://powershell.com/cs/blogs/tips/archive/2014/08/26/wmi-device-inventory.aspx)
+本文国际来源：[WMI Device Inventory ](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-device-inventory)

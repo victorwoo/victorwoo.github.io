@@ -33,4 +33,4 @@ tags:
     (...)
 
 <!--more-->
-本文国际来源：[Outputting and Assigning at the Same Time](http://powershell.com/cs/blogs/tips/archive/2015/09/07/outputting-and-assigning-at-the-same-time.aspx)
+本文国际来源：[Outputting and Assigning at the Same Time](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-and-assigning-at-the-same-time)

@@ -38,4 +38,4 @@ _适用于 PowerShell 2.0 及更高版本_
     Out-GridView
 
 <!--more-->
-本文国际来源：[Parsing DISM Log File](http://powershell.com/cs/blogs/tips/archive/2014/12/10/parsing-dism-log-file.aspx)
+本文国际来源：[Parsing DISM Log File](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-dism-log-file)

@@ -43,4 +43,4 @@ tags:
 只需要去掉某个关键词的注释并运行脚本，就可以观察循环的执行结果。
 
 <!--more-->
-本文国际来源：[Understanding break, continue, return, and exit](http://powershell.com/cs/blogs/tips/archive/2015/04/27/understanding-break-continue-return-and-exit.aspx)
+本文国际来源：[Understanding break, continue, return, and exit](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-break-continue-return-and-exit)

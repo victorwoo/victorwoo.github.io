@@ -23,4 +23,4 @@ _适用于 PowerShell 所有版本_
     $webservice.GetInfoByZIP('10286').Table
 
 <!--more-->
-本文国际来源：[Getting US ZIP Codes](http://powershell.com/cs/blogs/tips/archive/2014/10/13/getting-us-zip-codes.aspx)
+本文国际来源：[Getting US ZIP Codes](http://community.idera.com/powershell/powertips/b/tips/posts/getting-us-zip-codes)

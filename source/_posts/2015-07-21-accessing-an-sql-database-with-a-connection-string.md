@@ -41,4 +41,4 @@ tags:
     $results | Out-GridView
 
 <!--more-->
-本文国际来源：[Accessing an SQL Database with a Connection String](http://powershell.com/cs/blogs/tips/archive/2015/07/21/accessing-an-sql-database-with-a-connection-string.aspx)
+本文国际来源：[Accessing an SQL Database with a Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-an-sql-database-with-a-connection-string)

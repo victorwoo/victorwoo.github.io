@@ -90,4 +90,4 @@ PowerShell 给我们带来了一个很棒的窗体，用来显示一小段或者
 * 这只是试验性的代码。它并没有清除 PowerShell 用来显示窗体所创建的线程。当您关闭该线程时，该 PowerShell 线程将保持在后台运行，直到您关闭 PowerShell。我们需要为帮助窗口关闭事件增加一个事件处理器。该事件处理器可以清理该 PowerShell 线程。
 
 <!--more-->
-本文国际来源：[Using PowerShell’s Help Window for General Output](http://powershell.com/cs/blogs/tips/archive/2015/05/29/using-powershell-s-help-window-for-general-output.aspx)
+本文国际来源：[Using PowerShell’s Help Window for General Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-s-help-window-for-general-output)

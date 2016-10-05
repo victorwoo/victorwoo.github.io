@@ -19,4 +19,4 @@ tags:
 幸运的事，PowerShell 5.0 终于提供了 `Clear-RecycleBin` Cmdlet。
 
 <!--more-->
-本文国际来源：[Clearing Recycle Bin](http://powershell.com/cs/blogs/tips/archive/2015/12/29/clearing-recycle-bin.aspx)
+本文国际来源：[Clearing Recycle Bin](http://community.idera.com/powershell/powertips/b/tips/posts/clearing-recycle-bin)

@@ -27,4 +27,4 @@ tags:
 或者，从头到尾都使用 `Get-CimInstance`。它返回基本相同价值的信息。但在缺省情况下，它使用 WSMan 协议来进行远程操作，而不是 DCOM。
  
 <!--more-->
-本文国际来源：[Getting WMI IntelliSense](http://powershell.com/cs/blogs/tips/archive/2013/11/26/getting-wmi-intellisense.aspx)
+本文国际来源：[Getting WMI IntelliSense](http://community.idera.com/powershell/powertips/b/tips/posts/getting-wmi-intellisense)

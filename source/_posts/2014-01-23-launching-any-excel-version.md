@@ -25,4 +25,4 @@ PowerShell 有一个十分智能的 cmdlet 来用于运行程序：`Start-Proces
 	PS> Start-Process -FilePath 'C:\Program*\Microsoft Office\Office*\EXCEL.EXE'
 
 <!--more-->
-本文国际来源：[Launching Any Excel Version](http://powershell.com/cs/blogs/tips/archive/2014/01/23/launching-any-excel-version.aspx)
+本文国际来源：[Launching Any Excel Version](http://community.idera.com/powershell/powertips/b/tips/posts/launching-any-excel-version)

@@ -23,4 +23,4 @@ _适用于所有 PowerShell 版本_
     Convert-Path -Path Microsoft.PowerShell.Core\FileSystem::C:\windows\explorer.exe
 
 <!--more-->
-本文国际来源：[Correcting PowerShell Paths](http://powershell.com/cs/blogs/tips/archive/2014/07/30/correcting-powershell-paths.aspx)
+本文国际来源：[Correcting PowerShell Paths](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-powershell-paths)

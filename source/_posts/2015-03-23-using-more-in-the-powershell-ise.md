@@ -77,4 +77,4 @@ _适用于 PowerShell ISE_
     Press ENTER to continue
 
 <!--more-->
-本文国际来源：[Using “more” in the PowerShell ISE](http://powershell.com/cs/blogs/tips/archive/2015/03/23/using-more-in-the-powershell-ise.aspx)
+本文国际来源：[Using “more” in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-more-in-the-powershell-ise)

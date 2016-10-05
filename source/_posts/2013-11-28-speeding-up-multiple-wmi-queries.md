@@ -33,4 +33,4 @@ tags:
 当您创建会话是，您可以显式地指定一个不同的远程传输协议，例如 DCOM。
 
 <!--more-->
-本文国际来源：[Speeding Up Multiple WMI Queries](http://powershell.com/cs/blogs/tips/archive/2013/11/28/speeding-up-multiple-wmi-queries.aspx)
+本文国际来源：[Speeding Up Multiple WMI Queries](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-multiple-wmi-queries)

@@ -26,4 +26,4 @@ tags:
     $key.ProgramW6432Dir
 
 <!--more-->
-本文国际来源：[Reading Registry Values the Easy Way](http://powershell.com/cs/blogs/tips/archive/2014/06/19/reading-registry-values-the-easy-way.aspx)
+本文国际来源：[Reading Registry Values the Easy Way](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-the-easy-way)

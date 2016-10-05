@@ -61,4 +61,4 @@ _适用于 PowerShell 3.0 或更高版本_
 只需要将结果通过管道输出到 `Out-GridView` 就能查看完整的信息。
 
 <!--more-->
-本文国际来源：[Finding PowerShell Functions ](http://powershell.com/cs/blogs/tips/archive/2014/09/24/finding-powershell-functions.aspx)
+本文国际来源：[Finding PowerShell Functions ](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-functions)

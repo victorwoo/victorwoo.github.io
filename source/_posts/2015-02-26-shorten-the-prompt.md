@@ -31,4 +31,4 @@ _适用于 PowerShell 3.0 及以上版本_
     }
 
 <!--more-->
-本文国际来源：[Shorten the Prompt](http://powershell.com/cs/blogs/tips/archive/2015/02/26/shorten-the-prompt.aspx)
+本文国际来源：[Shorten the Prompt](http://community.idera.com/powershell/powertips/b/tips/posts/shorten-the-prompt)

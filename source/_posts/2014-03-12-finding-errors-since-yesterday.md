@@ -24,4 +24,4 @@ tags:
     Get-EventLog -LogName system -EntryType Error, Warning -After $yesterday 
 
 <!--more-->
-本文国际来源：[Finding Errors since Yesterday](http://powershell.com/cs/blogs/tips/archive/2014/03/12/finding-errors-since-yesterday.aspx)
+本文国际来源：[Finding Errors since Yesterday](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-since-yesterday)

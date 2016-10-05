@@ -60,4 +60,4 @@ Windows 8.1 和 Server 2012 R2 引入了一个名为“PrintManagement”的模�
      Remove-PrintJob -CimSession $ComputerName
 
 <!--more-->
-本文国际来源：[Analyzing and Removing Print Jobs](http://powershell.com/cs/blogs/tips/archive/2015/01/21/analyzing-and-removing-print-jobs.aspx)
+本文国际来源：[Analyzing and Removing Print Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-and-removing-print-jobs)

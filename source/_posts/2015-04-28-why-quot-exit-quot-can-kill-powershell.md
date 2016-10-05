@@ -51,4 +51,4 @@ tags:
 所以请慎用“exit”语句！它只能用在退出一个脚本并将控制权交还给调用者的时候。
 
 <!--more-->
-本文国际来源：[Why "exit" can kill PowerShell](http://powershell.com/cs/blogs/tips/archive/2015/04/28/why-quot-exit-quot-can-kill-powershell.aspx)
+本文国际来源：[Why "exit" can kill PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/why-quot-exit-quot-can-kill-powershell)

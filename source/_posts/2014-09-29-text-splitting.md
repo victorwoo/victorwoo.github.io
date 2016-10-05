@@ -42,4 +42,4 @@ _适用于 PowerShell 所有版本_
     file.txt
 
 <!--more-->
-本文国际来源：[Text Splitting](http://powershell.com/cs/blogs/tips/archive/2014/09/29/text-splitting.aspx)
+本文国际来源：[Text Splitting](http://community.idera.com/powershell/powertips/b/tips/posts/text-splitting)

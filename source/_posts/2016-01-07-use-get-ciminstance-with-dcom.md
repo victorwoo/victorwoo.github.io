@@ -56,4 +56,4 @@ function Get-BIOS
 ```
 
 <!--more-->
-本文国际来源：[Use Get-CimInstance with DCOM](http://powershell.com/cs/blogs/tips/archive/2016/01/07/use-get-ciminstance-with-dcom.aspx)
+本文国际来源：[Use Get-CimInstance with DCOM](http://community.idera.com/powershell/powertips/b/tips/posts/use-get-ciminstance-with-dcom)

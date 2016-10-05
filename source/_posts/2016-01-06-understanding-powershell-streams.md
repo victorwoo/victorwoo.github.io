@@ -130,4 +130,4 @@ DebugPreference = Inquire
 ```
 
 <!--more-->
-本文国际来源：[Understanding PowerShell Streams](http://powershell.com/cs/blogs/tips/archive/2016/01/06/understanding-powershell-streams.aspx)
+本文国际来源：[Understanding PowerShell Streams](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-powershell-streams)

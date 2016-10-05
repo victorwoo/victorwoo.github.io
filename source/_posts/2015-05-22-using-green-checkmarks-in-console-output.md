@@ -35,4 +35,4 @@ tags:
 如果该复选标记并没有显示出来，请确保您的控制台字体设置成了 TrueType 字体，例如“Consolas”。您可以点击控制台标题栏左上角的图标，并选择“属性”来设置字体。
 
 <!--more-->
-本文国际来源：[Using Green Checkmarks in Console Output](http://powershell.com/cs/blogs/tips/archive/2015/05/22/using-green-checkmarks-in-console-output.aspx)
+本文国际来源：[Using Green Checkmarks in Console Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-green-checkmarks-in-console-output)

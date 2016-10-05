@@ -27,4 +27,4 @@ Get-Random -InputObject 1, 2, 3, 5, 8, 13 -Count ([int]::MaxValue)
 ```
 
 <!--more-->
-本文国际来源：[Randomize Lists of Numbers](http://powershell.com/cs/blogs/tips/archive/2014/11/28/randomize-lists-of-numbers.aspx)
+本文国际来源：[Randomize Lists of Numbers](http://community.idera.com/powershell/powertips/b/tips/posts/randomize-lists-of-numbers)

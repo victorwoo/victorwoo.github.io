@@ -26,4 +26,4 @@ _适用于 PowerShell 所有版本_
 请注意 `BaseName` 属性的使用。它只返回主文件名（不包含扩展名）。通过这种方式，扩展名中的数字不会被包含在内。
 
 <!--more-->
-本文国际来源：[Searching Files with Regular Expressions](http://powershell.com/cs/blogs/tips/archive/2014/08/18/searching-files-with-regular-expressions.aspx)
+本文国际来源：[Searching Files with Regular Expressions](http://community.idera.com/powershell/powertips/b/tips/posts/searching-files-with-regular-expressions)

@@ -33,4 +33,4 @@ tags:
 
 然后，单击其中的任意一个主题，然后按下 `F1` 键。帮助窗口将会打开，并显示详细的帮助。
 <!--more-->
-本文国际来源：[Press F1 to Navigate PowerShell Help Topics](http://powershell.com/cs/blogs/tips/archive/2013/11/14/press-f1-to-navigate-powershell-help-topics.aspx)
+本文国际来源：[Press F1 to Navigate PowerShell Help Topics](http://community.idera.com/powershell/powertips/b/tips/posts/press-f1-to-navigate-powershell-help-topics)

@@ -35,4 +35,4 @@ _适用于 PowerShell 所有版本_
     Import-Clixml -Path $Path
 
 <!--more-->
-本文国际来源：[Dumping Service State Information ](http://powershell.com/cs/blogs/tips/archive/2014/09/23/dumping-service-state-information.aspx)
+本文国际来源：[Dumping Service State Information ](http://community.idera.com/powershell/powertips/b/tips/posts/dumping-service-state-information)

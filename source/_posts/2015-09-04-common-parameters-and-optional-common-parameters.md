@@ -37,4 +37,4 @@ cmdlet 和高级的 PowerShell 函数可以拥有自己的参数，但它们通�
     UseTransaction
 
 <!--more-->
-本文国际来源：[Common Parameters and Optional Common Parameters](http://powershell.com/cs/blogs/tips/archive/2015/09/04/common-parameters-and-optional-common-parameters.aspx)
+本文国际来源：[Common Parameters and Optional Common Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/common-parameters-and-optional-common-parameters)

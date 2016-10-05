@@ -31,4 +31,4 @@ tags:
     $PSDefaultParameterValues.Clear()
 
 <!--more-->
-本文国际来源：[Using Default Parameters](http://powershell.com/cs/blogs/tips/archive/2014/07/04/using-default-parameters.aspx)
+本文国际来源：[Using Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parameters)

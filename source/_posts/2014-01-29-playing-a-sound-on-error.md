@@ -28,4 +28,4 @@ tags:
 缺省情况下，PowerShell 将会等待直到声音播放完。如果您希望 PowerShell 继续执行而不是等待，请将 `PlaySync()` 替换成 `Play()`。
 
 <!--more-->
-本文国际来源：[Playing a Sound on Error](http://powershell.com/cs/blogs/tips/archive/2014/01/29/playing-a-sound-on-error.aspx)
+本文国际来源：[Playing a Sound on Error](http://community.idera.com/powershell/powertips/b/tips/posts/playing-a-sound-on-error)

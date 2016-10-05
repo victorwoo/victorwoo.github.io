@@ -41,4 +41,4 @@ tags:
 这个缺陷在对通过 here string 定义的脚本变量缩进的时候暴露出来。
 
 <!--more-->
-本文国际来源：[ISE Bug Locks Debugger](http://powershell.com/cs/blogs/tips/archive/2014/05/16/ise-bug-locks-debugger.aspx)
+本文国际来源：[ISE Bug Locks Debugger](http://community.idera.com/powershell/powertips/b/tips/posts/ise-bug-locks-debugger)

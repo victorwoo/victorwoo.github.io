@@ -31,4 +31,4 @@ tags:
 > 这时候可用的值在错误提示中就暴露出来了 :-)  
 
 <!--more-->
-本文国际来源：[Lowering PowerShell Process Priority](http://powershell.com/cs/blogs/tips/archive/2014/01/02/lowering-powershell-process-priority.aspx)
+本文国际来源：[Lowering PowerShell Process Priority](http://community.idera.com/powershell/powertips/b/tips/posts/lowering-powershell-process-priority)

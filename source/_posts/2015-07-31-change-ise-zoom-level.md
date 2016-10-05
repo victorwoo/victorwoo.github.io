@@ -46,4 +46,4 @@ PowerShell ISE 的右下角有一个缩放滑竿，您也可以用 PowerShell �
     $psise.Options.Zoom = $zoom
 
 <!--more-->
-本文国际来源：[Change ISE Zoom Level](http://powershell.com/cs/blogs/tips/archive/2015/07/31/change-ise-zoom-level.aspx)
+本文国际来源：[Change ISE Zoom Level](http://community.idera.com/powershell/powertips/b/tips/posts/change-ise-zoom-level)

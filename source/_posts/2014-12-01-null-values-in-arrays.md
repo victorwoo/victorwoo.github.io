@@ -29,4 +29,4 @@ Count: 4
 ```
 
 <!--more-->
-本文国际来源：[NULL Values in Arrays](http://powershell.com/cs/blogs/tips/archive/2014/12/01/null-values-in-arrays.aspx)
+本文国际来源：[NULL Values in Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/null-values-in-arrays)

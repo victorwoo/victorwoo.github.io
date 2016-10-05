@@ -24,4 +24,4 @@ _适用于 PowerShell 所有版本_
 请注意这个函数调用是大小写敏感的！
 
 <!--more-->
-本文国际来源：[Hibernate System](http://powershell.com/cs/blogs/tips/archive/2014/07/28/hibernate-system.aspx)
+本文国际来源：[Hibernate System](http://community.idera.com/powershell/powertips/b/tips/posts/hibernate-system)

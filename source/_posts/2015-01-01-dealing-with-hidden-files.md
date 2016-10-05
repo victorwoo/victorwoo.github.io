@@ -39,4 +39,4 @@ _适用于 PowerShell 3.0 及更高版本_
     (...)
 
 <!--more-->
-本文国际来源：[Dealing with Hidden Files](http://powershell.com/cs/blogs/tips/archive/2015/01/01/dealing-with-hidden-files.aspx)
+本文国际来源：[Dealing with Hidden Files](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-hidden-files)

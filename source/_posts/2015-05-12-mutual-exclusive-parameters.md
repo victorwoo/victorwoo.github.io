@@ -37,4 +37,4 @@ tags:
 `Test-ParameterSet` 函数有两个参数：`-id` 和 `-name`。用户只能指定一个参数，而不能同时指定两个参数。这个例子也演示了如何知道用户选择了哪个参数集。
 
 <!--more-->
-本文国际来源：[Mutual Exclusive Parameters](http://powershell.com/cs/blogs/tips/archive/2015/05/12/mutual-exclusive-parameters.aspx)
+本文国际来源：[Mutual Exclusive Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/mutual-exclusive-parameters)

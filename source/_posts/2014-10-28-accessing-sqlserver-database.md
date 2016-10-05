@@ -43,4 +43,4 @@ _适用于 PowerShell 所有版本及 SQLServer_
     Invoke-Item -Path $Path
 
 <!--more-->
-本文国际来源：[Accessing SQLServer Database](http://powershell.com/cs/blogs/tips/archive/2014/10/28/accessing-sqlserver-database.aspx)
+本文国际来源：[Accessing SQLServer Database](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-sqlserver-database)

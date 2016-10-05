@@ -23,4 +23,4 @@ tags:
     Get-WindowsFeature -Name $result.FeatureResult.Name
 
 <!--more-->
-本文国际来源：[Installing Windows Features](http://powershell.com/cs/blogs/tips/archive/2015/06/11/installing-windows-features.aspx)
+本文国际来源：[Installing Windows Features](http://community.idera.com/powershell/powertips/b/tips/posts/installing-windows-features)

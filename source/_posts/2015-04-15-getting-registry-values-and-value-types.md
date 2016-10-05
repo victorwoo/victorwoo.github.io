@@ -66,4 +66,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Getting Registry Values and Value Types](http://powershell.com/cs/blogs/tips/archive/2015/04/15/getting-registry-values-and-value-types.aspx)
+本文国际来源：[Getting Registry Values and Value Types](http://community.idera.com/powershell/powertips/b/tips/posts/getting-registry-values-and-value-types)

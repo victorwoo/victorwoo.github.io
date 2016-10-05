@@ -35,4 +35,4 @@ The object pretends to be a process object, and ETS will format it accordingly:
     PS>
 
 <!--more-->
-本文国际来源：[Faking Object Type](http://powershell.com/cs/blogs/tips/archive/2014/10/22/faking-object-type.aspx)
+本文国际来源：[Faking Object Type](http://community.idera.com/powershell/powertips/b/tips/posts/faking-object-type)

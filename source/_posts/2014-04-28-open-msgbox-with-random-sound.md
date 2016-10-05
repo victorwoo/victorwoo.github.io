@@ -30,4 +30,4 @@ tags:
     $player.Stop()
 
 <!--more-->
-本文国际来源：[Open MsgBox with Random Sound](http://powershell.com/cs/blogs/tips/archive/2014/04/28/open-msgbox-with-random-sound.aspx)
+本文国际来源：[Open MsgBox with Random Sound](http://community.idera.com/powershell/powertips/b/tips/posts/open-msgbox-with-random-sound)

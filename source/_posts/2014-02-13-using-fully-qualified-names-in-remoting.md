@@ -25,4 +25,4 @@ tags:
 然后，用查出的名字来代替主机名。如果主机启用了 Remoting 并且正确地配置了，您现在应该可以连上了。
 
 <!--more-->
-本文国际来源：[Using Fully Qualified Names in Remoting](http://powershell.com/cs/blogs/tips/archive/2014/02/13/using-fully-qualified-names-in-remoting.aspx)
+本文国际来源：[Using Fully Qualified Names in Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/using-fully-qualified-names-in-remoting)

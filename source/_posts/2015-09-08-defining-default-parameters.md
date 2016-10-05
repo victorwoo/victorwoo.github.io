@@ -35,4 +35,4 @@ PowerShell 可以为任意参数定义缺省值，所以如果您总是需要传
     PS> $PSDefaultParameterValues.Clear()
 
 <!--more-->
-本文国际来源：[Defining Default Parameters](http://powershell.com/cs/blogs/tips/archive/2015/09/08/defining-default-parameters.aspx)
+本文国际来源：[Defining Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/defining-default-parameters)

@@ -40,4 +40,4 @@ tags:
 这段代码示范了您可以获取一个时间段之内的事件，并且示范了如何查询多个事件日志。
 
 <!--more-->
-本文国际来源：[Finding Events around A Date](http://powershell.com/cs/blogs/tips/archive/2014/03/09/finding-events-around-a-date.aspx)
+本文国际来源：[Finding Events around A Date](http://community.idera.com/powershell/powertips/b/tips/posts/finding-events-around-a-date)

@@ -34,4 +34,4 @@ _适用于 PowerShell 所有版本_
 	PS> dir $home -Filter *.ps1 -Recurse -Exclude *.ps1xml | Test-SyntaxError
 
 <!--more-->
-本文国际来源：[Finding Errors in Scripts](http://powershell.com/cs/blogs/tips/archive/2014/09/17/finding-errors-in-scripts.aspx)
+本文国际来源：[Finding Errors in Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-in-scripts)

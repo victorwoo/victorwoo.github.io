@@ -49,4 +49,4 @@ tags:
 然后，识别出您希望填充的表单，然后将脚本代码中的表单名称和动作改为您从 HTML 代码中识别出来的值。
 
 <!--more-->
-本文国际来源：[Auto-Connecting with Public Hotspot](http://powershell.com/cs/blogs/tips/archive/2014/03/07/auto-connecting-with-public-hotspot.aspx)
+本文国际来源：[Auto-Connecting with Public Hotspot](http://community.idera.com/powershell/powertips/b/tips/posts/auto-connecting-with-public-hotspot)

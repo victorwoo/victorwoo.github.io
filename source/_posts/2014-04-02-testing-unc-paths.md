@@ -37,4 +37,4 @@ tags:
     Test-Path -Path $path 
 
 <!--more-->
-本文国际来源：[Testing UNC Paths](http://powershell.com/cs/blogs/tips/archive/2014/04/02/testing-unc-paths.aspx)
+本文国际来源：[Testing UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/testing-unc-paths)

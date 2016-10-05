@@ -27,4 +27,4 @@ _需要 _ActiveDirectory 模块_
     $TSAllowLogOn = $ADUser.psbase.InvokeGet('allowLogon')
 
 <!--more-->
-本文国际来源：[Managing Terminal Service Settings](http://powershell.com/cs/blogs/tips/archive/2015/02/03/managing-terminal-service-settings.aspx)
+本文国际来源：[Managing Terminal Service Settings](http://community.idera.com/powershell/powertips/b/tips/posts/managing-terminal-service-settings)

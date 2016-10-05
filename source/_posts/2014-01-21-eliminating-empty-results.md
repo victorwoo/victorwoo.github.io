@@ -27,4 +27,4 @@ tags:
 `Where-Object` 将会排除您所选的属性包含以下任意一种情况的对象：null 值、空字符串，或者数字 0。因为这些值在转换为 `Boolean` 类型的时候将会被转换成 `$false`。
 
 <!--more-->
-本文国际来源：[Eliminating Empty Results](http://powershell.com/cs/blogs/tips/archive/2014/01/21/eliminating-empty-results.aspx)
+本文国际来源：[Eliminating Empty Results](http://community.idera.com/powershell/powertips/b/tips/posts/eliminating-empty-results)

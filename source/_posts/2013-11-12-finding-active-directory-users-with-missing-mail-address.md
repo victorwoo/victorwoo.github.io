@@ -29,4 +29,4 @@ LDAP 查询的功能非常强大，可以帮助查找缺少信息的账户。
 	  Select-Object -Property sAMAccountName, name, mail
 
 <!--more-->
-本文国际来源：[Finding Active Directory Users with Missing Mail Address](http://powershell.com/cs/blogs/tips/archive/2013/11/12/finding-active-directory-users-with-missing-mail-address.aspx)
+本文国际来源：[Finding Active Directory Users with Missing Mail Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-users-with-missing-mail-address)

@@ -34,4 +34,4 @@ _适用于 PowerShell 所有版本_
     PriorityBoostEnabled       Property       bool PriorityBoostEnabled  {get;set;}
 
 <!--more-->
-本文国际来源：[Finding Changeable Properties](http://powershell.com/cs/blogs/tips/archive/2014/10/08/finding-changeable-properties.aspx)
+本文国际来源：[Finding Changeable Properties](http://community.idera.com/powershell/powertips/b/tips/posts/finding-changeable-properties)

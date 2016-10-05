@@ -30,4 +30,4 @@ So better get into the habit of using $null rather than Out-Null!
 所以最好养成习惯使用 `$null` 而不是 `Out-Null`！
 
 <!--more-->
-本文国际来源：[Discarding Results](http://powershell.com/cs/blogs/tips/archive/2014/09/11/discarding-results.aspx)
+本文国际来源：[Discarding Results](http://community.idera.com/powershell/powertips/b/tips/posts/discarding-results)

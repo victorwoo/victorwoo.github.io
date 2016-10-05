@@ -39,4 +39,4 @@ tags:
 如果您必须要输出不同的对象，请将它们用管道输出到 `Out-Host`。每次您输出到 `Out-Host`，PowerShell 都将创建一个具有新的表格标题的输出。
 
 <!--more-->
-本文国际来源：[Do Not Mix Different Objects!](http://powershell.com/cs/blogs/tips/archive/2016/02/18/do-not-mix-different-objects.aspx)
+本文国际来源：[Do Not Mix Different Objects!](http://community.idera.com/powershell/powertips/b/tips/posts/do-not-mix-different-objects)

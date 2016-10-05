@@ -34,4 +34,4 @@ tags:
 ![](/img/2014-03-26-finding-time-servers-and-reading-all-regkey-values-002.png)
 
 <!--more-->
-本文国际来源：[Finding Time Servers (And Reading All RegKey Values)](http://powershell.com/cs/blogs/tips/archive/2014/03/26/finding-time-servers-and-reading-all-regkey-values.aspx)
+本文国际来源：[Finding Time Servers (And Reading All RegKey Values)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-time-servers-and-reading-all-regkey-values)

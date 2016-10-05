@@ -56,4 +56,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Finding Computers with PowerShell Remoting](http://powershell.com/cs/blogs/tips/archive/2015/07/27/finding-computers-with-powershell-remoting.aspx)
+本文国际来源：[Finding Computers with PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/finding-computers-with-powershell-remoting)

@@ -32,4 +32,4 @@ tags:
 请注意它的副作用：当您告知一个 cmdlet 的错误处理器要在某些错误发生时抛出异常，则该 cmdlet 将会在发生第一个错误的地方抛出异常，并且不会继续执行。
 
 <!--more-->
-本文国际来源：[Why Some Errors Aren't Caught](http://powershell.com/cs/blogs/tips/archive/2015/10/28/why-some-errors-aren-t-caught.aspx)
+本文国际来源：[Why Some Errors Aren't Caught](http://community.idera.com/powershell/powertips/b/tips/posts/why-some-errors-aren-t-caught)

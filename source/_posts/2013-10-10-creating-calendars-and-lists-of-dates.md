@@ -43,4 +43,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Creating Calendars (and Lists of Dates)](http://powershell.com/cs/blogs/tips/archive/2013/10/10/creating-calendars-and-lists-of-dates.aspx)
+本文国际来源：[Creating Calendars (and Lists of Dates)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-calendars-and-lists-of-dates)

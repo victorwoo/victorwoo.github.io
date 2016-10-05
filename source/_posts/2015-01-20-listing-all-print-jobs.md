@@ -27,4 +27,4 @@ Windows 8.1 和 Server 2012 R2 引入了一个名为“PrintManagement”的模�
 如果该代码返回空，那么说明没有打印任务（或者您没有读取它们的权限）。
 
 <!--more-->
-本文国际来源：[Listing All Print Jobs](http://powershell.com/cs/blogs/tips/archive/2015/01/20/listing-all-print-jobs.aspx)
+本文国际来源：[Listing All Print Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/listing-all-print-jobs)

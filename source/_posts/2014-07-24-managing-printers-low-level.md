@@ -25,4 +25,4 @@ _适用于所有 PowerShell 版本_
 这段代码将打开一个帮助窗口，列出了许多东西，包括演示如何安装、删除和复制打印机驱动的例子。这个工具也可以远程使用，假设您通过合适的组策略允许远程操作。
 
 <!--more-->
-本文国际来源：[Managing Printers Low-Level](http://powershell.com/cs/blogs/tips/archive/2014/07/24/managing-printers-low-level.aspx)
+本文国际来源：[Managing Printers Low-Level](http://community.idera.com/powershell/powertips/b/tips/posts/managing-printers-low-level)

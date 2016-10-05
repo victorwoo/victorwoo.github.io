@@ -305,4 +305,4 @@ $window.ShowDialog()
 ```
 
 <!--more-->
-本文国际来源：[Loading a Base64-encoded Picture into WPF Window](http://powershell.com/cs/blogs/tips/archive/2016/01/05/loading-a-base64-encoded-picture-into-wpf-window.aspx)
+本文国际来源：[Loading a Base64-encoded Picture into WPF Window](http://community.idera.com/powershell/powertips/b/tips/posts/loading-a-base64-encoded-picture-into-wpf-window)

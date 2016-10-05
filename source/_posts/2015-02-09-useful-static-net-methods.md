@@ -89,4 +89,4 @@ PowerShell 可以调用 .NET 类型的静态方法。以下是一些很好用的
     static decimal Round(decimal d, int decimals, System.MidpointRounding mode)
 
 <!--more-->
-本文国际来源：[Useful Static .NET Methods](http://powershell.com/cs/blogs/tips/archive/2015/02/09/useful-static-net-methods.aspx)
+本文国际来源：[Useful Static .NET Methods](http://community.idera.com/powershell/powertips/b/tips/posts/useful-static-net-methods)

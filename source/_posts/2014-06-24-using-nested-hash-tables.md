@@ -46,4 +46,4 @@ tags:
 	False
 
 <!--more-->
-本文国际来源：[Using Nested Hash Tables](http://powershell.com/cs/blogs/tips/archive/2014/06/24/using-nested-hash-tables.aspx)
+本文国际来源：[Using Nested Hash Tables](http://community.idera.com/powershell/powertips/b/tips/posts/using-nested-hash-tables)

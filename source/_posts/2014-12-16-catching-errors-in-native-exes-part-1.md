@@ -35,4 +35,4 @@ _适用于 PowerShell 所有版本_
 这么做完之后，例如 .NET 错误等错误就可以被 PowerShell 处理了。
 
 <!--more-->
-本文国际来源：[Catching Errors in Native EXEs (Part 1)](http://powershell.com/cs/blogs/tips/archive/2014/12/16/catching-errors-in-native-exes-part-1.aspx)
+本文国际来源：[Catching Errors in Native EXEs (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/catching-errors-in-native-exes-part-1)

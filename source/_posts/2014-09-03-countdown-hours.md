@@ -23,4 +23,4 @@ _适用于 PowerShell 所有版本_
 这个例子计算距离 2014 年圣诞节还剩余的小时数。只需要替换代码中的日期，就可以得到距您期待的事件到来还有多少小时。
 
 <!--more-->
-本文国际来源：[Countdown Hours](http://powershell.com/cs/blogs/tips/archive/2014/09/03/countdown-hours.aspx)
+本文国际来源：[Countdown Hours](http://community.idera.com/powershell/powertips/b/tips/posts/countdown-hours)

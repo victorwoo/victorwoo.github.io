@@ -21,4 +21,4 @@ Kerberos 令牌大小取决于用户组成员的数量。在某些重度使用�
 	New-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\HTTP\Parameters `-Name "MaxRequestBytes" -Value 40000 -PropertyType "DWORD"
 
 <!--more-->
-本文国际来源：[PowerShell Remoting with Large Token Size](http://powershell.com/cs/blogs/tips/archive/2014/01/01/powershell-remoting-with-large-token-size.aspx)
+本文国际来源：[PowerShell Remoting with Large Token Size](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-remoting-with-large-token-size)

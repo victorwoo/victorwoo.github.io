@@ -38,4 +38,4 @@ C:\
 ```
 
 <!--more-->
-本文国际来源：[Finding Current File System Path](http://powershell.com/cs/blogs/tips/archive/2016/01/11/finding-current-file-system-path.aspx)
+本文国际来源：[Finding Current File System Path](http://community.idera.com/powershell/powertips/b/tips/posts/finding-current-file-system-path)

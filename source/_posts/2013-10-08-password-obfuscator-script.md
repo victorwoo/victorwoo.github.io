@@ -48,4 +48,4 @@ tags:
 再强调一下，这并不是安全的。但是要想获取密码的明文还需要更多点知识才行。
 
 <!--more-->
-本文国际来源：[Password Obfuscator Script](http://powershell.com/cs/blogs/tips/archive/2013/10/08/password-obfuscator-script.aspx)
+本文国际来源：[Password Obfuscator Script](http://community.idera.com/powershell/powertips/b/tips/posts/password-obfuscator-script)

@@ -32,4 +32,4 @@ PowerShell 3.0 以及以上的版本可以检测到包含“下载标记”的�
 	  Unblock-File
 
 <!--more-->
-本文国际来源：[Unblocking Download Files](http://powershell.com/cs/blogs/tips/archive/2014/01/22/unblocking-download-files.aspx)
+本文国际来源：[Unblocking Download Files](http://community.idera.com/powershell/powertips/b/tips/posts/unblocking-download-files)

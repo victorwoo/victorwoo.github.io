@@ -27,4 +27,4 @@ WMI 可以提供一个系统的很多信息，但是有些时候这些信息太�
 由于 `Get-WmiObject` 有一个 `-ComputerName` 参数，所以您也可以远程获取该信息。如果您想知道有哪些其他的驱动器类型，只需要去掉过滤条件，或者用搜索引擎搜索 `"Win32_LogicalDisk DriveType"`。
 
 <!--more-->
-本文国际来源：[Listing "Real" Hard Drives](http://powershell.com/cs/blogs/tips/archive/2013/11/25/listing-quot-real-quot-hard-drives.aspx)
+本文国际来源：[Listing "Real" Hard Drives](http://community.idera.com/powershell/powertips/b/tips/posts/listing-quot-real-quot-hard-drives)

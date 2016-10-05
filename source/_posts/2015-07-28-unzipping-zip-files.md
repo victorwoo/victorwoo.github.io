@@ -29,4 +29,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Unzipping ZIP Files](http://powershell.com/cs/blogs/tips/archive/2015/07/28/unzipping-zip-files.aspx)
+本文国际来源：[Unzipping ZIP Files](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files)

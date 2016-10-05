@@ -26,4 +26,4 @@ Here is a simple call that adds the alias Get-ChildItem and lets it point to pin
 这将导致一切都改变了：`Get-ChildItem` 不再列出文件夹内容了，而是变为 `ping` 的行为。甚至，所有的别名（例如 `dir` 和 `ls`）现在都指向 `ping`。我们假想一下如果别名指向了 `format.exe`，那么您的脚本会做什么？
 
 <!--more-->
-本文国际来源：[Aliases Can Be Dangerous](http://powershell.com/cs/blogs/tips/archive/2014/07/23/aliases-can-be-dangerous.aspx)
+本文国际来源：[Aliases Can Be Dangerous](http://community.idera.com/powershell/powertips/b/tips/posts/aliases-can-be-dangerous)

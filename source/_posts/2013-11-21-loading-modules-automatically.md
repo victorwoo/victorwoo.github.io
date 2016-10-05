@@ -24,4 +24,4 @@ tags:
 	PS> $env:PSModulePath += ';g:\mypersonalmodules'
 
 <!--more-->
-本文国际来源：[Loading Modules Automatically](http://powershell.com/cs/blogs/tips/archive/2013/11/21/loading-modules-automatically.aspx)
+本文国际来源：[Loading Modules Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/loading-modules-automatically)

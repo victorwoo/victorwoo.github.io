@@ -39,4 +39,4 @@ _适用于 PowerShell 2.0 及以上版本_
 生成的报告包括所有未使用您的白名单中的证书合法地签名的脚本。如果某个脚本使用白名单中的一个证书签过名，但是后来改变过，它也会出现在报告中。
 
 <!--more-->
-本文国际来源：[Checking PowerShell Security](http://powershell.com/cs/blogs/tips/archive/2014/12/30/checking-powershell-security.aspx)
+本文国际来源：[Checking PowerShell Security](http://community.idera.com/powershell/powertips/b/tips/posts/checking-powershell-security)

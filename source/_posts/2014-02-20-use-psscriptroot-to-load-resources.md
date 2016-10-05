@@ -31,4 +31,4 @@ tags:
 	. "$PSScriptRoot\resources\library1.ps1"
 
 <!--more-->
-本文国际来源：[Use $PSScriptRoot to Load Resources](http://powershell.com/cs/blogs/tips/archive/2014/02/20/use-psscriptroot-to-load-resources.aspx)
+本文国际来源：[Use $PSScriptRoot to Load Resources](http://community.idera.com/powershell/powertips/b/tips/posts/use-psscriptroot-to-load-resources)

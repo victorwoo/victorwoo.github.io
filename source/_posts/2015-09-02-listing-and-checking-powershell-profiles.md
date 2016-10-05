@@ -41,4 +41,4 @@ tags:
 这个例子有趣的地方是如何编程获取对象的属性。您可以使用 `Get-Member` 来查找某个对象的属性名。我们将在接下来的文章中介绍这个隐藏的技能。
 
 <!--more-->
-本文国际来源：[Listing (and Checking) PowerShell Profiles](http://powershell.com/cs/blogs/tips/archive/2015/09/02/listing-and-checking-powershell-profiles.aspx)
+本文国际来源：[Listing (and Checking) PowerShell Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/listing-and-checking-powershell-profiles)

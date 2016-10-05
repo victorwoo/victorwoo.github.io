@@ -19,4 +19,4 @@ Windows 8.1 仍然在它的一些上下文菜单中提供旧的 cmd.exe 命令�
 下一次，当您在 Windows 8.1 中按下 `WIN+X` 键时，迷你菜单上将显示“PowerShell”。
 
 <!--more-->
-本文国际来源：[Exchanging CMD.EXE with POWERSHELL.EXE in Windows 8.1](http://powershell.com/cs/blogs/tips/archive/2013/12/19/exchanging-cmd-exe-with-powershell-exe-in-windows-8-1.aspx)
+本文国际来源：[Exchanging CMD.EXE with POWERSHELL.EXE in Windows 8.1](http://community.idera.com/powershell/powertips/b/tips/posts/exchanging-cmd-exe-with-powershell-exe-in-windows-8-1)

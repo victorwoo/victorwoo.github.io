@@ -31,4 +31,4 @@ tags:
     $helper.MapNetworkDrive('O:','\\dc-01\somefolder',$true, 'training\user02', 'topSecret')
 
 <!--more-->
-本文国际来源：[Mapping Network Drives (Part 3)](http://powershell.com/cs/blogs/tips/archive/2015/08/31/mapping-network-drives-part-3.aspx)
+本文国际来源：[Mapping Network Drives (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-network-drives-part-3)

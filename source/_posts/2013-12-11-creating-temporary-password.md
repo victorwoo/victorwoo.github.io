@@ -23,4 +23,4 @@ tags:
 您的密码长度通过 `$length` 变量设置。用于构成密码的字符集存放在 `$characters` 变量中。缺省情况下使用 ASCII 编码为 31-50、65-90、97-122 的所有字符。如您所见，通过 `-ne` 操作符，您可以调整列表和排除字符。在我们的例子中，我们排除了容易拼写错的字母。
 
 <!--more-->
-本文国际来源：[Creating Temporary Password](http://powershell.com/cs/blogs/tips/archive/2013/12/11/creating-temporary-password.aspx)
+本文国际来源：[Creating Temporary Password](http://community.idera.com/powershell/powertips/b/tips/posts/creating-temporary-password)

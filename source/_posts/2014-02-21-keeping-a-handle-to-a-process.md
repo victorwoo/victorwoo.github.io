@@ -21,4 +21,4 @@ tags:
 ![](/img/2014-02-21-keeping-a-handle-to-a-process-002.png)
 
 <!--more-->
-本文国际来源：[Keeping a Handle to a Process](http://powershell.com/cs/blogs/tips/archive/2014/02/21/keeping-a-handle-to-a-process.aspx)
+本文国际来源：[Keeping a Handle to a Process](http://community.idera.com/powershell/powertips/b/tips/posts/keeping-a-handle-to-a-process)

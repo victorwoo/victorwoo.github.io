@@ -78,4 +78,4 @@ _适用于 PowerShell 2.0 及以上版本_
     }
 
 <!--more-->
-本文国际来源：[Clever Parameter Validation](http://powershell.com/cs/blogs/tips/archive/2015/04/02/clever-parameter-validation.aspx)
+本文国际来源：[Clever Parameter Validation](http://community.idera.com/powershell/powertips/b/tips/posts/clever-parameter-validation)

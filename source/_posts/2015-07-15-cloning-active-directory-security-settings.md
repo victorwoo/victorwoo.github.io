@@ -28,4 +28,4 @@ AD 安全描述符有可能非常复杂。复制 AD 安全信息却非常简单�
     Set-Acl -Path 'AD:\OU=NewOU2,DC=powershell,DC=local' -AclObject $sd
 
 <!--more-->
-本文国际来源：[Cloning Active Directory Security Settings](http://powershell.com/cs/blogs/tips/archive/2015/07/15/cloning-active-directory-security-settings.aspx)
+本文国际来源：[Cloning Active Directory Security Settings](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-active-directory-security-settings)

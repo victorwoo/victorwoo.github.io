@@ -28,4 +28,4 @@ Google 也知道您在这么做，所以当您从 PowerShell 发送一个查询�
       ForEach-Object { ($_.href -split 'imgurl=')[-1].Split('&')[0]}  
 
 <!--more-->
-本文国际来源：[Getting Picture URLs from Google Picture Search](http://powershell.com/cs/blogs/tips/archive/2014/04/24/getting-picture-urls-from-google-picture-search.aspx)
+本文国际来源：[Getting Picture URLs from Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/getting-picture-urls-from-google-picture-search)

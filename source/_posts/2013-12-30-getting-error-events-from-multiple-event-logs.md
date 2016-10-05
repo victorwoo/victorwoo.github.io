@@ -32,4 +32,4 @@ tags:
 	  Select-Object -First 100 -Property TimeGenerated, LogFile, EventCode, Message
 
 <!--more-->
-本文国际来源：[Getting Error Events from Multiple Event Logs](http://powershell.com/cs/blogs/tips/archive/2013/12/30/getting-error-events-from-multiple-event-logs.aspx)
+本文国际来源：[Getting Error Events from Multiple Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/getting-error-events-from-multiple-event-logs)

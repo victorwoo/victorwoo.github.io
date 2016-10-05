@@ -35,4 +35,4 @@ tags:
 所以结论是：`Sort-Objects` 的 `-Unique` 参数可以一次性应用到多个属性上。
 
 <!--more-->
-本文国际来源：[Eliminating Duplicates](http://powershell.com/cs/blogs/tips/archive/2014/03/04/eliminating-duplicates.aspx)
+本文国际来源：[Eliminating Duplicates](http://community.idera.com/powershell/powertips/b/tips/posts/eliminating-duplicates)

@@ -32,4 +32,4 @@ tags:
     Get-ADGroupMember -Identity PSGurus
 
 <!--more-->
-本文国际来源：[Simple AD Group Management](http://powershell.com/cs/blogs/tips/archive/2015/07/13/simple-ad-group-management.aspx)
+本文国际来源：[Simple AD Group Management](http://community.idera.com/powershell/powertips/b/tips/posts/simple-ad-group-management)

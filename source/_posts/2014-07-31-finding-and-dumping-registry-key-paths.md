@@ -30,4 +30,4 @@ _适用于所有 PowerShell 版本_
       }
 
 <!--more-->
-本文国际来源：[Finding and Dumping Registry Key Paths](http://powershell.com/cs/blogs/tips/archive/2014/07/31/finding-and-dumping-registry-key-paths.aspx)
+本文国际来源：[Finding and Dumping Registry Key Paths](http://community.idera.com/powershell/powertips/b/tips/posts/finding-and-dumping-registry-key-paths)

@@ -25,4 +25,4 @@ netsh advfirewall set allprofiles state on
 ```
 
 <!--more-->
-本文国际来源：[Managing Windows Firewall](http://powershell.com/cs/blogs/tips/archive/2015/12/31/managing-windows-firewall.aspx)
+本文国际来源：[Managing Windows Firewall](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-firewall)

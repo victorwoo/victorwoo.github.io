@@ -39,4 +39,4 @@ tags:
 您可以下载所有匹配关键字“PowerShell”的高分辨率的图片到您指定的 $TargetFolder 文件夹中。
 
 <!--more-->
-本文国际来源：[Automatically Downloading Pictures via Google Picture Search](http://powershell.com/cs/blogs/tips/archive/2014/04/25/automatically-downloading-pictures-via-google-picture-search.aspx)
+本文国际来源：[Automatically Downloading Pictures via Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/automatically-downloading-pictures-via-google-picture-search)

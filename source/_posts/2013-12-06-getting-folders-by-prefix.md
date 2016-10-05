@@ -42,4 +42,4 @@ tags:
 这有什么实用价值呢？有些公司使用文件夹前缀作为业务单元。用上这个技术之后，我们可以很容易地把所有的业务单元文件夹“收拢”起来——您可以秒杀地计算它们的存储容量并且创建一个自动化的报表。
 
 <!--more-->
-本文国际来源：[Getting Folders by Prefix](http://powershell.com/cs/blogs/tips/archive/2013/12/06/getting-folders-by-prefix.aspx)
+本文国际来源：[Getting Folders by Prefix](http://community.idera.com/powershell/powertips/b/tips/posts/getting-folders-by-prefix)

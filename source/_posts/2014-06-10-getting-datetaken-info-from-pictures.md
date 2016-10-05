@@ -49,4 +49,4 @@ tags:
       Get-DateTaken
 
 <!--more-->
-本文国际来源：[Getting DateTaken Info from Pictures](http://powershell.com/cs/blogs/tips/archive/2014/06/10/getting-datetaken-info-from-pictures.aspx)
+本文国际来源：[Getting DateTaken Info from Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/getting-datetaken-info-from-pictures)

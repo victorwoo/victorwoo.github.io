@@ -66,4 +66,4 @@ PowerShell 可以通过调用 Windows API，实现更改当前桌面背景并且
 	Set-Wallpaper -Path 'C:\Windows\Web\Wallpaper\Characters\img24.jpg'
 
 <!--more-->
-本文国际来源：[Change Desktop Wallpaper](http://powershell.com/cs/blogs/tips/archive/2014/01/10/change-desktop-wallpaper.aspx)
+本文国际来源：[Change Desktop Wallpaper](http://community.idera.com/powershell/powertips/b/tips/posts/change-desktop-wallpaper)

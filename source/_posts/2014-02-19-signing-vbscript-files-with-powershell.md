@@ -33,4 +33,4 @@ tags:
       Set-AuthenticodeSignature -Certificate $cert -WhatIf
 
 <!--more-->
-本文国际来源：[Signing VBScript Files with PowerShell](http://powershell.com/cs/blogs/tips/archive/2014/02/19/signing-vbscript-files-with-powershell.aspx)
+本文国际来源：[Signing VBScript Files with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/signing-vbscript-files-with-powershell)

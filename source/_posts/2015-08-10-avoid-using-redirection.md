@@ -37,4 +37,4 @@ tags:
     notepad.exe $OutPath
 
 <!--more-->
-本文国际来源：[Avoid Using Redirection](http://powershell.com/cs/blogs/tips/archive/2015/08/10/avoid-using-redirection.aspx)
+本文国际来源：[Avoid Using Redirection](http://community.idera.com/powershell/powertips/b/tips/posts/avoid-using-redirection)

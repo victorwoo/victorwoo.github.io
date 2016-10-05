@@ -42,4 +42,4 @@ tags:
 ![](/img/2014-03-14-drive-data-in-gb-and-percent-002.png)
 
 <!--more-->
-本文国际来源：[Drive Data in GB and Percent](http://powershell.com/cs/blogs/tips/archive/2014/03/14/drive-data-in-gb-and-percent.aspx)
+本文国际来源：[Drive Data in GB and Percent](http://community.idera.com/powershell/powertips/b/tips/posts/drive-data-in-gb-and-percent)

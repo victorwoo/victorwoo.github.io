@@ -31,4 +31,4 @@ tags:
     $a[0]
 
 <!--more-->
-本文国际来源：[Copying Arrays (Part 1)](http://powershell.com/cs/blogs/tips/archive/2015/09/30/copying-arrays-part-1.aspx)
+本文国际来源：[Copying Arrays (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/copying-arrays-part-1)

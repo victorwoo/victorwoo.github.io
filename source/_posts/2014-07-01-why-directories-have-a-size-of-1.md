@@ -42,4 +42,4 @@ tags:
 通过这个新“特性”，如果一个命令只返回一个对象，那么添加的“Count”属性总是返回“1”，意味着返回了 1 个元素。
 
 <!--more-->
-本文国际来源：[Why Directories Have a Size of 1](http://powershell.com/cs/blogs/tips/archive/2014/07/01/why-directories-have-a-size-of-1.aspx)
+本文国际来源：[Why Directories Have a Size of 1](http://community.idera.com/powershell/powertips/b/tips/posts/why-directories-have-a-size-of-1)

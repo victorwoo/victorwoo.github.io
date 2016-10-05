@@ -54,4 +54,4 @@ _适用于 PowerShell 所有版本_
     (...)
 
 <!--more-->
-本文国际来源：[Using System Error Colors for Output](http://powershell.com/cs/blogs/tips/archive/2015/01/12/using-system-error-colors-for-output.aspx)
+本文国际来源：[Using System Error Colors for Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-system-error-colors-for-output)

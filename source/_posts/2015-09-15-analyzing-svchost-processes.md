@@ -49,4 +49,4 @@ tags:
 当您运行这段代码时，您会见到当前运行中的进程列表。当进程名是“svchost”时，您会在新的“Service”列中查看到服务名。
 
 <!--more-->
-本文国际来源：[Analyzing svchost Processes](http://powershell.com/cs/blogs/tips/archive/2015/09/15/analyzing-svchost-processes.aspx)
+本文国际来源：[Analyzing svchost Processes](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-svchost-processes)

@@ -32,4 +32,4 @@ _适用于 PowerShell 3.0 及以上版本_
 自动展开代码更直观，更容易书写；手写循环兼容性更好，更快输出结果。
 
 <!--more-->
-本文国际来源：[Automatic Unrolling and Memory Consumption](http://powershell.com/cs/blogs/tips/archive/2015/01/30/automatic-unrolling-and-memory-consumption.aspx)
+本文国际来源：[Automatic Unrolling and Memory Consumption](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-unrolling-and-memory-consumption)

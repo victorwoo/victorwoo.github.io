@@ -76,4 +76,4 @@ tags:
 当帮助文件复制到您语言对应的文件夹中后，您就可以在非英语系统中使用英语的帮助文件了。
 
 <!--more-->
-本文国际来源：[Using PowerShell Help](http://powershell.com/cs/blogs/tips/archive/2015/07/10/using-powershell-help.aspx)
+本文国际来源：[Using PowerShell Help](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-help)

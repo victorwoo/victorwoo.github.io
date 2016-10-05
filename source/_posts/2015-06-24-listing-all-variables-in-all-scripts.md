@@ -27,4 +27,4 @@ tags:
         Sort-Object -Property Content, Script -Unique
 
 <!--more-->
-本文国际来源：[Listing All Variables in All Scripts](http://powershell.com/cs/blogs/tips/archive/2015/06/24/listing-all-variables-in-all-scripts.aspx)
+本文国际来源：[Listing All Variables in All Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/listing-all-variables-in-all-scripts)

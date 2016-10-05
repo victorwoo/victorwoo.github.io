@@ -26,4 +26,4 @@ tags:
     & $RealExcelPath $report 
 
 <!--more-->
-本文国际来源：[Exporting Data to Excel](http://powershell.com/cs/blogs/tips/archive/2014/03/11/exporting-data-to-excel.aspx)
+本文国际来源：[Exporting Data to Excel](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-data-to-excel)

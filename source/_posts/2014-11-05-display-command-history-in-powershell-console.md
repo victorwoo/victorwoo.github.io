@@ -19,4 +19,4 @@ _适用于 PowerShell 所有版本_
 按 `ALT+F7` 键将会清空命令行历史列表。
 
 <!--more-->
-本文国际来源：[Display Command History in PowerShell Console](http://powershell.com/cs/blogs/tips/archive/2014/11/05/display-command-history-in-powershell-console.aspx)
+本文国际来源：[Display Command History in PowerShell Console](http://community.idera.com/powershell/powertips/b/tips/posts/display-command-history-in-powershell-console)

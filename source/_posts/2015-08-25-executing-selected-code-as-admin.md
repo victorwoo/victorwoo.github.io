@@ -21,4 +21,4 @@ tags:
     Start-Process -FilePath powershell.exe -Verb runas -ArgumentList 'Stop-Service -Name wuauserv' -WindowStyle Minimized
 
 <!--more-->
-本文国际来源：[Executing Selected Code as Admin](http://powershell.com/cs/blogs/tips/archive/2015/08/25/executing-selected-code-as-admin.aspx)
+本文国际来源：[Executing Selected Code as Admin](http://community.idera.com/powershell/powertips/b/tips/posts/executing-selected-code-as-admin)

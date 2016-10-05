@@ -61,4 +61,4 @@ tags:
 	Root nameservers are out of sync
 
 <!--more-->
-本文国际来源：[Getting Excuses Automatically](http://powershell.com/cs/blogs/tips/archive/2013/11/11/getting-excuses-automatically.aspx)
+本文国际来源：[Getting Excuses Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/getting-excuses-automatically)

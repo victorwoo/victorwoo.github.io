@@ -35,4 +35,4 @@ _适用于 PowerShell 所有版本_
     $object.Drives
 
 <!--more-->
-本文国际来源：[Accessing COM Objects without ProgID](http://powershell.com/cs/blogs/tips/archive/2015/01/02/accessing-com-objects-without-progid.aspx)
+本文国际来源：[Accessing COM Objects without ProgID](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-com-objects-without-progid)

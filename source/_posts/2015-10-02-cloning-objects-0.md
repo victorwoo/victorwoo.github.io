@@ -40,4 +40,4 @@ tags:
     PS C:\>
 
 <!--more-->
-本文国际来源：[Cloning Objects](http://powershell.com/cs/blogs/tips/archive/2015/10/02/cloning-objects-0.aspx)
+本文国际来源：[Cloning Objects](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-objects-0)

@@ -48,4 +48,4 @@ foreach ($objResult in $colResults)
 ```
 
 <!--more-->
-本文国际来源：[Finding Recursive AD Memberships](http://powershell.com/cs/blogs/tips/archive/2015/12/30/finding-recursive-ad-memberships.aspx)
+本文国际来源：[Finding Recursive AD Memberships](http://community.idera.com/powershell/powertips/b/tips/posts/finding-recursive-ad-memberships)

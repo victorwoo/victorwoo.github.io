@@ -55,4 +55,4 @@ tags:
 您很快就会发现，锁屏确实可以防止鼠标点击，但是并不会屏蔽按键。这是一个有趣的技术，不是绝对安全的锁定。
 
 <!--more-->
-本文国际来源：[Use a Lock Screen](http://powershell.com/cs/blogs/tips/archive/2013/12/12/use-a-lock-screen.aspx)
+本文国际来源：[Use a Lock Screen](http://community.idera.com/powershell/powertips/b/tips/posts/use-a-lock-screen)

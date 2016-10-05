@@ -19,4 +19,4 @@ tags:
 这时在 ISE 编辑器中将显示一条细细的绿线。当您高亮选中了这个块以后，在绿线消失前，按下 `#`（或任何您打算放在标记的行前的字符）。类似地，您也可以整块删除字符。
 
 <!--more-->
-本文国际来源：[Using Block Comment in the ISE Editor](http://powershell.com/cs/blogs/tips/archive/2014/01/09/using-block-comment-in-the-ise-editor.aspx)
+本文国际来源：[Using Block Comment in the ISE Editor](http://community.idera.com/powershell/powertips/b/tips/posts/using-block-comment-in-the-ise-editor)

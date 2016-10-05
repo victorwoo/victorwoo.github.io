@@ -34,4 +34,4 @@ _适用于 PowerShell 所有版本_
     some__illegal__path_chars_.txt
 
 <!--more-->
-本文国际来源：[Removing Illegal Path Characters](http://powershell.com/cs/blogs/tips/archive/2014/09/12/removing-illegal-pathcharacters.aspx)
+本文国际来源：[Removing Illegal Path Characters](http://community.idera.com/powershell/powertips/b/tips/posts/removing-illegal-pathcharacters)

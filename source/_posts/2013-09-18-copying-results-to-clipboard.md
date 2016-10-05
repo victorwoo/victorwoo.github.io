@@ -37,4 +37,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Copying Results to Clipboard](http://powershell.com/cs/blogs/tips/archive/2013/09/18/copying-results-to-clipboard.aspx)
+本文国际来源：[Copying Results to Clipboard](http://community.idera.com/powershell/powertips/b/tips/posts/copying-results-to-clipboard)

@@ -25,4 +25,4 @@ _适用于 PowerShell 3.0 ISE 及以上版本_
 要选择多余一个属性，在键入逗号之后，再次按下 `CTRL+SPACE` 即可。
 
 <!--more-->
-本文国际来源：[ISE Auto-Completion Trick](http://powershell.com/cs/blogs/tips/archive/2015/03/31/ise-auto-completion-trick.aspx)
+本文国际来源：[ISE Auto-Completion Trick](http://community.idera.com/powershell/powertips/b/tips/posts/ise-auto-completion-trick)

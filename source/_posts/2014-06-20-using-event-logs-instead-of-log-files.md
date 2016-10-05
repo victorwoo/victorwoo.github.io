@@ -30,4 +30,4 @@ tags:
 通过 `Limit-EventLog`，您还可以配置您的日志，限制最大大小。
 
 <!--more-->
-本文国际来源：[Using Event Logs Instead of Log Files](http://powershell.com/cs/blogs/tips/archive/2014/06/20/using-event-logs-instead-of-log-files.aspx)
+本文国际来源：[Using Event Logs Instead of Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/using-event-logs-instead-of-log-files)

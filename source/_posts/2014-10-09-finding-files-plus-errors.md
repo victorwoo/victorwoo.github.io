@@ -27,4 +27,4 @@ _适用于 PowerShell 所有版本_
     }
 
 <!--more-->
-本文国际来源：[Finding Files plus Errors](http://powershell.com/cs/blogs/tips/archive/2014/10/09/finding-files-plus-errors.aspx)
+本文国际来源：[Finding Files plus Errors](http://community.idera.com/powershell/powertips/b/tips/posts/finding-files-plus-errors)

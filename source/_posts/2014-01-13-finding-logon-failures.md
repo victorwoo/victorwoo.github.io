@@ -45,4 +45,4 @@ tags:
 请注意这个函数还可以在远程主机上运行。请使用 `-ComputerName` 参数来查询一台远程主机。远程主机需要运行 RemoteRegistry 服务，并且您需要在目标机器上的本地管理员权限。
 
 <!--more-->
-本文国际来源：[Finding Logon Failures](http://powershell.com/cs/blogs/tips/archive/2014/01/13/finding-logon-failures.aspx)
+本文国际来源：[Finding Logon Failures](http://community.idera.com/powershell/powertips/b/tips/posts/finding-logon-failures)

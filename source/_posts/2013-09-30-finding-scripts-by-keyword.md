@@ -37,4 +37,4 @@ tags:
 默认情况下，`Find-Script` 只返回满足搜索条件的前 20 个脚本。您可以通过 `-Maximum` 和 `-StartPath` 参数来改变最大搜索条数和搜索位置。
 <!--more-->
 
-本文国际来源：[Finding Scripts by Keyword](http://powershell.com/cs/blogs/tips/archive/2013/09/30/finding-scripts-by-keyword.aspx)
+本文国际来源：[Finding Scripts by Keyword](http://community.idera.com/powershell/powertips/b/tips/posts/finding-scripts-by-keyword)

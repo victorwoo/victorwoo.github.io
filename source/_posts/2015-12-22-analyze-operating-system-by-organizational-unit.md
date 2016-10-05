@@ -33,4 +33,4 @@ tags:
       Out-GridView
 
 <!--more-->
-本文国际来源：[Analyze Operating System by Organizational Unit](http://powershell.com/cs/blogs/tips/archive/2015/12/22/analyze-operating-system-by-organizational-unit.aspx)
+本文国际来源：[Analyze Operating System by Organizational Unit](http://community.idera.com/powershell/powertips/b/tips/posts/analyze-operating-system-by-organizational-unit)

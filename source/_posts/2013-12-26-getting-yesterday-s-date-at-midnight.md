@@ -34,4 +34,4 @@ tags:
 > 译者注：如果您只是需要获取昨天午夜的日期值，还可以有其它方法。如：`(Get-Date).AddDays(-1).Date` 或 `[System.DateTime]::Today.Subtract([System.TimeSpan]::FromDays(1))`。
 
 <!--more-->
-本文国际来源：[Getting Yesterday’s Date - at Midnight!](http://powershell.com/cs/blogs/tips/archive/2013/12/26/getting-yesterday-s-date-at-midnight.aspx)
+本文国际来源：[Getting Yesterday’s Date - at Midnight!](http://community.idera.com/powershell/powertips/b/tips/posts/getting-yesterday-s-date-at-midnight)

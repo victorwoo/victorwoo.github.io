@@ -25,4 +25,4 @@ _适用于所有 PowerShell 版本_
     }
 
 <!--more-->
-本文国际来源：[Edit Network “hosts” File](http://powershell.com/cs/blogs/tips/archive/2014/08/05/edit-network-hosts-file.aspx)
+本文国际来源：[Edit Network “hosts” File](http://community.idera.com/powershell/powertips/b/tips/posts/edit-network-hosts-file)

@@ -31,4 +31,4 @@ Length 属性表示文件的行数。
 那种方法更好？这取决于您要如何使用这些数据。
 
 <!--more-->
-本文国际来源：[Reading All Text](http://powershell.com/cs/blogs/tips/archive/2014/04/07/reading-all-text.aspx)
+本文国际来源：[Reading All Text](http://community.idera.com/powershell/powertips/b/tips/posts/reading-all-text)

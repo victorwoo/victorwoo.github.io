@@ -29,4 +29,4 @@ tags:
 该信息是格式化 PowerShell 代码所需要的。您可以为 token 类型指定颜色，并为 PowerShell 代码创建自己的文档。
 
 <!--more-->
-本文国际来源：[Parsing PowerShell Scripts](http://powershell.com/cs/blogs/tips/archive/2015/05/11/parsing-powershell-scripts.aspx)
+本文国际来源：[Parsing PowerShell Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-powershell-scripts)

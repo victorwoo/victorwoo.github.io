@@ -37,4 +37,4 @@ _适用于 PowerShell 3.0 及以上版本_
     PS> Get-Process | Where-Object MainWindowTitle | Select-Object -Property Name, Id, Description, MainWindowTitle, StartTime | Out-GridView -Title 'Kill Application' -OutputMode Single | Stop-Process -WhatIf
 
 <!--more-->
-本文国际来源：[Process Killer (and some gotchas)](http://powershell.com/cs/blogs/tips/archive/2015/02/19/process-killer-and-some-gotchas.aspx)
+本文国际来源：[Process Killer (and some gotchas)](http://community.idera.com/powershell/powertips/b/tips/posts/process-killer-and-some-gotchas)

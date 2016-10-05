@@ -45,4 +45,4 @@ tags:
     Int32
 
 <!--more-->
-本文国际来源：[Outputting File Sizes in Different Formats](http://powershell.com/cs/blogs/tips/archive/2015/11/18/outputting-file-sizes-in-different-formats.aspx)
+本文国际来源：[Outputting File Sizes in Different Formats](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-file-sizes-in-different-formats)

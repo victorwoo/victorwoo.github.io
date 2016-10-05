@@ -46,4 +46,4 @@ WMI 可以方便地创建新的共享文件夹。以下是一段创建本地共�
     }
 
 <!--more-->
-本文国际来源：[Creating New Shares](http://powershell.com/cs/blogs/tips/archive/2014/10/31/creating-newshares.aspx)
+本文国际来源：[Creating New Shares](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newshares)

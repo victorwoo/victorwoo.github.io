@@ -49,4 +49,4 @@ tags:
     PowerShell: C:\Windows\System32\WindowsPowerShell\v1.0
 
 <!--more-->
-本文国际来源：[Understanding the –f Operator](http://powershell.com/cs/blogs/tips/archive/2015/11/25/understanding-the-f-operator.aspx)
+本文国际来源：[Understanding the –f Operator](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-f-operator)

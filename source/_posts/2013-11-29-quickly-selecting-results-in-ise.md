@@ -17,4 +17,4 @@ tags:
 当您运行一个命令后，光标位于 ISE 控制台窗格中并且等待输入新的命令。只需要按住 `CTRL` 并按下 `左` 键。光标将向左移动一位。然后按下 `CTRL+A` 选取所有的结果，然后按下 `CTRL+C` 将它们复制到剪贴板。完成！
 
 <!--more-->
-本文国际来源：[Quickly Selecting Results in ISE](http://powershell.com/cs/blogs/tips/archive/2013/11/29/quickly-selecting-results-in-ise.aspx)
+本文国际来源：[Quickly Selecting Results in ISE](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-selecting-results-in-ise)

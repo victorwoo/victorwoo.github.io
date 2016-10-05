@@ -45,4 +45,4 @@ tags:
     PS>
 
 <!--more-->
-本文国际来源：[Copying Command History as a Tool](http://powershell.com/cs/blogs/tips/archive/2014/07/09/copying-command-history-as-a-tool.aspx)
+本文国际来源：[Copying Command History as a Tool](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history-as-a-tool)

@@ -49,4 +49,4 @@ WPF (Windows Presentation Foundation) 是一种创建窗体和对话框的技术
     $window.Close()
 
 <!--more-->
-本文国际来源：[Showing WPF Info Message](http://powershell.com/cs/blogs/tips/archive/2014/05/05/showing-wpf-info-message.aspx)
+本文国际来源：[Showing WPF Info Message](http://community.idera.com/powershell/powertips/b/tips/posts/showing-wpf-info-message)

@@ -22,4 +22,4 @@ tags:
 	$account.distinguishedName
  
 <!--more-->
-本文国际来源：[Finding Active Directory Accounts by SID](http://powershell.com/cs/blogs/tips/archive/2013/10/24/finding-active-directory-accounts-by-sid.aspx)
+本文国际来源：[Finding Active Directory Accounts by SID](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-accounts-by-sid)

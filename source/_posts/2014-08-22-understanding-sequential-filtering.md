@@ -35,4 +35,4 @@ _适用于 PowerShell 所有版本_
       Out-GridView
 
 <!--more-->
-本文国际来源：[Understanding Sequential Filtering](http://powershell.com/cs/blogs/tips/archive/2014/08/22/understanding-sequential-filtering.aspx)
+本文国际来源：[Understanding Sequential Filtering](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-sequential-filtering)

@@ -38,4 +38,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Speeding Up Scripts with StringBuilder](http://powershell.com/cs/blogs/tips/archive/2014/07/03/speeding-up-scripts-with-stringbuilder.aspx)
+本文国际来源：[Speeding Up Scripts with StringBuilder](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-scripts-with-stringbuilder)

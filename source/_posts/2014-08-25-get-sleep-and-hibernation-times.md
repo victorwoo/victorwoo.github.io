@@ -38,4 +38,4 @@ _适用于 PowerShell 所有版本_
     }
 
 <!--more-->
-本文国际来源：[Get Sleep and Hibernation Times](http://powershell.com/cs/blogs/tips/archive/2014/08/25/get-sleep-and-hibernation-times.aspx)
+本文国际来源：[Get Sleep and Hibernation Times](http://community.idera.com/powershell/powertips/b/tips/posts/get-sleep-and-hibernation-times)

@@ -27,4 +27,4 @@ PowerShell 保存了您键入的所有命令列表，但是当您关闭 PowerShe
 	#(KEYWORD) <-现在按下（TAB）键！
 
 <!--more-->
-本文国际来源：[Exporting and Importing PowerShell History](http://powershell.com/cs/blogs/tips/archive/2013/11/08/exporting-and-importing-powershell-history.aspx)
+本文国际来源：[Exporting and Importing PowerShell History](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-and-importing-powershell-history)

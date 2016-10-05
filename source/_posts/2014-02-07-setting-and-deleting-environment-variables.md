@@ -47,4 +47,4 @@ PowerShell 可以很容易地读取环境变量。以下代码返回当前的 Wi
 	PS> Set-EnvironmentVariable -Name TestVar -Value '' -Target User
 
 <!--more-->
-本文国际来源：[Setting (And Deleting) Environment Variables](http://powershell.com/cs/blogs/tips/archive/2014/02/07/setting-and-deleting-environment-variables.aspx)
+本文国际来源：[Setting (And Deleting) Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/setting-and-deleting-environment-variables)

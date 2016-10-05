@@ -29,4 +29,4 @@ tags:
 当远程管理打开以后，您可以通过 `Enter-PSSession` 访问远程系统，并且您可以用 `Invoke-Command` 在这些机器上运行命令或脚本。
 
 <!--more-->
-本文国际来源：[Enabling PowerShell Remoting](http://powershell.com/cs/blogs/tips/archive/2014/04/01/enabling-powershell-remoting.aspx)
+本文国际来源：[Enabling PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-powershell-remoting)

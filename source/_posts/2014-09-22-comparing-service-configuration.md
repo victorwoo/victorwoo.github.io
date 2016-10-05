@@ -31,4 +31,4 @@ _适用于 PowerShell 3.0 或更高版本_
 得到的结果是服务配置差异的清单。
 
 <!--more-->
-本文国际来源：[Comparing Service Configuration ](http://powershell.com/cs/blogs/tips/archive/2014/09/22/comparing-service-configuration.aspx)
+本文国际来源：[Comparing Service Configuration ](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-service-configuration)

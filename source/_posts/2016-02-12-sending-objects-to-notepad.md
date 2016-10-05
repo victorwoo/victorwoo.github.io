@@ -72,4 +72,4 @@ function Out-Notepad
 另外您可能需要最大化记事本或禁用换行来查看正确的格式。
 
 <!--more-->
-本文国际来源：[Sending Objects to Notepad](http://powershell.com/cs/blogs/tips/archive/2016/02/12/sending-objects-to-notepad.aspx)
+本文国际来源：[Sending Objects to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/sending-objects-to-notepad)

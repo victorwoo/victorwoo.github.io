@@ -29,4 +29,4 @@ tags:
 两种使用 `Get-WmiObject` 的方式都支持本地和远程方式调用。
 
 <!--more-->
-本文国际来源：[Finding Logged On User](http://powershell.com/cs/blogs/tips/archive/2015/12/24/findinglogged-on-user.aspx)
+本文国际来源：[Finding Logged On User](http://community.idera.com/powershell/powertips/b/tips/posts/findinglogged-on-user)

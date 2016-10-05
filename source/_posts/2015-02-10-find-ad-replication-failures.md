@@ -39,4 +39,4 @@ _适用于 Windows 8.1、Server 2012 R2_
 请注意针对 Windows 8.1/Server 2012 R2 的 RSAT提供了一些额外的 cmdlet，这些 cmdlet 在针对 Windows 早期版本的 RSAT 中并没有提供。
 
 <!--more-->
-本文国际来源：[Find AD Replication Failures ](http://powershell.com/cs/blogs/tips/archive/2015/02/10/find-ad-replication-failures.aspx)
+本文国际来源：[Find AD Replication Failures ](http://community.idera.com/powershell/powertips/b/tips/posts/find-ad-replication-failures)

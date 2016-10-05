@@ -19,4 +19,4 @@ tags:
 不幸的是，这个命令没有 `-Force` 开关。所以虽然您可以简单地启动服务，但您可能无法用这种方式停止它们。当一个服务依赖于另一个服务时，它必须使用“强制”的方式来停止。
 
 <!--more-->
-本文国际来源：[Starting Services Remotely](http://powershell.com/cs/blogs/tips/archive/2014/01/06/starting-services-remotely.aspx)
+本文国际来源：[Starting Services Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/starting-services-remotely)

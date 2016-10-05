@@ -32,4 +32,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Manipulating File System Paths (Part 3)](http://powershell.com/cs/blogs/tips/archive/2013/09/06/manipulating-file-system-paths-part-3.aspx)
+本文国际来源：[Manipulating File System Paths (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths-part-3)

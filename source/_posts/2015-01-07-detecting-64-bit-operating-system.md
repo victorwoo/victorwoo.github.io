@@ -50,4 +50,4 @@ _适用于 Windows 7/Server 2008 R2_
     }
 
 <!--more-->
-本文国际来源：[Detecting 64-bit Operating System](http://powershell.com/cs/blogs/tips/archive/2015/01/07/detecting-64-bit-operating-system.aspx)
+本文国际来源：[Detecting 64-bit Operating System](http://community.idera.com/powershell/powertips/b/tips/posts/detecting-64-bit-operating-system)

@@ -28,4 +28,4 @@ tags:
     G:\
 
 <!--more-->
-本文国际来源：[Find All Active Drive Letters ](http://powershell.com/cs/blogs/tips/archive/2015/04/08/find-all-active-drive-letters.aspx)
+本文国际来源：[Find All Active Drive Letters ](http://community.idera.com/powershell/powertips/b/tips/posts/find-all-active-drive-letters)

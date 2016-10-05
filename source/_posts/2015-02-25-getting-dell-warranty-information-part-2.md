@@ -65,4 +65,4 @@ _适用于 PowerShell 2.0 及以上版本_
     EntitlementType         : Expired
 
 <!--more-->
-本文国际来源：[Getting DELL Warranty Information (Part 2)](http://powershell.com/cs/blogs/tips/archive/2015/02/25/getting-dell-warranty-information-part-2.aspx)
+本文国际来源：[Getting DELL Warranty Information (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dell-warranty-information-part-2)

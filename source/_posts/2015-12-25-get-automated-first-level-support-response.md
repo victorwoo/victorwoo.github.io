@@ -33,4 +33,4 @@ Here is a fun function to provide you with a good first level support response i
 您需要 Internet 连接来运行这段脚本。
 
 <!--more-->
-本文国际来源：[Get Automated First Level Support Response](http://powershell.com/cs/blogs/tips/archive/2015/12/25/get-automated-first-level-support-response.aspx)
+本文国际来源：[Get Automated First Level Support Response](http://community.idera.com/powershell/powertips/b/tips/posts/get-automated-first-level-support-response)

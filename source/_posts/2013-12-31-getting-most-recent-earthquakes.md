@@ -19,4 +19,4 @@ tags:
 	  Out-GridView
 
 <!--more-->
-本文国际来源：[Getting Most Recent Earthquakes](http://powershell.com/cs/blogs/tips/archive/2013/12/31/getting-most-recent-earthquakes.aspx)
+本文国际来源：[Getting Most Recent Earthquakes](http://community.idera.com/powershell/powertips/b/tips/posts/getting-most-recent-earthquakes)

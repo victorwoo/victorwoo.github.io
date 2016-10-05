@@ -25,4 +25,4 @@ tags:
       Select-Object -Property VolumeName, Freespace, DeviceID 
 
 <!--more-->
-本文国际来源：[Finding Hard Drives Running Low on Storage](http://powershell.com/cs/blogs/tips/archive/2014/03/13/finding-hard-drives-running-low-on-storage.aspx)
+本文国际来源：[Finding Hard Drives Running Low on Storage](http://community.idera.com/powershell/powertips/b/tips/posts/finding-hard-drives-running-low-on-storage)

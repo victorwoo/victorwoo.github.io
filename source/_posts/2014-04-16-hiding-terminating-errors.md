@@ -30,4 +30,4 @@ tags:
     {} 
 
 <!--more-->
-本文国际来源：[Hiding Terminating Errors](http://powershell.com/cs/blogs/tips/archive/2014/04/16/hiding-terminating-errors.aspx)
+本文国际来源：[Hiding Terminating Errors](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-terminating-errors)

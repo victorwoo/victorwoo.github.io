@@ -29,4 +29,4 @@ tags:
     $myErrors | Select-Object -ExpandProperty TargetObject
 
 <!--more-->
-本文国际来源：[Handling Cmdlet Errors without Interruption](http://powershell.com/cs/blogs/tips/archive/2014/06/18/handling-cmdlet-errors-without-interruption.aspx)
+本文国际来源：[Handling Cmdlet Errors without Interruption](http://community.idera.com/powershell/powertips/b/tips/posts/handling-cmdlet-errors-without-interruption)

@@ -30,4 +30,4 @@ tags:
       Select-Object -ExpandProperty VariablePath | Select-Object -ExpandProperty UserPath
 
 <!--more-->
-本文国际来源：[Finding Script Block Variables](http://powershell.com/cs/blogs/tips/archive/2015/11/12/finding-script-block-variables.aspx)
+本文国际来源：[Finding Script Block Variables](http://community.idera.com/powershell/powertips/b/tips/posts/finding-script-block-variables)

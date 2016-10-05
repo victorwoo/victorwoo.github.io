@@ -25,4 +25,4 @@ tags:
     $admin.psbase.invoke('SetPassword', $Password)
 
 <!--more-->
-本文国际来源：[Changing Local Administrator Account Password](http://powershell.com/cs/blogs/tips/archive/2015/07/06/changing-local-administrator-account-password.aspx)
+本文国际来源：[Changing Local Administrator Account Password](http://community.idera.com/powershell/powertips/b/tips/posts/changing-local-administrator-account-password)

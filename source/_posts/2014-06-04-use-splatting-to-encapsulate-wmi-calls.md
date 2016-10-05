@@ -35,4 +35,4 @@ Splatting 技术通常使用一个自定义的哈希表，它的每个键代表�
 请确保不要传给目标 cmdlet 它不知道的参数。举个例子，`Get-BIOSInfo` 函数定义了一个“SomethingElse”参数。而 `Get-WmiObject` 没有这个参数，所以您在 splat 之前，您必须先调用 `Remove()` 方法从哈希表中把这个键移掉。
 
 <!--more-->
-本文国际来源：[Use Splatting to Encapsulate WMI Calls](http://powershell.com/cs/blogs/tips/archive/2014/06/04/use-splatting-to-encapsulate-wmi-calls.aspx)
+本文国际来源：[Use Splatting to Encapsulate WMI Calls](http://community.idera.com/powershell/powertips/b/tips/posts/use-splatting-to-encapsulate-wmi-calls)

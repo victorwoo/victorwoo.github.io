@@ -40,4 +40,4 @@ tags:
 ![](/img/2013-10-29-hiding-parameters-from-intellisense-002.png)
 <!--more-->
 
-本文国际来源：[Hiding Parameters from IntelliSense](http://powershell.com/cs/blogs/tips/archive/2013/10/28/hiding-parameters-from-intellisense.aspx)
+本文国际来源：[Hiding Parameters from IntelliSense](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-parameters-from-intellisense)

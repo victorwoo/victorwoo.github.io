@@ -36,4 +36,4 @@ Cmdlet          Add-VMNetworkAdapter                               Hyper-V
 ```
 
 <!--more-->
-本文国际来源：[Using Cmdlets to Manage Virtual Hard Drives](http://powershell.com/cs/blogs/tips/archive/2014/11/24/using-cmdlets-to-manage-virtual-hard-drives.aspx)
+本文国际来源：[Using Cmdlets to Manage Virtual Hard Drives](http://community.idera.com/powershell/powertips/b/tips/posts/using-cmdlets-to-manage-virtual-hard-drives)

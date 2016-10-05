@@ -35,4 +35,4 @@ tags:
     $ScriptName
 
 <!--more-->
-本文国际来源：[Current Script Path](http://powershell.com/cs/blogs/tips/archive/2015/08/05/current-script-path.aspx)
+本文国际来源：[Current Script Path](http://community.idera.com/powershell/powertips/b/tips/posts/current-script-path)

@@ -27,4 +27,4 @@ tags:
 顺便说一下，这种技术不算是一个安全问题。执行策略通常不是一个安全边界。它并不是设计成用来把坏人挡在外面的。它只是为了保护您自己不做错事。所以无论您是通过 cmdlet 还是通过这段代码来启用脚本执行，您都是对自己执行 PowerShell 代码负责。
 
 <!--more-->
-本文国际来源：[PowerShell God Mode](http://powershell.com/cs/blogs/tips/archive/2014/05/27/powershell-god-mode.aspx)
+本文国际来源：[PowerShell God Mode](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-god-mode)

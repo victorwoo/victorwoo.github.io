@@ -43,4 +43,4 @@ tags:
 请注意返回值 5 意味着您没有足够的权限。请以管理员身份运行该脚本。
 
 <!--more-->
-本文国际来源：[Get-WirelessAdapter](http://powershell.com/cs/blogs/tips/archive/2014/03/18/get-wirelessadapter.aspx)
+本文国际来源：[Get-WirelessAdapter](http://community.idera.com/powershell/powertips/b/tips/posts/get-wirelessadapter)

@@ -24,4 +24,4 @@ _适用于 PowerShell 所有版本_
     "Your computer serial is $serial"
 
 <!--more-->
-本文国际来源：[Getting Computer Serial Number](http://powershell.com/cs/blogs/tips/archive/2015/01/28/getting-computer-serial-number.aspx)
+本文国际来源：[Getting Computer Serial Number](http://community.idera.com/powershell/powertips/b/tips/posts/getting-computer-serial-number)

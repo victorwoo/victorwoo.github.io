@@ -49,4 +49,4 @@ tags:
 	}
 
 <!--more-->
-本文国际来源：[Mandatory Parameter with a Dialog](http://powershell.com/cs/blogs/tips/archive/2014/02/06/mandatory-parameter-with-a-dialog.aspx)
+本文国际来源：[Mandatory Parameter with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameter-with-a-dialog)

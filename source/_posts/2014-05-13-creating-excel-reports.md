@@ -28,4 +28,4 @@ PowerShell 对象可以很容易地通过 Microsoft Excel 打开。只需要将�
 请注意 `-UseCulture` 如何根据您的区域设置自动选择正确的分隔符。 
 
 <!--more-->
-本文国际来源：[Creating Excel Reports](http://powershell.com/cs/blogs/tips/archive/2014/05/13/creating-excel-reports.aspx)
+本文国际来源：[Creating Excel Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports)

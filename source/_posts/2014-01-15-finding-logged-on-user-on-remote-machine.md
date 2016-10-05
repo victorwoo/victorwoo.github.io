@@ -30,4 +30,4 @@ tags:
 ![](/img/2014-01-15-finding-logged-on-user-on-remote-machine-001.png)
 
 <!--more-->
-本文国际来源：[Finding Logged-On User on Remote Machine](http://powershell.com/cs/blogs/tips/archive/2014/01/15/finding-logged-on-user-on-remote-machine.aspx)
+本文国际来源：[Finding Logged-On User on Remote Machine](http://community.idera.com/powershell/powertips/b/tips/posts/finding-logged-on-user-on-remote-machine)

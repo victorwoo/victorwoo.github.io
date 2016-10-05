@@ -36,4 +36,4 @@ tags:
 	PowerShell process description: Windows PowerShell ISE
  
 <!--more-->
-本文国际来源：[Weird Text Formatting (and what to do about it)](http://powershell.com/cs/blogs/tips/archive/2013/10/31/weird-text-formatting-and-what-to-do-about-it.aspx)
+本文国际来源：[Weird Text Formatting (and what to do about it)](http://community.idera.com/powershell/powertips/b/tips/posts/weird-text-formatting-and-what-to-do-about-it)

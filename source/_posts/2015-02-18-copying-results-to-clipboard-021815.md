@@ -35,4 +35,4 @@ _适用于 PowerShell 3.0 及以上版本_
     PS> Get-Process | Out-Clipboard
 
 <!--more-->
-本文国际来源：[Copying Results to Clipboard](http://powershell.com/cs/blogs/tips/archive/2015/02/18/copying-results-to-clipboard-021815.aspx)
+本文国际来源：[Copying Results to Clipboard](http://community.idera.com/powershell/powertips/b/tips/posts/copying-results-to-clipboard-021815)

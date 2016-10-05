@@ -58,4 +58,4 @@ tags:
 ![](/img/2014-02-12-ensuring-backward-compatibility-001.png)
 
 <!--more-->
-本文国际来源：[Ensuring Backward Compatibility](http://powershell.com/cs/blogs/tips/archive/2014/02/12/ensuring-backward-compatibility.aspx)
+本文国际来源：[Ensuring Backward Compatibility](http://community.idera.com/powershell/powertips/b/tips/posts/ensuring-backward-compatibility)

@@ -31,4 +31,4 @@ tags:
 现在，每个属性各显示在一行上，可以尽可能多地显示，而且可以根据内容搜索某个特定的属性。
 
 <!--more-->
-本文国际来源：[Displaying Object Properties One per Line](http://powershell.com/cs/blogs/tips/archive/2015/09/03/displaying-object-properties-one-per-line.aspx)
+本文国际来源：[Displaying Object Properties One per Line](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-object-properties-one-per-line)

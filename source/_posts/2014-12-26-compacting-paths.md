@@ -60,4 +60,4 @@ _适用于 PowerShell 2.0 及以上版本_
     C:\Windows\Sys...\v1.0
 
 <!--more-->
-本文国际来源：[Compacting Paths](http://powershell.com/cs/blogs/tips/archive/2014/12/26/compacting-paths.aspx)
+本文国际来源：[Compacting Paths](http://community.idera.com/powershell/powertips/b/tips/posts/compacting-paths)

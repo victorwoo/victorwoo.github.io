@@ -39,4 +39,4 @@ _适用于 PowerShell 任何版本_
 这些“合法”的字符被包含在“`^`”和“`$`”（行首符和行尾符）之间。星号是一个量词（任意数量个“合法的”字符）。
 
 <!--more-->
-本文国际来源：[Testing Whether Text Contains Upper Case](http://powershell.com/cs/blogs/tips/archive/2014/09/16/testing-whether-text-contains-upper-case.aspx)
+本文国际来源：[Testing Whether Text Contains Upper Case](http://community.idera.com/powershell/powertips/b/tips/posts/testing-whether-text-contains-upper-case)

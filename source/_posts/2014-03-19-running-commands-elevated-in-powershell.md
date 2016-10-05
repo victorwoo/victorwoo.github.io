@@ -23,4 +23,4 @@ tags:
     -Verb runas 
 
 <!--more-->
-本文国际来源：[Running Commands Elevated in PowerShell](http://powershell.com/cs/blogs/tips/archive/2014/03/19/running-commands-elevated-in-powershell.aspx)
+本文国际来源：[Running Commands Elevated in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/running-commands-elevated-in-powershell)

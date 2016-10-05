@@ -61,4 +61,4 @@ Sort-Object -Property LocalPort, Name -Unique
     (...)
 
 <!--more-->
-本文国际来源：[Who is Listening? (Part 2)](http://powershell.com/cs/blogs/tips/archive/2016/02/16/who-is-listening-part-2.aspx)
+本文国际来源：[Who is Listening? (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-2)

@@ -21,4 +21,4 @@ tags:
 	Import-Module ServerManager
 
 <!--more-->
-本文国际来源：[Installing Server 2012 Desktop Experience](http://powershell.com/cs/blogs/tips/archive/2013/11/20/installing-server-2012-desktop-experience.aspx)
+本文国际来源：[Installing Server 2012 Desktop Experience](http://community.idera.com/powershell/powertips/b/tips/posts/installing-server-2012-desktop-experience)

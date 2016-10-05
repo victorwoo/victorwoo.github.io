@@ -27,4 +27,4 @@ tags:
     PS> Invoke-Command -ScriptBlock ([ScriptBlock]::Create('notepad'))
 
 <!--more-->
-本文国际来源：[Create Dynamic Script Blocks](http://powershell.com/cs/blogs/tips/archive/2015/06/10/create-dynamic-script-blocks.aspx)
+本文国际来源：[Create Dynamic Script Blocks](http://community.idera.com/powershell/powertips/b/tips/posts/create-dynamic-script-blocks)

@@ -36,4 +36,4 @@ tags:
 当您运行 `Get-ConnectionString` 时，PowerShell 会打开一个对话框，您可以提交和测试连接的情况。当您关闭对话框窗口时，PowerShell 将返回由 UI 对话框创建的连接字符串。
 
 <!--more-->
-本文国际来源：[Getting SQL Server Connection String](http://powershell.com/cs/blogs/tips/archive/2015/07/20/getting-sql-server-connection-string.aspx)
+本文国际来源：[Getting SQL Server Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/getting-sql-server-connection-string)

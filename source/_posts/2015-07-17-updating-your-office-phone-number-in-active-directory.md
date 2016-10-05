@@ -24,4 +24,4 @@ tags:
     Set-ADUser -Identity $user -OfficePhone $phoneNumber
 
 <!--more-->
-本文国际来源：[Updating Your Office Phone Number in Active Directory](http://powershell.com/cs/blogs/tips/archive/2015/07/17/updating-your-office-phone-number-in-active-directory.aspx)
+本文国际来源：[Updating Your Office Phone Number in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/updating-your-office-phone-number-in-active-directory)

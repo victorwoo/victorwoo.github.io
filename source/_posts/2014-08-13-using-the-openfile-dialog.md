@@ -49,4 +49,4 @@ _适用于 PowerShell 3.0 及以上版本_
 这个函数将打开一个“打开文件”对话框。用户可以选择一个文件，并且选择的文件对象将返回给 PowerShell。所以下次您的脚本需要打开一个 CSV 文件时，您可能就能用上。
 
 <!--more-->
-本文国际来源：[Using the OpenFile Dialog](http://powershell.com/cs/blogs/tips/archive/2014/08/13/using-the-openfile-dialog.aspx)
+本文国际来源：[Using the OpenFile Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/using-the-openfile-dialog)

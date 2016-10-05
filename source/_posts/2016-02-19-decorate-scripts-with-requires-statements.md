@@ -22,4 +22,4 @@ PowerShell 支持一系列 `#requires` 语句。技术上它们是注释，但�
 `#requires` 语句必须是一个脚本的第一条语句，并且它只对保存的脚本有效。
 
 <!--more-->
-本文国际来源：[Decorate Scripts with #requires Statements](http://powershell.com/cs/blogs/tips/archive/2016/02/19/decorate-scripts-with-requires-statements.aspx)
+本文国际来源：[Decorate Scripts with #requires Statements](http://community.idera.com/powershell/powertips/b/tips/posts/decorate-scripts-with-requires-statements)

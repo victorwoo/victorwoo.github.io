@@ -27,4 +27,4 @@ tags:
 当然这得当脚本确实在运行时才有效。
 
 <!--more-->
-本文国际来源：[Use try…finally to Execute Code when PowerShell Closes](http://powershell.com/cs/blogs/tips/archive/2015/09/28/use-try-finally-to-execute-code-when-powershell-closes.aspx)
+本文国际来源：[Use try…finally to Execute Code when PowerShell Closes](http://community.idera.com/powershell/powertips/b/tips/posts/use-try-finally-to-execute-code-when-powershell-closes)

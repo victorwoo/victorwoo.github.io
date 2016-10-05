@@ -21,4 +21,4 @@ tags:
 ![](/img/2014-01-14-finding-logged-on-user-001.png)
 
 <!--more-->
-本文国际来源：[Finding Logged-On User](http://powershell.com/cs/blogs/tips/archive/2014/01/14/finding-logged-on-user.aspx)
+本文国际来源：[Finding Logged-On User](http://community.idera.com/powershell/powertips/b/tips/posts/finding-logged-on-user)

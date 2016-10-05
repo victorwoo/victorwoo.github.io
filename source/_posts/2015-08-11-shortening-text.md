@@ -39,4 +39,4 @@ tags:
 量词“`{0,5}`”告诉正则表达式引擎需要 0 到 5 个数字，引擎会尽可能多地选取。
 
 <!--more-->
-本文国际来源：[Shortening Text](http://powershell.com/cs/blogs/tips/archive/2015/08/11/shortening-text.aspx)
+本文国际来源：[Shortening Text](http://community.idera.com/powershell/powertips/b/tips/posts/shortening-text)

@@ -39,4 +39,4 @@ tags:
 这个示例代码可以读取并且修改、设置任意的属性。它特别适用于不能通过 cmdlet 设置的自定义属性。
 
 <!--more-->
-本文国际来源：[Setting Default Email Address for AD Users](http://powershell.com/cs/blogs/tips/archive/2013/12/13/setting-default-email-address-for-ad-users.aspx)
+本文国际来源：[Setting Default Email Address for AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/setting-default-email-address-for-ad-users)

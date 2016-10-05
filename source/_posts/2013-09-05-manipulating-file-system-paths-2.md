@@ -34,4 +34,4 @@ tags:
 当您需要增加单独的下标时，您必须将它们转化为数组，因为只有数组能被添加到数组中。这是为什么代码中下标0写成 `,0` 的原因。这样写是为了创建一个只包含0的数组，并且这个数组可以被添加到数字范围的数组，并返回一个包含所有你需要的下标的数组。
 <!--more-->
 
-本文国际来源：[Manipulating File System Paths (Part 2)](http://powershell.com/cs/blogs/tips/archive/2013/09/05/manipulating-file-system-paths-part-2.aspx)
+本文国际来源：[Manipulating File System Paths (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths-part-2)

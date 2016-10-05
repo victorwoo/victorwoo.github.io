@@ -32,4 +32,4 @@ tags:
     '{0:p2}' -f $number 
 
 <!--more-->
-本文国际来源：[Formatting Numbers Easily](http://powershell.com/cs/blogs/tips/archive/2014/03/05/formatting-numbers-easily.aspx)
+本文国际来源：[Formatting Numbers Easily](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-easily)

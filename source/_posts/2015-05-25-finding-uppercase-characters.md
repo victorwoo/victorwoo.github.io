@@ -48,4 +48,4 @@ tags:
     here is some text with U<<<ppercase letters
 
 <!--more-->
-本文国际来源：[Finding Uppercase Characters](http://powershell.com/cs/blogs/tips/archive/2015/05/25/finding-uppercase-characters.aspx)
+本文国际来源：[Finding Uppercase Characters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-uppercase-characters)

@@ -48,4 +48,4 @@ tags:
 当您执行该函数时没有传入任何参数，则将弹出一个对话框，提示您交互式地输入参数。
 
 <!--more-->
-本文国际来源：[Prompting for Function Parameters](http://powershell.com/cs/blogs/tips/archive/2015/06/01/prompting-for-function-parameters.aspx)
+本文国际来源：[Prompting for Function Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/prompting-for-function-parameters)

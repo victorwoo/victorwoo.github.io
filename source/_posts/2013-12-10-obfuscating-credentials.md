@@ -52,4 +52,4 @@ tags:
 这段自动生成的加密脚本片段将会定义一个 `$cred` 变量，用于保存包括密码在内的合法凭据。接下来您可以将 `$cred` 变量传递给您脚本中任何需要用户和密码的 `-Credential` 参数。
 
 <!--more-->
-本文国际来源：[Obfuscating Credentials](http://powershell.com/cs/blogs/tips/archive/2013/12/10/obfuscating-credentials.aspx)
+本文国际来源：[Obfuscating Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/obfuscating-credentials)

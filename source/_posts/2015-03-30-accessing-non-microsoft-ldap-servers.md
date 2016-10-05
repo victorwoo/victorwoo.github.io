@@ -51,4 +51,4 @@ Microsoft 和 Dell 提供了一些 Active Directory 的免费 cmdlet，分别是
     }
 
 <!--more-->
-本文国际来源：[Accessing Non-Microsoft LDAP Servers](http://powershell.com/cs/blogs/tips/archive/2015/03/30/accessing-non-microsoft-ldap-servers.aspx)
+本文国际来源：[Accessing Non-Microsoft LDAP Servers](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-non-microsoft-ldap-servers)

@@ -44,4 +44,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[What Is Going On Here?](http://powershell.com/cs/blogs/tips/archive/2013/10/09/what-is-going-on-here.aspx)
+本文国际来源：[What Is Going On Here?](http://community.idera.com/powershell/powertips/b/tips/posts/what-is-going-on-here)

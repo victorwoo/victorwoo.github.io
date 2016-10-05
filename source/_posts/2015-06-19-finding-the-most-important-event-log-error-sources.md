@@ -27,4 +27,4 @@ tags:
       Out-GridView
 
 <!--more-->
-本文国际来源：[Finding the Most Important Event Log Error Sources](http://powershell.com/cs/blogs/tips/archive/2015/06/19/finding-the-most-important-event-log-error-sources.aspx)
+本文国际来源：[Finding the Most Important Event Log Error Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-the-most-important-event-log-error-sources)

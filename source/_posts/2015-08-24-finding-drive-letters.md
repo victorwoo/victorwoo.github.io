@@ -44,4 +44,4 @@ tags:
     PS>
 
 <!--more-->
-本文国际来源：[Finding Drive Letters](http://powershell.com/cs/blogs/tips/archive/2015/08/24/finding-drive-letters.aspx)
+本文国际来源：[Finding Drive Letters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-drive-letters)

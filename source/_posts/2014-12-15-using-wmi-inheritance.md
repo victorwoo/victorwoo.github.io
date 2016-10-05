@@ -99,4 +99,4 @@ It basically takes all the instances derived from CIM_LogicalDevice and groups t
 它基本上获取从 `CIM_LogicalDevice` 继承的所有实例并按照“`__Class`”分组。这是它们的真实类名。
 
 <!--more-->
-本文国际来源：[Using WMI Inheritance](http://powershell.com/cs/blogs/tips/archive/2014/12/15/using-wmi-inheritance.aspx)
+本文国际来源：[Using WMI Inheritance](http://community.idera.com/powershell/powertips/b/tips/posts/using-wmi-inheritance)

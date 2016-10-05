@@ -60,4 +60,4 @@ _适用于 PowerShell 3.0 及更高版本_
 这段代码将获取您 Windows 文件夹中深度在 2 层以内的 \*.log 文件。
 
 <!--more-->
-本文国际来源：[Recursing a Given Depth](http://powershell.com/cs/blogs/tips/archive/2014/07/25/recursing-a-given-depth.aspx)
+本文国际来源：[Recursing a Given Depth](http://community.idera.com/powershell/powertips/b/tips/posts/recursing-a-given-depth)

@@ -78,4 +78,4 @@ tags:
       Out-GridView 
 
 <!--more-->
-本文国际来源：[Getting Arguments from Command Line](http://powershell.com/cs/blogs/tips/archive/2014/04/30/getting-arguments-from-command-line.aspx)
+本文国际来源：[Getting Arguments from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-arguments-from-command-line)

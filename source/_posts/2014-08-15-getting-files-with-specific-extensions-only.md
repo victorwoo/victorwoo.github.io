@@ -28,4 +28,4 @@ _适用于 PowerShell 所有版本_
 这将只返回您指定的扩展名的文件。
 
 <!--more-->
-本文国际来源：[Getting Files with Specific Extensions Only](http://powershell.com/cs/blogs/tips/archive/2014/08/15/getting-files-with-specific-extensions-only.aspx)
+本文国际来源：[Getting Files with Specific Extensions Only](http://community.idera.com/powershell/powertips/b/tips/posts/getting-files-with-specific-extensions-only)

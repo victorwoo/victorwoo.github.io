@@ -24,4 +24,4 @@ _适用于 PowerShell 所有版本_
 这个技巧是隐藏所有错误提示（`-ErrorAction SilentlyContinue`）但将错误都保存到一个变量中（`-ErrorVariable abce`）。
 
 <!--more-->
-本文国际来源：[Logging Folders with Access Denied Errors](http://powershell.com/cs/blogs/tips/archive/2015/02/04/logging-folders-with-access-denied-errors.aspx)
+本文国际来源：[Logging Folders with Access Denied Errors](http://community.idera.com/powershell/powertips/b/tips/posts/logging-folders-with-access-denied-errors)

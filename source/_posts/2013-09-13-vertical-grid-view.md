@@ -56,4 +56,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Vertical Grid View](http://powershell.com/cs/blogs/tips/archive/2013/09/13/vertical-grid-view.aspx)
+本文国际来源：[Vertical Grid View](http://community.idera.com/powershell/powertips/b/tips/posts/vertical-grid-view)

@@ -25,4 +25,4 @@ tags:
 [Loading Modules Automatically]: "/powershell/tip/2013/11/21/loading-modules-automatically"
 
 <!--more-->
-本文国际来源：[Improving Module Auto-loading](http://powershell.com/cs/blogs/tips/archive/2013/11/22/improving-module-auto-loading.aspx)
+本文国际来源：[Improving Module Auto-loading](http://community.idera.com/powershell/powertips/b/tips/posts/improving-module-auto-loading)

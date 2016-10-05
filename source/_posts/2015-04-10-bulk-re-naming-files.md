@@ -31,4 +31,4 @@ tags:
 您可以很容易地修改脚本来重命名其它类型的文件，或是使用其它文件名模板。
 
 <!--more-->
-本文国际来源：[Bulk Renaming Files](http://powershell.com/cs/blogs/tips/archive/2015/04/10/bulk-re-naming-files.aspx)
+本文国际来源：[Bulk Renaming Files](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-re-naming-files)

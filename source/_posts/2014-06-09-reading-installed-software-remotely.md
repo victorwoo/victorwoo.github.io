@@ -68,4 +68,4 @@ tags:
     } | Out-GridView
 
 <!--more-->
-本文国际来源：[Reading Installed Software Remotely](http://powershell.com/cs/blogs/tips/archive/2014/06/09/reading-installed-software-remotely.aspx)
+本文国际来源：[Reading Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-remotely)

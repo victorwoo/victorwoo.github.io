@@ -27,4 +27,4 @@ _适用于所有 PowerShell 版本_
     cmd.exe /c echo ÄÖÜäöüß
 
 <!--more-->
-本文国际来源：[Correcting ISE Encoding](http://powershell.com/cs/blogs/tips/archive/2014/08/14/correcting-ise-encoding.aspx)
+本文国际来源：[Correcting ISE Encoding](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-ise-encoding)

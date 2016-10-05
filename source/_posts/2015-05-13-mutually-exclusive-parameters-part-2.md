@@ -46,4 +46,4 @@ PowerShell 函数中的互斥参数使用“`ParameterSetName`”属性将参数
 `Test-ParameterSet` 函数显示了如何实现该功能：当“NonCredential”参数集有效时 `-ComputerName` 是可选的。如果用户使用了 `-Credential` 参数，那么 `-ComputerName` 变成了必选的。而如果用户使用了 `-LocalAction` 参数，那么 `-ComputerName` 和 `-Credential` 都变为不可用的了。
 
 <!--more-->
-本文国际来源：[Mutually Exclusive Parameters (Part 2)](http://powershell.com/cs/blogs/tips/archive/2015/05/13/mutually-exclusive-parameters-part-2.aspx)
+本文国际来源：[Mutually Exclusive Parameters (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/mutually-exclusive-parameters-part-2)

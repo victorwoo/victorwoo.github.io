@@ -40,4 +40,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Get Current IP Address](http://powershell.com/cs/blogs/tips/archive/2015/04/22/get-current-ip-address.aspx)
+本文国际来源：[Get Current IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/get-current-ip-address)

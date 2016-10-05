@@ -19,4 +19,4 @@ _适用于 PowerShell 所有版本_
     PS> ping localhost -4
 
 <!--more-->
-本文国际来源：[Pinging via IPv4 ](http://powershell.com/cs/blogs/tips/archive/2014/11/13/pinging-via-ipv4.aspx)
+本文国际来源：[Pinging via IPv4 ](http://community.idera.com/powershell/powertips/b/tips/posts/pinging-via-ipv4)

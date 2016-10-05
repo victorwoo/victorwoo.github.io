@@ -17,4 +17,4 @@ tags:
 如果您尽可能地缩窄这个选区（您将只看到一条细细的蓝线），您可以方便地在选区之内增加或删除字符。只需要按下“`#`”键即可块注释它们，或者删除 # 号重新启用这段代码。
 
 <!--more-->
-本文国际来源：[Block Comment in PowerShell ISE](http://powershell.com/cs/blogs/tips/archive/2014/01/16/block-comment-in-powershell-ise.aspx)
+本文国际来源：[Block Comment in PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/block-comment-in-powershell-ise)

@@ -25,4 +25,4 @@ tags:
 ![](/img/2014-02-18-correctly-filtering-datetime-001.png)
 
 <!--more-->
-本文国际来源：[Correctly Filtering DateTime](http://powershell.com/cs/blogs/tips/archive/2014/02/18/correctly-filtering-datetime.aspx)
+本文国际来源：[Correctly Filtering DateTime](http://community.idera.com/powershell/powertips/b/tips/posts/correctly-filtering-datetime)

@@ -34,4 +34,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Adding New Type Accelerators in Powershell](http://powershell.com/cs/blogs/tips/archive/2013/09/11/adding-new-type-accelerators-in-powershell.aspx)
+本文国际来源：[Adding New Type Accelerators in Powershell](http://community.idera.com/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell)

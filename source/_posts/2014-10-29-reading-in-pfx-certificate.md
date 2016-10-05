@@ -28,4 +28,4 @@ _适用于 PowerShell 所有版本_
     $cert
 
 <!--more-->
-本文国际来源：[Reading In PFX-Certificate](http://powershell.com/cs/blogs/tips/archive/2014/10/29/reading-in-pfx-certificate.aspx)
+本文国际来源：[Reading In PFX-Certificate](http://community.idera.com/powershell/powertips/b/tips/posts/reading-in-pfx-certificate)

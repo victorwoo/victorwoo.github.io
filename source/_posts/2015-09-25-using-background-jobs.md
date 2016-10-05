@@ -54,4 +54,4 @@ tags:
     Remove-Job $job1, $job2
 
 <!--more-->
-本文国际来源：[Using Background Jobs](http://powershell.com/cs/blogs/tips/archive/2015/09/25/using-background-jobs.aspx)
+本文国际来源：[Using Background Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/using-background-jobs)

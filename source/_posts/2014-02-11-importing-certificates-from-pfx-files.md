@@ -33,4 +33,4 @@ tags:
 	$cert
 
 <!--more-->
-本文国际来源：[Importing Certificates from PFX Files](http://powershell.com/cs/blogs/tips/archive/2014/02/11/importing-certificates-from-pfx-files.aspx)
+本文国际来源：[Importing Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/importing-certificates-from-pfx-files)

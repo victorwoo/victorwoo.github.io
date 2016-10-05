@@ -36,4 +36,4 @@ tags:
 这一次，`Get-ChildItem` 将会在找到一个文件后立即停止。
 
 <!--more-->
-本文国际来源：[Save Time With Select-Object -First!](http://powershell.com/cs/blogs/tips/archive/2014/02/27/save-time-with-select-object-first.aspx)
+本文国际来源：[Save Time With Select-Object -First!](http://community.idera.com/powershell/powertips/b/tips/posts/save-time-with-select-object-first)

@@ -46,4 +46,4 @@ tags:
 
 <!--more-->
 
-本文国际来源：[Go to Function Definition on F12](http://powershell.com/cs/blogs/tips/archive/2013/09/12/go-to-function-definition-on-f12.aspx)
+本文国际来源：[Go to Function Definition on F12](http://community.idera.com/powershell/powertips/b/tips/posts/go-to-function-definition-on-f12)

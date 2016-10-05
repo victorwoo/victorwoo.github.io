@@ -23,4 +23,4 @@ _适用于 PowerShell 所有版本_
     }
 
 <!--more-->
-本文国际来源：[Getting System Uptime](http://powershell.com/cs/blogs/tips/archive/2014/12/12/gettingsystemuptime.aspx)
+本文国际来源：[Getting System Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/gettingsystemuptime)

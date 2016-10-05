@@ -46,4 +46,4 @@ tags:
 	Out-GridView
   
 <!--more-->
-本文国际来源：[Dynamic Parameters in PowerShell 4.0](http://powershell.com/cs/blogs/tips/archive/2013/11/04/dynamic-parameters-in-powershell-4-0.aspx)
+本文国际来源：[Dynamic Parameters in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-parameters-in-powershell-4-0)

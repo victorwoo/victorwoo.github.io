@@ -21,4 +21,4 @@ tags:
 这个技巧是将控制台命令用 `@()` 括起来，确保结果为一个数组。
 
 <!--more-->
-本文国际来源：[Filtering Text-Based Command Output](http://powershell.com/cs/blogs/tips/archive/2014/02/24/filtering-text-based-command-output.aspx)
+本文国际来源：[Filtering Text-Based Command Output](http://community.idera.com/powershell/powertips/b/tips/posts/filtering-text-based-command-output)

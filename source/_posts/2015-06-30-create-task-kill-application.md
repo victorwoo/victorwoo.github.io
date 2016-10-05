@@ -25,4 +25,4 @@ tags:
 结束程序会导致选中的应用程序立即停止。所有未保存的数据都会丢失。
 
 <!--more-->
-本文国际来源：[Create “Task Kill” Application](http://powershell.com/cs/blogs/tips/archive/2015/06/30/create-task-kill-application.aspx)
+本文国际来源：[Create “Task Kill” Application](http://community.idera.com/powershell/powertips/b/tips/posts/create-task-kill-application)

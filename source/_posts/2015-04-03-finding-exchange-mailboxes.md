@@ -33,4 +33,4 @@ _适用于 Microsoft Exchange 2013_
       Select-Object -ExpandProperty Count
 
 <!--more-->
-本文国际来源：[Finding Exchange Mailboxes](http://powershell.com/cs/blogs/tips/archive/2015/04/03/finding-exchange-mailboxes.aspx)
+本文国际来源：[Finding Exchange Mailboxes](http://community.idera.com/powershell/powertips/b/tips/posts/finding-exchange-mailboxes)

@@ -25,4 +25,4 @@ tags:
 ![](/img/2014-03-17-finding-wireless-network-adapters-002.png)
 
 <!--more-->
-本文国际来源：[Finding Wireless Network Adapters](http://powershell.com/cs/blogs/tips/archive/2014/03/17/finding-wireless-network-adapters.aspx)
+本文国际来源：[Finding Wireless Network Adapters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-wireless-network-adapters)

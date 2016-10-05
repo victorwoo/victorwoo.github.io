@@ -48,4 +48,4 @@ tags:
     C:\Users\Tobias\AppData\Local\Temp\47b1a65f-2705-4926-8a72-21f05430f2c5.csv
 
 <!--more-->
-本文国际来源：[Creating Temporary File Names](http://powershell.com/cs/blogs/tips/archive/2015/10/15/creating-temporary-filenames.aspx)
+本文国际来源：[Creating Temporary File Names](http://community.idera.com/powershell/powertips/b/tips/posts/creating-temporary-filenames)

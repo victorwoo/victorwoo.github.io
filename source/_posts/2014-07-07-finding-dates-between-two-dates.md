@@ -75,4 +75,4 @@ tags:
     "Workdays: $workdays"
 
 <!--more-->
-本文国际来源：[Finding Dates Between Two Dates](http://powershell.com/cs/blogs/tips/archive/2014/07/07/finding-dates-between-two-dates.aspx)
+本文国际来源：[Finding Dates Between Two Dates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-dates-between-two-dates)

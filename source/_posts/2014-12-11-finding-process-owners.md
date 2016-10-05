@@ -47,4 +47,4 @@ _适用于 PowerShell 所有版本_
     }
 
 <!--more-->
-本文国际来源：[Finding Process Owners](http://powershell.com/cs/blogs/tips/archive/2014/12/11/finding-process-owners.aspx)
+本文国际来源：[Finding Process Owners](http://community.idera.com/powershell/powertips/b/tips/posts/finding-process-owners)

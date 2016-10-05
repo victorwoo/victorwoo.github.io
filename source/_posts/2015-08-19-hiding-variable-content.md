@@ -29,4 +29,4 @@ tags:
     $a.GetType().FullName
 
 <!--more-->
-本文国际来源：[Hiding Variable Content](http://powershell.com/cs/blogs/tips/archive/2015/08/19/hiding-variable-content.aspx)
+本文国际来源：[Hiding Variable Content](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-variable-content)

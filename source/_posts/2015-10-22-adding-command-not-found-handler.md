@@ -34,4 +34,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Adding Command Not Found Handler](http://powershell.com/cs/blogs/tips/archive/2015/10/22/adding-command-not-found-handler.aspx)
+本文国际来源：[Adding Command Not Found Handler](http://community.idera.com/powershell/powertips/b/tips/posts/adding-command-not-found-handler)

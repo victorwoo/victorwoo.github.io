@@ -47,4 +47,4 @@ tags:
 所有希望原样显示的文字必须用双引号括起来。
 
 <!--more-->
-本文国际来源：[Converting Date/Time Formats](http://powershell.com/cs/blogs/tips/archive/2015/11/17/converting-date-time-formats.aspx)
+本文国际来源：[Converting Date/Time Formats](http://community.idera.com/powershell/powertips/b/tips/posts/converting-date-time-formats)

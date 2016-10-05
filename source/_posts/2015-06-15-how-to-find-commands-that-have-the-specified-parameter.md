@@ -30,4 +30,4 @@ tags:
 请注意 `Get-Command` 是在已加载的 cmdlet/函数中搜索。请确保在搜索前已导入了所需的模块。
 
 <!--more-->
-本文国际来源：[How to find Commands that have the Specified Parameter](http://powershell.com/cs/blogs/tips/archive/2015/06/15/how-to-find-commands-that-have-the-specified-parameter.aspx)
+本文国际来源：[How to find Commands that have the Specified Parameter](http://community.idera.com/powershell/powertips/b/tips/posts/how-to-find-commands-that-have-the-specified-parameter)

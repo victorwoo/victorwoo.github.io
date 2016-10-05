@@ -30,4 +30,4 @@ PowerShell允许您存取多个数组元素。通过使用 `-help` 和 `-join`�
 	$array -join '\'
 <!--more-->
 
-本文国际来源：[Manipulating File System Paths](http://powershell.com/cs/blogs/tips/archive/2013/09/04/manipulating-file-system-paths.aspx)
+本文国际来源：[Manipulating File System Paths](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths)

@@ -32,4 +32,4 @@ tags:
 当您按下第二个冒号时，智能提示将打开一个菜单，里面包含了该类型的所有静态属性和方法。
 
 <!--more-->
-本文国际来源：[Finding Operating System Version](http://powershell.com/cs/blogs/tips/archive/2015/10/29/finding-operating-system-version.aspx)
+本文国际来源：[Finding Operating System Version](http://community.idera.com/powershell/powertips/b/tips/posts/finding-operating-system-version)

@@ -53,4 +53,4 @@ tags:
     }
 
 <!--more-->
-本文国际来源：[Removing Selected NTFS Permissions](http://powershell.com/cs/blogs/tips/archive/2014/05/28/removing-selected-ntfs-permissions.aspx)
+本文国际来源：[Removing Selected NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/removing-selected-ntfs-permissions)

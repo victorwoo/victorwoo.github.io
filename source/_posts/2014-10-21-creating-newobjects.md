@@ -42,4 +42,4 @@ _适用于 PowerShell 3.0 或以上版本_
     PS>
 
 <!--more-->
-本文国际来源：[Creating New Objects](http://powershell.com/cs/blogs/tips/archive/2014/10/21/creating-newobjects.aspx)
+本文国际来源：[Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newobjects)

@@ -51,4 +51,4 @@ _适用于 PowerShell 所有版本_
     (...)
 
 <!--more-->
-本文国际来源：[Replacing Duplicate Spaces](http://powershell.com/cs/blogs/tips/archive/2014/09/26/replacing-duplicate-spaces.aspx)
+本文国际来源：[Replacing Duplicate Spaces](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-duplicate-spaces)

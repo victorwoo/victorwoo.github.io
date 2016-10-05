@@ -25,4 +25,4 @@ tags:
 	$cert
 
 <!--more-->
-本文国际来源：[Importing Multiple Certificates from PFX Files](http://powershell.com/cs/blogs/tips/archive/2014/02/14/importing-multiple-certificates-from-pfx-files.aspx)
+本文国际来源：[Importing Multiple Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/importing-multiple-certificates-from-pfx-files)

@@ -21,4 +21,4 @@ tags:
 3. 若要获得cmdlet的上下文帮助，点击脚本中的cmdlet并按 `F1` 键。
 <!--more-->
 
-本文国际来源：[Vertical Grid View](http://powershell.com/cs/blogs/tips/archive/2013/09/13/vertical-grid-view.aspx)
+本文国际来源：[Vertical Grid View](http://community.idera.com/powershell/powertips/b/tips/posts/vertical-grid-view)

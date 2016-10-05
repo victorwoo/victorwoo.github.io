@@ -19,4 +19,4 @@ tags:
 请始终记着：从外部资源中下载 PowerShell 代码要记得检查一遍代码，确保是您所需要的内容。
 
 <!--more-->
-本文国际来源：[Free PowerShell Module for Admins](http://powershell.com/cs/blogs/tips/archive/2015/05/06/free-powershell-module-for-admins.aspx)
+本文国际来源：[Free PowerShell Module for Admins](http://community.idera.com/powershell/powertips/b/tips/posts/free-powershell-module-for-admins)

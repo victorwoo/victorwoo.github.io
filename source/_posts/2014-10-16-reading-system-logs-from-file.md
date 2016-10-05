@@ -22,4 +22,4 @@ _适用于 PowerShell 所有版本_
     Get-WinEvent -Path $path
 
 <!--more-->
-本文国际来源：[Reading System Logs from File](http://powershell.com/cs/blogs/tips/archive/2014/10/16/reading-system-logs-from-file.aspx)
+本文国际来源：[Reading System Logs from File](http://community.idera.com/powershell/powertips/b/tips/posts/reading-system-logs-from-file)

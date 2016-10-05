@@ -39,4 +39,4 @@ tags:
 两段代码实现相同的效果，但第二段效率要高得多。
 
 <!--more-->
-本文国际来源：[Speeding Up Arrays](http://powershell.com/cs/blogs/tips/archive/2014/06/23/speeding-up-arrays.aspx)
+本文国际来源：[Speeding Up Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-arrays)

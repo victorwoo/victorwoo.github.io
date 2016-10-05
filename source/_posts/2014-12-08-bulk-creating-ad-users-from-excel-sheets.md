@@ -35,4 +35,4 @@ CSV 文件所需的只是 `New-ADUser` 所需要的参数作为列名。一个�
 这个技术可以用于创建用户前预处理任何原始数据。
 
 <!--more-->
-本文国际来源：[Bulk Creating AD Users from Excel Sheets](http://powershell.com/cs/blogs/tips/archive/2014/12/08/bulk-creating-ad-users-from-excel-sheets.aspx)
+本文国际来源：[Bulk Creating AD Users from Excel Sheets](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-creating-ad-users-from-excel-sheets)

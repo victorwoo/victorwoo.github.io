@@ -40,4 +40,4 @@ _适用于 PowerShell 3.0 及以上版本_
     PS>
 
 <!--more-->
-本文国际来源：[Reading Multiline Text](http://powershell.com/cs/blogs/tips/archive/2015/01/23/reading-multiline-text.aspx)
+本文国际来源：[Reading Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/reading-multiline-text)
