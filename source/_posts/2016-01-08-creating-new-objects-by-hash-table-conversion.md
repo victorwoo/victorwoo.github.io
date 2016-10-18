@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2016-01-08 12:00:00
 title: "PowerShell 技能连载 - 通过哈希表转换创建新的对象"
 description: PowerTip of the Day - Creating New Objects by Hash Table Conversion

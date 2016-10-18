@@ -1,84 +1,82 @@
-##############################################################################
-##
-## Get-FileEncoding
-##
-## From Windows PowerShell Cookbook (O'Reilly)
-## by Lee Holmes (http://www.leeholmes.com/guide)
-##
-##############################################################################
-
 <#
-
 .SYNOPSIS
-
-Gets the encoding of a file
-
+Gets file encoding.
+.DESCRIPTION
+The Get-FileEncoding function determines encoding by looking at Byte Order Mark (BOM).
+Based on port of C# code from http://www.west-wind.com/Weblog/posts/197245.aspx
 .EXAMPLE
+Get-ChildItem  *.ps1 | select FullName, @{n='Encoding';e={Get-FileEncoding $_.FullName}} | where {$_.Encoding -ne 'ASCII'}
+This command gets ps1 files in current directory where encoding is not ASCII
+.EXAMPLE
+Get-ChildItem  *.ps1 | select FullName, @{n='Encoding';e={Get-FileEncoding $_.FullName}} | where {$_.Encoding -ne 'ASCII'} | foreach {(get-content $_.FullName) | set-content $_.FullName -Encoding ASCII}
+Same as previous example but fixes encoding using set-content
 
-Get-FileEncoding.ps1 .\UnicodeScript.ps1
 
-BodyName          : unicodeFFFE
-EncodingName      : Unicode (Big-Endian)
-HeaderName        : unicodeFFFE
-WebName           : unicodeFFFE
-WindowsCodePage   : 1200
-IsBrowserDisplay  : False
-IsBrowserSave     : False
-IsMailNewsDisplay : False
-IsMailNewsSave    : False
-IsSingleByte      : False
-EncoderFallback   : System.Text.EncoderReplacementFallback
-DecoderFallback   : System.Text.DecoderReplacementFallback
-IsReadOnly        : True
-CodePage          : 1201
-
+# Modified by F.RICHARD August 2010
+# add comment + more BOM
+# http://unicode.org/faq/utf_bom.html
+# http://en.wikipedia.org/wiki/Byte_order_mark
+#
+# Do this next line before or add function in Profile.ps1
+# Import-Module .\Get-FileEncoding.ps1
 #>
-
-param(
-    ## The path of the file to get the encoding of.
-    $Path
-)
-
-Set-StrictMode -Version Latest
-
-## The hashtable used to store our mapping of encoding bytes to their
-## name. For example, "255-254 = Unicode"
-$encodings = @{}
-
-## Find all of the encodings understood by the .NET Framework. For each,
-## determine the bytes at the start of the file (the preamble) that the .NET
-## Framework uses to identify that encoding.
-$encodingMembers = [System.Text.Encoding] |
-    Get-Member -Static -MemberType Property
-
-$encodingMembers | Foreach-Object {
-    $encodingBytes = [System.Text.Encoding]::($_.Name).GetPreamble() -join '-'
-    $encodings[$encodingBytes] = $_.Name
-}
-
-## Find out the lengths of all of the preambles.
-$encodingLengths = $encodings.Keys | Where-Object { $_ } |
-    Foreach-Object { ($_ -split "-").Count }
-
-## Assume the encoding is UTF7 by default
-$result = "UTF7"
-
-## Go through each of the possible preamble lengths, read that many
-## bytes from the file, and then see if it matches one of the encodings
-## we know about.
-foreach($encodingLength in $encodingLengths | Sort -Descending)
+function Get-FileEncoding
 {
-    $bytes = (Get-Content -encoding byte -readcount $encodingLength $path)[0]
-    $encoding = $encodings[$bytes -join '-']
+	[CmdletBinding()] 
+	Param (
+		[Parameter(Mandatory = $True, ValueFromPipelineByPropertyName = $True)] 
+			[string]$Path
+	)
 
-    ## If we found an encoding that had the same preamble bytes,
-    ## save that output and break.
-    if($encoding)
-    {
-        $result = $encoding
-        break
-    }
+	[byte[]]$byte = get-content -Encoding byte -ReadCount 4 -TotalCount 4 -Path $Path
+	#Write-Host Bytes: $byte[0] $byte[1] $byte[2] $byte[3]
+
+	# EF BB BF	(UTF8)
+	if ( $byte[0] -eq 0xef -and $byte[1] -eq 0xbb -and $byte[2] -eq 0xbf )
+	{ Write-Output 'UTF8' }
+
+	# FE FF		(UTF-16 Big-Endian)
+	elseif ($byte[0] -eq 0xfe -and $byte[1] -eq 0xff)
+	{ Write-Output 'Unicode UTF-16 Big-Endian' }
+
+	# FF FE		(UTF-16 Little-Endian)
+	elseif ($byte[0] -eq 0xff -and $byte[1] -eq 0xfe)
+	{ Write-Output 'Unicode UTF-16 Little-Endian' }
+
+	# 00 00 FE FF	(UTF32 Big-Endian)
+	elseif ($byte[0] -eq 0 -and $byte[1] -eq 0 -and $byte[2] -eq 0xfe -and $byte[3] -eq 0xff)
+	{ Write-Output 'UTF32 Big-Endian' }
+
+	# FE FF 00 00	(UTF32 Little-Endian)
+	elseif ($byte[0] -eq 0xfe -and $byte[1] -eq 0xff -and $byte[2] -eq 0 -and $byte[3] -eq 0)
+	{ Write-Output 'UTF32 Little-Endian' }
+
+	# 2B 2F 76 (38 | 38 | 2B | 2F)
+	elseif ($byte[0] -eq 0x2b -and $byte[1] -eq 0x2f -and $byte[2] -eq 0x76 -and ($byte[3] -eq 0x38 -or $byte[3] -eq 0x39 -or $byte[3] -eq 0x2b -or $byte[3] -eq 0x2f) )
+	{ Write-Output 'UTF7'}
+
+	# F7 64 4C	(UTF-1)
+	elseif ( $byte[0] -eq 0xf7 -and $byte[1] -eq 0x64 -and $byte[2] -eq 0x4c )
+	{ Write-Output 'UTF-1' }
+
+	# DD 73 66 73	(UTF-EBCDIC)
+	elseif ($byte[0] -eq 0xdd -and $byte[1] -eq 0x73 -and $byte[2] -eq 0x66 -and $byte[3] -eq 0x73)
+	{ Write-Output 'UTF-EBCDIC' }
+
+	# 0E FE FF	(SCSU)
+	elseif ( $byte[0] -eq 0x0e -and $byte[1] -eq 0xfe -and $byte[2] -eq 0xff )
+	{ Write-Output 'SCSU' }
+
+	# FB EE 28 	(BOCU-1)
+	elseif ( $byte[0] -eq 0xfb -and $byte[1] -eq 0xee -and $byte[2] -eq 0x28 )
+	{ Write-Output 'BOCU-1' }
+
+	# 84 31 95 33	(GB-18030)
+	elseif ($byte[0] -eq 0x84 -and $byte[1] -eq 0x31 -and $byte[2] -eq 0x95 -and $byte[3] -eq 0x33)
+	{ Write-Output 'GB-18030' }
+
+	else
+	{ Write-Output 'ASCII' }
 }
 
-## Finally, output the encoding.
-[System.Text.Encoding]::$result
+

@@ -158,7 +158,6 @@ for ($i = $ul.childNodes.length - 1; $i -ge 0; $i--) {
     if (Test-Path $targetFile) {
         echo "[文件已存在] $fileName"
     } else {
-    <#
         $htmlContent = Get-PostContent $url
 
         $newlyAdded = $true
@@ -171,7 +170,7 @@ for ($i = $ul.childNodes.length - 1; $i -ge 0; $i--) {
         Get-Picture $targetFile
         Start-Process "C:\Program Files\Typora\Typora.exe" $targetFile
         sleep 1
-        #>
+        
         $index = Get-Index $date.Year $date.Month $date.Day $nameProp
         $indexFile = Join-Path $folder '2013-09-09-index.md'
         ac $indexFile $index
