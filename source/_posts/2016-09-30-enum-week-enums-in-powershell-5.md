@@ -44,7 +44,6 @@ function Connect-Computer
 }
 ```
 
-When you run this code and then call the function “Connect-Computer”, PowerShell automatically provides IntelliSense for your enumeration values, and only accepts the values listed in the enumeration.
 当您运行完这段代码，并调用 "`Connect-Computer`" 函数之后，PowerShell 自动为您的枚举值提供智能提示，并且只接受枚举类型里规定的值。
 
 ```shell
