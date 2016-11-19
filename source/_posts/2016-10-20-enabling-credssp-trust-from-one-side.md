@@ -5,7 +5,7 @@ description: PowerTip of the Day - Enabling CredSSP Trust from One Side
 categories:
 - powershell
 - tip
-- tags:
+tags:
 - powershell
 - tip
 - powertip
