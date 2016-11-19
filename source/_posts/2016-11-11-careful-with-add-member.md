@@ -22,8 +22,6 @@ $o | Add-Member -MemberType NoteProperty -Name Date -Value (Get-Date)
 $o
 ```
 
-This works, and the result looks like this:
-
 这可以工作，结果类似这样：
 
 
@@ -55,33 +53,31 @@ $o = [PSCustomObject]@{
 $o | Add-Member -MemberType ScriptProperty -Name CurrentDate -Value { Get-Date }
 ```
 
-Now watch the Date and CurrentDate properties when you query the object multiple times:
-
 现在请看多次查询该对象时，它的 `Date` 和 `CurrentDate` 属性
 
+```
+PS C:\> $o 
 
-    PS C:\> $o 
-
-    Notes     Date                  CurrentDate          
-    -----     ----                  -----------          
-    Something 10/28/2016 4:01:54 PM 10/28/2016 4:01:57 PM
-
-
-​    
-    PS C:\> $o 
-
-    Notes     Date                  CurrentDate          
-    -----     ----                  -----------          
-    Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:00 PM
+Notes     Date                  CurrentDate          
+-----     ----                  -----------          
+Something 10/28/2016 4:01:54 PM 10/28/2016 4:01:57 PM
 
 
 ​    
-    PS C:\> $o 
+PS C:\> $o 
 
-    Notes     Date                  CurrentDate          
-    -----     ----                  -----------          
-    Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:02 PM
+Notes     Date                  CurrentDate          
+-----     ----                  -----------          
+Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:00 PM
 
+
+​    
+PS C:\> $o 
+
+Notes     Date                  CurrentDate          
+-----     ----                  -----------          
+Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:02 PM
+```
 
 `Date` 属性返回的是静态信息；而`CurrentDate` 属性总是返回当前时间，因为它的值是一个脚本，每次查询这个属性的时候都会执行一次。
 
