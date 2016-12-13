@@ -1,6 +1,6 @@
 ﻿layout: post
 date: 2016-11-27 16:00:00
-title: "PowerShell 技能连载 - 像其它应用程序一样启动"
+title: "PowerShell 技能连载 - 用其他身份启动程序"
 description: PowerTip of the Day - Launching Applications as Someone Else
 categories:
 - powershell
@@ -14,7 +14,7 @@ tags:
 ---
 假设您想以不同的身份打开多个 PowerShell 控制台，或以其他人的身份打开任何程序。
 
-要实现这个目标，您需要以其他人的身份登录，这很明显是个负担。以下是将凭据以安全的方式保存到文件的方法：密码采用您的身份和您的机器加密成秘闻。只有保存它们的那个人可以取回它，而且只能在保存该文件的机器上操作：
+要实现这个目标，您需要以其他人的身份登录，这很明显是个负担。以下是将凭据以安全的方式保存到文件的方法：密码采用您的身份和您的机器加密成密文。只有保存它们的那个人可以取回它，而且只能在保存该文件的机器上操作：
 
 ```powershell
 # saving credential securely to file
