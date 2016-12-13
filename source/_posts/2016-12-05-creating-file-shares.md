@@ -5,7 +5,7 @@ description: PowerTip of the Day - Creating File Shares
 categories:
 - powershell
 - tip
-  tags:
+tags:
 - powershell
 - tip
 - powertip
