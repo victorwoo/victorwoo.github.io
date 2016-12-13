@@ -20,8 +20,6 @@ Group-Object -Property Verb |
 Sort-Object -Property Count -Descending
 ```
 
-Here is the result on our system:
-
 这是我们系统的输出结果：
 
 
