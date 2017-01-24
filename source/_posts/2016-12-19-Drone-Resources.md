@@ -7,6 +7,7 @@ categories: [geek]
 # DJI 大疆
 
 - [DJI Developer](https://developer.dji.com/mobile-sdk/downloads/) DJI PC Simulator Installer & User Manual
+- [【新手必看】DJI 官方教程、网友经验分享合集（更新于11.22)](http://bbs.dji.com/thread-29907-1-1.html)
 
 # 3rd Party 第三方
 

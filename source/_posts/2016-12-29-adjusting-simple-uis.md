@@ -5,7 +5,7 @@ description: PowerTip of the Day - Adjusting Simple UIs
 categories:
 - powershell
 - tip
-  tags:
+tags:
 - powershell
 - tip
 - powertip
