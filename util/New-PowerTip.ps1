@@ -168,7 +168,8 @@ for ($i = $ul.childNodes.length - 1; $i -ge 0; $i--) {
 
         sc $targetFile $content -Encoding UTF8
         Get-Picture $targetFile
-        Start-Process "C:\Program Files\Typora\Typora.exe" $targetFile
+        # Start-Process "C:\Program Files\Typora\Typora.exe" $targetFile
+        Start-Process "code" $targetFile
         sleep 1
         
         $index = Get-Index $date.Year $date.Month $date.Day $nameProp
