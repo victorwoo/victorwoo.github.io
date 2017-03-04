@@ -67,7 +67,7 @@ $type::ShowWindowAsync($hwnd, [ShowStates]::Show)
 
 请注意这个例子将 PowerShell 窗口临时隐藏 2 秒钟。您可以对任何运行中的应用程序窗口做相同的事情。只需要用 `Get-Process` 来查找目标进程，并使用它的 "`MainWindowHandle`" 属性来发送 showstate 改变请求。
 
-一些应用程序又多个窗口。在这种情况下，您只能针对主窗口操作，否则需要先靠其它 API 来获取子窗口的句柄集合。
+一些应用程序有多个窗口。在这种情况下，您只能针对主窗口操作，否则需要先靠其它 API 来获取子窗口的句柄集合。
 
 <!--more-->
 本文国际来源：[Show or Hide Windows](http://community.idera.com/powershell/powertips/b/tips/posts/show-or-hide-windows)
