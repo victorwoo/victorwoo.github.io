@@ -6,7 +6,7 @@ if (gmo Blog) { rmo Blog }
 ipmo ./Blog.psm1
 
 function Get-Index ($year, $month, $day, $name, $title) {
-    $indexTemplate = '* [{0:D2}-{1:D2}-{2:D2} {7}](/powershell/tip/{3:D2}/{4:D2}/{5:D2}/{6})'
+    $indexTemplate = '* [{0:D2}-{1:D2}-{2:D2} {7}](/{3:D2}/{4:D2}/{5:D2}/{6})'
     return $indexTemplate -f $year, $month, $day, $year, $month, $day, $name, $title
 }
 
