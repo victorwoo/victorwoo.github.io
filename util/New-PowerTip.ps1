@@ -16,6 +16,7 @@ function Get-Document($text) {
     return $htmlDoc
 }
 
+# 对正文内容做一些微调。
 function Optimize-Content($text) {
     $text = $text.Replace('_All PowerShell Versions_', '_适用于 PowerShell 所有版本_')
     $lines = $text -split "`n"
@@ -28,6 +29,7 @@ function Optimize-Content($text) {
     return $lines -join "`n"
 }
 
+# 调用 html2markdown 将 HTML 字符串转换为 markdown 文本。
 function Convert-HtmlToMarkdown ($html) {
     $html = $html -creplace '(?sm)^<P><A href="http://twitter\.com/home/\?status=.*$', ''
     $htmlFile = [System.IO.Path]::GetTempFileName()
@@ -47,11 +49,14 @@ function Convert-HtmlToMarkdown ($html) {
     return $markdown
 }
 
+# 根据本地日期和文章标题生成 YAML 对象
 function Get-YamlObj ([System.DateTime]$date, [string]$title) {
 #function Get-HexoBlog ($yamlObj, $body, $date) {
     $yamlObj = [ordered]@{
         layout = 'post';
-        date = $date.ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss');
+        # todo
+        #date = $date.ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss');
+        date = $date.ToString('yyyy-MM-dd HH:mm:ss');
         title = 'PowerShell 技能连载 - {0}' -f $title;
         description = 'PowerTip of the Day - {0}' -f $title;
         categories = @('powershell', 'tip');
@@ -201,6 +206,7 @@ $feed | sort { $_.id } | foreach {
         #$content = Get-Post $entry
         
         sc $targetFile $content -Encoding UTF8
+        .\dos2unix.exe $targetFile
         Get-Picture $targetFile
         Start-Process "d:\greensoft\Sublime Text 3 x32\sublime_text.exe" $targetFile
         sleep 1
