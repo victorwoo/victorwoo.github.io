@@ -28,12 +28,10 @@ function Fix-File ($path) {
     }
 }
 
-<#
-$path = 'D:\interest\blog.vichamp.com\source\_posts\2017-03-22-invoking-a-script-block.md'
-Fix-File $path
+#$path = 'D:\interest\blog.vichamp.com\source\_posts\2017-03-22-invoking-a-script-block.md'
+#Fix-File $path
 
-exit
-#>
+#exit
 
 dir D:\interest\blog.vichamp.com\source\_posts\*.md | ForEach-Object {
     #$path = 'D:\interest\blog.vichamp.com\source\_posts\2017-03-22-invoking-a-script-block.md'
