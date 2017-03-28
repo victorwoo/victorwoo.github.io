@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2017-02-13 16:00:00
+layout: post
+date: 2017-02-14 00:00:00
 title: "PowerShell 技能连载 - 检查 Execution Policy"
 description: PowerTip of the Day - Checking Execution Policy
 categories:

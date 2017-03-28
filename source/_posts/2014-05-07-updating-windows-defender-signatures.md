@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 更新 Windows Defender 病毒定义"
 date: 2014-05-07 00:00:00
 description: PowerTip of the Day - Updating Windows Defender Signatures

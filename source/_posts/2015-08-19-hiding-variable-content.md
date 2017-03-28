@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-08-19 11:00:00
 title: "PowerShell 技能连载 - 隐藏变量内容"
 description: PowerTip of the Day - Hiding Variable Content

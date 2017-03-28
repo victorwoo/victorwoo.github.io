@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "JavaScript 最佳实践"
 date: 2015-01-21 10:02:56
 description: "JavaScript Best Practices"

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-08-21 11:00:00
 title: "PowerShell 技能连载 - 过滤 Hotfix 信息"
 description: PowerTip of the Day - Filtering Hotfix Information

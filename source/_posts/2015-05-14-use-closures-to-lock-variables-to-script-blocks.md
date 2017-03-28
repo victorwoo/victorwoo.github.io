@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-05-14 11:00:00
 title: "PowerShell 技能连载 - 使用闭包将变量保持在脚本块内"
 description: PowerTip of the Day - Use Closures to Lock Variables to Script Blocks

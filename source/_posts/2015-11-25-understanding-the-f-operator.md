@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-11-25 12:00:00
 title: "PowerShell 技能连载 - 理解 -f 操作符"
 description: "PowerTip of the Day - Understanding the –f Operator"

@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2017-03-02 16:00:00
+layout: post
+date: 2017-03-03 00:00:00
 title: "PowerShell 技能连载 - 管理比特标志位（第一部分）"
 description: PowerTip of the Day - Managing Bit Flags (Part 1)
 categories:

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-03-06 12:00:00
 title: "PowerShell 技能连载 - 用 Finally 来处理关键的清理任务"
 description: PowerTip of the Day - Using Finally for Crucial Cleanup Tasks

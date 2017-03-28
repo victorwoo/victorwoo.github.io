@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-09-29 11:00:00
 title: "PowerShell 技能连载 - 使用编码的脚本"
 description: PowerTip of the Day - Using Encoded Scripts

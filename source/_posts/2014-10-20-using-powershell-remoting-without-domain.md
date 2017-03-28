@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-10-20 11:00:00
 title: "PowerShell 技能连载 - 在非域环境中使用 PowerShell 远程操作"
 description: PowerTip of the Day - Using PowerShell Remoting without Domain

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 加速多个 WMI 查询"
 date: 2013-11-28 00:00:00
 description: PowerTip of the Day - Speeding Up Multiple WMI Queries

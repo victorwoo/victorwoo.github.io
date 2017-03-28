@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "显示、隐藏 PowerShell"
 date: 2014-06-23 00:00:00
 description: Show-PowerShell Hide-PowerShell

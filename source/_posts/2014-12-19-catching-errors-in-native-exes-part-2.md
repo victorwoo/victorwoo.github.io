@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-12-19 12:00:00
 title: "PowerShell 技能连载 - 捕获本地 EXE 的错误（第 2 部分）"
 description: PowerTip of the Day - Catching Errors in Native EXEs (Part 2)

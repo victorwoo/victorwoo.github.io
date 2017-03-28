@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-06-10 11:00:00
 title: "PowerShell 技能连载 - 创建动态脚本块"
 description: PowerTip of the Day - Create Dynamic Script Blocks

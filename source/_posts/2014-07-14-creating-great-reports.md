@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-07-14 11:00:00
 title: "PowerShell 技能连载 - 创建优越的报告"
 description: PowerTip of the Day - Creating Great Reports

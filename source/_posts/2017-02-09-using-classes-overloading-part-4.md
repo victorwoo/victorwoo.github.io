@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2017-02-08 16:00:00
+layout: post
+date: 2017-02-09 00:00:00
 title: "PowerShell 技能连载 - 使用类（重载 - 第四部分）"
 description: PowerTip of the Day - Using Classes (Overloading - Part 4)
 categories:

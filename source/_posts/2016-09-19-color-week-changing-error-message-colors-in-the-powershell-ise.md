@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-09-19 00:00:00
 title: "PowerShell 技能连载 - 色彩之周: 改变 PowerShell ISE 中的错误信息颜色"
 description: 'PowerTip of the Day - Color Week: Changing Error Message Colors in the PowerShell ISE'

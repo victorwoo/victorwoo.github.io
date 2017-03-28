@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-10 16:00:00
+layout: post
+date: 2016-10-11 00:00:00
 title: "PowerShell 技能连载 - 查找操作系统架构信息"
 description: PowerTip of the Day - Finding Operating System Architecture Information
 categories:

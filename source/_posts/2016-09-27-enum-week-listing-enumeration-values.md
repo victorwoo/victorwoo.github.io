@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-09-27 00:00:00
 title: "PowerShell 技能连载 - Enum 之周: 列出枚举值"
 description: 'PowerTip of the Day - Enum Week: Listing Enumeration Values'

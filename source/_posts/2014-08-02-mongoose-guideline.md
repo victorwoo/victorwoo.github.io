@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-08-02 17:51:38
 title: mongoose 学习路线
 description: mongoose guideline

@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-12 16:00:00
+layout: post
+date: 2016-10-13 00:00:00
 title: "PowerShell 技能连载 - 将 SID 翻译为用户名"
 description: PowerTip of the Day - Translating SID to Username
 categories:

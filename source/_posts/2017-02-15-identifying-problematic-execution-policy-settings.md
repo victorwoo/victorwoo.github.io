@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2017-02-14 16:00:00
+layout: post
+date: 2017-02-15 00:00:00
 title: "PowerShell 技能连载 - 检测有问题的 Execution Policy 设置"
 description: PowerTip of the Day - Identifying Problematic Execution Policy Settings
 categories:

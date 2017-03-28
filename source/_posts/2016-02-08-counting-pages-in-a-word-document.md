@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-02-08 12:00:00
 title: "PowerShell 技能连载 - 统计一个 Word 文档中的页数"
 description: PowerTip of the Day - Counting Pages in a Word Document

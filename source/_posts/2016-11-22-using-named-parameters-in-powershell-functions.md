@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-11-21 16:00:00
+layout: post
+date: 2016-11-22 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 函数中使用命名的函数"
 description: PowerTip of the Day - Using Named Parameters in PowerShell Functions
 categories:

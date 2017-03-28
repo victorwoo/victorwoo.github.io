@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-11-28 16:00:00
+layout: post
+date: 2016-11-29 00:00:00
 title: "PowerShell 技能连载 - 高级错误处理：重新抛出异常"
 description: 'PowerTip of the Day - Advanced Error Handling: Rethrowing Exceptions'
 categories:

@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-26 16:00:00
+layout: post
+date: 2016-10-27 00:00:00
 title: "PowerShell 技能连载 - 检查文件名的非法字符"
 description: PowerTip of the Day - Check File Names for Illegal Characters
 categories:

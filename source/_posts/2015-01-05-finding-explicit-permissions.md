@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-01-05 12:00:00
 title: "PowerShell 技能连载 - 查找非继承的权限"
 description: PowerTip of the Day - Finding Explicit Permissions

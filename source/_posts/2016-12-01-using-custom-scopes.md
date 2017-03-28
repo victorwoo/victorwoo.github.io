@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-11-30 16:00:00
+layout: post
+date: 2016-12-01 00:00:00
 title: "PowerShell 技能连载 - 使用自定义域"
 description: PowerTip of the Day - Using Custom Scopes
 categories:

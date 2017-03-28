@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-11-05 12:00:00
 title: "PowerShell 技能连载 - 将数字列表转换为有用的列表"
 description: PowerTip of the Day - Turning Lists of Numbers Into Useful Lists

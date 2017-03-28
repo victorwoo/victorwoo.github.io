@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-10-14 11:00:00
 title: "PowerShell 技能连载 - 为什么 GetTempFileName() 是有害的"
 description: PowerTip of the Day - Why GetTempFileName() is Evil

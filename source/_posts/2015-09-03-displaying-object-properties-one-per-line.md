@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-09-03 11:00:00
 title: "PowerShell 技能连载 - 逐行显示对象的属性"
 description: PowerTip of the Day - Displaying Object Properties One per Line

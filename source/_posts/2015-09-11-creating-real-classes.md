@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-09-11 11:00:00
 title: "PowerShell 技能连载 - 创建真实的类"
 description: PowerTip of the Day - Creating Real Classes

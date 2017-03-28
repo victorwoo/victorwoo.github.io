@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-06-08 11:00:00
 title: "PowerShell 技能连载 - 移除非继承的 NTFS 权限"
 description: PowerTip of the Day - Removing Explicit NTFS Permissions

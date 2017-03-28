@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-27 16:00:00
+layout: post
+date: 2016-10-28 00:00:00
 title: "PowerShell 技能连载 - Cmelet 错误报告的简单策略"
 description: PowerTip of the Day - Simple Strategy for Cmdlet Error Reporting
 categories:

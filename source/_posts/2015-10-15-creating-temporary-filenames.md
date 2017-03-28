@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-10-15 11:00:00
 title: "PowerShell 技能连载 - 创建临时文件名"
 description: PowerTip of the Day - Creating Temporary File Names

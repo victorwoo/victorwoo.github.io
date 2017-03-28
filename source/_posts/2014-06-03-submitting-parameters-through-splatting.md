@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 用 Splatting 技术提交参数"
 date: 2014-06-03 00:00:00
 description: PowerTip of the Day - Submitting Parameters through Splatting

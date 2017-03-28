@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-08-06 11:00:00
 title: "PowerShell 技能连载 - 产生多个返回值"
 description: PowerTip of the Day - Returning More Than One Value

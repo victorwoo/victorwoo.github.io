@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-01-01 12:00:00
 title: "PowerShell 技能连载 - 用 Base64 编解码文本"
 description: 'PowerTip of the Day - Encode and Decode Text as Base64 '

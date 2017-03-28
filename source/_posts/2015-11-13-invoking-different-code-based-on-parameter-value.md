@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-11-13 12:00:00
 title: "PowerShell 技能连载 - 根据参数值执行不同的代码"
 description: PowerTip of the Day - Invoking Different Code Based on Parameter Value

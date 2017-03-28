@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-01-15 12:00:00
 title: "PowerShell 技能连载 - 简化 .NET 类型"
 description: PowerTip of the Day - Simplifying .NET Types

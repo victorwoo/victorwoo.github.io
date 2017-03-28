@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-09-09 00:00:00
 title: "PowerShell 技能连载 - Saving PowerShell User Defaults"
 description: PowerTip of the Day - Saving PowerShell User Defaults

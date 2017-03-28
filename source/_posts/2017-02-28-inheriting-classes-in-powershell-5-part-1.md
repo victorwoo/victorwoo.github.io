@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2017-02-27 16:00:00
+layout: post
+date: 2017-02-28 00:00:00
 title: "PowerShell 技能连载 - Power Shell 5 的类继承（第一部分）"
 description: PowerTip of the Day - Inheriting Classes in PowerShell 5 (part 1)
 categories:

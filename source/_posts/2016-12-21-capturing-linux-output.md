@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-12-20 16:00:00
+layout: post
+date: 2016-12-21 00:00:00
 title: "PowerShell 技能连载 - 捕获 Linux 输出"
 description: PowerTip of the Day - Capturing Linux Output
 categories:

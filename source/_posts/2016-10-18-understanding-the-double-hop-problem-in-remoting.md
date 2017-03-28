@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-17 16:00:00
+layout: post
+date: 2016-10-18 00:00:00
 title: "PowerShell 技能连载 - 理解二次远程连接问题"
 description: PowerTip of the Day - Understanding the Double-Hop Problem in Remoting
 categories:

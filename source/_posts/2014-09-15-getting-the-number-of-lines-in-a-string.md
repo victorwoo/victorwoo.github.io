@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-09-15 11:00:00
 title: "PowerShell 技能连载 - 获取字符串的行数"
 description: 'PowerTip of the Day - Getting the Number of Lines in a String '

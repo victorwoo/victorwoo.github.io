@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-08-22 11:00:00
 title: "PowerShell 技能连载 - 理解顺序过滤"
 description: PowerTip of the Day - Understanding Sequential Filtering

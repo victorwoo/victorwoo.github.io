@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "在 PowerShell 中利用正则表达式来解析文本块"
 date: 2014-10-11 16:51:28
 description: "Use Regular Expression to Extract Text Blocks in PowerShell"

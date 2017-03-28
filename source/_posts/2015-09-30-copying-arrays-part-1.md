@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-09-30 11:00:00
 title: "PowerShell 技能连载 - 复制数组（第 1 部分）"
 description: PowerTip of the Day - Copying Arrays (Part 1)

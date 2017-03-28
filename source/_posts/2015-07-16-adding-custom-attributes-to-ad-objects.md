@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-07-16 11:00:00
 title: "PowerShell 技能连载 - 向 AD 对象增加自定义属性"
 description: PowerTip of the Day - Adding Custom Attributes to AD Objects

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-07-10 11:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 的帮助"
 description: PowerTip of the Day - Using PowerShell Help

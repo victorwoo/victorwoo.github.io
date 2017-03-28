@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "快速替换文本文件中的字符串"
 date: 2013-10-08 00:00:00
 description: Quickly Replace Strings in Text Files

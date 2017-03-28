@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-03-26 11:00:00
 title: "PowerShell 技能连载 - 只读及强类型变量"
 description: PowerTip of the Day - Read-Only and Strongly Typed Variables

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-02-18 12:00:00
 title: "PowerShell 技能连载 - 将结果复制到剪贴板"
 description: PowerTip of the Day - Copying Results to Clipboard

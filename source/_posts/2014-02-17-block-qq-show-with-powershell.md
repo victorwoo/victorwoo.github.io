@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "用 PowerShell 屏蔽腾讯 QQ 秀"
 date: 2014-02-17 00:00:00
 description: Block QQ Show with PowerShel

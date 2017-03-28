@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-13 16:00:00
+layout: post
+date: 2016-10-14 00:00:00
 title: "PowerShell 技能连载 - Getting List of Current Group Memberships"
 description: PowerTip of the Day - Getting List of Current Group Memberships
 categories:

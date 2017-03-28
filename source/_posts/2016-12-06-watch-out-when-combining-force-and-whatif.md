@@ -1,11 +1,11 @@
-﻿layout: post
-date: 2016-12-05 16:00:00
+layout: post
+date: 2016-12-06 00:00:00
 title: "PowerShell 技能连载 - 同时使用 -Force 和 -WhatIf 时请注意"
 description: PowerTip of the Day - Watch Out When Combining -Force and -WhatIf!
 categories:
 - powershell
 - tip
-tags: 
+tags:
 - powershell
 - tip
 - powertip

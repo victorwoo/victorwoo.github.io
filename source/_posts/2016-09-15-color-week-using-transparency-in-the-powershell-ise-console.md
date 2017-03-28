@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-09-15 00:00:00
 title: "PowerShell 技能连载 - 色彩之周: 在 PowerShell ISE 控制台中使用透明度"
 description: 'PowerTip of the Day - Color Week: Using Transparency in the PowerShell ISE Console'

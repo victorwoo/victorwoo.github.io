@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-06-24 11:00:00
 title: "PowerShell 技能连载 - 列出所有脚本中的所有变量"
 description: PowerTip of the Day - Listing All Variables in All Scripts

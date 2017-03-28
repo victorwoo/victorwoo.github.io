@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-10-28 11:00:00
 title: "PowerShell 技能连载 - 为什么捕获不到某些错误 "
 description: PowerTip of the Day - Why Some Errors Aren't Caught

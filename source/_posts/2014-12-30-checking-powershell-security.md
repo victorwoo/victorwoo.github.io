@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-12-30 12:00:00
 title: "PowerShell 技能连载 - 检查 PowerShell 安全性"
 description: PowerTip of the Day - Checking PowerShell Security

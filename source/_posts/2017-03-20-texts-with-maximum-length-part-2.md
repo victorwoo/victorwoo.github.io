@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2017-03-19 16:00:00
+layout: post
+date: 2017-03-20 00:00:00
 title: "PowerShell 技能连载 - 限制文本的长度（第二部分）"
 description: PowerTip of the Day - Texts with Maximum Length (Part 2)
 categories:

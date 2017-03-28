@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 读写 NTFS 流"
 date: 2014-01-27 00:00:00
 description: PowerTip of the Day - Reading and Writing NTFS Streams

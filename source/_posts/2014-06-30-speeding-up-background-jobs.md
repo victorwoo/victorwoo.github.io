@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 加速后台任务"
 date: 2014-06-30 00:00:00
 description: PowerTip of the Day - Speeding Up Background Jobs

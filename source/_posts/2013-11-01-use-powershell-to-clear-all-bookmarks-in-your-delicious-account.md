@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "用 PowerShell 脚本来清除您 Delicious 账户下的所有书签"
 date: 2013-11-01 00:00:00
 description: Use PowerShell to Clear All Bookmarks in Your Delicious Account

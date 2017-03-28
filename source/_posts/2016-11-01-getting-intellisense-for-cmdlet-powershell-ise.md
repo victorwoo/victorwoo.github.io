@@ -1,5 +1,5 @@
-﻿layout: post
-date: 2016-10-31 16:00:00
+layout: post
+date: 2016-11-01 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中获得 Cmdlet 的 IntelliSense"
 description: PowerTip of the Day - Getting IntelliSense for Cmdlet (PowerShell ISE)
 categories:

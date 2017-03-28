@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - PowerShell 4.0 中隐藏的数组扩展方法"
 date: 2014-01-20 00:00:00
 description: PowerTip of the Day - Hidden Array Extensions in PowerShell 4.0
