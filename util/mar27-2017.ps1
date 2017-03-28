@@ -9,10 +9,11 @@ function Fix-File ($path) {
     $body = $blocks[1]
     $yamlObj = Get-YamlObj $yaml
     $yamlDate = [datetime]$yamlObj.date
+    
     if ($fileDate - $yamlDate -eq [timespan]::FromHours(8)) {
         $yamlObj.date = $fileDate
         $fileContent = Out-HexoBlog $yamlObj $body
-        sc $path $fileContent
+        sc -Encoding UTF8 $path $fileContent
     }
 
     try {
@@ -27,12 +28,12 @@ function Fix-File ($path) {
         $ErrorActionPreference = $old
     }
 }
+<#
+$path = 'D:\interest\blog.vichamp.com\source\_posts\2017-03-22-invoking-a-script-block.md'
+Fix-File $path
 
-#$path = 'D:\interest\blog.vichamp.com\source\_posts\2017-03-22-invoking-a-script-block.md'
-#Fix-File $path
-
-#exit
-
+exit
+#>
 dir D:\interest\blog.vichamp.com\source\_posts\*.md | ForEach-Object {
     #$path = 'D:\interest\blog.vichamp.com\source\_posts\2017-03-22-invoking-a-script-block.md'
     $path = $_
