@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2016-10-10 00:00:00
 title: "PowerShell 技能连载 - 在 Active Directory 中查找操作系统版本"
 description: PowerTip of the Day - Finding Operating System Versions in Active Directory

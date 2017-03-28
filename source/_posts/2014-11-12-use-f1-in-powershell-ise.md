@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-11-12 12:00:00
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中使用 F1 键"
 description: PowerTip of the Day - Use F1 in PowerShell ISE

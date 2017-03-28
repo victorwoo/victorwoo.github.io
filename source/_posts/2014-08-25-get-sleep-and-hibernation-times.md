@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-08-25 11:00:00
 title: "PowerShell 技能连载 - 获取睡眠或休眠的时间"
 description: PowerTip of the Day - Get Sleep and Hibernation Times

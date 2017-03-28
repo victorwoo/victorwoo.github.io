@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 记录所有错误"
 date: 2014-04-18 00:00:00
 description: PowerTip of the Day - Logging All Errors

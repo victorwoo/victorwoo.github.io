@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-11-07 12:00:00
 title: "PowerShell 技能连载 - 用 Out-Host 代替 More"
 description: PowerTip of the Day - Use Out-Host instead of More

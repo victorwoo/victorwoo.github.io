@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-02-24 12:00:00
 title: "PowerShell 技能连载 - 将文件的扩展名正常化"
 description: PowerTip of the Day - Normalizing File Extensions

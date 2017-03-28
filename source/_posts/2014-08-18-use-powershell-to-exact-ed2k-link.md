@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: 用 PowerShell 解析 eD2k 链接
 date: 2014-08-18 17:24:38
 description: Use PowerShell to extract eD2k link

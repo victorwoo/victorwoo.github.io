@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 自动连接到公共热点"
 date: 2014-03-07 00:00:00
 description: PowerTip of the Day - Auto-Connecting with Public Hotspot

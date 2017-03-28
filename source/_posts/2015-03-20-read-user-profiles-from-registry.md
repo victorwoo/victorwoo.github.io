@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-03-20 11:00:00
 title: "PowerShell 技能连载 - 从注册表中读取用户配置文件"
 description: PowerTip of the Day - Read User Profiles from Registry

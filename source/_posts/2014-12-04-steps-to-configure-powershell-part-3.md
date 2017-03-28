@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-12-04 12:00:00
 title: "PowerShell 技能连载 - PowerShell 技能连载 - 配置 PowerShell 的步骤（第 3 部分）"
 description: PowerTip of the Day - Steps to Configure PowerShell (Part 3)

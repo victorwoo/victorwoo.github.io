@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 为对象增加信息"
 date: 2014-02-28 00:00:00
 description: PowerTip of the Day - Tag Your Objects with Additional Information

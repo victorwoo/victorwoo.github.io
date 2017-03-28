@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-01-14 12:00:00
 title: "PowerShell 技能连载 - 将代码转为大写"
 description: PowerTip of the Day - Converting Code to Uppercase

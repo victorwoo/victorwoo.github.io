@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "在PowerShell中操作Word - 使用格式化样式"
 date: 2013-09-29 00:00:00
 description: 'Integrating Microsoft Word with PowerShell: Format Style Documents'

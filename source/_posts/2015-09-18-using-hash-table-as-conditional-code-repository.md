@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-09-18 11:00:00
 title: "PowerShell 技能连载 - 将哈希表用作条件化的代码库"
 description: PowerTip of the Day - Using Hash Table as Conditional Code Repository

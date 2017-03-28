@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-02-12 12:00:00
 title: "PowerShell 技能连载 - 获得一个干净的 PowerShell 环境"
 description: 'PowerTip of the Day - Getting a Clean PowerShell Environment '

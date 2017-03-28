@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-01-28 12:00:00
 title: "PowerShell 技能连载 - 获取计算机序列号"
 description: PowerTip of the Day - Getting Computer Serial Number

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-01-22 12:00:00
 title: "PowerShell 技能连载 - 要求管理员权限"
 description: PowerTip of the Day - Requiring Administrator Privileges

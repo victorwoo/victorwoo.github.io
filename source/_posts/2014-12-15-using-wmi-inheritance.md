@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-12-15 12:00:00
 title: "PowerShell 技能连载 - 使用 WMI 继承"
 description: PowerTip of the Day - Using WMI Inheritance

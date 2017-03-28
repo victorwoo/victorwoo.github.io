@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-11-10 12:00:00
 title: "PowerShell 技能连载 - 从注册表中读取已安装的软件"
 description: PowerTip of the Day - Reading Installed Software from Registry

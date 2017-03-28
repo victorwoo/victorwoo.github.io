@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2016-10-24 00:00:00
 title: "PowerShell 技能连载 - 检查电子邮件地址（或其它文本）中的非法字符"
 description: PowerTip of the Day - Checking Email Addresses (and Other Text) for Illegal Chars

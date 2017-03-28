@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-09-17 11:00:00
 title: "PowerShell 技能连载 - 为什么 Invoke-Expression 是邪恶的"
 description: PowerTip of the Day - Why Invoke-Expression is Evil

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 多行输入对话框、打开文件对话框、文件夹浏览对话框、输入框及消息框"
 date: 2013-10-15 00:00:00
 description: Powershell Multi Line Input Box Dialog, Open File Dialog, Folder Browser Dialog, Input Box, and Message Box

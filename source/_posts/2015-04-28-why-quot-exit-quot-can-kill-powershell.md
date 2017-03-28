@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-04-28 11:00:00
 title: "PowerShell 技能连载 - 为什么“exit”将会关掉 PowerShell"
 description: PowerTip of the Day - Why "exit" can kill PowerShell

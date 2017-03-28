@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2017-03-22 00:00:00
 title: "PowerShell 技能连载 - 调用一个脚本块"
 description: PowerTip of the Day - Invoking a Script Block

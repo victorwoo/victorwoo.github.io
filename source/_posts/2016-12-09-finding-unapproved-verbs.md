@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2016-12-09 00:00:00
 title: "PowerShell 技能连载 - 查找不合规的命令动词"
 description: PowerTip of the Day - Finding Unapproved Verbs

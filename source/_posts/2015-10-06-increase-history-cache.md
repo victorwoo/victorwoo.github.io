@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-10-06 11:00:00
 title: "PowerShell 技能连载 - 增加历史缓存"
 description: PowerTip of the Day - Increase History Cache

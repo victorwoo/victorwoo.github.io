@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-05-22 11:00:00
 title: "PowerShell 技能连载 - 在控制台输出中使用绿色的复选标记"
 description: PowerTip of the Day - Using Green Checkmarks in Console Output

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-09-16 11:00:00
 title: "PowerShell 技能连载 - 检测文本中是否含有大写字母"
 description: PowerTip of the Day - Testing Whether Text Contains Upper Case

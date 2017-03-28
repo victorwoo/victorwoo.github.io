@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2017-02-22 00:00:00
 title: "PowerShell 技能连载 - 设置环境变量"
 description: PowerTip of the Day - Setting Environment Variables

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 理解 exit 语句"
 date: 2014-06-27 00:00:00
 description: PowerTip of the Day - Understanding the statement exit

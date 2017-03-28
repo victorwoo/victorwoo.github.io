@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2017-02-07 00:00:00
 title: "PowerShell 技能连载 - 使用类（初始化属性 - 第二部分）"
 description: PowerTip of the Day - Using Classes (Initializing Properties - Part 2)

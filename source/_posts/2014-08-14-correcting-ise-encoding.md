@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-08-14 11:00:00
 title: "PowerShell 技能连载 - 修正 ISE 的编码"
 description: PowerTip of the Day - Correcting ISE Encoding

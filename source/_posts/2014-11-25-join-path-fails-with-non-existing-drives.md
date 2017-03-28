@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-11-25 12:00:00
 title: "PowerShell 技能连载 - Join-Path 遇上不存在的驱动器会失败"
 description: PowerTip of the Day - Join-Path Fails with Nonexistent Drives

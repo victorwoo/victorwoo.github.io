@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-08-25 11:00:00
 title: "PowerShell 技能连载 - 以管理员身份执行指定的代码"
 description: PowerTip of the Day - Executing Selected Code as Admin

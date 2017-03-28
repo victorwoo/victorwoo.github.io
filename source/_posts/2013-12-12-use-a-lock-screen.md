@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 锁定屏幕"
 date: 2013-12-12 00:00:00
 description: PowerTip of the Day - Use a Lock Screen

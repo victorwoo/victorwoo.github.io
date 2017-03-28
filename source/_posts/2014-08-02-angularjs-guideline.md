@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: AngularJS 学习路线
 description: Angular guideline
 date: 2014-08-02 14:09:28

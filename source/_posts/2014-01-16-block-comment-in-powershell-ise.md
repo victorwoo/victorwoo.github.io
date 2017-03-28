@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中使用块注释"
 date: 2014-01-16 00:00:00
 description: PowerTip of the Day - Block Comment in PowerShell ISE

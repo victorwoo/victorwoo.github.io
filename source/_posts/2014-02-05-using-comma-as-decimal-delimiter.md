@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 用逗号作为十进制数分隔符"
 date: 2014-02-05 00:00:00
 description: PowerTip of the Day - Using Comma as Decimal Delimiter

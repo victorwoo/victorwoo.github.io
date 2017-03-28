@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 轻松读取注册表键值"
 date: 2014-06-19 00:00:00
 description: PowerTip of the Day - Reading Registry Values the Easy Way

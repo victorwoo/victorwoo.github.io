@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "用脚本批量下载www.cheat-sheets.org中的所有pdf文件"
 date: 2013-06-08 00:00:00
 description: batch downloading www cheat sheets org

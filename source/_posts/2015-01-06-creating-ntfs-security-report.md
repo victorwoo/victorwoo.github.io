@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-01-06 12:00:00
 title: "PowerShell 技能连载 - 创建 NTFS 安全报告"
 description: PowerTip of the Day - Creating NTFS Security Report

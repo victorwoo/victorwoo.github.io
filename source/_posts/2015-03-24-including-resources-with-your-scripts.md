@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-03-24 11:00:00
 title: "PowerShell 技能连载 - 在脚本中包含资源"
 description: PowerTip of the Day - Including Resources with Your Scripts

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-04-21 11:00:00
 title: "PowerShell 技能连载 - 验证域凭据"
 description: PowerTip of the Day - Validating Domain Credentials

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 替换文本中的指定字符"
 date: 2013-11-01 00:00:00
 description: PowerTip of the Day - Replacing Specific Characters in a Text

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-09-26 11:00:00
 title: "PowerShell 技能连载 - 替换重复的空格"
 description: PowerTip of the Day - Replacing Duplicate Spaces

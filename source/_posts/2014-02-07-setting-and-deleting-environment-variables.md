@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 设置（及删除）环境变量"
 date: 2014-02-07 00:00:00
 description: PowerTip of the Day - Setting (And Deleting) Environment Variables

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-09-07 11:00:00
 title: "PowerShell 技能连载 - 输出的同时赋值"
 description: PowerTip of the Day - Outputting and Assigning at the Same Time

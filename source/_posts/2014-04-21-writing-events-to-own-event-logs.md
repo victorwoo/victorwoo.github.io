@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 将日志写入自定义的事件日志"
 date: 2014-04-21 00:00:00
 description: PowerTip of the Day - Writing Events to Own Event Logs

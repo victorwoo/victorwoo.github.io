@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-09-22 11:00:00
 title: "PowerShell 技能连载 - 设置新的 Windows 注册所有者"
 description: PowerTip of the Day - Setting New Windows Registered Owner

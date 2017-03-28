@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2017-01-31 00:00:00
 title: "PowerShell 技能连载 - 语音之周：使用语音合成器高级选项"
 description: 'PowerTip of the Day - Speech-Week: Using Advanced Speech Synthesizer Options Synthesizer'

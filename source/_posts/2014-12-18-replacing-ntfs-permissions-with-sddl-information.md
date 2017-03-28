@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-12-18 12:00:00
 title: "PowerShell 技能连载 - 用 SDDL 替换 NTFS 权限"
 description: PowerTip of the Day - Replacing NTFS Permissions with SDDL Information

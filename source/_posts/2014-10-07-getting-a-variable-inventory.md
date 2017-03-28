@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-10-07 11:00:00
 title: "PowerShell 技能连载 - 获取变量详细清单"
 description: PowerTip of the Day - Getting a Variable Inventory

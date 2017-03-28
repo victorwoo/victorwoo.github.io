@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 访问所有用户的桌面"
 date: 2013-12-02 00:00:00
 description: PowerTip of the Day - Accessing All Users Desktop

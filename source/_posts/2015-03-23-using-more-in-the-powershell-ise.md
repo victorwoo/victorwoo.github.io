@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-03-23 11:00:00
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中使用“more”"
 description: "PowerTip of the Day - Using “more” in the PowerShell ISE"

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-10-03 11:00:00
 title: "PowerShell 技能连载 - 格式化行尾符"
 description: PowerTip of the Day - Normalizing Line Endings

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "新手从 0 开始学习 PowerShell 的路线"
 date: 2013-05-09 00:00:00
 description: "guide line to learn powershell 新手 学习 起步"

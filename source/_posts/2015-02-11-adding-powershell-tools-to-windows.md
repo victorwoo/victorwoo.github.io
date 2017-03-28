@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-02-11 12:00:00
 title: "PowerShell 技能连载 - 将 PowerShell 工具增加到 Windows 8 启动屏幕"
 description: PowerTip of the Day - Adding PowerShell Tools to Windows 8 Start Screen

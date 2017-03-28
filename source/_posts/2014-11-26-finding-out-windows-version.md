@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-11-26 12:00:00
 title: "PowerShell 技能连载 - 查看 Windows 版本"
 description: PowerTip of the Day - Finding Out Windows Version

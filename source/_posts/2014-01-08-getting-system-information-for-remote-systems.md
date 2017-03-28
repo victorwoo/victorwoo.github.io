@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 获取远程主机的系统信息"
 date: 2014-01-08 00:00:00
 description: PowerTip of the Day - Getting System Information for Remote Systems

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 朗读英文和德文（以及西班牙文，或您指定的语言）"
 date: 2014-02-03 00:00:00
 description: PowerTip of the Day - Speaking English and German (and Spanish, and you name it)

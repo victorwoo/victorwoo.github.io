@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "个人管理"
 date: 2015-02-02 15:01:00
 description: "Personal Management"

@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2015-09-28 11:00:00
 title: "PowerShell 技能连载 - 用 try..finally 在 PowerShell 关闭时执行代码"
 description: "PowerTip of the Day - Use try…finally to Execute Code when PowerShell Closes"

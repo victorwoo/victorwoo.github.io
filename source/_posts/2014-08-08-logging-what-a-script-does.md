@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 date: 2014-08-08 11:00:00
 title: "PowerShell 技能连载 - 记录脚本做了什么事"
 description: PowerTip of the Day - Logging What a Script Does

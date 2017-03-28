@@ -1,4 +1,4 @@
-layout: post
+﻿layout: post
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中创建干净的测试环境"
 date: 2014-02-17 00:00:00
 description: PowerTip of the Day - Use Fresh Testing Environment in PowerShell ISE
