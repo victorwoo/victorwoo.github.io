@@ -1,6 +1,6 @@
 ﻿layout: post
 date: 2017-03-13 00:00:00
-title: "PowerShell 技能连载 - Exploring Type Accelerators"
+title: "PowerShell 技能连载 - 探索类型加速器"
 description: PowerTip of the Day - Exploring Type Accelerators
 categories:
 - powershell
@@ -12,34 +12,36 @@ tags:
 - series
 - translation
 ---
-PowerShell uses a number of so-called type accelerators that help with long .NET type names. Instead of using “System.DirectoryServices.DirectoryEntry”, for example, you can simply type “ADSI”.
+PowerShell 使用了大量所谓类型加速器来简化过长的 .NET 类型名。例如 "System.DirectoryServices.DirectoryEntry" 可以简化为 "ADSI"。
 
-When you query the property FullName of a type, you always get back the underlying full .NET type name:
+当您需要查询一个类型的完整名称时，您可以获取到实际的完整 .NET 类型名：
 
-     
-    PS C:\> [ADSI].FullName
-    System.DirectoryServices.DirectoryEntry
-    
-    PS C:\>
-     
+```powershell
+PS C:\> [ADSI].FullName
+System.DirectoryServices.DirectoryEntry
 
-And this line dumps all the built-in .NET type accelerators in PowerShell:
+PS C:\>
+```
 
-    [PSObject].Assembly.GetType("System.Management.Automation.TypeAccelerators")::get |
-      Out-GridView
-    
+以下代码在 PowerShell 中输出所有的内置 .NET 类型加速器：
 
-Aside from the explicit type accelerators, there is another rule built into PowerShell: when a type resides in the namespace “System”, then you can always omit this namespace. This is why all of these are the same:
+```powershell
+[PSObject].Assembly.GetType("System.Management.Automation.TypeAccelerators")::get |
+    Out-GridView
+```
 
-     
-    PS C:\> [int].FullName
-    System.Int32
-    
-    PS C:\> [System.Int32].FullName
-    System.Int32
-    
-    PS C:\> [Int32].FullName
-    System.Int32
+除了显式的类型加速器之外，还有一个 PowerShell 内置的规则：在 `System` 命名空间中的类型加速器可以省略命名空间。所以以下的表达完全一致：
+
+```powershell
+PS C:\> [int].FullName
+System.Int32
+
+PS C:\> [System.Int32].FullName
+System.Int32
+
+PS C:\> [Int32].FullName
+System.Int32
+```
 
 <!--more-->
 本文国际来源：[Exploring Type Accelerators](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-type-accelerators)

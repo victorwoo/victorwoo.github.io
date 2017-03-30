@@ -206,9 +206,9 @@ $feed | sort { $_.id } | foreach {
         #$content = Get-Post $entry
         
         sc $targetFile $content -Encoding UTF8
-        .\dos2unix.exe $targetFile
         Get-Picture $targetFile
-        Start-Process "d:\greensoft\Sublime Text 3 x32\sublime_text.exe" $targetFile
+        .\dos2unix.exe $targetFile
+        #Start-Process "d:\greensoft\Sublime Text 3 x32\sublime_text.exe" $targetFile
         sleep 1
         
         $index = Get-Index $date.Year $date.Month $date.Day $name
@@ -220,5 +220,5 @@ $feed | sort { $_.id } | foreach {
 if ($newlyAdded) {
     $indexFile = Join-Path $folder '2013-09-09-index.md'
     
-    Start-Process "d:\greensoft\Sublime Text 3 x32\sublime_text.exe" $indexFile
+    #Start-Process "d:\greensoft\Sublime Text 3 x32\sublime_text.exe" $indexFile
 }
