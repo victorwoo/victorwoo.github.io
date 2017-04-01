@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 持有一个进程的句柄"
 date: 2014-02-21 00:00:00
 description: PowerTip of the Day - Keeping a Handle to a Process

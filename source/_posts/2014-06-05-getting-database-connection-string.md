@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 获取数据库连接字符串"
 date: 2014-06-05 00:00:00
 description: PowerTip of the Day - Getting Database Connection String

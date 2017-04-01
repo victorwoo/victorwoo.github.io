@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-09-29 00:00:00
 title: "PowerShell 技能连载 - Enum 之周: 快速关闭 Cmdlet 错误提示"
 description: 'PowerTip of the Day - Enum Week: Suppressing Cmdlet Errors - Fast'

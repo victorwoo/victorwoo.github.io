@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-10-26 00:00:00
 title: "PowerShell 技能连载 - 查找文件路径中的非法字符（基于文件系统）"
 description: PowerTip of the Day - Finding Illegal Characters in Paths (File System)

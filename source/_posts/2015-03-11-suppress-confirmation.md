@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-03-11 11:00:00
 title: "PowerShell 技能连载 - 禁止确认信息"
 description: PowerTip of the Day - Suppress Confirmation

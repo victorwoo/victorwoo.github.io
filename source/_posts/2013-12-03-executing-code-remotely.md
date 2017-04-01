@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 远程执行代码"
 date: 2013-12-03 00:00:00
 description: PowerTip of the Day - Executing Code Remotely

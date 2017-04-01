@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-02-10 00:00:00
 title: "PowerShell 技能连载 - 使用类（构造函数 - 第五部分）"
 description: PowerTip of the Day - Using Classes (Constructors - Part 5)

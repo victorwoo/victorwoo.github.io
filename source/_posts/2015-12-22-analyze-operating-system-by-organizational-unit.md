@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-12-22 12:00:00
 title: "PowerShell 技能连载 - 根据 OU 分析操作系统"
 description: PowerTip of the Day - Analyze Operating System by Organizational Unit

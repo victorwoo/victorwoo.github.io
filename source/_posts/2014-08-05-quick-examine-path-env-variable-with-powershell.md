@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: 用 PowerShell 快速查看 PATH 环境变量
 date: 2014-08-05 14:24:24
 description: Quick examine path env variable with PowerShell

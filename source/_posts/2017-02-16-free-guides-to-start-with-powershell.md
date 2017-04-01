@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-02-16 00:00:00
 title: "PowerShell 技能连载 - 免费的 PowerShell 起步指南"
 description: PowerTip of the Day - Free Guides to Start With PowerShell

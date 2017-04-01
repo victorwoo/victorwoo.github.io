@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "用 PowerShell 下载 imooc.com 的视频教程"
 date: 2014-09-26 17:39:12
 description: Download Videos from imooc.com by PowerShell

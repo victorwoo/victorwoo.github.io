@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-04-29 11:00:00
 title: "PowerShell 技能连载 - 从 PowerShell 脚本中接收错误返回值"
 description: PowerTip of the Day - Receiving Error Level from PowerShell Script

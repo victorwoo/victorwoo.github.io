@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 处理环境变量"
 date: 2014-06-25 00:00:00
 description: PowerTip of the Day - Dealing with Environment Variables

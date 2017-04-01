@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-09-02 11:00:00
 title: "PowerShell 技能连载 - 使用 -f 操作符合并字符串和数据"
 description: PowerTip of the Day - Using -f Operator to Combine String and Data

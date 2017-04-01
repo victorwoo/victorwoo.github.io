@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 消除重复"
 date: 2014-03-04 00:00:00
 description: PowerTip of the Day - Eliminating Duplicates

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-02-20 12:00:00
 title: "PowerShell 技能连载 - 在 ISE 中使用代码区域"
 description: PowerTip of the Day - Using Code Regions in ISE

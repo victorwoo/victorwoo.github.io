@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-08-18 11:00:00
 title: "PowerShell 技能连载 - 向对象增加额外信息"
 description: PowerTip of the Day - Adding Additional Information to Objects

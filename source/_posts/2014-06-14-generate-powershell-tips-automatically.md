@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "自动生成 PowerShell 技能连载"
 date: 2014-06-14 00:00:00
 description: Generate PowerShell tips automatically

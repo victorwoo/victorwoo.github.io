@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-08-15 11:00:00
 title: "PowerShell 技能连载 - 获取指定扩展名的文件"
 description: PowerTip of the Day - Getting Files with Specific Extensions Only

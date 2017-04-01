@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-02-23 00:00:00
 title: "PowerShell 技能连载 - 读取最新的环境变量"
 description: PowerTip of the Day - Reading Environment Variables Freshly

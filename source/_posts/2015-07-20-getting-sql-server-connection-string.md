@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-07-20 11:00:00
 title: "PowerShell 技能连载 - 获取 SQL Server 连接字符串"
 description: PowerTip of the Day - Getting SQL Server Connection String

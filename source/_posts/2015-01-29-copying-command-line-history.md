@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-01-29 12:00:00
 title: "PowerShell 技能连载 - 复制命令行历史"
 description: PowerTip of the Day - Copying Command Line History

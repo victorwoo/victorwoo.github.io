@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 通过按键跳过配置脚本"
 date: 2014-06-16 00:00:00
 description: PowerTip of the Day - Skipping Profile on Keystroke

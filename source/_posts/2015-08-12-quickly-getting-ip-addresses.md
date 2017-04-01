@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-08-12 11:00:00
 title: "PowerShell 技能连载 - 快速获取 IP 地址"
 description: PowerTip of the Day - Quickly Getting IP Addresses

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 竖排的网格视图"
 date: 2013-09-13 00:00:00
 description: PowerTip of the Day - Vertical Grid View

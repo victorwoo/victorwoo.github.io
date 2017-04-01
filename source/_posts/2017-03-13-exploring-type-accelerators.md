@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-03-13 00:00:00
 title: "PowerShell 技能连载 - 探索类型加速器"
 description: PowerTip of the Day - Exploring Type Accelerators

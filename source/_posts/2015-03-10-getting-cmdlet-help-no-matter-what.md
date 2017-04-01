@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-03-10 11:00:00
 title: "PowerShell 技能连载 - 随时获取 cmdlet 的帮助"
 description: PowerTip of the Day - Getting Cmdlet Help No Matter What

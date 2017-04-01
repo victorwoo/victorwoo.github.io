@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-04-30 11:00:00
 title: "PowerShell 技能连载 - 移除空白（和换行）"
 description: PowerTip of the Day - Removing Whitespace (and Line Breaks)

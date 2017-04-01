@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 在 Remoting 中使用完整限定名"
 date: 2014-02-13 00:00:00
 description: PowerTip of the Day - Using Fully Qualified Names in Remoting

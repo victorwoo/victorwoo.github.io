@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-11-13 12:00:00
 title: "PowerShell 技能连载 - 使用 IPv4 来 Ping"
 description: 'PowerTip of the Day - Pinging via IPv4 '

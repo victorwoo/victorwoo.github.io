@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: HTML CSS 学习路线
 date: 2014-08-12 19:32:26
 description: html-css-guideline

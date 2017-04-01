@@ -174,6 +174,7 @@ for ($i = $ul.childNodes.length - 1; $i -ge 0; $i--) {
         sc $targetFile $content -Encoding UTF8
         Get-Picture $targetFile
         # Start-Process "C:\Program Files\Typora\Typora.exe" $targetFile
+        .\dos2unix.exe $targetFile
         Start-Process "code" $targetFile
         sleep 1
         

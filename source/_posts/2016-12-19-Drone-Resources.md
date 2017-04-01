@@ -1,4 +1,4 @@
-﻿---
+---
 title: Drone Resources
 date: 2016-12-19 21:00:01
 tags: [geek, drone]

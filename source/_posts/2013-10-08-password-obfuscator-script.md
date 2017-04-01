@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 密码混淆器脚本"
 date: 2013-10-08 00:00:00
 description: PowerTip of the Day - Password Obfuscator Script

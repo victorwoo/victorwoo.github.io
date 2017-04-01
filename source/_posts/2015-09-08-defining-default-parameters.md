@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-09-08 11:00:00
 title: "PowerShell 技能连载 - 定义缺省参数"
 description: PowerTip of the Day - Defining Default Parameters

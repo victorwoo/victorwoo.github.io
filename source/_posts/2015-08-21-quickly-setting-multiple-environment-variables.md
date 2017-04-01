@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-08-21 11:00:00
 title: "PowerShell 技能连载 - 快速设置多个环境变量"
 description: PowerTip of the Day - Quickly Setting Multiple Environment Variables

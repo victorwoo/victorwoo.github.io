@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-12-05 12:00:00
 title: "PowerShell 技能连载 - PowerShell 技能连载 - 移除 AD 组成员"
 description: PowerTip of the Day - Removing AD Group Members

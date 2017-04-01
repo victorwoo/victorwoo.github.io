@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-11-03 12:00:00
 title: "PowerShell 技能连载 - 调用记事本打印文本"
 description: PowerTip of the Day - Using Notepad to Print Things

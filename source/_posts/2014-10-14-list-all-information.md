@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-10-14 11:00:00
 title: "PowerShell 技能连载 - 列出所有信息"
 description: PowerTip of the Day - List All Information

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-03-24 00:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 参数验证器"
 description: PowerTip of the Day - Using a PowerShell Parameter Validator

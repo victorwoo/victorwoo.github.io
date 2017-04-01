@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-09-01 06:55:00
 title: "欢迎使用新版的PowerShell官网主页（转）"
 description: Welcoming the new home of PowerShell

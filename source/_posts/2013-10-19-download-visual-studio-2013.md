@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "下载 Visual Studio 2013"
 date: 2013-10-19 00:00:00
 description: Download Visual Studio 2013

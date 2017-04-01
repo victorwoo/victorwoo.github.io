@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-01-01 12:00:00
 title: "PowerShell 技能连载 - 处理隐藏文件"
 description: PowerTip of the Day - Dealing with Hidden Files

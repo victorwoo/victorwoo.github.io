@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "在PowerShell中操作Excel - 读取数据"
 date: 2013-09-21 00:00:00
 description: 'Integrating Microsoft Excel with PowerShell: Reading Data'

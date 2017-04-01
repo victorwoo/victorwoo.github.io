@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-12-31 12:00:00
 title: "PowerShell 技能连载 - 改变 GPO 描述/备注"
 description: PowerTip of the Day - Changing GPO Description/Comment

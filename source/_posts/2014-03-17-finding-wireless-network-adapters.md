@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 查找无线网卡"
 date: 2014-03-17 00:00:00
 description: PowerTip of the Day - Finding Wireless Network Adapters

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-06-03 11:00:00
 title: "PowerShell 技能连载 - 创建一个包含 NTFS 权限的文件夹"
 description: PowerTip of the Day - Create Folder with NTFS Permissions

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-08-26 11:00:00
 title: "PowerShell 技能连载 - 获取 WMI 设备清单"
 description: 'PowerTip of the Day - WMI Device Inventory '

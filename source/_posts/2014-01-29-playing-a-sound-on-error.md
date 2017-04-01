@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 当发生错误时播放一段声音"
 date: 2014-01-29 00:00:00
 description: PowerTip of the Day - Playing a Sound on Error

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-07-21 11:00:00
 title: "PowerShell 技能连载 - 通过连接字符串访问 SQL 数据库"
 description: PowerTip of the Day - Accessing an SQL Database with a Connection String

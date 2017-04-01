@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-05-21 11:00:00
 title: "PowerShell 技能连载 - 在控制台输出中使用符号"
 description: PowerTip of the Day - Using Symbols in Console Output

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-09-06 00:00:00
 title: "PowerShell 技能连载 - 启用远程管理"
 description: PowerTip of the Day - Enabling Remote Administration

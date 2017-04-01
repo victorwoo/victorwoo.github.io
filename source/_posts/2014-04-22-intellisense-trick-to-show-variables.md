@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 智能感知显示变量的技巧"
 date: 2014-04-22 00:00:00
 description: PowerTip of the Day - IntelliSense Trick to Show Variables

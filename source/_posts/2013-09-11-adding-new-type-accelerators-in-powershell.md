@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 增加新的类型加速器"
 date: 2013-09-11 00:00:00
 description: PowerTip of the Day - Adding New Type Accelerators in Powershell

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 展开字符串中的变量"
 date: 2014-02-26 00:00:00
 description: PowerTip of the Day - Expanding Variables in Strings

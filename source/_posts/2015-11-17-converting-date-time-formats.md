@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-11-17 12:00:00
 title: "PowerShell 技能连载 - 转换日期、时间格式"
 description: PowerTip of the Day - Converting Date/Time Formats

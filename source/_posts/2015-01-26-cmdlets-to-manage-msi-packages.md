@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-01-26 12:00:00
 title: "PowerShell 技能连载 - 用 Cmdlet 来管理 MSI 安装包"
 description: PowerTip of the Day - Cmdlets to Manage MSI Packages

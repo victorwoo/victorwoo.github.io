@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-04-27 11:00:00
 title: "PowerShell 技能连载 - 理解 break、continue、return 和 exit 语句"
 description: PowerTip of the Day - Understanding break, continue, return, and exit

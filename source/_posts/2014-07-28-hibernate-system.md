@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-07-28 11:00:00
 title: "PowerShell 技能连载 - 使系统休眠"
 description: PowerTip of the Day - Hibernate System

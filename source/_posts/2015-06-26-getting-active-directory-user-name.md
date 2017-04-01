@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-06-26 11:00:00
 title: "PowerShell 技能连载 - 获取 Active Directory 用户名"
 description: PowerTip of the Day - Getting Active Directory User Name

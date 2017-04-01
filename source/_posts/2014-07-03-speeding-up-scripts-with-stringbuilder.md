@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 通过 StringBuilder 加速脚本"
 date: 2014-07-03 00:00:00
 description: PowerTip of the Day - Speeding Up Scripts with StringBuilder

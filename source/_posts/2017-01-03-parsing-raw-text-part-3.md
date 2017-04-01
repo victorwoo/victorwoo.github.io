@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-01-03 00:00:00
 title: "PowerShell 技能连载 - 解析纯文本（第三部分）"
 description: PowerTip of the Day - Parsing Raw Text (Part 3)

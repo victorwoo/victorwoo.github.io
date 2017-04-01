@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 在不同的 Domain 中查找"
 date: 2013-10-23 00:00:00
 description: PowerTip of the Day - Searching in Different Domains

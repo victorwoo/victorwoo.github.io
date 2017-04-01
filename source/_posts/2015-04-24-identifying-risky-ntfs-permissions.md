@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-04-24 11:00:00
 title: "PowerShell 技能连载 - 检测危险的 NTFS 权限"
 description: PowerTip of the Day - Identifying Risky NTFS Permissions

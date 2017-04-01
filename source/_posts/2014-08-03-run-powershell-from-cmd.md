@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: 从命令行运行 PowerShell
 date: 2014-08-03 21:31:42
 description: Run PowerShell from command line

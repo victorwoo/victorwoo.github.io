@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-10-16 11:00:00
 title: "PowerShell 技能连载 - 从文件中读取系统日志"
 description: PowerTip of the Day - Reading System Logs from File

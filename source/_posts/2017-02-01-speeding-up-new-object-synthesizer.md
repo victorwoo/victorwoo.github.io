@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-02-01 00:00:00
 title: "PowerShell 技能连载 - 加速 New-Object Synthesizer"
 description: PowerTip of the Day - Speeding Up New-Object Synthesizer

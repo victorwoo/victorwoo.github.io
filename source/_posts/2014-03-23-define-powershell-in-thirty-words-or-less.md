@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "用一句话定义 PowerShell"
 date: 2014-03-23 00:00:00
 description: Define PowerShell in Thirty Words or Less

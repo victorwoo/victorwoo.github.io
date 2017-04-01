@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 验证 UNC 路径"
 date: 2014-04-02 00:00:00
 description: PowerTip of the Day - Testing UNC Paths

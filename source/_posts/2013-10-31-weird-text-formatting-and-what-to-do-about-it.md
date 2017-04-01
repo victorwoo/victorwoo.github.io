@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 怪异的文本格式化（以及解决方法）"
 date: 2013-10-31 00:00:00
 description: PowerTip of the Day - Weird Text Formatting (and what to do about it)

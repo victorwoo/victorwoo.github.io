@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "PowerShell 技能连载 - 用 Select-Object -First 节省时间！"
 date: 2014-02-27 00:00:00
 description: PowerTip of the Day - Save Time With Select-Object -First!

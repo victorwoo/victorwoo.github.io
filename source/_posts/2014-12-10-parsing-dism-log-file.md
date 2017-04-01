@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-12-10 12:00:00
 title: "PowerShell 技能连载 - 解析 DISM 日志文件"
 description: PowerTip of the Day - Parsing DISM Log File

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-11-10 12:00:00
 title: "PowerShell 技能连载 - 用 EFS 加解密文件"
 description: PowerTip of the Day - Encrypting and Decrypting Files with EFS

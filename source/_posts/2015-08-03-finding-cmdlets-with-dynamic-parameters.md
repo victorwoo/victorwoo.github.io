@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-08-03 11:00:00
 title: "PowerShell 技能连载 - 查找带动态参数的 cmdlet"
 description: PowerTip of the Day - Finding Cmdlets with Dynamic Parameters

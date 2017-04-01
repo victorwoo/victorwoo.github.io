@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2016-01-04 12:00:00
 title: "PowerShell 技能连载 - 对图片编码"
 description: PowerTip of the Day - Encoding Pictures

@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-04-14 11:00:00
 title: "PowerShell 技能连载 - 查找电视剧信息"
 description: PowerTip of the Day - Finding Information about TV Series

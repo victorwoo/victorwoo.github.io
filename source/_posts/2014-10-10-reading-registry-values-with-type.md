@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-10-10 11:00:00
 title: "PowerShell 技能连载 - 获取包含数据类型信息在内的注册表键值"
 description: PowerTip of the Day - Reading Registry Values with Type

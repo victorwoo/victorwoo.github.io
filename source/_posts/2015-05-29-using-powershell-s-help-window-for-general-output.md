@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-05-29 11:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 的帮助窗口作为通用输出"
 description: "PowerTip of the Day - Using PowerShell’s Help Window for General Output"

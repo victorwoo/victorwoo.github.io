@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 title: "以GTD的思想整理目录的PowerShell脚本"
 date: 2013-03-07 00:00:00
 description: gtd script

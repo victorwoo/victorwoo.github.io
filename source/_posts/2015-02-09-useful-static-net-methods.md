@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-02-09 12:00:00
 title: "PowerShell 技能连载 - 有用的静态 .NET 方法"
 description: PowerTip of the Day - Useful Static .NET Methods

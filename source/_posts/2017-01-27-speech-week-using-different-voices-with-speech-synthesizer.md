@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2017-01-27 00:00:00
 title: "PowerShell 技能连载 - 语音之周：更改讲述人的语音"
 description: 'PowerTip of the Day - Speech-Week: Using Different Voices with Speech Synthesizer'

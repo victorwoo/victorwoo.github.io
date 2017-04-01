@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2014-12-25 12:00:00
 title: "PowerShell 技能连载 - 从 LDAP 路径获取 OU"
 description: PowerTip of the Day - Get the OU from an LDAP Path

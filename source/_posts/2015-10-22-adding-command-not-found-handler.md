@@ -1,4 +1,4 @@
-﻿layout: post
+layout: post
 date: 2015-10-22 11:00:00
 title: "PowerShell 技能连载 - 增加“命令未找到”处理器"
 description: PowerTip of the Day - Adding Command Not Found Handler
