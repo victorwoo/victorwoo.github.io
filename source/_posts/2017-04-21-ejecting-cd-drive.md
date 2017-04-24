@@ -15,20 +15,20 @@ tags:
 以下是一个用 WMI 弹出 CD 驱动器的小函数。它首先向 WMI 请求所有的 CD 驱动器，然后使用 explorer 对象模型导航到该驱动器并调用它的 "Eject" 上下文菜单项。
 
 ```powershell
-  function Eject-CD
+function Eject-CD
+{
+  $drives = Get-WmiObject Win32_Volume -Filter "DriveType=5"
+  if ($drives -eq $null)
   {
-    $drives = Get-WmiObject Win32_Volume -Filter "DriveType=5"
-    if ($drives -eq $null)
-    {
-      Write-Warning "Your computer has no CD drives to eject."
-      return
-    }
-    $drives | ForEach-Object {
-      (New-Object -ComObject Shell.Application).Namespace(17).ParseName($_.Name).InvokeVerb("Eject")
-    }
+    Write-Warning "Your computer has no CD drives to eject."
+    return
   }
+  $drives | ForEach-Object {
+    (New-Object -ComObject Shell.Application).Namespace(17).ParseName($_.Name).InvokeVerb("Eject")
+  }
+}
 
-  Eject-CD
+Eject-CD
 ```
 
 <!--more-->
