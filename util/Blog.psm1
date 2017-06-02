@@ -100,6 +100,7 @@ function Out-HexoBlog ($yamlObj, $body) {
     $hexoFrontMatterString = $output.ToString().Trim()
 
     return @"
+---
 {0}
 ---
 {1}
