@@ -1,3 +1,4 @@
+---
 layout: post
 title: "字幕整理脚本"
 description: Subtitle Optimizer

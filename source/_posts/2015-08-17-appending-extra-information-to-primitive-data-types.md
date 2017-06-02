@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-08-17 11:00:00
 title: "PowerShell 技能连载 - 向原始数据类型增加额外信息"

@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 远程执行 gpupdate"
 date: 2014-06-06 00:00:00

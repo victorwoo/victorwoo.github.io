@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 复制命令行历史的工具函数"
 date: 2014-07-09 00:00:00

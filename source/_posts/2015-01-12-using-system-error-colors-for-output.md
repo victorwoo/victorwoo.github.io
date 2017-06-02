@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-01-12 12:00:00
 title: "PowerShell 技能连载 - 在输出中使用系统的错误颜色"

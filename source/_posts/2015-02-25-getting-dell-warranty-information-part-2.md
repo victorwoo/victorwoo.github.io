@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-02-25 12:00:00
 title: "PowerShell 技能连载 - 获取 DELL 保修信息（第二部分）"

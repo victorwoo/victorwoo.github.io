@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 加速数组操作"
 date: 2014-06-23 00:00:00

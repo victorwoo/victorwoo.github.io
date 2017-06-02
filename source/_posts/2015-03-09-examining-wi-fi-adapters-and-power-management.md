@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-03-09 11:00:00
 title: "PowerShell 技能连载 - 检测 Wi-Fi 适配器和电源"

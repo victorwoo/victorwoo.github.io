@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 处理文件系统路径(第2部分)"
 date: 2013-09-05 00:00:00

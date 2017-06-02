@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-02-20 00:00:00
 title: "PowerShell 技能连载 - 接触 PowerShell 6.0"

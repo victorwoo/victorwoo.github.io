@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-03-18 11:00:00
 title: "PowerShell 技能连载 - 从注册表中读取文件扩展名关联（第一部分）"

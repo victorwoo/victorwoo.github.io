@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 接受多重输入"
 date: 2014-07-11 00:00:00

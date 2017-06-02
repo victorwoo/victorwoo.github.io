@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-12-03 12:00:00
 title: "PowerShell 技能连载 - 配置 PowerShell 的步骤（第 2 部分）"

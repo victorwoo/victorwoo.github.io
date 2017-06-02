@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-09-01 23:00:00
 title: "PowerShell 技能连载 - 只用一行代码创建新对象"

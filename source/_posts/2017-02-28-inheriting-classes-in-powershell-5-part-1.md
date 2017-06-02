@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-02-28 00:00:00
 title: "PowerShell 技能连载 - Power Shell 5 的类继承（第一部分）"

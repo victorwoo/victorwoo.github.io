@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 从命令行中提取可执行程序名"
 date: 2014-04-29 00:00:00

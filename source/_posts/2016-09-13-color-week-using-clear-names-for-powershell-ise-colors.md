@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-09-13 00:00:00
 title: "PowerShell 技能连载 - 色彩之周: 为 PowerShell ISE 指定命名的颜色"

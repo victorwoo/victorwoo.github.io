@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-12-21 00:00:00
 title: "PowerShell 技能连载 - 捕获 Linux 输出"

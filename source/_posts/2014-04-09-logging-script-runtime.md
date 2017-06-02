@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 记录脚本的运行时间"
 date: 2014-04-09 00:00:00

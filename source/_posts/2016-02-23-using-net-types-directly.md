@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-02-23 12:00:00
 title: "PowerShell 技能连载 - 直接使用 .NET 类型"

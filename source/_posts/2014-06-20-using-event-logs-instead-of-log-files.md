@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 用事件日志代替日志文件"
 date: 2014-06-20 00:00:00

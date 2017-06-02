@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 字符串左右对齐"
 date: 2014-03-06 00:00:00

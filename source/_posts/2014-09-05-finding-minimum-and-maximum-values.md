@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-09-05 11:00:00
 title: "PowerShell 技能连载 - 查找最大值和最小值"

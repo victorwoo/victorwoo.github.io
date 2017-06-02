@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 的配置和自动加载模块"
 date: 2014-01-11 00:00:00

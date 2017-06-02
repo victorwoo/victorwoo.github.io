@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 开始学习 DSC"
 date: 2014-05-22 00:00:00

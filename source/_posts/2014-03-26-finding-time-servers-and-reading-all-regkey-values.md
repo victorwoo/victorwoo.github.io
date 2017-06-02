@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 获取时间服务器（以及读取所有注册表键值）"
 date: 2014-03-26 00:00:00

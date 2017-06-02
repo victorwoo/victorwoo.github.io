@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-08-14 11:00:00
 title: "PowerShell 技能连载 - 简单的 INI 文件替代"

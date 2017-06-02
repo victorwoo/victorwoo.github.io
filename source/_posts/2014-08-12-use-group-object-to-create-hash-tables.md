@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-08-12 11:00:00
 title: "PowerShell 技能连载 - 用 Group-Object 来创建哈希表"

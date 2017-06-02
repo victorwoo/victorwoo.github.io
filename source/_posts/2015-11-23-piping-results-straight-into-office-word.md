@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-11-23 12:00:00
 title: "PowerShell 技能连载 - 将结果通过管道直接传给 Office Word"

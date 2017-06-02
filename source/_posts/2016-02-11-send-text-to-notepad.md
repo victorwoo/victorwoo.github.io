@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-02-11 12:00:00
 title: "PowerShell 技能连载 - 发送文本到记事本"

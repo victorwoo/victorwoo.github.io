@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-05-23 00:00:00
 title: "PowerShell 技能连载 - 冒充 ToString() 方法"

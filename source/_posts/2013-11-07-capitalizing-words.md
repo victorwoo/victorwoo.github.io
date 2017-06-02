@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 将单词首字母转换为大写"
 date: 2013-11-07 00:00:00

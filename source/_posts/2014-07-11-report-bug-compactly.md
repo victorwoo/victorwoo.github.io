@@ -1,3 +1,4 @@
+---
 layout: post
 title: "如何简洁地汇报 bug"
 date: 2014-07-11 00:00:00

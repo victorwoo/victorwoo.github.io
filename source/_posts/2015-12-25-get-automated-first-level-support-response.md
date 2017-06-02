@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-12-25 12:00:00
 title: "PowerShell 技能连载 - 自动获取重要的支持响应信息"

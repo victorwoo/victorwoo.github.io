@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 在 ISE 编辑器中使用块注释"
 date: 2014-01-09 00:00:00

@@ -1,3 +1,4 @@
+---
 layout: post
 title: "技术分析：VIM，PowerShell 和签名代码"
 date: 2014-01-17 00:00:00

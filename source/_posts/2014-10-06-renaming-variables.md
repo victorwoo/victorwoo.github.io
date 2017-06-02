@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-10-06 11:00:00
 title: "PowerShell 技能连载 - 重命名变量"

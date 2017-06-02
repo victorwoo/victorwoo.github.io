@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-10-17 00:00:00
 title: "PowerShell 技能连载 - 查找隐藏的自启动程序"

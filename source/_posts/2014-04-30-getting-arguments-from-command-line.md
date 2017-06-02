@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 从命令行获取参数"
 date: 2014-04-30 00:00:00

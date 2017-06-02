@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-02-08 00:00:00
 title: "PowerShell 技能连载 - 使用类（增加方法 - 第三部分）"

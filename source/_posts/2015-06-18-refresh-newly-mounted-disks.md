@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-06-18 11:00:00
 title: "PowerShell 技能连载 - 刷新新挂载的磁盘"

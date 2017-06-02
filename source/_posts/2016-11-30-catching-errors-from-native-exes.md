@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-11-30 00:00:00
 title: "PowerShell 技能连载 - 捕获 Native EXE 的错误"

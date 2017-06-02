@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 查找注册的事件源"
 date: 2014-04-23 00:00:00

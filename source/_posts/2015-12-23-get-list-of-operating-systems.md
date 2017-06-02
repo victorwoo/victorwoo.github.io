@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-12-23 12:00:00
 title: "PowerShell 技能连载 - 获取操作系统清单"

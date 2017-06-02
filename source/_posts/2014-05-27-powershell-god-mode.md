@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - PowerShell 上帝模式"
 date: 2014-05-27 00:00:00

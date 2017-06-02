@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-10-12 11:00:00
 title: "PowerShell 技能连载 - 快速创建编码的 PowerShell 命令"

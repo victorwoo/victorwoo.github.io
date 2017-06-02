@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 远程读取已安装的软件"
 date: 2014-06-09 00:00:00

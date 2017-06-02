@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-11-16 00:00:00
 title: "PowerShell 技能连载 - 在同一台机器上运行 32 位代码"

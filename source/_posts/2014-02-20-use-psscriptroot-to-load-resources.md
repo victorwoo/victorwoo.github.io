@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 使用 $PSScriptRoot 加载资源"
 date: 2014-02-20 00:00:00

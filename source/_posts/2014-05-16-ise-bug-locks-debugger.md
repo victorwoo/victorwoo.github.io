@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - ISE 的缺陷导致调试器阻塞"
 date: 2014-05-16 00:00:00

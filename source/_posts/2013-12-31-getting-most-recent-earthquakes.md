@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 获取最新的地震信息"
 date: 2013-12-31 00:00:00

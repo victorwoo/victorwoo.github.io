@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-09-01 06:53:00
 title: "Windows管理框架(WMF) 5.0 路线图（转）"

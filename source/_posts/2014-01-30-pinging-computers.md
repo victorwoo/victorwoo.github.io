@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - Ping 主机"
 date: 2014-01-30 00:00:00

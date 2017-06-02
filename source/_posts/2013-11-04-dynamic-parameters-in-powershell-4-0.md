@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - PowerShell 4.0 中的动态参数"
 date: 2013-11-04 00:00:00

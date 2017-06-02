@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-01-02 12:00:00
 title: "PowerShell 技能连载 - 不通过 ProgID 操作 COM 对象"

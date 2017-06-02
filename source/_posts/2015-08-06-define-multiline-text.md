@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-08-06 11:00:00
 title: "PowerShell 技能连载 - 定义多行文本"

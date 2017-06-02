@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 确保向后兼容"
 date: 2014-02-12 00:00:00

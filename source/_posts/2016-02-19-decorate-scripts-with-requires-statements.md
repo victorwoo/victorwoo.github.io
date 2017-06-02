@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-02-19 12:00:00
 title: "PowerShell 技能连载 - 用 #requires 语句装饰脚本"

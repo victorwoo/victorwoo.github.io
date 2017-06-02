@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 屏蔽终止性错误"
 date: 2014-04-16 00:00:00

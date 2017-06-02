@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 从ISE编辑器中粘贴 PowerShell 代码"
 date: 2013-10-11 00:00:00

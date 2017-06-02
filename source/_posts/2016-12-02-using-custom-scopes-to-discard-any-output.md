@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-12-02 00:00:00
 title: "PowerShell 技能连载 - 使用自定义作用域来屏蔽任何输出"

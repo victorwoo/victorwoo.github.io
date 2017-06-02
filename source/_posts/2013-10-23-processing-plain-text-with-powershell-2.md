@@ -1,3 +1,4 @@
+---
 layout: post
 title: "用 PowerShell 处理纯文本 - 2"
 date: 2013-10-23 00:00:00

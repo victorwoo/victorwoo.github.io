@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 通过F12键跳转到函数定义"
 date: 2013-09-12 00:00:00

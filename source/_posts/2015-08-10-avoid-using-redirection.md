@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-08-10 11:00:00
 title: "PowerShell 技能连载 - 避免使用重定向符"

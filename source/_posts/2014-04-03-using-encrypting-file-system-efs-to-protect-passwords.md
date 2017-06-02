@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 使用加密文件系统（EFS）来保护密码"
 date: 2014-04-03 00:00:00

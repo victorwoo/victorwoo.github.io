@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-09-26 00:00:00
 title: "PowerShell 技能连载 - Enum 之周: 枚举的自动转换"

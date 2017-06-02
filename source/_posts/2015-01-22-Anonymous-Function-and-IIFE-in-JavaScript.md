@@ -1,3 +1,4 @@
+---
 layout: post
 title: "JavaScript 中的匿名函数和立即执行函数"
 date: 2015-01-22 11:27:15

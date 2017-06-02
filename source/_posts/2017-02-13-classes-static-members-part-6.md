@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-02-13 00:00:00
 title: "PowerShell 技能连载 - 使用类（静态成员 - 第六部分）"

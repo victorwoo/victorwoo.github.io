@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-01-27 12:00:00
 title: "PowerShell 技能连载 - 在线检测 DELL 保修"

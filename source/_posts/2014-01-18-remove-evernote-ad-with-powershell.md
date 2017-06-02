@@ -1,3 +1,4 @@
+---
 layout: post
 title: "用 PowerShell 移除 Evernote 的广告"
 date: 2014-01-18 00:00:00

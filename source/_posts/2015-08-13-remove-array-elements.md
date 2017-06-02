@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-08-13 11:00:00
 title: "PowerShell 技能连载 - 删除数组元素"

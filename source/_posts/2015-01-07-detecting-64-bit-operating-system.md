@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-01-07 12:00:00
 title: "PowerShell 技能连载 - 检测 64 位操作系统"

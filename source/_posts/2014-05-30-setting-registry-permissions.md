@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 设置注册表权限"
 date: 2014-05-30 00:00:00

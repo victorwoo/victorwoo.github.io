@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-09-19 11:00:00
 title: "PowerShell 技能连载 - 下载 PowerShell 语言规范"

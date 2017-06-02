@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-05-11 00:00:00
 title: "PowerShell 技能连载 - 在远程系统中安装 MSI"

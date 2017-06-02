@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-09-20 00:00:00
 title: "PowerShell 技能连载 - 色彩之周: 为 PowerShell 控制台中的符号着色"

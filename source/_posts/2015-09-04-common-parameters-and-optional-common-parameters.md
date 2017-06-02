@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-09-04 11:00:00
 title: "PowerShell 技能连载 - 通用属性和可选的通用属性"

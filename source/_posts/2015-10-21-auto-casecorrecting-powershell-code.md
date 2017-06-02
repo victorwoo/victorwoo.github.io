@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-10-21 11:00:00
 title: "PowerShell 技能连载 - 自动修正 PowerShell 代码的大小写"

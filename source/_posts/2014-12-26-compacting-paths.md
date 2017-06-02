@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-12-26 12:00:00
 title: "PowerShell 技能连载 - 压缩路径"

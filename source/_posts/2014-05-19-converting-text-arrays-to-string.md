@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 将文本数组转换为字符串"
 date: 2014-05-19 00:00:00

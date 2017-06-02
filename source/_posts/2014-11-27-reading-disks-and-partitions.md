@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-11-27 12:00:00
 title: "PowerShell 技能连载 - 读取磁盘和分区信息"

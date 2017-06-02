@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-10-29 11:00:00
 title: "PowerShell 技能连载 - 查看操作系统版本"

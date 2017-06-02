@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 快速获取成员身份"
 date: 2014-06-02 00:00:00

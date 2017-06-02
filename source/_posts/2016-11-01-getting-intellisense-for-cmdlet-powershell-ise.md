@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-11-01 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中获得 Cmdlet 的 IntelliSense"

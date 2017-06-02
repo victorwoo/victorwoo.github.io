@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 获取系统信息"
 date: 2014-01-06 00:00:00

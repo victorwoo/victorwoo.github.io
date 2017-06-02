@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-04-15 11:00:00
 title: "PowerShell 技能连载 - 读取注册表键值和值类型"

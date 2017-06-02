@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-10-13 11:00:00
 title: "PowerShell 技能连载 - 删除别名"

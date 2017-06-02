@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-12-01 12:00:00
 title: "PowerShell 技能连载 - 数组中的空值"

@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-03-04 12:00:00
 title: "PowerShell 技能连载 - PowerShell ISE 自动化"

@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-07-31 11:00:00
 title: "PowerShell 技能连载 - 查找并提取注册表键的路径"

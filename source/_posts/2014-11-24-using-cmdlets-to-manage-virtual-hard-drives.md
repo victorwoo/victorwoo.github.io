@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-11-24 12:00:00
 title: "PowerShell 技能连载 - 用 Cmdlet 管理虚拟硬盘驱动器"

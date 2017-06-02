@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-11-20 12:00:00
 title: "PowerShell 技能连载 - 从 WMI 中搜索有用的信息"

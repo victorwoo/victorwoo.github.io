@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 捕获非终止性错误"
 date: 2014-04-17 00:00:00

@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-01-30 12:00:00
 title: "PowerShell 技能连载 - 自动展开和内存消耗"

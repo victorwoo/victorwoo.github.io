@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-11-10 00:00:00
 title: "PowerShell 技能连载 - PSCustomObject 到底如何工作"

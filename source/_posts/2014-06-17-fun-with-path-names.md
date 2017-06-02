@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 有趣的路径名"
 date: 2014-06-17 00:00:00

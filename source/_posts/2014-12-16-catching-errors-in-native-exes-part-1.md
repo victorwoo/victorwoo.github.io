@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-12-16 12:00:00
 title: "PowerShell 技能连载 - 捕获本地 EXE 的错误（第 1 部分）"

@@ -1,3 +1,4 @@
+---
 layout: post
 title: "理解PowerShell的类型转换魔法"
 date: 2013-09-17 00:00:00

@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-10-24 11:00:00
 title: "PowerShell 技能连载 - 关闭“完整语言”模式"

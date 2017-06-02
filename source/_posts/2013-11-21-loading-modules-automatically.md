@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 自动加载 Module"
 date: 2013-11-21 00:00:00

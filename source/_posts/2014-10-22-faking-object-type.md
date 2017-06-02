@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-10-22 11:00:00
 title: "PowerShell 技能连载 - 伪造对象类型"

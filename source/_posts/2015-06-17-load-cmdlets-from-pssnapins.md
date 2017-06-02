@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-06-17 11:00:00
 title: "PowerShell 技能连载 - 从 PSSnapin 中加载 cmdlet"

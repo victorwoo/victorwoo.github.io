@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-05-21 11:00:00
 title: "PowerShell 技能连载 - 在控制台输出中使用符号"

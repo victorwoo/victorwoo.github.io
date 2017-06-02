@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-05-08 11:00:00
 title: "PowerShell 技能连载 - 跳出管道"

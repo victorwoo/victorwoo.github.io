@@ -1,3 +1,4 @@
+---
 layout: post
 title: "用 PowerShell 更新 Oray 花生壳动态 IP"
 date: 2014-02-07 00:00:00

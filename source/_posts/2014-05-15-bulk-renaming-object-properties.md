@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 批量重命名对象的属性"
 date: 2014-05-15 00:00:00

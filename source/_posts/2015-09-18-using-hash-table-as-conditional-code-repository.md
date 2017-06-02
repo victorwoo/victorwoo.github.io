@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-09-18 11:00:00
 title: "PowerShell 技能连载 - 将哈希表用作条件化的代码库"

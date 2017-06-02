@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 不中断处理 Cmdlet 中的错误"
 date: 2014-06-18 00:00:00

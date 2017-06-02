@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2017-04-05 00:00:00
 title: "PowerShell 技能连载 - 自动定义函数的别名"

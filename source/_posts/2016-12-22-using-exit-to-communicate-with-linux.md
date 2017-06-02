@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-12-22 00:00:00
 title: "PowerShell 技能连载 - 使用“Exit”和 Linux 通信"

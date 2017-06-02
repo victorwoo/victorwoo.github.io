@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-09-17 11:00:00
 title: "PowerShell 技能连载 - 查找脚本中的错误"

@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 过滤命令输出的文本"
 date: 2014-02-24 00:00:00

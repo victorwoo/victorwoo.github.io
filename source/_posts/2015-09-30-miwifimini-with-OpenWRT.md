@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-09-30 15:42:00
 title: "小米路由器 mini 与 OpenWRT"

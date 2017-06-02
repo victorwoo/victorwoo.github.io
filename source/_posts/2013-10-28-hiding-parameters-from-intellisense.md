@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 在智能感知中隐藏参数"
 date: 2013-10-28 00:00:00

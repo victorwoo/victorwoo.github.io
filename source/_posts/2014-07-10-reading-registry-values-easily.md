@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 简单地读取注册表值"
 date: 2014-07-10 00:00:00

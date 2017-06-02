@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 弹出对话框时播放随机的音效"
 date: 2014-04-28 00:00:00

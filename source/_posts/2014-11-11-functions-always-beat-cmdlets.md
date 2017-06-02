@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-11-11 12:00:00
 title: "PowerShell 技能连载 - 函数的优先级永远比 cmdlet 高"

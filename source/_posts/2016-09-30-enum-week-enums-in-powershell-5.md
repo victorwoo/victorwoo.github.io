@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2016-09-30 00:00:00
 title: "PowerShell 技能连载 - Enum 之周: PowerShell 5 中的枚举"

@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-09-02 11:00:00
 title: "PowerShell 技能连载 - 列出（并检查）PowerShell 用户配置"

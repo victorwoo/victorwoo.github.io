@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2015-03-26 11:00:00
 title: "PowerShell 技能连载 - 只读及强类型变量"

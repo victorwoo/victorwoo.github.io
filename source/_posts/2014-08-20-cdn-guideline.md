@@ -1,3 +1,4 @@
+---
 layout: post
 title: CDN 资源
 date: 2014-08-20 10:57:48

@@ -1,3 +1,4 @@
+---
 layout: post
 date: 2014-09-04 11:00:00
 title: "PowerShell 技能连载 - 合并执行结果"

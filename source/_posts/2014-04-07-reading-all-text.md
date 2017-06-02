@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 读取整个文本文件"
 date: 2014-04-07 00:00:00

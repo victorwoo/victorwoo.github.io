@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 检查磁盘分区和数据块大小"
 date: 2013-10-04 00:00:00

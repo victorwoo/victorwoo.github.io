@@ -1,3 +1,4 @@
+---
 layout: post
 title: "PowerShell 技能连载 - 存储秘密数据"
 date: 2014-04-04 00:00:00

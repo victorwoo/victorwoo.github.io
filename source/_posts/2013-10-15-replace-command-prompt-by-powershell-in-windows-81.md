@@ -1,3 +1,4 @@
+---
 layout: post
 title: "将 Windows 8.1 的命令提示符替换为 PowerShell"
 date: 2013-10-15 00:00:00
