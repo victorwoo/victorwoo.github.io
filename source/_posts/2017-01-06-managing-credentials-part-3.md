@@ -23,7 +23,7 @@ $username = 'myCompany\myUserName'
 $credential = New-Object -TypeName PSCredential($username, $password)
 ```
 
-平局对象可以用在任何接受 `-Credential` 参数的 cmdlet 中。
+凭据对象可以用在任何接受 `-Credential` 参数的 cmdlet 中。
 
 ```powershell
 # use the credential with any cmdlet that exposes the –Credential parameter

@@ -29,7 +29,7 @@ $encryptedPassword = ConvertFrom-SecureString -SecureString $SecureString -Secur
 $encryptedPassword
 ```
 
-该密钥 (`$secretKey`) 必须是 8 或 16 个字符的文本。任何知道密钥的人都可以解密（这就是为何 secretKey 不应该是脚本的一部分，而下面的脚本下方加入了硬编码的密钥是为了延时解密的过程。最好以交互的方式输入密钥）：
+该密钥 (`$secretKey`) 必须是 8 或 16 个字符的文本。任何知道密钥的人都可以解密（这就是为何 secretKey 不应该是脚本的一部分，而下面的脚本下方加入了硬编码的密钥是为了演示解密的过程。最好以交互的方式输入密钥）：
 
 ```powershell
 # this is the key to your secret
