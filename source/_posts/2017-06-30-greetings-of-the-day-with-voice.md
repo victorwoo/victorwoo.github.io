@@ -42,7 +42,7 @@ $null = (New-Object -COM Sapi.SpVoice).Speak($text)
 要编辑用户配置文件，请运行这段代码：
 
 ```powershell
-    PS> notepad $profile.CurrentUserAllHosts
+PS> notepad $profile.CurrentUserAllHosts
 ```
 
 <!--more-->
