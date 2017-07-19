@@ -13,7 +13,7 @@ tags:
 - series
 - translation
 ---
-最近关于 PowerShell 版本有一些混淆。在 GitHub 上有一个名为 "PowerShell 6" 的开源倡议 (https://github.com/PowerShell/PowerShell)。
+最近关于 PowerShell 版本有一些混淆。在 GitHub 上有一个名为 "PowerShell 6" 的[开源倡议](https://github.com/PowerShell/PowerShell)。
 
 这是否意味着开源的 PowerShell 6 是 PowerShell 5 的继任者，并且最终和 Windows 一起发布？
 
