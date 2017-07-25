@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-07-18 00:00:00
-title: "PowerShell 技能连载 - 探讨 ""Windows PowerShell"" 和 ""PowerShell Core"""
+title: "PowerShell 技能连载 - 探讨 Windows PowerShell 和 PowerShell Core"
 description: "PowerTip of the Day - Dealing with “Windows PowerShell” and “PowerShell Core”"
 categories:
 - powershell
