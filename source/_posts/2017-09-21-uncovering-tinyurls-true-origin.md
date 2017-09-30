@@ -26,7 +26,7 @@ $longURL = Invoke-WebRequest -Uri "http://untiny.me/api/1.0/extract?url=$shortUr
 "'$shortUrl' -> '$longUrl'"
 ```
 
-如您所见，这个例子中缩短的 URL 指向的是 Lee Holmes 的博客：http://www.leeholmes.com/projects/ps_html5/Invoke-PSHtml5.ps1。Lee Holmes 是一个 PowerShell 团队成员，如果您信任他，那么可以好奇地运行他著名的代码片段：
+如您所见，这个例子中缩短的 URL 指向的是 Lee Holmes 的博客：http://www.leeholmes.com/projects/ps_html5/Invoke-PSHtml5.ps1 。Lee Holmes 是一个 PowerShell 团队成员，如果您信任他，那么可以好奇地运行他著名的代码片段：
 
 ```powershell
 iex (New-Object Net.WebClient).DownloadString("http://bit.ly/e0Mw9w")
