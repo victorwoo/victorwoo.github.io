@@ -13,7 +13,6 @@ tags:
 - series
 - translation
 ---
-You may have heard about PowerShell default parameter values and $PSDefaultParameterValues. When you assign a hash table to this special variable, the key defines the commands and parameters affected, and the value defines your new default value.
 您可能听说过 PowerShell 的缺省参数值和 `$PSDefaultParameterValues`。当您将一个哈希表赋给这个特殊的变量，则哈希表的键定义了命令和影响的参数，而值定对应新的缺省值。
 
 请看这个例子：
