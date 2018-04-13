@@ -34,7 +34,6 @@ Get-AuthenticodeSignature -FilePath $outPath
     -----------------                         ------         ----                       
     493018BA27EAA09B895BC5660E77F694B84877C7  Valid          installChocolatey.ps1
 
-The column “Status” reports whether the file is trustworthy. Yet how can you get more details about the certificate and its owner, and specifically find out who “493018BA27EAA09B895BC5660E77F694B84877C7” is?
 "Status" 列报告了这个文件是否可信。然而如何获取更多的关于证书和它的所有者的信息，特别是找出 "493018BA27EAA09B895BC5660E77F694B84877C7" 是谁？
 
 只需要将签名证书传给一个 Windows API 函数，就可以显示证书的属性对话框：
