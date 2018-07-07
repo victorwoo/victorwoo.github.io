@@ -1529,7 +1529,7 @@ SerialNumber
 
 
 
-    <article id="post-quickly-replace-strings-in-text-files" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-password-obfuscator-script" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -1538,7 +1538,7 @@ SerialNumber
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2013/10/08/quickly-replace-strings-in-text-files/">快速替换文本文件中的字符串</a>
+            <a class="article-title" href="/2013/10/08/password-obfuscator-script/">PowerShell 技能连载 - 密码混淆器脚本</a>
         </h1>
     
 
@@ -1547,7 +1547,7 @@ SerialNumber
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2013/10/08/quickly-replace-strings-in-text-files/">
+        <a href="/2013/10/08/password-obfuscator-script/">
             <time datetime="2013-10-07T16:00:00.000Z" itemprop="datePublished">2013-10-08</time>
         </a>
     </div>
@@ -1556,13 +1556,13 @@ SerialNumber
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/powershell/">powershell</a>
+        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/geek/">geek</a>, <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/script/">script</a>
+        <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/powertip/">powertip</a>, <a class="tag-link" href="/tags/series/">series</a>, <a class="tag-link" href="/tags/tip/">tip</a>, <a class="tag-link" href="/tags/translation/">translation</a>
     </div>
 
                     </div>
@@ -1571,17 +1571,37 @@ SerialNumber
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <p>不用开什么vim、emac、UltraEdit、Eclipse之类的编辑器了，PowerShell可以帮助手无寸铁的您快速地替换文本文件中的字符串：</p>
-<pre><code>dir *.txt -Recurse | % {
-    (gc $_ -Raw) | % { $_ `
-        -creplace &apos;111&apos;, &apos;AAA&apos; `
-        -creplace &apos;222&apos;, &apos;BBB&apos; `
-        -creplace &apos;333&apos;, &apos;CCC&apos;
-    } | sc $_
-}
-</code></pre><p>注意 <code>-creplace</code> 区分大小写，<code>-replace</code> 不区分大小写。并且它们支持正则表达式！</p>
+            <p><p>曾经需要将密码保存在脚本中？曾经需要自动弹出一个身份验证对话框？对于前者，将密码和其它身份信息存储在脚本中是很糟糕的；对于后者，如果您这么做了的话，至少能使黑客更难于窃取信息。</p>
+<p>以下是一个脚本生成器。运行它，并且输入一个域/用户名和密码，脚本生成器会为您生成一段新脚本。</p>
+<pre><code>$pwd = Read-Host &apos;Enter Password&apos; 
+$user = Read-Host &apos;Enter Username&apos;
+$key = 1..32 | 
+  ForEach-Object { Get-Random -Maximum 256 }
 
+$pwdencrypted = $pwd | 
+  ConvertTo-SecureString -AsPlainText -Force | 
+  ConvertFrom-SecureString -Key $key
+
+$text = @()
+$text += &apos;$password = &quot;{0}&quot;&apos; -f ($pwdencrypted -join &apos; &apos;) 
+$text += &apos;$key = &quot;{0}&quot;&apos; -f ($key -join &apos; &apos;)
+$text += &apos;$passwordSecure = ConvertTo-SecureString -String $password -Key ([Byte[]]$key.Split(&quot; &quot;))&apos; 
+$text += &apos;$cred = New-Object system.Management.Automation.PSCredential(&quot;{0}&quot;, $passwordSecure)&apos; -f $user
+$text += &apos;$cred&apos;
+
+$newFile = $psise.CurrentPowerShellTab.Files.Add()
+$newFile.Editor.Text = $text | Out-String
+</code></pre><p>这段脚本包含混淆过的密码脚本，看起来大概类似这样：</p>
+<pre><code>$password = &quot;76492d1116743f0423413b16050a5345MgB8AFcAMABGAEIANAB1AGEAdQA3ADUASABhAE0AMgBNADUAUwBnAFYAYQA1AEEAPQA9AHwAMgAyAGIAZgA1ADUAZgA0ADIANAA0ADUANwA2ADAAMgA5ADkAZAAxAGUANwA4ADUAZQA4ADkAZAA1AGMAMAA2AA==&quot;
+$key = &quot;246 185 95 207 87 105 146 74 99 163 58 194 93 229 80 241 160 35 68 220 130 193 84 113 122 155 208 49 152 86 85 178&quot;
+$passwordSecure = ConvertTo-SecureString -String $password -Key ([Byte[]]$key.Split(&quot; &quot;))
+$cred = New-Object system.Management.Automation.PSCredential(&quot;test\tobias&quot;, $passwordSecure)
+$cred 
+</code></pre><p>当您运行它，它将生成一个 <code>Credential</code> 对象，您可以立即将它用于身份验证。只要将它传给一个需要 <code>Credential</code> 对象的形参即可。</p>
+<p>再强调一下，这并不是安全的。但是要想获取密码的明文还需要更多点知识才行。</p></p>
+            <p class="article-more-link">
+                <a href="/2013/10/08/password-obfuscator-script/#more">查看更多</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -1644,7 +1664,7 @@ SerialNumber
 
             
     
-        <a href="http://blog.vichamp.com/2013/10/08/quickly-replace-strings-in-text-files/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/10/08/quickly-replace-strings-in-text-files/">评论</a>
+        <a href="http://blog.vichamp.com/2013/10/08/password-obfuscator-script/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/10/08/password-obfuscator-script/">评论</a>
     
 
         </footer>
