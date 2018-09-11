@@ -177,7 +177,7 @@ var _hmt = _hmt || [];
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                1197
+                1232
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -230,7 +230,7 @@ var _hmt = _hmt || [];
 
             
             <section id="main">
-    <article id="post-finding-operating-system-versions-in-active-directory" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-launching-applications-as-someone-else" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -239,7 +239,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/10/finding-operating-system-versions-in-active-directory/">PowerShell 技能连载 - 在 Active Directory 中查找操作系统版本</a>
+            <a class="article-title" href="/2016/11/28/launching-applications-as-someone-else/">PowerShell 技能连载 - 用其他身份启动程序</a>
         </h1>
     
 
@@ -248,8 +248,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/10/10/finding-operating-system-versions-in-active-directory/">
-            <time datetime="2016-10-09T16:00:00.000Z" itemprop="datePublished">2016-10-10</time>
+        <a href="/2016/11/28/launching-applications-as-someone-else/">
+            <time datetime="2016-11-27T16:00:00.000Z" itemprop="datePublished">2016-11-28</time>
         </a>
     </div>
 
@@ -272,12 +272,15 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>如果您安装了带有 “ActiveDirectory” PowerShell 模块的 Microsoft RSAT 工具，以下是一个快速获取您环境中操作系统清单的快速方法：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Module ActiveDirectory</span></span><br><span class="line"></span><br><span class="line">Get-ADComputer -Filter * -Properties OperatingSystem, OperatingSystemServicePack, OperatingSystemVersion  |</span><br><span class="line">  <span class="built_in">Select-Object</span> -Property Name, OperatingSystem, OperatingSystemServicePack, OperatingSystemVersion</span><br></pre></td></tr></table></figure>
-<p>这将获得所有计算机的信息。您可以将搜索范围限制在指定的计算机名和 AD 位置中。以下命令将搜索范围限制在 $root AD 范围内，以及只包含名字以 “Serv” 开头的计算机中：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Module ActiveDirectory</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$root</span> = <span class="string">'OU=North,OU=Clients,DC=yourcompany,DC=com'</span></span><br><span class="line"></span><br><span class="line">Get-ADComputer -Filter &#123; Name <span class="nomarkup">-like</span> <span class="string">'Serv*'</span> &#125; -Properties OperatingSystem, OperatingSystemServicePack, OperatingSystemVersion <span class="comment">&lt;#-ResultSetSize 10#&gt;</span> -SearchBase <span class="variable">$root</span> -SearchScope Subtree |</span><br><span class="line">  <span class="built_in">Select-Object</span> -Property Name, OperatingSystem, OperatingSystemServicePack, OperatingSystemVersion</span><br></pre></td></tr></table></figure></p>
+            <p><p>假设您想以不同的身份打开多个 PowerShell 控制台，或以其他人的身份打开任何程序。</p>
+<p>要实现这个目标，您需要以其他人的身份登录，这很明显是个负担。以下是将凭据以安全的方式保存到文件的方法：密码采用您的身份和您的机器加密成密文。只有保存它们的那个人可以取回它，而且只能在保存该文件的机器上操作：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># saving credential securely to file</span></span><br><span class="line"><span class="built_in">Get-Credential</span> | <span class="built_in">Export-Clixml</span> -Path <span class="string">"<span class="variable">$home</span>\login.xml"</span></span><br></pre></td></tr></table></figure>
+<p>这个凭据将保存到用户配置中。如果您希望保存到其它地方，请改变路径。喜欢保存多少份，就调用多少次该方法。</p>
+<p>下一步，假设您加载了一个保存的凭据，并且使用该身份启动了一个程序：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># getting back saved credential</span></span><br><span class="line"><span class="variable">$cred</span> = <span class="built_in">Import-Clixml</span> -Path <span class="string">"<span class="variable">$home</span>\login.xml"</span></span><br><span class="line"><span class="comment"># launch application</span></span><br><span class="line"><span class="built_in">Start-Process</span> -FilePath powershell -Credential <span class="variable">$cred</span> -Work c:\ -LoadUserProfile</span><br></pre></td></tr></table></figure>
+<p>这将以您之前指定的用户身份创建一个新的 PowerShell 实例——无需手动登录。</p></p>
             <p class="article-more-link">
-                <a href="/2016/10/10/finding-operating-system-versions-in-active-directory/#more">查看更多</a>
+                <a href="/2016/11/28/launching-applications-as-someone-else/#more">查看更多</a>
             </p>
         
         </div>
@@ -341,7 +344,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/10/10/finding-operating-system-versions-in-active-directory/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/10/10/finding-operating-system-versions-in-active-directory/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/28/launching-applications-as-someone-else/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/28/launching-applications-as-someone-else/">评论</a>
     
 
         </footer>
@@ -351,7 +354,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-finding-first-and-last-day-in-month" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-shed-light-into-the-powershell-version-jungle" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -360,7 +363,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/07/finding-first-and-last-day-in-month/">PowerShell 技能连载 - 查找一个月中的第一天和最后一天</a>
+            <a class="article-title" href="/2016/11/25/shed-light-into-the-powershell-version-jungle/">PowerShell 技能连载 - 轻轻跳进 PowerShell 版本的丛林</a>
         </h1>
     
 
@@ -369,8 +372,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/10/07/finding-first-and-last-day-in-month/">
-            <time datetime="2016-10-06T16:00:00.000Z" itemprop="datePublished">2016-10-07</time>
+        <a href="/2016/11/25/shed-light-into-the-powershell-version-jungle/">
+            <time datetime="2016-11-24T16:00:00.000Z" itemprop="datePublished">2016-11-25</time>
         </a>
     </div>
 
@@ -393,11 +396,17 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>您是否曾需要了解某个月的第一天和最后一天？</p>
-<p>以下是一个简单的实现方法：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># specify the date you want to examine</span></span><br><span class="line"><span class="comment"># default is today</span></span><br><span class="line"><span class="variable">$date</span> = <span class="built_in">Get-Date</span></span><br><span class="line"><span class="variable">$year</span> = <span class="variable">$date</span>.Year</span><br><span class="line"><span class="variable">$month</span> = <span class="variable">$date</span>.Month</span><br><span class="line"></span><br><span class="line"><span class="comment"># create a new DateTime object set to the first day of a given month and year</span></span><br><span class="line"><span class="variable">$startOfMonth</span> = <span class="built_in">Get-Date</span> -Year <span class="variable">$year</span> -Month <span class="variable">$month</span> -Day <span class="number">1</span> -Hour <span class="number">0</span> -Minute <span class="number">0</span> -Second <span class="number">0</span> -Millisecond <span class="number">0</span></span><br><span class="line"><span class="comment"># add a month and subtract the smallest possible time unit</span></span><br><span class="line"><span class="variable">$endOfMonth</span> = (<span class="variable">$startOfMonth</span>).AddMonths(<span class="number">1</span>).AddTicks(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="variable">$startOfMonth</span></span><br><span class="line"><span class="variable">$endOfMonth</span></span><br></pre></td></tr></table></figure></p>
+            <p><p>PowerShell 同时有五个主要版本在发行。除掉最新的小版本，例如 Windows 10 和 Server 2016 上的 PowerShell 5.1。加上 beta 版和预发行版本，以及 Linux 和 Nano 服务器上的 PowerShell。哇哦！</p>
+<p>要跟踪这些版本，并知道正在用哪个版本、它从哪里来、可能有哪些兼容性问题很不容易。MVP 大学里的 Egil Ring 维护着一个很酷的模块。如果您装了 PowerShell 5 或从 powershellgallery.com 安装了 PowerShellGet，您可以用一行代码下载这个模块：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; Install-Module -Name PSVersion -Scope CurrentUser</span><br></pre></td></tr></table></figure>
+<p>回答几个问题后，该模块安装完成。它只包含两个命令：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; <span class="built_in">Get-Command</span> -Module PSVersion</span><br><span class="line"></span><br><span class="line">CommandType     Name                        Version    Source                                        </span><br><span class="line">-----------     ----                        -------    ------                                        </span><br><span class="line"><span class="keyword">Function</span>        Get-PSVersion               <span class="number">1.6</span>        PSVersion                                     </span><br><span class="line"><span class="keyword">Function</span>        Update-PSVersionData        <span class="number">1.6</span>        PSVersion</span><br></pre></td></tr></table></figure>
+<p>PSVersion 是一个社区项目，跟踪 PowerShell 的发行编号、它们的含义、它们的来源：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; Get-PSVersion -ListVersion</span><br><span class="line"></span><br><span class="line">Name           FriendlyName                                 ApplicableOS            </span><br><span class="line">----           ------------                                 ------------            </span><br><span class="line"><span class="number">5.1</span>.<span class="number">14393.0</span>    Windows PowerShell <span class="number">5.1</span> Preview               Windows <span class="number">10</span> Anniversar...</span><br><span class="line"><span class="number">5.1</span>.<span class="number">14300.1000</span> Windows PowerShell <span class="number">5.1</span> Preview               Windows Server <span class="number">2016</span> T...</span><br><span class="line"><span class="number">5.0</span>.<span class="number">10586.494</span>  Windows PowerShell <span class="number">5</span> RTM                     Windows <span class="number">10</span> <span class="number">1511</span> + KB3...</span><br><span class="line"><span class="number">5.0</span>.<span class="number">10586.122</span>  Windows PowerShell <span class="number">5</span> RTM                     Windows <span class="number">10</span> <span class="number">1511</span> + KB3...</span><br><span class="line"><span class="number">5.0</span>.<span class="number">10586.117</span>  Windows PowerShell <span class="number">5</span> RTM <span class="number">1602</span>                Windows Server <span class="number">2012</span> R...</span><br><span class="line"><span class="number">5.0</span>.<span class="number">10586.63</span>   Windows PowerShell <span class="number">5</span> RTM                     Windows <span class="number">10</span> <span class="number">1511</span> + KB3...</span><br><span class="line"><span class="number">5.0</span>.<span class="number">10586.51</span>   Windows PowerShell <span class="number">5</span> RTM <span class="number">1512</span>                Windows Server <span class="number">2012</span> R...</span><br><span class="line"><span class="number">5.0</span>.<span class="number">10514.6</span>    Windows PowerShell <span class="number">5</span> Production Preview <span class="number">1508</span> Windows Server <span class="number">2012</span> R2  </span><br><span class="line"><span class="number">5.0</span>.<span class="number">10018.0</span>    Windows PowerShell <span class="number">5</span> Preview <span class="number">1502</span>            Windows Server <span class="number">2012</span> R2  </span><br><span class="line"><span class="number">5.0</span>.<span class="number">9883.0</span>     Windows PowerShell <span class="number">5</span> Preview November <span class="number">2014</span>   Windows Server <span class="number">2012</span> R...</span><br><span class="line"><span class="number">4.0</span>            Windows PowerShell <span class="number">4</span> RTM                     Windows Server <span class="number">2012</span> R...</span><br><span class="line"><span class="number">3.0</span>            Windows PowerShell <span class="number">3</span> RTM                     Windows Server <span class="number">2012</span>, ...</span><br><span class="line"><span class="number">2.0</span>            Windows PowerShell <span class="number">2</span> RTM                     Windows Server <span class="number">2008</span> R...</span><br><span class="line"><span class="number">1.0</span>            Windows PowerShell <span class="number">1</span> RTM                     Windows Server <span class="number">2008</span>, ...</span><br></pre></td></tr></table></figure>
+<p>这是在您的企业中以友好的 PowerShell 版本名称获得 PowerShell 版本号的方法：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; Get-PSVersion </span><br><span class="line"></span><br><span class="line">PSComputerName  PSVersion     PSVersionFriendlyName</span><br><span class="line">--------------  ---------     ---------------------</span><br><span class="line">CLIENT12        <span class="number">5.1</span>.<span class="number">14393.0</span>   Windows PowerShell <span class="number">5.1</span> Preview</span><br></pre></td></tr></table></figure></p>
             <p class="article-more-link">
-                <a href="/2016/10/07/finding-first-and-last-day-in-month/#more">查看更多</a>
+                <a href="/2016/11/25/shed-light-into-the-powershell-version-jungle/#more">查看更多</a>
             </p>
         
         </div>
@@ -461,7 +470,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/10/07/finding-first-and-last-day-in-month/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/10/07/finding-first-and-last-day-in-month/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/25/shed-light-into-the-powershell-version-jungle/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/25/shed-light-into-the-powershell-version-jungle/">评论</a>
     
 
         </footer>
@@ -471,7 +480,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-geolocating-your-ip-on-a-map" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-fixing-powershell-5-help-bug" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -480,7 +489,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/06/geolocating-your-ip-on-a-map/">PowerShell 技能连载 - 在地图上定位您的地理位置</a>
+            <a class="article-title" href="/2016/11/24/fixing-powershell-5-help-bug/">PowerShell 技能连载 - 修复 PowerShell 5 帮助的 Bug</a>
         </h1>
     
 
@@ -489,8 +498,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/10/06/geolocating-your-ip-on-a-map/">
-            <time datetime="2016-10-05T16:00:00.000Z" itemprop="datePublished">2016-10-06</time>
+        <a href="/2016/11/24/fixing-powershell-5-help-bug/">
+            <time datetime="2016-11-23T16:00:00.000Z" itemprop="datePublished">2016-11-24</time>
         </a>
     </div>
 
@@ -513,13 +522,14 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>在前一个技能当中，通过 Internet 能知道您的 IP 地址，以及地理位置。您可以获得当前公开 IP 地址的经纬度，代码如下：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ip</span> = <span class="built_in">Invoke-RestMethod</span> -Uri http://checkip.amazonaws.com/ </span><br><span class="line"><span class="variable">$geo</span> = <span class="built_in">Invoke-RestMethod</span> -Uri <span class="string">"http://geoip.nekudo.com/api/<span class="variable">$IP</span>"</span> </span><br><span class="line"><span class="variable">$latitude</span> = <span class="variable">$geo</span>.Location.Latitude</span><br><span class="line"><span class="variable">$longitude</span> = <span class="variable">$geo</span>.Location.Longitude</span><br><span class="line"></span><br><span class="line"><span class="string">"Lat <span class="variable">$latitude</span> Long <span class="variable">$longitude</span>"</span></span><br></pre></td></tr></table></figure>
-<p>如果您希望看到它究竟在什么位置，可以将这些信息连到 Google Maps 上：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ip</span> = <span class="built_in">Invoke-RestMethod</span> -Uri http://checkip.amazonaws.com/ </span><br><span class="line"><span class="variable">$geo</span> = <span class="built_in">Invoke-RestMethod</span> -Uri <span class="string">"http://geoip.nekudo.com/api/<span class="variable">$IP</span>"</span> </span><br><span class="line"><span class="variable">$latitude</span> = <span class="variable">$geo</span>.Location.Latitude</span><br><span class="line"><span class="variable">$longitude</span> = <span class="variable">$geo</span>.Location.Longitude</span><br><span class="line"></span><br><span class="line"><span class="variable">$url</span> = <span class="string">"https://www.google.com/maps/preview/@<span class="variable">$latitude</span>,<span class="variable">$longitude</span>,8z"</span></span><br><span class="line"><span class="built_in">Start-Process</span> -FilePath <span class="variable">$url</span></span><br></pre></td></tr></table></figure>
-<p>这段代码将打开浏览器，导航到 Google Maps，并且在地图上显示当前位置。当前通过 IP 地址定位地理位置还比较粗糙，至少在使用公开地理数据时。</p></p>
+            <p><p>使用 <code>Update-Help</code> 下载 PowerShell 的帮助文件时，PowerShell 5 有一个 bug，目前可以修复：基于文本的帮助文件扩展名是“.txt”而不是“.help.txt”，所以 PowerShell 帮助系统会忽略它们。您可以自己试验一下——以下命令可能会返回一大堆关于主题：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; <span class="built_in">Get-Help</span> about*</span><br><span class="line"></span><br><span class="line">Name                              Category  Module                    Synopsis                                              </span><br><span class="line">----                              --------  ------                    --------                                              </span><br><span class="line">about_Aliases                     HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Arithmetic_Operators        HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Arrays                      HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Assignment_Operators        HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Automatic_Variables         HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Break                       HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Classes                     HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Command_Precedence          HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Command_Syntax              HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Comment_Based_Help          HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_CommonParameters            HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Comparison_Operators        HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Continue                    HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Core_Commands               HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Data_Sections               HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_Debuggers                   HelpFile                            SHORT DESCRIPTION                                     </span><br><span class="line">about_DesiredStateConfiguration   HelpFile                            SHORT DESCRIPTION</span><br></pre></td></tr></table></figure>
+<p>如果没有显示上述的内容，您也许还没有事先运行过 <code>Update-Help</code> 来下载帮助文件，或者您被 bug 吃了。</p>
+<p>无论这个 bug 是否正在修复中，用 PowerShell 您可以轻松地修改这些东西。以下是一个用于修复这些受影响的帮助文件的扩展名的脚本。</p>
+<p>这个脚本需要管理员权限，因为帮助文件是位于受保护的 Windows 文件夹中：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># find all text files inside the PowerShell folder that start</span></span><br><span class="line"><span class="comment"># with "about"</span></span><br><span class="line"><span class="built_in">Get-ChildItem</span> -Path <span class="variable">$pshome</span> -Filter about*.txt -Recurse |</span><br><span class="line">  <span class="comment"># identify those that do not end with ".help.txt"</span></span><br><span class="line">  <span class="built_in">Where-Object</span> &#123; <span class="variable">$_</span>.Name <span class="nomarkup">-notlike</span> <span class="string">'*.help.txt'</span> &#125; |</span><br><span class="line">  <span class="comment"># rename the extension using a regex:</span></span><br><span class="line">  <span class="built_in">Rename-Item</span> -NewName &#123; <span class="variable">$_</span>.Name <span class="nomarkup">-replace</span> <span class="string">'\.txt$'</span>, <span class="string">'.help.txt'</span>&#125;</span><br></pre></td></tr></table></figure></p>
             <p class="article-more-link">
-                <a href="/2016/10/06/geolocating-your-ip-on-a-map/#more">查看更多</a>
+                <a href="/2016/11/24/fixing-powershell-5-help-bug/#more">查看更多</a>
             </p>
         
         </div>
@@ -583,7 +593,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/10/06/geolocating-your-ip-on-a-map/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/10/06/geolocating-your-ip-on-a-map/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/24/fixing-powershell-5-help-bug/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/24/fixing-powershell-5-help-bug/">评论</a>
     
 
         </footer>
@@ -593,7 +603,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-finding-public-ip-address1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-prohibiting-positional-parameters" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -602,7 +612,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/05/finding-public-ip-address1/">PowerShell 技能连载 - 查找公开 IP 地址</a>
+            <a class="article-title" href="/2016/11/23/prohibiting-positional-parameters/">PowerShell 技能连载 - 禁止按位置的参数</a>
         </h1>
     
 
@@ -611,8 +621,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/10/05/finding-public-ip-address1/">
-            <time datetime="2016-10-04T16:00:00.000Z" itemprop="datePublished">2016-10-05</time>
+        <a href="/2016/11/23/prohibiting-positional-parameters/">
+            <time datetime="2016-11-22T16:00:00.000Z" itemprop="datePublished">2016-11-23</time>
         </a>
     </div>
 
@@ -635,12 +645,18 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>您是否希望了解您当前连接到 Internet 的公开 IP 地址？以下是一行代码：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Version 3.0</span></span><br><span class="line"><span class="built_in">Invoke-RestMethod</span> -Uri http://checkip.amazonaws.com/</span><br></pre></td></tr></table></figure>
-<p>通过这个 IP 地址，您还可以向 Internet 请求您的地理地址：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Version 3.0</span></span><br><span class="line"><span class="variable">$ip</span> = <span class="built_in">Invoke-RestMethod</span> -Uri http://checkip.amazonaws.com/ </span><br><span class="line"><span class="built_in">Invoke-RestMethod</span> -Uri <span class="string">"http://geoip.nekudo.com/api/<span class="variable">$IP</span>"</span> |</span><br><span class="line">  <span class="built_in">Select-Object</span> -ExpandProperty Country</span><br></pre></td></tr></table></figure></p>
+            <p><p>当您创建 PowerShell 函数时，参数可以是命名的也可以是按位置的。以下是一个例子：</p>
+<p>如果您想检测文件系统中的非法字符，以下是一个简单的适配：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Test-Command</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">param</span></span><br><span class="line">  (</span><br><span class="line">    [string]<span class="variable">$Name</span>,</span><br><span class="line">    [int]<span class="variable">$Id</span></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  <span class="string">"Name: <span class="variable">$Name</span> ID: <span class="variable">$ID</span>"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Test-Command -Name Weltner -Id <span class="number">12</span></span><br><span class="line">Test-Command Weltner <span class="number">12</span></span><br></pre></td></tr></table></figure>
+<p>如您所见，使用按位置的参数（只需要指定参数，不需要显式地指定参数名）可能更适用于为特定目的编写的代码，但是可读性更差。这是有可能的，因为上述函数的语法看起来如下：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test-Command [[-Name] &lt;string&gt;] [[-Id] &lt;int&gt;]</span><br></pre></td></tr></table></figure>
+<p>那么一个编写一个效果相反的 PowerShell 函数，实现这种语法呢：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test-Command [-Name &lt;string&gt;] [-Id &lt;int&gt;] [&lt;CommonParameters&gt;]</span><br></pre></td></tr></table></figure>
+<p>目前这个方法比较生僻，不过是完全可行的：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Test-Command</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">param</span></span><br><span class="line">  (</span><br><span class="line">    [Parameter(ParameterSetName=<span class="string">'xy'</span>)]</span><br><span class="line">    [string]<span class="variable">$Name</span>,</span><br><span class="line"></span><br><span class="line">    [Parameter(ParameterSetName=<span class="string">'xy'</span>)]</span><br><span class="line">    [int]<span class="variable">$Id</span></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  <span class="string">"Name: <span class="variable">$Name</span> ID: <span class="variable">$ID</span>"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一旦开始使用参数集合，缺省情况下所有参数都是命名的参数。<br></p>
             <p class="article-more-link">
-                <a href="/2016/10/05/finding-public-ip-address1/#more">查看更多</a>
+                <a href="/2016/11/23/prohibiting-positional-parameters/#more">查看更多</a>
             </p>
         
         </div>
@@ -704,7 +720,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/10/05/finding-public-ip-address1/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/10/05/finding-public-ip-address1/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/23/prohibiting-positional-parameters/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/23/prohibiting-positional-parameters/">评论</a>
     
 
         </footer>
@@ -714,7 +730,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-finding-location-of-ip-address" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-using-named-parameters-in-powershell-functions" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -723,7 +739,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/04/finding-location-of-ip-address/">PowerShell 技能连载 - 查找 IP 地址的地理位置</a>
+            <a class="article-title" href="/2016/11/22/using-named-parameters-in-powershell-functions/">PowerShell 技能连载 - 在 PowerShell 函数中使用命名的函数</a>
         </h1>
     
 
@@ -732,8 +748,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/10/04/finding-location-of-ip-address/">
-            <time datetime="2016-10-03T16:00:00.000Z" itemprop="datePublished">2016-10-04</time>
+        <a href="/2016/11/22/using-named-parameters-in-powershell-functions/">
+            <time datetime="2016-11-21T16:00:00.000Z" itemprop="datePublished">2016-11-22</time>
         </a>
     </div>
 
@@ -756,18 +772,18 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>大多数 IP 地址可以用 Web Service 定位到物理地址。以下是一个很简单的函数，能够输入一个 IP 地址并返回它的物理地址：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Version 3.0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> Get-IPLocation([Parameter(Mandatory)]<span class="variable">$IPAddress</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">Invoke-RestMethod</span> -Method Get -Uri <span class="string">"http://geoip.nekudo.com/api/<span class="variable">$IPAddress</span>"</span> |</span><br><span class="line">      <span class="built_in">Select-Object</span> -ExpandProperty Country -Property City, IP, Location </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这个例子能够演示如何用 <code>Select-Object</code> 配合 <code>-Property</code> 和 <code>-ExpandProperty</code> 参数将一些嵌套的属性移到上一层。</p>
-<p>让我们查找 Google DNS 服务器位于什么位置：</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; Get-IPLocation -IPAddress 8.8.8.8</span><br><span class="line"></span><br><span class="line">name     : United States</span><br><span class="line">code     : US</span><br><span class="line">city     : Mountain View</span><br><span class="line">ip       : 8.8.8.8</span><br><span class="line">location : @&#123;<span class="attribute">accuracy_radius</span>=1000; <span class="attribute">latitude</span>=37,386; <span class="attribute">longitude</span>=-122,0838; <span class="attribute">time_zone</span>=America/Los_Angeles&#125;</span><br></pre></td></tr></table></figure>
-<p>And here is how you can resolve any hostname to an IP address, for example, the famous powershellmagazine.com:<br>以下是如何将任意主机名解析成 IP 地址的代码，例如知名的 powershellmagazine.com：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PS&gt; [Net.Dns]::GetHostByName(<span class="string">'powershellmagazine.com'</span>).AddressList.IPAddressToString</span><br><span class="line"><span class="number">104.131</span>.<span class="number">21.239</span></span><br></pre></td></tr></table></figure>
-<p>所以如果您想知道该 IP 地址位于哪里，请加上这段代码：</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PS&gt; Get-IPLocation -IPAddress 104.131.21.239</span><br><span class="line"></span><br><span class="line">name     : United States</span><br><span class="line">code     : US</span><br><span class="line">city     : New York</span><br><span class="line">ip       : 104.131.21.239</span><br><span class="line">location : @&#123;<span class="attribute">accuracy_radius</span>=1000; <span class="attribute">latitude</span>=40,7143; <span class="attribute">longitude</span>=-74,006; </span><br><span class="line">           <span class="attribute">time_zone</span>=America/New_York&#125;</span><br></pre></td></tr></table></figure>
-<p>(of course this is just where the server sits, not Aleksandar or Ravi or all the other fine editors<br>（当然这只代表了服务器的所在地，而不是 Aleksandar or Ravi 及其它知名编辑的位置 <img src="/img/2016-10-04-finding-location-of-ip-address-001.png" alt="">）</p></p>
+            <p><p>当您创建一个 PowerShell 函数时，所有参数都有默认的位置，除非人为地加上“<code>Position</code>”属性。一旦加上这个属性，所有不带“<code>Position</code>”的参数将立刻变为命名的必须参数。让我们看看例子：</p>
+<p>这是一个经典的函数定义，创建了三个固定位置的参数：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Test-Command</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">param</span></span><br><span class="line">  (</span><br><span class="line">    [string]<span class="variable">$Name</span>,</span><br><span class="line">    [int]<span class="variable">$ID</span>,</span><br><span class="line">    [string]<span class="variable">$Email</span></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  <span class="comment"># TODO: Code using the parameter values</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>语法如下：</p>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test-Command <span class="comment">[<span class="comment">[-Name]</span> &lt;string&gt;]</span> <span class="comment">[<span class="comment">[-ID]</span> &lt;int&gt;]</span> <span class="comment">[<span class="comment">[-Email]</span> &lt;string&gt;]</span></span><br></pre></td></tr></table></figure>
+<p>一旦您在任何一个参数上添加“<code>Position</code>”属性，其它的就变为命名的参数：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Test-Command</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">param</span></span><br><span class="line">  (</span><br><span class="line">    [Parameter(Position=<span class="number">0</span>)]</span><br><span class="line">    [string]<span class="variable">$Name</span>,</span><br><span class="line">    [Parameter(Position=<span class="number">1</span>)]</span><br><span class="line">    [int]<span class="variable">$ID</span>,</span><br><span class="line">    [string]<span class="variable">$Email</span></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  <span class="comment"># TODO: Code using the parameter values</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以下是它的语法：</p>
+<figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test-Command [[-Name] &lt;string&gt;] [[-ID] &lt;int&gt;] [-Email &lt;string&gt;] <span class="meta">[&lt;CommonParameters&gt;]</span></span><br></pre></td></tr></table></figure>
+<p>区别在哪？您不需要指定参数名 <code>-Name</code> 和 <code>-ID</code>，但如果您希望为第三个参数指定一个值，必须指定 <code>-Email</code>。在第一个例子中，所有三个参数都可以按照位置来定位。</p></p>
             <p class="article-more-link">
-                <a href="/2016/10/04/finding-location-of-ip-address/#more">查看更多</a>
+                <a href="/2016/11/22/using-named-parameters-in-powershell-functions/#more">查看更多</a>
             </p>
         
         </div>
@@ -831,7 +847,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/10/04/finding-location-of-ip-address/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/10/04/finding-location-of-ip-address/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/22/using-named-parameters-in-powershell-functions/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/22/using-named-parameters-in-powershell-functions/">评论</a>
     
 
         </footer>
@@ -841,7 +857,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-finding-ip-address-assigned-by-dhcp" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-launching-powershell-hidden" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -850,7 +866,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/03/finding-ip-address-assigned-by-dhcp/">PowerShell 技能连载 - 查找由 DHCP 分配的 IP 地址</a>
+            <a class="article-title" href="/2016/11/21/launching-powershell-hidden/">PowerShell 技能连载 - 隐藏启动 PowerShell</a>
         </h1>
     
 
@@ -859,8 +875,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/10/03/finding-ip-address-assigned-by-dhcp/">
-            <time datetime="2016-10-02T16:00:00.000Z" itemprop="datePublished">2016-10-03</time>
+        <a href="/2016/11/21/launching-powershell-hidden/">
+            <time datetime="2016-11-20T16:00:00.000Z" itemprop="datePublished">2016-11-21</time>
         </a>
     </div>
 
@@ -883,11 +899,15 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>从 Windows 8 和 Server 2012 起，随着操作系统一起分发了一些扩展的 PowerShell 模块，用于管理服务器和客户端，例如 <code>Get-NetIPAddress</code> 等 cmdlet。</p>
-<p>如果您想获得一个所有由 DHCP 分配的 IP 地址列表，可以试试以下方法：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Version 3.0 -Modules NetTCPIP</span></span><br><span class="line"></span><br><span class="line">Get-NetIPAddress | </span><br><span class="line">  <span class="built_in">Where-Object</span> PrefixOrigin <span class="nomarkup">-eq</span> dhcp | </span><br><span class="line">  <span class="built_in">Select-Object</span> -ExpandProperty IPAddress</span><br></pre></td></tr></table></figure></p>
+            <p><p>有时候 PowerShell 脚本只是用来生成某些东西，比如说生成报告，而不需要用 Excel 或记事本打开它。这时候您不会希望执行 PowerShell 的时候显示 PowerShell 控制台窗口。</p>
+<p>并没有很简单的方法能隐藏 PowerShell 的控制台窗口，因为即使用了 <code>-WindowsStyle Hidden</code> 参数，也会先显示控制台，然后隐藏它（一闪而过）。</p>
+<p>一种方法是使用 Windows 快捷方式来启动脚本。右键单击桌面的空白区域，然后选择新建/快捷方式。就可以新建一个快捷方式。当提示输入地址的时候，键入这行代码：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell -noprofile -executionpolicy bypass -file <span class="string">"c:\path\to\script.ps1"</span></span><br></pre></td></tr></table></figure>
+<p>点击“下一步”，然后添加脚本的名称，再点击“下一步”，就接近完成了。这个快捷方式显示蓝色的 PowerShell 图标。单击它的时候，脚本即可运行，只是还不是隐藏的。</p>
+<p>您现在只需要右键单击新创建的快捷方式，选择“属性”，然后将“运行”的设置从“正常窗口”改为您想要的设置。您也可以设置一个快捷方式，这需要管理员权限。</p>
+<p>一个缺点是，在 Windows 10 中，“运行”的设置不再包含隐藏程序的选项。您最多可以最小化执行。</p></p>
             <p class="article-more-link">
-                <a href="/2016/10/03/finding-ip-address-assigned-by-dhcp/#more">查看更多</a>
+                <a href="/2016/11/21/launching-powershell-hidden/#more">查看更多</a>
             </p>
         
         </div>
@@ -951,7 +971,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/10/03/finding-ip-address-assigned-by-dhcp/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/10/03/finding-ip-address-assigned-by-dhcp/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/21/launching-powershell-hidden/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/21/launching-powershell-hidden/">评论</a>
     
 
         </footer>
@@ -961,7 +981,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-enum-week-enums-in-powershell-5" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-time-zone-management-in-powershell-5-1" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -970,7 +990,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/09/30/enum-week-enums-in-powershell-5/">PowerShell 技能连载 - Enum 之周: PowerShell 5 中的枚举</a>
+            <a class="article-title" href="/2016/11/18/time-zone-management-in-powershell-5-1/">PowerShell 技能连载 - PowerShell 5.1 中的时区管理</a>
         </h1>
     
 
@@ -979,8 +999,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/30/enum-week-enums-in-powershell-5/">
-            <time datetime="2016-09-29T16:00:00.000Z" itemprop="datePublished">2016-09-30</time>
+        <a href="/2016/11/18/time-zone-management-in-powershell-5-1/">
+            <time datetime="2016-11-17T16:00:00.000Z" itemprop="datePublished">2016-11-18</time>
         </a>
     </div>
 
@@ -1003,14 +1023,19 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p><em>支持 PowerShell 5 以上版本</em></p>
-<p>这周我们将关注枚举类型：它们是什么，以及如何利用它们。</p>
-<p>从 PowerShell 5 开始，您可以用 “<code>Enum</code>“创建您自己的枚举类型。通过这种方式，用户可以用可阅读的名字，而不是幻数。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#requires -Version  5.0 </span></span><br><span class="line"></span><br><span class="line">Enum ComputerType</span><br><span class="line">&#123;</span><br><span class="line">  ManagedServer</span><br><span class="line">  ManagedClient</span><br><span class="line">  Server</span><br><span class="line">  Client</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> Connect-Computer </span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">param</span> </span><br><span class="line">  (</span><br><span class="line">    [ComputerType] </span><br><span class="line">    <span class="variable">$Type</span>, </span><br><span class="line"></span><br><span class="line">    [string] </span><br><span class="line">    <span class="variable">$Name</span> </span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  <span class="string">"Computername: <span class="variable">$Name</span> Type: <span class="variable">$Type</span>"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>当您运行完这段代码，并调用 “<code>Connect-Computer</code>“ 函数之后，PowerShell 自动为您的枚举值提供智能提示，并且只接受枚举类型里规定的值。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS C:\&gt; Connect-Computer -Type Client -Name Test</span><br><span class="line">Computername: Test Type: Client</span><br><span class="line"></span><br><span class="line">PS C:\&gt;</span><br></pre></td></tr></table></figure></p>
+            <p><p>PowerShell 5.1（随 Windows 10 和 Server 2016 发布）带来一系列管理计算机时区的新 cmdlet。<code>Get-TimeZone</code> 返回当前的设置，而 <code>Set-TimeZone</code> 可以改变时区设置：</p>
+<pre><code>PS C:\&gt; Get-TimeZone
+
+Id                         : W. Europe Standard Time
+DisplayName                : (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, 
+                             Vienna
+StandardName               : W. Europe Standard Time
+DaylightName               : W. Europe Daylight Time
+BaseUtcOffset              : 01:00:00
+SupportsDaylightSavingTime : True
+</code></pre></p>
             <p class="article-more-link">
-                <a href="/2016/09/30/enum-week-enums-in-powershell-5/#more">查看更多</a>
+                <a href="/2016/11/18/time-zone-management-in-powershell-5-1/#more">查看更多</a>
             </p>
         
         </div>
@@ -1074,7 +1099,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/09/30/enum-week-enums-in-powershell-5/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/09/30/enum-week-enums-in-powershell-5/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/18/time-zone-management-in-powershell-5-1/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/18/time-zone-management-in-powershell-5-1/">评论</a>
     
 
         </footer>
@@ -1084,7 +1109,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-enum-week-suppressing-cmdlet-errors-fast" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-exploring-function-source-code" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -1093,7 +1118,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/09/29/enum-week-suppressing-cmdlet-errors-fast/">PowerShell 技能连载 - Enum 之周: 快速关闭 Cmdlet 错误提示</a>
+            <a class="article-title" href="/2016/11/17/exploring-function-source-code/">PowerShell 技能连载 - 探索函数源码</a>
         </h1>
     
 
@@ -1102,8 +1127,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/29/enum-week-suppressing-cmdlet-errors-fast/">
-            <time datetime="2016-09-28T16:00:00.000Z" itemprop="datePublished">2016-09-29</time>
+        <a href="/2016/11/17/exploring-function-source-code/">
+            <time datetime="2016-11-16T16:00:00.000Z" itemprop="datePublished">2016-11-17</time>
         </a>
     </div>
 
@@ -1126,30 +1151,15 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>这周我们将关注枚举类型：它们是什么，以及如何利用它们。</p>
-<p>在前一个技能中，我们学习了枚举类型。这个技能教您如何使用最少的代码关闭 Cmdlet 产生的错误信息。</p>
-<p>非管理员账户执行这行代码将产生错误信息，因为您无法存取其他用户的进程信息：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> Get-Process -FileVersionInfo</span></span><br></pre></td></tr></table></figure>
-<p>由于这个错误是良性的，并且不可避免，您可能会想将它们屏蔽：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> Get-Process -FileVersionInfo -ErrorAction SilentlyContinue</span></span><br></pre></td></tr></table></figure>
-<p>这对于脚本来说是完美的语法。当您交互式地运行代码时，您完全可以用难看的窍门来缩短关键字的输入，只需要写：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> Get-Process -FileVersionInfo -ea 0</span></span><br></pre></td></tr></table></figure>
-<p>“<code>-ea</code>“ 是 <code>-ErrorAction</code> 参数的别名，而数字 0 相当于 <code>SilentlyContinue</code> 的枚举值。</p>
-<p>要查看一个参数的别名，可以使用这样的代码：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> (Get-Command -Name Get-Process).Parameters[<span class="string">"ErrorAction"</span>].Aliases</span></span><br><span class="line">ea</span><br></pre></td></tr></table></figure>
-<p>要查看枚举值对应的数字值，首先确定参数的数据类型：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> (Get-Command -Name Get-Process).Parameters[<span class="string">"ErrorAction"</span>].ParameterType.FullName</span></span><br><span class="line">System.Management.Automation.ActionPreference</span><br></pre></td></tr></table></figure>
-<p>下一步，将参数转成一个整形：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> [int][System.Management.Automation.ActionPreference]::SilentlyContinue</span></span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-<p>So if you’d like to create a shortcut for the parameter value “Ignore” instead of “SilentlyContinue”, try this:</p>
-<p>所以如果您想了解参数值 “<code>Ignore</code>“ 而不是 “<code>SilentlyContinue</code>“，请试验以下代码：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> [int][System.Management.Automation.ActionPreference]::Ignore</span></span><br><span class="line">4</span><br></pre></td></tr></table></figure>
-<p>“<code>SilientlyContinue</code>“ 和 “<code>Ignore</code>“ 都禁止了错误的输出，但是 “<code>SilentlyContinue</code>“ 还会将禁止输出的错误信息写入 PowerShell 的 <code>$error</code> 变量中。</p>
-<p>从现在开始，您在交互式操作 PowerShell 时可以用这种方式使用 “<code>Ignore</code>“ 禁用错误信息：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> Get-Process -FileVersionInfo -ea 4</span></span><br></pre></td></tr></table></figure>
-<p>请注意：您也可以在脚本中使用这些快捷方式，但最好不要这么做。脚本中应当按照 PowerShell 的缺省写法，才能清晰易读。</p></p>
+            <p><p>在 PowerShell 中，cmdlet 和 function 的唯一根本区别是它们是怎么编程的：函数用的是纯粹的 PowerShell 代码，这也是查看它们的源代码，并学习新东西的有趣之处。</p>
+<p>这行代码列出所有当前从 module 中加载的所有 PowerShell function：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Get-Module</span> | <span class="built_in">ForEach-Object</span> &#123; <span class="built_in">Get-Command</span> -Module <span class="variable">$_</span>.Name -CommandType <span class="keyword">Function</span> &#125;</span><br></pre></td></tr></table></figure>
+<p>一旦您知道了内存中某个函数的名字，可以用这种方法快捷查看它的源代码。在这些例子中，我们将探索 <code>Format-Hex</code> 函数。只需要将这个名字替换成内存中存在的其它函数名即可：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;<span class="keyword">function</span>:Format-Hex&#125; | clip.exe</span><br></pre></td></tr></table></figure>
+<p>这行代码将源代码存入剪贴板，您可以将它粘贴到您喜欢的编辑器中。另外，您也可以用这种方式运行：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Get-Command</span> -Name Format-Hex -CommandType <span class="keyword">Function</span> |</span><br><span class="line">  <span class="built_in">Select-Object</span> -ExpandProperty Definition |</span><br><span class="line">  clip.exe</span><br></pre></td></tr></table></figure></p>
             <p class="article-more-link">
-                <a href="/2016/09/29/enum-week-suppressing-cmdlet-errors-fast/#more">查看更多</a>
+                <a href="/2016/11/17/exploring-function-source-code/#more">查看更多</a>
             </p>
         
         </div>
@@ -1213,7 +1223,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/09/29/enum-week-suppressing-cmdlet-errors-fast/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/09/29/enum-week-suppressing-cmdlet-errors-fast/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/17/exploring-function-source-code/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/17/exploring-function-source-code/">评论</a>
     
 
         </footer>
@@ -1223,7 +1233,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-enum-week-understanding-enumeration-values" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-running-32-bit-code-on-the-same-machine" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -1232,7 +1242,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/09/28/enum-week-understanding-enumeration-values/">PowerShell 技能连载 - Enum 之周: 理解枚举值</a>
+            <a class="article-title" href="/2016/11/16/running-32-bit-code-on-the-same-machine/">PowerShell 技能连载 - 在同一台机器上运行 32 位代码</a>
         </h1>
     
 
@@ -1241,8 +1251,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/28/enum-week-understanding-enumeration-values/">
-            <time datetime="2016-09-27T16:00:00.000Z" itemprop="datePublished">2016-09-28</time>
+        <a href="/2016/11/16/running-32-bit-code-on-the-same-machine/">
+            <time datetime="2016-11-15T16:00:00.000Z" itemprop="datePublished">2016-11-16</time>
         </a>
     </div>
 
@@ -1265,18 +1275,11 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>这周我们将关注枚举类型：它们是什么，以及如何利用它们。</p>
-<p>在前一个技能中，我们探讨了枚举是如何工作的。您可能还记得我们如何改变控制台的前景色：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> <span class="variable">$host</span>.UI.RawUI.ForegroundColor = <span class="string">'Red'</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">PS&gt;</span><span class="bash"> <span class="variable">$host</span>.UI.RawUI.ForegroundColor = <span class="string">'White'</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">PS&gt;</span><span class="bash"></span></span><br></pre></td></tr></table></figure>
-<p>这些代码先将前景色改为红色，然后改回白色。用字符串表达的颜色名称隐式地转换为对应的 <code>System.ConsoleColor enumeration</code> 值。</p>
-<p>多数枚举只是数字值的一种简易的标签。”<code>Red</code>“ 和 “<code>White</code>“ 实际上是 integer 数值：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> [int][System.ConsoleColor]<span class="string">'Red'</span></span></span><br><span class="line">12</span><br><span class="line"></span><br><span class="line"><span class="meta">PS&gt;</span><span class="bash"> [int][System.ConsoleColor]<span class="string">'White'</span></span></span><br><span class="line">15</span><br></pre></td></tr></table></figure>
-<p>所以如果您知道数字值，您也可以使用它们：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">PS&gt;</span><span class="bash"> <span class="variable">$host</span>.UI.RawUI.ForegroundColor = 12</span></span><br><span class="line"></span><br><span class="line"><span class="meta">PS&gt;</span><span class="bash"> <span class="variable">$host</span>.UI.RawUI.ForegroundColor = 15</span></span><br></pre></td></tr></table></figure>
-<p>当然，很明显地，代码变得很难读懂。不过，还是有一种使用场合。如果您想随机设置您的控制台颜色，您可以使用数值型的值。一共有 16 种控制台颜色，所以这段代码能够用一个随机的背景色和前景色重新为您的控制台着色：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$background</span>, <span class="variable">$foreground</span> = <span class="number">0</span>..<span class="number">15</span> | <span class="built_in">Get-Random</span> -Count <span class="number">2</span> </span><br><span class="line"><span class="variable">$host</span>.UI.RawUI.BackgroundColor = <span class="variable">$background</span> </span><br><span class="line"><span class="variable">$host</span>.UI.RawUI.ForegroundColor = <span class="variable">$foreground</span></span><br></pre></td></tr></table></figure></p>
+            <p><p>如果您需要在 64 位脚本中运行 32 位 PowerShell 代码，假设您是管理员，并且使用远程操作功能，您可以远程操作您的系统：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$code</span> = &#123;</span><br><span class="line">  [IntPtr]::Size</span><br><span class="line">  <span class="built_in">Get-Process</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">Invoke-Command</span> -ScriptBlock <span class="variable">$code</span> -ConfigurationName microsoft.powershell32 -ComputerName <span class="variable">$env:COMPUTERNAME</span></span><br></pre></td></tr></table></figure>
+<p>这将在 32 位环境中运行 <code>$code</code> 中的脚本块。该指针返回的 size 是 4，这是 32 位的证据。当您直接运行脚本块，返回的是 8 字节（64 比特）。</p></p>
             <p class="article-more-link">
-                <a href="/2016/09/28/enum-week-understanding-enumeration-values/#more">查看更多</a>
+                <a href="/2016/11/16/running-32-bit-code-on-the-same-machine/#more">查看更多</a>
             </p>
         
         </div>
@@ -1340,7 +1343,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/09/28/enum-week-understanding-enumeration-values/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/09/28/enum-week-understanding-enumeration-values/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/16/running-32-bit-code-on-the-same-machine/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/16/running-32-bit-code-on-the-same-machine/">评论</a>
     
 
         </footer>
@@ -1350,7 +1353,7 @@ var _hmt = _hmt || [];
 
 
 
-    <article id="post-enum-week-listing-enumeration-values" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-modern-replacement-for-systeminfo-exe" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -1359,7 +1362,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/09/27/enum-week-listing-enumeration-values/">PowerShell 技能连载 - Enum 之周: 列出枚举值</a>
+            <a class="article-title" href="/2016/11/15/modern-replacement-for-systeminfo-exe/">PowerShell 技能连载 - systeminfo.exe 的最新替代</a>
         </h1>
     
 
@@ -1368,8 +1371,8 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/27/enum-week-listing-enumeration-values/">
-            <time datetime="2016-09-26T16:00:00.000Z" itemprop="datePublished">2016-09-27</time>
+        <a href="/2016/11/15/modern-replacement-for-systeminfo-exe/">
+            <time datetime="2016-11-14T16:00:00.000Z" itemprop="datePublished">2016-11-15</time>
         </a>
     </div>
 
@@ -1392,20 +1395,202 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><p>这周我们将关注枚举类型：它们是什么，以及如何利用它们。</p>
-<p>在前一个技能中我们解释了 PowerShell 如何将字符串转换为枚举值。如果您想知道某个枚举参数可以用接受哪些字符串，请先看一个简单的改变控制台颜色的例子：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PS&gt; <span class="variable">$host</span>.UI.RawUI.ForegroundColor = <span class="string">'Red'</span></span><br><span class="line"></span><br><span class="line">PS&gt; <span class="variable">$host</span>.UI.RawUI.ForegroundColor = <span class="string">'White'</span></span><br><span class="line"></span><br><span class="line">PS&gt;</span><br></pre></td></tr></table></figure>
-<p>这些命令先将前景色改为红色，然后改回白色。</p>
-<p>但是您怎么知道控制台支持的颜色名称呢？首先您需要知道 <code>ForegroundColor</code> 的真实数据类型：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PS&gt; <span class="variable">$host</span>.UI.RawUI.ForegroundColor.GetType().FullName </span><br><span class="line">System.ConsoleColor</span><br></pre></td></tr></table></figure>
-<p>它的类型是 “<code>System.ConsoleColor</code>“。现在您可以检查它是否确实是一个枚举型：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PS&gt; <span class="variable">$host</span>.UI.RawUI.ForegroundColor.GetType().IsEnum</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-<p>如果它确实是，例如这个例子，您可以列出它所有的值的名称：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">PS&gt; [System.Enum]::GetNames([System.ConsoleColor])</span><br><span class="line">Black</span><br><span class="line">DarkBlue</span><br><span class="line">DarkGreen</span><br><span class="line">DarkCyan</span><br><span class="line">DarkRed</span><br><span class="line">DarkMagenta</span><br><span class="line">DarkYellow</span><br><span class="line">Gray</span><br><span class="line">DarkGray</span><br><span class="line">Blue</span><br><span class="line">Green</span><br><span class="line">Cyan</span><br><span class="line">Red</span><br><span class="line">Magenta</span><br><span class="line">Yellow</span><br><span class="line">White</span><br></pre></td></tr></table></figure>
-<p>这些值中的每一个值都可以用来设置控制台的前景色。这种方法可以应用在所有接受枚举值的属性或参数上。</p>
-<p>同样地，如果您传入了一个和所有枚举值名称都不相同的值，异常信息中也会列出枚举值的名字。</p></p>
+            <p><p>曾几何时，systeminfo.exe 返回一台电脑所有的分析信息，并且有一些能够在 PowerShell 中变成面向对象的：</p>
+<pre><code>PS C:\&gt; $info = systeminfo.exe /FO CSV | ConvertFrom-Csv
+
+PS C:\&gt; $info.Domain
+WORKGROUP
+
+PS C:\&gt; $info.&apos;Logon Server&apos;
+\\DESKTOP-7AAMJLF
+</code></pre><p>在 PowerShell 5.1 （Windows 10 和 Server 2016 ）中，有一个现代的替代品：</p>
+<pre><code>PS C:\&gt; Get-ComputerInfo
+
+
+WindowsBuildLabEx                                       : 14393.321.amd64fre.rs1_release_inmarket.161004-2338
+WindowsCurrentVersion                                   : 6.3
+WindowsEditionId                                        : Professional
+WindowsInstallationType                                 : Client
+WindowsInstallDateFromRegistry                          : 8/17/2016 1:40:27 PM
+WindowsProductId                                        : 00350-50721-50845-ACOEM
+WindowsProductName                                      : Windows 10 Pro
+WindowsRegisteredOrganization                           : 
+WindowsRegisteredOwner                                  : topoftheworld
+WindowsSystemRoot                                       : C:\WINDOWS
+BiosCharacteristics                                     : {7, 9, 11, 12...}
+BiosBIOSVersion                                         : {DELL   - 1072009, 1.4.4, American Megatrends - 5000B}
+BiosBuildNumber                                         : 
+BiosCaption                                             : 1.4.4
+BiosCodeSet                                             : 
+BiosCurrentLanguage                                     : en|US|iso8859-1
+BiosDescription                                         : 1.4.4
+BiosEmbeddedControllerMajorVersion                      : 255
+BiosEmbeddedControllerMinorVersion                      : 255
+BiosFirmwareType                                        : Uefi
+BiosIdentificationCode                                  : 
+BiosInstallableLanguages                                : 2
+BiosInstallDate                                         : 
+BiosLanguageEdition                                     : 
+BiosListOfLanguages                                     : {en|US|iso8859-1, }
+BiosManufacturer                                        : Dell Inc.
+BiosName                                                : 1.4.4
+BiosOtherTargetOS                                       : 
+BiosPrimaryBIOS                                         : True
+BiosReleaseDate                                         : 6/14/2016 2:00:00 AM
+BiosSeralNumber                                         : DLGQD72
+BiosSMBIOSBIOSVersion                                   : 1.4.4
+BiosSMBIOSMajorVersion                                  : 2
+BiosSMBIOSMinorVersion                                  : 8
+BiosSMBIOSPresent                                       : True
+BiosSoftwareElementState                                : Running
+BiosStatus                                              : OK
+BiosSystemBiosMajorVersion                              : 1
+BiosSystemBiosMinorVersion                              : 4
+BiosTargetOperatingSystem                               : 0
+BiosVersion                                             : DELL   - 1072009
+CsAdminPasswordStatus                                   : Unknown
+CsAutomaticManagedPagefile                              : True
+CsAutomaticResetBootOption                              : True
+CsAutomaticResetCapability                              : True
+CsBootOptionOnLimit                                     : 
+CsBootOptionOnWatchDog                                  : 
+CsBootROMSupported                                      : True
+CsBootStatus                                            : {0, 0, 0, 0...}
+CsBootupState                                           : Normal boot
+CsCaption                                               : CLIENT
+CsChassisBootupState                                    : Safe
+CsChassisSKUNumber                                      : Laptop
+CsCurrentTimeZone                                       : 120
+CsDaylightInEffect                                      : True
+CsDescription                                           : AT/AT COMPATIBLE
+CsDNSHostName                                           : DESKTOP-7AAMJLF
+CsDomain                                                : WORKGROUP
+CsDomainRole                                            : StandaloneWorkstation
+CsEnableDaylightSavingsTime                             : True
+CsFrontPanelResetStatus                                 : Unknown
+CsHypervisorPresent                                     : False
+CsInfraredSupported                                     : False
+CsInitialLoadInfo                                       : 
+CsInstallDate                                           : 
+CsKeyboardPasswordStatus                                : Unknown
+CsLastLoadInfo                                          : 
+CsManufacturer                                          : Dell Inc.
+CsModel                                                 : XPS 13 9350
+CsName                                                  : CLIENT
+CsNetworkAdapters                                       : {WiFi, Bluetooth-Netzwerkverbindung}
+CsNetworkServerModeEnabled                              : True
+CsNumberOfLogicalProcessors                             : 4
+CsNumberOfProcessors                                    : 1
+CsProcessors                                            : {Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz}
+CsOEMStringArray                                        : {Dell System, 1[0704], 3[1.0], 12[www.dell.com]...}
+CsPartOfDomain                                          : False
+CsPauseAfterReset                                       : -1
+CsPCSystemType                                          : Mobile
+CsPCSystemTypeEx                                        : Mobile
+CsPowerManagementCapabilities                           : 
+CsPowerManagementSupported                              : 
+CsPowerOnPasswordStatus                                 : Unknown
+CsPowerState                                            : Unknown
+CsPowerSupplyState                                      : Safe
+CsPrimaryOwnerContact                                   : 
+CsPrimaryOwnerName                                      : user@company.de
+CsResetCapability                                       : Other
+CsResetCount                                            : -1
+CsResetLimit                                            : -1
+CsRoles                                                 : {LM_Workstation, LM_Server, NT, Potential_Browser...}
+CsStatus                                                : OK
+CsSupportContactDescription                             : 
+CsSystemFamily                                          : 
+CsSystemSKUNumber                                       : 0704
+CsSystemType                                            : x64-based PC
+CsThermalState                                          : Safe
+CsTotalPhysicalMemory                                   : 17045016576
+CsPhyicallyInstalledMemory                              : 16777216
+CsUserName                                              : CLIENT12\TEST
+CsWakeUpType                                            : PowerSwitch
+CsWorkgroup                                             : WORKGROUP
+OsName                                                  : Microsoft Windows 10 Pro
+OsType                                                  : WINNT
+OsOperatingSystemSKU                                    : 48
+OsVersion                                               : 10.0.14393
+OsCSDVersion                                            : 
+OsBuildNumber                                           : 14393
+OsHotFixes                                              : {KB3176936, KB3194343, KB3199209, KB3199986...}
+OsBootDevice                                            : \Device\HarddiskVolume1
+OsSystemDevice                                          : \Device\HarddiskVolume3
+OsSystemDirectory                                       : C:\WINDOWS\system32
+OsSystemDrive                                           : C:
+OsWindowsDirectory                                      : C:\WINDOWS
+OsCountryCode                                           : 1
+OsCurrentTimeZone                                       : 120
+OsLocaleID                                              : 0409
+OsLocale                                                : en-US
+OsLocalDateTime                                         : 10/28/2016 4:11:51 PM
+OsLastBootUpTime                                        : 10/19/2016 7:48:03 AM
+OsUptime                                                : 9.08:23:47.7627676
+OsBuildType                                             : Multiprocessor Free
+OsCodeSet                                               : 1252
+OsDataExecutionPreventionAvailable                      : True
+OsDataExecutionPrevention32BitApplications              : True
+OsDataExecutionPreventionDrivers                        : True
+OsDataExecutionPreventionSupportPolicy                  : OptIn
+OsDebug                                                 : False
+OsDistributed                                           : False
+OsEncryptionLevel                                       : 256
+OsForegroundApplicationBoost                            : Maximum
+OsTotalVisibleMemorySize                                : 16645524
+OsFreePhysicalMemory                                    : 9128212
+OsTotalVirtualMemorySize                                : 19135892
+OsFreeVirtualMemory                                     : 8607696
+OsInUseVirtualMemory                                    : 10528196
+OsTotalSwapSpaceSize                                    : 
+OsSizeStoredInPagingFiles                               : 2490368
+OsFreeSpaceInPagingFiles                                : 2442596
+OsPagingFiles                                           : {C:\pagefile.sys}
+OsHardwareAbstractionLayer                              : 10.0.14393.206
+OsInstallDate                                           : 8/17/2016 3:40:27 PM
+OsManufacturer                                          : Microsoft Corporation
+OsMaxNumberOfProcesses                                  : 4294967295
+OsMaxProcessMemorySize                                  : 137438953344
+OsMuiLanguages                                          : {de-DE, en-US}
+OsNumberOfLicensedUsers                                 : 
+OsNumberOfProcesses                                     : 157
+OsNumberOfUsers                                         : 2
+OsOrganization                                          : 
+OsArchitecture                                          : 64-bit
+OsLanguage                                              : de-DE
+OsProductSuites                                         : {TerminalServicesSingleSession}
+OsOtherTypeDescription                                  : 
+OsPAEEnabled                                            : 
+OsPortableOperatingSystem                               : False
+OsPrimary                                               : True
+OsProductType                                           : WorkStation
+OsRegisteredUser                                        : test@company.com
+OsSerialNumber                                          : 00330-50021-50665-AAOEM
+OsServicePackMajorVersion                               : 0
+OsServicePackMinorVersion                               : 0
+OsStatus                                                : OK
+OsSuites                                                : {TerminalServices, TerminalServicesSingleSession}
+OsServerLevel                                           : 
+KeyboardLayout                                          : de-DE
+TimeZone                                                : (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna
+LogonServer                                             : \\CLIENT
+PowerPlatformRole                                       : Mobile
+HyperVisorPresent                                       : False
+HyperVRequirementDataExecutionPreventionAvailable       : True
+HyperVRequirementSecondLevelAddressTranslation          : True
+HyperVRequirementVirtualizationFirmwareEnabled          : True
+HyperVRequirementVMMonitorModeExtensions                : True
+DeviceGuardSmartStatus                                  : Off
+DeviceGuardRequiredSecurityProperties                   : 
+DeviceGuardAvailableSecurityProperties                  : 
+DeviceGuardSecurityServicesConfigured                   : 
+DeviceGuardSecurityServicesRunning                      : 
+DeviceGuardCodeIntegrityPolicyEnforcementStatus         : 
+DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus :
+</code></pre></p>
             <p class="article-more-link">
-                <a href="/2016/09/27/enum-week-listing-enumeration-values/#more">查看更多</a>
+                <a href="/2016/11/15/modern-replacement-for-systeminfo-exe/#more">查看更多</a>
             </p>
         
         </div>
@@ -1469,7 +1654,7 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://blog.vichamp.com/2016/09/27/enum-week-listing-enumeration-values/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/09/27/enum-week-listing-enumeration-values/">评论</a>
+        <a href="http://blog.vichamp.com/2016/11/15/modern-replacement-for-systeminfo-exe/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2016/11/15/modern-replacement-for-systeminfo-exe/">评论</a>
     
 
         </footer>
@@ -1480,7 +1665,7 @@ var _hmt = _hmt || [];
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/47/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/46/">46</a><a class="page-number" href="/page/47/">47</a><span class="page-number current">48</span><a class="page-number" href="/page/49/">49</a><a class="page-number" href="/page/50/">50</a><span class="space">&hellip;</span><a class="page-number" href="/page/120/">120</a><a class="extend next" rel="next" href="/page/49/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/47/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/46/">46</a><a class="page-number" href="/page/47/">47</a><span class="page-number current">48</span><a class="page-number" href="/page/49/">49</a><a class="page-number" href="/page/50/">50</a><span class="space">&hellip;</span><a class="page-number" href="/page/124/">124</a><a class="extend next" rel="next" href="/page/49/">下一页 &raquo;</a>
     </nav>
 </section>
             
@@ -1513,7 +1698,7 @@ var _hmt = _hmt || [];
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/20/finding-nested-active-directory-memberships-part-1/" class="thumbnail">
+                            <a href="/2018/09/07/using-ssh-from-powershell/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1524,15 +1709,15 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a></p>
-                            <p class="item-title"><a href="/2018/07/20/finding-nested-active-directory-memberships-part-1/" class="title">PowerShell 技能连载 - 查找嵌套的 Active Directory 成员（第 1 部分）</a></p>
-                            <p class="item-date"><time datetime="2018-07-19T16:00:00.000Z" itemprop="datePublished">2018-07-20</time></p>
+                            <p class="item-title"><a href="/2018/09/07/using-ssh-from-powershell/" class="title">PowerShell 技能连载 - 在 PowerShell 中使用 SSH</a></p>
+                            <p class="item-date"><time datetime="2018-09-06T16:00:00.000Z" itemprop="datePublished">2018-09-07</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/19/progress-bar-timer/" class="thumbnail">
+                            <a href="/2018/09/06/managing-lenovo-bios-settings-part-4/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1543,15 +1728,15 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a></p>
-                            <p class="item-title"><a href="/2018/07/19/progress-bar-timer/" class="title">PowerShell 技能连载 - 进度条定时器</a></p>
-                            <p class="item-date"><time datetime="2018-07-18T16:00:00.000Z" itemprop="datePublished">2018-07-19</time></p>
+                            <p class="item-title"><a href="/2018/09/06/managing-lenovo-bios-settings-part-4/" class="title">PowerShell 技能连载 - 管理 Lenovo BIOS 设置（第 4 部分）</a></p>
+                            <p class="item-date"><time datetime="2018-09-05T16:00:00.000Z" itemprop="datePublished">2018-09-06</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/18/automatic-document-report-generation-part-5/" class="thumbnail">
+                            <a href="/2018/09/05/managing-lenovo-bios-settings-part-3/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1562,15 +1747,15 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a></p>
-                            <p class="item-title"><a href="/2018/07/18/automatic-document-report-generation-part-5/" class="title">PowerShell 技能连载 - 自动生成文档和报告（第 4 部分）</a></p>
-                            <p class="item-date"><time datetime="2018-07-17T16:00:00.000Z" itemprop="datePublished">2018-07-18</time></p>
+                            <p class="item-title"><a href="/2018/09/05/managing-lenovo-bios-settings-part-3/" class="title">PowerShell 技能连载 - 管理 Lenovo BIOS 设置（第 3 部分）</a></p>
+                            <p class="item-date"><time datetime="2018-09-04T16:00:00.000Z" itemprop="datePublished">2018-09-05</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/17/automatic-document-report-generation-part-4/" class="thumbnail">
+                            <a href="/2018/09/04/managing-lenovo-bios-settings-part-2/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1581,15 +1766,15 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a></p>
-                            <p class="item-title"><a href="/2018/07/17/automatic-document-report-generation-part-4/" class="title">PowerShell 技能连载 - 自动生成文档和报告（第 4 部分）</a></p>
-                            <p class="item-date"><time datetime="2018-07-16T16:00:00.000Z" itemprop="datePublished">2018-07-17</time></p>
+                            <p class="item-title"><a href="/2018/09/04/managing-lenovo-bios-settings-part-2/" class="title">PowerShell 技能连载 - 管理 Lenovo BIOS 设置（第 2 部分）</a></p>
+                            <p class="item-date"><time datetime="2018-09-03T16:00:00.000Z" itemprop="datePublished">2018-09-04</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/16/automatic-document-report-generation-part-3/" class="thumbnail">
+                            <a href="/2018/09/03/managing-lenovo-bios-settings-part-1/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1600,8 +1785,8 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a></p>
-                            <p class="item-title"><a href="/2018/07/16/automatic-document-report-generation-part-3/" class="title">PowerShell 技能连载 - 自动生成文档和报告（第 3 部分）</a></p>
-                            <p class="item-date"><time datetime="2018-07-15T16:00:00.000Z" itemprop="datePublished">2018-07-16</time></p>
+                            <p class="item-title"><a href="/2018/09/03/managing-lenovo-bios-settings-part-1/" class="title">PowerShell 技能连载 - 管理 Lenovo BIOS 设置（第 1 部分）</a></p>
+                            <p class="item-date"><time datetime="2018-09-02T16:00:00.000Z" itemprop="datePublished">2018-09-03</time></p>
                         </div>
                     </li>
                 
@@ -1614,7 +1799,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C#</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angularjs/">angularjs</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/career/">career</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/embedded/">embedded</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/geek/">geek</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/">ionic</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mongoose/">mongoose</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mvp/">mvp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/network/">network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node-js/">node.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/">powershell</a><span class="category-list-count">1162</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/geek/">geek</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/office/">office</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/text/">text</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/tip/">tip</a><span class="category-list-count">1097</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/program/">program</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/server/">server</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/software-engineering/">software-engineering</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/text/">text</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/vim/">vim</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/visualstudio/">visualstudio</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><span class="category-list-count">2</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C#</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angularjs/">angularjs</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/career/">career</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/embedded/">embedded</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/geek/">geek</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/">ionic</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mongoose/">mongoose</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mvp/">mvp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/network/">network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node-js/">node.js</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/">powershell</a><span class="category-list-count">1197</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/geek/">geek</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/office/">office</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/text/">text</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/powershell/tip/">tip</a><span class="category-list-count">1132</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/program/">program</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/server/">server</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/software-engineering/">software-engineering</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/text/">text</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/vim/">vim</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/visualstudio/">visualstudio</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><span class="category-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -1623,7 +1808,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">39</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">五月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">39</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">五月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1632,7 +1817,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/net/">.net</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/0day/">0day</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ad/">ad</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angularjs/">angularjs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/animation/">animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/appz/">appz</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asciiart/">asciiart</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/batch/">batch</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestpractice/">bestpractice</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/block/">block</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug/">bug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/">c#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/career/">career</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cdn/">cdn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheatsheet/">cheatsheet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmdlet/">cmdlet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/">command</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csharp/">csharp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/database/">database</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddns/">ddns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/delicious/">delicious</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/develop/">develop</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dos/">dos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">download</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/drone/">drone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ebook/">ebook</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ed2k/">ed2k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/embedded/">embedded</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/encoding/">encoding</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/extension/">extension</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/front-end/">front-end</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gallery/">gallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/geek/">geek</a><span class="tag-list-count">30</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gtd/">gtd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guide/">guide</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guideline/">guideline</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gvim/">gvim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/icon/">icon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ide/">ide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ip/">ip</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iso/">iso</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/language/">language</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lesson/">lesson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/link/">link</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/microsoft/">microsoft</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/module/">module</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monthly/">monthly</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mvp/">mvp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nosql/">nosql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oray/">oray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/picture/">picture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powershell/">powershell</a><span class="tag-list-count">1160</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powertip/">powertip</a><span class="tag-list-count">1097</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/productivity/">productivity</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/proxy/">proxy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qq/">qq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/regex/">regex</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/registry/">registry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/release/">release</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/repack/">repack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/resource/">resource</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scm/">scm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/script/">script</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/series/">series</a><span class="tag-list-count">1097</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/server/">server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/skill/">skill</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sp1/">sp1</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study/">study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip/">tip</a><span class="tag-list-count">1096</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip个/">tip个</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tool/">tool</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/translation/">translation</a><span class="tag-list-count">1103</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uac/">uac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/visualstudio/">visualstudio</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vmware/">vmware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/window/">window</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xampp/">xampp</a><span class="tag-list-count">2</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/net/">.net</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/0day/">0day</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ad/">ad</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angularjs/">angularjs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/animation/">animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/appz/">appz</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asciiart/">asciiart</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/batch/">batch</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestpractice/">bestpractice</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/block/">block</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug/">bug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/">c#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/career/">career</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cdn/">cdn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheatsheet/">cheatsheet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmdlet/">cmdlet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/">command</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csharp/">csharp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/database/">database</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddns/">ddns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/delicious/">delicious</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/develop/">develop</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dos/">dos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">download</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/drone/">drone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ebook/">ebook</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ed2k/">ed2k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/embedded/">embedded</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/encoding/">encoding</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/extension/">extension</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/front-end/">front-end</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gallery/">gallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/geek/">geek</a><span class="tag-list-count">30</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gtd/">gtd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guide/">guide</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guideline/">guideline</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gvim/">gvim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/icon/">icon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ide/">ide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ip/">ip</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iso/">iso</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/language/">language</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lesson/">lesson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/link/">link</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/microsoft/">microsoft</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/module/">module</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monthly/">monthly</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mvp/">mvp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nosql/">nosql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oray/">oray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/picture/">picture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powershell/">powershell</a><span class="tag-list-count">1195</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powertip/">powertip</a><span class="tag-list-count">1132</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/productivity/">productivity</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/proxy/">proxy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qq/">qq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/regex/">regex</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/registry/">registry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/release/">release</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/repack/">repack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/resource/">resource</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scm/">scm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/script/">script</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/series/">series</a><span class="tag-list-count">1132</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/server/">server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/skill/">skill</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sp1/">sp1</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study/">study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip/">tip</a><span class="tag-list-count">1131</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip个/">tip个</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tool/">tool</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/translation/">translation</a><span class="tag-list-count">1138</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uac/">uac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/visualstudio/">visualstudio</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vmware/">vmware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/window/">window</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xampp/">xampp</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
