@@ -33,7 +33,7 @@ $xml | ForEach-Object {
 $Code = {
     # receive the visible PowerShell window reference
     param($UI)
-    
+
     # get RSS feed messages
     $RSSFeedUrl = 'https://www.technologyreview.com/stories.rss'
     $xml = Invoke-RestMethod -Uri $RSSFeedUrl
@@ -41,7 +41,7 @@ $Code = {
     # show a random message every 5 seconds
     do
     {
-        $message = $xml | Get-Random 
+        $message = $xml | Get-Random
         $UI.WindowTitle = "{0} {1}" -f $message.title, $message.description
         Start-Sleep -Seconds 5
     } while ($true)

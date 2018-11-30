@@ -26,7 +26,6 @@ Get-ChildItem -Path "c:\sample\*\" -Directory -Recurse |
     Remove-Item -Recurse -WhatIf
 ```
 
-Simply use “*” in your path. To delete all folders two levels below a given path, adjust accordingly:
 只需要在路径中使用 "`*`"。要删除某个指定路径下的两层之下的目录，相应地做以下调整：
 
 ```powershell
