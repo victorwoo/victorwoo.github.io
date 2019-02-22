@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当 Microsoft 下载的免费的 RSAT 工具包含了 ActiveDirectory 模块。它带有一系列管理 Active Directory 账户的命令。
 
@@ -65,5 +64,4 @@ tags:
     $ageLimit = "(lastLogontimestamp<=$FileTime)"
     Get-ADUser -LDAPFilter $ageLimit
 
-<!--more-->
-本文国际来源：[First Steps Automating AD](http://community.idera.com/powershell/powertips/b/tips/posts/first-steps-automating-ad)
+<!--本文国际来源：[First Steps Automating AD](http://community.idera.com/powershell/powertips/b/tips/posts/first-steps-automating-ad)-->

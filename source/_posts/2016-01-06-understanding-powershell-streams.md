@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 提供七种不同的流，可以用来输出信息。流可以帮助筛选信息，因为流可以不输出。实际上一些流默认是不输出的。以下是一个名为 `Test-Stream` 的示例函数。它运行后会将信息发送给所有七种流。
 
@@ -130,5 +129,4 @@ VerbosePreference = Continue
 DebugPreference = Inquire
 ```
 
-<!--more-->
-本文国际来源：[Understanding PowerShell Streams](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-powershell-streams)
+<!--本文国际来源：[Understanding PowerShell Streams](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-powershell-streams)-->

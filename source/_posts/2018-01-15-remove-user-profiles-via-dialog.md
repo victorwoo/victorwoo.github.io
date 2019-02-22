@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们收到了许多关于处理用户配置文件的技能的反馈，所以我们决定增加一系列额外的技能文章。
 
@@ -35,5 +34,4 @@ Get-WmiObject -ClassName Win32_UserProfile -Filter "Special=False AND Loaded=Fal
 
 Are you an experienced professional PowerShell user? Then learning from default course work isn’t your thing. Consider learning the tricks of the trade from one another! Meet the most creative and sophisticated fellow PowerShellers, along with Microsoft PowerShell team members and PowerShell inventor Jeffrey Snover. Attend this years’ PowerShell Conference EU, taking place April 17-20 in Hanover, Germany, for the leading edge. 35 international top speakers, 80 sessions, and security workshops are waiting for you, including two exciting evening events. The conference is limited to 300 delegates. More details at [www.psconf.eu](/powershell/powertips/b/tips/archive/2018/01/15/remove-user-profiles-via-dialog/edit/www.psconf.eu).
 
-<!--more-->
-本文国际来源：[Remove User Profiles Via Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/remove-user-profiles-via-dialog)
+<!--本文国际来源：[Remove User Profiles Via Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/remove-user-profiles-via-dialog)-->

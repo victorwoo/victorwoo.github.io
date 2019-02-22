@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一段您计算机绑定的所有 IP 地址的代码：
 
@@ -40,5 +39,4 @@ tags:
       }
     }
 
-<!--more-->
-本文国际来源：[Get Current IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/get-current-ip-address)
+<!--本文国际来源：[Get Current IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/get-current-ip-address)-->

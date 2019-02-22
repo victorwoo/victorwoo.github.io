@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如之前所示，CredSSP 可以用在远程代码上，避免二次连接问题。不过，要使用 CredSSP 验证方式您得在客户端和服务端分别设置，才能使它们彼此信任。
 
@@ -30,5 +29,4 @@ Invoke-Command { Enable-WSManCredSSP -Role Server } -ComputerName $Server
 
 如您所见，`Enable-WSManCredSSP` 可以远程执行。
 
-<!--more-->
-本文国际来源：[Enabling CredSSP Trust from One Side](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-credssp-trust-from-one-side)
+<!--本文国际来源：[Enabling CredSSP Trust from One Side](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-credssp-trust-from-one-side)-->

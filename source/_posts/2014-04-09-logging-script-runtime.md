@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想记录脚本的运行时间，您可以使用 `Measure-Command`，但是这个 cmdlet 仅适合诊断目的，并且没有计算输出时间。
 
@@ -26,5 +25,4 @@ tags:
     $end = Get-Date
     Write-Host -ForegroundColor Red ('Total Runtime: ' + ($end - $start).TotalSeconds)
     
-<!--more-->
-本文国际来源：[Logging Script Runtime](http://community.idera.com/powershell/powertips/b/tips/posts/logging-script-runtime)
+<!--本文国际来源：[Logging Script Runtime](http://community.idera.com/powershell/powertips/b/tips/posts/logging-script-runtime)-->

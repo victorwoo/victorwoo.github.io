@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 [www.powershellgallery.com](http://www.powershellgallery.com) ，Microsoft 发布了一个公开的脚本和模块的仓库。您可以在这里和其他人交流 PowerShell 代码（请见网站）。
 
@@ -56,5 +55,4 @@ Get-PublishedModuleVersion -Name ISESteroids
 
 这个操作非常非常快，而且可以用来检测已安装的模块，看它们是否是最新版本。
 
-<!--more-->
-本文国际来源：[Getting Latest PowerShell Gallery Module Version](http://community.idera.com/powershell/powertips/b/tips/posts/getting-latest-powershell-gallery-module-version)
+<!--本文国际来源：[Getting Latest PowerShell Gallery Module Version](http://community.idera.com/powershell/powertips/b/tips/posts/getting-latest-powershell-gallery-module-version)-->

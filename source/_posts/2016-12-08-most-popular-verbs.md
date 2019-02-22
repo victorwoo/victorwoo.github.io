@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 让我们来看看您的 PowerShell 中哪个命令动词是最常用的：
 
@@ -147,5 +146,4 @@ Count Name
 
 所以说这头六个动词只占动词总数的 6%，但是占了所有命令的 60% 以上。
 
-<!--more-->
-本文国际来源：[Most Popular Verbs](http://community.idera.com/powershell/powertips/b/tips/posts/most-popular-verbs)
+<!--本文国际来源：[Most Popular Verbs](http://community.idera.com/powershell/powertips/b/tips/posts/most-popular-verbs)-->

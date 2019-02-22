@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `FileSystemWatcher` 可以监控一个文件或文件夹的改变。当有新文件复制到文件夹，或有文件删除或改变，您的 PowerShell 代码会立刻收到通知。
 
@@ -54,5 +53,4 @@ tags:
 
 就在明天的技能中我们将确保您的 `FileSystemWatcher` 不会跳过任何变更！
 
-<!--more-->
-本文国际来源：[Using FileSystemWatcher Correctly (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-filesystemwatcher-correctly-part-1)
+<!--本文国际来源：[Using FileSystemWatcher Correctly (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-filesystemwatcher-correctly-part-1)-->

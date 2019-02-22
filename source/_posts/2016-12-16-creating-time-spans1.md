@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以用 `New-TimeSpan` 来定义时间的“量”，然后对某个日期增加或减少这个量。以下是一个例子：
 
@@ -50,5 +49,4 @@ TotalMinutes      : 1440
 TotalSeconds      : 86400
 TotalMilliseconds : 86400000
 ```
-<!--more-->
-本文国际来源：[Creating Time Spans](http://community.idera.com/powershell/powertips/b/tips/posts/creating-time-spans1)
+<!--本文国际来源：[Creating Time Spans](http://community.idera.com/powershell/powertips/b/tips/posts/creating-time-spans1)-->

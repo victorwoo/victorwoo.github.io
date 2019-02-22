@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -42,5 +41,4 @@ _适用于 PowerShell 所有版本_
     PS> $parts[-1]
     file.txt
 
-<!--more-->
-本文国际来源：[Text Splitting](http://community.idera.com/powershell/powertips/b/tips/posts/text-splitting)
+<!--本文国际来源：[Text Splitting](http://community.idera.com/powershell/powertips/b/tips/posts/text-splitting)-->

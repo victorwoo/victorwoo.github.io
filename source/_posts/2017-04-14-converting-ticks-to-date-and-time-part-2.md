@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何将用时钟周期数表达的日期时间转换为真实的 `DateTime` 格式。然而，现实中有两种不同的时钟周期格式，以下是如何转换数字型日期时间信息的概述：
 
@@ -61,5 +60,4 @@ PS> ($date2 - $date1).Days / 365.25
 
 `FromeFileTime()` 只是增加了 1601 年（因为闰年，实际计算结果略有出入）。Windows 的某些部分（例如 Active Directory）从 1601 年 1 月 1 日开始计算日期。对于这些情况，请使用 `FromeFileTime()` 来获取正确的日期时间。
 
-<!--more-->
-本文国际来源：[Converting Ticks to Date and Time (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-to-date-and-time-part-2)
+<!--本文国际来源：[Converting Ticks to Date and Time (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-to-date-and-time-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在将 PowerShell 脚本发送给别人之前，最好对它进行数字签名。签名的角色类似脚本的“包装器”，可以帮助别人确认是谁编写了这个脚本以及这个脚本是否仍是原始本版本，或是已被篡改过。
 
@@ -43,5 +42,4 @@ Get-ChildItem -Path $PathWithScripts -Filter *.ps1 -Recurse |
 
 使用时间戳服务器会减慢签名的速度但是确保不会用过期的证书签名：例如当某天一本证书过期了，但是签名仍然有效。因为官方的时间戳服务器，签名仍然有效，因为官方的时间戳服务器证明该签名是在证书过期之前应用的。
 
-<!--more-->
-本文国际来源：[Code-Signing Mini-Series (Part 4: Code-Signing PowerShell Files)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-4-code-signing-powershell-files)
+<!--本文国际来源：[Code-Signing Mini-Series (Part 4: Code-Signing PowerShell Files)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-4-code-signing-powershell-files)-->

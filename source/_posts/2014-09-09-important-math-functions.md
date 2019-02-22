@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 不同版本_
 
@@ -22,5 +21,4 @@ _适用于 PowerShell 不同版本_
     [Math]::Max(3,8)
     [Math]::Min(3,8)
 
-<!--more-->
-本文国际来源：[Important Math Functions](http://community.idera.com/powershell/powertips/b/tips/posts/important-math-functions)
+<!--本文国际来源：[Important Math Functions](http://community.idera.com/powershell/powertips/b/tips/posts/important-math-functions)-->

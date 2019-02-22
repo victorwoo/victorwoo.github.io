@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，`Microsoft.Update.Session` 对象可以用来检查一台机器上是否安装了某个更新。有些作者用这种方法查询更新的标题字符串：
 
@@ -76,5 +75,4 @@ Definitionsupdate für Windows Defender – KB2267602 (Definition 1.247.969.0)  
 Definitionsupdate für Windows Defender – KB2267602 (Definition 1.247.966.0)  Installation 17.07.20...
 ```
 
-<!--more-->
-本文国际来源：[Finding Installed Updates (and searching for missing) (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-installed-updates-and-searching-for-missing-part-4)
+<!--本文国际来源：[Finding Installed Updates (and searching for missing) (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-installed-updates-and-searching-for-missing-part-4)-->

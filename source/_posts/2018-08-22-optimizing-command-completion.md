@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 控制台（powershell.exe、pwsh.exe）提供了可扩展的自动完成支持。当您输入了一个空格和一个连字符，按下 `TAB` 键将循环切换可用的参数。
 
@@ -31,5 +30,4 @@ PS C:\> Set-PSReadlineOption -EditMode Emacs
 PS C:\> Set-PSReadlineOption -BellStyle None
 ```
 
-<!--more-->
-本文国际来源：[Optimizing Command Completion](http://community.idera.com/powershell/powertips/b/tips/posts/optimizing-command-completion)
+<!--本文国际来源：[Optimizing Command Completion](http://community.idera.com/powershell/powertips/b/tips/posts/optimizing-command-completion)-->

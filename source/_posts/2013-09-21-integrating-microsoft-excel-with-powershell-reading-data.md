@@ -9,12 +9,10 @@ categories:
 tags:
 - powershell
 - script
-- translation
 ---
 欢迎回到“在PowerShell中操作Excel”三部曲系列文章。在这一系列的前两部分，我们学习了如何将数据写入Excel并且创建“富”报表，以及额外的格式化选项等Microsoft Excel高级用法。
 
 对于IT专家来说，这个故事的另一半是如何从一个Excel文档中读取数据。它的挑战性在于您必须事先知道工作表的结构。我们可以搜索数据，但那是更复杂的情况。我假设您已有一个用过且了其解结构的Excel文档。这样，用PowerShell读取数据就不那么复杂。
-<!--more-->
 
 读取数据
 ========

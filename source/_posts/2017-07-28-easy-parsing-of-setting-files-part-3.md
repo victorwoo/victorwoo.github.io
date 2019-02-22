@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们了解了 `ConvertFrom-StringData` 如何将纯文本的键值对转换为哈希表。还缺少另一个方向的操作：将哈希表转为纯文本。有了它以后，您就拥有了一个将设置和信息保存到文件的小型框架。
 
@@ -107,5 +106,4 @@ Get-Content -Path $path -Encoding UTF8 |
 
 请注意这种方法对简单的字符串和数字型数据有效。它不能处理复杂数据类型，因为这个转换操作并不能序列化对象。
 
-<!--more-->
-本文国际来源：[Easy Parsing of Setting Files (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/easy-parsing-of-setting-files-part-3)
+<!--本文国际来源：[Easy Parsing of Setting Files (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/easy-parsing-of-setting-files-part-3)-->

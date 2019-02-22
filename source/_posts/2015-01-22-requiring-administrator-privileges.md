@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 4.0 及以上版本_
 
@@ -29,5 +28,4 @@ _适用于 PowerShell 4.0 及以上版本_
 
 所以最好不要在 PowerShell 3.0 或更早的环境中使用这个技术。在那些环境中，您还是需要手工确认脚本是否拥有管理员权限。
 
-<!--more-->
-本文国际来源：[Requiring Administrator Privileges](http://community.idera.com/powershell/powertips/b/tips/posts/requiring-administrator-privileges)
+<!--本文国际来源：[Requiring Administrator Privileges](http://community.idera.com/powershell/powertips/b/tips/posts/requiring-administrator-privileges)-->

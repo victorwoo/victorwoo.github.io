@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的系统运行的是 PowerShell 3.0 及以上版本，您可以简化函数参数的属性。布尔属性的缺省值都为 `$true`，所以这在 PowerShell 2.0 中是缺省代码：
 
@@ -39,5 +38,4 @@ tags:
 
 新的代码更精炼，但是无法在 PowerShell 2.0 中运行。
 
-<!--more-->
-本文国际来源：[Simplify Parameter Attributes](http://community.idera.com/powershell/powertips/b/tips/posts/simplify-parameter-attributes)
+<!--本文国际来源：[Simplify Parameter Attributes](http://community.idera.com/powershell/powertips/b/tips/posts/simplify-parameter-attributes)-->

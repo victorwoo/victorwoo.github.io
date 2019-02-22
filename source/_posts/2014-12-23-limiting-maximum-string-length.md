@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -26,5 +25,4 @@ _适用于 PowerShell 所有版本_
       $text
     }
 
-<!--more-->
-本文国际来源：[Limiting Maximum String Length ](http://community.idera.com/powershell/powertips/b/tips/posts/limiting-maximum-string-length)
+<!--本文国际来源：[Limiting Maximum String Length ](http://community.idera.com/powershell/powertips/b/tips/posts/limiting-maximum-string-length)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您只是需要替换文本中字符出现的所有位置，这是很简单的。以下可以将文本中所有的“l”变为大写：
 
@@ -63,5 +62,4 @@ tags:
 	PS> [System.Convert]::ToInt64($sb.ToString(), 2)
 	26868
 
-<!--more-->
-本文国际来源：[Replacing Specific Characters in a Text](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-specific-characters-in-a-text)
+<!--本文国际来源：[Replacing Specific Characters in a Text](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-specific-characters-in-a-text)-->

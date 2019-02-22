@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您可能需要创建自己的对象来存储一系列信息。以下这行简洁的单行代码演示了如何快速创建新的对象：
 
@@ -30,5 +29,4 @@ tags:
 
 请注意 `[Ordered]` 是 PowerShell 3.0 引入的，能够创建有序的哈希表。在 PowerShell 2.0 中，可以使用不带 `[ordered]` 的代码。不带它会导致新对象中的属性顺序是随机的。
 
-<!--more-->
-本文国际来源：[Creating New Objects - Oneliner](http://community.idera.com/powershell/powertips/b/tips/posts/creating-new-objects-oneliner)
+<!--本文国际来源：[Creating New Objects - Oneliner](http://community.idera.com/powershell/powertips/b/tips/posts/creating-new-objects-oneliner)-->

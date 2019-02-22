@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -40,5 +39,4 @@ _适用于 PowerShell 所有版本_
 
 如您所见，您可以控制该对话框的标题栏和显示的文件类型。
 
-<!--more-->
-本文国际来源：[Use Open File Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/use-open-file-dialog)
+<!--本文国际来源：[Use Open File Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/use-open-file-dialog)-->

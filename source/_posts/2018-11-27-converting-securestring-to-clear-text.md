@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 安全字符串的内容并不能很轻易地查看：
 
@@ -51,5 +50,4 @@ Valentin
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Converting SecureString to Clear Text](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-securestring-to-clear-text)
+<!--本文国际来源：[Converting SecureString to Clear Text](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-securestring-to-clear-text)-->

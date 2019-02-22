@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您频繁地向数组添加新元素时，您可能会遇到性能问题。以下是一个演示这个问题的反例，您应该**避免**这样使用：
 
@@ -39,5 +38,4 @@ tags:
     
 两段代码实现相同的效果，但第二段效率要高得多。
 
-<!--more-->
-本文国际来源：[Speeding Up Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-arrays)
+<!--本文国际来源：[Speeding Up Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-arrays)-->

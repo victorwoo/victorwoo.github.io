@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候，您会在任务管理器或 `Get-Process` 输出中看到一系列名为“svchost”的进程。每个“svchost”进程中运行着一个或多个 Windows 服务。
 
@@ -49,5 +48,4 @@ tags:
 
 当您运行这段代码时，您会见到当前运行中的进程列表。当进程名是“svchost”时，您会在新的“Service”列中查看到服务名。
 
-<!--more-->
-本文国际来源：[Analyzing svchost Processes](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-svchost-processes)
+<!--本文国际来源：[Analyzing svchost Processes](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-svchost-processes)-->

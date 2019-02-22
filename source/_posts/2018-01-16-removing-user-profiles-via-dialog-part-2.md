@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用一个用一个网格视图窗口显示所有可用的用户配置文件，并且可以选中一条并删除：
 
@@ -54,5 +53,4 @@ $hashTable.Keys |
 
 现在这个工具使用起来方便多了：网格视图窗口只显示用户名，而当您选择了一项后，可以获取到原始对象，进而做删除操作。
 
-<!--more-->
-本文国际来源：[Removing User Profiles Via Dialog (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/removing-user-profiles-via-dialog-part-2)
+<!--本文国际来源：[Removing User Profiles Via Dialog (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/removing-user-profiles-via-dialog-part-2)-->

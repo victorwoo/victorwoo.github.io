@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有一系列办法能记录脚本的输出结果，但是一个非常偷懒的办法是使用 `Start-Transcript`。在 PowerShell 5 中，这个 cmdlet 不仅在 powershell.exe 中支持，而且在所有宿主中都支持。所以您在 PowerShell ISE 或其它编辑器中都可以使用它。另外，transcript 支持嵌套，所以如果您写一个脚本，您可以安全地在起始处加上 `Start-Transcript` 并且在结尾处加上 `Stop-Transcript`。
 
@@ -29,5 +28,4 @@ $a.Count
 $b.Count
 ```
 
-<!--more-->
-本文国际来源：[Logging Script Output](http://community.idera.com/powershell/powertips/b/tips/posts/logging-script-output)
+<!--本文国际来源：[Logging Script Output](http://community.idera.com/powershell/powertips/b/tips/posts/logging-script-output)-->

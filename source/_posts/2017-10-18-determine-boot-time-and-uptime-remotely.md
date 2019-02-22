@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-CimInstance` 是一个用来获取 WMI 信息的有用的 cmdlet，因为它使用标准的 .NET DateTime 对象，而不是奇怪的 WMI datetime 格式。然而，`Get-CimInstance` 使用 WinRM 来进行远程访问，而传统的 `Get-WmiObject` 使用 DCOM 来进行远程访问。
 
@@ -35,5 +34,4 @@ $min = [int]$upTime.TotalMinutes
 Remove-CimSession -CimSession $session
 ```
 
-<!--more-->
-本文国际来源：[Determine Boot Time and Uptime Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/determine-boot-time-and-uptime-remotely)
+<!--本文国际来源：[Determine Boot Time and Uptime Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/determine-boot-time-and-uptime-remotely)-->

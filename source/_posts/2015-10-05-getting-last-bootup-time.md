@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 3.0 以上版本中，可以很容易地用 `Get-CimInstance` 从 WMI 中获取真实的 DateTime 类型信息。这段代码将告诉您系统上次启动的时间：
 
@@ -34,5 +33,4 @@ tags:
     $lastboot = $object.LastBootUpTime
     [System.Management.ManagementDateTimeConverter]::ToDateTime($lastboot)
 
-<!--more-->
-本文国际来源：[Getting Last Bootup Time](http://community.idera.com/powershell/powertips/b/tips/posts/getting-last-bootup-time)
+<!--本文国际来源：[Getting Last Bootup Time](http://community.idera.com/powershell/powertips/b/tips/posts/getting-last-bootup-time)-->

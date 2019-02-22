@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当转换数据（将它转换为不同的数据类型）时，PowerShell 支持两种不同的方式方式。
 
@@ -26,5 +25,4 @@ tags:
 
 第二行代表“尝试转换”：该转换要么成功要么静默地返回 `$null`。该转换遵循当前的区域设置，所以如果您在一个德文系统众运行这段代码，这段文字被解释成 日-月-年 格式。
 
-<!--more-->
-本文国际来源：[Casting Data with Culture](http://community.idera.com/powershell/powertips/b/tips/posts/casting-data-with-culture)
+<!--本文国际来源：[Casting Data with Culture](http://community.idera.com/powershell/powertips/b/tips/posts/casting-data-with-culture)-->

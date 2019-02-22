@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个在一行代码中交换变量内容的快速技能：
 
@@ -26,5 +25,4 @@ $a
 $b
 ```
 
-<!--more-->
-本文国际来源：[Exchanging Variable Values](http://community.idera.com/powershell/powertips/b/tips/posts/exchanging-variable-values)
+<!--本文国际来源：[Exchanging Variable Values](http://community.idera.com/powershell/powertips/b/tips/posts/exchanging-variable-values)-->

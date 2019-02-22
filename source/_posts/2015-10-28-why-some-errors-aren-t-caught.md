@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 PowerShell 中收到一条红色的错误信息时，您总是可以用一个 `try..catch` 代码块将代码包裹起来，然后自行处理该错误：
 
@@ -32,5 +31,4 @@ tags:
 
 请注意它的副作用：当您告知一个 cmdlet 的错误处理器要在某些错误发生时抛出异常，则该 cmdlet 将会在发生第一个错误的地方抛出异常，并且不会继续执行。
 
-<!--more-->
-本文国际来源：[Why Some Errors Aren't Caught](http://community.idera.com/powershell/powertips/b/tips/posts/why-some-errors-aren-t-caught)
+<!--本文国际来源：[Why Some Errors Aren't Caught](http://community.idera.com/powershell/powertips/b/tips/posts/why-some-errors-aren-t-caught)-->

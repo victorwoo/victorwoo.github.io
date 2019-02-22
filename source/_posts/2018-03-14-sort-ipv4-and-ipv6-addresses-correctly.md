@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您尝试使用 `Sort-Object` 对 IPv4 地址排序的时候，结果是错误的：
 
@@ -83,5 +82,4 @@ $code = {
     2.3.4.5
     10.1.2.3
 
-<!--more-->
-本文国际来源：[Sort IPv4 and IPv6 Addresses Correctly](http://community.idera.com/powershell/powertips/b/tips/posts/sort-ipv4-and-ipv6-addresses-correctly)
+<!--本文国际来源：[Sort IPv4 and IPv6 Addresses Correctly](http://community.idera.com/powershell/powertips/b/tips/posts/sort-ipv4-and-ipv6-addresses-correctly)-->

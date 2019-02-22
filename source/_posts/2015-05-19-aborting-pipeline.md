@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您可能希望当某些条件满足时跳出一个管道。
 
@@ -58,5 +57,4 @@ tags:
     $result = do {
         Get-Chil...
 
-<!--more-->
-本文国际来源：[Aborting Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/aborting-pipeline)
+<!--本文国际来源：[Aborting Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/aborting-pipeline)-->

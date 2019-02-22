@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您希望截掉一个字符串尾部的一些文字。以下是使用字符串操作的传统方法：
 
@@ -39,5 +38,4 @@ tags:
 
 量词“`{0,5}`”告诉正则表达式引擎需要 0 到 5 个数字，引擎会尽可能多地选取。
 
-<!--more-->
-本文国际来源：[Shortening Text](http://community.idera.com/powershell/powertips/b/tips/posts/shortening-text)
+<!--本文国际来源：[Shortening Text](http://community.idera.com/powershell/powertips/b/tips/posts/shortening-text)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您在阅读某些加载到 PowerShell ISE 中的 PowerShell 代码，要获取额外信息十分容易。只需要点击想获得详情的 cmdlet，然后按下 CTRL+SPACE 键即可（译者注：可能会和 IME 切换快捷键冲突）。
 
@@ -19,5 +18,4 @@ tags:
 
 如果您想了解更多，请按 F1 键。PowerShell ISE 将把当前位置的 cmdlet 名送给 `Get-Help` 命令。该帮助将在一个独立的新窗口中显示。
 
-<!--more-->
-本文国际来源：[Getting IntelliSense for Cmdlet (PowerShell ISE)](http://community.idera.com/powershell/powertips/b/tips/posts/getting-intellisense-for-cmdlet-powershell-ise)
+<!--本文国际来源：[Getting IntelliSense for Cmdlet (PowerShell ISE)](http://community.idera.com/powershell/powertips/b/tips/posts/getting-intellisense-for-cmdlet-powershell-ise)-->

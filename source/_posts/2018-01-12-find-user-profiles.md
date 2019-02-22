@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们收到了许多关于处理用户配置文件的技能的反馈，所以我们决定增加一系列额外的技能文章。
 
@@ -27,5 +26,4 @@ $selected = Get-CimInstance -ClassName Win32_UserProfile -Filter "Special=False"
 $selected
 ```
 
-<!--more-->
-本文国际来源：[Find User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/find-user-profiles)
+<!--本文国际来源：[Find User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/find-user-profiles)-->

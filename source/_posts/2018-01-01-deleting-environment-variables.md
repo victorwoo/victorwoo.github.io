@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何在所有可用的范围内设置环境变量的方法。但是如何移除环境变量呢？
 
@@ -78,5 +77,4 @@ function Set-EnvironmentVariable
 PS C:\> Set-EnvironmentVariable -VariableName test -VariableValue "" -Target User
 ```
 
-<!--more-->
-本文国际来源：[Deleting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-environment-variables)
+<!--本文国际来源：[Deleting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-environment-variables)-->

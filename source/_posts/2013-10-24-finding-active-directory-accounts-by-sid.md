@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您已知账户的 SID 并且希望找到相应的 Active Directory 账户，那么 LDAP 查询并不适合这项工作。为了使它能工作，您需要将 SID 的格式改成符合 LDAP 规则的格式，这不是一个简单的过程。
 
@@ -22,5 +21,4 @@ tags:
 	$account
 	$account.distinguishedName
  
-<!--more-->
-本文国际来源：[Finding Active Directory Accounts by SID](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-accounts-by-sid)
+<!--本文国际来源：[Finding Active Directory Accounts by SID](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-accounts-by-sid)-->

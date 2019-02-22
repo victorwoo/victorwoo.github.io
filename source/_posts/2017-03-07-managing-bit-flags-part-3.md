@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 对十进制数设置比特标志位不是很难，但是不够直观。以下是一个快速的新方法，演示如何设置或取消一个数字中特定的比特：
 
@@ -44,5 +43,4 @@ $decimal = $decimal -band -bnot [Math]::Pow(2, $bit)
 1100001111101
 ```
 
-<!--more-->
-本文国际来源：[Managing Bit Flags (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-3)
+<!--本文国际来源：[Managing Bit Flags (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-3)-->

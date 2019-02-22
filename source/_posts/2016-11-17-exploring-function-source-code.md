@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中，cmdlet 和 function 的唯一根本区别是它们是怎么编程的：函数用的是纯粹的 PowerShell 代码，这也是查看它们的源代码，并学习新东西的有趣之处。
 
@@ -35,5 +34,4 @@ Get-Command -Name Format-Hex -CommandType Function |
   clip.exe
 ```
 
-<!--more-->
-本文国际来源：[Exploring Function Source Code](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-function-source-code)
+<!--本文国际来源：[Exploring Function Source Code](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-function-source-code)-->

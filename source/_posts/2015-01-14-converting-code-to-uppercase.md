@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -20,5 +19,4 @@ _适用于 PowerShell 3.0 及以上版本_
 To turn text to all lowercase letters, press CTRL+U.
 要将文本转为全小写，请按 `CTRL+U`。
 
-<!--more-->
-本文国际来源：[Converting Code to Uppercase](http://community.idera.com/powershell/powertips/b/tips/posts/converting-code-to-uppercase)
+<!--本文国际来源：[Converting Code to Uppercase](http://community.idera.com/powershell/powertips/b/tips/posts/converting-code-to-uppercase)-->

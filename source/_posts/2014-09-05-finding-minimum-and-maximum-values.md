@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell 所有版本_
 
 如果您的输入数据有多个属性，只需要加上 `-Property` 参数，并选择您想检测的属性即可。
 
-<!--more-->
-本文国际来源：[Finding Minimum and Maximum Values](http://community.idera.com/powershell/powertips/b/tips/posts/finding-minimum-and-maximum-values)
+<!--本文国际来源：[Finding Minimum and Maximum Values](http://community.idera.com/powershell/powertips/b/tips/posts/finding-minimum-and-maximum-values)-->

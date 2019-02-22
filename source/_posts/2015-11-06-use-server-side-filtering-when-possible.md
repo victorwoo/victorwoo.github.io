@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您跨网络获取信息时，请注意只能在最后一步使用客户端技术，例如 `Where-Object`。服务端过滤技术更有效率。
 
@@ -34,5 +33,4 @@ tags:
     # any user with NO mail address
     Get-ADUser -LDAPFilter '(!mail=*)'
 
-<!--more-->
-本文国际来源：[Use Server-Side Filtering When Possible](http://community.idera.com/powershell/powertips/b/tips/posts/use-server-side-filtering-when-possible)
+<!--本文国际来源：[Use Server-Side Filtering When Possible](http://community.idera.com/powershell/powertips/b/tips/posts/use-server-side-filtering-when-possible)-->

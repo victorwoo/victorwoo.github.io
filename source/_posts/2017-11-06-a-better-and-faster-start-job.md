@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Start-Job` 将一个脚本块发送到一个新的 PowerShell 进程，这样它可以独立并行运行。以下是一个非常简单的例子，演示 job 背后的概念：
 
@@ -204,5 +203,4 @@ function Start-JobInProcess
 }
 ```
 
-<!--more-->
-本文国际来源：[A Better (and Faster) Start-Job](http://community.idera.com/powershell/powertips/b/tips/posts/a-better-and-faster-start-job)
+<!--本文国际来源：[A Better (and Faster) Start-Job](http://community.idera.com/powershell/powertips/b/tips/posts/a-better-and-faster-start-job)-->

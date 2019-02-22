@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -26,5 +25,4 @@ _适用于 PowerShell 所有版本_
 
     Get-WmiObject -Query 'Select * From Win32_PnPEntity where DeviceID Like "USBSTOR%"'
 
-<!--more-->
-本文国际来源：[Finding Attached USB Sticks](http://community.idera.com/powershell/powertips/b/tips/posts/finding-attached-usb-sticks)
+<!--本文国际来源：[Finding Attached USB Sticks](http://community.idera.com/powershell/powertips/b/tips/posts/finding-attached-usb-sticks)-->

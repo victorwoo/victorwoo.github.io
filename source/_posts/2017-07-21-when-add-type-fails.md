@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Add-Type` 可以将外部 DLL 文件中的 .NET 程序集载入 PowerShell 中。这在大多数情况下工作量好，以下是一个调用示例（当然，需要 SharePoint DLL 可用）：
 
@@ -29,5 +28,4 @@ PS> [Reflection.Assembly]::LoadFrom("C:\SharepointCSMO\Microsoft.SharePoint.Clie
 
 为什么 `Add-Type` 方法会失败？`Add-Type` 维护着一个定制的和程序集相关的版本号。所以如果您试图加载的文件版本比期望的低，`Add-Type` 会拒绝加载它。相比之下，`LoadFrom()` 不关心版本号，所以和旧版本兼容。
 
-<!--more-->
-本文国际来源：[When Add-Type Fails…](http://community.idera.com/powershell/powertips/b/tips/posts/when-add-type-fails)
+<!--本文国际来源：[When Add-Type Fails…](http://community.idera.com/powershell/powertips/b/tips/posts/when-add-type-fails)-->

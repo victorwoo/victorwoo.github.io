@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 为了提高可读性，您可以将超长的 PowerShell 代码行拆分成多行。
 
@@ -35,5 +34,4 @@ tags:
       $_.Status -eq 'Running'
     }
 
-<!--more-->
-本文国际来源：[Splitting Long Lines](http://community.idera.com/powershell/powertips/b/tips/posts/splitting-long-lines)
+<!--本文国际来源：[Splitting Long Lines](http://community.idera.com/powershell/powertips/b/tips/posts/splitting-long-lines)-->

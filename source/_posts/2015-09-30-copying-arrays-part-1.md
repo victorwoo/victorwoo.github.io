@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您复制变量内容时，您也可以只拷贝“引用”（内存地址），而不是内容。请看这个例子：
 
@@ -31,5 +30,4 @@ tags:
     $b[0]
     $a[0]
 
-<!--more-->
-本文国际来源：[Copying Arrays (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/copying-arrays-part-1)
+<!--本文国际来源：[Copying Arrays (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/copying-arrays-part-1)-->

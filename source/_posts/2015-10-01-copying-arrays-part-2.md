@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何用 `Clone()` 方法安全地“克隆”一个数组。这将把一个数组的内容复制到一个新的数组。
 
@@ -39,5 +38,4 @@ tags:
     $b[0]
     $a[0]
 
-<!--more-->
-本文国际来源：[Copying Arrays (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/copying-arrays-part-2)
+<!--本文国际来源：[Copying Arrays (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/copying-arrays-part-2)-->

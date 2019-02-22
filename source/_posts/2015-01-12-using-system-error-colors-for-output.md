@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -54,5 +53,4 @@ _适用于 PowerShell 所有版本_
     DebugBackgroundColor                      : #00FFFFFF
     (...)
 
-<!--more-->
-本文国际来源：[Using System Error Colors for Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-system-error-colors-for-output)
+<!--本文国际来源：[Using System Error Colors for Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-system-error-colors-for-output)-->

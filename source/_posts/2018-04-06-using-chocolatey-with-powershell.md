@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Chocolatey 是一个 Windows 平台上免费的包管理器，可以用来下载和安装软件。
 
@@ -105,5 +104,4 @@ PS>
 
 编辑器就启动了。
 
-<!--more-->
-本文国际来源：[Using Chocolatey with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/using-chocolatey-with-powershell)
+<!--本文国际来源：[Using Chocolatey with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/using-chocolatey-with-powershell)-->

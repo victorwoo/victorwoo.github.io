@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个在 PowerShell 中接受一个字符串数组并返回一个随机的字符串，可以用作自定义问候语的简单方法：
 
@@ -51,5 +50,4 @@ $greetings | Get-Random
 
 完成以后，PowerShell 将会使用自定义信息向您问候。
 
-<!--more-->
-本文国际来源：[Greetings of the Day](http://community.idera.com/powershell/powertips/b/tips/posts/greetings-of-the-day)
+<!--本文国际来源：[Greetings of the Day](http://community.idera.com/powershell/powertips/b/tips/posts/greetings-of-the-day)-->

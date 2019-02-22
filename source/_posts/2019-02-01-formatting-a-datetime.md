@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您拥有一个真正的 `DateTime` 对象（比如不是字符串）时，您就拥有了许多强大的格式化功能。您可以直接获取一个 `DateTime` 对象：
 
@@ -95,5 +94,4 @@ PS>
 PS> [System.Globalization.CultureInfo]::GetCultures('Installed') | Out-GridView -PassThru
 ```
 
-<!--more-->
-本文国际来源：[Formatting a DateTime](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatting-a-datetime)
+<!--本文国际来源：[Formatting a DateTime](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatting-a-datetime)-->

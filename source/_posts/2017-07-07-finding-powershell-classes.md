@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，您可以定义 PowerShell 类。它们是动态定义的，并且存在于内存中。那么要如何知道这些类的名字？
 
@@ -72,5 +71,4 @@ HelperStuff
 Employee
 ```
 
-<!--more-->
-本文国际来源：[Finding PowerShell Classes](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-classes)
+<!--本文国际来源：[Finding PowerShell Classes](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-classes)-->

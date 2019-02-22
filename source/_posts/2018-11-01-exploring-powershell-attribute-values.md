@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许知道，您可以对变量和参数添加属性来更有针对性地定义它们。例如，以下代码定义了一个包含只允许三个字符串之一的必选参数的函数：
 
@@ -118,5 +117,4 @@ SupportsTransactions    bool
 TypeId                  System.Object
 ```
 
-<!--more-->
-本文国际来源：[Exploring PowerShell Attribute Values](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/exploring-powershell-attribute-values)
+<!--本文国际来源：[Exploring PowerShell Attribute Values](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/exploring-powershell-attribute-values)-->

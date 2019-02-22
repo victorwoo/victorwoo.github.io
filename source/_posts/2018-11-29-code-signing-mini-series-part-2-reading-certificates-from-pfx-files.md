@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们创建了新的代码签名测试证书，它既是一个 pfx 文件，同时也位于您的证书存储中。今天，我们将看看如何在 PowerShell 中加载这些（或来自其它来源的任意其它证书）。
 
@@ -71,5 +70,4 @@ Thumbprint                                Subject
 
 请关注下一个技能，学习如何存取您个人证书存储中的证书。
 
-<!--more-->
-本文国际来源：[Code-Signing Mini-Series (Part 2: Reading Certificates from PFX Files)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-2-reading-certificates-from-pfx-files)
+<!--本文国际来源：[Code-Signing Mini-Series (Part 2: Reading Certificates from PFX Files)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-2-reading-certificates-from-pfx-files)-->

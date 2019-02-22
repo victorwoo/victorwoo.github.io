@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们介绍了 `Get-Software` 函数，它可以获取本地计算机已安装的软件。
 
@@ -69,5 +68,4 @@ tags:
 
 否则，`Invoke-Command` 将在指定的远程计算机（支持多台）上运行这段代码。在这个例子中，`Invoke-Command` 将过滤参数传递给远程代码。
 
-<!--more-->
-本文国际来源：[Getting Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/getting-installed-software-remotely)
+<!--本文国际来源：[Getting Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/getting-installed-software-remotely)-->

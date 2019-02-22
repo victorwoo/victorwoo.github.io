@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您希望检查单个对象和它的属性时，将对象用管道输出到 `Out-GridView` 指令不是太方便：网格视图窗口显示一个（非常长的）单行属性。试试这行代码，自己体验一下：
 
@@ -88,5 +87,4 @@ PS> Get-Process -Id $pid | Select-Object -Property * | Remove-EmptyProperty -AsH
 PS> Get-ADUser $env:username -Properties * | Remove-EmptyProperty -AsHashTable | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Listing Properties with Values (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/listing-properties-with-values-part-3)
+<!--本文国际来源：[Listing Properties with Values (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/listing-properties-with-values-part-3)-->

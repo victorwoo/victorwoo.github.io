@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WMI 是一个很好的信息源，但要找到正确的 WMI 类来查询并不总是那么容易。
 
@@ -36,5 +35,4 @@ WMI 是一个很好的信息源，但要找到正确的 WMI 类来查询并不�
     
     Search-WMI -Keyword network
 
-<!--more-->
-本文国际来源：[Search WMI for Useful Information](http://community.idera.com/powershell/powertips/b/tips/posts/search-wmi-for-useful-information)
+<!--本文国际来源：[Search WMI for Useful Information](http://community.idera.com/powershell/powertips/b/tips/posts/search-wmi-for-useful-information)-->

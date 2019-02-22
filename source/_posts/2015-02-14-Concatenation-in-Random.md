@@ -73,7 +73,6 @@ internal class Generator
 注意，虽然结果有些不符合常理，但是对于个人来说，中奖概率还是均等的。
 
 完整的代码如下：
-<!--more-->
 
 ```c#
 using System;

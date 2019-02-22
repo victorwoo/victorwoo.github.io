@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5.1 终于发布了管理本地用户账户的 cmdlet。要获取本地用户账户的列表，请使用 `Get-LocalUser` 并将结果通过管道传给 `Select-Object` 命令来查看所有属性：
 
@@ -67,5 +66,4 @@ ObjectClass            : User
 ...
 ```
 
-<!--more-->
-本文国际来源：[Managing Local Users](http://community.idera.com/powershell/powertips/b/tips/posts/managing-local-users)
+<!--本文国际来源：[Managing Local Users](http://community.idera.com/powershell/powertips/b/tips/posts/managing-local-users)-->

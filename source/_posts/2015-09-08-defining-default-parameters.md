@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以为任意参数定义缺省值，所以如果您总是需要传同一个缺省值给 `Get-ChildItem` 的 `-Path` 参数，那么可以这么做：
 
@@ -35,5 +34,4 @@ PowerShell 可以为任意参数定义缺省值，所以如果您总是需要传
 
     PS> $PSDefaultParameterValues.Clear()
 
-<!--more-->
-本文国际来源：[Defining Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/defining-default-parameters)
+<!--本文国际来源：[Defining Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/defining-default-parameters)-->

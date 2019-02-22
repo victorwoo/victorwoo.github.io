@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否曾需要将数字转换为以零开头的字符串，例如生成服务器名？只需要使用 PowerShell 的 `-f` 操作符：
 
@@ -30,5 +29,4 @@ server0012
 
 要在左侧补零，使用 `d`（digit 的缩写）加上您需要的数字位数即可。
 
-<!--more-->
-本文国际来源：[Creating Leading Zeros](http://community.idera.com/powershell/powertips/b/tips/posts/creating-leading-zeros)
+<!--本文国际来源：[Creating Leading Zeros](http://community.idera.com/powershell/powertips/b/tips/posts/creating-leading-zeros)-->

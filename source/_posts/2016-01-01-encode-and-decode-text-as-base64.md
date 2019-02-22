@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是将文本用 Base64 编码的简单方法：
 
@@ -43,5 +42,4 @@ $text = 'SABlAGwAbABvACAAVwBvAHIAbABkACEA'
 
 您也可以使用这段代码来解码上面那段编码后的命令，看看它做了什么。只需要用编码过的命令替换掉 `$test`。
 
-<!--more-->
-本文国际来源：[Encode and Decode Text as Base64 ](http://community.idera.com/powershell/powertips/b/tips/posts/encode-and-decode-text-as-base64)
+<!--本文国际来源：[Encode and Decode Text as Base64 ](http://community.idera.com/powershell/powertips/b/tips/posts/encode-and-decode-text-as-base64)-->

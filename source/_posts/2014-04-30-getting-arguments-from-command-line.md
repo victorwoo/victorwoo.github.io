@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技巧中，我们演示了如何从命令行中提取命令名，并忽略所有参数。今天，您将学习到如何用一个函数同时获取到命令名和参数。该函数将命令行分割为实际的命令名和它的参数，并返回一个自定义对象：
 
@@ -78,5 +77,4 @@ tags:
       Sort-Object -Property Count -Descending |
       Out-GridView 
 
-<!--more-->
-本文国际来源：[Getting Arguments from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-arguments-from-command-line)
+<!--本文国际来源：[Getting Arguments from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-arguments-from-command-line)-->

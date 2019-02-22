@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当从 CSV 中导入数据到 Excel 时，您无法指定格式，包括字体和颜色等。从 HTML 数据中导入 Excel 则可以包含格式。以下是一个演示创建一个带格式的彩色 Excel 报告是多么容易的例子，假设报表中包含一张表格：
 
@@ -45,5 +44,4 @@ Invoke-Item -Path $PathHTML
 Start-Process -FilePath excel -ArgumentList """$PathHTML"""
 ```
 
-<!--more-->
-本文国际来源：[Creating Excel Reports (Part 2 – Colorful)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports-part-2-colorful)
+<!--本文国际来源：[Creating Excel Reports (Part 2 – Colorful)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports-part-2-colorful)-->

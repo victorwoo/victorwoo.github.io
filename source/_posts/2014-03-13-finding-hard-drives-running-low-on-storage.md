@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 可以通过 WMI 轻松地获取驱动器信息。以下代码可以从您的本地计算机中获取驱动器信息（用 `-ComputerName` 可以存取远程系统的信息）。
 
@@ -25,5 +24,4 @@ tags:
     Get-WmiObject -Class Win32_LogicalDisk -Filter "DriveType=3 and Freespace<$limit" | 
       Select-Object -Property VolumeName, Freespace, DeviceID 
 
-<!--more-->
-本文国际来源：[Finding Hard Drives Running Low on Storage](http://community.idera.com/powershell/powertips/b/tips/posts/finding-hard-drives-running-low-on-storage)
+<!--本文国际来源：[Finding Hard Drives Running Low on Storage](http://community.idera.com/powershell/powertips/b/tips/posts/finding-hard-drives-running-low-on-storage)-->

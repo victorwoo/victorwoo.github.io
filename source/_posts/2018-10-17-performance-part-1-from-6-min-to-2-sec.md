@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个在许多 PowerShell 脚本中常见的错误：
 
@@ -49,5 +48,4 @@ $bucket.Count
 
 结果完全相同，但和消耗 6+ 分钟不同的是，它在 PowerShell 5.1 上只用了 46 秒钟，而在 PowerShell 6.1 上仅仅用了 1.46 秒。我们将会用另一个技巧来进一步提升性能。
 
-<!--more-->
-本文国际来源：[Performance (Part 1): From 6 min to 2 sec](http://community.idera.com/powershell/powertips/b/tips/posts/performance-part-1-from-6-min-to-2-sec)
+<!--本文国际来源：[Performance (Part 1): From 6 min to 2 sec](http://community.idera.com/powershell/powertips/b/tips/posts/performance-part-1-from-6-min-to-2-sec)-->

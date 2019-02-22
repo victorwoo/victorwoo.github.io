@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望实时处理新的事件日志条目，以下是当新的事件条目写入时，PowerShell 代码能自动收到通知的方法：
 
@@ -64,5 +63,4 @@ PS> Unregister-Event -SourceIdentifier NewEventHandler
 PS> Remove-Job -Name NewEventHandler
 ```
 
-<!--more-->
-本文国际来源：[Responding to New Event Log Entries (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/responding-to-new-event-log-entries-part-1)
+<!--本文国际来源：[Responding to New Event Log Entries (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/responding-to-new-event-log-entries-part-1)-->

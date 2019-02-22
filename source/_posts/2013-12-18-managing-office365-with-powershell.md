@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您知道吗？您也可以用 PowerShell 管理您的 Office365 账户。如果您拥有一个 Office365 账户，请试试以下脚本：
 
@@ -33,5 +32,4 @@ tags:
 
 	$import.ExportedCommands
 
-<!--more-->
-本文国际来源：[Managing Office365 with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-office365-with-powershell)
+<!--本文国际来源：[Managing Office365 with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-office365-with-powershell)-->

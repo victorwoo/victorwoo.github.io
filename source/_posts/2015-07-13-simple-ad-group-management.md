@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您已下载安装了微软免费的 RSAT 工具，那么管理 AD 组合组成员会相当轻松。以下几行代码演示了如何入门：
 
@@ -32,5 +31,4 @@ tags:
     # list members of group
     Get-ADGroupMember -Identity PSGurus
 
-<!--more-->
-本文国际来源：[Simple AD Group Management](http://community.idera.com/powershell/powertips/b/tips/posts/simple-ad-group-management)
+<!--本文国际来源：[Simple AD Group Management](http://community.idera.com/powershell/powertips/b/tips/posts/simple-ad-group-management)-->

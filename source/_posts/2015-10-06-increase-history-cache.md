@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 PowerShell 会话中工作一段时间以后，命令历史可能十分有用。每个会话存储了您输入的所有命令，您可以按上下键浏览已输入的命令。
 
@@ -35,5 +34,4 @@ tags:
 
 历史缓存最大允许的容量是 32KB-1。
 
-<!--more-->
-本文国际来源：[Increase History Cache](http://community.idera.com/powershell/powertips/b/tips/posts/increase-history-cache)
+<!--本文国际来源：[Increase History Cache](http://community.idera.com/powershell/powertips/b/tips/posts/increase-history-cache)-->

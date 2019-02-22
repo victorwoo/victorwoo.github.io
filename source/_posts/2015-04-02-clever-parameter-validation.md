@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -78,5 +77,4 @@ _适用于 PowerShell 2.0 及以上版本_
       "You chose $Weekday"
     }
 
-<!--more-->
-本文国际来源：[Clever Parameter Validation](http://community.idera.com/powershell/powertips/b/tips/posts/clever-parameter-validation)
+<!--本文国际来源：[Clever Parameter Validation](http://community.idera.com/powershell/powertips/b/tips/posts/clever-parameter-validation)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您启动一个程序时，`$env:Path` 环境变量列出了 Windows 搜索路径中的所有目录。类似地，`$env:PSModulePath` 列出了 PowerShell 搜索 PowerShell 模块（包括它的自动加载模块）的所有目录。
 
@@ -21,5 +20,4 @@ tags:
 
 顺便说一下，第三行（在 Program Files 中的）是在 PowerShell 4.0 中才加入的。
 
-<!--more-->
-本文国际来源：[Displaying Path Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-path-environment-variables)
+<!--本文国际来源：[Displaying Path Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-path-environment-variables)-->

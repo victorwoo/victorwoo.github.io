@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的客户端没有和您的域控制器正常地同步时间，请使用以下代码。这段代码需要管理员特权：
 
@@ -19,5 +18,4 @@ tags:
 w32tm.exe /resync /force
 ```
 
-<!--more-->
-本文国际来源：[Force Client Time Resync](http://community.idera.com/powershell/powertips/b/tips/posts/force-client-time-resync)
+<!--本文国际来源：[Force Client Time Resync](http://community.idera.com/powershell/powertips/b/tips/posts/force-client-time-resync)-->

@@ -151,7 +151,6 @@ Javascript 的时间转换
 
 源代码
 ======
-<!--more-->
 
 	$email = 'victorwoo@gmail.com'
 	$password = 'xxx'

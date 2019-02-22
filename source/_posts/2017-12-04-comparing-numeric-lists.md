@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个脚本常常需要对比两个列表是否相等，或者某个列表是否缺失了某个元素。这种情况下，您可以使用 `HashSet`，而不用手动写代码。请看：
 
@@ -66,5 +65,4 @@ $copy.SymmetricExceptWith($set2)
     Exclusive in both (no duplicates)
     7 9 111
 
-<!--more-->
-本文国际来源：[Comparing Numeric Lists](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-numeric-lists)
+<!--本文国际来源：[Comparing Numeric Lists](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-numeric-lists)-->

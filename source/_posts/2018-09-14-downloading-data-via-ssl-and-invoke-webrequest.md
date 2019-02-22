@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Invoke-WebRequest` 可以下载文件，但是对 HTTPS URL 可能会遇到麻烦。要使用 SSL 连接，您可能需要改变缺省的设置。以下是一个可用的示例：
 
@@ -24,5 +23,4 @@ $AllProtocols = [Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 Invoke-WebRequest -OutFile $OutFile -UseBasicParsing -Uri $url
 ```
 
-<!--more-->
-本文国际来源：[Downloading Data via SSL and Invoke-WebRequest](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-data-via-ssl-and-invoke-webrequest)
+<!--本文国际来源：[Downloading Data via SSL and Invoke-WebRequest](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-data-via-ssl-and-invoke-webrequest)-->

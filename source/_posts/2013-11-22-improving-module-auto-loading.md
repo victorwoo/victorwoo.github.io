@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您按照[上一个技巧][Loading Modules Automatically]进行设置以后，PowerShell 3.0 便可以自动加载 Module。然而，对于某些 Module，该技术没有效果。那些 Cmdlet 仍然只能通过 `Import-Module` 的方式来导入 Module。
 
@@ -25,5 +24,4 @@ tags:
 
 [Loading Modules Automatically]: "/powershell/tip/2013/11/21/loading-modules-automatically"
 
-<!--more-->
-本文国际来源：[Improving Module Auto-loading](http://community.idera.com/powershell/powertips/b/tips/posts/improving-module-auto-loading)
+<!--本文国际来源：[Improving Module Auto-loading](http://community.idera.com/powershell/powertips/b/tips/posts/improving-module-auto-loading)-->

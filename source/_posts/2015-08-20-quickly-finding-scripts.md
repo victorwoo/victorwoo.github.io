@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要在“我的文档”文件夹的任意位置中快速定位一个 PowerShell 脚本，请试试这个 `Find-Script` 函数：
 
@@ -42,5 +41,4 @@ tags:
 
 要设置一个不同的搜索跟路径，请使用 `-Path` 参数。通过这种方式，您可以很容易地在您的 USB 媒体或是网络路径中搜索。
 
-<!--more-->
-本文国际来源：[Quickly Finding Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-finding-scripts)
+<!--本文国际来源：[Quickly Finding Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-finding-scripts)-->

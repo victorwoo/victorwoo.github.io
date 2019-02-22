@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您需要以表格的形式显示、打印，或保存为 PDF，使用 WPF (Windows Presentation Foundation) 可能是一种好方法。以前，WPF 是用于定义用户界面，但是您可以用它来定义表格，填充数据，然后打印或者保存它们。
 
@@ -135,5 +134,4 @@ $document.ColumnWidth = $printDialog.PrintableAreaWidth
 $printDialog.PrintDocument($paginator.DocumentPaginator, "WPF-Printing from PowerShell")
 ```
 
-<!--more-->
-本文国际来源：[Printing Tables from PowerShell (using WPF)](http://community.idera.com/powershell/powertips/b/tips/posts/printing-tables-from-powershell-using-wpf)
+<!--本文国际来源：[Printing Tables from PowerShell (using WPF)](http://community.idera.com/powershell/powertips/b/tips/posts/printing-tables-from-powershell-using-wpf)-->

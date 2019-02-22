@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 默认情况下不支持原生的 cmd.exe 命令，例如 "`dir`"。替代的是，它使用历史别名 "`dir`" 指向最接近的 PowerShell cmdlet：
 
@@ -43,5 +42,4 @@ PS C:\> cmd.exe --% /c dir /w
 PS C:\> cmd.exe --% /c dir %WINDIR% /w
 ```
 
-<!--more-->
-本文国际来源：[Running CMD commands in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/running-cmd-commands-in-powershell)
+<!--本文国际来源：[Running CMD commands in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/running-cmd-commands-in-powershell)-->

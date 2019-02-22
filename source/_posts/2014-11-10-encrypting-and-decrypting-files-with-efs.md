@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -23,5 +22,4 @@ _适用于 PowerShell 所有版本_
 
 请注意需要事先设置了 EFS，并且您的公司可能需要一个集中存放的备份加密秘钥。
 
-<!--more-->
-本文国际来源：[Encrypting and Decrypting Files with EFS](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-and-decrypting-files-with-efs)
+<!--本文国际来源：[Encrypting and Decrypting Files with EFS](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-and-decrypting-files-with-efs)-->

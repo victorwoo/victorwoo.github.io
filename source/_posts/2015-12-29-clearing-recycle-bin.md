@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 5.0 之前，要清除回收站得手工删除每个驱动器根目录下隐藏的 $Recycle.Bin 文件夹里的内容。
 
@@ -19,5 +18,4 @@ tags:
 
 幸运的事，PowerShell 5.0 终于提供了 `Clear-RecycleBin` Cmdlet。
 
-<!--more-->
-本文国际来源：[Clearing Recycle Bin](http://community.idera.com/powershell/powertips/b/tips/posts/clearing-recycle-bin)
+<!--本文国际来源：[Clearing Recycle Bin](http://community.idera.com/powershell/powertips/b/tips/posts/clearing-recycle-bin)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 内置了一个 WEB 客户端，它可以获取 HTML 内容。对于简单的 WEB 页面分析，使用 `-UseBasicParsing` 参数即可。该操作将原原本本地获取原始的 HTML 内容，例如，包含嵌入的链接和图像的列表：
 
@@ -35,5 +34,4 @@ $page.Links | Select-Object InnerText, href | Out-GridView -Title Links
 
 请注意 `Invoke-WebRequest` 需要您实现设置并且至少打开一次 Internet Explorer，除非您指定了 `-UseBasicParsing`。
 
-<!--more-->
-本文国际来源：[Analyzing Web Page Content](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/analyzing-web-page-content)
+<!--本文国际来源：[Analyzing Web Page Content](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/analyzing-web-page-content)-->

@@ -13,7 +13,6 @@ tags:
 
     timeout /t 7200 /nobreak & shutdown /h
 
-<!--more-->
 注意事项：
 
 1. `shutdown /h /t xxx` 这样的组合是没用的。

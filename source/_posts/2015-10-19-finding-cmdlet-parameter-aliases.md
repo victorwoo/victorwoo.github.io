@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell cmdlet 和函数可以带有参数，并且这些参数可以有（更短的）别名。一个典型的例子是 `-ErrorAction` 通用参数，它也可以通过 `-ea` 别名访问。
 
@@ -24,5 +23,4 @@ PowerShell cmdlet 和函数可以带有参数，并且这些参数可以有（�
     (Get-Command $command).Parameters.Values |
       Select-Object -Property Name, Aliases
 
-<!--more-->
-本文国际来源：[Finding Cmdlet Parameter Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/finding-cmdlet-parameter-aliases)
+<!--本文国际来源：[Finding Cmdlet Parameter Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/finding-cmdlet-parameter-aliases)-->

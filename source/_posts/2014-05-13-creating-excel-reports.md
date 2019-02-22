@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 对象可以很容易地通过 Microsoft Excel 打开。只需要将对象导出成 CSV，然后通过关联的应用程序打开 CSV 文件（如果装了 Excel，那么将用 Excel 打开）。
 
@@ -28,5 +27,4 @@ PowerShell 对象可以很容易地通过 Microsoft Excel 打开。只需要将�
 
 请注意 `-UseCulture` 如何根据您的区域设置自动选择正确的分隔符。 
 
-<!--more-->
-本文国际来源：[Creating Excel Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports)
+<!--本文国际来源：[Creating Excel Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports)-->

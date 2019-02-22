@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 不久前有一些关于 LINQ，一个 .NET 查询语言，在 PowerShell 中用来提升代码速度的报告。
 
@@ -46,5 +45,4 @@ $numbers = Get-ChildItem -Path $env:windir -File | Select-Object -ExpandProperty
 
 If Linq was better integrated into PowerShell in the future, it would indeed be highly interesting.
 
-<!--more-->
-本文国际来源：[Truth about LINQ in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/truth-about-linq-in-powershell)
+<!--本文国际来源：[Truth about LINQ in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/truth-about-linq-in-powershell)-->

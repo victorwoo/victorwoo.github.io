@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在上一个技巧中您学到了只有将 cmdlet 的 `-ErrorAction` 参数设为 `"Stop"`，才可以用异常处理器捕获 cmdlet 的错误。但使用这种方式改变了 cmdlet 的行为。它将导致 cmdlet 发生第一个错误的时候停止执行。
 
@@ -52,5 +51,4 @@ tags:
 
 ![](/img/2014-04-18-logging-all-errors-001.png)
 
-<!--more-->
-本文国际来源：[Logging All Errors](http://community.idera.com/powershell/powertips/b/tips/posts/logging-all-errors)
+<!--本文国际来源：[Logging All Errors](http://community.idera.com/powershell/powertips/b/tips/posts/logging-all-errors)-->

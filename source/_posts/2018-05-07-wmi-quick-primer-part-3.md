@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了为什么 `Get-CimInstance` 比旧的 `Get-WmiObject` cmdlet 有优势。
 
@@ -36,5 +35,4 @@ Remove-CimSession -CimSession $session
 
 当您需要连接到不支持 WSMan 的旧的计算机，只需要将以上代码的协议改为 DCOM 即可：将 `Wsman` 替换为 `Dcom`。
 
-<!--more-->
-本文国际来源：[WMI Quick Primer (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-3)
+<!--本文国际来源：[WMI Quick Primer (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-3)-->

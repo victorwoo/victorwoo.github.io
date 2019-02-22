@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您常常会需要创建一个文件夹并且为它设置 NTFS 权限。
 
@@ -39,5 +38,4 @@ tags:
     # set new permissions
     $acl | Set-Acl -Path $path
 
-<!--more-->
-本文国际来源：[Create Folder with NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/create-folder-with-ntfs-permissions)
+<!--本文国际来源：[Create Folder with NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/create-folder-with-ntfs-permissions)-->

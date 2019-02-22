@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell 所有版本_
         $rv 
       }
 
-<!--more-->
-本文国际来源：[Reading Registry Values with Type](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-with-type)
+<!--本文国际来源：[Reading Registry Values with Type](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-with-type)-->

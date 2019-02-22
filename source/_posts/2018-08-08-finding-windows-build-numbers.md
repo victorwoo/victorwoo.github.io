@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当运行 `winver.exe` 时，您可以方便地获取到完整的 Windows 生成号。通过 PowerShell 读取生成号并不是那么明显。并没有内置的 cmdlet。
 
@@ -36,5 +35,4 @@ CurrentBuild  UBR ReleaseId CompositionEditionID
 15063        1088 1703      Enterprise
 ```
 
-<!--more-->
-本文国际来源：[Finding Windows Build Numbers](http://community.idera.com/powershell/powertips/b/tips/posts/finding-windows-build-numbers)
+<!--本文国际来源：[Finding Windows Build Numbers](http://community.idera.com/powershell/powertips/b/tips/posts/finding-windows-build-numbers)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 本周我们将关注如何改变 PowerShell 控制台和 PowerShell ISE 的颜色，以便设置您的 PowerShell 环境。
 
@@ -48,5 +47,4 @@ Hello
 
 现在看起来一切完美了。
 
-<!--more-->
-本文国际来源：[Color Week: Setting PowerShell ISE Background Color](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-setting-powershell-ise-background-color)
+<!--本文国际来源：[Color Week: Setting PowerShell ISE Background Color](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-setting-powershell-ise-background-color)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何在 Windows 10 和 Windows Server 2016 中使用 PowerShell 来设置一个能将任何东西打印到 PDF 文件的打印机，当然，是无人值守的。要使它真的发挥作用，我们将它封装为一个名为 `Out-PDFFile` 的函数。任何通过管道传给这个新命令的内容都会被转换为一个 PDF 文件。
 
@@ -105,5 +104,4 @@ PS> Get-ComputerInfo | Out-PDFFile -Path $home\Desktop\computerinfo.pdf -Open
 
 _[psconf.eu](http://www.psconf.eu/) – PowerShell Conference EU 2019 – June 4-7, Hannover Germany – visit [www.psconf.eu](http://www.psconf.eu/) There aren’t too many trainings around for experienced PowerShell scripters where you really still learn something new. But there’s one place you don’t want to miss: PowerShell Conference EU - with 40 renown international speakers including PowerShell team members and MVPs, plus 350 professional and creative PowerShell scripters. Registration is open at www.psconf.eu, and the full 3-track 4-days agenda becomes available soon. Once a year it’s just a smart move to come together, update know-how, learn about security and mitigations, and bring home fresh ideas and authoritative guidance. We’d sure love to see and hear from you!_
 
-<!--more-->
-本文国际来源：[Sending PowerShell Results to PDF (Part 3)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-3)
+<!--本文国际来源：[Sending PowerShell Results to PDF (Part 3)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-3)-->

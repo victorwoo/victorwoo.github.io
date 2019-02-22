@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -33,5 +32,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 一旦您掌握了这些步骤，调试过程会变得十分容易。并且它可以给您带来许多领悟和帮助。如果不采用调试方法的话将很难调查脚本错误。
 
-<!--more-->
-本文国际来源：[Using the PowerShell ISE Debugger](http://community.idera.com/powershell/powertips/b/tips/posts/using-the-powershell-ise-debugger)
+<!--本文国际来源：[Using the PowerShell ISE Debugger](http://community.idera.com/powershell/powertips/b/tips/posts/using-the-powershell-ise-debugger)-->

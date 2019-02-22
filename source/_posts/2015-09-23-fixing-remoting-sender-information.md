@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您使用 `Invoke-Command` 来远程执行 PowerShell 代码，您可能会注意到 PowerShell 远程操作会添加一个新的 `PSComputerName` 属性用来表示数据的来源。
 
@@ -38,5 +37,4 @@ tags:
     Invoke-Command -ScriptBlock $code -ComputerName dc-01 |
       Out-GridView
 
-<!--more-->
-本文国际来源：[Fixing Remoting Sender Information](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-remoting-sender-information)
+<!--本文国际来源：[Fixing Remoting Sender Information](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-remoting-sender-information)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Out-GridView` 不止可以用于显示结果。您可以将它转换为一个很有用的通用对话框。
 
@@ -45,5 +44,4 @@ tags:
 
 最后，被用户选中的对象将再被拆包。通过这种方法，您可以获取源对象。
 
-<!--more-->
-本文国际来源：[Use a Grid View Window as a Universal Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/use-a-grid-view-window-as-a-universal-dialog)
+<!--本文国际来源：[Use a Grid View Window as a Universal Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/use-a-grid-view-window-as-a-universal-dialog)-->

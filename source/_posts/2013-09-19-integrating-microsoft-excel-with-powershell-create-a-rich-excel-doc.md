@@ -9,10 +9,8 @@ categories:
 tags:
 - powershell
 - script
-- translation
 ---
 让我们继续《在PowerShell中操作Excel》系列文章。上一次我们掩饰了如何用Microsoft Excel和Windows PowerShell来创建一个基本的报表。从某些方面来讲，我们上次创建的东西和创建CSV并在Excel中打开差不了多少。所以，如果您希望用Excel，让我们彻彻底底地使用它！在今天的文章中，我将沿用上次的演示脚本，但是创建一个更“富（richer）”的Excel文档。下一步，在第三部分中，我将为您演示如何从Excel文件中读取数据。
-<!--more-->
 
 创建一个富Excel文档
 ===================

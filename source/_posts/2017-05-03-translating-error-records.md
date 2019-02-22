@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Whenever PowerShell records an error, it wraps it in an Error Record object. Here is a function that takes such an error record and extracts the useful information:
 当 PowerShell 记录一个错误时，它将错误信息包装在一个 Error Record 对象中。以下是一个处理这种错误记录并解析有用信息的函数：
@@ -60,5 +59,4 @@ $files = Get-ChildItem -Path c:\Windows -Filter *.ps1 -Recurse -ErrorAction Sile
 $myErrors| Get-ErrorDetail | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Translating Error Records](http://community.idera.com/powershell/powertips/b/tips/posts/translating-error-records)
+<!--本文国际来源：[Translating Error Records](http://community.idera.com/powershell/powertips/b/tips/posts/translating-error-records)-->

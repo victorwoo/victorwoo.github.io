@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中，通过 .NET Framework 3.51 或更高的版本，可以使用面向对象的方式管理本地用户和组。以下代码可以列出本机上的管理员用户：
 
@@ -30,5 +29,4 @@ tags:
 ![](/img/2013-12-20-getting-local-group-members-002.png)
 ![](/img/2013-12-20-getting-local-group-members-003.png)
 
-<!--more-->
-本文国际来源：[Getting Local Group Members](http://community.idera.com/powershell/powertips/b/tips/posts/getting-local-group-members)
+<!--本文国际来源：[Getting Local Group Members](http://community.idera.com/powershell/powertips/b/tips/posts/getting-local-group-members)-->

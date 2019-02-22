@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要在一段文本的每个大写字符出分割这段文本，而不用提供一个大写字符的列表，请试试这个例子：
 
@@ -29,5 +28,4 @@ tags:
     $newtext = (-join $raw).Trim()
     $newtext
 
-<!--more-->
-本文国际来源：[Splitting Text at Uppercase Letters](http://community.idera.com/powershell/powertips/b/tips/posts/splitting-text-at-uppercase-letters)
+<!--本文国际来源：[Splitting Text at Uppercase Letters](http://community.idera.com/powershell/powertips/b/tips/posts/splitting-text-at-uppercase-letters)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中转换一个包含数字的字符串非常简单：
 
@@ -45,5 +44,4 @@ Convert-MBToByte -MBString '2433MB'
 
 然而，不推荐使用 `Invoke-Expression`，因为它会带来安全风险。例如用户能够改变命令执行的表达式，类似 SQL 注入攻击。
 
-<!--more-->
-本文国际来源：[Converting Numeric Strings](http://community.idera.com/powershell/powertips/b/tips/posts/converting-numeric-strings)
+<!--本文国际来源：[Converting Numeric Strings](http://community.idera.com/powershell/powertips/b/tips/posts/converting-numeric-strings)-->

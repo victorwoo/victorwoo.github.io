@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这周我们将关注枚举类型：它们是什么，以及如何利用它们。
 
@@ -58,5 +57,4 @@ ForegroundColor Property   System.ConsoleColor ForegroundColor {get;set;}
     Get-Service | Where-Object { $_.Status -eq 'R' }
 ```
 
-<!--more-->
-本文国际来源：[Enum Week: Auto-Conversion for Enums](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-auto-conversion-for-enums)
+<!--本文国际来源：[Enum Week: Auto-Conversion for Enums](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-auto-conversion-for-enums)-->

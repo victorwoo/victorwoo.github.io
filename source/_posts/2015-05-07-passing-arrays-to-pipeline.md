@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果一个函数返回多于一个值，PowerShell 会将它们封装为一个数组。然而如果您通过管道将它传递至另一个函数，该管道会自动地将数组“解封”，并且一次处理一个数组元素。
 
@@ -70,5 +69,4 @@ tags:
     Result 2:
     System.Object[]
 
-<!--more-->
-本文国际来源：[Passing Arrays to Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/passing-arrays-to-pipeline)
+<!--本文国际来源：[Passing Arrays to Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/passing-arrays-to-pipeline)-->

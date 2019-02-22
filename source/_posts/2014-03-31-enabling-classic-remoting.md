@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 许多 cmdlet 有内置的远程功能，例如 `Get-Service` 和 `Get-Process` 都具有 `-ComputerName` 参数，同样的还有 `Get-WmiObject`。
 
@@ -23,5 +22,4 @@ tags:
 
 注意新版的 Windows 中 `netsh firewall` 命令可能会被废弃，不过目前仍然可以用。该命令比新版的 `netsh advfirewall` 命令用起来更简单。
 
-<!--more-->
-本文国际来源：[Enabling Classic Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-classic-remoting)
+<!--本文国际来源：[Enabling Classic Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-classic-remoting)-->

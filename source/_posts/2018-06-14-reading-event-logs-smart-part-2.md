@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何使用 `ReplacementStrings` 读取从 `Get-EventLog` 中收到的详细的事件日志信息。它工作得很完美，但是 `Get-EventLog` 职能读取“传统的”Windows 日志。在现代的 Windows 版本中还有许多额外的日志。
 
@@ -79,5 +78,4 @@ Get-WinEvent -FilterHashtable $filter |
     22.05.2018 08:34:28 9NBLGGH5FV99-Microsoft.MSPaint                                                
     22.05.2018 08:33:25 9WZDNCRFJ364-MICROSOFT.SKYPEAPP
 
-<!--more-->
-本文国际来源：[Reading Event Logs Smart (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-event-logs-smart-part-2)
+<!--本文国际来源：[Reading Event Logs Smart (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-event-logs-smart-part-2)-->

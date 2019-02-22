@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Iain Brighton 创建了一个名为 "PScribo" 的免费的 PowerShell 模块，可以快速地创建文本、HTML 或 Word 格式的文档和报告。
 
@@ -57,5 +56,4 @@ explorer $OutPath
 
 当您运行这段代码时，它生成三个名为 ServiceReport.docx/html/txt 的文件。如您所见，该报告包含表格形式的服务列表。
 
-<!--more-->
-本文国际来源：[Automatic Document & Report Generation (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-document-report-generation-part-2)
+<!--本文国际来源：[Automatic Document & Report Generation (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-document-report-generation-part-2)-->

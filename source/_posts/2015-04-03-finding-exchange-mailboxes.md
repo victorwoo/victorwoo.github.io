@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Microsoft Exchange 2013_
 
@@ -33,5 +32,4 @@ _适用于 Microsoft Exchange 2013_
       Measure-Object |
       Select-Object -ExpandProperty Count
 
-<!--more-->
-本文国际来源：[Finding Exchange Mailboxes](http://community.idera.com/powershell/powertips/b/tips/posts/finding-exchange-mailboxes)
+<!--本文国际来源：[Finding Exchange Mailboxes](http://community.idera.com/powershell/powertips/b/tips/posts/finding-exchange-mailboxes)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您在使用 PowerShell 远程操作时遇到“HTTP 403”错误，一个潜在的原因可能是代理服务器影响了请求。
 
@@ -28,5 +27,4 @@ $option = New-PSSessionOption -ProxyAccessType NoProxyServer
 Invoke-Command -ScriptBlock { "Connected to $env:computername" } -ComputerName $DestinationComputer -SessionOption $option
 ```
 
-<!--more-->
-本文国际来源：[PowerShell Remoting and HTTP 403 Error](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-remoting-and-http-403-error)
+<!--本文国际来源：[PowerShell Remoting and HTTP 403 Error](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-remoting-and-http-403-error)-->

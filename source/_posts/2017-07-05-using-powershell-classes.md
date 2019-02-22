@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，您可以定义类。它们有许多应用场景。一个是为有用的工具函数创建一个库来更好地整理它们。要实现这个功能，这个类要定义一些 "static" 方法。以下是一个简单的例子：
 
@@ -50,5 +49,4 @@ PS> [HelperStuff]::GetFileExtension($profile)
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Using PowerShell Classes](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-classes)
+<!--本文国际来源：[Using PowerShell Classes](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-classes)-->

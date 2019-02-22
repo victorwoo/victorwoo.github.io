@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 昨天我们研究了用 PowerShell 如何将传感器返回的 IEEE754 浮点值转换为实际值。这需要颠倒字节顺序并使用 `BitConverter` 类。
 
@@ -32,5 +31,4 @@ $numericValue = [BitConverter]::ToSingle($bytes, 0)
 
 * 将数值转换为 `IPAddress` 对象来将数值分割为字节。这种方法也可以用来得到一个数字的最低有效位 (LSB) 或最高有效位 (MSB) 形式。
 
-<!--more-->
-本文国际来源：[Converting IEEE754 (Float) (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-ieee754-float-part-2)
+<!--本文国际来源：[Converting IEEE754 (Float) (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-ieee754-float-part-2)-->

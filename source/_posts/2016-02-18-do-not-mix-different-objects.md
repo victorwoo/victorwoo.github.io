@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您连续输出完全不同的对象，您可能丢失信息。请看这个例子：
 
@@ -39,5 +38,4 @@ tags:
 
 如果您必须要输出不同的对象，请将它们用管道输出到 `Out-Host`。每次您输出到 `Out-Host`，PowerShell 都将创建一个具有新的表格标题的输出。
 
-<!--more-->
-本文国际来源：[Do Not Mix Different Objects!](http://community.idera.com/powershell/powertips/b/tips/posts/do-not-mix-different-objects)
+<!--本文国际来源：[Do Not Mix Different Objects!](http://community.idera.com/powershell/powertips/b/tips/posts/do-not-mix-different-objects)-->

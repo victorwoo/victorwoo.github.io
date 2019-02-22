@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 设置注册表项的权限并不是一件小事。不过通过一些技巧，并不是一件大事。
 
@@ -39,5 +38,4 @@ tags:
 
 您可能需要以完整 Administrator 权限来运行这段脚本。如您所见，第一段脚本和您的测试注册表项只是用来生成 SDDL 文本。当您得到 SSDL 文本之后，您只需要将它粘贴入第二段脚本中。第二段脚本不再需要用到那个测试注册表项。
 
-<!--more-->
-本文国际来源：[Setting Registry Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/setting-registry-permissions)
+<!--本文国际来源：[Setting Registry Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/setting-registry-permissions)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中，您可以创建复杂的错误处理代码，但有些时候您可能只是想知道出了什么错并且把它记录下来。不需要额外的技能。
 
@@ -38,5 +37,4 @@ $issues = $errorList.CategoryInfo | Select-Object -Property Category, TargetName
 $issues
 $issues | Out-File -FilePath $home\Desktop\report.txt -Append
 ```
-<!--more-->
-本文国际来源：[Simple Strategy for Cmdlet Error Reporting](http://community.idera.com/powershell/powertips/b/tips/posts/simple-strategy-for-cmdlet-error-reporting-directory)
+<!--本文国际来源：[Simple Strategy for Cmdlet Error Reporting](http://community.idera.com/powershell/powertips/b/tips/posts/simple-strategy-for-cmdlet-error-reporting-directory)-->

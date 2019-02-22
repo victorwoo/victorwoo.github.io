@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 昨天我们看了自定义作用域能够自动还原变量并在您的代码之后清除现场。
 
@@ -44,5 +43,4 @@ function Out-Voice ($Text)
 
 Out-Voice -Text 'Hello, Dude.'
 ```
-<!--more-->
-本文国际来源：[Using Custom Scopes to Discard Any Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-custom-scopes-to-discard-any-output)
+<!--本文国际来源：[Using Custom Scopes to Discard Any Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-custom-scopes-to-discard-any-output)-->

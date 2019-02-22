@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们开始将 PowerShell 的结果转换为 HTML 报告。现在，这份报告需要一些头部和尾部。以下是我们上一个版本的代码：
 
@@ -63,5 +62,4 @@ Get-EventLog -LogName System -EntryType Error -After $startDate |
 Invoke-Item -Path $Path
 ```
 
-<!--more-->
-本文国际来源：[Creating HTML Reports (Part 3 – Adding Headers and Footers)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-3-adding-headers-and-footers)
+<!--本文国际来源：[Creating HTML Reports (Part 3 – Adding Headers and Footers)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-3-adding-headers-and-footers)-->

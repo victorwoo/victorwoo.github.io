@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了将 `$ErrorActionPreference` 设为 "SilentlyContinue" 将如何影响 throw 语句，而且该 throw 将不会正常地退出函数代码。以下还是我们使用过的例子：
 
@@ -111,5 +110,4 @@ Testing whether target path exists
 If target path does not exist, bail out
 ```
 
-<!--more-->
-本文国际来源：[Be Careful With “Throw” Statements (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/be-careful-with-throw-statements-part-2)
+<!--本文国际来源：[Be Careful With “Throw” Statements (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/be-careful-with-throw-statements-part-2)-->

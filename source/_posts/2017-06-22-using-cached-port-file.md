@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何用 PowerShell 通过 IANA 下载端口分配信息。这个过程需要 Internet 连接并且需要一段时间。所以以下代码会查找缓存的 CSV 文件。如果缓存文件存在，端口信息会从离线文件中加载，否则将在线加载数据，并写入缓存文件。请特别注意如何使用 `Tee-Object` 命令创建缓存文件：
 
@@ -37,5 +36,4 @@ else
 $portinfo | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Using Cached Port File](http://community.idera.com/powershell/powertips/b/tips/posts/using-cached-port-file)
+<!--本文国际来源：[Using Cached Port File](http://community.idera.com/powershell/powertips/b/tips/posts/using-cached-port-file)-->

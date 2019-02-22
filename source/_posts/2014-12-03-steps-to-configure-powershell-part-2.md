@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -46,5 +45,4 @@ PS> Set-Service -Name Remoteregistry -StartupType Automatic
 
 在简单的点对点家庭环境中，为每台计算机的 Administrator 账号设置相同的名字就足够了。
 
-<!--more-->
-本文国际来源：[Steps to Configure PowerShell (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/steps-to-configure-powershell-part-2)
+<!--本文国际来源：[Steps to Configure PowerShell (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/steps-to-configure-powershell-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Often, code needs to check on files, and for example test whether the file exists or exceeds a given size. Here is some commonly used code:
 
@@ -39,5 +38,4 @@ You can convert any path to a FileInfo object, even if it is not representing a 
 
 ![Twitter This Tip!](/img/2017-11-15-working-with-fileinfo-object-001.gif)ReTweet this Tip!
 
-<!--more-->
-本文国际来源：[Working with [FileInfo] Object](http://community.idera.com/powershell/powertips/b/tips/posts/working-with-fileinfo-object)
+<!--本文国际来源：[Working with [FileInfo] Object](http://community.idera.com/powershell/powertips/b/tips/posts/working-with-fileinfo-object)-->

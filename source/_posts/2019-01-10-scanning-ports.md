@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个扫描本地或远程系统端口的一个直接的方法。您甚至可以指定一个超时值（以毫秒为单位）：
 
@@ -83,5 +82,4 @@ Error   ComputerName Online
 Timeout storage2      False
 ```
 
-<!--more-->
-本文国际来源：[Scanning Ports](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/scanning-ports)
+<!--本文国际来源：[Scanning Ports](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/scanning-ports)-->

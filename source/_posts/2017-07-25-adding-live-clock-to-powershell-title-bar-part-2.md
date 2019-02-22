@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了一段代码，可以在后台线程中更新 PowerShell 标题栏，显示一个实时时钟。
 
@@ -54,5 +53,4 @@ $handle = $ps.BeginInvoke()
 - 您可以在指定时间之后结束 PowerShell 会话
 - 您可以在标题栏中显示 RSS 订阅项目
 
-<!--more-->
-本文国际来源：[Adding Live Clock to PowerShell Title Bar (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/adding-live-clock-to-powershell-title-bar-part-2)
+<!--本文国际来源：[Adding Live Clock to PowerShell Title Bar (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/adding-live-clock-to-powershell-title-bar-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 有许多读取文本文件的方法，它们的性能差异很大。请自己确认一下。以下例子演示了不同的实践，并测量执行的时间。请确保例子中的路径实际存在。如果文件不存在，请选择一个大文件来测试。
 
@@ -44,5 +43,4 @@ Measure-Command {
 }
 ```
 
-<!--more-->
-本文国际来源：[Reading Text Files Fast](http://community.idera.com/powershell/powertips/b/tips/posts/reading-text-files-fast-1152612330)
+<!--本文国际来源：[Reading Text Files Fast](http://community.idera.com/powershell/powertips/b/tips/posts/reading-text-files-fast-1152612330)-->

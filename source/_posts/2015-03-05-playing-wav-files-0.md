@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -54,5 +53,4 @@ _适用于 PowerShell 所有版本_
 
 现在，`PlayLooping()` 用于循环播放声音。该声音会一直播放下去，所以您需要手动调用 `Stop()`。这是脚本结束的时候需要做的事情。
 
-<!--more-->
-本文国际来源：[Playing WAV Files](http://community.idera.com/powershell/powertips/b/tips/posts/playing-wav-files-0)
+<!--本文国际来源：[Playing WAV Files](http://community.idera.com/powershell/powertips/b/tips/posts/playing-wav-files-0)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一种快速查看 PowerShell 函数源码的方法：
 
@@ -39,5 +38,4 @@ $host.UI.RawUI.SetBufferContents(
 
 请注意这只能在真正的 PowerShell 控制台宿主中起作用。
 
-<!--more-->
-本文国际来源：[Spying on Function Source Code](http://community.idera.com/powershell/powertips/b/tips/posts/spying-on-function-source-code)
+<!--本文国际来源：[Spying on Function Source Code](http://community.idera.com/powershell/powertips/b/tips/posts/spying-on-function-source-code)-->

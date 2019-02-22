@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 期望状态配置（DSC）是 PowerShell 4.0 中的一个新特性。通过 DSC，您可以编写简单的配置脚本并且将它们应用到本地或远程的机器上。以下是一个供您入门的示例脚本：
 
@@ -39,5 +38,4 @@ tags:
 
 运行该配置只会创建一个 MOF 文件。要应用该 MOF 文件，请使用 `Start-DSCConfiguration` cmdlet。请使用 `-Wait` 来等待配置生效。否则，该配置将会在后台以任务的方式完成。
 
-<!--more-->
-本文国际来源：[Start to Look at DSC](http://community.idera.com/powershell/powertips/b/tips/posts/start-to-look-at-dsc)
+<!--本文国际来源：[Start to Look at DSC](http://community.idera.com/powershell/powertips/b/tips/posts/start-to-look-at-dsc)-->

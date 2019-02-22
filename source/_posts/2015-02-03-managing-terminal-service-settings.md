@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _需要 _ActiveDirectory 模块_
 
@@ -27,5 +26,4 @@ _需要 _ActiveDirectory 模块_
     $TSHomeDrive = $ADUser.psbase.InvokeGet('TerminalServicesHomeDrive')
     $TSAllowLogOn = $ADUser.psbase.InvokeGet('allowLogon')
 
-<!--more-->
-本文国际来源：[Managing Terminal Service Settings](http://community.idera.com/powershell/powertips/b/tips/posts/managing-terminal-service-settings)
+<!--本文国际来源：[Managing Terminal Service Settings](http://community.idera.com/powershell/powertips/b/tips/posts/managing-terminal-service-settings)-->

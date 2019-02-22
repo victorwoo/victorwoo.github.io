@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否希望了解您当前连接到 Internet 的公开 IP 地址？以下是一行代码：
 
@@ -29,5 +28,4 @@ Invoke-RestMethod -Uri "http://geoip.nekudo.com/api/$IP" |
   Select-Object -ExpandProperty Country
 ```
 
-<!--more-->
-本文国际来源：[Finding Public IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-public-ip-address1)
+<!--本文国际来源：[Finding Public IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-public-ip-address1)-->

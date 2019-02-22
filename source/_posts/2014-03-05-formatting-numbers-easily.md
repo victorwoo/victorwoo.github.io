@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 用户常常需要格式化数字并且限制小数的位数，或者是在左侧补零。有一个简单标准的方法：使用操作符 `-f` ！
 
@@ -32,5 +31,4 @@ tags:
     $number = 0.32562176536
     '{0:p2}' -f $number 
 
-<!--more-->
-本文国际来源：[Formatting Numbers Easily](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-easily)
+<!--本文国际来源：[Formatting Numbers Easily](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-easily)-->

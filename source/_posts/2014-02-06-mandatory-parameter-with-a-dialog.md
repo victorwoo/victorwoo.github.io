@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通常地，当您将一个函数参数标记为“必选的”，如果用户遗漏了这个参数，PowerShell 将提示用户：
 
@@ -49,5 +48,4 @@ tags:
 	      "You entered $Path"
 	}
 
-<!--more-->
-本文国际来源：[Mandatory Parameter with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameter-with-a-dialog)
+<!--本文国际来源：[Mandatory Parameter with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameter-with-a-dialog)-->

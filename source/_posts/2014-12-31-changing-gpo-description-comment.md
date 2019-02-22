@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _需要 GroupPolicy 模块_
 
@@ -26,5 +25,4 @@ _需要 GroupPolicy 模块_
 
 请注意只有当您重新打开了组策略客户端工具时，修改的内容才会反映到 UI 中。还请注意您需要 `GroupPolicy` PowerShell 模块。它随 Microsoft 的 RSAT 工具免费发布。在客户端，`GroupPolicy` 模块需要在控制面板/程序中启用才可以使用。
 
-<!--more-->
-本文国际来源：[Changing GPO Description/Comment](http://community.idera.com/powershell/powertips/b/tips/posts/changing-gpo-description-comment)
+<!--本文国际来源：[Changing GPO Description/Comment](http://community.idera.com/powershell/powertips/b/tips/posts/changing-gpo-description-comment)-->

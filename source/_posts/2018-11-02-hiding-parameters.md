@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 In the previous tip we explained how you can dump all the legal values for a PowerShell attribute. Today we’ll take a look at the [Parameter()] attribute and its value DontShow. Take a look at this function:
 在前一个技能中我们介绍了如何导出一个 PowerShell 属性的所有合法值。今天我们将关注 `[Parameter()]` 属性和它的值 `DontShow`。我们来看看这个函数：
@@ -49,5 +48,4 @@ You entered: tobias
 WARNING: We are in secret test mode!
 ```
 
-<!--more-->
-本文国际来源：[Hiding Parameters](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hiding-parameters)
+<!--本文国际来源：[Hiding Parameters](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hiding-parameters)-->

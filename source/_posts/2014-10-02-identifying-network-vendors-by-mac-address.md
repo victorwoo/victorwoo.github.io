@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -46,5 +45,4 @@ _适用于 PowerShell 所有版本_
 
 您不仅可以获取厂家名称（这个例子中是 Intel），而且还可以获取厂家的地址和所在区域。
 
-<!--more-->
-本文国际来源：[Identifying Network Vendors by MAC Address](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-network-vendors-by-mac-address)
+<!--本文国际来源：[Identifying Network Vendors by MAC Address](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-network-vendors-by-mac-address)-->

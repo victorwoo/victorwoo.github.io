@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您从 VBScript 迁移到 PowerShell，您也许会记得 VBScript 如何映射网络驱动器。这个选项在 PowerShell 中仍然有效。
 
@@ -31,5 +30,4 @@ tags:
 
     $helper.MapNetworkDrive('O:','\\dc-01\somefolder',$true, 'training\user02', 'topSecret')
 
-<!--more-->
-本文国际来源：[Mapping Network Drives (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-network-drives-part-3)
+<!--本文国际来源：[Mapping Network Drives (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-network-drives-part-3)-->

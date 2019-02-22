@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您也许希望跳过配置文件中的某些部分。例如，在 ISE 编辑器中，只需要将这段代码加入您的配置脚本（配置脚本的路径可以在通过 `$profile` 变量查看，它也有可能还没有创建）：
 
@@ -36,5 +35,4 @@ tags:
         Write-Warning 'You DID NOT press CTRL, so I could execute things here.'
     }
 
-<!--more-->
-本文国际来源：[Skipping Profile on Keystroke](http://community.idera.com/powershell/powertips/b/tips/posts/skipping-profile-on-keystroke)
+<!--本文国际来源：[Skipping Profile on Keystroke](http://community.idera.com/powershell/powertips/b/tips/posts/skipping-profile-on-keystroke)-->

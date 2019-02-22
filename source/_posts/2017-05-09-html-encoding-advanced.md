@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 .NET 静态方法 `HtmlEncode` 能够较好地将普通字符进行编码，但是对于许多特殊字符会处理失败。要正确地对所有字符编码，我们编写了一个 `ConvertTo-EncodedHtml` 函数：
 
@@ -45,5 +44,4 @@ PS> Convert-EncodedHTML -HtmlText "A – s ‘Test’"
 A &#8211; s  &#8216;Test&#8217;
 ```
 
-<!--more-->
-本文国际来源：[HTML Encoding Advanced](http://community.idera.com/powershell/powertips/b/tips/posts/html-encoding-advanced)
+<!--本文国际来源：[HTML Encoding Advanced](http://community.idera.com/powershell/powertips/b/tips/posts/html-encoding-advanced)-->

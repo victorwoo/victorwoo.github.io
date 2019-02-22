@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想将某个命令的结果赋给一个变量，并且同时输出结果，以下是两种实现方法：
 
@@ -33,5 +32,4 @@ tags:
     Running  AdobeARMservice    Adobe Acrobat Update Service
     (...)
 
-<!--more-->
-本文国际来源：[Outputting and Assigning at the Same Time](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-and-assigning-at-the-same-time)
+<!--本文国际来源：[Outputting and Assigning at the Same Time](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-and-assigning-at-the-same-time)-->

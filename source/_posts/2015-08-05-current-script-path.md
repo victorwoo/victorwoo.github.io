@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 1.0 和 2.0 中，您需要一堆奇怪的代码来获得当前脚本的位置：
 
@@ -35,5 +34,4 @@ tags:
     $PSCommandPath
     $ScriptName
 
-<!--more-->
-本文国际来源：[Current Script Path](http://community.idera.com/powershell/powertips/b/tips/posts/current-script-path)
+<!--本文国际来源：[Current Script Path](http://community.idera.com/powershell/powertips/b/tips/posts/current-script-path)-->

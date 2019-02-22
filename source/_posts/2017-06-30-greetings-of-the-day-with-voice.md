@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何在 PowerShell 配置文件中增加个人问候。这个问候信息也可以朗读出来，假设音量打开的情况下。这对所有的 PowerShell 宿主都有效，包括 VSCode。
 
@@ -45,5 +44,4 @@ $null = (New-Object -COM Sapi.SpVoice).Speak($text)
 PS> notepad $profile.CurrentUserAllHosts
 ```
 
-<!--more-->
-本文国际来源：[Greetings of the Day (with Voice)](http://community.idera.com/powershell/powertips/b/tips/posts/greetings-of-the-day-with-voice)
+<!--本文国际来源：[Greetings of the Day (with Voice)](http://community.idera.com/powershell/powertips/b/tips/posts/greetings-of-the-day-with-voice)-->

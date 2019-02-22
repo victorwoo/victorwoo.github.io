@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您使用 `-like` 操作符时，它支持三种通配符："`*`" 代表所有数字和字母，"`?`" 代表任意单个字符，"`[a-z]`" 代表字符的列表。另外有一个不太为人所知的，它支持 PowerShell 的转义字符 "`\``"，可以用它来转义通配符。
 
@@ -54,5 +53,4 @@ True
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Escape Wildcards](http://community.idera.com/powershell/powertips/b/tips/posts/escape-wildcards)
+<!--本文国际来源：[Escape Wildcards](http://community.idera.com/powershell/powertips/b/tips/posts/escape-wildcards)-->

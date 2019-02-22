@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 （来自 Microsoft 免费的 RSAT 工具的）`Get-OrganizationalUnit` 可以基于识别名或 GUID 来搜索 OU，或者可以使用 `-Filter` 参数。
 
@@ -35,5 +34,4 @@ $Name = 'Test'
 Get-ADOrganizationalUnit -LDAPFilter "(Name=*$Name*)"
 ```
 
-<!--more-->
-本文国际来源：[Finding Organizational Units](http://community.idera.com/powershell/powertips/b/tips/posts/finding-organizational-units)
+<!--本文国际来源：[Finding Organizational Units](http://community.idera.com/powershell/powertips/b/tips/posts/finding-organizational-units)-->

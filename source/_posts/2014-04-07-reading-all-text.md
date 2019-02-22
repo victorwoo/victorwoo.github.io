@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以用 `Get-Content` 来读入整个文本文件。但是，`Get-Content` 是逐行返回文件的内容，您得到的是一个 string 数组，并且换行符被去掉了。
 
@@ -31,5 +30,4 @@ Length 属性表示文件的行数。
 
 那种方法更好？这取决于您要如何使用这些数据。
 
-<!--more-->
-本文国际来源：[Reading All Text](http://community.idera.com/powershell/powertips/b/tips/posts/reading-all-text)
+<!--本文国际来源：[Reading All Text](http://community.idera.com/powershell/powertips/b/tips/posts/reading-all-text)-->

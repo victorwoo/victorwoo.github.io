@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了 `FileSystemWatcher` 并演示了当事件处理代码执行事件过长时会丢失文件系统改变事件。
 
@@ -107,5 +106,4 @@ finally
 
 即便删除了大量文件，它们最终仍将显示出来。这里展示的方式比起前一个技能中基于 `WaitForChanged()` 的同步处理器更可靠。
 
-<!--more-->
-本文国际来源：[Using FileSystemWatcher Correctly (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-filesystemwatcher-correctly-part-2)
+<!--本文国际来源：[Using FileSystemWatcher Correctly (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-filesystemwatcher-correctly-part-2)-->

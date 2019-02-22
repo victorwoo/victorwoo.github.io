@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这一小段代码将提示输入新的注册所有者名，然后将更新 Windows 注册表中的值。请注意需要管理员权限。
 
@@ -24,5 +23,4 @@ tags:
 
 这也是一个更改 Windows 注册表的模板代码。
 
-<!--more-->
-本文国际来源：[Setting New Windows Registered Owner](http://community.idera.com/powershell/powertips/b/tips/posts/setting-new-windows-registered-owner)
+<!--本文国际来源：[Setting New Windows Registered Owner](http://community.idera.com/powershell/powertips/b/tips/posts/setting-new-windows-registered-owner)-->

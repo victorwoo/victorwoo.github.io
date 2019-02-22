@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 大多数 IP 地址可以用 Web Service 定位到物理地址。以下是一个很简单的函数，能够输入一个 IP 地址并返回它的物理地址：
 
@@ -63,5 +62,4 @@ location : @{accuracy_radius=1000; latitude=40,7143; longitude=-74,006;
 (of course this is just where the server sits, not Aleksandar or Ravi or all the other fine editors 
 （当然这只代表了服务器的所在地，而不是 Aleksandar or Ravi 及其它知名编辑的位置 ![](/img/2016-10-04-finding-location-of-ip-address-001.png)）
 
-<!--more-->
-本文国际来源：[Finding Location of IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-location-of-ip-address)
+<!--本文国际来源：[Finding Location of IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-location-of-ip-address)-->

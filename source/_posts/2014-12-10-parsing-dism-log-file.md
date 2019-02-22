@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及更高版本_
 
@@ -38,5 +37,4 @@ _适用于 PowerShell 2.0 及更高版本_
     ConvertFrom-Csv -Header (1..20) |
     Out-GridView
 
-<!--more-->
-本文国际来源：[Parsing DISM Log File](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-dism-log-file)
+<!--本文国际来源：[Parsing DISM Log File](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-dism-log-file)-->

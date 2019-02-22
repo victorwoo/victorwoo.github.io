@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否希望了解某个命令或一段脚本运行了多少时间？以下简易的秒表对象能帮您实现这个功能：
 
@@ -42,5 +41,4 @@ $stopwatch.Elapsed.Milliseconds
 
 在上面的例子中，若您将第二处 `Start()` 改为 `Restart()` 则秒表将会复位并且报告的时间是第二条命令执行的时间而不是总时间。
 
-<!--more-->
-本文国际来源：[Using a Stopwatch to Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-stopwatch-to-profile-scripts)
+<!--本文国际来源：[Using a Stopwatch to Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-stopwatch-to-profile-scripts)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否十分熟悉“break”、“continue”、“return”和“exit”的用法？这些是十分有用的语言概念，以下是一个演示它们不同之处的测试函数：
 
@@ -43,5 +42,4 @@ tags:
 
 只需要去掉某个关键词的注释并运行脚本，就可以观察循环的执行结果。
 
-<!--more-->
-本文国际来源：[Understanding break, continue, return, and exit](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-break-continue-return-and-exit)
+<!--本文国际来源：[Understanding break, continue, return, and exit](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-break-continue-return-and-exit)-->

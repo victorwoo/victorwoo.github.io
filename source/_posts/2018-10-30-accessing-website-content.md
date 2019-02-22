@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通常情况下，通过 PowerShell 的 `Invoke-WebRequest` 命令来获取原始的 HTML 网站内容是很常见的情况。脚本可以处理 HTML 内容并对它做任意操作，例如用正则表达式从中提取信息：
 
@@ -34,5 +33,4 @@ do
 $ie.Document.building.innerHTML
 ```
 
-<!--more-->
-本文国际来源：[Accessing Website Content](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-website-content)
+<!--本文国际来源：[Accessing Website Content](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-website-content)-->

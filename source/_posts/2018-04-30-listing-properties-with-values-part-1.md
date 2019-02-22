@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 对象中有丰富的信息，但是对象也可能有空的属性。尤其是从 Active Directory 中获取的对象。
 
@@ -153,5 +152,4 @@ PS>
 
 `Remove-EmptyProperty` 基本上是创建一个只包含实际值的属性。由于它总是创建一个新对象，所以它有副作用：您总是会看到缺省情况下隐藏的属性。
 
-<!--more-->
-本文国际来源：[Listing Properties with Values (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/listing-properties-with-values-part-1)
+<!--本文国际来源：[Listing Properties with Values (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/listing-properties-with-values-part-1)-->

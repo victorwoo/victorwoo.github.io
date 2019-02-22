@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了 `Get-Date` 如何用格式化字符串将 `DateTime` 值转换为字符串。不过该字符串转换总是使用操作系统中的语言。这可能不是您想要的。现在我们来解决这个问题：
 
@@ -76,5 +75,4 @@ Monday in Chinese:  星期一.
 Monday in Thai:  จันทร์.
 ```
 
-<!--more-->
-本文国际来源：[Formatting Date and Time (with Culture)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatting-date-and-time-with-culture)
+<!--本文国际来源：[Formatting Date and Time (with Culture)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatting-date-and-time-with-culture)-->

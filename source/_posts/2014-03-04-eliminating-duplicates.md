@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Sort-Object` 有一个很棒的特性：使用 `-Unique` 参数，您可以移除重复对象：
 
@@ -35,5 +34,4 @@ tags:
 
 所以结论是：`Sort-Objects` 的 `-Unique` 参数可以一次性应用到多个属性上。
 
-<!--more-->
-本文国际来源：[Eliminating Duplicates](http://community.idera.com/powershell/powertips/b/tips/posts/eliminating-duplicates)
+<!--本文国际来源：[Eliminating Duplicates](http://community.idera.com/powershell/powertips/b/tips/posts/eliminating-duplicates)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 To find out the path your PowerShell is currently using, simply run Get-Location:
 要查看 PowerShell 的当前路径，只要用 `Get-Location` 命令即可：
@@ -63,5 +62,4 @@ To find out the path your PowerShell is currently using, simply run Get-Location
 
 `CurrentFileSystemLocation` 总是返回文件系统的当前位置，这可能和 `Get-Location` 返回的不一样。
 
-<!--more-->
-本文国际来源：[Finding PowerShell’s Current File System Path](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-s-current-file-system-path)
+<!--本文国际来源：[Finding PowerShell’s Current File System Path](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-s-current-file-system-path)-->

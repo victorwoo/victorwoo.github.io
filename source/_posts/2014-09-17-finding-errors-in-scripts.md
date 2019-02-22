@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell 所有版本_
 
 	PS> dir $home -Filter *.ps1 -Recurse -Exclude *.ps1xml | Test-SyntaxError
 
-<!--more-->
-本文国际来源：[Finding Errors in Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-in-scripts)
+<!--本文国际来源：[Finding Errors in Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-in-scripts)-->

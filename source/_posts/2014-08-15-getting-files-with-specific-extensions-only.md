@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -28,5 +27,4 @@ _适用于 PowerShell 所有版本_
 
 这将只返回您指定的扩展名的文件。
 
-<!--more-->
-本文国际来源：[Getting Files with Specific Extensions Only](http://community.idera.com/powershell/powertips/b/tips/posts/getting-files-with-specific-extensions-only)
+<!--本文国际来源：[Getting Files with Specific Extensions Only](http://community.idera.com/powershell/powertips/b/tips/posts/getting-files-with-specific-extensions-only)-->

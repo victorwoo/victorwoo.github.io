@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 相对于 `[PSCustomObject]`，使用 class 的最大好处之一是它也可以定义方法（命令）。以下例子实现了秒表功能。秒表可以用来计算代码执行了多少时间：
 
@@ -73,5 +72,4 @@ $stopWatch.TimeElapsed()
 - 方法中不能使用未赋值的变量，也不能从父作用域中读取变量
 - 要引用这个类中的属性或方法，请在前面加上“`$this.`”
 
-<!--more-->
-本文国际来源：[Using Classes (Adding Methods - Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-adding-methods-part-3)
+<!--本文国际来源：[Using Classes (Adding Methods - Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-adding-methods-part-3)-->

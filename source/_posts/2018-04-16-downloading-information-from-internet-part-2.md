@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Invoke-WebRequest` 可以下载任意类型的信息，而且可以根据您的需要将它转为任意类型。在前一个技能里，我们演示了如何处理 JSON 数据。现在我们来看看返回 XML 数据的网页：
 
@@ -32,5 +31,4 @@ $xml = [xml]$result.Content
 $xml.Envelope.Cube.Cube.Cube
 ```
 
-<!--more-->
-本文国际来源：[Downloading Information from Internet (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-2)
+<!--本文国际来源：[Downloading Information from Internet (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望为一个变量增加一个合法数值的范围，您可以向该变量添加一个 ValidateRange 属性，很像函数参数的工作方式。唯一的区别在，它手工作用于您期望的变量上：
 
@@ -34,5 +33,4 @@ tags:
         +  CategoryInfo          : MetadataError:  (:) [], ValidationMetadataException
         +  FullyQualifiedErrorId : ValidateSetFailure
 
-<!--more-->
-本文国际来源：[Adding ValidateRange to a Variable](http://community.idera.com/powershell/powertips/b/tips/posts/adding-validaterange-to-a-variable)
+<!--本文国际来源：[Adding ValidateRange to a Variable](http://community.idera.com/powershell/powertips/b/tips/posts/adding-validaterange-to-a-variable)-->

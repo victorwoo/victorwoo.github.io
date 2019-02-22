@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有两种方式可以查询当前登录的用户：
 
@@ -29,5 +28,4 @@ tags:
 
 两种使用 `Get-WmiObject` 的方式都支持本地和远程方式调用。
 
-<!--more-->
-本文国际来源：[Finding Logged On User](http://community.idera.com/powershell/powertips/b/tips/posts/findinglogged-on-user)
+<!--本文国际来源：[Finding Logged On User](http://community.idera.com/powershell/powertips/b/tips/posts/findinglogged-on-user)-->

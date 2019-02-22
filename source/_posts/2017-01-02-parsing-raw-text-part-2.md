@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何使用 `Select-String` 和正则表达式从纯文本结果中提取有用的信息：
 
@@ -36,5 +35,4 @@ PS C:\> ipconfig |
 192.168.2.112
 ```
 
-<!--more-->
-本文国际来源：[Parsing Raw Text (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-raw-text-part-2)
+<!--本文国际来源：[Parsing Raw Text (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-raw-text-part-2)-->

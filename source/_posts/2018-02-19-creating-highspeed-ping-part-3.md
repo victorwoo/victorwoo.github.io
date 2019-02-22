@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用 WMI 快速 ping 多台计算机，它的语法比较另类。那么让我们重写代码，使得指定要 ping 的计算机列表变得更容易：
 
@@ -28,5 +27,4 @@ Get-WmiObject -Class Win32_PingStatus -Filter "(Address='$query') and timeout=$T
 
 现在要 ping 更大量的计算机变得更容易：只要将它们加入 `$ComputerName` 字符串数组。假如有一个文本文件，每行是一个计算机名，您也可以用 `Get-Content` 来写入 `$ComputerName` 变量。
 
-<!--more-->
-本文国际来源：[Creating Highspeed Ping (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-3)
+<!--本文国际来源：[Creating Highspeed Ping (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-3)-->

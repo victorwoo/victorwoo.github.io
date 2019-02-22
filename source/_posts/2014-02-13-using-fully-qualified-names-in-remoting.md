@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您尝试使用 PowerShell Remoting 时，您也许会因为您使用的机器名不是完整限定名而导致连接错误。Kerberos 验证可能需要也可能不需要使用完整限定名，这取决于您的 DNS 配置。
 
@@ -25,5 +24,4 @@ tags:
 
 然后，用查出的名字来代替主机名。如果主机启用了 Remoting 并且正确地配置了，您现在应该可以连上了。
 
-<!--more-->
-本文国际来源：[Using Fully Qualified Names in Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/using-fully-qualified-names-in-remoting)
+<!--本文国际来源：[Using Fully Qualified Names in Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/using-fully-qualified-names-in-remoting)-->

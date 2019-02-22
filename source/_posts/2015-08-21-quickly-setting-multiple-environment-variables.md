@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一种快速（并且永久地）设置一系列环境变量的很棒的方法：
 
@@ -33,5 +32,4 @@ tags:
 
 通过类似的方法，您也可以删除环境变量。只需要将空字符串赋值给哈希表中的值即可。
 
-<!--more-->
-本文国际来源：[Quickly Setting Multiple Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-setting-multiple-environment-variables)
+<!--本文国际来源：[Quickly Setting Multiple Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-setting-multiple-environment-variables)-->

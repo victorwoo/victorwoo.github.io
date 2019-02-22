@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -27,5 +26,4 @@ _适用于所有 PowerShell 版本_
 
     PS> Set-PSDebug -Trace 1
 
-<!--more-->
-本文国际来源：[Logging What a Script Does](http://community.idera.com/powershell/powertips/b/tips/posts/logging-what-a-script-does)
+<!--本文国际来源：[Logging What a Script Does](http://community.idera.com/powershell/powertips/b/tips/posts/logging-what-a-script-does)-->

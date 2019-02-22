@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 脚本块日志的迷你系列的第 5 部分。我们已经几乎达到目标了，缺少的是一个更好的方式来读取记录的代码。在我们之前的方法中，执行代码的用户收到一个晦涩的 SID 而不是一个清晰的名称。以下是一个将用户 SID 转为真实名称的函数，并且使用智能缓存来加速 SID 的查询过程：
 
@@ -83,5 +82,4 @@ function Get-LoggedCode
 }
 ```
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-5)
+<!--本文国际来源：[Understanding Script Block Logging (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-5)-->

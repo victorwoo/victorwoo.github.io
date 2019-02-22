@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您显然可以通过 `Send-MailMessage` 直接发送邮件。但如果您希望通过缺省的 MAPI 客户端发送电子邮件，也不会太麻烦：
 
@@ -25,5 +24,4 @@ tags:
 
 这个脚本利用了 mailto: 语法。如果您已安装了一个 MAPI 客户端，这将打开一个电子邮件表单并且将脚本指定的内容填充进去。不过您需要手工发送邮件。
 
-<!--more-->
-本文国际来源：[Sending Email via Outlook](http://community.idera.com/powershell/powertips/b/tips/posts/sending-email-via-outlook)
+<!--本文国际来源：[Sending Email via Outlook](http://community.idera.com/powershell/powertips/b/tips/posts/sending-email-via-outlook)-->

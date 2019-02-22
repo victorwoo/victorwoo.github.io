@@ -11,14 +11,12 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 硬连接是NTFS文件系统中文件的“镜像”。它们使得一个文件能在多个文件系统位置（必须在一个卷中）中出现。
 
 所以文件仅仅占用它的原始位置空间，但是在其它地方也可用。当您需要让大文件在多个地方可用的时候，这是一个十分有用的功能。
 
 以下是 `New-HardLink` 函数的介绍。它演示了PowerShell如何调用底层的API函数：
-<!--more-->
 
 	function New-HardLink
 	{
@@ -59,6 +57,5 @@ tags:
 这段代码首先在临时文件夹中创建一个物理文件。然后在您的桌面上创建两个硬连接。它们看上去分别是*mirrorfile1.txt*和*mirrorfile2.txt*。虽然它们看上去像是独立的文件，而实际上他们都指向刚创建的临时文件。 
 
 您可以打开桌面上两个文件中的某一个，做一些修改，然后保存并关闭。当打开另一个文件时，您可以看到一模一样的修改后的内容。您还可以简单地删掉一个镜像文件来移除硬连接。
-<!--more-->
 
-本文国际来源：[Returning Multiple Values](http://community.idera.com/powershell/powertips/b/tips/posts/returning-multiple-values)
+<!--本文国际来源：[Returning Multiple Values](http://community.idera.com/powershell/powertips/b/tips/posts/returning-multiple-values)-->

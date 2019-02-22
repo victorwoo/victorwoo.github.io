@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 对于无人值守运行的脚本，您可以从代码创建登录凭据。这需要将密码以明文的方式存在脚本中（这显然是不安全的，除非您用加密文件系统（EFS）加密您的脚本，或是用其它办法来保护内容）：
 
@@ -25,5 +24,4 @@ $credential = New-Object -TypeName PSCredential($username, $password)
 Get-WmiObject -Class Win32_LogicalDisk -ComputerName SomeServer -Credential $credential
 ```
 
-<!--more-->
-本文国际来源：[Managing Credentials (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-2)
+<!--本文国际来源：[Managing Credentials (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-2)-->

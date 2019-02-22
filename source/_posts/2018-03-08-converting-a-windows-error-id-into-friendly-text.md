@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 PowerShell 中调用一个底层的函数时，您可能经常会得到一个数值型的返回值。如果这个返回值是来自一个 Windows API 函数，那么有一个非常简单的方法将它转换成有意义的文本：
 
@@ -35,5 +34,4 @@ Access is denied
 1..200 | ForEach-Object { '{0} = {1}' -f $_, (New-Object -TypeName ComponentModel.Win32Exception($_)) }
 ```
 
-<!--more-->
-本文国际来源：[Converting a Windows Error ID into Friendly Text](http://community.idera.com/powershell/powertips/b/tips/posts/converting-a-windows-error-id-into-friendly-text)
+<!--本文国际来源：[Converting a Windows Error ID into Friendly Text](http://community.idera.com/powershell/powertips/b/tips/posts/converting-a-windows-error-id-into-friendly-text)-->

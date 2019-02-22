@@ -82,7 +82,6 @@ URL 编码
 
 源代码
 ======
-<!--more-->
 
 	$userName = 'vichamp'
 	$importFileName = 'meiweisq-export-20131030.csv'

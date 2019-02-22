@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您知道吗？您可以搜索计算机上的本地用户，就像搜索域账户一样。
 
@@ -52,5 +51,4 @@ tags:
 	
 	$results | Select-Object -Property Name, LastLogon, Enabled, PasswordNeverExpires
 
-<!--more-->
-本文国际来源：[Searching for Local User Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/searching-for-local-user-accounts)
+<!--本文国际来源：[Searching for Local User Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/searching-for-local-user-accounts)-->

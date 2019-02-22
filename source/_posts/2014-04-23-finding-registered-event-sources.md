@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 每个 Windows 日志文件都有一个注册的事件源列表。要找出哪个事件源注册到哪个事件日志，您可以直接查询 Windows 注册表。
 
@@ -21,5 +20,4 @@ tags:
     $path = "HKLM:\System\CurrentControlSet\services\eventlog\$LogName"
     Get-ChildItem -Path $path -Name 
 
-<!--more-->
-本文国际来源：[Finding Registered Event Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-registered-event-sources)
+<!--本文国际来源：[Finding Registered Event Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-registered-event-sources)-->

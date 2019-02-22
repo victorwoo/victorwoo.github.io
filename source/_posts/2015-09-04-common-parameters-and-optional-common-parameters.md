@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 cmdlet 和高级的 PowerShell 函数可以拥有自己的参数，但它们通常继承了通用的参数。
 
@@ -37,5 +36,4 @@ cmdlet 和高级的 PowerShell 函数可以拥有自己的参数，但它们通�
     Confirm
     UseTransaction
 
-<!--more-->
-本文国际来源：[Common Parameters and Optional Common Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/common-parameters-and-optional-common-parameters)
+<!--本文国际来源：[Common Parameters and Optional Common Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/common-parameters-and-optional-common-parameters)-->

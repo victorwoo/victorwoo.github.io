@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您有没有办法安全地将机密的密码包含在 PowerShell 脚本中？您肯定不敢。但您可以使得别人更难以获取到秘密的信息。
 
@@ -52,5 +51,4 @@ tags:
 
 这段自动生成的加密脚本片段将会定义一个 `$cred` 变量，用于保存包括密码在内的合法凭据。接下来您可以将 `$cred` 变量传递给您脚本中任何需要用户和密码的 `-Credential` 参数。
 
-<!--more-->
-本文国际来源：[Obfuscating Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/obfuscating-credentials)
+<!--本文国际来源：[Obfuscating Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/obfuscating-credentials)-->

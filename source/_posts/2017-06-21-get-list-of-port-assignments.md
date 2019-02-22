@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 IANA（互联网数字分配机构）维护了一个包含所有已知的端口分配的 CSV 文件。PowerShell 可以为您下载这个列表：
 
@@ -30,5 +29,4 @@ Import-Csv -Path $out -Encoding UTF8 |
     Where-Object 'Port Number' -lt 1000
 ```
 
-<!--more-->
-本文国际来源：[Get List of Port Assignments](http://community.idera.com/powershell/powertips/b/tips/posts/get-list-of-port-assignments)
+<!--本文国际来源：[Get List of Port Assignments](http://community.idera.com/powershell/powertips/b/tips/posts/get-list-of-port-assignments)-->

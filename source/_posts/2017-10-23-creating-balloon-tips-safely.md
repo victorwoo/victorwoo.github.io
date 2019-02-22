@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 受到 MVP 同行 Boe Prox 一篇文章的启发，编写了一个精致的创建气球状提示对话框的函数。您可以在 Boe 的原始文章中找到背景信息：[https://mcpmag.com/articles/2017/09/07/creating-a-balloon-tip-notification-using-powershell.aspx](https://mcpmag.com/articles/2017/09/07/creating-a-balloon-tip-notification-using-powershell.aspx)。
 
@@ -76,5 +75,4 @@ function Show-BalloonTip
 }
 ```
 
-<!--more-->
-本文国际来源：[Creating Balloon Tips Safely](http://community.idera.com/powershell/powertips/b/tips/posts/creating-balloon-tips-safely)
+<!--本文国际来源：[Creating Balloon Tips Safely](http://community.idera.com/powershell/powertips/b/tips/posts/creating-balloon-tips-safely)-->

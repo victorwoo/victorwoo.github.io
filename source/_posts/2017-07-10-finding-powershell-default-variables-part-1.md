@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候识别出 PowerShell 管理的缺省变量十分有用，这样能帮您区分内置的变量和自定义的变量。`Get-Variable` 总是输出所有的变量。
 
@@ -35,5 +34,4 @@ $result | Out-GridView
 
 当您运行这段代码时，该代码输出找到的变量数量，以及这些变量。
 
-<!--more-->
-本文国际来源：[Finding PowerShell Default Variables (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-default-variables-part-1)
+<!--本文国际来源：[Finding PowerShell Default Variables (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-default-variables-part-1)-->

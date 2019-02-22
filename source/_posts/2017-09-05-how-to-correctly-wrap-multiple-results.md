@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个 PowerShell 函数需要返回多用于一种信息时，一定要将它们打包成一个对象。只有通过这种方法，调用者才能够发现和独立存取该信息。以下是一个快速的例子。
 
@@ -53,5 +52,4 @@ $result
 $result.Number
 ```
 
-<!--more-->
-本文国际来源：[How to Correctly Wrap Multiple Results](http://community.idera.com/powershell/powertips/b/tips/posts/how-to-correctly-wrap-multiple-results)
+<!--本文国际来源：[How to Correctly Wrap Multiple Results](http://community.idera.com/powershell/powertips/b/tips/posts/how-to-correctly-wrap-multiple-results)-->

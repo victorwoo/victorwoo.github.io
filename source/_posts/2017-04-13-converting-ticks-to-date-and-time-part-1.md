@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候您可能会遇到一些奇怪的日期和时间格式，它们可能用的是类似这样的 64 位 integer 数值：636264671350358729。
 
@@ -34,5 +33,4 @@ PS> $date.Ticks
 
 比如说，您可以利用这个时钟周期来将日期和时间序列化成非特定区域的格式。
 
-<!--more-->
-本文国际来源：[Converting Ticks to Date and Time (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-to-date-and-time-part-1)
+<!--本文国际来源：[Converting Ticks to Date and Time (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-to-date-and-time-part-1)-->

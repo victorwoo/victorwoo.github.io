@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您还在使用旧的重定向操作符来将命令的结果输出到一个文件，那么您可以使用新的 PowerShell cmdlet 来代替。以下是原因：
 
@@ -37,5 +36,4 @@ tags:
     
     notepad.exe $OutPath
 
-<!--more-->
-本文国际来源：[Avoid Using Redirection](http://community.idera.com/powershell/powertips/b/tips/posts/avoid-using-redirection)
+<!--本文国际来源：[Avoid Using Redirection](http://community.idera.com/powershell/powertips/b/tips/posts/avoid-using-redirection)-->

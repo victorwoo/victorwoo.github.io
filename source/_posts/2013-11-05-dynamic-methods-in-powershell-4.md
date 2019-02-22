@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 4.0 开始，方法名可以是一个变量。以下是一个简单的例子：
 
@@ -72,5 +71,4 @@ tags:
 	  $methodInfo.Invoke($Text, $null)
 	} 
 
-<!--more-->
-本文国际来源：[Dynamic Methods in PowerShell 4](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-methods-in-powershell-4)
+<!--本文国际来源：[Dynamic Methods in PowerShell 4](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-methods-in-powershell-4)-->

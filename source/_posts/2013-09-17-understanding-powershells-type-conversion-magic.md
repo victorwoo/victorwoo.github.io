@@ -7,7 +7,6 @@ categories: powershell
 tags:
 - powershell
 - script
-- translation
 ---
 毫无疑问地，PowerShell中的类型转换是它最有用的“魔法”功能之一。如果您执行一个需要特定参数类型（例如：`DateTime` 或 `TimeSpan`）的命令，情况似乎“一切正常”。
 
@@ -20,7 +19,6 @@ tags:
 但是，这是怎么做到的呢？
 
 以下是PowerShell根据您的需要将输入值转换为所需要的类型的步骤——例如 `TimeSpan`。和许多事情一样，并不是什么魔法——只是一堆繁琐的工作。
-<!--more-->
 
 ### 1. 直接赋值
 如果您的输入值是[可直接赋值的](http://msdn.microsoft.com/en-us/library/system.type.isassignablefrom.aspx)，那么直接将您的输入值转型为该类型。
@@ -63,4 +61,4 @@ tags:
 Lee Holmes \[MSFT\]   
 Windows PowerShell开发团队
 
-本文国际来源：[Understanding PowerShell's Type Conversion Magic](http://blogs.msdn.com/b/powershell/archive/2013/06/11/understanding-powershell-s-type-conversion-magic.aspx)
+<!--本文国际来源：[Understanding PowerShell's Type Conversion Magic](http://blogs.msdn.com/b/powershell/archive/2013/06/11/understanding-powershell-s-type-conversion-magic.aspx)-->

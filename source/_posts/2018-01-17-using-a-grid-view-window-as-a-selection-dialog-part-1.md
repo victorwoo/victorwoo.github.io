@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如何使用网格视图窗口作为一个简单的选择对话框呢？
 
@@ -59,5 +58,4 @@ $hashTable.Keys |
     }
 ```
 
-<!--more-->
-本文国际来源：[Using a Grid View Window as a Selection Dialog (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-grid-view-window-as-a-selection-dialog-part-1)
+<!--本文国际来源：[Using a Grid View Window as a Selection Dialog (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-grid-view-window-as-a-selection-dialog-part-1)-->

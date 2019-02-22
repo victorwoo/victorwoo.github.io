@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell维护着一系列.NET类型的缩写，使您编写代码更加自如。例如要将一个字符串转换成DateTime类型，您可以这样写：
 
@@ -32,6 +31,5 @@ PowerShell维护着一系列.NET类型的缩写，使您编写代码更加自如
 		Sort-Object -Property Value |
 		Out-GridView
 
-<!--more-->
 
-本文国际来源：[Finding Type Accelerators](http://community.idera.com/powershell/powertips/b/tips/posts/finding-type-accelerators)
+<!--本文国际来源：[Finding Type Accelerators](http://community.idera.com/powershell/powertips/b/tips/posts/finding-type-accelerators)-->

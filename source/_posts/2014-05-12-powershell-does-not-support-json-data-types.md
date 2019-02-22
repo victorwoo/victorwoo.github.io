@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 缺省情况下，从 JSON 创建的对象使用 String 作为数据的类型：
 
@@ -46,6 +45,5 @@ tags:
 
 ![](/img/2014-05-12-powershell-does-not-support-json-data-types-002.png)
 
-<!--more-->
 
-本文国际来源：[PowerShell does not support JSON Data Types](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-does-not-support-json-data-types)
+<!--本文国际来源：[PowerShell does not support JSON Data Types](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-does-not-support-json-data-types)-->

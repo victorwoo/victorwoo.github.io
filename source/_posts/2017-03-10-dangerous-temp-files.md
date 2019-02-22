@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 内部的系统功能往往十分有用，但请确保真正了解它们的功能。
 
@@ -24,5 +23,4 @@ Test-Path -Path $file
 
 所以如果在脚本中只是使用这个方法来创建临时文件名的话，会留下一大堆孤立的文件。
 
-<!--more-->
-本文国际来源：[Dangerous Temp Files!](http://community.idera.com/powershell/powertips/b/tips/posts/dangerous-temp-files)
+<!--本文国际来源：[Dangerous Temp Files!](http://community.idera.com/powershell/powertips/b/tips/posts/dangerous-temp-files)-->

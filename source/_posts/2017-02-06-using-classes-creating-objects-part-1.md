@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5.0 开始，引入了一个新的关键字 "class"。它能够创建新的类。您可以使用类作为新对象的模板。一下代码定义了一个名为 "Info" 的新类的模板，这个类有一系列属性：
 
@@ -76,5 +75,4 @@ PSCustomObject
 
 所以新创建的对象类型永远是 "`PSCustomObject`"；而在前一个例子中，对象的类型是通过类名定义的。
 
-<!--more-->
-本文国际来源：[Using Classes (Creating Objects - Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-creating-objects-part-1)
+<!--本文国际来源：[Using Classes (Creating Objects - Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-creating-objects-part-1)-->

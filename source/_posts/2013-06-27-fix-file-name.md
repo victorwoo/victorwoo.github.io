@@ -11,7 +11,6 @@ tags:
 计划写一系列整理文件用的脚本。例如根据id3来对mp3文件归档、根据exif信息来对照片归档、根据verycd上的资源名称对下载的文件归档……
 这时候会遇到一个问题：Windows的文件系统是不允许某些特殊字符，以及设备文件名的。详细的限制请参见：http://zh.wikipedia.org/wiki/%E6%AA%94%E6%A1%88%E5%90%8D%E7%A8%B1。
 
-<!--more-->
 这个PowerShell脚本帮助你避开这些坑。具体的做法是将特殊字符替换成'.'，对于恰好是设备名称的主文件名或扩展名之前添加'_'。
 
 	function Get-ValidFileSystemName

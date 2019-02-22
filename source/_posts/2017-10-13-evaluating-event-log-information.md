@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-EventLog` 可以访问传统的 Windows 事件日志写入的内容。可以在一个名为 `ReplacementStrings` 的属性中找到最有价值的信息。以下是一个使该信息可视化并且可以利用它来生成报告的方法。
 
@@ -38,5 +37,4 @@ ForEach-Object {
 
 始终确保查询一个唯一的事件 ID：对于每个事件 ID，ReplacementStrings 中的信息是唯一的，您一定不希望将不同的事件 ID 类型中的信息混在一起。
 
-<!--more-->
-本文国际来源：[Evaluating Event Log Information](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-event-log-information)
+<!--本文国际来源：[Evaluating Event Log Information](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-event-log-information)-->

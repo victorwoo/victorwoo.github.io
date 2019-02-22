@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 脚本块日志的迷你系列的第 2 部分。今天，我们将会再次读取脚本块日志的记录。但是这次我们将以更加面向对象的方式读取日志数据：
 
@@ -115,5 +114,4 @@ Count Name                      Group
 
 请注意：由于日志的体积非常大，所以长的代码被分成多块。"`IsMultiPart`"、"`PartCurrent`" 和 "`PartTotal`" 属性可以提供这方面的有用信息。
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-2)
+<!--本文国际来源：[Understanding Script Block Logging (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-2)-->

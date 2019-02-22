@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Invoke-WebRequest` 可以从网页获取 HTML 信息，并且可以用正则表达式来提取这些页面中的信息。
 
@@ -40,5 +39,4 @@ if ($page.Content -match $pattern)
 }
 ```
 
-<!--more-->
-本文国际来源：[Getting Excuses Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/getting-excuses-automatically-pt1)
+<!--本文国际来源：[Getting Excuses Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/getting-excuses-automatically-pt1)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否希望快速获取您的机器或是网络上的机器的 IP 地址列表？以下是实现方法：
 
@@ -45,5 +44,4 @@ tags:
     } |
     Select-Object -ExpandProperty IPAddressToString
 
-<!--more-->
-本文国际来源：[Quickly Getting IP Addresses](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-getting-ip-addresses)
+<!--本文国际来源：[Quickly Getting IP Addresses](http://community.idera.com/powershell/powertips/b/tips/posts/quickly-getting-ip-addresses)-->

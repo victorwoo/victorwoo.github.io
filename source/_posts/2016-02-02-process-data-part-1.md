@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 函数如何通过管道或参数接受数据的三个技巧中的第一个。
 
@@ -58,5 +57,4 @@ Processing received element 3...
 Processing received element 4... 
 ```
 
-<!--more-->
-本文国际来源：[Process Data (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/processing-data-part-1)
+<!--本文国际来源：[Process Data (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/processing-data-part-1)-->

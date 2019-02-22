@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您运行一个 PowerShell 任务时，默认情况下它的优先级是 Normal。并且如果您脚本所做的事十分消耗 CPU 的话，您机器的性能可能会受影响。
 
@@ -31,5 +30,4 @@ tags:
 
 > 这时候可用的值在错误提示中就暴露出来了 :-)  
 
-<!--more-->
-本文国际来源：[Lowering PowerShell Process Priority](http://community.idera.com/powershell/powertips/b/tips/posts/lowering-powershell-process-priority)
+<!--本文国际来源：[Lowering PowerShell Process Priority](http://community.idera.com/powershell/powertips/b/tips/posts/lowering-powershell-process-priority)-->

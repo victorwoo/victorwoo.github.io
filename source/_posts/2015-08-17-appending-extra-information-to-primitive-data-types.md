@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 也许您希望对一个变量做标记并提供一些额外信息。在 PowerShell 中，可以使用 `Add-Member` 来向一个变量附加 NoteProperties 或 ScriptProperties。
 
@@ -28,5 +27,4 @@ tags:
     $a.Origin
     $a.Time
 
-<!--more-->
-本文国际来源：[Appending Extra Information to Primitive Data Types](http://community.idera.com/powershell/powertips/b/tips/posts/appending-extra-information-to-primitive-data-types)
+<!--本文国际来源：[Appending Extra Information to Primitive Data Types](http://community.idera.com/powershell/powertips/b/tips/posts/appending-extra-information-to-primitive-data-types)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您有一系列 Word 文档，并且希望知道它们共有多少页。以下是一个函数，传入一个 Word 文件参数，便能得到它包含多少页：
 
@@ -32,5 +31,4 @@ tags:
 
 如果这对您有用，可以将它改为一个函数，您就可以用 PowerShell 来统计多个 Word 文档共有多少页。
 
-<!--more-->
-本文国际来源：[Counting Pages in a Word Document](http://community.idera.com/powershell/powertips/b/tips/posts/counting-pages-in-a-word-document)
+<!--本文国际来源：[Counting Pages in a Word Document](http://community.idera.com/powershell/powertips/b/tips/posts/counting-pages-in-a-word-document)-->

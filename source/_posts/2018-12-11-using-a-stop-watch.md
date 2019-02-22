@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中，要测量时间，您可以简单将一个 datetime 值减去另一个 datetime 值：
 
@@ -38,5 +37,4 @@ $StopWatch.ElapsedMilliseconds
 
 使用停表的好处是可以暂停和继续。
 
-<!--more-->
-本文国际来源：[Using a Stop Watch](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-a-stop-watch)
+<!--本文国际来源：[Using a Stop Watch](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-a-stop-watch)-->

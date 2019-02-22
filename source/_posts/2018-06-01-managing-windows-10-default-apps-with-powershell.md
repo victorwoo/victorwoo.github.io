@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 10 缺省安装了一系列 APP，而且即使您手动卸载了它们，它们有可能在下一个重大 Windows 10 更新的时候又回来。
 
@@ -23,5 +22,4 @@ PS> Get-AppxPackage *3dbuilder* | Remove-AppxPackage
 
 有许多类似 http://www.thewindowsclub.com/remove-built-windows-10-apps-users-using-powershell-script 的网站，提供许多更多如何移除特定的 Windows 10 APP 的例子。
 
-<!--more-->
-本文国际来源：[Managing Windows 10 Default Apps with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-10-default-apps-with-powershell)
+<!--本文国际来源：[Managing Windows 10 Default Apps with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-10-default-apps-with-powershell)-->

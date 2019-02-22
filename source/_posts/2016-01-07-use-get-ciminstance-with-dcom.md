@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 3.0 增加了`Get-WmiObject` 的另一个选择：`Get-CimInstance`，它工作起来十分相似但可以从内部 的 WMI 服务中获取信息：
 
@@ -56,5 +55,4 @@ function Get-BIOS
 }
 ```
 
-<!--more-->
-本文国际来源：[Use Get-CimInstance with DCOM](http://community.idera.com/powershell/powertips/b/tips/posts/use-get-ciminstance-with-dcom)
+<!--本文国际来源：[Use Get-CimInstance with DCOM](http://community.idera.com/powershell/powertips/b/tips/posts/use-get-ciminstance-with-dcom)-->

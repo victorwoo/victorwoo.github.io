@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Format-List` 缺省以列表的形式显示对象的属性，如果某个属性包含一个数组，该数组将会转换为文本，而且只显示一小部分数组元素。以下是一个例子：
 
@@ -74,5 +73,4 @@ Modules : {System.Diagnostics.ProcessModule (PowerShell_ISE.exe),
 (...)
 ```
 
-<!--more-->
-本文国际来源：[Using Secret $FormatEnumerationLimit variable](http://community.idera.com/powershell/powertips/b/tips/posts/using-secret-formatenumerationlimit-variable)
+<!--本文国际来源：[Using Secret $FormatEnumerationLimit variable](http://community.idera.com/powershell/powertips/b/tips/posts/using-secret-formatenumerationlimit-variable)-->

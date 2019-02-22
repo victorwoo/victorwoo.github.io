@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用 `Select-String` 在纯文本中查找指定的词。费了一些功夫通过指定的 pattern 来提取实际的值：
 
@@ -77,5 +76,4 @@ PS C:\> ipconfig |
 192.168.2.112
 ```
 
-<!--more-->
-本文国际来源：[Parsing Raw Text (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-raw-text-part-3)
+<!--本文国际来源：[Parsing Raw Text (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-raw-text-part-3)-->

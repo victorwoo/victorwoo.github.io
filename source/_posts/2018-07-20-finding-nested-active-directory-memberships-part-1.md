@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `ActiveDirectory` 模块（免费的 RSAT 工具的一部分）提供许多 AD cmdlet。其中一个可以读取整个直接组的成员，例如：
 
@@ -47,5 +46,4 @@ Get-NestedGroupMember -Identity $env:username |
 Select-Object -Property Name, DistinguishedName
 ```
 
-<!--more-->
-本文国际来源：[Finding Nested Active Directory Memberships (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-nested-active-directory-memberships-part-1)
+<!--本文国际来源：[Finding Nested Active Directory Memberships (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-nested-active-directory-memberships-part-1)-->

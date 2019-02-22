@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您想检查系统中已安装的更新，与其搜索在线更新，并和本地安装的更新比对，更好的方法是查询本地更新历史。
 
@@ -39,5 +38,4 @@ Select-Object Title, Description, Date, $status |
 Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Finding Installed Updates (and searching for missing) (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-installed-updates-and-searching-for-missing-part-3)
+<!--本文国际来源：[Finding Installed Updates (and searching for missing) (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-installed-updates-and-searching-for-missing-part-3)-->

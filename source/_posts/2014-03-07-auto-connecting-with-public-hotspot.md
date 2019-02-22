@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 许多手机服务提供商在机场和公共场所提供公共热点。要连接热点，您往往需要浏览一个登录页面，然后手动输入您的凭据。
 
@@ -49,5 +48,4 @@ tags:
 
 然后，识别出您希望填充的表单，然后将脚本代码中的表单名称和动作改为您从 HTML 代码中识别出来的值。
 
-<!--more-->
-本文国际来源：[Auto-Connecting with Public Hotspot](http://community.idera.com/powershell/powertips/b/tips/posts/auto-connecting-with-public-hotspot)
+<!--本文国际来源：[Auto-Connecting with Public Hotspot](http://community.idera.com/powershell/powertips/b/tips/posts/auto-connecting-with-public-hotspot)-->

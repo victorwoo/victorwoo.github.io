@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要在 PowerShell 中管理 Active Directory 的用户和计算机，您需要 Microsoft 提供的免费的 RSAT 工具中的 Active Directory 模块。
 
@@ -35,5 +34,4 @@ Remove-PSSession $s
 
 警告：由于所有 cmdlet 实际上都是运行在服务器端，所有结果都被序列化后传到本地。这会改变对象类型，所以当您用将对象通过管道从一个 AD cmdlet 传到另一个 AD cmdlet 时，您可能会遇到绑定问题。只要您在管道之外使用 cmdlet，那么一切都没问题。
 
-<!--more-->
-本文国际来源：[Exporting ActiveDirectory Module](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-activedirectory-module)
+<!--本文国际来源：[Exporting ActiveDirectory Module](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-activedirectory-module)-->

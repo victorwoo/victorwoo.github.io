@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您加密保密信息时，主要的问题是要寻找一个合适的密钥。一个特别安全的密钥是您的 Windows 身份，它和您的计算机身份绑定。这可以用来在特定的机器上加密敏感的个人信息。
 
@@ -58,5 +57,4 @@ function Encrypt-Text
 
 您可以将密文安全地保存到文件里。只有您可以读取并解密该文件，而且只能在加密用的电脑上完成。
 
-<!--more-->
-本文国际来源：[Safely Encrypting and Decrypting Text](http://community.idera.com/powershell/powertips/b/tips/posts/safely-encrypting-and-decrypting-text)
+<!--本文国际来源：[Safely Encrypting and Decrypting Text](http://community.idera.com/powershell/powertips/b/tips/posts/safely-encrypting-and-decrypting-text)-->

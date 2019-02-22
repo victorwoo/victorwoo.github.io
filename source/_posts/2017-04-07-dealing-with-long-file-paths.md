@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以前，当路径长于 256 字符时，Windows 文件系统有时会变得缓慢。在 PowerShell Gallery 有一个 module，增加了一系列 cmdlet，可以快速搜索文件系统，并且支持任意长度的路径。
 
@@ -29,5 +28,4 @@ Get-LongChildItem -Path c:\windows -Recurse -File |
     Where-Object { $_.FullName.Length -gt 250 }
 ```
 
-<!--more-->
-本文国际来源：[Dealing with Long File Paths](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-long-file-paths)
+<!--本文国际来源：[Dealing with Long File Paths](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-long-file-paths)-->

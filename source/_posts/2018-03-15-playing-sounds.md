@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您只是需要蜂鸣，那么 PowerShell 可以很轻松地帮助您：
 
@@ -44,5 +43,4 @@ Hand        Property   static System.Media.SystemSound Hand {get;}
 Question    Property   static System.Media.SystemSound Question {get;}
 ```
 
-<!--more-->
-本文国际来源：[Playing Sounds](http://community.idera.com/powershell/powertips/b/tips/posts/playing-sounds)
+<!--本文国际来源：[Playing Sounds](http://community.idera.com/powershell/powertips/b/tips/posts/playing-sounds)-->

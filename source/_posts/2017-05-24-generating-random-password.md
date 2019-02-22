@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个非常简单的创建复杂随机密码的方法：
 
@@ -24,5 +23,4 @@ $SpecialCharCount = 3
 
 The API call lets you choose the length of the password, and the number of non-alphanumeric characters it contains.
 
-<!--more-->
-本文国际来源：[Generating Random Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/generating-random-password)
+<!--本文国际来源：[Generating Random Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/generating-random-password)-->

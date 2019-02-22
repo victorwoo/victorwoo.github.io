@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您没有充裕的时间来调查您系统日志中出现频率最高的错误来源，请试试这行代码：
 
@@ -27,5 +26,4 @@ tags:
     Get-EventLog -LogName System -Source $source |
       Out-GridView
 
-<!--more-->
-本文国际来源：[Finding the Most Important Event Log Error Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-the-most-important-event-log-error-sources)
+<!--本文国际来源：[Finding the Most Important Event Log Error Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-the-most-important-event-log-error-sources)-->

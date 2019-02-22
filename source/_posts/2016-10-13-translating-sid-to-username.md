@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否希望将安全标识符（SID）翻译为一个真实的名称？这个函数将能够帮助您：
 
@@ -38,5 +37,4 @@ function ConvertFrom-SID
 
 您可以通过参数传入 SID，或通过管道传入一个或多个 SID 给这个函数。
 
-<!--more-->
-本文国际来源：[Translating SID to Username](http://community.idera.com/powershell/powertips/b/tips/posts/translating-sid-to-username)
+<!--本文国际来源：[Translating SID to Username](http://community.idera.com/powershell/powertips/b/tips/posts/translating-sid-to-username)-->

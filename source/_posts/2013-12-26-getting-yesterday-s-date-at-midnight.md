@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您了解了每个 `DateTime` 对象支持 `Add...()` 方法之后，获取相对日期（例如昨天或下周）就十分容易了。以下代码可以获取昨天的时间值：
 
@@ -34,5 +33,4 @@ tags:
 
 > 译者注：如果您只是需要获取昨天午夜的日期值，还可以有其它方法。如：`(Get-Date).AddDays(-1).Date` 或 `[System.DateTime]::Today.Subtract([System.TimeSpan]::FromDays(1))`。
 
-<!--more-->
-本文国际来源：[Getting Yesterday’s Date - at Midnight!](http://community.idera.com/powershell/powertips/b/tips/posts/getting-yesterday-s-date-at-midnight)
+<!--本文国际来源：[Getting Yesterday’s Date - at Midnight!](http://community.idera.com/powershell/powertips/b/tips/posts/getting-yesterday-s-date-at-midnight)-->

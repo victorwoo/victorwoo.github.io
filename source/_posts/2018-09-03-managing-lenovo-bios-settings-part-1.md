@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 不幸的是，没有一个标准的方法来管理计算机厂商的 BIOS 设置。每个厂商使用专有的方法。对于 Lenovo 电脑，您可以使用 WMI 来存取和转储 BIOS 设置：
 
@@ -111,5 +110,4 @@ ForEach-Object {
     NetworkBoot                         USBFDD                                  True
     BootOrderLock                       Disable                                 True
 
-<!--more-->
-本文国际来源：[Managing Lenovo BIOS Settings (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-1)
+<!--本文国际来源：[Managing Lenovo BIOS Settings (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-1)-->

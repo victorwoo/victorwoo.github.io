@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们将建了 `Out-PDFFile` 函数，能够接受任意 PowerShell 的结果数据并将它们转换为 PDF 文件——使用 Windows 10 和 Windows Server 2016 内置的打印驱动。
 
@@ -124,5 +123,4 @@ PS> Get-ComputerInfo | Out-PDFFile -Path $home\Desktop\computerinfo.pdf -Open
 
 如果指定的 "PrintPDFUnattended" 打印机还未安装，该函数也会事先安装该打印机。
 
-<!--more-->
-本文国际来源：[Sending PowerShell Results to PDF (Part 4)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-4)
+<!--本文国际来源：[Sending PowerShell Results to PDF (Part 4)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-4)-->

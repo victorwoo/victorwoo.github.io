@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell ISE 3 或更高版本_
 
@@ -44,5 +43,4 @@ _适用于 PowerShell ISE 3 或更高版本_
 
 如果您将“$`psise.CurrentFile.Editor.Text`”替换成一个包含脚本代码的变量，那么您可以在 ISE 编辑器之外运行这个函数。只需要用 `Get-Content` 将任意脚本的内容读取进一个变量，然后就可以在上述代码中使用这个变量。
 
-<!--more-->
-本文国际来源：[Getting a Variable Inventory](http://community.idera.com/powershell/powertips/b/tips/posts/getting-a-variable-inventory)
+<!--本文国际来源：[Getting a Variable Inventory](http://community.idera.com/powershell/powertips/b/tips/posts/getting-a-variable-inventory)-->

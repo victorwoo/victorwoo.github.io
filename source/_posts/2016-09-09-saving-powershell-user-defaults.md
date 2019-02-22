@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们将要进入的“色彩之周”将带来许多改变 PowerShell ISE 编辑器和控制台颜色的技能。多数应用到 PowerShell 的改变并没有保存。PowerShell ISE 并不会保存一些颜色设置，但一个更健壮的方法是在 PowerShell 的一个描述脚本中改变您的自定义设置。
 
@@ -42,5 +41,4 @@ C:\Users\Tobias\Documents\WindowsPowerShell\XXXXXXXXXXXXXX_profile.ps1
 PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
 ```
 
-<!--more-->
-本文国际来源：[Saving PowerShell User Defaults](http://community.idera.com/powershell/powertips/b/tips/posts/saving-powershell-user-defaults)
+<!--本文国际来源：[Saving PowerShell User Defaults](http://community.idera.com/powershell/powertips/b/tips/posts/saving-powershell-user-defaults)-->

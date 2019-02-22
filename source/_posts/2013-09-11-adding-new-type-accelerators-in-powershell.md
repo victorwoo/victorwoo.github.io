@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您发现您常常使用某些.NET类型，您可能会希望创建一些快捷方式，使您的生活变得更简单。
 
@@ -33,6 +32,5 @@ tags:
 
 	[Path] | Get-Member -Static
 
-<!--more-->
 
-本文国际来源：[Adding New Type Accelerators in Powershell](http://community.idera.com/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell)
+<!--本文国际来源：[Adding New Type Accelerators in Powershell](http://community.idera.com/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell)-->

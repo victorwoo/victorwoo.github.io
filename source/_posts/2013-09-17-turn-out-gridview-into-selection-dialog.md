@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在PowerShell 3.0中，`Out-GridView` 终于可以被改为一个多功能选择对话框——只要增加一个新的参数 `-PassThru` 就可以看到效果：
 
@@ -26,6 +25,5 @@ tags:
 	  } 
 
 您可以通过管道将任何对象传给 `Out-GridView`。用户可以从界面中选择输出结果的一部分，或者用关键词过滤结果，然后选择结果的一个或多个元素。点击 OK 之后，选中的元素将传输到下一个命令。
-<!--more-->
 
-本文国际来源：[Turn Out-GridView into Selection Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/turn-out-gridview-into-selection-dialog)
+<!--本文国际来源：[Turn Out-GridView into Selection Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/turn-out-gridview-into-selection-dialog)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您想从互联网下载信息时，`Invoke-WebRequest` 是您的好帮手。例如，您可以发送一个请求到 Google 并使用 PowerShell 检验它的结果。
 
@@ -28,5 +27,4 @@ Google 也知道您在这么做，所以当您从 PowerShell 发送一个查询�
       Where-Object { $_.href -like '*imgres*' } | 
       ForEach-Object { ($_.href -split 'imgurl=')[-1].Split('&')[0]}  
 
-<!--more-->
-本文国际来源：[Getting Picture URLs from Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/getting-picture-urls-from-google-picture-search)
+<!--本文国际来源：[Getting Picture URLs from Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/getting-picture-urls-from-google-picture-search)-->

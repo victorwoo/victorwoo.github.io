@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5.0 开始引入了类的概念，不过您也可以在 PowerShell 的其它版本中使用自定义类。只需要用 C# 代码来定义真正的类，然后用 `Add-Type` 来编译这些类。
 
@@ -41,5 +40,4 @@ PowerShell 5.0 开始引入了类的概念，不过您也可以在 PowerShell �
 
 显然，拥有一些技术背景的开发人员对这种技术最感兴趣。
 
-<!--more-->
-本文国际来源：[Creating Real Classes](http://community.idera.com/powershell/powertips/b/tips/posts/creating-real-classes)
+<!--本文国际来源：[Creating Real Classes](http://community.idera.com/powershell/powertips/b/tips/posts/creating-real-classes)-->

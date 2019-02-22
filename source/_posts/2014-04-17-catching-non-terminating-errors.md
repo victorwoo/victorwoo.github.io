@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 非终止性错误是在 cmdlet 内部处理的错误。多数在 cmdlet 中产生的错误都是非终止性错误。
 
@@ -40,5 +39,4 @@ tags:
     
 如果您不想一个一个为异常处理器中所有的 cmdlet 添加 `-ErrorAction Stop` 参数，您可以临时将 `$ErrorActionPreference` 变量设置为 `"Stop"`。该设置用于一个 cmdlet 没有显示地设置 `-ErrorAction` 的情况。
 
-<!--more-->
-本文国际来源：[Catching Non-Terminating Errors](http://community.idera.com/powershell/powertips/b/tips/posts/catching-non-terminating-errors)
+<!--本文国际来源：[Catching Non-Terminating Errors](http://community.idera.com/powershell/powertips/b/tips/posts/catching-non-terminating-errors)-->

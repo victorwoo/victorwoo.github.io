@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 类似 `$MyInvocation.MyCommand.Definition` 的代码对于确定当前脚本存储的位置十分有用，例如需要存取同一个文件夹下其它资源的时候。
 
@@ -44,5 +43,4 @@ test
 
 现在，`$MyInvocation` 变得没有价值，因为它重视返回调用本脚本块的调用者信息。
 
-<!--more-->
-本文国际来源：[Using Solid Alternatives for $MyInvocation](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-solid-alternatives-for-myinvocation)
+<!--本文国际来源：[Using Solid Alternatives for $MyInvocation](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-solid-alternatives-for-myinvocation)-->

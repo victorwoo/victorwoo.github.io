@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个短小但是十分有用的函数，能够从其它 cmdlet 接收数据并发送到 Excel：
 
@@ -35,5 +34,4 @@ function Out-Excel
 PS C:\> Get-Process | Out-Excel
 ```
 
-<!--more-->
-本文国际来源：[Pipe Information to Excel](http://community.idera.com/powershell/powertips/b/tips/posts/pipe-information-to-excel)
+<!--本文国际来源：[Pipe Information to Excel](http://community.idera.com/powershell/powertips/b/tips/posts/pipe-information-to-excel)-->

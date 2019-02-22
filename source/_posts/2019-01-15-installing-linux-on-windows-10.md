@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 中带有适用于 Linux 的 Windows 子系统 (WSL) 功能，您可以通过它来运行各种 Linux 发型版。通过提升权限的 PowerShell 来启用 WSL：
 
@@ -37,5 +36,4 @@ pwsh
 
 下一步，从 Debian 中，运行 "`pwsh`" 命令切换到 PowerShell 6。
 
-<!--more-->
-本文国际来源：[Installing Linux on Windows 10](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/installing-linux-on-windows-10)
+<!--本文国际来源：[Installing Linux on Windows 10](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/installing-linux-on-windows-10)-->

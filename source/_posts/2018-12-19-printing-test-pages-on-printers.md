@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 感谢 `PrintManagement` 模块为 Windows 10 和 Windows Server 2016 提供了大量的打印功能支持。如果希望打印官方的测试页，您还需要动用 WMI。
 
@@ -38,5 +37,4 @@ Get-Printer |
 
 当这段代码运行时，将弹出一个对话框显示所有的打印机。请选择一个（或按住 `CTRL` 选择多个），将在选中的打印机上打印测试页。
 
-<!--more-->
-本文国际来源：[Printing Test Pages on Printers](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/printing-test-pages-on-printers)
+<!--本文国际来源：[Printing Test Pages on Printers](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/printing-test-pages-on-printers)-->

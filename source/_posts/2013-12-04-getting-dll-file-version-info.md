@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否需要获取一个 DLL 文件列表以及它们的版本信息？`Get-ChildItem` 可以为您获取这些信息。您只需要解开其中的一些属性，例如：
 
@@ -32,5 +31,4 @@ tags:
 
 “$this”是您需要扩展的对象。
 
-<!--more-->
-本文国际来源：[Getting DLL File Version Info](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dll-file-version-info)
+<!--本文国际来源：[Getting DLL File Version Info](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dll-file-version-info)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时，你会需要在文件超过一定的日期之后将它们移动到一个存档文件夹。
 
@@ -47,5 +46,4 @@ tags:
 
 请注意这只是一个示例脚本。您可能需要管理员权限才能确实将文件移出 Windows 文件夹。
 
-<!--more-->
-本文国际来源：[Moving Outdated Log Files to Archive](http://community.idera.com/powershell/powertips/b/tips/posts/moving-outdated-log-files-to-archive)
+<!--本文国际来源：[Moving Outdated Log Files to Archive](http://community.idera.com/powershell/powertips/b/tips/posts/moving-outdated-log-files-to-archive)-->

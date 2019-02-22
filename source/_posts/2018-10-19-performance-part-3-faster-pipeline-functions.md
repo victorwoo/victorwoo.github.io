@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能中我们演示了如何改进循环，尤其是管道操作。要将这个知识点转为函数，请看一下这个简单的管道相关的函数，它的功能是统计管道传送过来的元素数量：
 
@@ -141,5 +140,4 @@ $list = 1..1000000 | Get-ServerName
 (Get-Date) - $start
 ```
 
-<!--more-->
-本文国际来源：[Performance (Part 3): Faster Pipeline Functions](http://community.idera.com/powershell/powertips/b/tips/posts/performance-part-3-faster-pipeline-functions)
+<!--本文国际来源：[Performance (Part 3): Faster Pipeline Functions](http://community.idera.com/powershell/powertips/b/tips/posts/performance-part-3-faster-pipeline-functions)-->

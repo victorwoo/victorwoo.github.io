@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -19,5 +18,4 @@ _适用于 PowerShell 所有版本_
 
     Start-Process -FilePath notepad -ArgumentList '/P C:\windows\WindowsUpdate.log'
 
-<!--more-->
-本文国际来源：[Using Notepad to Print Things](http://community.idera.com/powershell/powertips/b/tips/posts/using-notepad-to-print-things)
+<!--本文国际来源：[Using Notepad to Print Things](http://community.idera.com/powershell/powertips/b/tips/posts/using-notepad-to-print-things)-->

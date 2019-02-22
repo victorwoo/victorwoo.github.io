@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一行返回当前用户 SID 并且可以用于登录脚本的代码，例如：
 
@@ -19,5 +18,4 @@ tags:
 ([System.Security.Principal.WindowsIdentity]::GetCurrent()).User.Value
 ```
 
-<!--more-->
-本文国际来源：[SID of Current User](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sid-of-current-user)
+<!--本文国际来源：[SID of Current User](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sid-of-current-user)-->

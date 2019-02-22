@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Add-Member` 常用来创建自定义对象，例如：
 
@@ -82,5 +81,4 @@ Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:02 PM
 
 `Date` 属性返回的是静态信息；而`CurrentDate` 属性总是返回当前时间，因为它的值是一个脚本，每次查询这个属性的时候都会执行一次。
 
-<!--more-->
-本文国际来源：[Careful with Add-Member!](http://community.idera.com/powershell/powertips/b/tips/posts/careful-with-add-member)
+<!--本文国际来源：[Careful with Add-Member!](http://community.idera.com/powershell/powertips/b/tips/posts/careful-with-add-member)-->

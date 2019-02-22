@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Resolve-Path` 是一个相当棒的查找相同深度路径用的 Cmdlet。例如，以下是一段很短小的代码，它在您机器的每个用户桌面上创建一个文本文件：
 
@@ -33,5 +32,4 @@ tags:
 	WARNING: Creating C:\Users\Tester\Desktop\hello there.txt
 	WARNING: Creating C:\Users\Tobias\Desktop\hello there.txt
 
-<!--more-->
-本文国际来源：[Accessing All Users Desktop](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-all-users-desktop)
+<!--本文国际来源：[Accessing All Users Desktop](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-all-users-desktop)-->

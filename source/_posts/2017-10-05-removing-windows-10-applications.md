@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可能是最简单的移除预装 Windows 10 APP 的方法。如果您知道想要移除的应用程序名称，只需要以管理员身份打开 PowerShell，然后像这样移除 APP：
 
@@ -24,5 +23,4 @@ PS>
 
 注意：请去掉 `-WhatIf` 参数来实际移除 APP，不要删除作用不明的应用程序。可能其它 APP 会依赖这个 Appx 包。
 
-<!--more-->
-本文国际来源：[Removing Windows 10 Apps](http://community.idera.com/powershell/powertips/b/tips/posts/removing-windows-10-applications)
+<!--本文国际来源：[Removing Windows 10 Apps](http://community.idera.com/powershell/powertips/b/tips/posts/removing-windows-10-applications)-->

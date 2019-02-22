@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 某些时候，唯一的自动化处理办法是向 UI 组件发送按键和鼠标点击消息。一个强大且免费的 PowerShell 扩展，叫做“WASP”，地址如下：
 
@@ -49,5 +48,4 @@ tags:
 * 当需要发送按键序列，例如 `CTRL`+`C` 时，请使用小写字母。“`^c`”代表发送 `CTRL`+`c`，而“`^C`”代表发送 `CTRL`+`SHIFT`+`C`。
 * 只有 WinForm 窗口支持操作子控件，例如特定的文本框和按钮（`Select-ChildWindow`, `Select-Control`）。WPF 窗口也可以接收按键，但是 WPF 中在窗体的 UI 组件之上无法获得支持输入的控件。
 
-<!--more-->
-本文国际来源：[Automation via Keystroke and Mouse Click](http://community.idera.com/powershell/powertips/b/tips/posts/automation-via-keystroke-and-mouse-click)
+<!--本文国际来源：[Automation via Keystroke and Mouse Click](http://community.idera.com/powershell/powertips/b/tips/posts/automation-via-keystroke-and-mouse-click)-->

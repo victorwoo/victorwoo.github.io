@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 修饰一段文本并不太简单，如果您希望名字或者文本格式正确，并且每个单词都以大写开头，那么工作量通常很大。
 
@@ -33,5 +32,4 @@ $textInfo.ToTitleCase($text.ToLower())
 This method may be especially useful for list of names.
 这个方法对于姓名列表很有用。
 
-<!--more-->
-本文国际来源：[Title-Casing Strings (Capital Letter Starts Each Word)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/title-casing-strings-capital-letter-starts-each-word)
+<!--本文国际来源：[Title-Casing Strings (Capital Letter Starts Each Word)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/title-casing-strings-capital-letter-starts-each-word)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候我们会疑惑当 PowerShell 启动的时候，将执行哪些启动脚本。它们数量很多，而且各不相同，要看您运行的是 PowerShell 控制台，ISE，还是其他宿主。
 
@@ -41,6 +40,5 @@ tags:
 
 	Get-PSProfileStatus | Out-GridView
 
-<!--more-->
 
-本文国际来源：[Finding All PowerShell Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-powershell-profile-scripts)
+<!--本文国际来源：[Finding All PowerShell Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-powershell-profile-scripts)-->

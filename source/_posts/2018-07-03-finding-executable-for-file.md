@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 多数事情可以由 PowerShell 的内置指令完成，但是那还不够，您总是可以借助内置的 Windows API。例如，如果您想查看某个文件关联的应用程序，请试试这段代码：
 
@@ -65,5 +64,4 @@ public class Win32API
 PS> Set-EnvironmentVariable -Name test -Value 123 -Target User
 ```
 
-<!--more-->
-本文国际来源：[Finding Executable for File](http://community.idera.com/powershell/powertips/b/tips/posts/finding-executable-for-file)
+<!--本文国际来源：[Finding Executable for File](http://community.idera.com/powershell/powertips/b/tips/posts/finding-executable-for-file)-->

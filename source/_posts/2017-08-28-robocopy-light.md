@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Robocopy.exe` 是一个非常有用并且功能多样的内置命令，它可以高效地将文件从一个地方复制到另一个地方。不幸的是，该命令有很多选项和开关，使得它很难掌握。
 
@@ -41,5 +40,4 @@ function Copy-FileWithRobocopy
 PS> Copy-FileWithRobocopy -Source $env:windir -Destination c:\logs -Filter *.log
 ```
 
-<!--more-->
-本文国际来源：[Robocopy Light](http://community.idera.com/powershell/powertips/b/tips/posts/robocopy-light)
+<!--本文国际来源：[Robocopy Light](http://community.idera.com/powershell/powertips/b/tips/posts/robocopy-light)-->

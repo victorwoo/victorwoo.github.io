@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5.0 中引入了 ZIP 文件支持，但是如果您安装了 .NET Framework 4.5 并且希望更多地控制解压的过程，请试试这个方法：
 
@@ -41,5 +40,4 @@ PowerShell 5.0 中引入了 ZIP 文件支持，但是如果您安装了 .NET Fra
         explorer.exe $Destination
     }
 
-<!--more-->
-本文国际来源：[Unzipping ZIP Files with PowerShell 3.0 and 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files-with-powershell-3-0-and-4-0)
+<!--本文国际来源：[Unzipping ZIP Files with PowerShell 3.0 and 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files-with-powershell-3-0-and-4-0)-->

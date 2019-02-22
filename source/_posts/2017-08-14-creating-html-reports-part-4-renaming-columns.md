@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能中我们开始将 PowerShell 结果转为 HTML 报告。现在报告的结果接近完成了。我们只需要对某些列标题进行润色和重命名即可。这是上一次的脚本：
 
@@ -78,5 +77,4 @@ Get-EventLog -LogName System -EntryType Error -After $startDate |
 Invoke-Item -Path $Path
 ```
 
-<!--more-->
-本文国际来源：[Creating HTML Reports (Part 4 – Renaming Columns)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-4-renaming-columns)
+<!--本文国际来源：[Creating HTML Reports (Part 4 – Renaming Columns)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-4-renaming-columns)-->

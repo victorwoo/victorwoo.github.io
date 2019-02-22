@@ -11,11 +11,9 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个很棒的流行的 PowerShell 速查表，完全免费并且可以直接下载：
 
 [https://github.com/PrateekKumarSingh/CheatSheets/tree/master/Powershell](https://github.com/PrateekKumarSingh/CheatSheets/tree/master/Powershell)
 
-<!--more-->
-本文国际来源：[PowerShell Cheat Sheet Compilation (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/powershell-cheat-sheet-compilation-part-1)
+<!--本文国际来源：[PowerShell Cheat Sheet Compilation (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/powershell-cheat-sheet-compilation-part-1)-->

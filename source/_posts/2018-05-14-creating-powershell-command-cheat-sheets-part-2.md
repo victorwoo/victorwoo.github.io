@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们创建了 PowerShell 命令的速查表，在此提醒，这行代码将会创建网络命令的速查表（假设您有存取本例中 NetAdapter 模块的权限）：
 
@@ -75,5 +74,4 @@ Invoke-Item -Path $OutFile
 
 运行这段代码后，几秒钟后您的缺省 WEB 浏览器将会打开一个包含速查表信息的页面。现在可以用浏览器的命令来打印它。这个页面不是十分美观，但满足了它的需求。
 
-<!--more-->
-本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-2)
+<!--本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 使用 PowerShell 读取注册表是小菜一碟。以下是一段代码模板：
 
@@ -26,5 +25,4 @@ tags:
     $key.MediaPathUnexpanded
     $key.ProgramW6432Dir
 
-<!--more-->
-本文国际来源：[Reading Registry Values the Easy Way](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-the-easy-way)
+<!--本文国际来源：[Reading Registry Values the Easy Way](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-the-easy-way)-->

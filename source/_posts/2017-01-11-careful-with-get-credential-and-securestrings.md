@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，脚本以交互的方式询问凭据或密码。请时刻注意脚本的作者可以获取所有输入信息的明文。仅当您信任脚本和作者的时候才可以输入敏感信息。
 
@@ -38,5 +37,4 @@ $plaintext = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
 "The password entered was $plaintext"
 ```
 
-<!--more-->
-本文国际来源：[Careful with Get-Credential and SecureStrings](http://community.idera.com/powershell/powertips/b/tips/posts/careful-with-get-credential-and-securestrings)
+<!--本文国际来源：[Careful with Get-Credential and SecureStrings](http://community.idera.com/powershell/powertips/b/tips/posts/careful-with-get-credential-and-securestrings)-->

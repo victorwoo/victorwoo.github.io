@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 使用了大量所谓类型加速器来简化过长的 .NET 类型名。例如 "System.DirectoryServices.DirectoryEntry" 可以简化为 "ADSI"。
 
@@ -44,5 +43,4 @@ PS C:\> [Int32].FullName
 System.Int32
 ```
 
-<!--more-->
-本文国际来源：[Exploring Type Accelerators](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-type-accelerators)
+<!--本文国际来源：[Exploring Type Accelerators](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-type-accelerators)-->

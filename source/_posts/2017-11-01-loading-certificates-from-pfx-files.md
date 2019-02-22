@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何使用 `New-SelfSignedCertificate` 来创建新的代码签名证书，并且将它们存储为一个 PFX 文件。今天让我们来看看如何加载一个 PFX 文件。
 
@@ -107,5 +106,4 @@ Verify                          Method     bool Verify()
 
 明天，我们将会使用证书对 PowerShell 脚本进行数字签名。
 
-<!--more-->
-本文国际来源：[Loading Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/loading-certificates-from-pfx-files)
+<!--本文国际来源：[Loading Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/loading-certificates-from-pfx-files)-->

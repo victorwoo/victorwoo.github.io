@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了通过 `Import-LocalizedData` 读取存储在 .psd1 文件中的数据。
 
@@ -36,5 +35,4 @@ $infos = Import-PowerShellDataFile -Path $path
 
 当您运行这段脚本时，它将 .psd1 文件中的数据以哈希表的形式返回。
 
-<!--more-->
-本文国际来源：[Reading Data from .PSD1 Files in PowerShell 5+](http://community.idera.com/powershell/powertips/b/tips/posts/reading-data-from-psd1-files-in-powershell-5)
+<!--本文国际来源：[Reading Data from .PSD1 Files in PowerShell 5+](http://community.idera.com/powershell/powertips/b/tips/posts/reading-data-from-psd1-files-in-powershell-5)-->

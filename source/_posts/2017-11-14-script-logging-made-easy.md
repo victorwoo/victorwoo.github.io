@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，您可以在任何宿主中使用 `Strart-Transcript` 来记录脚本的所有输出内容。以下是向各种脚本轻松添加日志的方法：
 
@@ -40,5 +39,4 @@ Stop-Transcript
 
 警告：除了用 `Write-Host` 直接写到宿主的信息，所有输入输出信息都将被记录下。这些信息只能在屏幕上看到。
 
-<!--more-->
-本文国际来源：[Script Logging Made Easy](http://community.idera.com/powershell/powertips/b/tips/posts/script-logging-made-easy)
+<!--本文国际来源：[Script Logging Made Easy](http://community.idera.com/powershell/powertips/b/tips/posts/script-logging-made-easy)-->

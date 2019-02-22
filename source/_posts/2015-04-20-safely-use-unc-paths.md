@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 PowerShell 中使用 UNC 路径时，您的脚本可能会中断。由于 UNC 路径没有驱动器号，所以 PowerShell 将会在当前目录下查找，并且使用当前路径对应的 PSProvider。
 
@@ -26,5 +25,4 @@ tags:
     
     $exists
 
-<!--more-->
-本文国际来源：[Safely Use UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/safely-use-unc-paths)
+<!--本文国际来源：[Safely Use UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/safely-use-unc-paths)-->

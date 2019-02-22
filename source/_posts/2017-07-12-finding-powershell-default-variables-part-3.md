@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用类似如下的方法来查找内置的 PowerShell 变量：
 
@@ -42,5 +41,4 @@ $result.AddRange($special)
 
 顺便说一下，这段代码完美地演示了如何用 `[System.Collections.ArrayList]` 来创建一个更好的数组。跟常规的 `[Object[]]` 数组相比，`ArrayList` 对象拥有例如 `AddRange()`，能快速批量加入多个元素，等其它方法。
 
-<!--more-->
-本文国际来源：[Finding PowerShell Default Variables (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-default-variables-part-3)
+<!--本文国际来源：[Finding PowerShell Default Variables (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-default-variables-part-3)-->

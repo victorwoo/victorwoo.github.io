@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 
 如果您知道 WMI 类查询的名字，`Get-WmiObject` 和 `Get-CimInstance` 两个命令都可以提供丰富的信息。
@@ -51,5 +50,4 @@ function Explore-WMI
 
 通过这种方式可以方便有趣地在 WMI 中搜索有用的信息，并且获取得到这些信息的代码。
 
-<!--more-->
-本文国际来源：[Explore WMI](http://community.idera.com/powershell/powertips/b/tips/posts/explore-wmi)
+<!--本文国际来源：[Explore WMI](http://community.idera.com/powershell/powertips/b/tips/posts/explore-wmi)-->

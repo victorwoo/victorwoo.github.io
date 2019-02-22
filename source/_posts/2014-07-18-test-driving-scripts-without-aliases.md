@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -35,5 +34,4 @@ _适用于所有 PowerShell 版本_
 
 如您所见，所有别名都清空了。现在如果一个脚本使用了别名，它将会抛出一个异常。而关闭并重启 PowerShell 之后，所有内置的别名都恢复了。
 
-<!--more-->
-本文国际来源：[Test-Driving Scripts without Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/test-driving-scripts-without-aliases)
+<!--本文国际来源：[Test-Driving Scripts without Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/test-driving-scripts-without-aliases)-->

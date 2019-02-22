@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 后台任务可以用来加速您的脚本。如果您的脚本有一系列可并发执行的独立的任务组成，那么就合适使用后台任务。
 
@@ -54,5 +53,4 @@ tags:
     
     Remove-Job $job1, $job2
 
-<!--more-->
-本文国际来源：[Using Background Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/using-background-jobs)
+<!--本文国际来源：[Using Background Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/using-background-jobs)-->

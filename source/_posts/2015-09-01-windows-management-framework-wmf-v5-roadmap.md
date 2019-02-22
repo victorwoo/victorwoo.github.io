@@ -18,7 +18,6 @@ WMF 5.0的产品预览版和前几个版本的WMF5.0预览版相比，有如下�
 
 不管是即将到来的完整支持版本的WMF 5.0（预览产品和正式版），我们都将会经常吸收我们WMF5.0预览版用户社区提供的反馈。所以还望您尽早部署WMF 5.0产品预览版，并且提前提供建议给我们，争取让我们的RTM版本更好。
 
-<!--more-->
 原文作者：Hemant Mahawar [MSFT] （高级项目经理）
 原文链接：[Windows Management Framework (WMF) 5.0 Roadmap](http://www.pstips.net/goto/http://blogs.msdn.com/b/powershell/archive/2015/08/06/windows-management-framework-wmf-5-0-roadmap.aspx)
 中译链接：[Windows管理框架(WMF) 5.0 路线图 - PowerShell 中文博客](http://www.pstips.net/windows-management-framework-wmf-v5-roadmap.html)

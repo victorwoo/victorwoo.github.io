@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -53,5 +52,4 @@ _适用于 PowerShell 所有版本_
 
 您可以将这个例子作为更深入的工具的基础。例如，您可以将缺省受信任者（例如“CREATOR”，或“SYSTEM”）加入一个列表，并从结果中排除这个列表。
 
-<!--more-->
-本文国际来源：[Creating NTFS Security Report](http://community.idera.com/powershell/powertips/b/tips/posts/creating-ntfs-security-report)
+<!--本文国际来源：[Creating NTFS Security Report](http://community.idera.com/powershell/powertips/b/tips/posts/creating-ntfs-security-report)-->

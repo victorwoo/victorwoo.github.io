@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -33,5 +32,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 它返回一个 `TimeSapn` 对象，该对象包含了一个 "`TotalMilliseconds`" 属性。使用 "`Math`" 类提供的 `Round()` 方法将结果四舍五入。在这例子中，毫秒值被精确到小数点后 1 位。
 
-<!--more-->
-本文国际来源：[Measuring Website Response (and Execution Times)](http://community.idera.com/powershell/powertips/b/tips/posts/measuring-website-response-and-execution-times)
+<!--本文国际来源：[Measuring Website Response (and Execution Times)](http://community.idera.com/powershell/powertips/b/tips/posts/measuring-website-response-and-execution-times)-->

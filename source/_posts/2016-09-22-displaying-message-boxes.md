@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以操作所有公公的 .NET 类，所以创建一个对话框真的很简单：
 
@@ -49,5 +48,4 @@ function Show-MessageBox
 
 当您运行这段代码后，就得到了一个超级简单的 "`Show-MessageBox`" 函数。它可以接受多个参数并且通过自动完成和智能感知为您提供正确的数据。
 
-<!--more-->
-本文国际来源：[Displaying Message Boxes](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-message-boxes)
+<!--本文国际来源：[Displaying Message Boxes](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-message-boxes)-->

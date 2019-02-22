@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许知道每个 string 对象都有个 `Trim()` 方法可以删除该字符串开头和结尾的空白：
 
@@ -40,5 +39,4 @@ tags:
      '
     $text.Trim(" .-`t`n`r")
 
-<!--more-->
-本文国际来源：[Removing Whitespace (and Line Breaks)](http://community.idera.com/powershell/powertips/b/tips/posts/removing-whitespace-and-line-breaks)
+<!--本文国际来源：[Removing Whitespace (and Line Breaks)](http://community.idera.com/powershell/powertips/b/tips/posts/removing-whitespace-and-line-breaks)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些 cmdlet 和脚本使用进度条来指示进度。如您在前一个技能中所学的，进度条可能会导致延迟，所以如果您如果不想指示进度，您可能会希望隐藏进度条。以下是实现方法：
 
@@ -44,5 +43,4 @@ Invoke-Item -Path $path
 Invoke-Item -Path $path
 ```
 
-<!--more-->
-本文国际来源：[Hiding Progress Bars](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-progress-bars)
+<!--本文国际来源：[Hiding Progress Bars](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-progress-bars)-->

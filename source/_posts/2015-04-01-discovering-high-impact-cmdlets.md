@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -52,5 +51,4 @@ cmdlet 可以定义它们的影响力有多大。通常，那些会对系统造�
 
 要以无人值守的方式运行这些 cmdlet 并且不让自动提示框出现，请加上 `-Confirm:$False` 参数。
 
-<!--more-->
-本文国际来源：[Discovering High Impact Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/discovering-high-impact-cmdlets)
+<!--本文国际来源：[Discovering High Impact Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/discovering-high-impact-cmdlets)-->

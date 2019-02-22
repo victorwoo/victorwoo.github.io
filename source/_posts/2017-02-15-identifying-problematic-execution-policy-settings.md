@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 用执行策略 (execution policy) 来决定是否执行某个脚本。实际上定义执行策略可以定义 5 种作用域。要查看这所有五种情况，请使用这个命令：
 
@@ -37,5 +36,4 @@ LocalMachine       Undefined
 
 所以如果您看见 "`MachinePolicy`" 或 "`UserPolicy`" 作用域中的设置不是 "`Undefined`"，您应该和 Active Directory 团队商量并和他们解释执行策略的目的：这是一个偏好设置，而不是一个限制设置。应该使用其它技术，例如 "“Software Restriction Policy" 来安全地限制脚本的使用。
 
-<!--more-->
-本文国际来源：[Identifying Problematic Execution Policy Settings](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-problematic-execution-policy-settings)
+<!--本文国际来源：[Identifying Problematic Execution Policy Settings](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-problematic-execution-policy-settings)-->

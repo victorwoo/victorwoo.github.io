@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个查找潜在危险的 NTFS 权限的快速简单的方法。这段脚本检测所有 `$pathsToCheck` 的文件夹并且汇报错有具有 `$dangerousBitMask` 中定义的文件系统标志的安全存取控制项（译者注：也就是“路径”）。
 
@@ -49,5 +48,4 @@ tags:
     Select-Object -Property IdentityReference, Path, Rights, FileSystemRights |
     Out-GridView
 
-<!--more-->
-本文国际来源：[Identifying Risky NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-risky-ntfs-permissions)
+<!--本文国际来源：[Identifying Risky NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-risky-ntfs-permissions)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是获取您操作系统信息的一行代码：
 
@@ -33,5 +32,4 @@ OSType                     : 18
 
 如果您想从一个远程系统中获取信息，请使用 `-ComputerName` 和 `–Credential` 参数。
 
-<!--more-->
-本文国际来源：[Finding Operating System Architecture Information](http://community.idera.com/powershell/powertips/b/tips/posts/finding-operating-system-architecture-information)
+<!--本文国际来源：[Finding Operating System Architecture Information](http://community.idera.com/powershell/powertips/b/tips/posts/finding-operating-system-architecture-information)-->

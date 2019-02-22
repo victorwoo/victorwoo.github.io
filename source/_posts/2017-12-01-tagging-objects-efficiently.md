@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候您会见到用 `Select-Object` 向已有对象增加信息的脚本，类似以下代码：
 
@@ -41,5 +40,4 @@ Get-Process |
     Select-Object -Property Name, Id, Sender
 ```
 
-<!--more-->
-本文国际来源：[Tagging Objects Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/tagging-objects-efficiently)
+<!--本文国际来源：[Tagging Objects Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/tagging-objects-efficiently)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 任何 .NET 对象都有一个 `ToString()` 方法，返回的是一段文字描述。这也是当您将一个对象输出为一个字符串时所得到的内容。然而，`ToString()` 所返回的值可能会改变，所以您永远不要使用它来做一些重要的事情。
 
@@ -35,5 +34,4 @@ regedit.exe
 C:\WINDOWS\regedit.exe
 ```
 
-<!--more-->
-本文国际来源：[Careful with ToString()](http://community.idera.com/powershell/powertips/b/tips/posts/careful-with-tostring)
+<!--本文国际来源：[Careful with ToString()](http://community.idera.com/powershell/powertips/b/tips/posts/careful-with-tostring)-->

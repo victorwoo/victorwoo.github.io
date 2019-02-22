@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 也许您希望从注册表数据库中获取已登记的时间服务器列表。他们您可能需要运行类似这样的代码：
 
@@ -34,5 +33,4 @@ tags:
 
 ![](/img/2014-03-26-finding-time-servers-and-reading-all-regkey-values-002.png)
 
-<!--more-->
-本文国际来源：[Finding Time Servers (And Reading All RegKey Values)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-time-servers-and-reading-all-regkey-values)
+<!--本文国际来源：[Finding Time Servers (And Reading All RegKey Values)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-time-servers-and-reading-all-regkey-values)-->

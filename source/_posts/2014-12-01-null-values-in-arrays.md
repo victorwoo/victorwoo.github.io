@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -29,5 +28,4 @@ $a += 2
 Count: 4
 ```
 
-<!--more-->
-本文国际来源：[NULL Values in Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/null-values-in-arrays)
+<!--本文国际来源：[NULL Values in Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/null-values-in-arrays)-->

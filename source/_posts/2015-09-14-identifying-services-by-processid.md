@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Group-Object` 是一个创建查询表的很好的命令。如果您希望用进程 ID 来定位一个 Windows 服务，以下是实现方法：
 
@@ -29,5 +28,4 @@ tags:
     State     : Running
     Status    : OK
 
-<!--more-->
-本文国际来源：[Identifying Services by ProcessID](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-services-by-processid)
+<!--本文国际来源：[Identifying Services by ProcessID](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-services-by-processid)-->

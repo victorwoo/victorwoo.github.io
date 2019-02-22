@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有两个很棒的 PowerShell 速查表版本。一个是由 powershellmagazine.com 创建的一系列速查表。它刚刚升级，现在覆盖了 PowerShell 4.0 并包括了一个期望状态配置（DSC）的速查表。您可以从 Microsoft 下载它：
 
@@ -21,5 +20,4 @@ tags:
 
 [http://powershell.com/cs/media/28/default.aspx](http://powershell.com/cs/media/28/default.aspx)
 
-<!--more-->
-本文国际来源：[Getting Free Cheat Sheets](http://community.idera.com/powershell/powertips/b/tips/posts/getting-free-cheat-sheets)
+<!--本文国际来源：[Getting Free Cheat Sheets](http://community.idera.com/powershell/powertips/b/tips/posts/getting-free-cheat-sheets)-->

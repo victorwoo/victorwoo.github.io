@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在目标机器上启用了 PowerShell 远程处理，请试试交互式地连接它。以下是您值得尝试的例子。只需要确保将 `targetComputerName` 替换成您需要连接的目标机器名即可：
 
@@ -35,5 +34,4 @@ YOURCOMPUTERNAME
 
 要离开远程会话，请使用 `exit` 命令。
 
-<!--more-->
-本文国际来源：[Accessing Remote Machines via PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-remote-machines-via-powershell-remoting)
+<!--本文国际来源：[Accessing Remote Machines via PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-remote-machines-via-powershell-remoting)-->

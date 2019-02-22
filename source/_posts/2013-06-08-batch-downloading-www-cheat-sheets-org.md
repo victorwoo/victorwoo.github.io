@@ -15,7 +15,6 @@ tags:
 流水不腐，户枢不蠹。虽然批量下载有很多工具能做到，但是为了提高，我们尽量动手编写脚本吧。
 [http://www.cheat-sheets.org](http://www.cheat-sheets.org) 里有很多好东西，我们把它批量下载下来。
 
-<!--more-->
 ![下载的PDF截图](/img/2013-06-08-batch-downloading-www-cheat-sheets-org-001.jpg)
 
 PowerShell代码：

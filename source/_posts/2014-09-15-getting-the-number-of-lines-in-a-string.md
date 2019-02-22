@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -29,5 +28,4 @@ Here is a clever trick how to find out how many lines a string (not a string arr
 
 技术上来说，这个例子用的是 here-string 来创建多行字符串，不过这只是一个例子。它对所有类型的字符串都有效，无论它的来源是什么。
 
-<!--more-->
-本文国际来源：[Getting the Number of Lines in a String ](http://community.idera.com/powershell/powertips/b/tips/posts/getting-the-number-of-lines-in-a-string)
+<!--本文国际来源：[Getting the Number of Lines in a String ](http://community.idera.com/powershell/powertips/b/tips/posts/getting-the-number-of-lines-in-a-string)-->

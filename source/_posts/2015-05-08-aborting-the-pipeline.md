@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您事先知道期望从管道中得到多少个对象，您可以用 `Select-Object` 命令来停止上游的 cmdlet 执行。这样可以节约很多时间。
 
@@ -25,5 +24,4 @@ tags:
 
 请注意只有在 PowerShell 3.0 以上版本中，`Select-Object` 才具有中断上游 cmdlet 的能力。在早期的版本中，您仍然会获得前 x 个元素，但是上游的 cmdlet 会得不到“已经获得足够的数据”通知而一直持续执行。
 
-<!--more-->
-本文国际来源：[Aborting the Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/aborting-the-pipeline)
+<!--本文国际来源：[Aborting the Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/aborting-the-pipeline)-->

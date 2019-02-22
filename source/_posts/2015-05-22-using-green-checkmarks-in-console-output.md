@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中您已见到了如何使 PowerShell 控制台支持 TrueType 字体中所有可用的字符。您只需要将字符代码转换为“`Char`”类型即可。
 
@@ -35,5 +34,4 @@ tags:
 
 如果该复选标记并没有显示出来，请确保您的控制台字体设置成了 TrueType 字体，例如“Consolas”。您可以点击控制台标题栏左上角的图标，并选择“属性”来设置字体。
 
-<!--more-->
-本文国际来源：[Using Green Checkmarks in Console Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-green-checkmarks-in-console-output)
+<!--本文国际来源：[Using Green Checkmarks in Console Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-green-checkmarks-in-console-output)-->

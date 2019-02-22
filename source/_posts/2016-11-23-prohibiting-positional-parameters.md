@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您创建 PowerShell 函数时，参数可以是命名的也可以是按位置的。以下是一个例子：
 
@@ -64,5 +63,4 @@ function Test-Command
 ```
 
 一旦开始使用参数集合，缺省情况下所有参数都是命名的参数。
-<!--more-->
-本文国际来源：[Prohibiting Positional Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/prohibiting-positional-parameters)
+<!--本文国际来源：[Prohibiting Positional Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/prohibiting-positional-parameters)-->

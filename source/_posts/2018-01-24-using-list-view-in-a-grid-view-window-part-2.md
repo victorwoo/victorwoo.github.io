@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Out-GridView` 是一个有用的 cmdlet。但如果只是用它来显示一个单一对象的所有属性时不太理想，因为这样显示出来只有一行。在前一个技能中我们解释了将一个对象转换为一个哈希表能解决这个问题。它实际上是将一个网格视图工作在“列表视图”模式。
 
@@ -46,5 +45,4 @@ Get-ComputerInfo | ConvertObject-ToHashTable | Out-GridView
 Get-WmiObject -Class Win32_BIOS | ConvertObject-ToHashTable | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Using List View in a Grid View Window (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-list-view-in-a-grid-view-window-part-2)
+<!--本文国际来源：[Using List View in a Grid View Window (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-list-view-in-a-grid-view-window-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想以只有您能获取的方式保存敏感数据，您可以使用这个有趣的方法：将明文转换成密文，需要时将密文转换回明文，并将它保存到磁盘中：
 
@@ -44,5 +43,4 @@ tags:
 
 现在，以其他人的身份试一下。您会发现其他人无法解密该加密文件。而且您在别的机器上也无法解密。
 
-<!--more-->
-本文国际来源：[Storing Secret Data](http://community.idera.com/powershell/powertips/b/tips/posts/storing-secret-data)
+<!--本文国际来源：[Storing Secret Data](http://community.idera.com/powershell/powertips/b/tips/posts/storing-secret-data)-->

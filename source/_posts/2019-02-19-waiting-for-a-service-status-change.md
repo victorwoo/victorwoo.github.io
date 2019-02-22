@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您启动或停止一个服务时，可能需要一些时间才能确保服务进入指定的状态——或者它当然可能会失败。当您使用 `Stop-Service` 时，PowerShell 将等待该服务状态已确认。如果您希望获得其它地方初始化的服务响应，以下是一段监听代码，它将会暂停 PowerShell 直到服务变为指定的状态：
 
@@ -46,5 +45,4 @@ $objects = Get-Process
 $objects | Get-Member -MemberType *method* | Select-Object -Property Name, Definition
 ```
 
-<!--more-->
-本文国际来源：[Waiting for a Service Status Change](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/waiting-for-a-service-status-change)
+<!--本文国际来源：[Waiting for a Service Status Change](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/waiting-for-a-service-status-change)-->

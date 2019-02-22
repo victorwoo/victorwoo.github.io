@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想向一个 AD 对象增加自定义属性，只需要用一个哈希表，然后增加期望的属性名和属性值。然后用 `Set-ADUser`（在随微软免费的 RSAT 工具发布的 ActiveDirectory 模块中）。
 
@@ -31,5 +30,4 @@ tags:
 
 选择正确的参数很重要。用 `-Add` 参数向属性增加新的值；用 `-Remove` 移除一个已有的值；用 `-Replace` 将属性替换为一个新的值。
 
-<!--more-->
-本文国际来源：[Adding Custom Attributes to AD Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-custom-attributes-to-ad-objects)
+<!--本文国际来源：[Adding Custom Attributes to AD Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-custom-attributes-to-ad-objects)-->

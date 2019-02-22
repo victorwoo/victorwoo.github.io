@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了自 PowerShell 3 以上版本支持的 `PreCommandLookupAction`。今天我们将介绍一个特别的实现。
 
@@ -57,5 +56,4 @@ $ExecutionContext.SessionState.InvokeCommand.PreCommandLookupAction = {
 }
 ```
 
-<!--more-->
-本文国际来源：[Auto-Logging Command Output](http://community.idera.com/powershell/powertips/b/tips/posts/auto-logging-command-output)
+<!--本文国际来源：[Auto-Logging Command Output](http://community.idera.com/powershell/powertips/b/tips/posts/auto-logging-command-output)-->

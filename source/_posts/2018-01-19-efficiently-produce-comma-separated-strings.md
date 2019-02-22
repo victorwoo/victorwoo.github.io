@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是一个非常简单的创建引号包起来的字符串的列表的例子：
 
@@ -35,5 +34,4 @@ PS> Get-ClipBoard
 'hello','this','is','a','test'
 ```
 
-<!--more-->
-本文国际来源：[Efficiently Produce Comma-Separated Strings](http://community.idera.com/powershell/powertips/b/tips/posts/efficiently-produce-comma-separated-strings)
+<!--本文国际来源：[Efficiently Produce Comma-Separated Strings](http://community.idera.com/powershell/powertips/b/tips/posts/efficiently-produce-comma-separated-strings)-->

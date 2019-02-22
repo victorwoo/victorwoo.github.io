@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-WmiObject` 并未对 WMI 类提供智能感知信息，所以您要么事先知道 WMI 类的名字，要么使用 `-List` 参数来搜索它。
 
@@ -27,5 +26,4 @@ tags:
 
 或者，从头到尾都使用 `Get-CimInstance`。它返回基本相同价值的信息。但在缺省情况下，它使用 WSMan 协议来进行远程操作，而不是 DCOM。
  
-<!--more-->
-本文国际来源：[Getting WMI IntelliSense](http://community.idera.com/powershell/powertips/b/tips/posts/getting-wmi-intellisense)
+<!--本文国际来源：[Getting WMI IntelliSense](http://community.idera.com/powershell/powertips/b/tips/posts/getting-wmi-intellisense)-->

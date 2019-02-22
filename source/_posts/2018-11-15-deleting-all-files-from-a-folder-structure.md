@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些任务听起来复杂，实际上并没有那么复杂。假设我们需要清除一个目录结构，移除所有文件，而留下空白的文件夹。我们进一步假设有一些文件位于白名单上，不应移除。如果用 PowerShell，那么实现起来很容易：
 
@@ -30,5 +29,4 @@ Get-ChildItem -Path $Path -File -Exclude $WhiteList -Recurse -Force |
     Remove-Item -WhatIf
 ```
 
-<!--more-->
-本文国际来源：[Deleting All Files from a Folder Structure](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/deleting-all-files-from-a-folder-structure)
+<!--本文国际来源：[Deleting All Files from a Folder Structure](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/deleting-all-files-from-a-folder-structure)-->

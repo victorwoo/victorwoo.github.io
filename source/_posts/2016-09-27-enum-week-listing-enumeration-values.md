@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这周我们将关注枚举类型：它们是什么，以及如何利用它们。
 
@@ -68,5 +67,4 @@ White
 
 同样地，如果您传入了一个和所有枚举值名称都不相同的值，异常信息中也会列出枚举值的名字。
 
-<!--more-->
-本文国际来源：[Enum Week: Listing Enumeration Values](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-listing-enumeration-values)
+<!--本文国际来源：[Enum Week: Listing Enumeration Values](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-listing-enumeration-values)-->

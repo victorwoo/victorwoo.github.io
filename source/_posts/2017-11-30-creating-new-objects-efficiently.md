@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 多数时候，大部分新对象都是静态数据，以属性的方式表示。一个特别有效的创建新的包含新属性的对象是将哈希表转换为对象——我们早些时候转换过：
 
@@ -48,5 +47,4 @@ $object |
 PS C:\> $conf.Register()
 ```
 
-<!--more-->
-本文国际来源：[Creating New Objects Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/creating-new-objects-efficiently)
+<!--本文国际来源：[Creating New Objects Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/creating-new-objects-efficiently)-->

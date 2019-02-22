@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 使用 `Update-Help` 下载 PowerShell 的帮助文件时，PowerShell 5 有一个 bug，目前可以修复：基于文本的帮助文件扩展名是“.txt”而不是“.help.txt”，所以 PowerShell 帮助系统会忽略它们。您可以自己试验一下——以下命令可能会返回一大堆关于主题：
 
@@ -54,5 +53,4 @@ Get-ChildItem -Path $pshome -Filter about*.txt -Recurse |
   # rename the extension using a regex:
   Rename-Item -NewName { $_.Name -replace '\.txt$', '.help.txt'}
 ```
-<!--more-->
-本文国际来源：[Fixing PowerShell 5 Help Bug](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-powershell-5-help-bug)
+<!--本文国际来源：[Fixing PowerShell 5 Help Bug](http://community.idera.com/powershell/powertips/b/tips/posts/fixing-powershell-5-help-bug)-->

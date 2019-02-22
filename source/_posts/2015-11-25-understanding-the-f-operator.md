@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许已经遇到过 `-f` 操作符并且很好奇它做了什么。它是一个格式化操作符并且提供了一种相当简单的方法来操作数组元素并创建字符串。
 
@@ -49,5 +48,4 @@ tags:
     
     PowerShell: C:\Windows\System32\WindowsPowerShell\v1.0
 
-<!--more-->
-本文国际来源：[Understanding the –f Operator](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-f-operator)
+<!--本文国际来源：[Understanding the –f Operator](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-f-operator)-->

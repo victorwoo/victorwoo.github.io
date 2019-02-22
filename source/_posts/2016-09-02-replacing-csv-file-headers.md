@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 2 以上版本*
 
@@ -25,5 +24,4 @@ Get-Content N:\somepathtofile\userlist.csv -Encoding Default |
  ConvertFrom-CSV -UseCulture -Header $header
 ```
 
-<!--more-->
-本文国际来源：[Replacing CSV File Headers](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-csv-file-headers)
+<!--本文国际来源：[Replacing CSV File Headers](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-csv-file-headers)-->

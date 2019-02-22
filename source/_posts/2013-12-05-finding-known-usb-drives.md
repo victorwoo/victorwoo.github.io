@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您知道吗？Windows 维护着一个关于所有插入过您机器中的 USB 存储设备列表。要导出这个列表十分简单：
 
@@ -44,5 +43,4 @@ tags:
 
 列表越长，说明您的计算机插入过越多种不同的 USB 存储设备。
 
-<!--more-->
-本文国际来源：[Finding Known USB Drives](http://community.idera.com/powershell/powertips/b/tips/posts/finding-known-usb-drives)
+<!--本文国际来源：[Finding Known USB Drives](http://community.idera.com/powershell/powertips/b/tips/posts/finding-known-usb-drives)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可能听说过 PowerShell 的缺省参数值和 `$PSDefaultParameterValues`。当您将一个哈希表赋给这个特殊的变量，则哈希表的键定义了命令和影响的参数，而值定对应新的缺省值。
 
@@ -53,5 +52,4 @@ testAdvanced
 
 如您所见，只有 testAdvanced 函数应用了缺省参数。"Advanced Functions" 至少要定义一个参数属性，例如 `[CmdletBinding()]` 或 `[Parameter(Mandatory)]`。
 
-<!--more-->
-本文国际来源：[Using Default Parameter Values](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parametervalues)
+<!--本文国际来源：[Using Default Parameter Values](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parametervalues)-->

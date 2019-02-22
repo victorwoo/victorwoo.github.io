@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何如何测试一台计算机的端口。在安装了 Microsoft 免费的 RSAT 工具之后，您可以查询您的 Active Directory，并获取所有计算机用户的列表，或指定范围内的所有计算机账户（例如用 `-SearchBase` 限制在一个特定的 OU 中搜索）。
 
@@ -56,5 +55,4 @@ tags:
         Test-Port -ComputerName $_
     }
 
-<!--more-->
-本文国际来源：[Finding Computers with PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/finding-computers-with-powershell-remoting)
+<!--本文国际来源：[Finding Computers with PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/finding-computers-with-powershell-remoting)-->

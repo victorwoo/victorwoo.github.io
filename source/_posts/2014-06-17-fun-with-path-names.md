@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以用 `-split` 运算符轻松地将一个路径分割成独立的部分。结果是一个数组。
 
@@ -23,5 +22,4 @@ tags:
     
     $path -split '\\' -notlike '*test*' -join '\'
 
-<!--more-->
-本文国际来源：[Fun with Path Names](http://community.idera.com/powershell/powertips/b/tips/posts/fun-with-path-names)
+<!--本文国际来源：[Fun with Path Names](http://community.idera.com/powershell/powertips/b/tips/posts/fun-with-path-names)-->

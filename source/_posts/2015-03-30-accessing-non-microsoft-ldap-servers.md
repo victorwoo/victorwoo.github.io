@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -51,5 +50,4 @@ Microsoft 和 Dell 提供了一些 Active Directory 的免费 cmdlet，分别是
       }
     }
 
-<!--more-->
-本文国际来源：[Accessing Non-Microsoft LDAP Servers](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-non-microsoft-ldap-servers)
+<!--本文国际来源：[Accessing Non-Microsoft LDAP Servers](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-non-microsoft-ldap-servers)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能中，我们解释了如何下载和安装 Chocolatey，一个免费的 Windows 包管理器，可以用来安装软件。
 
@@ -51,5 +50,4 @@ PS> choco outdated
     See the log for details (C:\ProgramData\chocoportable\logs\chocolatey.log).
     PS C:\>
 
-<!--more-->
-本文国际来源：[Installing PowerShell 6 with Chocolatey](http://community.idera.com/powershell/powertips/b/tips/posts/installing-powershell-6-with-chocolatey)
+<!--本文国际来源：[Installing PowerShell 6 with Chocolatey](http://community.idera.com/powershell/powertips/b/tips/posts/installing-powershell-6-with-chocolatey)-->

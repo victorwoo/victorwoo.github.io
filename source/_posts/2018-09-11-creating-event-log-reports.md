@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可能经常使用 `Get-EventLog` 来转储事件日志信息，例如：
 
@@ -60,5 +59,4 @@ PS> Get-EventLog -LogName *
     15.360      0 OverwriteAsNeeded      10.279 Windows PowerShell
 ```
 
-<!--more-->
-本文国际来源：[Creating Event Log Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-event-log-reports)
+<!--本文国际来源：[Creating Event Log Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-event-log-reports)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -25,5 +24,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 请注意您可以在多个标签页中连续打开同一个脚本。当您这么操作时，ISE 会警告您该脚本已在另一个选项卡中打开了。当您编辑该脚本时，所有的编辑操作都会作用到所有打开该脚本的选项卡实例。
 
-<!--more-->
-本文国际来源：[Getting a Clean PowerShell Environment ](http://community.idera.com/powershell/powertips/b/tips/posts/getting-a-clean-powershell-environment)
+<!--本文国际来源：[Getting a Clean PowerShell Environment ](http://community.idera.com/powershell/powertips/b/tips/posts/getting-a-clean-powershell-environment)-->

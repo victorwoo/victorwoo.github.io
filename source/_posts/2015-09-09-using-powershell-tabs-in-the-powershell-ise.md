@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 随着 PowerShell 3.0 及以上版本发行的 PowerShell ISE 实际上是一个多宿主。它可以容纳多个单独的 PowerShell 实例。
 
@@ -27,5 +26,4 @@ tags:
 
 请注意只有在至少有 2 个以上 PowerShell 宿主时，才会显示 PowerShell 标签。您可能需要先按下 `CTRL` + `T` 才能够看到重命名的效果。
 
-<!--more-->
-本文国际来源：[Using PowerShell Tabs in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-tabs-in-the-powershell-ise)
+<!--本文国际来源：[Using PowerShell Tabs in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-tabs-in-the-powershell-ise)-->

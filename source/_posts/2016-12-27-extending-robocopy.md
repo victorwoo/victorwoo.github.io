@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以向原有的命令（例如 robocopy）添加值。请看以下的函数——它用 robocopy 来拷贝文件，并且当拷贝完成时，增加了“扁平拷贝”选项来打开目标文件夹：
 
@@ -71,5 +70,4 @@ PS>  Copy-FileWithRobocopy -Source $env:windir -Destination c:\logs -Filter *.lo
 
 所以重复的文件将会被覆盖，而且如果目标文件夹的子文件夹中有其他数据，也会被删除。这是一个很简单的操作，适用于许多情况，但也有很多改进空间。
 
-<!--more-->
-本文国际来源：[Extending Robocopy](http://community.idera.com/powershell/powertips/b/tips/posts/extending-robocopy)
+<!--本文国际来源：[Extending Robocopy](http://community.idera.com/powershell/powertips/b/tips/posts/extending-robocopy)-->

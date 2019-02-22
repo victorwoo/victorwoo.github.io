@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -43,5 +42,4 @@ _适用于 PowerShell 所有版本_
 
 当然，这只是一个简单的例子。您可以配合您自己的原生命令使用。只需要确保调用原生应用程序之后立刻保存 `$LASTEXITCODE` 值，因为它会被后续的调用覆盖。
 
-<!--more-->
-本文国际来源：[Dealing with %ERRORLEVEL%](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-errorlevel)
+<!--本文国际来源：[Dealing with %ERRORLEVEL%](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-errorlevel)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 提供了新的 cmdlet，例如 `Extract-Archive`，可以从一个 ZIP 文件中解压（所有的）文件。然而，并没有方法列出一个 ZIP 文件中的内容。
 
@@ -29,5 +28,4 @@ $zip.Entries
 $zip.Dispose()
 ```
 
-<!--more-->
-本文国际来源：[Dumping ZIP Archive Content](http://community.idera.com/powershell/powertips/b/tips/posts/dumping-zip-archive-content)
+<!--本文国际来源：[Dumping ZIP Archive Content](http://community.idera.com/powershell/powertips/b/tips/posts/dumping-zip-archive-content)-->

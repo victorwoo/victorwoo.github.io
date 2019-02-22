@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否疑惑过一个数据库的连接字符串到底长什么样？当您从控制面板中创建一个数据源时，一个向导将指引您完成整个创建过程。以下是一个利用这个向导并获取生成的连接字符串的方法。
 
@@ -39,5 +38,4 @@ tags:
 
 它的工作原理是 `Get-Process` 函数带了 `-Wait` 参数，它能够挂起脚本的执行，直到向导退出。在向导退出以后，脚本就可以安全地访问 udl 文件了。
 
-<!--more-->
-本文国际来源：[Getting Database Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/getting-database-connection-string)
+<!--本文国际来源：[Getting Database Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/getting-database-connection-string)-->

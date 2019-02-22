@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 > 译者注：**您没有看错！这是近期最邪恶的一个技巧，文末有译者机器上的实验效果。**
 
@@ -61,5 +60,4 @@ tags:
 	PS >Get-Excuse
 	Root nameservers are out of sync
 
-<!--more-->
-本文国际来源：[Getting Excuses Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/getting-excuses-automatically)
+<!--本文国际来源：[Getting Excuses Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/getting-excuses-automatically)-->

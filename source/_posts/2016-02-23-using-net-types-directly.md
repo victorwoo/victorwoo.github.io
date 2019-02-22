@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Cmdlet 内含了纯 .NET 代码，所以感谢 cmdlet，我们通常无需接触 .NET 代码。不过，如果您需要的话仍然可以使用。以下是一系列调用示例，演示了如何调用 .NET 方法：
 
@@ -37,5 +36,4 @@ Cmdlet 内含了纯 .NET 代码，所以感谢 cmdlet，我们通常无需接触
     $dialog.ShowDialog()
     $dialog.FileName
 
-<!--more-->
-本文国际来源：[Using .NET Types Directly](http://community.idera.com/powershell/powertips/b/tips/posts/using-net-types-directly)
+<!--本文国际来源：[Using .NET Types Directly](http://community.idera.com/powershell/powertips/b/tips/posts/using-net-types-directly)-->

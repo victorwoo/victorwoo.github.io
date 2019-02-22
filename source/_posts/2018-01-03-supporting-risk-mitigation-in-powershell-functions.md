@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个 PowerShell 函数进行一个可能有风险的系统变更时，推荐使用 `-WhatIf` 和 `-Configm` 风险缓解参数。以下是基本的需求：
 
@@ -65,5 +64,4 @@ Do you really want to perform this action?
 I am simulating...
 ```
 
-<!--more-->
-本文国际来源：[Supporting Risk Mitigation in PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/supporting-risk-mitigation-in-powershell-functions)
+<!--本文国际来源：[Supporting Risk Mitigation in PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/supporting-risk-mitigation-in-powershell-functions)-->

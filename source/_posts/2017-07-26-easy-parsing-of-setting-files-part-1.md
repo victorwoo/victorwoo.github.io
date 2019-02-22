@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您需要将设置用最简单的方式保存到一个文件中。设置文件可能看起来像这样：
 
@@ -44,5 +43,4 @@ $hash.Name
 $hash.Country
 ```
 
-<!--more-->
-本文国际来源：[Easy Parsing of Setting Files (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/easy-parsing-of-setting-files-part-1)
+<!--本文国际来源：[Easy Parsing of Setting Files (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/easy-parsing-of-setting-files-part-1)-->

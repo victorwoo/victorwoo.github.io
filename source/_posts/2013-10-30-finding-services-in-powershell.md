@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-Service` 可以列出计算机上的所有服务，但是返回的信息十分少。您无法很容易地看出一个服务做什么、它是一个 Microsoft 服务还是一个第三方服务，以及服务所对应的可执行程序。
 
@@ -54,5 +53,4 @@ tags:
 	 
 	Find-Service | Out-GridView
 
-<!--more-->
-本文国际来源：[Finding Services in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/finding-services-in-powershell)
+<!--本文国际来源：[Finding Services in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/finding-services-in-powershell)-->

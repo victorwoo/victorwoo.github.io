@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何获取 PowerShellGet 并在您的 PowerShell 版本中运行。现在我们来看看 PowerShell 陈列架能够如何方便地扩展 PowerShell 功能。
 
@@ -27,5 +26,4 @@ Get-SBLEvent | Out-GridView
 
 请注意 `ScriptBlockLoggingAnalyzer` 当前只适用于 Windows PowerShell。PowerShell Core 使用相同的机制，但是不同的日志。由于 PowerShell Core 中的日志名称还在开发中，所以您需要手工调整模块来适应 PowerShell Core。
 
-<!--more-->
-本文国际来源：[PowerShell Gallery: Discovering Script Block Logging (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-discovering-script-block-logging-part-1)
+<!--本文国际来源：[PowerShell Gallery: Discovering Script Block Logging (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-discovering-script-block-logging-part-1)-->

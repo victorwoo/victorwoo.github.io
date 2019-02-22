@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 大多数软件都会在注册表中登记自己。以下是一段从能从本地和远程的 32 位及 64 位注册表中读取已安装的软件列表的代码。它还是一个演示如何读取远程注册表的不错的例子。
 
@@ -68,5 +67,4 @@ tags:
     
     } | Out-GridView
 
-<!--more-->
-本文国际来源：[Reading Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-remotely)
+<!--本文国际来源：[Reading Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-remotely)-->

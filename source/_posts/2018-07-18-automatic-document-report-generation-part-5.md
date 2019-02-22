@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Iain Brighton 创建了一个名为 "PScribo" 的免费的 PowerShell 模块，可以快速地创建文本、HTML 或 Word 格式的文档和报告。
 
@@ -117,5 +116,4 @@ explorer $OutPath
 
 它的基本思想史为每个对象属性创建新的对象，然后以表格的方式显示它们。这段代码显示 BIOS 信息的详细报告。
 
-<!--more-->
-本文国际来源：[Automatic Document & Report Generation (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-document-report-generation-part-5)
+<!--本文国际来源：[Automatic Document & Report Generation (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-document-report-generation-part-5)-->

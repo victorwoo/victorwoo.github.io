@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -99,5 +98,4 @@ WMI 类是彼此继承的，我们可以利用这个特性。例如这行代码�
 It basically takes all the instances derived from CIM_LogicalDevice and groups them by “__Class” which is their real class name.
 它基本上获取从 `CIM_LogicalDevice` 继承的所有实例并按照“`__Class`”分组。这是它们的真实类名。
 
-<!--more-->
-本文国际来源：[Using WMI Inheritance](http://community.idera.com/powershell/powertips/b/tips/posts/using-wmi-inheritance)
+<!--本文国际来源：[Using WMI Inheritance](http://community.idera.com/powershell/powertips/b/tips/posts/using-wmi-inheritance)-->

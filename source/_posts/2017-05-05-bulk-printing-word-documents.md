@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这行代码将在您的配置文件中查找所有 Word 文档：
 
@@ -31,5 +30,4 @@ Get-ChildItem -Path $home -Filter *.doc* -Recurse |
 
 它最重要的部分是 `-Wait` 参数：如果缺少了它，PowerShell 将会同时启动多个 Word 的实例，并行打印所有文档。这将耗尽您系统的资源。使用 `-Wait` 参数以后，PowerShell 将等待前一个 Word 打印完之后再启动下一个实例。
 
-<!--more-->
-本文国际来源：[Bulk Printing Word Documents](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-printing-word-documents)
+<!--本文国际来源：[Bulk Printing Word Documents](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-printing-word-documents)-->

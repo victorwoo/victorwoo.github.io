@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -40,5 +39,4 @@ _适用于 PowerShell 3.0 及以上版本_
     
     PS>
 
-<!--more-->
-本文国际来源：[Reading Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/reading-multiline-text)
+<!--本文国际来源：[Reading Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/reading-multiline-text)-->

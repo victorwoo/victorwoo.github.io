@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -118,5 +117,4 @@ _适用于 PowerShell 所有版本_
     
     (...)
 
-<!--more-->
-本文国际来源：[List All Information](http://community.idera.com/powershell/powertips/b/tips/posts/list-all-information)
+<!--本文国际来源：[List All Information](http://community.idera.com/powershell/powertips/b/tips/posts/list-all-information)-->

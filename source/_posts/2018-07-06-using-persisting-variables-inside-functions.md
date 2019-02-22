@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 默认情况下，当一个 PowerShell 函数退出时，它将“忘记”所有的内部变量。然而，有一种办法可以创建持久的内部变量。以下是实现方法：
 
@@ -63,5 +62,4 @@ PS> Test-Function
 You called me 6 times!
 ```
 
-<!--more-->
-本文国际来源：[Using persisting variables inside functions](http://community.idera.com/powershell/powertips/b/tips/posts/using-persisting-variables-inside-functions)
+<!--本文国际来源：[Using persisting variables inside functions](http://community.idera.com/powershell/powertips/b/tips/posts/using-persisting-variables-inside-functions)-->

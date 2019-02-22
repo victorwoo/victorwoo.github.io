@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用 PowerShell 命令模式方便地创建引号包围的字符串列表。这可以很方便地创建代码，节省很多打字工作。
 
@@ -38,5 +37,4 @@ function s+ { "'$($args -join "','")'" | Set-ClipBoard }
 
 执行完之后，引号包围的字符串就会存在您的剪贴板中，接下来您可以将它们粘贴到任何需要的地方。
 
-<!--more-->
-本文国际来源：[Efficiently Produce Comma-Separated Strings (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/efficiently-produce-comma-separated-strings-part-2)
+<!--本文国际来源：[Efficiently Produce Comma-Separated Strings (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/efficiently-produce-comma-separated-strings-part-2)-->

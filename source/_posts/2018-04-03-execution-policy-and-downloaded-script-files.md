@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您从 internet 下载了一个文件，它可能会被 Windows 标记（通过 NTFS 流），并且 PowerShell 可能会拒绝执行它：
 
@@ -49,5 +48,4 @@ PS> Invoke-WebRequest -Uri "http://bit.ly/e0Mw9w" -UseBasicParsing -OutFile  "$h
 
 `Invoke-WebRequest` 不会对下载的文件做标记，而且允许通过执行策略，这是挺令人意外的行为。
 
-<!--more-->
-本文国际来源：[Execution Policy and Downloaded Script Files](http://community.idera.com/powershell/powertips/b/tips/posts/execution-policy-and-downloaded-script-files)
+<!--本文国际来源：[Execution Policy and Downloaded Script Files](http://community.idera.com/powershell/powertips/b/tips/posts/execution-policy-and-downloaded-script-files)-->

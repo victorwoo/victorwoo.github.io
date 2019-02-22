@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您有一整个文件夹的图片文件，并希望它们的名字标准化。
 
@@ -31,5 +30,4 @@ tags:
 
 您可以很容易地修改脚本来重命名其它类型的文件，或是使用其它文件名模板。
 
-<!--more-->
-本文国际来源：[Bulk Renaming Files](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-re-naming-files)
+<!--本文国际来源：[Bulk Renaming Files](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-re-naming-files)-->

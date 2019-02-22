@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望显示一个带有按钮，可供用户点击的消息框，请试试这个函数：
 
@@ -59,5 +58,4 @@ function Show-MessageBox
 PS> Show-MessageBox -Text 'Do you want to reboot now?' -Caption Reboot -Button YesNoCancel -Icon Exclamatio
 ```
 
-<!--more-->
-本文国际来源：[Displaying Message Box](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-message-box)
+<!--本文国际来源：[Displaying Message Box](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-message-box)-->

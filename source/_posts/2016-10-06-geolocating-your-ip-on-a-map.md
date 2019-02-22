@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能当中，通过 Internet 能知道您的 IP 地址，以及地理位置。您可以获得当前公开 IP 地址的经纬度，代码如下：
 
@@ -38,5 +37,4 @@ Start-Process -FilePath $url
 
 这段代码将打开浏览器，导航到 Google Maps，并且在地图上显示当前位置。当前通过 IP 地址定位地理位置还比较粗糙，至少在使用公开地理数据时。
 
-<!--more-->
-本文国际来源：[Geolocating Your IP on a Map](http://community.idera.com/powershell/powertips/b/tips/posts/geolocating-your-ip-on-a-map)
+<!--本文国际来源：[Geolocating Your IP on a Map](http://community.idera.com/powershell/powertips/b/tips/posts/geolocating-your-ip-on-a-map)-->

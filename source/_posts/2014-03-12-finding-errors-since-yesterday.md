@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要获取一个时间段内的数据，相对日期的作用十分重要，它能避免硬编码日期和时间值。
 
@@ -24,5 +23,4 @@ tags:
     
     Get-EventLog -LogName system -EntryType Error, Warning -After $yesterday 
 
-<!--more-->
-本文国际来源：[Finding Errors since Yesterday](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-since-yesterday)
+<!--本文国际来源：[Finding Errors since Yesterday](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-since-yesterday)-->

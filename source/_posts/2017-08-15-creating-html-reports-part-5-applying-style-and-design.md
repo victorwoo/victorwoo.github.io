@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们开始将 PowerShell 的结果转换为 HTML 报告。报告内容目前一切正常。要使人加深印象，结果需要做一些设计改进。以下是我们之前的成果：
 
@@ -95,5 +94,4 @@ Invoke-Item -Path $Path
 
 如果您希望更多地控制您的 HTML 报告，您可以停止使用 `ConvertTo-Html`，而改用自己的逻辑通过报告数据来生成 HTML 表格。不过这超出了我们快速技能的范畴。
 
-<!--more-->
-本文国际来源：[Creating HTML Reports (Part 5 – Applying Style and Design)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-5-applying-style-and-design)
+<!--本文国际来源：[Creating HTML Reports (Part 5 – Applying Style and Design)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-5-applying-style-and-design)-->

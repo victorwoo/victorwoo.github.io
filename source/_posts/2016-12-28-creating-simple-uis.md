@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 函数和 cmdlet 参数是 PowerShell 提供的基础功能，这些文本界面可以轻松地转换成图形界面。
 
@@ -30,5 +29,4 @@ Send-MailMessageUI
 
 现在，您可以运行 `Send-MailMessageUI`，所有参数都将变成文本框和复选框。甚至不会脚本开发的人现在也能填写这个表单，然后点击“运行”来执行命令。
 
-<!--more-->
-本文国际来源：[Creating Simple UIs](http://community.idera.com/powershell/powertips/b/tips/posts/creating-simple-uis)
+<!--本文国际来源：[Creating Simple UIs](http://community.idera.com/powershell/powertips/b/tips/posts/creating-simple-uis)-->

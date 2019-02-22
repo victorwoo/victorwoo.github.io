@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果有还不会 PowerShell 的同事，并且您希望帮助他们起步，一下是三个免费的学习资源：
 
@@ -19,5 +18,4 @@ tags:
 * [https://www.manning.com/books/exploring-powershell-automation](https://www.manning.com/books/exploring-powershell-automation)
 * [http://community.idera.com/powershell/powertips/b/ebookv2#pi619PostSortOrder=Ascending](/powershell/powertips/b/ebookv2#pi619PostSortOrder=Ascending)
 
-<!--more-->
-本文国际来源：[Free Guides to Start With PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/free-guides-to-start-with-powershell)
+<!--本文国际来源：[Free Guides to Start With PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/free-guides-to-start-with-powershell)-->

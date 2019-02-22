@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个用 WMI 弹出 CD 驱动器的小函数。它首先向 WMI 请求所有的 CD 驱动器，然后使用 explorer 对象模型导航到该驱动器并调用它的 "Eject" 上下文菜单项。
 
@@ -32,5 +31,4 @@ function Eject-CD
 Eject-CD
 ```
 
-<!--more-->
-本文国际来源：[Ejecting CD Drive](http://community.idera.com/powershell/powertips/b/tips/posts/ejecting-cd-drive)
+<!--本文国际来源：[Ejecting CD Drive](http://community.idera.com/powershell/powertips/b/tips/posts/ejecting-cd-drive)-->

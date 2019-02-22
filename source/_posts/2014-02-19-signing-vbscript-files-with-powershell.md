@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您很可能知道 `Set-AuthenticodeSignature` 可以用来为 PowerShell 脚本签名。但您是否知道这个 cmdlet 可以为任何支持目标接口包 (SIP) 的任何文件呢？
 
@@ -33,5 +32,4 @@ tags:
     Get-ChildItem -Path $home -Filter *.vbs -Recurse -ErrorAction SilentlyContinue |
       Set-AuthenticodeSignature -Certificate $cert -WhatIf
 
-<!--more-->
-本文国际来源：[Signing VBScript Files with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/signing-vbscript-files-with-powershell)
+<!--本文国际来源：[Signing VBScript Files with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/signing-vbscript-files-with-powershell)-->

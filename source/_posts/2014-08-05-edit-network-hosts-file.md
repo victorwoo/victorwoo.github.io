@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -25,5 +24,4 @@ _适用于所有 PowerShell 版本_
       Start-Process -FilePath notepad -ArgumentList $Path -Verb runas
     }
 
-<!--more-->
-本文国际来源：[Edit Network “hosts” File](http://community.idera.com/powershell/powertips/b/tips/posts/edit-network-hosts-file)
+<!--本文国际来源：[Edit Network “hosts” File](http://community.idera.com/powershell/powertips/b/tips/posts/edit-network-hosts-file)-->

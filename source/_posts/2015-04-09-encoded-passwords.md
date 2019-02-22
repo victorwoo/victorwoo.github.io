@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您确实需要在脚本中保存一个凭据对象，以下是将一个安全字符串转换为加密文本的方法：
 
@@ -38,5 +37,4 @@ tags:
 
 现在，`$cred` 中保存的凭据对象可以在任何支持 `-Credential` 参数的 cmdlet 或函数中使用了。
 
-<!--more-->
-本文国际来源：[Encoded Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/encoded-passwords)
+<!--本文国际来源：[Encoded Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/encoded-passwords)-->

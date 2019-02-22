@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -25,5 +24,4 @@ _适用于所有 PowerShell 版本_
       (New-Object -ComObject Sapi.SpVoice).Speak(($text | Get-Random))
     }
 
-<!--more-->
-本文国际来源：[Have PowerShell Cheer You Up!](http://community.idera.com/powershell/powertips/b/tips/posts/have-powershell-cheer-you-up)
+<!--本文国际来源：[Have PowerShell Cheer You Up!](http://community.idera.com/powershell/powertips/b/tips/posts/have-powershell-cheer-you-up)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了 `Get-DisplayFileSize` 函数，它可以自动将字节数转换成容易阅读的带单位的数字，例如 "KB" 和 "MB"。
 
@@ -48,5 +47,4 @@ dir $env:windir |
 
 请注意计算属性 `Length` 仍然可以用于排序。它仍是字节数据，只是显示的方式改变了。
 
-<!--more-->
-本文国际来源：[Formatting Numbers (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-part-2)
+<!--本文国际来源：[Formatting Numbers (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-part-2)-->

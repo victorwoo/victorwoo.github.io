@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `throw` 是一个 PowerShell 语句，会抛出一个异常到调用者，并退出代码。至少理论上是这样。实际中，`throw` 可能不会退出代码，而且结果可能是毁灭性的。
 
@@ -66,5 +65,4 @@ Delete log files in original location
 
 * 如果退出函数对您来说很重要，`throw` 可能并不会真正地退出函数。您可能需要用其他方法来退出代码，例如 `return` 语句。
 
-<!--more-->
-本文国际来源：[Be Careful With “Throw” Statements (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/be-careful-with-throw-statements-part-1)
+<!--本文国际来源：[Be Careful With “Throw” Statements (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/be-careful-with-throw-statements-part-1)-->

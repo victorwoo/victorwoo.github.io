@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些 cmdlet 暴露了动态参数。它们只在特定的环境下可用。例如 `Get-ChildItem` 只在当前的位置是文件系统路径（并且是 PowerShell 3.0 以上版本）时才暴露 `-File` 和 `-Directory` 参数。
 
@@ -40,5 +39,4 @@ tags:
 
 您将只会获得已加载并且包含动态参数的 cmdlet。
 
-<!--more-->
-本文国际来源：[Finding Cmdlets with Dynamic Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-cmdlets-with-dynamic-parameters)
+<!--本文国际来源：[Finding Cmdlets with Dynamic Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-cmdlets-with-dynamic-parameters)-->

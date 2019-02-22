@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想重新整理您的照片库，以下这段代码能帮您从照片文件中读取拍摄日期信息。
 
@@ -49,5 +48,4 @@ tags:
     Get-ChildItem -Path $picturePath -Recurse -ErrorAction SilentlyContinue | 
       Get-DateTaken
 
-<!--more-->
-本文国际来源：[Getting DateTaken Info from Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/getting-datetaken-info-from-pictures)
+<!--本文国际来源：[Getting DateTaken Info from Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/getting-datetaken-info-from-pictures)-->

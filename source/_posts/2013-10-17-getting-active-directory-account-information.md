@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在上一段脚本中，您应该已经发现了可以多么轻易地用几行 PowerShell 代码来获取 Active Directory 账户。它的结果是一个搜索结果对象，而不是实际的账户对象。
 
@@ -29,6 +28,5 @@ tags:
 	  # display in a grid view window (ISE needs to be installed for this step)
 	  Out-GridView
 
-<!--more-->
 
-本文国际来源：[Getting Active Directory Account Information](http://community.idera.com/powershell/powertips/b/tips/posts/getting-active-directory-account-information)
+<!--本文国际来源：[Getting Active Directory Account Information](http://community.idera.com/powershell/powertips/b/tips/posts/getting-active-directory-account-information)-->

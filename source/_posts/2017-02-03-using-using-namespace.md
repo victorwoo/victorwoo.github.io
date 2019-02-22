@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 使用 .NET 的类型名称很麻烦，因为这些名字很长。以下是一个例子：
 
@@ -55,5 +54,4 @@ using namespace System.IO
 [Path]::GetExtension('test.txt')
 ```
 
-<!--more-->
-本文国际来源：[Using “Using Namespace”](http://community.idera.com/powershell/powertips/b/tips/posts/using-using-namespace)
+<!--本文国际来源：[Using “Using Namespace”](http://community.idera.com/powershell/powertips/b/tips/posts/using-using-namespace)-->

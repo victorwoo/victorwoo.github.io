@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是一个使用 PowerShell 进度条的简单例子。这段代码显示一个休息倒计时的进度条。只需要调整您希望暂停的秒数即可。您可以使用这个例子在班级或会议中显示休息时间：
 
@@ -26,5 +25,4 @@ Start-Sleep -Seconds 1
 }
 ```
 
-<!--more-->
-本文国际来源：[Progress Bar Timer](http://community.idera.com/powershell/powertips/b/tips/posts/progress-bar-timer)
+<!--本文国际来源：[Progress Bar Timer](http://community.idera.com/powershell/powertips/b/tips/posts/progress-bar-timer)-->

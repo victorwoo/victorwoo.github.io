@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 只有拥有了管理员特权才可以修改电脑的时间和日期，但任何用户都可以修改时区，例如当您在旅游时。PowerShell 5 提供了一系列非常简单的 cmdlet 来管理时区。首先，检查您的当前设置：
 
@@ -51,5 +50,4 @@ PS> Get-Date
 Samstag, 27. Mai 2017 07:48:02
 ```
 
-<!--more-->
-本文国际来源：[Setting Time Zone](http://community.idera.com/powershell/powertips/b/tips/posts/setting-time-zone)
+<!--本文国际来源：[Setting Time Zone](http://community.idera.com/powershell/powertips/b/tips/posts/setting-time-zone)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 If you find yourself always using the same parameter values over again, try using PowerShell default parameters. Here is how:
 如果您常常反复使用相同的参数值，试着使用 PowerShell 的缺省参数。以下是实现方法：
@@ -83,5 +82,4 @@ ID = 12345
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Using Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parameters1)
+<!--本文国际来源：[Using Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parameters1)-->

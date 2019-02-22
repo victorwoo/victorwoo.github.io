@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个新的 PowerShell 后台线程可以在后台工作，例如每 5 秒钟在 PowerShell 窗口标题栏上显示新的 RSS 供稿。
 
@@ -56,5 +55,4 @@ $null = $ps.AddScript($Code).AddArgument($host.UI.RawUI)
 $null = $ps.BeginInvoke()
 ```
 
-<!--more-->
-本文国际来源：[Adding RSS Ticker to PowerShell Title Bar](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-rss-ticker-to-powershell-title-bar)
+<!--本文国际来源：[Adding RSS Ticker to PowerShell Title Bar](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-rss-ticker-to-powershell-title-bar)-->

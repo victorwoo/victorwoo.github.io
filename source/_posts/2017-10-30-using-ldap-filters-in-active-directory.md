@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 LDAP 过滤器类似 Active Directory 中使用的查询语言。并且如果您安装了 Microsoft 的 RSAT 工具，您可以很方便地用 ActiveDirectory 模块中的 cmdlet 来用 LDAP 过滤器搜索用户、计算机，或其它资源。
 
@@ -33,5 +32,4 @@ $searcher.FindAll()
 $searcher.FindAll().GetDirectoryEntry() | Select-Object -Property *
 ```
 
-<!--more-->
-本文国际来源：[Using LDAP Filters in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/using-ldap-filters-in-active-directory)
+<!--本文国际来源：[Using LDAP Filters in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/using-ldap-filters-in-active-directory)-->

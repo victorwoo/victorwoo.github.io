@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要查看磁盘分区信息，请使用 WMI：
 
@@ -31,5 +30,4 @@ tags:
 
 ![](/img/2013-12-16-finding-disk-partition-details-002.png)
 
-<!--more-->
-本文国际来源：[Finding Disk Partition Details](http://community.idera.com/powershell/powertips/b/tips/posts/finding-disk-partition-details)
+<!--本文国际来源：[Finding Disk Partition Details](http://community.idera.com/powershell/powertips/b/tips/posts/finding-disk-partition-details)-->

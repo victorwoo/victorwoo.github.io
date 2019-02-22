@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 Windows 8 和 Server 2012 起，随着操作系统一起分发了一些扩展的 PowerShell 模块，用于管理服务器和客户端，例如 `Get-NetIPAddress` 等 cmdlet。
 
@@ -25,5 +24,4 @@ Get-NetIPAddress |
   Select-Object -ExpandProperty IPAddress
 ```
 
-<!--more-->
-本文国际来源：[Finding IP Address Assigned by DHCP](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ip-address-assigned-by-dhcp)
+<!--本文国际来源：[Finding IP Address Assigned by DHCP](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ip-address-assigned-by-dhcp)-->

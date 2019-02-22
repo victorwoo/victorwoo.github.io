@@ -11,13 +11,11 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要将 CmdLet 的输出结果复制到别的应用程序，只需要简单地将它们通过管道传输到 `clip.exe`。然后，将结果粘贴到您所要的应用程序即可：
 
 	Get-Service | clip
 
-<!--more-->
 译者注 - CLIP 命令的帮助信息：
 
 	C:\>clip /?
@@ -36,6 +34,5 @@ tags:
 	
 	    CLIP < README.TXT   将 readme.txt 的一份文本放入 Windows 剪贴板。
 
-<!--more-->
 
-本文国际来源：[Copying Results to Clipboard](http://community.idera.com/powershell/powertips/b/tips/posts/copying-results-to-clipboard)
+<!--本文国际来源：[Copying Results to Clipboard](http://community.idera.com/powershell/powertips/b/tips/posts/copying-results-to-clipboard)-->

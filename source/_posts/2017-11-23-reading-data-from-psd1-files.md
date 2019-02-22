@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个脚本有多种方法可以保存数据信息。有一种方式特别方便。以下是实现的代码：
 
@@ -35,5 +34,4 @@ $Info
 
 如果您在文件夹中添加了子文件夹，并且命名为语言区域性 ID，例如 "de-de" 和 "en-us"，`Import-LocalizedData` 将会自动检测合适的子目录并且从中读取文件（假设您将数据文件的本地化拷贝放在这些文件夹中）。该 cmdlet 将使用 `$PSCulture` 中提供的语言区域设置，或者如果指定了 `-UICulture`，将使用该设置。
 
-<!--more-->
-本文国际来源：[Reading Data from .PSD1 Files](http://community.idera.com/powershell/powertips/b/tips/posts/reading-data-from-psd1-files)
+<!--本文国际来源：[Reading Data from .PSD1 Files](http://community.idera.com/powershell/powertips/b/tips/posts/reading-data-from-psd1-files)-->

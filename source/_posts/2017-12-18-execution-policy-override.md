@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果 PowerShell 不允许执行脚本，您可能需要先允许脚本执行，例如：
 
@@ -41,5 +40,4 @@ $field = $context.gettype().getfield('_authorizationManager','nonpublic,instance
 $field.setvalue($context,(new-object management.automation.authorizationmanager 'Microsoft.PowerShell'))
 ```
 
-<!--more-->
-本文国际来源：[Execution Policy Override](http://community.idera.com/powershell/powertips/b/tips/posts/execution-policy-override)
+<!--本文国际来源：[Execution Policy Override](http://community.idera.com/powershell/powertips/b/tips/posts/execution-policy-override)-->

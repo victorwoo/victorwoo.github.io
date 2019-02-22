@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 3.0 开始，有一个称为 `$PSScriptRoot` 的变量可用。该变量之前只在模块中可用。它总是指向当前脚本所在的文件夹（所以它仅在您明确地保存了它以后才生效）。
 
@@ -31,5 +30,4 @@ tags:
 	
 	. "$PSScriptRoot\resources\library1.ps1"
 
-<!--more-->
-本文国际来源：[Use $PSScriptRoot to Load Resources](http://community.idera.com/powershell/powertips/b/tips/posts/use-psscriptroot-to-load-resources)
+<!--本文国际来源：[Use $PSScriptRoot to Load Resources](http://community.idera.com/powershell/powertips/b/tips/posts/use-psscriptroot-to-load-resources)-->

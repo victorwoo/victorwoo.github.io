@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 个别情况下，您可能会希望创建一个可以接受不同参数类型的函数。假设您希望用户既可以传入一个雇员姓名，也可以传入一个 Active Directory 对象。
 
@@ -105,5 +104,4 @@ Running  Spooler            Print Spooler
         Get-MyService [-Service] <ServiceController> [<CommonParameters>]
 ```
 
-<!--more-->
-本文国际来源：[Accepting Different Parameter Types](http://community.idera.com/powershell/powertips/b/tips/posts/accepting-different-parameter-types)
+<!--本文国际来源：[Accepting Different Parameter Types](http://community.idera.com/powershell/powertips/b/tips/posts/accepting-different-parameter-types)-->

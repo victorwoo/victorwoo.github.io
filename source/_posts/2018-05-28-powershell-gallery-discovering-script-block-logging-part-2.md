@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了免费的 `ScriptBlockLoggingAnalyzer`，它覆盖了 PowerShell 日志的代码。默认情况下，它只对一小部分命令有效，但如果您启用了所有脚本块的日志，那么您机器上任何人运行的任何代码都会被记录。
 
@@ -39,5 +38,4 @@ Clear-SBLLog
 PS> Get-SBLEvent | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[PowerShell Gallery: Discovering Script Block Logging (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-discovering-script-block-logging-part-2)
+<!--本文国际来源：[PowerShell Gallery: Discovering Script Block Logging (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-discovering-script-block-logging-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 支持基于作用域的 `exit` 关键字。它的工作方式也许和您想象的很不一样。
 
@@ -55,5 +54,4 @@ PowerShell 支持基于作用域的 `exit` 关键字。它的工作方式也许�
 
 那么 `exit` 应该怎么使用？当脚本执行结束的时候您可以用它来设置错误等级（error level）。该错误等级可以被调用者读取，所以如果您通过计划任务启动一个 PowerShell 脚本，或者用批处理文件通过 powershell.exe 来启动它，那么您通过 `exit` 指定的数值将会作为脚本的返回值，并赋值给批处理文件的 `%ERRORLEVEL%` 变量。
 
-<!--more-->
-本文国际来源：[Understanding the statement "exit"](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-statement-quot-exit-quot)
+<!--本文国际来源：[Understanding the statement "exit"](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-statement-quot-exit-quot)-->

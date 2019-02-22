@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您需要为一个文件添加一个新的 NTFS 存取规则，或禁用继承并添加新的规则，以下是一个示例脚本，演示这个技巧并且为您提供一个模板。
 
@@ -58,5 +57,4 @@ tags:
 
 这将自动打开上下文菜单并列出所有可用的设置。
 
-<!--more-->
-本文国际来源：[Adding and Resetting NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/adding-and-resetting-ntfs-permissions)
+<!--本文国际来源：[Adding and Resetting NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/adding-and-resetting-ntfs-permissions)-->

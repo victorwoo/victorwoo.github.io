@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，我们需要批量重命名对象的属性来更好地创建报表。例如，假设您获取了进程对象，你需要您可能需要以新的的列名来创建报表。
 
@@ -46,5 +45,4 @@ tags:
 
 所以本质上上，属性并没有被改名（技术上不可能实现）。实际上，该过滤器以新的名字添加了别名属性，并指向原先的属性。
 
-<!--more-->
-本文国际来源：[Bulk Renaming Object Properties](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-object-properties)
+<!--本文国际来源：[Bulk Renaming Object Properties](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-object-properties)-->

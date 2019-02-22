@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个使用一系列选项的操作参数的简单概念。每个选项对应一个将被执行的脚本块。
 
@@ -39,5 +38,4 @@ tags:
 
 根据您的选择，PowerShell 将会执行合适的脚本块。如您所见，该操作脚本块可以包括任意代码，甚至多页代码。
 
-<!--more-->
-本文国际来源：[Invoking Different Code Based on Parameter Value](http://community.idera.com/powershell/powertips/b/tips/posts/invoking-different-code-based-on-parameter-value)
+<!--本文国际来源：[Invoking Different Code Based on Parameter Value](http://community.idera.com/powershell/powertips/b/tips/posts/invoking-different-code-based-on-parameter-value)-->

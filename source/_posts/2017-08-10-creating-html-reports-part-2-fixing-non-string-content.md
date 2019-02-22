@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们开始使用 PowerShell 来将结果转换为 HTML 报告。目前，我们已经生成了报告，但报告的界面看起来很丑。我们从这里开始：
 
@@ -80,5 +79,4 @@ Get-EventLog -LogName System -EntryType Error -After $startDate |
 
 Invoke-Item -Path $Path
 ```
-<!--more-->
-本文国际来源：[Creating HTML Reports (Part 2 – Fixing Non-String Content)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-2-fixing-non-string-content)
+<!--本文国际来源：[Creating HTML Reports (Part 2 – Fixing Non-String Content)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-html-reports-part-2-fixing-non-string-content)-->

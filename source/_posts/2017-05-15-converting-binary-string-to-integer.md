@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是将一段二进制文本字符串转为对应的整形值的方法：
 
@@ -28,5 +27,4 @@ PS> [Convert]::ToString(438,2)
 110110110
 ```
 
-<!--more-->
-本文国际来源：[Converting Binary String to Integer](http://community.idera.com/powershell/powertips/b/tips/posts/converting-binary-string-to-integer)
+<!--本文国际来源：[Converting Binary String to Integer](http://community.idera.com/powershell/powertips/b/tips/posts/converting-binary-string-to-integer)-->

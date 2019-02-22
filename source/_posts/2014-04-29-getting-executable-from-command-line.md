@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候我们需要从命令行提取命令名。以下是实现的方法：
 
@@ -36,5 +35,4 @@ tags:
       $CommandLine.Split($divider)[0]
     } 
 
-<!--more-->
-本文国际来源：[Getting Executable from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-executable-from-command-line)
+<!--本文国际来源：[Getting Executable from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-executable-from-command-line)-->

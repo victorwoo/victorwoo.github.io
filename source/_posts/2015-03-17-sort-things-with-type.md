@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell 所有版本_
     '1.2.3.4', '10.1.2.3', '100.4.2.1', '2.3.4.5', '9.10.11.12' | 
       Sort-Object -Property { [version] $_ }
 
-<!--more-->
-本文国际来源：[Sort Things with Type](http://community.idera.com/powershell/powertips/b/tips/posts/sort-things-with-type)
+<!--本文国际来源：[Sort Things with Type](http://community.idera.com/powershell/powertips/b/tips/posts/sort-things-with-type)-->

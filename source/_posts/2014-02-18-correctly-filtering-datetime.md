@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您使用 `Where-Object` 通过日期或时间来过滤信息时，它工作得很好——前提是您使用了正确的过滤格式。请不要使用输出结果中的格式。
 
@@ -25,5 +24,4 @@ tags:
 
 ![](/img/2014-02-18-correctly-filtering-datetime-001.png)
 
-<!--more-->
-本文国际来源：[Correctly Filtering DateTime](http://community.idera.com/powershell/powertips/b/tips/posts/correctly-filtering-datetime)
+<!--本文国际来源：[Correctly Filtering DateTime](http://community.idera.com/powershell/powertips/b/tips/posts/correctly-filtering-datetime)-->

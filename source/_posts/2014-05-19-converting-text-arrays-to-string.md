@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 某些时候，文本文件中的文字内容需要由其它命令来读取和处理。通常，您需要用 `Get-Content` 命令来读取文本文件内容，然后将结果传递给其它命令。但这有可能会失败。
 
@@ -37,5 +36,4 @@ tags:
     PS> $all -is [Array]
     False 
     
-<!--more-->
-本文国际来源：[Converting Text Arrays to String](http://community.idera.com/powershell/powertips/b/tips/posts/converting-text-arrays-to-string)
+<!--本文国际来源：[Converting Text Arrays to String](http://community.idera.com/powershell/powertips/b/tips/posts/converting-text-arrays-to-string)-->

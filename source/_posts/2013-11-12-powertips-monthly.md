@@ -46,5 +46,4 @@ tags:
 [11]: http://powershell.com/cs/PowerTips_Monthly_Volume_11.pdf
 [12]: http://powershell.com/cs/PowerTips_Monthly_Volume_12.pdf
 
-<!--more-->
-本文国际来源：[PowerTips Reference Library](http://powershell.com/cs/media/28/default.aspx)
+<!--本文国际来源：[PowerTips Reference Library](http://powershell.com/cs/media/28/default.aspx)-->

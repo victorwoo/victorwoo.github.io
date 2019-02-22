@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您创建一个 PowerShell 函数时，所有参数都有默认的位置，除非人为地加上“`Position`”属性。一旦加上这个属性，所有不带“`Position`”的参数将立刻变为命名的必须参数。让我们看看例子：
 
@@ -63,5 +62,4 @@ Test-Command [[-Name] <string>] [[-ID] <int>] [-Email <string>] [<CommonParamete
 
 区别在哪？您不需要指定参数名 `-Name` 和 `-ID`，但如果您希望为第三个参数指定一个值，必须指定 `-Email`。在第一个例子中，所有三个参数都可以按照位置来定位。
 
-<!--more-->
-本文国际来源：[Using Named Parameters in PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/using-named-parameters-in-powershell-functions)
+<!--本文国际来源：[Using Named Parameters in PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/using-named-parameters-in-powershell-functions)-->

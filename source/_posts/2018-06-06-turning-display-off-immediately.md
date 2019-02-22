@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想运行一个长时间执行的脚本，何不先关闭显示器，而是傻傻地等着超时以后显示屏保呢？
 
@@ -35,5 +34,4 @@ public class API
 }
 ```
 
-<!--more-->
-本文国际来源：[Turning Display Off Immediately](http://community.idera.com/powershell/powertips/b/tips/posts/turning-display-off-immediately)
+<!--本文国际来源：[Turning Display Off Immediately](http://community.idera.com/powershell/powertips/b/tips/posts/turning-display-off-immediately)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能里我们解释了如何使用独立全新的 PowerShell 实例来获取所有缺省变量。当您仔细查看这些变量，会发现还是丢失了某些变量。
 
@@ -51,5 +50,4 @@ WarningPreference              Continue
 WhatIfPreference               False
 ```
 
-<!--more-->
-本文国际来源：[Finding PowerShell Default Variables (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-default-variables-part-2)
+<!--本文国际来源：[Finding PowerShell Default Variables (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-powershell-default-variables-part-2)-->

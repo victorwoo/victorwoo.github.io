@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当 PowerShell 通过 `Microsoft.Update.Session` 对象向 Windows 请求更新时，一些信息似乎无法读取。以下代码获取已安装的更新信息。而 `KBArticleIDs` 只是显示为 `ComObject`。
 
@@ -46,5 +45,4 @@ $updates |
     Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Finding Installed Updates (and searching for missing) (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-installed-updates-and-searching-for-missing-part-2)
+<!--本文国际来源：[Finding Installed Updates (and searching for missing) (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-installed-updates-and-searching-for-missing-part-2)-->

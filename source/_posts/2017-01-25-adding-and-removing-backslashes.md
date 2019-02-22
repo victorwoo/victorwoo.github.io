@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们处理路径时，常常需要使路径“标准化”。例如确保所有的路径都以反斜杠结尾。一种尝试如下：
 
@@ -33,5 +32,4 @@ $path = 'c:\temp\' -replace '\\$'
 $path
 ```
 
-<!--more-->
-本文国际来源：[Adding and Removing Backslashes](http://community.idera.com/powershell/powertips/b/tips/posts/adding-and-removing-backslashes)
+<!--本文国际来源：[Adding and Removing Backslashes](http://community.idera.com/powershell/powertips/b/tips/posts/adding-and-removing-backslashes)-->

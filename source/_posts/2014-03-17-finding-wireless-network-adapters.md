@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有很多方法可以查找网卡，但似乎没有办法识别活动的无线网卡。
 
@@ -25,5 +24,4 @@ tags:
 
 ![](/img/2014-03-17-finding-wireless-network-adapters-002.png)
 
-<!--more-->
-本文国际来源：[Finding Wireless Network Adapters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-wireless-network-adapters)
+<!--本文国际来源：[Finding Wireless Network Adapters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-wireless-network-adapters)-->

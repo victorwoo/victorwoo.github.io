@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 当您运行这个函数是，您可以点击 PowerShell ISE 中的任意 cmdlet 名称，然后按 `F1` 键，就能够访问该 cmdlet 的在线解释——忽略您本机安装的帮助文件。
 
-<!--more-->
-本文国际来源：[Getting Cmdlet Help No Matter What](http://community.idera.com/powershell/powertips/b/tips/posts/getting-cmdlet-help-no-matter-what)
+<!--本文国际来源：[Getting Cmdlet Help No Matter What](http://community.idera.com/powershell/powertips/b/tips/posts/getting-cmdlet-help-no-matter-what)-->

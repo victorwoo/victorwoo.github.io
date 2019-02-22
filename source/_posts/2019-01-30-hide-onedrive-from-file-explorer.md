@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否厌倦了 OneDrive 图表污染了您的文件管理器树形视图？如果您不使用 OneDrive，那么有两个很好用的函数可以在文件管理器里隐藏或显示 OneDrive 图标：
 
@@ -32,5 +31,4 @@ function Enable-OneDrive
 }
 ```
 
-<!--more-->
-本文国际来源：[Hide OneDrive from File Explorer](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hide-onedrive-from-file-explorer)
+<!--本文国际来源：[Hide OneDrive from File Explorer](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hide-onedrive-from-file-explorer)-->

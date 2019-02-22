@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有序哈希表是在 PowerShell 3.0 中增加的新特性，它在创建新对象的时候十分有用。和常规的哈希表不同，有序哈希表保存了您添加键时的顺序，您还可以控制这些键转化为对象属性时的顺序。以下是一个例子：
 
@@ -34,5 +33,4 @@ tags:
 	
 	New-Object -TypeName PSObject -Property $hashtable
 
-<!--more-->
-本文国际来源：[Ordered Hash Tables and Changing Order](http://community.idera.com/powershell/powertips/b/tips/posts/ordered-hash-tables-and-changing-order)
+<!--本文国际来源：[Ordered Hash Tables and Changing Order](http://community.idera.com/powershell/powertips/b/tips/posts/ordered-hash-tables-and-changing-order)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 脚本块日志的迷你系列的第 6 部分。该是时候介绍最后的部分了：当您执行一段非常大的 PowerShell 脚本时，它们是分块记录的。还缺少的部分是整理代码片段的逻辑：
 
@@ -95,5 +94,4 @@ function Get-LoggedCode
 
 本质上，这个函数检查该脚本是否是由多段组成。如果是，它将代码添加到 `$code` 中，直到当前块等于 最后一块。就是这么简单。
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 6)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-6)
+<!--本文国际来源：[Understanding Script Block Logging (Part 6)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-6)-->

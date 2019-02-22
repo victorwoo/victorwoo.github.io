@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，您可能希望从纯文本结果中提取一些有用的信息。一个简单的办法是使用 `Select-String` 命令。这个例子只提取包含“IPv4”的文本行：
 
@@ -33,5 +32,4 @@ PS C:\> [regex]::Matches($data,"\b(?:\d{1,3}\.){3}\d{1,3}\b") | Select-Object -E
 
 `[Regex]::Matches()` 输入原始数据和正则表达式 pattern，后者描述了您感兴趣的部分。符合该 pattern 的内容可以在“Value”属性中找到。
 
-<!--more-->
-本文国际来源：[Parsing Raw Text (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-raw-text-part-1)
+<!--本文国际来源：[Parsing Raw Text (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-raw-text-part-1)-->

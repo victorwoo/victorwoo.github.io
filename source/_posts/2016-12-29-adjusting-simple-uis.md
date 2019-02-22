@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中您学到了如何使用 `Show-Command` 为基于文本的命令创建简单的 UI：
 
@@ -76,5 +75,4 @@ function Send-MailMessageUI
 Send-MailMessageUI
 ```
 
-<!--more-->
-本文国际来源：[Adjusting Simple UIs](http://community.idera.com/powershell/powertips/b/tips/posts/adjusting-simple-uis)
+<!--本文国际来源：[Adjusting Simple UIs](http://community.idera.com/powershell/powertips/b/tips/posts/adjusting-simple-uis)-->

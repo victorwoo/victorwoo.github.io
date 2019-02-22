@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了一个名为 `Remove-EmptyProperty` 的新函数，它能够移除所有没有值的属性。现在让我们将它扩展一点，使它的对象属性按字母顺序排序：
 
@@ -137,5 +136,4 @@ WorkingSet64               : 354381824
 WS                         : 354381824
 ```
 
-<!--more-->
-本文国际来源：[Listing Properties with Values (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/listing-properties-with-values-part-2)
+<!--本文国际来源：[Listing Properties with Values (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/listing-properties-with-values-part-2)-->

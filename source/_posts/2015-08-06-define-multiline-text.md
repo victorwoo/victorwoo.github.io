@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您需要在 PowerShell 中定义多行文本时，通常可以这样使用 here-string：
 
@@ -44,5 +43,4 @@ tags:
     
     $text.ToString() | Out-GridView
 
-<!--more-->
-本文国际来源：[Define Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/define-multiline-text)
+<!--本文国际来源：[Define Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/define-multiline-text)-->

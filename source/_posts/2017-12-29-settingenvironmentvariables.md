@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您会见到一些脚本使用 `Select-Object` 向现有的对象附加信息，类似以下代码：
 
@@ -58,5 +57,4 @@ PS C:\> Set-EnvironmentVariable -VariableName test -VariableValue 12 -Target Use
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Setting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/settingenvironmentvariables)
+<!--本文国际来源：[Setting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/settingenvironmentvariables)-->

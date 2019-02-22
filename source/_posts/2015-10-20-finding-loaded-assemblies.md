@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要列出一个 PowerShell 会话中加载的所有 .NET 程序集，请试试这段代码：
 
@@ -25,5 +24,4 @@ tags:
 
 或者，您可以使用 `Add-Type` 命令根据名字或文件地址手动加载程序集。
 
-<!--more-->
-本文国际来源：[Finding Loaded Assemblies ](http://community.idera.com/powershell/powertips/b/tips/posts/finding-loaded-assemblies)
+<!--本文国际来源：[Finding Loaded Assemblies ](http://community.idera.com/powershell/powertips/b/tips/posts/finding-loaded-assemblies)-->

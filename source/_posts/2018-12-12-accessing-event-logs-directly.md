@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过 `Get-EventLog` 命令，您可以轻松地转储任意给定的事件日志内容，然而，如果您希望直接存取某个指定的事件日志，您只能使用 `-List` 参数来完全转储它们，然后选择其中一个您所关注的：
 
@@ -38,5 +37,4 @@ PS> $systemLogDirect
   20.480      0 OverwriteAsNeeded      19.806 System
 ```
 
-<!--more-->
-本文国际来源：[Accessing Event Logs Directly](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/accessing-event-logs-directly)
+<!--本文国际来源：[Accessing Event Logs Directly](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/accessing-event-logs-directly)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您设置了 PIN 用来登录您的电脑，对您自己的机器使用 PowerShell remoting 可能会失败，提示如下奇怪的错误信息：
 
@@ -39,5 +38,4 @@ about_Remote_Troubleshooting  Help topic.
 * 设置一个使用密码的用户账户（需要本地管理员权限）。然后，运行 `Invoke-Command` 的时候使用 `-Credential` 参数，然后指定账户和密码。
 * 如果您的电脑没有加入域，那么您需要启用 Negotiate 认证来进行 PowerShell remoting 操作。，并且使用机器的 IP 地址而不是计算机名。
 
-<!--more-->
-本文国际来源：[Using PowerShell Remoting with PIN-enabled Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-remoting-with-pin-enabled-accounts)
+<!--本文国际来源：[Using PowerShell Remoting with PIN-enabled Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-remoting-with-pin-enabled-accounts)-->

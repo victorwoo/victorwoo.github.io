@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 随着 PowerShell 3.0 及以上脚本发布的 PowerShell ISE 内置编辑器可以支持定制，并且可以增加自己的菜单项。
 
@@ -32,5 +31,4 @@ tags:
     
     $psise.CurrentPowerShellTab.AddOnsMenu.Submenus.Add('Get Command History', $code, 'ALT+C')
 
-<!--more-->
-本文国际来源：[Get Command History as File](http://community.idera.com/powershell/powertips/b/tips/posts/get-command-history-as-file)
+<!--本文国际来源：[Get Command History as File](http://community.idera.com/powershell/powertips/b/tips/posts/get-command-history-as-file)-->

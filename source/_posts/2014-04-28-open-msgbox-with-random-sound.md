@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许了解了如何用脚本打开一个 MsgBox 对话框。今天，您将学习如何用一段代码打开一个 MsgBox，同时播放一段随机的音效，吸引用户的注意力并增加趣味性。当用户操作 MsgBox 的时候，音效立即停止：
 
@@ -30,5 +29,4 @@ tags:
     $result = [System.Windows.Forms.MessageBox]::Show("We will reboot your machine now. Ok?", "PowerShell", "YesNo", "Exclamation")
     $player.Stop()
 
-<!--more-->
-本文国际来源：[Open MsgBox with Random Sound](http://community.idera.com/powershell/powertips/b/tips/posts/open-msgbox-with-random-sound)
+<!--本文国际来源：[Open MsgBox with Random Sound](http://community.idera.com/powershell/powertips/b/tips/posts/open-msgbox-with-random-sound)-->

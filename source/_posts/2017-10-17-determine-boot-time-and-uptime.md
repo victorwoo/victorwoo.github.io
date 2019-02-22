@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WMI 可以告诉您系统是什么时候启动的，还可以利用这个信息计算启动以来经历的时间：
 
@@ -25,5 +24,4 @@ $min = [int]$upTime.TotalMinutes
 
 请注意当使用 `-ComputerName` 访问远程系统时，`Get-CimInstance` 默认使用 WinRM 远程处理。旧的系统可能没有启用 WinRM 远程处理，而仍然使用 DCOM 技术。
 
-<!--more-->
-本文国际来源：[Determine Boot Time and Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/determine-boot-time-and-uptime)
+<!--本文国际来源：[Determine Boot Time and Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/determine-boot-time-and-uptime)-->

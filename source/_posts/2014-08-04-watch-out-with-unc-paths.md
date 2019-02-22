@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -47,5 +46,4 @@ _适用于所有 PowerShell 版本_
 
 如果您遇到了 `net use` 产生的问题，也可以使用同样的办法，在路径前面加上 `“FileSystem::`。该问题可以立刻得到解决。
 
-<!--more-->
-本文国际来源：[Watch Out With UNC Paths!](http://community.idera.com/powershell/powertips/b/tips/posts/watch-out-with-unc-paths)
+<!--本文国际来源：[Watch Out With UNC Paths!](http://community.idera.com/powershell/powertips/b/tips/posts/watch-out-with-unc-paths)-->

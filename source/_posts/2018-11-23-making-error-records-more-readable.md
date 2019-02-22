@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当 PowerShell 遇到错误时，它将抛出包含关于该错误详细信息的错误记录。不幸的是，这些对象有点儿难懂，而且缺省情况下不会显示所有信息。相比之下，以下函数有着无价的帮助信息：
 
@@ -126,5 +125,4 @@ $test | ConvertFrom-ErrorRecord
 
     ...
 
-<!--more-->
-本文国际来源：[Making Error Records More Readable](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/making-error-records-more-readable)
+<!--本文国际来源：[Making Error Records More Readable](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/making-error-records-more-readable)-->

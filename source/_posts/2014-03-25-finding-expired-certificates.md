@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 通过 `cert:` 驱动器来存取您的证书存储。
 
@@ -25,5 +24,4 @@ PowerShell 通过 `cert:` 驱动器来存取您的证书存储。
 	  Select-Object -Property FriendlyName, NotAfter, PSParentPath, Thumbprint |
 	  Out-GridView
 
-<!--more-->
-本文国际来源：[Finding Expired Certificates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-expired-certificates)
+<!--本文国际来源：[Finding Expired Certificates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-expired-certificates)-->

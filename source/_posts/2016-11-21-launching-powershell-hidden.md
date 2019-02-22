@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候 PowerShell 脚本只是用来生成某些东西，比如说生成报告，而不需要用 Excel 或记事本打开它。这时候您不会希望执行 PowerShell 的时候显示 PowerShell 控制台窗口。
 
@@ -29,5 +28,4 @@ powershell -noprofile -executionpolicy bypass -file "c:\path\to\script.ps1"
 
 一个缺点是，在 Windows 10 中，“运行”的设置不再包含隐藏程序的选项。您最多可以最小化执行。
 
-<!--more-->
-本文国际来源：[Launching PowerShell Hidden](http://community.idera.com/powershell/powertips/b/tips/posts/launching-powershell-hidden)
+<!--本文国际来源：[Launching PowerShell Hidden](http://community.idera.com/powershell/powertips/b/tips/posts/launching-powershell-hidden)-->

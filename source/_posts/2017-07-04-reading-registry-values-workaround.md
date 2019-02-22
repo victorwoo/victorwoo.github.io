@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了 `Get-ItemProperty` 无法读取数据错误的注册表键值：
 
@@ -65,5 +64,4 @@ FileSysPath                    C:\WINDOWS\System32\GroupPolicy\Machine
 DisplayName                    Guidelines of the local group
 ```
 
-<!--more-->
-本文国际来源：[Reading Registry Values (Workaround)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-workaround)
+<!--本文国际来源：[Reading Registry Values (Workaround)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-workaround)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否有为了测试而创建新的本地管理员账户的经历？假设您已经以 Administrator 账户登录，并且使用管理员特权开启 PowerShell，那么增加这样一个账户只需要几行代码就可以完成：
 
@@ -24,5 +23,4 @@ tags:
 
 > 译者注：我在中文操作系统上实验了一下，直接用 `Administrators` 也没有问题的。 
 
-<!--more-->
-本文国际来源：[Create New Local Admin Account on the Fly](http://community.idera.com/powershell/powertips/b/tips/posts/create-new-local-admin-account-on-the-fly)
+<!--本文国际来源：[Create New Local Admin Account on the Fly](http://community.idera.com/powershell/powertips/b/tips/posts/create-new-local-admin-account-on-the-fly)-->

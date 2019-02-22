@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 脚本常常需要记录它们做了什么，并且 PowerShell 脚本开发者们需要做投入许多时间精力来将信息记录到文本文件中。
 
@@ -51,5 +50,4 @@ Index Time         EntryType   Source InstanceID Message
 
 当您创建日志时，必须指定一个合法的 `-Source` 名称。使用这项技术的一个好处是您可以用 `Get-EventLog` 来方便地分析您的日志记录。
 
-<!--more-->
-本文国际来源：[Easy Logging by Using Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/easy-logging-by-using-event-logs)
+<!--本文国际来源：[Easy Logging by Using Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/easy-logging-by-using-event-logs)-->

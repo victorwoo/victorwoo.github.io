@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们展示了如何选择应用程序并且立即结束它们。所有未保存的数据将会丢失。
 
@@ -51,5 +50,4 @@ This is why the script waits for 15 seconds, and then checks whether the request
         } |
         Stop-Process -WhatIf
 
-<!--more-->
-本文国际来源：[Create Benign “Task Kill” Application](http://community.idera.com/powershell/powertips/b/tips/posts/create-benign-task-kill-application)
+<!--本文国际来源：[Create Benign “Task Kill” Application](http://community.idera.com/powershell/powertips/b/tips/posts/create-benign-task-kill-application)-->

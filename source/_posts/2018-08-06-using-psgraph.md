@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PSGraph 是一个非常棒的免费 PowerShell 库，您可以用它来将关系可视化。在使用 PSGraph 之前，需要安装它的依赖项（graphviz 引擎）。两者都需要管理员特权：
 
@@ -58,5 +57,4 @@ graph site1 {
 
 这个例子中创建的图形使用脚本文件中的 hypothetical 服务器并向其添加合适的关系，并显示图像。
 
-<!--more-->
-本文国际来源：[Using PSGraph](http://community.idera.com/powershell/powertips/b/tips/posts/using-psgraph)
+<!--本文国际来源：[Using PSGraph](http://community.idera.com/powershell/powertips/b/tips/posts/using-psgraph)-->

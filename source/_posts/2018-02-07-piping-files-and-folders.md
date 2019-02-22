@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您想创建一个函数，接受一个文件路径参数。文件可以进行许多操作。您可能希望拷贝文件，压缩文件，将它们设置为隐藏文件，或其它各种操作。我们在这里并不关注具体需要做什么操作。我们希望关注 PowerShell 函数如何接受文件参数。
 
@@ -125,5 +124,4 @@ Get-ChildItem -Path c:\windows -Filter *.exe | Process-File
 
 现在，这个函数不止能接受管道传来的字符串 (ValueFromPipeline)，而且还能接受有某个属性名或别名与参数 (Path) 相似的对象 (ValueFromPipelineByPropertyName)。任务完成了。您的函数现在能够为用户提供最大的灵活性，这基本上也是 cmdlet 所做的事。
 
-<!--more-->
-本文国际来源：[Piping Files and Folders](http://community.idera.com/powershell/powertips/b/tips/posts/piping-files-and-folders)
+<!--本文国际来源：[Piping Files and Folders](http://community.idera.com/powershell/powertips/b/tips/posts/piping-files-and-folders)-->

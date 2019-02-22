@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 LDAP 查询条件越明确，查询速度就越快，占用的资源就越少，并且查询结果越清晰。
 
@@ -42,5 +41,4 @@ LDAP 查询条件越明确，查询速度就越快，占用的资源就越少，
 * SAM_MACHINE_ACCOUNT 0x30000001
 
 两者的 objectClass 都属于 "User"。
-<!--more-->
-本文国际来源：[Finding Active Directory User Accounts Fast](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-user-accounts-fast)
+<!--本文国际来源：[Finding Active Directory User Accounts Fast](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-user-accounts-fast)-->

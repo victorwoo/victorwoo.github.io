@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何获取 PowerShellGet 并且在您的 PowerShell 版本中运行。现在我们看看 PowerShell 陈列架能够多么方便地扩展 PowerShell 的功能。
 
@@ -41,5 +40,4 @@ Invoke-Item -Path $path
 
 只需要将 QR 码打印几份，下一次迎接客人的时候，只需要提供打印件给客人，他们就可以方便地连上您的 WiFi。
 
-<!--more-->
-本文国际来源：[PowerShell Gallery: Creating QR Codes](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-creating-qr-codes)
+<!--本文国际来源：[PowerShell Gallery: Creating QR Codes](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-creating-qr-codes)-->

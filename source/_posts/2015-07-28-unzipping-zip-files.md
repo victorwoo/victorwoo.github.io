@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 5.0 中，有一个新的 cmdlet 可以解压 ZIP 文件：
 
@@ -29,5 +28,4 @@ tags:
       explorer.exe $Destination
     }
 
-<!--more-->
-本文国际来源：[Unzipping ZIP Files](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files)
+<!--本文国际来源：[Unzipping ZIP Files](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files)-->

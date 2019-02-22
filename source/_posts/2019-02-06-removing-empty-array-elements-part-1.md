@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您会遇到包含空元素的列表（数组）。那么移除空元素的最佳方法是？
 
@@ -64,5 +63,4 @@ $software = $software.Where{ $_.DisplayName }
 $software = foreach ($_ in $software){ if($_.DisplayName) { $_ }}
 ```
 
-<!--more-->
-本文国际来源：[Removing Empty Array Elements (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/removing-empty-array-elements-part-1)
+<!--本文国际来源：[Removing Empty Array Elements (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/removing-empty-array-elements-part-1)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -23,5 +22,4 @@ PowerShell 可以有多种方法作出限制。一种是将语言模式从 `Full
 
 所以 `RestrictedLanguage` 基本上是一个安全的锁，锁定以后 PowerShell 只能执行指令但无法深入到底层的 .NET 或用新创建的函数覆盖现有的命令。
 
-<!--more-->
-本文国际来源：[Turning Off “FullLanguage” Mode](http://community.idera.com/powershell/powertips/b/tips/posts/turning-off-fulllanguage-mode)
+<!--本文国际来源：[Turning Off “FullLanguage” Mode](http://community.idera.com/powershell/powertips/b/tips/posts/turning-off-fulllanguage-mode)-->

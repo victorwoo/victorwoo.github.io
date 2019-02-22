@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 编写 Active Directory 脚本不需要额外的 module。通过简单的 .NET 框架方法，您可以实现令人惊叹的功能。实际上，这个技术十分强大，您不应该在您的生产环境下运行以下的例子，除非您知道自己在做什么。
 
@@ -39,5 +38,4 @@ tags:
 
 这个示例代码可以读取并且修改、设置任意的属性。它特别适用于不能通过 cmdlet 设置的自定义属性。
 
-<!--more-->
-本文国际来源：[Setting Default Email Address for AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/setting-default-email-address-for-ad-users)
+<!--本文国际来源：[Setting Default Email Address for AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/setting-default-email-address-for-ad-users)-->

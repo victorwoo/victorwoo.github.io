@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望查找大写字符，那么可以使用正则表达式。然而，您也可以提供一个大写字符的列表作为对比使用。一个更灵活的办法是使用 .NET 的 `IsUpper()` 函数。
 
@@ -48,5 +47,4 @@ tags:
     First uppercase character at position 24
     here is some text with U<<<ppercase letters
 
-<!--more-->
-本文国际来源：[Finding Uppercase Characters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-uppercase-characters)
+<!--本文国际来源：[Finding Uppercase Characters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-uppercase-characters)-->

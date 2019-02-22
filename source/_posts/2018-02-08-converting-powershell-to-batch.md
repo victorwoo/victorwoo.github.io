@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个有趣的 PowerShell 脚本，名为 `Convert-PowerShellToBatch`。将 PowerShell 脚本的路径作为参数传给它，或者将 `Get-ChildItem` 的执行结果用管道传给它，来批量执行多个脚本。
 
@@ -47,5 +46,4 @@ Get-ChildItem -Path C:\path\to\powershell\scripts -Filter *.ps1 |
 
 申明：BASE64 并不是加密。将 BASE64 编码的文本转换为可读的明文是很简单的事。所以这里用的技术不适合用来隐藏秘密，例如密码。
 
-<!--more-->
-本文国际来源：[Converting PowerShell to Batch](http://community.idera.com/powershell/powertips/b/tips/posts/converting-powershell-to-batch)
+<!--本文国际来源：[Converting PowerShell to Batch](http://community.idera.com/powershell/powertips/b/tips/posts/converting-powershell-to-batch)-->

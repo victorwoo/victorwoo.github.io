@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 5.0 中似乎有个 bug，限制了内置帮助窗口的作用。当您以 `-ShowWindow` 参数运行 `Get-Help` 命令时，该窗口只显示该 cmdlet 的语法和例子。许多额外信息并没有显示出来。
 
@@ -66,5 +65,4 @@ $weekday = Get-Date -Date $date -Format 'dddd'
 "$date is a $weekday"
 ```
 
-<!--more-->
-本文国际来源：[Getting Help for Cmdlet Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/getting-help-for-cmdlet-parameters)
+<!--本文国际来源：[Getting Help for Cmdlet Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/getting-help-for-cmdlet-parameters)-->

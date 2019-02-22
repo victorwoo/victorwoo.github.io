@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有一系列有用的 cmdlet 可以管理事件日志，然而缺失了这个功能：
 
@@ -69,5 +68,4 @@ The file exists
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Backing Up Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/backing-up-event-logs)
+<!--本文国际来源：[Backing Up Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/backing-up-event-logs)-->

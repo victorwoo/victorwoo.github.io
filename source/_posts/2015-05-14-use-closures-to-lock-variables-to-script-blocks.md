@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您使用脚本块中的变量时，运行脚本块时变量会被求值。
 
@@ -32,5 +31,4 @@ tags:
 
 如果不使用闭包，该脚本块将显示“2”，因为执行时 `$info` 的值为 2。通过闭包的作用，该脚本块内包含的值为创建闭包时赋予 `$info` 的值。
 
-<!--more-->
-本文国际来源：[Use Closures to Lock Variables to Script Blocks](http://community.idera.com/powershell/powertips/b/tips/posts/use-closures-to-lock-variables-to-script-blocks)
+<!--本文国际来源：[Use Closures to Lock Variables to Script Blocks](http://community.idera.com/powershell/powertips/b/tips/posts/use-closures-to-lock-variables-to-script-blocks)-->

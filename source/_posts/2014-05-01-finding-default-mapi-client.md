@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您机器上的 MAPI 客户端就是处理类似“mailto:” URL 的缺省电子邮件客户端。我们设计一个函数来查找是否有 MAPI 客户端，如果有的话，查看具体是哪一个。该函数从 Windows 注册表中获取这项信息：
 
@@ -62,5 +61,4 @@ tags:
 
 ![](/img/2014-05-01-finding-default-mapi-client-001.png)
 
-<!--more-->
-本文国际来源：[Finding Default MAPI Client](http://community.idera.com/powershell/powertips/b/tips/posts/finding-default-mapi-client)
+<!--本文国际来源：[Finding Default MAPI Client](http://community.idera.com/powershell/powertips/b/tips/posts/finding-default-mapi-client)-->

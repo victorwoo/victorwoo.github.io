@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的系统是 Windows 8 或 Windows Server 2012 或以上版本，您可以使用 `Get-NetTcpConnection` 来找出哪个网络端口正在使用中，以及谁在监听这些端口。
 
@@ -61,5 +60,4 @@ Sort-Object -Property LocalPort, Name -Unique
         27015          2456 AppleMobileDeviceService                               
     (...)
 
-<!--more-->
-本文国际来源：[Who is Listening? (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-2)
+<!--本文国际来源：[Who is Listening? (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-2)-->

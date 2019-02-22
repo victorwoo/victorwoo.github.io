@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 大多数 PowerShell 函数使用静态参数。它们是定义在 `param()` 代码块中的，并且始终存在。一个不太为人所知的情况是您也可以快速地编程添加动态参数。动态参数的最大优势是您可以完全控制它们什么时候可以出现，以及它们可以接受什么类型的数值。它的缺点是需要使用大量底层的代码来“编程”参数属性。
 
@@ -78,5 +77,4 @@ function Test-Department
 
 请注意！当您在选择的编辑器中键入 `Test-Department`，初始情况下只有一个参数：`Tbc-Company`。当您选择了四个可用得公司之一，第二个参数 `-Department` 将变得可用，并且显示当前选中的公司可用的部门。
 
-<!--more-->
-本文国际来源：[Using Dynamic Parameters](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-dynamic-parameters)
+<!--本文国际来源：[Using Dynamic Parameters](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-dynamic-parameters)-->

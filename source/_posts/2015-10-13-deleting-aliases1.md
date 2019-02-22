@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中创建新的别名很常见。但是如果您做错了什么，要怎么办？
 
@@ -40,5 +39,4 @@ tags:
     
     PS C:\>
 
-<!--more-->
-本文国际来源：[Deleting Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-aliases1)
+<!--本文国际来源：[Deleting Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-aliases1)-->

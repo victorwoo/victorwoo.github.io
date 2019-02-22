@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个用户登录计算机时，将创建一套用户配置文件。在前一个技能中我们介绍了如何用 PowerShell 转储计算机中的用户配置文件列表。
 
@@ -36,5 +35,4 @@ Get-WmiObject -ClassName Win32_UserProfile -Filter "SID='$sid'" |
 
 第一部分将用户名转换为 SID 并且用它来指定用户配置文件。WMI 的 `Delete()` 方法删除所有用户配置文件。注意：您将丢失删除的用户配置文件中的所有数据。
 
-<!--more-->
-本文国际来源：[Deleting User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-user-profiles)
+<!--本文国际来源：[Deleting User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/deleting-user-profiles)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个 cmdlet 返回原始数据时，您可能希望将数据转换为一个更好的格式。例如，WMI 可以汇报驱动器的剩余空间，但是是以字节为单位的。
 
@@ -42,5 +41,4 @@ tags:
 
 ![](/img/2014-03-14-drive-data-in-gb-and-percent-002.png)
 
-<!--more-->
-本文国际来源：[Drive Data in GB and Percent](http://community.idera.com/powershell/powertips/b/tips/posts/drive-data-in-gb-and-percent)
+<!--本文国际来源：[Drive Data in GB and Percent](http://community.idera.com/powershell/powertips/b/tips/posts/drive-data-in-gb-and-percent)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您从 internet 下载一个脚本时，它可能包含了一个数字签名，数字签名能帮您确定脚本是从哪里来的。我们在前一个技能里讨论了这个内容，以下是我们使用的代码：它将一个 PowerShell 脚本下载到磁盘，然后显示它的数字签名：
 
@@ -54,5 +53,4 @@ Add-Type -Assembly System.Security
 
 现在您能了解到该证书编号指向 "Chocolatey Software, Inc" 公司，以及该证书是由 DigiCert 颁发。这是为什么 Windows 信任该签名：DigiCert 采取措施验证签名人的个人详细信息。
 
-<!--more-->
-本文国际来源：[Examining Digital Signature Signers](http://community.idera.com/powershell/powertips/b/tips/posts/examining-digital-signature-signers)
+<!--本文国际来源：[Examining Digital Signature Signers](http://community.idera.com/powershell/powertips/b/tips/posts/examining-digital-signature-signers)-->

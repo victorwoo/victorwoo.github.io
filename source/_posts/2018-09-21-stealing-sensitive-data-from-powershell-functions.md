@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 函数常常处理敏感的信息，例如包含密码的登录信息，并且将这些信息存储在变量中。让我们假设有这样一个函数：
 
@@ -100,5 +99,4 @@ PS> $credential
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Stealing Sensitive Data from PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/stealing-sensitive-data-from-powershell-functions)
+<!--本文国际来源：[Stealing Sensitive Data from PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/stealing-sensitive-data-from-powershell-functions)-->

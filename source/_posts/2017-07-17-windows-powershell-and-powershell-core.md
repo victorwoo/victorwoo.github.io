@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 最近关于 PowerShell 版本有一些混淆。在 GitHub 上有一个名为 "PowerShell 6" 的[开源倡议](https://github.com/PowerShell/PowerShell)。
 
@@ -32,5 +31,4 @@ Desktop
 
 "Desktop" 表示您在完整的 .NET Framework 上运行 "Windows PowerShell"。"Core" 表示您在 .NET Core 上运行 "PowerShell Core"。
 
-<!--more-->
-本文国际来源：[Windows PowerShell and PowerShell Core](http://community.idera.com/powershell/powertips/b/tips/posts/windows-powershell-and-powershell-core)
+<!--本文国际来源：[Windows PowerShell and PowerShell Core](http://community.idera.com/powershell/powertips/b/tips/posts/windows-powershell-and-powershell-core)-->

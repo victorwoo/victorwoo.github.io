@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在上一个技巧中，我们演示了如何使用注册表信息来查找无线网卡。以下是一个可以返回您系统中所有无线网卡的 `Get-WirelessAdapter` 函数：
 
@@ -43,5 +42,4 @@ tags:
 
 请注意返回值 5 意味着您没有足够的权限。请以管理员身份运行该脚本。
 
-<!--more-->
-本文国际来源：[Get-WirelessAdapter](http://community.idera.com/powershell/powertips/b/tips/posts/get-wirelessadapter)
+<!--本文国际来源：[Get-WirelessAdapter](http://community.idera.com/powershell/powertips/b/tips/posts/get-wirelessadapter)-->

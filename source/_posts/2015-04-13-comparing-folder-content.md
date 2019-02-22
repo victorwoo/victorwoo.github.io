@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要快速比较文件夹内容并且找出只在一个文件夹中存在的文件，请试试以下代码：
 
@@ -25,5 +24,4 @@ tags:
 
 该代码属两个文件夹列表，一个来自本机，另一个来自远程计算机。接下来 `Compare-Object` 命令会挑出只在一个文件夹中存在的文件。
 
-<!--more-->
-本文国际来源：[Comparing Folder Content](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-folder-content)
+<!--本文国际来源：[Comparing Folder Content](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-folder-content)-->

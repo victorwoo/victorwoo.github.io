@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您远程执行 `Get-WmiObject` 命令时，它将会创建一个新的连接。所以如果您查询不同的 WMI 类时，每个查询会使用一个不同的连接，这样将会影响总体性能。 
 
@@ -33,5 +32,4 @@ tags:
 
 当您创建会话是，您可以显式地指定一个不同的远程传输协议，例如 DCOM。
 
-<!--more-->
-本文国际来源：[Speeding Up Multiple WMI Queries](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-multiple-wmi-queries)
+<!--本文国际来源：[Speeding Up Multiple WMI Queries](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-multiple-wmi-queries)-->

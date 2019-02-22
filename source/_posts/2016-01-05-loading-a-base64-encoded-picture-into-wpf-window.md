@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何将任何图片转换为 Base64 编码的字符串。今天，我们将演示如何加载 Base64 编码的图片并显示它。
 
@@ -305,5 +304,4 @@ $image.Source = Convert-Base64Bitmap2Picture -Base64Text $Picture1
 $window.ShowDialog()
 ```
 
-<!--more-->
-本文国际来源：[Loading a Base64-encoded Picture into WPF Window](http://community.idera.com/powershell/powertips/b/tips/posts/loading-a-base64-encoded-picture-into-wpf-window)
+<!--本文国际来源：[Loading a Base64-encoded Picture into WPF Window](http://community.idera.com/powershell/powertips/b/tips/posts/loading-a-base64-encoded-picture-into-wpf-window)-->

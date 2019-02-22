@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何使用语音转换器来念出文本。以下是查找您系统中安装的语言的方法：
 
@@ -50,5 +49,4 @@ $speak.SelectVoice('Microsoft Hedda Desktop')
 $speak.Speak('Jetzt spreche ich deutsch.')
 ```
 
-<!--more-->
-本文国际来源：[Speech-Week: Using Different Voices with Speech Synthesizer](http://community.idera.com/powershell/powertips/b/tips/posts/speech-week-using-different-voices-with-speech-synthesizer)
+<!--本文国际来源：[Speech-Week: Using Different Voices with Speech Synthesizer](http://community.idera.com/powershell/powertips/b/tips/posts/speech-week-using-different-voices-with-speech-synthesizer)-->

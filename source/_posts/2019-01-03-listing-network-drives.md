@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有着许多方法可以创建网络驱动器的列表。其中一个需要调用 COM 接口。这个接口也可以通过 VBScript 调用。我们将利用它演示一个特殊的 PowerShell 技术。
 
@@ -64,5 +63,4 @@ Foreach ($entry in $result)
     X:          \\storage4\data
     Z:          \\127.0.0.1\c$
 
-<!--more-->
-本文国际来源：[Listing Network Drives](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/listing-network-drives)
+<!--本文国际来源：[Listing Network Drives](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/listing-network-drives)-->

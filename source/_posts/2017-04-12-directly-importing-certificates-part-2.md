@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何在任何版本的 PowerShell 中用 .NET 方法导入数字证书。新版本的 PowerShell 有一个 "PKI" module，其中包括了 `Import-Certificate` cmdlet，导入证书变得更简单了。
 
@@ -24,5 +23,4 @@ Import-Certificate -FilePath $Path -CertStoreLocation Cert:\CurrentUser\My
 
 请注意 `Import-Certificate` 如何通过 `-CertStoreLocation` 指定目标存储位置。这个命令返回导入的证书。
 
-<!--more-->
-本文国际来源：[Directly Importing Certificates (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/directly-importing-certificates-part-2)
+<!--本文国际来源：[Directly Importing Certificates (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/directly-importing-certificates-part-2)-->

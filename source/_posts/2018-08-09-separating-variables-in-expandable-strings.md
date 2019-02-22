@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当使用双引号字符串时，您可以扩展它们当中的变量，类似这样：
 
@@ -34,5 +33,4 @@ PS C:\> "${env:windir}: this is my Windows folder"
 C:\Windows: this is my Windows folder
 ```
 
-<!--more-->
-本文国际来源：[Separating Variables in Expandable Strings](http://community.idera.com/powershell/powertips/b/tips/posts/separating-variables-in-expandable-strings)
+<!--本文国际来源：[Separating Variables in Expandable Strings](http://community.idera.com/powershell/powertips/b/tips/posts/separating-variables-in-expandable-strings)-->

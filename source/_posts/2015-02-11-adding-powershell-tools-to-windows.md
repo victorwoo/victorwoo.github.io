@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 8/Windows 8.1_
 
@@ -25,5 +24,4 @@ _适用于 Windows 8/Windows 8.1_
 
 在搜索结果中右键单击 "Windows PowerShell ISE" 可以看到额外的选项，并且可以将编辑器钉在任务栏上。
 
-<!--more-->
-本文国际来源：[Adding PowerShell Tools to Windows 8 Start Screen](http://community.idera.com/powershell/powertips/b/tips/posts/adding-powershell-tools-to-windows)
+<!--本文国际来源：[Adding PowerShell Tools to Windows 8 Start Screen](http://community.idera.com/powershell/powertips/b/tips/posts/adding-powershell-tools-to-windows)-->

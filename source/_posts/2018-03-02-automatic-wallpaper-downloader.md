@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您对桌面壁纸感到厌倦了吗？PowerShell 可以帮您下载最新的壁纸！以下是一个函数：
 
@@ -71,5 +70,4 @@ PS> Download-Wallpaper -Folder c:\wallpapers
 PS> Download-Wallpaper -Folder c:\wallpapers
 ```
 
-<!--more-->
-本文国际来源：[Automatic Wallpaper Downloader](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-wallpaper-downloader)
+<!--本文国际来源：[Automatic Wallpaper Downloader](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-wallpaper-downloader)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 近期多数 cmdlet 都是包装在模块中。模块是从 PowerShell 2.0 开始引入的概念。它们的主要好处是可以复制粘贴部署（不需要安装）以及模块自动加载（当您需要时，PowerShell 将自动加载模块）。
 
@@ -25,5 +24,4 @@ tags:
 
     Get-PSSnapin -Registered | Add-PSSnapin -Verbose
 
-<!--more-->
-本文国际来源：[Load Cmdlets from PSSnapins](http://community.idera.com/powershell/powertips/b/tips/posts/load-cmdlets-from-pssnapins)
+<!--本文国际来源：[Load Cmdlets from PSSnapins](http://community.idera.com/powershell/powertips/b/tips/posts/load-cmdlets-from-pssnapins)-->

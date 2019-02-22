@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们谈到一个名为“PSCredentialManager”的公共模块，可以用来管理缓存的凭据。有些时候，少即是多。当您阅读它的代码时，会发现它是通过一个名为 cmdkey.exe 的控制台命令在和 windows 系统打交道。
 
@@ -87,5 +86,4 @@ cmdkey.exe /list | ForEach-Object {$found=$false} {
     Domain Password             Martin                                           Do
     Domain Password             User                                             Do
 
-<!--more-->
-本文国际来源：[Getting Cached Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/getting-cached-credentials)
+<!--本文国际来源：[Getting Cached Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/getting-cached-credentials)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Test-Path` 在测试一个文件或文件夹是否存在时十分有用，它可以用在任何 PowerShell 驱动器上。所以它也可以测试一个变量、一个函数，或一个证书是否存在（举个例子）。
 
@@ -29,5 +28,4 @@ Test-Path -Path $path -PathType Leaf
 Test-Path -Path $path -PathType Container
 ```
 
-<!--more-->
-本文国际来源：[Testing Files and Folders (separately)](http://community.idera.com/powershell/powertips/b/tips/posts/testing-files-and-folders-separately)
+<!--本文国际来源：[Testing Files and Folders (separately)](http://community.idera.com/powershell/powertips/b/tips/posts/testing-files-and-folders-separately)-->

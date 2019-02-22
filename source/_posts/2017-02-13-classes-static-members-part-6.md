@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Class 可以定义所谓的“静态”成员。静态成员（属性和方法）可以通过类本身调用，而不需要对象实例。
 
@@ -85,5 +84,4 @@ class TextToSpeech
 - 使用静态成员来实现只需要存在一次的功能（所以文本到语音转换器是一个静态类的好例子）
 - 使用动态成员来实现需要在多于一个实例中同时存在（这样用户可以根据需要实例化任意多个独立的对象）的功能。
 
-<!--more-->
-本文国际来源：[Classes (Static Members - Part 6)](http://community.idera.com/powershell/powertips/b/tips/posts/classes-static-members-part-6)
+<!--本文国际来源：[Classes (Static Members - Part 6)](http://community.idera.com/powershell/powertips/b/tips/posts/classes-static-members-part-6)-->

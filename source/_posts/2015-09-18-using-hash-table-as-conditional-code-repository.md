@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 脚本中平时经常需要检测一个文件夹是否存在，如果不存在则创建：
 
@@ -51,5 +50,4 @@ tags:
 哈希表用这种方式来模拟从句。
 
 
-<!--more-->
-本文国际来源：[Using Hash Table as Conditional Code Repository](http://community.idera.com/powershell/powertips/b/tips/posts/using-hash-table-as-conditional-code-repository)
+<!--本文国际来源：[Using Hash Table as Conditional Code Repository](http://community.idera.com/powershell/powertips/b/tips/posts/using-hash-table-as-conditional-code-repository)-->

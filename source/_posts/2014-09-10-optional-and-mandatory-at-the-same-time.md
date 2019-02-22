@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -39,5 +38,4 @@ _适用于 PowerShell 所有版本_
     # here, -Computername is mandatory
     Connect-Somewhere -Credential test
 
-<!--more-->
-本文国际来源：[Optional and Mandatory at the Same Time](http://community.idera.com/powershell/powertips/b/tips/posts/optional-and-mandatory-at-the-same-time)
+<!--本文国际来源：[Optional and Mandatory at the Same Time](http://community.idera.com/powershell/powertips/b/tips/posts/optional-and-mandatory-at-the-same-time)-->

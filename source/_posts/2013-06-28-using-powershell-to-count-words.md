@@ -9,7 +9,6 @@ tags:
 - script
 ---
 本来开始打算大干一场的，结果发现区区4行代码搞定了。原来用PowerShell统计关键词这么欢乐啊。
-<!--more-->
 
 	$wordBreakers = ",. ()\\/';-<>_#"
 	$wordTemplate = '^Pub\w+'

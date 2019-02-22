@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望同时执行多个任务，以下有多种方法用 Powershell 实现。一种是使用工作流。它们是 PowerShell 3.0 中引入的：
 
@@ -40,5 +39,4 @@ tags:
 
 请注意使用工作流需要更多地了解它们的架构和限制。这个例子关注于工作流提供的并行循环技术。
 
-<!--more-->
-本文国际来源：[Using Workflows to Parallelize Code](http://community.idera.com/powershell/powertips/b/tips/posts/using-workflows-to-parallelize-code)
+<!--本文国际来源：[Using Workflows to Parallelize Code](http://community.idera.com/powershell/powertips/b/tips/posts/using-workflows-to-parallelize-code)-->

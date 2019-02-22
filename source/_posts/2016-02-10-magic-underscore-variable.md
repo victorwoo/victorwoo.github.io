@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个非常特别（并且有详细文档的）的使用 PowerShell 变量的方法。请看这个函数：
 
@@ -55,5 +54,4 @@ received: I am receiving 4
 
 您能得到这个非常特别的参数支持功能是因为您为一个必选参数设置了 `ValueFromPipelineByPropertyName=$true`，并且输入的数据没有一个属性和该参数匹配。
 
-<!--more-->
-本文国际来源：[Magic Underscore Variable](http://community.idera.com/powershell/powertips/b/tips/posts/magic-underscore-variable)
+<!--本文国际来源：[Magic Underscore Variable](http://community.idera.com/powershell/powertips/b/tips/posts/magic-underscore-variable)-->

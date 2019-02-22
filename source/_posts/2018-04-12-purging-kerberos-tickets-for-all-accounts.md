@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了 `klist.exe` 以及如何用它来清除当前用户的所有 Kerberos 票证，这样新的权限可以立即生效。
 
@@ -36,5 +35,4 @@ ForEach-Object {[Convert]::ToString($_.LogonId, 16)} |
 ForEach-Object { klist.exe purge -li $_ }
 ```
 
-<!--more-->
-本文国际来源：[Purging Kerberos Tickets for All Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/purging-kerberos-tickets-for-all-accounts)
+<!--本文国际来源：[Purging Kerberos Tickets for All Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/purging-kerberos-tickets-for-all-accounts)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否想知道网络驱动器背后的原始 URL？以下是一个简单的 PowerShell 方法：
 
@@ -27,5 +26,4 @@ $result = Get-PSDrive -Name $mappedDrive |
 "$mappedDrive -> $result"
 ```
 
-<!--more-->
-本文国际来源：[Resolving Mapped Drive](http://community.idera.com/powershell/powertips/b/tips/posts/resolving-mapped-drive)
+<!--本文国际来源：[Resolving Mapped Drive](http://community.idera.com/powershell/powertips/b/tips/posts/resolving-mapped-drive)-->

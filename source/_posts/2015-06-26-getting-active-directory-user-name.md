@@ -11,11 +11,9 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个在 Active Directory 中快速当前用户并且获取账户信息，例如显示名称的方法：
 
     ([adsisearcher]"(samaccountname=$env:USERNAME)").FindOne().Properties['displayname']
 
-<!--more-->
-本文国际来源：[Getting Active Directory User Name](http://community.idera.com/powershell/powertips/b/tips/posts/getting-active-directory-user-name)
+<!--本文国际来源：[Getting Active Directory User Name](http://community.idera.com/powershell/powertips/b/tips/posts/getting-active-directory-user-name)-->

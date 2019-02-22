@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -22,5 +21,4 @@ _适用于 PowerShell 所有版本_
     $path = "$env:windir\System32\Winevt\Logs\Setup.evtx"
     Get-WinEvent -Path $path
 
-<!--more-->
-本文国际来源：[Reading System Logs from File](http://community.idera.com/powershell/powertips/b/tips/posts/reading-system-logs-from-file)
+<!--本文国际来源：[Reading System Logs from File](http://community.idera.com/powershell/powertips/b/tips/posts/reading-system-logs-from-file)-->

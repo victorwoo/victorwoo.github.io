@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 VBScript 中有编码的脚本。编码并不是隐藏脚本内容的安全方法，但它能使用户获取代码内容略微更难一点。
 
@@ -44,5 +43,4 @@ tags:
 
 请注意 PowerShell 最多支持大约 8000 个字符的编码命令。编码命令的本意是安全地将 PowerShell 代码传递给 powershell.exe，而不会被特殊字符打断命令行。
 
-<!--more-->
-本文国际来源：[Using Encoded Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-encoded-scripts)
+<!--本文国际来源：[Using Encoded Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-encoded-scripts)-->

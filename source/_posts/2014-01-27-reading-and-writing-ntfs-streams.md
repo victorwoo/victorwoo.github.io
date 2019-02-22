@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个文件存储在 NTFS 文件系统分区时，您可以向它附加数据流来存储隐藏信息。
 
@@ -38,5 +37,4 @@ tags:
 
 要从一个流中读取隐藏信息，请使用 `Get-Content` 命令，并为 `-Stream` 参数指定存储数据时用的名字。
 
-<!--more-->
-本文国际来源：[Reading and Writing NTFS Streams](http://community.idera.com/powershell/powertips/b/tips/posts/reading-and-writing-ntfs-streams)
+<!--本文国际来源：[Reading and Writing NTFS Streams](http://community.idera.com/powershell/powertips/b/tips/posts/reading-and-writing-ntfs-streams)-->

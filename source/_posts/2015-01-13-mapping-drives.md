@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -23,5 +22,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
     New-PSDrive -Name k -PSProvider FileSystem -Root \\storage2\vid -Persist -Scope Global
 
-<!--more-->
-本文国际来源：[Mapping Drives](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-drives)
+<!--本文国际来源：[Mapping Drives](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-drives)-->

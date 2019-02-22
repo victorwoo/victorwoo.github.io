@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否想知道如何捕获 native 控制台 EXE 程序的错误？PowerShell 的错误处理器只能处理 .NET 代码的错误。
 
@@ -49,5 +48,4 @@ finally
 ```
 WARNING: The user name  could not be found.
 ```
-<!--more-->
-本文国际来源：[Catching Errors from Native EXEs](http://community.idera.com/powershell/powertips/b/tips/posts/catching-errors-from-native-exes)
+<!--本文国际来源：[Catching Errors from Native EXEs](http://community.idera.com/powershell/powertips/b/tips/posts/catching-errors-from-native-exes)-->

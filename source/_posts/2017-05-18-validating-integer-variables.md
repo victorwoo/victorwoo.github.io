@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以在一个变量前简单地加上 `[Int]` 来确保它只包含数字位。但您是否知道从 PowerShell 4.0 开始，支持正则表达式的验证器呢？
 
@@ -32,5 +31,4 @@ PS> $id = 1
 Cannot check variable  id. Value 1 is invalid for variable id.
 ```
 
-<!--more-->
-本文国际来源：[Validating Integer Variables](http://community.idera.com/powershell/powertips/b/tips/posts/validating-integer-variables)
+<!--本文国际来源：[Validating Integer Variables](http://community.idera.com/powershell/powertips/b/tips/posts/validating-integer-variables)-->

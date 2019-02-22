@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 Windows 的资源管理器中打开预览窗格查看 PowerShell 脚本时，缺省情况下看不到脚本文件的代码预览。预览窗格是空白的。
 
@@ -72,5 +71,4 @@ PS> Enable-PowerShellFilePreview -Font Consolas -FontSize 100
 
 不需要重启系统就可以生效。只需要确保 Windows 资源管理器的预览窗格可见，并选取一个 PowerShell 文件。
 
-<!--more-->
-本文国际来源：[Enabling Preview of PowerShell Files in Windows Explorer](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/enabling-preview-of-powershell-files-in-windows-explorer)
+<!--本文国际来源：[Enabling Preview of PowerShell Files in Windows Explorer](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/enabling-preview-of-powershell-files-in-windows-explorer)-->

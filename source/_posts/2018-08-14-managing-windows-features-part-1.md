@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 10 带来一系列功能，但默认只安装了一个子集。您可以手工打开控制面板查看 Windows 功能。有经验的管理员也会使用 `dism.exe` 命令行工具。
 
@@ -29,5 +28,4 @@ Get-WindowsOptionalFeature -Online |
     Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Managing Windows Features (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-features-part-1)
+<!--本文国际来源：[Managing Windows Features (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-features-part-1)-->

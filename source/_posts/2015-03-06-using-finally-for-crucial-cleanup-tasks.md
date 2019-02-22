@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -63,5 +62,4 @@ _适用于 PowerShell 2.0 及以上版本_
       $player.Stop()
     }
 
-<!--more-->
-本文国际来源：[Using Finally for Crucial Cleanup Tasks](http://community.idera.com/powershell/powertips/b/tips/posts/using-finally-for-crucial-cleanup-tasks)
+<!--本文国际来源：[Using Finally for Crucial Cleanup Tasks](http://community.idera.com/powershell/powertips/b/tips/posts/using-finally-for-crucial-cleanup-tasks)-->

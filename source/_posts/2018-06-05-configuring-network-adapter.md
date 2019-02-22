@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个简单的例子，演示如何向网络适配器分配 IP 地址、网关，和 DNS 服务器。这段脚本列出所有活动的网络适配器。当您选择一项并点击确认，脚本将把硬编码的地址赋给网络适配器。
 
@@ -32,5 +31,4 @@ New-NetIPAddress -InterfaceIndex $index -IPAddress $NewIP -DefaultGateway $NewGa
 Set-DNSClientServerAddress –InterfaceIndex $index –ServerAddresses $NewDNS -whatIf
 ```
 
-<!--more-->
-本文国际来源：[Configuring Network Adapter](http://community.idera.com/powershell/powertips/b/tips/posts/configuring-network-adapter)
+<!--本文国际来源：[Configuring Network Adapter](http://community.idera.com/powershell/powertips/b/tips/posts/configuring-network-adapter)-->

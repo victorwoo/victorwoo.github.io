@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 使用 .NET 类型名，例如将值转换为指定的类型。脚本中常常可以使用各种格式来定义 .NET 类型。以下是它们各自的用意和含义：
 
@@ -28,5 +27,4 @@ PowerShell 使用 .NET 类型名，例如将值转换为指定的类型。脚本
 
 简单来说，PowerShell 维护着它自己的“类型加速器”：.NET 类型的别名。查看任意类型的 `FullName` 属性，可以获得完整正式的 .NET 类型名。类型名前面的 "System." 是可以省略的。
 
-<!--more-->
-本文国际来源：[Understanding .NET Type Name Variants in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-net-type-name-variants-in-powershell)
+<!--本文国际来源：[Understanding .NET Type Name Variants in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-net-type-name-variants-in-powershell)-->

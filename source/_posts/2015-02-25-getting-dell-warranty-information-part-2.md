@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -65,5 +64,4 @@ _适用于 PowerShell 2.0 及以上版本_
     DaysLeft                : 0
     EntitlementType         : Expired
 
-<!--more-->
-本文国际来源：[Getting DELL Warranty Information (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dell-warranty-information-part-2)
+<!--本文国际来源：[Getting DELL Warranty Information (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dell-warranty-information-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否希望列出 PowerShell ISE 中打开的所有文件中的变量清单？
 
@@ -27,5 +26,4 @@ tags:
         } |
         Sort-Object -Property Content, Script -Unique
 
-<!--more-->
-本文国际来源：[Listing All Variables in All Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/listing-all-variables-in-all-scripts)
+<!--本文国际来源：[Listing All Variables in All Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/listing-all-variables-in-all-scripts)-->

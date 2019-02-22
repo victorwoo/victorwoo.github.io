@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 公共的 PowerShell Gallery ([www.powershellgallery.com](http://www.powershellgallery.com)) 是一个 PowerShell 脚本作者们可以自由地交换脚本和模块的地方。您所需要的只是包含 PowerShellGet 的 PowerShell 5，它带了操作 Gallery 需要的 cmdlet。
 
@@ -91,5 +90,4 @@ PS> ${function:Get-CachedCredential} | clip
 PS> Uninstall-Module -Name pscredentialmanager -AllVersions
 ```
 
-<!--more-->
-本文国际来源：[Playing with PowerShell Gallery Content](http://community.idera.com/powershell/powertips/b/tips/posts/playing-with-powershell-gallery-content)
+<!--本文国际来源：[Playing with PowerShell Gallery Content](http://community.idera.com/powershell/powertips/b/tips/posts/playing-with-powershell-gallery-content)-->

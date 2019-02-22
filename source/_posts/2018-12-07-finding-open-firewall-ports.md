@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一段连接到本地防火墙并转储所有打开的防火墙端口的 PowerShell 代码：
 
@@ -67,5 +66,4 @@ Function        Set-NetFirewallSetting                             2.0.0.0    Ne
 Function        Show-NetFirewallRule                               2.0.0.0    NetSecurity
 ```
 
-<!--more-->
-本文国际来源：[Finding Open Firewall Ports](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/finding-open-firewall-ports)
+<!--本文国际来源：[Finding Open Firewall Ports](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/finding-open-firewall-ports)-->

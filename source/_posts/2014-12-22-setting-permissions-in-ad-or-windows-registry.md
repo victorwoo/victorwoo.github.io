@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _需要 ActiveDirectory 模块_
 
@@ -43,5 +42,4 @@ _需要 ActiveDirectory 模块_
 
 您现在可以对任何 AD 对象通过这种方式读取和写入安全信息，包括 DNS 信息。您所需要的只是知道您想读写的对象的 LDAP 路径。
 
-<!--more-->
-本文国际来源：[Setting Permissions in AD or Windows Registry](http://community.idera.com/powershell/powertips/b/tips/posts/setting-permissions-in-ad-or-windows-registry)
+<!--本文国际来源：[Setting Permissions in AD or Windows Registry](http://community.idera.com/powershell/powertips/b/tips/posts/setting-permissions-in-ad-or-windows-registry)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有很多方法可以增加或修改 NTFS 权限。其中一个方法是复用现成的工具，例如 `icacls.exe`。
 
@@ -36,5 +35,4 @@ tags:
       icacls $path /inheritance:r /grant '*S-1-5-32-544:(OI)(CI)R' ('{0}:(OI)(CI)F' -f $username)
     } 
     
-<!--more-->
-本文国际来源：[Applying NTFS Access Rules](http://community.idera.com/powershell/powertips/b/tips/posts/applying-ntfs-access-rules)
+<!--本文国际来源：[Applying NTFS Access Rules](http://community.idera.com/powershell/powertips/b/tips/posts/applying-ntfs-access-rules)-->

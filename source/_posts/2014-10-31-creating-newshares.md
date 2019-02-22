@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -46,5 +45,4 @@ WMI 可以方便地创建新的共享文件夹。以下是一段创建本地共�
       Write-Warning "Share $ShareName exists already."
     }
 
-<!--more-->
-本文国际来源：[Creating New Shares](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newshares)
+<!--本文国际来源：[Creating New Shares](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newshares)-->

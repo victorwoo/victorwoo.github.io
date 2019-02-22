@@ -19,7 +19,6 @@ tags:
 
 > 荔非苔注：截至本文发稿，对应的PowerShell中文主页依然是旧版。
 
-<!--more-->
 原文作者：Joey Aiello（PowerShell项目经理）
 原文链接：[Welcoming the new home of PowerShell](http://www.pstips.net/goto/http://blogs.msdn.com/b/powershell/archive/2015/07/20/welcoming-the-new-home-of-powershell.aspx)
 中译链接：[欢迎使用新版的PowerShell官网主页 - PowerShell 中文博客](http://www.pstips.net/welcoming-the-new-home-of-powershell.html)

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过 `Export-CliXml` 命令可以很方便地将处理结果保存到文件；通过 `Import-CliXml` 命令，序列化的信息可以同样方便地恢复。然而，生成的 XML 文件可能非常大。
 
@@ -40,5 +39,4 @@ $compression = $length2 * 100 / $length1
 "Compression Ratio {0:n2} %" -f $compression
 ```
 
-<!--more-->
-本文国际来源：[Compressing Serialized Data](http://community.idera.com/powershell/powertips/b/tips/posts/compressing-serialized-data)
+<!--本文国际来源：[Compressing Serialized Data](http://community.idera.com/powershell/powertips/b/tips/posts/compressing-serialized-data)-->

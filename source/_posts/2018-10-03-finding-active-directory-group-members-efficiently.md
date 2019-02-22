@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 经常地，AD 管理员需要查找某个 AD 组的所有成员，包括嵌套的成员。以下是一个常常出现在示例中的代码片段，用于解决这个问题：
 
@@ -46,5 +45,4 @@ $all = Get-ADUser -LDAPFilter $ldap
 $all | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Finding Active Directory Group Members Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-group-members-efficiently)
+<!--本文国际来源：[Finding Active Directory Group Members Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-group-members-efficiently)-->

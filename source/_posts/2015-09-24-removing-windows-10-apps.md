@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 10 预装了一系列应用程序。幸运的是，您可以用 PowerShell 来移除您不想要的程序。当然，需要管理员权限。
 
@@ -21,5 +20,4 @@ Windows 10 预装了一系列应用程序。幸运的是，您可以用 PowerShe
 
 这将列出所有用您自己的用户账户安装的应用程序。要移除应用程序，请使用 `PackageFullName`，并且将它传给 `Remove-AppxPackage` 命令。请在更改之前备份您的系统，而且风险自负。多数应用程序并不是必须的。
 
-<!--more-->
-本文国际来源：[Removing Windows 10 Apps](http://community.idera.com/powershell/powertips/b/tips/posts/removing-windows-10-apps)
+<!--本文国际来源：[Removing Windows 10 Apps](http://community.idera.com/powershell/powertips/b/tips/posts/removing-windows-10-apps)-->

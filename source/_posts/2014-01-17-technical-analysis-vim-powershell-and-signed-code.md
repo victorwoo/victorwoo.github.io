@@ -13,4 +13,4 @@ tags:
 
 下载 PDF 文档：《[technical-analysis-vim-powershell-and-signed-code.pdf](/assets/download/technical-analysis-vim-powershell-and-signed-code.pdf)》。
 
-本文国际来源：[Technical Analysis: VIM, PowerShell and Signed Code](http://blogs.technet.com/b/port25/archive/2008/05/29/technical-analysis-vim-powershell-and-signed-code.aspx)
+<!--本文国际来源：[Technical Analysis: VIM, PowerShell and Signed Code](http://blogs.technet.com/b/port25/archive/2008/05/29/technical-analysis-vim-powershell-and-signed-code.aspx)-->

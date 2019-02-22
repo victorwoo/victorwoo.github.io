@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何获取 PowerShellGet 并在您的 PowerShell 版本中运行。现在我们来看看 PowerShell 陈列架能够如何方便地扩展 PowerShell 功能。
 
@@ -64,5 +63,4 @@ Alias           Copy-SqlSsisCatalog                                0.9.332    db
 
 这个模块的文档齐备，所以您可以使用 `Get-Help` 查看每个命令的细节和示例代码。同样地，当您用您喜欢的搜索引擎搜索 "PowerShell + dbatools"，可以找到一个有许多示例和教程的，充满活力的社区。
 
-<!--more-->
-本文国际来源：[PowerShell Gallery dbatools – PowerShell Extension for Database Professionals](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-dbatools-powershell-extension-for-database-professionals)
+<!--本文国际来源：[PowerShell Gallery dbatools – PowerShell Extension for Database Professionals](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-dbatools-powershell-extension-for-database-professionals)-->

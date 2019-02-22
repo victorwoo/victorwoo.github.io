@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候通过简单的基于文本的 CSV 格式来批量创建对象是一种聪明的方法，尤其是原始数据已是基于文本的而且只需要少量重格式化。
 
@@ -40,5 +39,4 @@ Snover  Jeffrey   USA
 Special ÄÖÜß      Test
 ```
 
-<!--more-->
-本文国际来源：[Using CSV to Create Objects](http://community.idera.com/powershell/powertips/b/tips/posts/using-csv-to-create-objects)
+<!--本文国际来源：[Using CSV to Create Objects](http://community.idera.com/powershell/powertips/b/tips/posts/using-csv-to-create-objects)-->

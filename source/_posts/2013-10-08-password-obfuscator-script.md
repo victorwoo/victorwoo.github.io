@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 曾经需要将密码保存在脚本中？曾经需要自动弹出一个身份验证对话框？对于前者，将密码和其它身份信息存储在脚本中是很糟糕的；对于后者，如果您这么做了的话，至少能使黑客更难于窃取信息。
 
@@ -48,5 +47,4 @@ tags:
 
 再强调一下，这并不是安全的。但是要想获取密码的明文还需要更多点知识才行。
 
-<!--more-->
-本文国际来源：[Password Obfuscator Script](http://community.idera.com/powershell/powertips/b/tips/posts/password-obfuscator-script)
+<!--本文国际来源：[Password Obfuscator Script](http://community.idera.com/powershell/powertips/b/tips/posts/password-obfuscator-script)-->

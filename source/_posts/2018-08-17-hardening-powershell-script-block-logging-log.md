@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您启用了 `ScriptBlockLogging` 后，PowerShell 将会记录所有在您机器上执行的所有 PowerShell 代码。如果没有启用它，所有安全相关的代码仍然会记录。这样很不错。然而，该任何用户都可以读取该日志，所以任何人都可以类似这样浏览记录下的代码:
 
@@ -53,5 +52,4 @@ Restart-Service -Name EventLog -Force
 
 当您运行该脚本时，读取 PowerShell 操作日志的权限被限制为只有本地管理员。
 
-<!--more-->
-本文国际来源：[Hardening PowerShell Script Block Logging Log](http://community.idera.com/powershell/powertips/b/tips/posts/hardening-powershell-script-block-logging-log)
+<!--本文国际来源：[Hardening PowerShell Script Block Logging Log](http://community.idera.com/powershell/powertips/b/tips/posts/hardening-powershell-script-block-logging-log)-->

@@ -111,7 +111,6 @@ $words |
 
 完整的代码如下：
 
-<!--more-->
 
     function Get-Weight([string]$word) {
         $word = $word.ToLower()

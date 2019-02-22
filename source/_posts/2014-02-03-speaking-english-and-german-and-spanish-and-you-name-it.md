@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 8 是第一个完整支持本地化的文本到语音引擎的操作系统。所以您现在可以用 PowerShell 来朗读（以及咒骂）。
 
@@ -27,5 +26,4 @@ Windows 8 是第一个完整支持本地化的文本到语音引擎的操作系�
 	$speaker.Voice = $speaker.GetVoices() | Where-Object { $_.ID -like '*en-us*'}
 	$speaker.Speak('But I can of course also speak English.')
 
-<!--more-->
-本文国际来源：[Speaking English and German (and Spanish, and you name it)](http://community.idera.com/powershell/powertips/b/tips/posts/speaking-english-and-german-and-spanish-and-you-name-it)
+<!--本文国际来源：[Speaking English and German (and Spanish, and you name it)](http://community.idera.com/powershell/powertips/b/tips/posts/speaking-english-and-german-and-spanish-and-you-name-it)-->

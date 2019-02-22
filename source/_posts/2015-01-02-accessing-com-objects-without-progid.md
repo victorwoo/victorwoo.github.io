@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -35,5 +34,4 @@ _适用于 PowerShell 所有版本_
     $object = [Activator]::CreateInstance($type)
     $object.Drives
 
-<!--more-->
-本文国际来源：[Accessing COM Objects without ProgID](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-com-objects-without-progid)
+<!--本文国际来源：[Accessing COM Objects without ProgID](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-com-objects-without-progid)-->

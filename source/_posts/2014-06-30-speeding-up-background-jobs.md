@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 后台任务可以大大提速脚本的执行，因为它们可以并行执行。然而，后台任务只适用于执行的代码不会产生大量的数据——因为通过 XML 序列化返回数据可能会消耗掉比串行操作节约出来的更多的时间。
 
@@ -73,5 +72,4 @@ tags:
 
 总的来说，后台任务适合于做一些简单的事情（例如配置）而不返回任何数据或只返回少量的数据。
 
-<!--more-->
-本文国际来源：[Speeding Up Background Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-background-jobs)
+<!--本文国际来源：[Speeding Up Background Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-background-jobs)-->

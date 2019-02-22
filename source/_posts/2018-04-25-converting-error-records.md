@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当 PowerShell 抛出错误时，会向 `$error` 写入一条错误记录，它是一个存储最后发生的错误的数组。
 
@@ -61,5 +60,4 @@ function ConvertFrom-ErrorRecord
 PS> $error | ConvertFrom-ErrorRecord | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Converting Error Records](http://community.idera.com/powershell/powertips/b/tips/posts/converting-error-records)
+<!--本文国际来源：[Converting Error Records](http://community.idera.com/powershell/powertips/b/tips/posts/converting-error-records)-->

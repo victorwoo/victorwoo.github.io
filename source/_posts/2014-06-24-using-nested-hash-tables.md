@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 嵌套的哈希表是代替多维数组的好方法。它能以易于管理的方式存储数据集合。让我们看一个例子：
 
@@ -46,5 +45,4 @@ tags:
 	PS> $person.Address.Details.ScenicView
 	False
 
-<!--more-->
-本文国际来源：[Using Nested Hash Tables](http://community.idera.com/powershell/powertips/b/tips/posts/using-nested-hash-tables)
+<!--本文国际来源：[Using Nested Hash Tables](http://community.idera.com/powershell/powertips/b/tips/posts/using-nested-hash-tables)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以为您的文件建立备份。您所需要调整的只是需要备份的文件类型，以及您需要备份的目标文件扩展名。
 
@@ -35,5 +34,4 @@ PowerShell 可以为您的文件建立备份。您所需要调整的只是需要
         Copy-Item -Path $_.FullName -Destination $newpath
      }
 
-<!--more-->
-本文国际来源：[Creating Backup Copies of Many Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-backup-copies-of-many-files)
+<!--本文国际来源：[Creating Backup Copies of Many Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-backup-copies-of-many-files)-->

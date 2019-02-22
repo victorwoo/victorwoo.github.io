@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及更高版本_
 
@@ -29,5 +28,4 @@ _适用于 PowerShell 3.0 及更高版本_
 
     PS> Invoke-Command -ScriptBlock { Get-Service } -ComputerName targetComputerName
 
-<!--more-->
-本文国际来源：[Enabling and Disabling PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-and-disabling-powershell-remoting)
+<!--本文国际来源：[Enabling and Disabling PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-and-disabling-powershell-remoting)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您只是需要一系列随机生成的 MAC 地址，而不关心这些地址是否合法，以下是一行实现代码：
 
@@ -38,5 +37,4 @@ e7:0b:24:d3:14:1d
 (...)
 ```
 
-<!--more-->
-本文国际来源：[Creating Random MAC Addresses](http://community.idera.com/powershell/powertips/b/tips/posts/creating-random-mac-addresses)
+<!--本文国际来源：[Creating Random MAC Addresses](http://community.idera.com/powershell/powertips/b/tips/posts/creating-random-mac-addresses)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -53,5 +52,4 @@ _适用于 PowerShell 2.0 及以上版本_
         + FullyQualifiedErrorId : ParameterArgumentTransformationError,Resolve-IPAddres 
        s
 
-<!--more-->
-本文国际来源：[Resolving IP Addresses (and Parameter Types, Too)](http://community.idera.com/powershell/powertips/b/tips/posts/resolving-ip-addresses-and-parameter-types-too)
+<!--本文国际来源：[Resolving IP Addresses (and Parameter Types, Too)](http://community.idera.com/powershell/powertips/b/tips/posts/resolving-ip-addresses-and-parameter-types-too)-->

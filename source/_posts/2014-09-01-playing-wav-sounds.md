@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 或以上版本_
 
@@ -44,5 +43,4 @@ PowerShell 可以用内置的 `SoundPlayer` 类播放 WAV 背景声音。它可�
 
 请注意 `$PSScriptRoot` 需要 PowerShell 3.0 或以上版本。当然，它也需要您先将脚本保存到文件。
 
-<!--more-->
-本文国际来源：[Playing WAV Sounds](http://community.idera.com/powershell/powertips/b/tips/posts/playing-wav-sounds)
+<!--本文国际来源：[Playing WAV Sounds](http://community.idera.com/powershell/powertips/b/tips/posts/playing-wav-sounds)-->

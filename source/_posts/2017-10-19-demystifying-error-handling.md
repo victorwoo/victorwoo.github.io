@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 代码中所有的错误信息都包含在错误记录对象中。请看以下的函数，它可以从这样的错误记录中解析所有相关的错误信息：
 
@@ -63,5 +62,4 @@ $result = Get-ChildItem -Path C:\Windows -Filter *.ps1 -Recurse -ErrorAction Sil
 $myErrors | Get-ErrorInfo
 ```
 
-<!--more-->
-本文国际来源：[Demystifying Error Handling](http://community.idera.com/powershell/powertips/b/tips/posts/demystifying-error-handling)
+<!--本文国际来源：[Demystifying Error Handling](http://community.idera.com/powershell/powertips/b/tips/posts/demystifying-error-handling)-->

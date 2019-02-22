@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了 PowerShell 是通过引用存储对象的。如果您想创建一个浮板，您可能需要手工复制对象的所有属性。
 
@@ -40,5 +39,4 @@ tags:
     
     PS C:\>
 
-<!--more-->
-本文国际来源：[Cloning Objects](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-objects-0)
+<!--本文国际来源：[Cloning Objects](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-objects-0)-->

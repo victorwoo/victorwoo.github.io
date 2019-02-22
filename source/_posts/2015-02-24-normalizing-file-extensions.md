@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -27,5 +26,4 @@ _适用于 PowerShell 2.0 及以上版本_
     $extensions
     $cleanExtensions
 
-<!--more-->
-本文国际来源：[Normalizing File Extensions](http://community.idera.com/powershell/powertips/b/tips/posts/normalizing-file-extensions)
+<!--本文国际来源：[Normalizing File Extensions](http://community.idera.com/powershell/powertips/b/tips/posts/normalizing-file-extensions)-->

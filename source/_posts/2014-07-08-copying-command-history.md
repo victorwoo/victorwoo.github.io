@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您在使用 PowerShell 的过程中突然发现刚才键入的某些代码起作用了，您接下来会想把这些代码复制并粘贴到一个脚本编辑器中，将它们保存起来，然后分享给朋友。
 
@@ -21,5 +20,4 @@ tags:
 
 这将会把您最后键入的 5 条命令复制到剪贴板中。
 
-<!--more-->
-本文国际来源：[Copying Command History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history)
+<!--本文国际来源：[Copying Command History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history)-->

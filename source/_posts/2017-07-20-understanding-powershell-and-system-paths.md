@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 维护着它自己的位置：
 
@@ -74,5 +73,4 @@ PS> [Environment]::CurrentDirectory = $ExecutionContext.SessionState.Path.Curren
     C:\Users\tobwe
 ```
 
-<!--more-->
-本文国际来源：[Understanding PowerShell and System Paths](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-powershell-and-system-paths)
+<!--本文国际来源：[Understanding PowerShell and System Paths](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-powershell-and-system-paths)-->

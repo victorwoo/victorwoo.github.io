@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 .NET 语音引擎不止可以接受文本输入。如果您使用 `SpeakSsm()`，您可以使用 XML 来切换语言、速度，以及其它文本到语音转换的参数。
 
@@ -58,5 +57,4 @@ $ssml = '
 $speak.SpeakSsml($ssml)
 ```
 
-<!--more-->
-本文国际来源：[Speech-Week: Using Advanced Speech Synthesizer Options Synthesizer](http://community.idera.com/powershell/powertips/b/tips/posts/speech-week-using-advanced-speech-synthesizer-options-synthesizer)
+<!--本文国际来源：[Speech-Week: Using Advanced Speech Synthesizer Options Synthesizer](http://community.idera.com/powershell/powertips/b/tips/posts/speech-week-using-advanced-speech-synthesizer-options-synthesizer)-->

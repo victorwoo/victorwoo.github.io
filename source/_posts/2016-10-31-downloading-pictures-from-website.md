@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有许多有趣的网站，其中一个是 [www.metabene.de](http://www.metabene.de) （至少面向德国访访客），有 33 页内容，艺术家展示了他的绘画，并提供免费下载（只允许私人使用·私人使用）。
 
@@ -50,5 +49,4 @@ ForEach-Object {
 }
 ```
 
-<!--more-->
-本文国际来源：[Downloading Pictures from Website](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-pictures-from-website)
+<!--本文国际来源：[Downloading Pictures from Website](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-pictures-from-website)-->

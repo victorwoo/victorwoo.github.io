@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您使用 ADSISearcher 时，默认情况下，Active Directory 只返回前 1000 个搜索结果。这是一个防止意外的 LDAP 查询导致域控制器负荷过重的安全保护机制。
 
@@ -29,5 +28,4 @@ tags:
 	  Select-Object -Property * |
 	  Out-GridView
 
-<!--more-->
-本文国际来源：[Getting More Than 1000 Active Directory Results](http://community.idera.com/powershell/powertips/b/tips/posts/getting-more-than-1000-active-directory-results)
+<!--本文国际来源：[Getting More Than 1000 Active Directory Results](http://community.idera.com/powershell/powertips/b/tips/posts/getting-more-than-1000-active-directory-results)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要正确地将单词首字母转换为大写，您可以用正则表达式或者一点系统函数：
 
@@ -32,5 +31,4 @@ tags:
 	$pattern = '\b(\w)'
 	[RegEx]::Replace($sentence, $pattern, { param($x) [Byte][Char]$x.Value })
  
-<!--more-->
-本文国际来源：[Capitalizing Words](http://community.idera.com/powershell/powertips/b/tips/posts/capitalizing-words)
+<!--本文国际来源：[Capitalizing Words](http://community.idera.com/powershell/powertips/b/tips/posts/capitalizing-words)-->

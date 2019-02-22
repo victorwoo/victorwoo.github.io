@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个查找保留驱动器号的简单函数：
 
@@ -44,5 +43,4 @@ tags:
     
     PS>
 
-<!--more-->
-本文国际来源：[Finding Drive Letters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-drive-letters)
+<!--本文国际来源：[Finding Drive Letters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-drive-letters)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 的函数可以模拟一个真实二进制 cmdlet 的所有特性，但是 PowerShell 函数是 PowerShell 明文的代码，每个人都可以看到它的内容。
 
@@ -100,5 +99,4 @@ PowerShell 的函数可以模拟一个真实二进制 cmdlet 的所有特性，�
 
 请注意只是编译 C# 代码并不会为您的知识资产带来更多的保护，因为它可以被反编译。所以不要用这种方式来“保护”秘密的信息，比如说密码。通过二进制 cmdlet，您可以有机会使用专业的防拷贝软件以及混淆器。额外的保护层并没有纯 PowerShell 代码的版本。
 
-<!--more-->
-本文国际来源：[Compiling Binary Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/compiling-binary-cmdlets)
+<!--本文国际来源：[Compiling Binary Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/compiling-binary-cmdlets)-->

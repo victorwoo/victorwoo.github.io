@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 AD 中，有一个看起来很奇怪的过滤器：1.2.840.113556.1.4.1941。它被称为“链式匹配规则”，可以用来快速查找嵌套的成员。
 
@@ -48,5 +47,4 @@ foreach ($objResult in $colResults)
 }
 ```
 
-<!--more-->
-本文国际来源：[Finding Recursive AD Memberships](http://community.idera.com/powershell/powertips/b/tips/posts/finding-recursive-ad-memberships)
+<!--本文国际来源：[Finding Recursive AD Memberships](http://community.idera.com/powershell/powertips/b/tips/posts/finding-recursive-ad-memberships)-->

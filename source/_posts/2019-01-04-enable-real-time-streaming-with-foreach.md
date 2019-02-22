@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 传统的 `foreach` 循环是最快速的循环方式，但是它有一个严重的限制。`foreach` 循环不支持管道。用户只能等待整个 `foreach` 循环结束才能处理结果。
 
@@ -85,5 +84,4 @@ $elements | ForEach-Object {
 
 但是，`ForEach-Object` 比 `foreach` 关键字慢得多，并且有些场景无法使用 `ForEach-Object`。例如，在许多数据库代码中，代码需要一次次地检测结束标记，所以无法使用 `ForEach-Object`。
 
-<!--more-->
-本文国际来源：[Enable Real-Time Streaming with Foreach](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/enable-real-time-streaming-with-foreach)
+<!--本文国际来源：[Enable Real-Time Streaming with Foreach](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/enable-real-time-streaming-with-foreach)-->

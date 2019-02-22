@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个创建您喜爱的 PowerShell 命令的速查表的的技巧。
 
@@ -85,5 +84,4 @@ PS> Update-Help -UICulture en-us -Force
 
 不要担心这条命令抛出的错误信息：它对于一小部分没有提供帮助信息的模块是正常的。如果您收到一大堆错误信息，那么您可能没有在提升权限的 PowerShell 中执行命令。不幸的是，PowerShell 存储帮助文件的位置和模块的位置不同，普通用户不可存存储取帮助文件的位置。
 
-<!--more-->
-本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-1)
+<!--本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-1)-->

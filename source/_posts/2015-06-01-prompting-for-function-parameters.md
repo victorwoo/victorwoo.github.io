@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过一个简单的技巧，您可以创建一个对话框窗口来帮助用户提供您写的函数的所需要参数。
 
@@ -48,5 +47,4 @@ tags:
 
 当您执行该函数时没有传入任何参数，则将弹出一个对话框，提示您交互式地输入参数。
 
-<!--more-->
-本文国际来源：[Prompting for Function Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/prompting-for-function-parameters)
+<!--本文国际来源：[Prompting for Function Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/prompting-for-function-parameters)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Here is a chunk of code that demonstrates how you can store private settings in the Windows Registry:
 
@@ -57,5 +56,4 @@ Here is a chunk of code that demonstrates how you can store private settings in 
 
 Whenever you run this code, it returns an object telling you when this script was run the last time, and how much time has passed since.
 
-<!--more-->
-本文国际来源：[Keeping Track of Script Execution](http://community.idera.com/powershell/powertips/b/tips/posts/keeping-track-of-script-execution)
+<!--本文国际来源：[Keeping Track of Script Execution](http://community.idera.com/powershell/powertips/b/tips/posts/keeping-track-of-script-execution)-->

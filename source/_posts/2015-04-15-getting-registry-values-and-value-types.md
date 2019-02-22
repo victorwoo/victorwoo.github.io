@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-ItemProperty` 可以方便地读取注册表键值，但是无法获得注册表键值的数据类型。
 
@@ -66,5 +65,4 @@ tags:
         }
     }
 
-<!--more-->
-本文国际来源：[Getting Registry Values and Value Types](http://community.idera.com/powershell/powertips/b/tips/posts/getting-registry-values-and-value-types)
+<!--本文国际来源：[Getting Registry Values and Value Types](http://community.idera.com/powershell/powertips/b/tips/posts/getting-registry-values-and-value-types)-->

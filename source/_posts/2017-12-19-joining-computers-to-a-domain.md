@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是 PowerShell 将机器加入 AD 域的基本步骤：
 
@@ -32,5 +31,4 @@ Restart-Computer
 
 您可以根据需要修改这段代码。这个例子中用明文存储密码，这是不安全的。您可能需要从一个文件中读取密码。
 
-<!--more-->
-本文国际来源：[Joining Computers to a Domain](http://community.idera.com/powershell/powertips/b/tips/posts/joining-computers-to-a-domain)
+<!--本文国际来源：[Joining Computers to a Domain](http://community.idera.com/powershell/powertips/b/tips/posts/joining-computers-to-a-domain)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 Windows 8 和 Server 2012 开始，有一个 Cmdlet 可以在多个配置中启用客户端防火墙：
 
@@ -25,5 +24,4 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 netsh advfirewall set allprofiles state on
 ```
 
-<!--more-->
-本文国际来源：[Managing Windows Firewall](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-firewall)
+<!--本文国际来源：[Managing Windows Firewall](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-firewall)-->

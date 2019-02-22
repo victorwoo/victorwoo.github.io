@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，PowerShell 引擎开始记录执行的命令和脚本块。缺省情况下，只有被认为有潜在威胁的命令会记录日志。当启用了详细日志后，由所有用户执行的所有执行代码都会被记录。
 
@@ -48,5 +47,4 @@ Get-WinEvent -FilterHashtable $logInfo |
 PS> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 ```
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-1)
+<!--本文国际来源：[Understanding Script Block Logging (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-1)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 Windows 8 和 Server 2012 R2 起，这些操作系统附带发行了一个名为 `PrintManagement` 的 PowerShell 模块。该模块中的 cmdlet 可以实现脚本化安装和配置打印机。以下是一段帮助您起步的代码：
 
@@ -39,5 +38,4 @@ PS> Get-Command -Module PrintManagement
 
 请注意 Windows 7 中没有包含该模块，而且无法在 Windows 7 中安装，因为 Windows 7 缺少运行该模块中 cmdlet 的某些依赖项。
 
-<!--more-->
-本文国际来源：[Installing Printers](http://community.idera.com/powershell/powertips/b/tips/posts/installing-printers)
+<!--本文国际来源：[Installing Printers](http://community.idera.com/powershell/powertips/b/tips/posts/installing-printers)-->

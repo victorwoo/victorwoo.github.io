@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 8.1 / Server 2012 R2_
 
@@ -55,5 +54,4 @@ Function        Add-PhysicalDisk                                   Storage
 (...)
 ```
 
-<!--more-->
-本文国际来源：[Reading Disks and Partitions](http://community.idera.com/powershell/powertips/b/tips/posts/reading-disks-and-partitions)
+<!--本文国际来源：[Reading Disks and Partitions](http://community.idera.com/powershell/powertips/b/tips/posts/reading-disks-and-partitions)-->

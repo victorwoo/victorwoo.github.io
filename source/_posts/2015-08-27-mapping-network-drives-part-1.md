@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 支持控制台命令，所以如果您需要映射一个网络驱动器，通常最可靠的方式是使用传统好用的 `net.exe`，类似这样：
 
@@ -35,5 +34,4 @@ PowerShell 支持控制台命令，所以如果您需要映射一个网络驱动
 
 要提交密码，将用户名之后的星号替换为密码。这当然不是很好的实践，因为这将把密码透露给所有可以查看代码的人。
 
-<!--more-->
-本文国际来源：[Mapping Network Drives (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-network-drives-part-1)
+<!--本文国际来源：[Mapping Network Drives (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/mapping-network-drives-part-1)-->

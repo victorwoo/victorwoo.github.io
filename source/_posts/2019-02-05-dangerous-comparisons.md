@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您希望排除某个数组中所有为空字符串或者 null 元素。以下是许多人可能的做法：
 
@@ -81,5 +80,4 @@ test
 PS>
 ```
 
-<!--more-->
-本文国际来源：[“Dangerous” Comparisons](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/dangerous-comparisons)
+<!--本文国际来源：[“Dangerous” Comparisons](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/dangerous-comparisons)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下单行代码可以列出指定月份的所有工作日：
 
@@ -30,5 +29,4 @@ tags:
       Measure-Object |
       Select-Object -ExpandProperty Count
 
-<!--more-->
-本文国际来源：[Finding Working Days](http://community.idera.com/powershell/powertips/b/tips/posts/finding-working-days)
+<!--本文国际来源：[Finding Working Days](http://community.idera.com/powershell/powertips/b/tips/posts/finding-working-days)-->

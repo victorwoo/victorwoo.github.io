@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 默认情况下，PowerShell 在重新运行时会自动“忘记”某些设置。如果您需要“保持”设置，您需要使用 profile 脚本。当 PowerShell 在任何情况下启动时，会运行一段脚本。您可以向该脚本中添加任何命令。
 
@@ -40,5 +39,4 @@ PS  C:\> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -F
 PS C:\> web www.powershellmagazine.com
 ```
 
-<!--more-->
-本文国际来源：[Using Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-profile-scripts1)
+<!--本文国际来源：[Using Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-profile-scripts1)-->

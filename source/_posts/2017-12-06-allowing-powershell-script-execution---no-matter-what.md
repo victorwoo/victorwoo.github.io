@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 执行策略 (Execution Policy) 可以禁止脚本执行。它被设计成一个用户的首选项，所以您总是可以改变有关的执行策略。不过，在一些环境下，组策略可以强制改变设置，并且禁止运行脚本。
 
@@ -23,5 +22,4 @@ $context = $executioncontext.gettype().getfield('_context','nonpublic,instance')
 
 请注意，这不是一个安全问题。执行策略的控制权在用户。这并不是一个安全边界。
 
-<!--more-->
-本文国际来源：[Allowing PowerShell Script Execution - No Matter What](http://community.idera.com/powershell/powertips/b/tips/posts/allowing-powershell-script-execution---no-matter-what)
+<!--本文国际来源：[Allowing PowerShell Script Execution - No Matter What](http://community.idera.com/powershell/powertips/b/tips/posts/allowing-powershell-script-execution---no-matter-what)-->

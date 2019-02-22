@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 比较操作符作用于数组时，它们的作用和过滤器相似。所以许多输出多行文本的控制台命令可以使用比较操作符。
 
@@ -21,5 +20,4 @@ tags:
 
 这个技巧是将控制台命令用 `@()` 括起来，确保结果为一个数组。
 
-<!--more-->
-本文国际来源：[Filtering Text-Based Command Output](http://community.idera.com/powershell/powertips/b/tips/posts/filtering-text-based-command-output)
+<!--本文国际来源：[Filtering Text-Based Command Output](http://community.idera.com/powershell/powertips/b/tips/posts/filtering-text-based-command-output)-->

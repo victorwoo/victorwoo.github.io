@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 是令人惊叹的。它可以根据您选择的关键词搜索 YouTube 视频，然后为您呈现视频，以及根据选择播放视频。
 
@@ -35,5 +34,4 @@ PowerShell 将会启动您的 Web 浏览器并且播放视频。太棒了！
 
 > 译者注：由于国内暂时不可直接访问 YouTube 服务，验证本脚本需要合适的代理服务器或 VPN。
 
-<!--more-->
-本文国际来源：[Search and View PowerShell Videos](http://community.idera.com/powershell/powertips/b/tips/posts/search-and-view-powershell-videos)
+<!--本文国际来源：[Search and View PowerShell Videos](http://community.idera.com/powershell/powertips/b/tips/posts/search-and-view-powershell-videos)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在钱一个技能中我们演示了当您的远程代码试图通过第三方身份认证时会遇到的二次远程连接问题。
 
@@ -44,5 +43,4 @@ Invoke-Command -Authentication Credssp -ScriptBlock $code -ComputerName nameOfSe
 
 请注意当您使用 CredSSP 验证时，您必须提交显式的凭据（用 `-Credential`）且无法通过 Kerberos 透明传输当前的身份。
 
-<!--more-->
-本文国际来源：[Solving Double Hop Remoting with CredSSP](http://community.idera.com/powershell/powertips/b/tips/posts/solving-double-hop-remoting-with-credssp)
+<!--本文国际来源：[Solving Double Hop Remoting with CredSSP](http://community.idera.com/powershell/powertips/b/tips/posts/solving-double-hop-remoting-with-credssp)-->

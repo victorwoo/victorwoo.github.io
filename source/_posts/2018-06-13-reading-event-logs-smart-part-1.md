@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您使用 PowerShell 来查询事件，缺省情况下获取到的是日志信息的文本消息。例如，如果您想知道谁登录了您的计算机，您可以使用类似这样的代码（需要管理员权限）：
 
@@ -150,5 +149,4 @@ Get-EventLog -LogName Security -InstanceId 4624 |
     12.05.2018 17:38:53 SYSTEM\NT-AUTORITÄT                     Negotiate C:\Windows\System32\services.exe
 
 
-<!--more-->
-本文国际来源：[Reading Event Logs Smart (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-event-logs-smart-part-1)
+<!--本文国际来源：[Reading Event Logs Smart (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-event-logs-smart-part-1)-->

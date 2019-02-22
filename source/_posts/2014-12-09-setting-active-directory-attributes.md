@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _需要 ActiveDirectory 模块_
 
@@ -25,5 +24,4 @@ PowerShell 用哈希表来设置一个用户账户的 AD 属性这是一种多�
     
     Set-ADUser -Identity testuser -Replace $infos
 
-<!--more-->
-本文国际来源：[Setting Active Directory Attributes](http://community.idera.com/powershell/powertips/b/tips/posts/setting-active-directory-attributes)
+<!--本文国际来源：[Setting Active Directory Attributes](http://community.idera.com/powershell/powertips/b/tips/posts/setting-active-directory-attributes)-->

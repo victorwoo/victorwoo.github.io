@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -44,5 +43,4 @@ _适用于 PowerShell 所有版本_
 
 为您提供一些启示，在域迁移的场景中，您可以比如创建一个转换表，用于将旧的 SID 转换为新的 SID。然后，将旧的 SID 替换成新的 SID，然后将记录下的安全信息克隆到一个新的（或测试的）域中。
 
-<!--more-->
-本文国际来源：[Replacing NTFS Permissions with SDDL Information](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-ntfs-permissions-with-sddl-information)
+<!--本文国际来源：[Replacing NTFS Permissions with SDDL Information](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-ntfs-permissions-with-sddl-information)-->

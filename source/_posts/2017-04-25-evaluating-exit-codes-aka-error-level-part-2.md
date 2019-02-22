@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您直接启动一个控制台应用程序时，PowerShell 会返回它的 exit code（也叫做 Error Level），并存储在 `$LASTEXITCODE` 变量中。然而，如何获取通过 `Start-Process` 启动的控制台应用程序的 exit code 呢？
 
@@ -28,5 +27,4 @@ $IsOnline = $process.ExitCode -eq 0
 $IsOnline
 ```
 
-<!--more-->
-本文国际来源：[Evaluating Exit Codes (aka Error Level – Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-exit-codes-aka-error-level-part-2)
+<!--本文国际来源：[Evaluating Exit Codes (aka Error Level – Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-exit-codes-aka-error-level-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WMI 可以提供硬盘的容量和剩余空间。PowerShell 会用返回这样的友好信息：
 
@@ -72,5 +71,4 @@ function Get-HardDriveSize
 }
 ```
 
-<!--more-->
-本文国际来源：[Checking Hard Drive Size (Local and Remote)](http://community.idera.com/powershell/powertips/b/tips/posts/checking-hard-drive-size-local-and-remote)
+<!--本文国际来源：[Checking Hard Drive Size (Local and Remote)](http://community.idera.com/powershell/powertips/b/tips/posts/checking-hard-drive-size-local-and-remote)-->

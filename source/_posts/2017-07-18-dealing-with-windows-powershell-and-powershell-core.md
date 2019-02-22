@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 当前有两个版本：随 Windows 发布、基于完整 .NET 框架的的 "Windows PowerShell"，以及基于 .NET Core、支持跨平台、能够运行在 Nano Server 等平台的 "PowerShell Core"。
 
@@ -42,5 +41,4 @@ PS>
 
 类似地，甚至更重要的是，当您将 "Core" 替换为 "Desktop"，脚本将无法在受限的 "PowerShell Core" 版本中运行。如果您的脚本依赖于传统 Windows 系统中的某些特性，并且依赖于完整 .NET Framework，这种做法十分明智。
 
-<!--more-->
-本文国际来源：[Dealing with “Windows PowerShell” and “PowerShell Core”](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-windows-powershell-and-powershell-core)
+<!--本文国际来源：[Dealing with “Windows PowerShell” and “PowerShell Core”](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-windows-powershell-and-powershell-core)-->

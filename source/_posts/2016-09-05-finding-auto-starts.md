@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 3 以上版本*
 
@@ -50,5 +49,4 @@ Description : RTHDVCPL
 ...
 ```
 
-<!--more-->
-本文国际来源：[Finding Auto Starts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-auto-starts)
+<!--本文国际来源：[Finding Auto Starts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-auto-starts)-->

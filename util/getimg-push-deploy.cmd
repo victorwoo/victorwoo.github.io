@@ -1,5 +1,6 @@
 powershell -NoProfile -ExecutionPolicy Unrestricted .\Export-PSTipsIndex.ps1
 powershell -NoProfile -ExecutionPolicy Unrestricted .\Get-Images.ps1
+powershell -NoProfile -ExecutionPolicy Unrestricted .\Write-Comment.ps1
 
 dos2unix.exe ..\source\_posts\*.md
 

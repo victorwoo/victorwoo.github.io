@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 用 PowerShell 创建一个最简单的 Excel 报表只需要几行代码：将结果导出为 CSV 文件，然后将它作为参数启动 Excel：
 
@@ -34,5 +33,4 @@ Start-Process -FilePath excel -ArgumentList """$Path"""
 - 同样地，确保 CSV 和 Excel 使用相同的分隔符。只需要使用 `-UseCulture` 来使用注册表中设置的分隔符即可。
 - 当启动 Excel 时，请确保将路径置于双引号中，否则，如果路径中包含空格，Excel 将找不到该文件。
 
-<!--more-->
-本文国际来源：[Creating Excel Reports (Part 1 – Black and White)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports-part-1-black-and-white)
+<!--本文国际来源：[Creating Excel Reports (Part 1 – Black and White)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports-part-1-black-and-white)-->

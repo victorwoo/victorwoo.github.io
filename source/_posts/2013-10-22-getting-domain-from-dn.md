@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 "DN" 指的是是 Active Directory 对象的路径，看起来大概如下：
 
@@ -30,5 +29,4 @@ tags:
 
 	DC=powershell,DC=local
 
-<!--more-->
-本文国际来源：[Getting Domain from DN](http://community.idera.com/powershell/powertips/b/tips/posts/getting-domain-from-dn)
+<!--本文国际来源：[Getting Domain from DN](http://community.idera.com/powershell/powertips/b/tips/posts/getting-domain-from-dn)-->

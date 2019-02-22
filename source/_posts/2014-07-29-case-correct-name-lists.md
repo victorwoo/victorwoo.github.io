@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -35,5 +34,4 @@ _适用于所有 PowerShell 版本_
     Frank-Peter
     Fred
 
-<!--more-->
-本文国际来源：[Case-Correct Name Lists](http://community.idera.com/powershell/powertips/b/tips/posts/case-correct-name-lists)
+<!--本文国际来源：[Case-Correct Name Lists](http://community.idera.com/powershell/powertips/b/tips/posts/case-correct-name-lists)-->

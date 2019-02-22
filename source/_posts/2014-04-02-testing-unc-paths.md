@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Test-Path` 命令可以检测指定的文件或文件夹是否存在。它对于使用盘符的路径工作正常，但是对于纯 UNC 路径则不可用。
 
@@ -37,5 +36,4 @@ tags:
     
     Test-Path -Path $path 
 
-<!--more-->
-本文国际来源：[Testing UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/testing-unc-paths)
+<!--本文国际来源：[Testing UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/testing-unc-paths)-->

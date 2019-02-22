@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 也许您还没有意识到，PowerShell 在输入输出时用的是不同的十进制分隔符——这也许会导致脚本用户产生混淆。
 
@@ -53,5 +52,4 @@ tags:
 
 当然，这是个有点黑客的技巧，它总比每次首先得指导您的用户必须使用“.”分隔符来得好。
 
-<!--more-->
-本文国际来源：[Using Comma as Decimal Delimiter](http://community.idera.com/powershell/powertips/b/tips/posts/using-comma-as-decimal-delimiter)
+<!--本文国际来源：[Using Comma as Decimal Delimiter](http://community.idera.com/powershell/powertips/b/tips/posts/using-comma-as-decimal-delimiter)-->

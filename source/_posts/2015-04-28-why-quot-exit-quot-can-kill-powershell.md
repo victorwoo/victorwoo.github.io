@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 某些时候，我们会误会“exit”语句的工作方式。以下是一个例子：
 
@@ -51,5 +50,4 @@ tags:
 
 所以请慎用“exit”语句！它只能用在退出一个脚本并将控制权交还给调用者的时候。
 
-<!--more-->
-本文国际来源：[Why "exit" can kill PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/why-quot-exit-quot-can-kill-powershell)
+<!--本文国际来源：[Why "exit" can kill PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/why-quot-exit-quot-can-kill-powershell)-->

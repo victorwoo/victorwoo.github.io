@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这周我们将关注枚举类型：它们是什么，以及如何利用它们。
 
@@ -53,5 +52,4 @@ $host.UI.RawUI.BackgroundColor = $background
 $host.UI.RawUI.ForegroundColor = $foreground
 ```
 
-<!--more-->
-本文国际来源：[Enum Week: Understanding Enumeration Values](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-understanding-enumeration-values)
+<!--本文国际来源：[Enum Week: Understanding Enumeration Values](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-understanding-enumeration-values)-->

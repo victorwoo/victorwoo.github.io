@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要确保给定的字符串有一致的宽度，那么您可以使用 .NET 方法来适当地对齐字符串：
 
@@ -31,5 +30,4 @@ tags:
 
 ![](/img/2014-03-06-padding-strings-left-and-right-002.png)
 
-<!--more-->
-本文国际来源：[Padding Strings Left and Right](http://community.idera.com/powershell/powertips/b/tips/posts/padding-strings-left-and-right)
+<!--本文国际来源：[Padding Strings Left and Right](http://community.idera.com/powershell/powertips/b/tips/posts/padding-strings-left-and-right)-->

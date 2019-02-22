@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -27,5 +26,4 @@ _适用于 PowerShell 所有版本_
 
 请注意 `Get-HotFix` 有一个 `-ComputerName` 参数，所以如果您拥有了合适的权限，那么您也可以从远程计算机中获取 hotfix 信息。
 
-<!--more-->
-本文国际来源：[Filtering Hotfix Information](http://community.idera.com/powershell/powertips/b/tips/posts/filtering-hotfix-information)
+<!--本文国际来源：[Filtering Hotfix Information](http://community.idera.com/powershell/powertips/b/tips/posts/filtering-hotfix-information)-->

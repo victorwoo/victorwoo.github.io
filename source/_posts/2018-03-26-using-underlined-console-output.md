@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5.1 开始，PowerShell 控制台支持 VT 转义序列，它可以用于对控制台文本定位和格式化。请注意它只对控制台有效，而对 PowerShell ISE 无效。另外还请注意您需要 Windows 10 或者类似 ConEmu 等模拟器。
 
@@ -33,5 +32,4 @@ $esc = [char]27
 
 我们将会在未来的技能中介绍更多的控制台文字格式化技术。以下是 VT 转义序列的更深入介绍：[https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences](https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences#span-idtextformattingspanspan-idtextformattingspanspan-idtextformattingspantext-formatting).
 
-<!--more-->
-本文国际来源：[Using Underlined Console Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-underlined-console-output)
+<!--本文国际来源：[Using Underlined Console Output](http://community.idera.com/powershell/powertips/b/tips/posts/using-underlined-console-output)-->

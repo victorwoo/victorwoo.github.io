@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以调用 Windows 内部的 API，在这个例子中，我们想向您展示如何改变一个应用程序窗口的显示状态。比如可以最大化、最小化、隐藏或显示窗口。
 
@@ -70,5 +69,4 @@ $type::ShowWindowAsync($hwnd, [ShowStates]::Show)
 
 一些应用程序有多个窗口。在这种情况下，您只能针对主窗口操作，否则需要先靠其它 API 来获取子窗口的句柄集合。
 
-<!--more-->
-本文国际来源：[Show or Hide Windows](http://community.idera.com/powershell/powertips/b/tips/posts/show-or-hide-windows)
+<!--本文国际来源：[Show or Hide Windows](http://community.idera.com/powershell/powertips/b/tips/posts/show-or-hide-windows)-->

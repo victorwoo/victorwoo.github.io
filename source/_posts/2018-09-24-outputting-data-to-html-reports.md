@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个超级简单和有用的 PowerShell 函数，名为 `Out-HTML`：
 
@@ -62,5 +61,4 @@ PS C:\> Get-Service | Out-HTML -Open
 PS C:\> Get-Process | Select-Object -Property Name, Id, Company, Description | Out-HTML -Open
 ```
 
-<!--more-->
-本文国际来源：[Outputting Data to HTML Reports](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-data-to-html-reports)
+<!--本文国际来源：[Outputting Data to HTML Reports](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-data-to-html-reports)-->

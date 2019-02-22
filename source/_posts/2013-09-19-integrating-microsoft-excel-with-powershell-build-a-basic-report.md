@@ -9,13 +9,11 @@ categories:
 tags:
 - powershell
 - script
-- translation
 ---
 除了文本文件之外，Windows系统管理员最常用的工具是Microsoft Excel。我观察论坛中人们的讨论发现，有一大堆关于Excel电子表格讨论。许多人想要读写Excel的方法。通常，我告诉人们如果他们使用PowerShell，那么可以简单地将结果导出到CSV文件，然后用Excel打开，但是您很有可能需要一个真正的Excel文件。
 
 
 我着手准备写几个关于如何在PowerShell中操作Excel的专题。今天我们将要通过Microsoft Excel和Windows PowerShell创建一个简单的报表。在第二部分中，我将演示如何创建一个更复杂的Excel文档。然后在第三部分中，我将向您演示如何从Excel文件中读取数据。
-<!--more-->
 
 创建一个简单的报表
 ==================

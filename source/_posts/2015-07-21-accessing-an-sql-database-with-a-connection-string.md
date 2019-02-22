@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们揭示了如何创建一个 SQL Server 的连接字符串。无论您用什么方式创建了这个字符串——假设您已拥有了一个合法的数据库连接字符串，这个例子将演示如何对数据库执行 SQL 命令。
 
@@ -41,5 +40,4 @@ tags:
     }
     $results | Out-GridView
 
-<!--more-->
-本文国际来源：[Accessing an SQL Database with a Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-an-sql-database-with-a-connection-string)
+<!--本文国际来源：[Accessing an SQL Database with a Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-an-sql-database-with-a-connection-string)-->

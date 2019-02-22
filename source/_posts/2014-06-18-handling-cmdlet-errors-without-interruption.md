@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您想要错误处理器处理 cmdlet 内部产生的错误时，您只能将该 cmdlet 的 `-ErrorAction` 设为 `Stop` 才能捕获这类异常。否则，cmdlet 将在内部处理该错误。
 
@@ -29,5 +28,4 @@ tags:
 
     $myErrors | Select-Object -ExpandProperty TargetObject
 
-<!--more-->
-本文国际来源：[Handling Cmdlet Errors without Interruption](http://community.idera.com/powershell/powertips/b/tips/posts/handling-cmdlet-errors-without-interruption)
+<!--本文国际来源：[Handling Cmdlet Errors without Interruption](http://community.idera.com/powershell/powertips/b/tips/posts/handling-cmdlet-errors-without-interruption)-->

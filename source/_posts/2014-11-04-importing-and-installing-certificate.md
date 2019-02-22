@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -33,5 +32,4 @@ _适用于 PowerShell 所有版本_
 
 您可以配置这个脚本并指定待导入的证书文件的路径和密码。您还可以指定其存储的位置（当前用户或本地计算机），以及将其放入的容器（例如“root”代表受信任的根证书颁发机构，“my”代表个人）。
 
-<!--more-->
-本文国际来源：[Importing and Installing Certificate](http://community.idera.com/powershell/powertips/b/tips/posts/importing-and-installing-certificate)
+<!--本文国际来源：[Importing and Installing Certificate](http://community.idera.com/powershell/powertips/b/tips/posts/importing-and-installing-certificate)-->

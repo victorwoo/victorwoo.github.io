@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想增加最大命令历史的容量，您可能会遇到这样的限制：
 
@@ -29,5 +28,4 @@ tags:
 
 但您遇到一个变量在原始数据类型之外有数值限制，您可能需要检查变量的属性来确认其中是否有验证器属性。
 
-<!--more-->
-本文国际来源：[Why $MaximumHistoryCount has a Limit](http://community.idera.com/powershell/powertips/b/tips/posts/why-maximumhistorycount-has-a-limit)
+<!--本文国际来源：[Why $MaximumHistoryCount has a Limit](http://community.idera.com/powershell/powertips/b/tips/posts/why-maximumhistorycount-has-a-limit)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在德国，有一些公开的媒体数据库，里面有公共站点发布的电视内容。只需要用一小段 PowerShell 代码就可以解析 JSON 数据，在一个列表中显示电视节目，并使你能够选择某项来下载。
 
@@ -48,5 +47,4 @@ ForEach-Object {
 }
 ```
 
-<!--more-->
-本文国际来源：[Downloading Videos From German Media Databases](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-videos-from-german-media-databases)
+<!--本文国际来源：[Downloading Videos From German Media Databases](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-videos-from-german-media-databases)-->

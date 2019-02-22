@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通常，WMI 对象有许多包含重要信息的属性。这行代码将获取所有运行中的记事本实例的所有信息（请先运行记事本）：
 
@@ -68,5 +67,4 @@ $notepads |
 
 在以上的代码中，假设您移除 `GetOwner`，而是按下 `CTRL` + `SPACE` 键调出智能感知（或在简单 PowerShell 控制台中按 `TAB` 键），您可以获得所有可用的方法名称。如果一个方法需要参数，请使用 `-Arguments` 参数。
 
-<!--more-->
-本文国际来源：[WMI Quick Primer (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-4)
+<!--本文国际来源：[WMI Quick Primer (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-4)-->

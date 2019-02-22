@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您以文本的形式收到了数字或日期等数据。当信息转为文本的时候，您会遇到区域性特定的格式：不同区域的小数点和日期时间可能会不同。
 
@@ -38,5 +37,4 @@ $date = [DateTime]::Parse($info,$culture)
 $date
 ```
 
-<!--more-->
-本文国际来源：[Converting Culture-Specific Information](http://community.idera.com/powershell/powertips/b/tips/posts/converting-culture-specific-information)
+<!--本文国际来源：[Converting Culture-Specific Information](http://community.idera.com/powershell/powertips/b/tips/posts/converting-culture-specific-information)-->

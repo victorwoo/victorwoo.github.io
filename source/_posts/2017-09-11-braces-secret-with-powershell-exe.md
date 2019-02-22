@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当从 PowerShell 或 PowerShell Core 中调用 powershell.exe 时有一些小秘密：当您执行 `powershell.exe` 并通过 `-Command` 传递一些命令时，PowerShell 将运行这个命令并返回纯文本：
 
@@ -47,5 +46,4 @@ Site                :
 Container           :
 ```
 
-<!--more-->
-本文国际来源：[“Braces Secret” with PowerShell.exe](http://community.idera.com/powershell/powertips/b/tips/posts/braces-secret-with-powershell-exe)
+<!--本文国际来源：[“Braces Secret” with PowerShell.exe](http://community.idera.com/powershell/powertips/b/tips/posts/braces-secret-with-powershell-exe)-->

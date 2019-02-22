@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 对于报表以及类似的场景，脚本可能需要获得指定月份的第一天和最后一天。第一天很简单，但最后一天依赖于月份和年份。以下是一个简单的计算器。只需要指定您需要的月份和年份：
 
@@ -33,5 +32,4 @@ PS> $last
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Calculating First and Last Day of Month](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/calculating-first-and-last-day-of-month)
+<!--本文国际来源：[Calculating First and Last Day of Month](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/calculating-first-and-last-day-of-month)-->

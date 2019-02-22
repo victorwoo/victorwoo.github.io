@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Test-Path` 可以检测一个文件或文件夹是否存在。如果您添加了 `-PathType` 来指定叶子节点（文件），或 `-Container`（文件夹），结果会更具体：
 
@@ -23,5 +22,4 @@ Test-Path -Path $path -PathType Leaf
 Test-Path -Path $path -PathType Container
 ````
 
-<!--more-->
-本文国际来源：[Test for File or Folder](http://community.idera.com/powershell/powertips/b/tips/posts/test-for-file-or-folder)
+<!--本文国际来源：[Test for File or Folder](http://community.idera.com/powershell/powertips/b/tips/posts/test-for-file-or-folder)-->

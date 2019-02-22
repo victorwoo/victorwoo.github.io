@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，读取注册表键值可能会失败，提示奇怪的错误信息：
 
@@ -67,5 +66,4 @@ PSProvider   : Microsoft.PowerShell.Core\Registry
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Reading Registry Values Fails](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-fails)
+<!--本文国际来源：[Reading Registry Values Fails](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-fails)-->

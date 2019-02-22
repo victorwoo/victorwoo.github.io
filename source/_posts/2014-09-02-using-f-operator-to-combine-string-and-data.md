@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -52,5 +51,4 @@ _适用于 PowerShell 所有版本_
 
 如您所见，使用 `-f` 可以给您带来两个好处：占位符（花括号）指示 PowerShell 插入点的位置，并且占位符还可以接受格式化信息。“n1”代表小数点后 1 位。只需要调整数值就能满足您的需要。
 
-<!--more-->
-本文国际来源：[Using -f Operator to Combine String and Data](http://community.idera.com/powershell/powertips/b/tips/posts/using-f-operator-to-combine-string-and-data)
+<!--本文国际来源：[Using -f Operator to Combine String and Data](http://community.idera.com/powershell/powertips/b/tips/posts/using-f-operator-to-combine-string-and-data)-->

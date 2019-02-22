@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 许多文件扩展名都被关联为可执行程序。您可以使用 `Invoke-Item` 来打开一个可执行的文件。
 
@@ -58,5 +57,4 @@ tags:
 
 一个已知的限制是 `FindExecutable()` 的使用前提是该文件必须存在。您无法只通过文件扩展名来断定是否为一个可执行文件。
 
-<!--more-->
-本文国际来源：[Finding Executable](http://community.idera.com/powershell/powertips/b/tips/posts/finding-executable)
+<!--本文国际来源：[Finding Executable](http://community.idera.com/powershell/powertips/b/tips/posts/finding-executable)-->

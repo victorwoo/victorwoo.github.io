@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个简单的 PowerShell 过滤器，它能够将任意的 `DateTime` 对象转换为您所需要的日期/时间格式：
 
@@ -47,5 +46,4 @@ tags:
 
 所有希望原样显示的文字必须用双引号括起来。
 
-<!--more-->
-本文国际来源：[Converting Date/Time Formats](http://community.idera.com/powershell/powertips/b/tips/posts/converting-date-time-formats)
+<!--本文国际来源：[Converting Date/Time Formats](http://community.idera.com/powershell/powertips/b/tips/posts/converting-date-time-formats)-->

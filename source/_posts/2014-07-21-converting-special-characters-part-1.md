@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -27,5 +26,4 @@ _适用于所有 PowerShell 版本_
     PS> ConvertTo-PrettyText -Text 'Mr. Össterßlim'
     Mr. Oesstersslim
 
-<!--more-->
-本文国际来源：[Converting Special Characters, Part 1](http://community.idera.com/powershell/powertips/b/tips/posts/converting-special-characters-part-1)
+<!--本文国际来源：[Converting Special Characters, Part 1](http://community.idera.com/powershell/powertips/b/tips/posts/converting-special-characters-part-1)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想将设置保存在您的脚本之外并将它们保存在一个独立的配置文件中，那么您可以使用各种数据格式。
 
@@ -46,5 +45,4 @@ Path = 'C:'
     $hashtable.ID
     $hashtable.Path
 
-<!--more-->
-本文国际来源：[Simple Replacement for INI Files](http://community.idera.com/powershell/powertips/b/tips/posts/simple-replacement-for-ini-files)
+<!--本文国际来源：[Simple Replacement for INI Files](http://community.idera.com/powershell/powertips/b/tips/posts/simple-replacement-for-ini-files)-->

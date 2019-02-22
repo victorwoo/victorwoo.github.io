@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在循环中使用“`Continue`”语句时，您可以跳过循环中剩下的语句，然后继续下一次循环。“`Break`”的工作原理与之相似，不过它不仅结束循环而且将跳过所有剩下的循环。
 
@@ -33,5 +32,4 @@ tags:
 
 当您移除“`Continue`”之后的“`outer`”标签时，您会听到频率递增的蜂鸣，并且 `Write-Host` 语句不再被跳过。
 
-<!--more-->
-本文国际来源：["Continue" and Labels](http://community.idera.com/powershell/powertips/b/tips/posts/quot-continue-quot-and-labels)
+<!--本文国际来源：["Continue" and Labels](http://community.idera.com/powershell/powertips/b/tips/posts/quot-continue-quot-and-labels)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要以管理员身份运行指定的脚本片段，您可以以管理员身份临时创建第二个 PowerShell 实例，然后在临时的实例中执行特权代码。
 
@@ -21,5 +20,4 @@ tags:
     
     Start-Process -FilePath powershell.exe -Verb runas -ArgumentList 'Stop-Service -Name wuauserv' -WindowStyle Minimized
 
-<!--more-->
-本文国际来源：[Executing Selected Code as Admin](http://community.idera.com/powershell/powertips/b/tips/posts/executing-selected-code-as-admin)
+<!--本文国际来源：[Executing Selected Code as Admin](http://community.idera.com/powershell/powertips/b/tips/posts/executing-selected-code-as-admin)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中没有内置 FTP 命令，但是您可以方便地下载和安装一个免费的扩展，该扩展提供了您想要的 FTP 管理功能。只需要运行这行代码：
 
@@ -72,5 +71,4 @@ Cmdlet      Set-SFTPFile                       2.0.2   Posh-SSH
 
 在 [powershellmagazine.com](http://www.powershellmagazine.com/2014/07/03/posh-ssh-open-source-ssh-powershell-module/) 有一篇延伸的文章介绍如何使用这些命令：
 
-<!--more-->
-本文国际来源：[Managing FTP via PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ftp-via-powershell)
+<!--本文国际来源：[Managing FTP via PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ftp-via-powershell)-->

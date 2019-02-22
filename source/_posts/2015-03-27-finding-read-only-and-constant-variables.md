@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -44,5 +43,4 @@ _适用于 PowerShell 所有版本_
 
 有意思的地方是如何用 `Where-Object` 来过滤这些变量。这段代码使用了字符串对比和 `-like`。这是因为变量选项是各种标志，并且标志可以组合使用。通过使用 `-like` 和占位符，您可以基本安全地用您希望的标志来过滤，即便设置了其它标志。
 
-<!--more-->
-本文国际来源：[Finding Read-Only and Constant Variables](http://community.idera.com/powershell/powertips/b/tips/posts/finding-read-only-and-constant-variables)
+<!--本文国际来源：[Finding Read-Only and Constant Variables](http://community.idera.com/powershell/powertips/b/tips/posts/finding-read-only-and-constant-variables)-->

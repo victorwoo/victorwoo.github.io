@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在服务器中，Powershell 可以通过 `Install-WindowsFeature` 命令安装 Windows 功能。
 
@@ -23,5 +22,4 @@ tags:
     # view the result of your change
     Get-WindowsFeature -Name $result.FeatureResult.Name
 
-<!--more-->
-本文国际来源：[Installing Windows Features](http://community.idera.com/powershell/powertips/b/tips/posts/installing-windows-features)
+<!--本文国际来源：[Installing Windows Features](http://community.idera.com/powershell/powertips/b/tips/posts/installing-windows-features)-->

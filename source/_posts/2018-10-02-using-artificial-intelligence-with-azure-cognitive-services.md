@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 现在的云服务不仅提供虚拟机和存储，而且提供全新且令人兴奋的服务，例如认知服务。如果您需要直接访问这些服务，您需要一个 Azure 订阅密钥（可以在以下网站免费获得）。否则，您也可以使用这里提供的免费的互动 DEMO：
 [https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/#analyze](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/#analyze)
@@ -117,5 +116,4 @@ k","Grey"],"accentColor":"6E432C","isBwImg":false},"imageType":{"clipArtType":0,
 a":{"height":306,"width":408,"format":"Jpeg"}}
 ```
 
-<!--more-->
-本文国际来源：[Using Artificial Intelligence with Azure Cognitive Services](http://community.idera.com/powershell/powertips/b/tips/posts/using-artificial-intelligence-with-azure-cognitive-services)
+<!--本文国际来源：[Using Artificial Intelligence with Azure Cognitive Services](http://community.idera.com/powershell/powertips/b/tips/posts/using-artificial-intelligence-with-azure-cognitive-services)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Prateek Singh 贡献了一个干净的，CSV 格式的的 MAC 厂商列表。这个列表可以在他的博客 [Get-MACVendor using Powershell – Geekeefy](https://geekeefy.wordpress.com/2017/07/06/get-mac-vendor-using-powershell/) 找到。在通过 MAC 地址确定网络设备的厂商时，这个列表十分有用。
 
@@ -56,5 +55,4 @@ Get-NetAdapter |
     }
 ```
 
-<!--more-->
-本文国际来源：[Getting MAC Vendor List](http://community.idera.com/powershell/powertips/b/tips/posts/getting-mac-vendor-list)
+<!--本文国际来源：[Getting MAC Vendor List](http://community.idera.com/powershell/powertips/b/tips/posts/getting-mac-vendor-list)-->

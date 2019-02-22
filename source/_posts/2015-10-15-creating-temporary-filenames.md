@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您只是需要创建一个临时文件名（而不是真的需要创建该文件），而且您希望控制文件的扩展名，以下是一个实现该需求的简单函数：
 
@@ -48,5 +47,4 @@ tags:
     PS C:\> New-TemporaryFileName csv
     C:\Users\Tobias\AppData\Local\Temp\47b1a65f-2705-4926-8a72-21f05430f2c5.csv
 
-<!--more-->
-本文国际来源：[Creating Temporary File Names](http://community.idera.com/powershell/powertips/b/tips/posts/creating-temporary-filenames)
+<!--本文国际来源：[Creating Temporary File Names](http://community.idera.com/powershell/powertips/b/tips/posts/creating-temporary-filenames)-->

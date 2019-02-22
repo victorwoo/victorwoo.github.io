@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 3.0 开始，实时监测基于文本的日志文件变得很容易。试试以下代码：
 
@@ -28,5 +27,4 @@ tags:
 
 > 译者注：`Get-Content -Tail` 的效果和 Linux 下的 `tail -f` 命令的执行效果一致。但 PowerShell 是面向 .NET 对象的，可以利用管道和其它命令，例如 `Out-GridView` 配合，更为强大。
 
-<!--more-->
-本文国际来源：[Monitoring Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/monitoring-log-files)
+<!--本文国际来源：[Monitoring Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/monitoring-log-files)-->

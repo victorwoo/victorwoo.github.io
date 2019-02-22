@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您安装了免费的 Microsoft RSAT tools，那么您就拥有了 ActiveDirectory 模块。以下是一个查找组织中所有域控制器的简单方法：
 
@@ -24,5 +23,4 @@ Get-ADComputer -LDAPFilter $filter
 
 基本上，您可以运行任意的 LDAP 过滤器查询。只需要选择合适的 cmdlet，例如 `Get-ADComputer`、`Get-ADUser` 或最通用的 `Get-ADObject`。
 
-<!--more-->
-本文国际来源：[Find All Domain Controllers](http://community.idera.com/powershell/powertips/b/tips/posts/find-all-domain-controllers)
+<!--本文国际来源：[Find All Domain Controllers](http://community.idera.com/powershell/powertips/b/tips/posts/find-all-domain-controllers)-->

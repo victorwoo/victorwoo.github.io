@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -45,5 +44,4 @@ _适用于 PowerShell 所有版本_
     ,    this is a    text
     , and it has commas
 
-<!--more-->
-本文国际来源：[Advanced Text Splitting](http://community.idera.com/powershell/powertips/b/tips/posts/advanced-text-splitting)
+<!--本文国际来源：[Advanced Text Splitting](http://community.idera.com/powershell/powertips/b/tips/posts/advanced-text-splitting)-->

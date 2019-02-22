@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们创建了一个名为 `ConvertFrom-ErrorRecord` 的函数，它能方便地从 PowerShell 的 `ErrorRecord` 对象中方便地获取错误信息。
 
@@ -72,5 +71,4 @@ catch
 }
 ```
 
-<!--more-->
-本文国际来源：[Using ConvertFrom-ErrorRecord in try/catch](http://community.idera.com/powershell/powertips/b/tips/posts/using-convertfrom-errorrecord-in-try-catch)
+<!--本文国际来源：[Using ConvertFrom-ErrorRecord in try/catch](http://community.idera.com/powershell/powertips/b/tips/posts/using-convertfrom-errorrecord-in-try-catch)-->

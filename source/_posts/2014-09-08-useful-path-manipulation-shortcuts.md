@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -27,5 +26,4 @@ _适用于 PowerShell 所有版本_
 
 所有这些方法都能接受文件名称或完整路径参数、能返回路径的不同部分，或改变其中的部分，例如扩展名。
 
-<!--more-->
-本文国际来源：[Useful Path Manipulation Shortcuts](http://community.idera.com/powershell/powertips/b/tips/posts/useful-path-manipulation-shortcuts)
+<!--本文国际来源：[Useful Path Manipulation Shortcuts](http://community.idera.com/powershell/powertips/b/tips/posts/useful-path-manipulation-shortcuts)-->

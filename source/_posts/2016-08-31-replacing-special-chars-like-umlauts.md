@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 2.0 以上版本*
 
@@ -47,5 +46,4 @@ PS C:\> Convert-Umlaut -Text "Mößler, Christiansön"
 Moessler, Christiansoen
 ```
 
-<!--more-->
-本文国际来源：[Replacing Special Chars like “Umlauts”](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-special-chars-like-umlauts)
+<!--本文国际来源：[Replacing Special Chars like “Umlauts”](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-special-chars-like-umlauts)-->

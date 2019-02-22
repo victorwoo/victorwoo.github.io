@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -24,5 +23,4 @@ _适用于 PowerShell 所有版本_
 
 请注意这个函数调用是大小写敏感的！
 
-<!--more-->
-本文国际来源：[Hibernate System](http://community.idera.com/powershell/powertips/b/tips/posts/hibernate-system)
+<!--本文国际来源：[Hibernate System](http://community.idera.com/powershell/powertips/b/tips/posts/hibernate-system)-->

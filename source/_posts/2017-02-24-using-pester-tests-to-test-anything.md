@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Pester 是一个随 Windows 10 和 Windows Server 2016 发布的开源模块，可以通过 [PowerShell Gallery](http://www.powershellgallery.com) 免费下载（需要事先安装最新版本的 PowerShellGet）：
 
@@ -62,5 +61,4 @@ PS>
 
 当然，这只是一个例子。您可以把它做详细并且将测试扩展到更多的其它设置或依赖条件。
 
-<!--more-->
-本文国际来源：[Using Pester Tests to Test Anything](http://community.idera.com/powershell/powertips/b/tips/posts/using-pester-tests-to-test-anything)
+<!--本文国际来源：[Using Pester Tests to Test Anything](http://community.idera.com/powershell/powertips/b/tips/posts/using-pester-tests-to-test-anything)-->

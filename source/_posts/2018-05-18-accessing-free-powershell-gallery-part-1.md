@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 是一个可扩展的框架，并且 PowerShell 陈列架 ([www.powershellgallery.com](http://www.powershellgallery.com)) 上有许多免费和有用的命令扩展。我们将在几个技能帖子中介绍这个陈列架的巨大功能。
 
@@ -118,5 +117,4 @@ Function        Test-ScriptFileInfo                                1.6.0      Po
 ...
 ```
 
-<!--more-->
-本文国际来源：[Accessing Free PowerShell Gallery (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-free-powershell-gallery-part-1)
+<!--本文国际来源：[Accessing Free PowerShell Gallery (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-free-powershell-gallery-part-1)-->

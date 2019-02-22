@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 所有的 cmdlet 都位于模块或是 snap-in 中。要查看当前加载了哪些模块，请使用 `Get-Module` 命令。
 
@@ -29,5 +28,4 @@ tags:
 
     Get-Module -ListAvailable | Import-Module -Verbose
 
-<!--more-->
-本文国际来源：[Loading PowerShell Modules](http://community.idera.com/powershell/powertips/b/tips/posts/loading-powershell-modules)
+<!--本文国际来源：[Loading PowerShell Modules](http://community.idera.com/powershell/powertips/b/tips/posts/loading-powershell-modules)-->

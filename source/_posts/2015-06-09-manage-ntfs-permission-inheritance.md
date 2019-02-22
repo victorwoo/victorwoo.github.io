@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 缺省情况下，文件和文件夹从它们的父节点继承权限。要停用继承，并且只保留显式权限，请做以下两件事情：增加你需要显式权限，然后禁止继承。
 
@@ -40,5 +39,4 @@ tags:
     # set new permissions
     $acl | Set-Acl -Path $path
 
-<!--more-->
-本文国际来源：[Manage NTFS Permission Inheritance](http://community.idera.com/powershell/powertips/b/tips/posts/manage-ntfs-permission-inheritance)
+<!--本文国际来源：[Manage NTFS Permission Inheritance](http://community.idera.com/powershell/powertips/b/tips/posts/manage-ntfs-permission-inheritance)-->

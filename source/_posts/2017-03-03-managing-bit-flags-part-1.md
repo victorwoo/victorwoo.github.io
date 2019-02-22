@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候您会需要处理比特标志位值。一个数字中的每个比特代表一个特定的设置，并且您的代码可能需要决定一个标志位是否置位，而不能影响别的比特。
 
@@ -81,5 +80,4 @@ PS C:\> $flags.HasFlag([CustomBitFlags]::Option4)
 False
 ```
 
-<!--more-->
-本文国际来源：[Managing Bit Flags (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-1)
+<!--本文国际来源：[Managing Bit Flags (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-1)-->

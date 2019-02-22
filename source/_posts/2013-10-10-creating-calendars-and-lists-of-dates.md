@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一段创建 `DateTime` 集合的脚本片段。只需要指定年和月，脚本将会针对该月的每一天创建一个 `DateTime` 对象：
 
@@ -42,6 +41,5 @@ tags:
 	$days
 	"There are {0} Wednesdays and Fridays" -f $days.Count
 
-<!--more-->
 
-本文国际来源：[Creating Calendars (and Lists of Dates)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-calendars-and-lists-of-dates)
+<!--本文国际来源：[Creating Calendars (and Lists of Dates)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-calendars-and-lists-of-dates)-->

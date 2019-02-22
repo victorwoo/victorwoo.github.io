@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您需要通过 PowerShell 远程处理来获取多台计算机的信息时，您可以单独查询每台机器。更快的方法是同时查询多台机器，这也产生一个问题，如何区分处理结果呢？
 
@@ -40,5 +39,4 @@ $results['TRAIN12']
 
 这样，即便 PowerShell 远程处理在所有机器上并行执行代码，我们也可以区分每台机器的执行结果。
 
-<!--more-->
-本文国际来源：[Using Group-Object to Separate Remoting Results](http://community.idera.com/powershell/powertips/b/tips/posts/using-group-object-to-separate-remoting-results)
+<!--本文国际来源：[Using Group-Object to Separate Remoting Results](http://community.idera.com/powershell/powertips/b/tips/posts/using-group-object-to-separate-remoting-results)-->

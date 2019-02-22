@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何将之前键入的交互式 PowerShell 命令复制到您喜欢的脚本编辑器中。以下是一个能让操作更加简化的函数。如果您喜欢它，您可以将它加入您的配置脚本，那么就可以随时调用它：
 
@@ -45,5 +44,4 @@ tags:
     
     PS>
 
-<!--more-->
-本文国际来源：[Copying Command History as a Tool](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history-as-a-tool)
+<!--本文国际来源：[Copying Command History as a Tool](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history-as-a-tool)-->

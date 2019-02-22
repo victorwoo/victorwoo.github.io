@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -21,5 +20,4 @@ _适用于 PowerShell 所有版本_
 
 它将所有的命令拷贝至剪贴板。然后您就可以将它们粘贴到 PowerShell ISE 并保存为文件。
 
-<!--more-->
-本文国际来源：[Copying Command Line History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-line-history)
+<!--本文国际来源：[Copying Command Line History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-line-history)-->

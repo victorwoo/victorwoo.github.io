@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是我们迷你系列的最后一部分，向我们超快的 `Test-OnlineFast` 函数添加管道功能。您现在可以像这样将计算机名通过管道传给函数：
 
@@ -51,5 +50,4 @@ microsoft.com  False                Request Timed Out
 PS> Get-ADComputer -Filter * | Select-Object -ExpandProperty DnsHostName | Test-OnlineFast
 ```
 
-<!--more-->
-本文国际来源：[Creating Highspeed Ping (Part 6)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-6)
+<!--本文国际来源：[Creating Highspeed Ping (Part 6)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-6)-->

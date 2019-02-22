@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是另一个文件系统任务，听起来复杂，实际并没有那么复杂。假设您需要移除一个文件夹结构中指定层次之下的所有文件夹。以下是实现方法：
 
@@ -80,5 +79,4 @@ Write-EventLog -LogName Application -Source WinLogon -EntryType Information -Mes
 
 如果用户按下 `CTRL`+`C`，该脚本并不会立即停止。相反，它会先执行 `finally` 语句块并确保该事件处理器已清除和移除。
 
-<!--more-->
-本文国际来源：[Responding to New Event Log Entries (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/responding-to-new-event-log-entries-part-2)
+<!--本文国际来源：[Responding to New Event Log Entries (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/responding-to-new-event-log-entries-part-2)-->

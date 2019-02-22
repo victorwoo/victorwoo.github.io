@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 需要读取大型日志文件时，例如，解析错误信息，PowerShell 既可以使用低内存占用的管道，也可以使用高内存占用的循环。不过，区别不仅在于内存的消耗，而且在速度上。
 
@@ -41,5 +40,4 @@ Measure-Command {
 }
 ```
 
-<!--more-->
-本文国际来源：[Speed Difference: Reading Large Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/speed-difference-reading-large-log-files)
+<!--本文国际来源：[Speed Difference: Reading Large Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/speed-difference-reading-large-log-files)-->

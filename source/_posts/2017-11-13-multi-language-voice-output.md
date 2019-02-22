@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 Windows 10 上，操作系统自带了一系列高质量的文本转语言引擎，而且不局限于英文。可用的 TTS 引擎数量依赖于您所安装的语言。
 
@@ -31,5 +30,4 @@ $speaker.Speak($text)
 
 如果您希望使用不同的语言，只需要将 LANGID 数字调整为您希望使用的文化代号。
 
-<!--more-->
-本文国际来源：[Multi-Language Voice Output](http://community.idera.com/powershell/powertips/b/tips/posts/multi-language-voice-output)
+<!--本文国际来源：[Multi-Language Voice Output](http://community.idera.com/powershell/powertips/b/tips/posts/multi-language-voice-output)-->

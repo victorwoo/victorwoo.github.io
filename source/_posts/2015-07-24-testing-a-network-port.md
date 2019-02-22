@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这个 `Test-Port` 的测试函数可以通过一个网络端口测试一台远程的机器。它传入一个远程机器名（或 IP 地址），以及可选的端口号和和超时值。
 
@@ -54,5 +53,4 @@ tags:
 
 由于缺省的超时值是 1 秒，您最多等待 1 秒就能等到响应。
 
-<!--more-->
-本文国际来源：[Testing a Network Port](http://community.idera.com/powershell/powertips/b/tips/posts/testing-a-network-port)
+<!--本文国际来源：[Testing a Network Port](http://community.idera.com/powershell/powertips/b/tips/posts/testing-a-network-port)-->

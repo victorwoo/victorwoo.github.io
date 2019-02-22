@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 
 Ole Morten Didriksen 发现了一些 API 调用可以启用音量控制 ([https://gist.github.com/oledid](https://gist.github.com/oledid))。通过这种方法，用 PowerShell 控制音量静音、取消静音、设置音量就很容易了：
@@ -75,5 +74,4 @@ public class Audio {
 [Audio]::Volume = 0.75
 ```
 
-<!--more-->
-本文国际来源：[Controlling Audio (Mute and Volume)](http://community.idera.com/powershell/powertips/b/tips/posts/controlling-audio-mute-and-volume)
+<!--本文国际来源：[Controlling Audio (Mute and Volume)](http://community.idera.com/powershell/powertips/b/tips/posts/controlling-audio-mute-and-volume)-->

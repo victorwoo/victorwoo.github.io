@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您安装了微软免费提供的 RSAT 工具，您可以使用 PowerShell 来更新您 AD 用户账户中存储的信息，例如您的办公电话号码。
 
@@ -24,5 +23,4 @@ tags:
     $user = $env:USERNAME
     Set-ADUser -Identity $user -OfficePhone $phoneNumber
 
-<!--more-->
-本文国际来源：[Updating Your Office Phone Number in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/updating-your-office-phone-number-in-active-directory)
+<!--本文国际来源：[Updating Your Office Phone Number in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/updating-your-office-phone-number-in-active-directory)-->

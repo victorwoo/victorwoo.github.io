@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们提供了一个很棒的 PowerShell 速查表。让我们来看看 PowerShell 能够怎样下载这些速查表：
 
@@ -51,5 +50,4 @@ explorer $Path
 
 当您运行这段脚本时，PowerShell 将下载所有的速查表并且将它们存放在桌面上一个名为 "CheatSheets" 的新文件夹中。祝您读得愉快！
 
-<!--more-->
-本文国际来源：[PowerShell Cheat Sheet Compilation (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/powershell-cheat-sheet-compilation-part-2)
+<!--本文国际来源：[PowerShell Cheat Sheet Compilation (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/powershell-cheat-sheet-compilation-part-2)-->

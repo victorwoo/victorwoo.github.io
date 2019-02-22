@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您读取一个“可扩充字符串”类型的注册表值时，它将自动展开文本中的所有环境变量值。
 
@@ -33,5 +32,4 @@ tags:
 	$key = Get-Item -Path $path
 	$key.GetValueKind('DevicePath')
 
-<!--more-->
-本文国际来源：[Reading StringExpand Registry Values](http://community.idera.com/powershell/powertips/b/tips/posts/reading-stringexpand-registry-values)
+<!--本文国际来源：[Reading StringExpand Registry Values](http://community.idera.com/powershell/powertips/b/tips/posts/reading-stringexpand-registry-values)-->

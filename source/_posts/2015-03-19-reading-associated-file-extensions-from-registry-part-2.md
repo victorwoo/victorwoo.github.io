@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -47,5 +46,4 @@ _适用于 PowerShell 所有版本_
 
     Registry::HKCR\.*
 
-<!--more-->
-本文国际来源：[Reading Associated File Extensions from Registry (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-associated-file-extensions-from-registry-part-2)
+<!--本文国际来源：[Reading Associated File Extensions from Registry (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-associated-file-extensions-from-registry-part-2)-->

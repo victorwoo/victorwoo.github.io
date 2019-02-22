@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，cmdlet 自动显示一个进度条，以下是一个显示进度条的例子：
 
@@ -49,5 +48,4 @@ $ProgressPreference
 
 如您所见，当脚本块执行完之后，原始变量自动恢复原始值。
 
-<!--more-->
-本文国际来源：[Hiding Progress Bars](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hiding-progress-bars-2)
+<!--本文国际来源：[Hiding Progress Bars](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hiding-progress-bars-2)-->

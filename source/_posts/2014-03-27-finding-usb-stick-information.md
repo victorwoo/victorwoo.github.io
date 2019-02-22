@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您知道吗，Windows 记录了您使用过的所有 U 盘信息。要从注册表中读取上述信息，只需要使用这个函数：
 
@@ -37,5 +36,4 @@ tags:
 
 ![](/img/2014-03-27-finding-usb-stick-information-002.png)
 
-<!--more-->
-本文国际来源：[Finding USB Stick Information](http://community.idera.com/powershell/powertips/b/tips/posts/finding-usb-stick-information)
+<!--本文国际来源：[Finding USB Stick Information](http://community.idera.com/powershell/powertips/b/tips/posts/finding-usb-stick-information)-->

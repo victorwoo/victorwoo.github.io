@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您向一个 AD 对象增加委派权限（例如允许一个用户管理一个组织对象的成员）时，实际上是调用了该 AD 对象的改变安全设置方法。
 
@@ -28,5 +27,4 @@ AD 安全描述符有可能非常复杂。复制 AD 安全信息却非常简单�
     # assign security to NewOU2
     Set-Acl -Path 'AD:\OU=NewOU2,DC=powershell,DC=local' -AclObject $sd
 
-<!--more-->
-本文国际来源：[Cloning Active Directory Security Settings](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-active-directory-security-settings)
+<!--本文国际来源：[Cloning Active Directory Security Settings](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-active-directory-security-settings)-->

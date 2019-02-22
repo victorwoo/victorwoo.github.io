@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 3.0 开始，有一个很简单的办法来确定一个脚本所在的文件夹：`$PSScriptRoot`。这个变量总是保存了指定脚本所存放的文件夹路径。
 
@@ -20,6 +19,5 @@ tags:
 	"$PSScriptRoot\myFunctions.ps1"
 
 别忘了用“dot-source”语法（在路径之前加点号）。否则只会输出该路径名（而不是执行该路径表示的脚本）。
-<!--more-->
 
-本文国际来源：[Finding Current Script Folder](http://community.idera.com/powershell/powertips/b/tips/posts/finding-current-script-folder)
+<!--本文国际来源：[Finding Current Script Folder](http://community.idera.com/powershell/powertips/b/tips/posts/finding-current-script-folder)-->

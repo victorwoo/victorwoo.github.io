@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以查询基于 XML 内容的网站，以下是一个查询电影数据库的例子：
 
@@ -29,5 +28,4 @@ PowerShell 可以查询基于 XML 内容的网站，以下是一个查询电影�
     $xml = [XML]$content
     $xml.Data.Series | Out-GridView
 
-<!--more-->
-本文国际来源：[Finding Information about TV Series](http://community.idera.com/powershell/powertips/b/tips/posts/finding-information-about-tv-series)
+<!--本文国际来源：[Finding Information about TV Series](http://community.idera.com/powershell/powertips/b/tips/posts/finding-information-about-tv-series)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中您学习到了如何使用 `Export-CliXml` 命令来序列化数据并且用 `Compress-Archive` 将巨大的 XML 文件压缩成远远小于原始文件的尺寸。
 
@@ -36,5 +35,4 @@ Remove-Item -Path $Path -Recurse -Force
 $objects | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Uncompressing Serialized Data](http://community.idera.com/powershell/powertips/b/tips/posts/uncompressing-serialized-data)
+<!--本文国际来源：[Uncompressing Serialized Data](http://community.idera.com/powershell/powertips/b/tips/posts/uncompressing-serialized-data)-->

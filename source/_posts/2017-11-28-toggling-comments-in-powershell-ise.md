@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell ISE 暴露了一些可扩展的组件。例如，如果您希望按下 `CTRL`+`K` 切换选中文本的注释状态，请试试这段代码：
 
@@ -37,5 +36,4 @@ $psise.CurrentPowerShellTab.AddOnsMenu.Submenus.Add('Toggle Comment', { Toggle-C
 
 在位于 `$profile` 的用户配置文件脚本中（这个路径可能还不存在）增加这段代码，PowerShell ISE 每次启动的时候就会自动运行这段代码。
 
-<!--more-->
-本文国际来源：[Toggling Comments in PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/toggling-comments-in-powershell-ise)
+<!--本文国际来源：[Toggling Comments in PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/toggling-comments-in-powershell-ise)-->

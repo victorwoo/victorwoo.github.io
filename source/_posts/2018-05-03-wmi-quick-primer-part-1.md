@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WMI 是管理员的一个有用的信息源。您所需要的知识 WMI 类的名字，它代表了您感兴趣的东西。查找合法的 WMI 类名的最简单方法是搜索。
 
@@ -51,5 +50,4 @@ Get-WmiObject -Class Win32_OperatingSystem |
     Select-Object -Property Name, LastBootupTime, OSType
 ```
 
-<!--more-->
-本文国际来源：[WMI Quick Primer (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-1)
+<!--本文国际来源：[WMI Quick Primer (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-1)-->

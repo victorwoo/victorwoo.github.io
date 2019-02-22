@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Out-GridView` 总是以每个对象一行的方式生成表格：
 
@@ -59,5 +58,4 @@ function Flip-Object
 }
 ```
 
-<!--more-->
-本文国际来源：[Displaying Data in a Grid View Window Vertically](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-data-in-a-grid-view-window-vertically)
+<!--本文国际来源：[Displaying Data in a Grid View Window Vertically](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-data-in-a-grid-view-window-vertically)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您下载了 PowerShell 的帮助文件，有一个获取各类 PowerShell 主题的快捷方法：
 
@@ -59,5 +58,4 @@ about_Type_Operators       HelpFile        Describes the operators that work wit
 PS> explorer $pshome\en-us
 ```
 
-<!--more-->
-本文国际来源：[Getting Help for PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/getting-help-for-powershell)
+<!--本文国际来源：[Getting Help for PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/getting-help-for-powershell)-->

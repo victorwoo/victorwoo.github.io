@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以轻松地在 PowerShell 中将对象数据转化为 CSV 文件。以下代码生成当前进程的 CSV 报告：
 
@@ -26,5 +25,4 @@ tags:
     $RealExcelPath = Resolve-Path -Path $ExcelPath | Select-Object -First 1 -ExpandProperty Path
     & $RealExcelPath $report 
 
-<!--more-->
-本文国际来源：[Exporting Data to Excel](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-data-to-excel)
+<!--本文国际来源：[Exporting Data to Excel](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-data-to-excel)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 3 以上版本*
 
@@ -41,5 +40,4 @@ PS> $psise.Options.ConsolePaneForegroundColor = '#FFFFFF'
 
 颜色可以用三个十六进制值构成，分别由红色、绿色和蓝色分量组成。
 
-<!--more-->
-本文国际来源：[Color Week: Setting PowerShell ISE Console Colors](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-setting-powershell-ise-console-colors)
+<!--本文国际来源：[Color Week: Setting PowerShell ISE Console Colors](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-setting-powershell-ise-console-colors)-->

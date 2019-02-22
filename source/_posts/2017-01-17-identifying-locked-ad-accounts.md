@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在搜索指定的 AD 账户时，您可能曾经用过 `Get-ADUser` 命令，并且用 filter 参数来过滤结果。不过这样的过滤器可能会变得非常复杂。
 
@@ -28,5 +27,4 @@ Search-ADAccount -AccountInactive
 
 `Search-ADAccount` 暴露一系列参数来搜索最常见的条件。
 
-<!--more-->
-本文国际来源：[Identifying Locked AD Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-locked-ad-accounts)
+<!--本文国际来源：[Identifying Locked AD Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-locked-ad-accounts)-->

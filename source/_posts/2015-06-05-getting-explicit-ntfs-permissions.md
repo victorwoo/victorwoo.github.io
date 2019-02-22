@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要查看某个文件或者文件夹被直接赋予了哪些 NTFS 权限，请注意“isInherited”属性。这段代码将创建一个名为“_sampleFolderNTFS_”的新文件夹，并且列出所有非继承的 NTFS 权限。当您创建该文件夹时，它只拥有继承的权限，所以您查看非继承权限的时候获得不到任何结果：
 
@@ -37,5 +36,4 @@ tags:
     # set new permissions
     $acl | Set-Acl -Path $path
 
-<!--more-->
-本文国际来源：[Getting Explicit NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/getting-explicit-ntfs-permissions)
+<!--本文国际来源：[Getting Explicit NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/getting-explicit-ntfs-permissions)-->

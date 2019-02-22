@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 类似 "http://bit.ly/e0Mw9w" 这样的网址十分短小，并且使用起来很方便。但它们往往屏蔽了原始的信息。
 
@@ -32,5 +31,4 @@ $trueUrl = $response.GetResponseHeader("Location")
     http://bit.ly/e0Mw9w -> http://www.leeholmes.com/projects/ps_html5/Invoke-PSHtml5.ps1
 
 
-<!--more-->
-本文国际来源：[Uncover Tiny URLs](http://community.idera.com/powershell/powertips/b/tips/posts/uncover-tiny-urls)
+<!--本文国际来源：[Uncover Tiny URLs](http://community.idera.com/powershell/powertips/b/tips/posts/uncover-tiny-urls)-->

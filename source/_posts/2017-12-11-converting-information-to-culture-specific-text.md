@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望将信息转换为指定的区域标准，那么可以轻松地用 `ToString()` 方法和合适的目标信息。
 
@@ -46,5 +45,4 @@ $dateString
 
     星期三 01.十一月 2017
 
-<!--more-->
-本文国际来源：[Converting Information to Culture-Specific Text](http://community.idera.com/powershell/powertips/b/tips/posts/converting-information-to-culture-specific-text)
+<!--本文国际来源：[Converting Information to Culture-Specific Text](http://community.idera.com/powershell/powertips/b/tips/posts/converting-information-to-culture-specific-text)-->

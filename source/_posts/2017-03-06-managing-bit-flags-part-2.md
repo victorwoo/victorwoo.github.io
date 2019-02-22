@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何使用 PowerShell 5 新的枚举特性来解析bite标志位，甚至可以独立地检测每个标志位。
 
@@ -72,5 +71,4 @@ Option1, Option6, Option7, Option8, Option9, Option12, Option13
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Managing Bit Flags (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-2)
+<!--本文国际来源：[Managing Bit Flags (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-2)-->

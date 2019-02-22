@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 随着您硬盘上的 PowerShell 脚本数量的增多，要想找到您想要的脚本会变得越来越困难。以下是一个叫做 `Find-Script` 的工具函数。只要传入一个关键词，PowerShell 将会在您的个人文件夹下找出所有包含该关键词的脚本。
 
@@ -36,6 +35,5 @@ tags:
 	} 
 
 默认情况下，`Find-Script` 只返回满足搜索条件的前 20 个脚本。您可以通过 `-Maximum` 和 `-StartPath` 参数来改变最大搜索条数和搜索位置。
-<!--more-->
 
-本文国际来源：[Finding Scripts by Keyword](http://community.idera.com/powershell/powertips/b/tips/posts/finding-scripts-by-keyword)
+<!--本文国际来源：[Finding Scripts by Keyword](http://community.idera.com/powershell/powertips/b/tips/posts/finding-scripts-by-keyword)-->

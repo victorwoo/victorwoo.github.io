@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Invoke-Expression` 接受任何字符串输入并将它视为 PowerShell 代码。通过这种方式，您可以动态地创建代码，并执行它。
 
@@ -31,5 +30,4 @@ tags:
     
     $file.Editor.text = (Invoke-WebRequest -Uri 'http://bit.ly/e0Mw9w' -UseBasicParsing).Content
 
-<!--more-->
-本文国际来源：[Why Invoke-Expression is Evil](http://community.idera.com/powershell/powertips/b/tips/posts/why-invoke-expression-is-evil)
+<!--本文国际来源：[Why Invoke-Expression is Evil](http://community.idera.com/powershell/powertips/b/tips/posts/why-invoke-expression-is-evil)-->

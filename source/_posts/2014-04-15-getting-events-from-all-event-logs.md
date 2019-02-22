@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 最近，一个读者咨询如何从所有事件日志中获取全部事件，并且能将它们保存到文件中。
 
@@ -47,5 +46,4 @@ tags:
 
 请注意远程操作需要 Administrator 特权。远程操作可能需要额外的安全设置。另外，请注意如果以非 Administrator 身份运行该代码，将会收到红色的错误提示信息（因为某些日志，比如说“安全”需要特殊的操作权限）。
 
-<!--more-->
-本文国际来源：[Getting Events From All Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/getting-events-from-all-event-logs)
+<!--本文国际来源：[Getting Events From All Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/getting-events-from-all-event-logs)-->

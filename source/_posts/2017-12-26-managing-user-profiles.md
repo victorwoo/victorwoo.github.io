@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要转储一台机子上用户配置文件的原始列表，请使用这行代码：
 
@@ -85,5 +84,4 @@ Videos                           : Win32_FolderRedirectionHealth
 PSComputerName                   :
 ```
 
-<!--more-->
-本文国际来源：[Managing User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/managing-user-profiles)
+<!--本文国际来源：[Managing User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/managing-user-profiles)-->

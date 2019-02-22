@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -39,5 +38,4 @@ _适用于 PowerShell 所有版本_
 
 您可以稍后将优先级调回 Normal，甚至可以调高优先级使脚本获得更多资源执行。例如需要执行更重的任务，不过这会使 UI 响应性变得更差。
 
-<!--more-->
-本文国际来源：[Changing PowerShell Priority](http://community.idera.com/powershell/powertips/b/tips/posts/changing-powershell-priority)
+<!--本文国际来源：[Changing PowerShell Priority](http://community.idera.com/powershell/powertips/b/tips/posts/changing-powershell-priority)-->

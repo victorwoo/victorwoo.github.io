@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有一个 `GetHostByName()` .NET 函数十分有用。它可以查询一个主机名并返回其当前的 IP 地址：
 
@@ -49,5 +48,4 @@ tags:
 
 注意该函数有一个非常简易的错误处理器。如果您传入了一个无法解析的计算机名，那么什么事也不会发生。如果您需要处理错误信息，请在 catch 代码块中添加代码。
 
-<!--more-->
-本文国际来源：[Getting DNS IP Address from Host Name](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dns-ip-address-from-host-name)
+<!--本文国际来源：[Getting DNS IP Address from Host Name](http://community.idera.com/powershell/powertips/b/tips/posts/getting-dns-ip-address-from-host-name)-->

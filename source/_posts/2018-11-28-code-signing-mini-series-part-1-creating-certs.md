@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要使用数字签名，以及探索如何对脚本和模块签名，您首先需要代码签名证书。如果您无法从公司的 IT 部门获取到代码签名证书，PowerShell 可以为您创建一个（假设您使用的是 Windows 10 或者 Server 2016）。
 
@@ -97,5 +96,4 @@ PS C:\> certmgr.msc
 
 请注意自签名证书仅在复制到受信任的根证书发布者容器之后才能被信任。当使用 `-Trusted` 开关参数之后，会自动应用以上操作。
 
-<!--more-->
-本文国际来源：[Code-Signing Mini-Series (Part 1: Creating Certs)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-1-creating-certs)
+<!--本文国际来源：[Code-Signing Mini-Series (Part 1: Creating Certs)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-1-creating-certs)-->

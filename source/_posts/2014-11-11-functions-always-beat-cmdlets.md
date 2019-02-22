@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -51,5 +50,4 @@ _适用于 PowerShell 所有版本_
 
 或者，只需要用 `-noprofile` 参数启动一个新的 PowerShell，确保没有人能混进您的 PowerShell 环境即可。
 
-<!--more-->
-本文国际来源：[Functions Always Beat Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/functions-always-beat-cmdlets)
+<!--本文国际来源：[Functions Always Beat Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/functions-always-beat-cmdlets)-->

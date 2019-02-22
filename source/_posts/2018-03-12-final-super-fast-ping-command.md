@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能系列中，我们开发了一个名为 `Test-OnlineFast` 的新函数，可以在短时间内 ping 多台计算机。出于某些原因，最终版本并没有包含我们承诺的管道功能。以下是再次带给您的完整函数：
 
@@ -155,5 +154,4 @@ Address         Online DNSName                            Status
 
 神奇的是超快的速度。ping 整个子网只花费了几秒钟。
 
-<!--more-->
-本文国际来源：[Final Super-Fast Ping Command](http://community.idera.com/powershell/powertips/b/tips/posts/final-super-fast-ping-command)
+<!--本文国际来源：[Final Super-Fast Ping Command](http://community.idera.com/powershell/powertips/b/tips/posts/final-super-fast-ping-command)-->

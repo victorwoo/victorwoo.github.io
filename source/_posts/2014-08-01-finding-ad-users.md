@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -33,5 +32,4 @@ _适用于所有 PowerShell 版本_
       ForEach-Object { $_.GetDirectoryEntry()  } | 
       Select-Object -Property *
 
-<!--more-->
-本文国际来源：[Finding AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-users)
+<!--本文国际来源：[Finding AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-users)-->

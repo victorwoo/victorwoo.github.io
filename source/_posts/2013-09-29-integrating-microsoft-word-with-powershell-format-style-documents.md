@@ -9,10 +9,8 @@ categories:
 tags:
 - powershell
 - script
-- translation
 ---
 在这个系列的上一步中，我们演示了[用Windows PowerShell创建Microsoft Word文档][1]的基本步骤。如果您试用了我的示例脚本，您会注意到文档格式化方面略有不足。幸运的是，我们有一些简洁的办法来改进您文档的质量，我将会在这篇文章中向您演示这个过程。我们将用第一部分的脚本作为起点。
-<!--more-->
 
 关键之处在于 `Selection` 对象。
 

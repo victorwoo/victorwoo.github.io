@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要在 PowerShell 3.0 ISE 编辑器中获得 PowerShell 所有类型的操作符帮助信息，首先列出关于操作符的所有帮助主题： 
 
@@ -33,5 +32,4 @@ tags:
 如果您没有看见这个列表，您也许需要先下载 PowerShell 帮助文档。请通过 `Update-Help` 来查看方法！
 
 然后，单击其中的任意一个主题，然后按下 `F1` 键。帮助窗口将会打开，并显示详细的帮助。
-<!--more-->
-本文国际来源：[Press F1 to Navigate PowerShell Help Topics](http://community.idera.com/powershell/powertips/b/tips/posts/press-f1-to-navigate-powershell-help-topics)
+<!--本文国际来源：[Press F1 to Navigate PowerShell Help Topics](http://community.idera.com/powershell/powertips/b/tips/posts/press-f1-to-navigate-powershell-help-topics)-->

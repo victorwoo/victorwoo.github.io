@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -25,5 +24,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 要控制递归的深度，请使用 `ConvertTo-Json` 命令的 `-Depth` 参数。缺省值是 2（所以最多显示 2 层递归深度的内容）。
 
-<!--more-->
-本文国际来源：[Unfolding Object Data Structure](http://community.idera.com/powershell/powertips/b/tips/posts/unfolding-object-data-structure)
+<!--本文国际来源：[Unfolding Object Data Structure](http://community.idera.com/powershell/powertips/b/tips/posts/unfolding-object-data-structure)-->

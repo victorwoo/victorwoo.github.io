@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 脚本块日志的迷你系列的第 7 部分。我们现在只需要一些能清理脚本快日志记录的清理工具，您需要管理员特权。
 
@@ -50,5 +49,4 @@ function Clear-PowerShellLog
     Write-Warning "Administrator privileges required. Run this command from an elevated PowerShell."
 ```
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 7)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-7)
+<!--本文国际来源：[Understanding Script Block Logging (Part 7)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-7)-->

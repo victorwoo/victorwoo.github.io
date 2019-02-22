@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设在一个文件夹中有一大堆脚本（或照片、日志等任意文件），并且您想要重命名所有的文件。比如新文件名的格式为固定前缀 + 自增的编号。
 
@@ -33,5 +32,4 @@ tags:
         $script:Counter++
        } -WhatIf
 
-<!--more-->
-本文国际来源：[Bulk File Renaming](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-file-renaming)
+<!--本文国际来源：[Bulk File Renaming](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-file-renaming)-->

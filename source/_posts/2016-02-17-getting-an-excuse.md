@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个快速的方法来得到一个借口——假设您有 Internet 连接：
 
@@ -30,5 +29,4 @@ tags:
 
 它演示了如何使用 `Invoke-WebRequest` 来下载一个网页的 HTML 内容，然后使用正则表达式来抓取网页的内容。
 
-<!--more-->
-本文国际来源：[Getting an Excuse](http://community.idera.com/powershell/powertips/b/tips/posts/getting-an-excuse)
+<!--本文国际来源：[Getting an Excuse](http://community.idera.com/powershell/powertips/b/tips/posts/getting-an-excuse)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您无法使用 PowerShell 远程处理，那么您需要通过 DCOM 从另一个系统中读取注册表值，以下是一些您可能希望试验的示例代码：
 
@@ -42,5 +41,4 @@ $reg.Close()
 * `RemoteRegistry` 服务在对方机器上运行
 * 对方机器的本地防火墙启用了“远程管理例外”
 
-<!--more-->
-本文国际来源：[Reading Registry Remotely (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-remotely-part-1)
+<!--本文国际来源：[Reading Registry Remotely (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-remotely-part-1)-->

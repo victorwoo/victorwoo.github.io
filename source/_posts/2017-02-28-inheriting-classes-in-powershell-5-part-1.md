@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5 内置了类的支持。您可以使用这个新特性来增强已有的 .NET 类的功能。以下是一个例子：创建一个包含新功能的增强的进程类。
 
@@ -124,5 +123,4 @@ $notepad.Close(10)
 
 如您在这个例子中所见，当您从这个类创建一个新实例时，它启动了一个新的进程，而且这些进程照常暴露出相同的属性和方法。而且，有一些新的例如 `SetPriority()` 和 `Close()` 的新方法。
 
-<!--more-->
-本文国际来源：[Inheriting Classes in PowerShell 5 (part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/inheriting-classes-in-powershell-5-part-1)
+<!--本文国际来源：[Inheriting Classes in PowerShell 5 (part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/inheriting-classes-in-powershell-5-part-1)-->

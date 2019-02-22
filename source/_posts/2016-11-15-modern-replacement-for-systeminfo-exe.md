@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 曾几何时，systeminfo.exe 返回一台电脑所有的分析信息，并且有一些能够在 PowerShell 中变成面向对象的：
 
@@ -211,5 +210,4 @@ tags:
     DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus :
 
 
-<!--more-->
-本文国际来源：[Modern Replacement for systeminfo.exe](http://community.idera.com/powershell/powertips/b/tips/posts/modern-replacement-for-systeminfo-exe)
+<!--本文国际来源：[Modern Replacement for systeminfo.exe](http://community.idera.com/powershell/powertips/b/tips/posts/modern-replacement-for-systeminfo-exe)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如前一个技巧所述，用后台任务来同步运行任务往往效率不高。当后台任务返回的数据量增加时，它的执行性能变得更差。
 
@@ -50,5 +49,4 @@ tags:
     
 如果依次执行这三个任务，分别执行 `Start-Sleep` 语句将至少消耗 12 秒。事实上该脚本只消耗 5 秒多一点。处理结果分别为 `$result1`，`$result2` 和 `$result3`。相对后台任务而言，返回大量数据基本不会造成时间消耗。
 
-<!--more-->
-本文国际来源：[Running Background Jobs Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/running-background-jobs-efficiently)
+<!--本文国际来源：[Running Background Jobs Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/running-background-jobs-efficiently)-->

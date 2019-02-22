@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 若要为您的PowerShell函数增加指定的详细输出信息（verbose output），请增加 `CmdletBinding` 属性到您的函数，使它支持公共参数。
 （译者注：公共参数例如 `-Verbose`、`-Debug` 等）
@@ -48,6 +47,5 @@ tags:
 	Doing Something
 	Shutting Down
 
-<!--more-->
 
-本文国际来源：[Verbose Output for PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/verbose-output-for-powershell-functions)
+<!--本文国际来源：[Verbose Output for PowerShell Functions](http://community.idera.com/powershell/powertips/b/tips/posts/verbose-output-for-powershell-functions)-->

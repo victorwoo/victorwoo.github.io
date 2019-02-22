@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5.1 开始，PowerShell 控制台支持 VT 转义序列，它可以用于对控制台文本定位和格式化。请注意它只对控制台有效，而对 PowerShell ISE 无效。另外还请注意您需要 Windows 10 或者类似 ConEmu 等模拟器。
 
@@ -101,5 +100,4 @@ foreach($rback in (0..255))
 }
 ```
 
-<!--more-->
-本文国际来源：[Using Colors in PowerShell Console](http://community.idera.com/powershell/powertips/b/tips/posts/using-colors-in-powershell-console)
+<!--本文国际来源：[Using Colors in PowerShell Console](http://community.idera.com/powershell/powertips/b/tips/posts/using-colors-in-powershell-console)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何读取和改变 Lenovo 计算机的 BIOS 设置。例如，以下代码禁止 WakeOnLan：
 
@@ -40,5 +39,4 @@ $SaveSettings.SaveBiosSettings("$BIOSPassword,ascii,us").return
 
 请注意该密码仅在该设置项受 BIOS 密码保护的情况下生效。如果实际中没有密码而您输入了密码，它并不会被验证，而且改动会生效。
 
-<!--more-->
-本文国际来源：[Managing Lenovo BIOS Settings (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-4)
+<!--本文国际来源：[Managing Lenovo BIOS Settings (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-4)-->

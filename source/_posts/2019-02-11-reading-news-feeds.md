@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个针对有德语技能的用户的特殊服务——对于其他人修改代码会有所挑战：以下代码使用了德国主要新闻杂志的 RSS 订阅，打开一个选择窗口。在窗口中您可以选择一篇或多篇文章，然后在缺省的浏览器中打开选择的文章：
 
@@ -35,5 +34,4 @@ $xml.rss.channel.item  |
 
 基本的设计过程是一致的：要将代码改为另一个 RSS 订阅，只需要导航到相应的属性（背后的 XML 的嵌套结构）。
 
-<!--more-->
-本文国际来源：[Reading News Feeds](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/reading-news-feeds)
+<!--本文国际来源：[Reading News Feeds](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/reading-news-feeds)-->

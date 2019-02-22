@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个重要的 PowerShell 变量的列表：`$pshome` 表示 PowerShell 所在的位置。`$home` 是个人用户配置文件夹的路径。`$PSVersionTable` 返回 PowerShell 的版本和重要的子组件的版本：
 
@@ -53,5 +52,4 @@ C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Important PowerShell Variables](http://community.idera.com/powershell/powertips/b/tips/posts/important-powershell-variables)
+<!--本文国际来源：[Important PowerShell Variables](http://community.idera.com/powershell/powertips/b/tips/posts/important-powershell-variables)-->

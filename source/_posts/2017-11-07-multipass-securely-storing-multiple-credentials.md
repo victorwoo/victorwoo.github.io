@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 If you’d like to safely store credentials (usernames and password) for your personal use in a file, here is a very simple yet extremely powerful approach. Take a look at this code:
 
@@ -40,5 +39,4 @@ You can then access the credentials via the properties “User1”, “User2”,
     --------                     --------
     AlbertK  System.Security.SecureString
 
-<!--more-->
-本文国际来源：[Multipass: Securely Storing Multiple Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/multipass-securely-storing-multiple-credentials)
+<!--本文国际来源：[Multipass: Securely Storing Multiple Credentials](http://community.idera.com/powershell/powertips/b/tips/posts/multipass-securely-storing-multiple-credentials)-->

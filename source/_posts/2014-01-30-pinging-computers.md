@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有很多种方法可供您 ping 主机。以下是一个简单的将传统的 ping.exe 结合进您的脚本的方法：
 
@@ -29,5 +28,4 @@ tags:
 
 	'??','127.0.0.1','localhost','notthere',$env:COMPUTERNAME | Test-Online
 
-<!--more-->
-本文国际来源：[Pinging Computers](http://community.idera.com/powershell/powertips/b/tips/posts/pinging-computers)
+<!--本文国际来源：[Pinging Computers](http://community.idera.com/powershell/powertips/b/tips/posts/pinging-computers)-->

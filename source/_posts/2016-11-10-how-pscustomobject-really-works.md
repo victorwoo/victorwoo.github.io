@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何快速用 `PSCustomObject` 创建一个新对象：
 
@@ -61,5 +60,4 @@ $o = New-Object -TypeName PSObject -Property $hash
 $o
 ```
 
-<!--more-->
-本文国际来源：[How PSCustomObject Really Works](http://community.idera.com/powershell/powertips/b/tips/posts/how-pscustomobject-really-works)
+<!--本文国际来源：[How PSCustomObject Really Works](http://community.idera.com/powershell/powertips/b/tips/posts/how-pscustomobject-really-works)-->

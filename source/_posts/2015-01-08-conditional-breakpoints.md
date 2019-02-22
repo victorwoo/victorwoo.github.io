@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -50,5 +49,4 @@ PowerShell ISE 只支持行断点：它们的作用是当调试器命中指定�
     
     Remove-PSBreakpoint -Breakpoint $bp
 
-<!--more-->
-本文国际来源：[Conditional Breakpoints](http://community.idera.com/powershell/powertips/b/tips/posts/conditional-breakpoints)
+<!--本文国际来源：[Conditional Breakpoints](http://community.idera.com/powershell/powertips/b/tips/posts/conditional-breakpoints)-->

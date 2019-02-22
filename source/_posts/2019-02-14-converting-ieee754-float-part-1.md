@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 是非常多功能的，并且现在常常用于 IoT 和传感器。一些 IEEE754 浮点格式往往是一系列四字节的十六进制数。
 
@@ -64,5 +63,4 @@ OverloadDefinitions
 static uint32 ToUInt32(byte[] value, int startIndex)  
 ```
 
-<!--more-->
-本文国际来源：[Converting IEEE754 (Float) (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-ieee754-float-part-1)
+<!--本文国际来源：[Converting IEEE754 (Float) (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-ieee754-float-part-1)-->

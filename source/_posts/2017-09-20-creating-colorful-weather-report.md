@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何用 `Invoke-WebRequest` 来获取天气预报数据。获取到的数据是纯黑白的文本。
 
@@ -25,5 +24,4 @@ $City = 'Hannover'
 
 只需要将 user agent 设为“curl”，Windows 10 powershell.exe 就能收到包含色彩控制序列的输出。
 
-<!--more-->
-本文国际来源：[Creating Colorful Weather Report](http://community.idera.com/powershell/powertips/b/tips/posts/creating-colorful-weather-report)
+<!--本文国际来源：[Creating Colorful Weather Report](http://community.idera.com/powershell/powertips/b/tips/posts/creating-colorful-weather-report)-->

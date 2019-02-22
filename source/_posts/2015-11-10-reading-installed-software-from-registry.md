@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是查看已安装的软件的快速方法。`Get-Software` 函数读取所有用户的 32 位和 64 位软件的安装地址。
 
@@ -44,5 +43,4 @@ tags:
 
     Get-Software -DisplayName *Office* | Out-GridView
 
-<!--more-->
-本文国际来源：[Reading Installed Software from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-from-registry)
+<!--本文国际来源：[Reading Installed Software from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-from-registry)-->

@@ -76,7 +76,6 @@ tags:
 |CONTENT|当前行是正文内容|
 
 然后用一个 `switch` 语句让 `$status` 变量在这些状态之间来回跳转，就能解析出一个一个独立的消息文件了。完整代码如下：
-<!--more-->
 
     function Get-Status($status, $textLine, $lineNumber, $block) {
         $splitter = '================================================================'

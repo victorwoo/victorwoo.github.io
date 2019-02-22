@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 默认情况下，脚本块日志数据对所有人都可见，不仅是管理员。当启用了脚本块日志后，所有用户都可以访问日志并读取它的内容。最简单的方式是用这行代码下载工具：
 
@@ -40,5 +39,4 @@ Restart-Service -Name EventLog -Force
 
 现在，当一个普通用户尝试读取脚本块日志的记录时，什么信息也不会返回。
 
-<!--more-->
-本文国际来源：[Hardening Script Block Logging](http://community.idera.com/powershell/powertips/b/tips/posts/hardening-script-block-logging)
+<!--本文国际来源：[Hardening Script Block Logging](http://community.idera.com/powershell/powertips/b/tips/posts/hardening-script-block-logging)-->

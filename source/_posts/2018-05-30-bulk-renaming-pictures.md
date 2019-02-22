@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 重命名单个文件可以很容易地用 `Rename-Item` 实现，但是有些时候 cmdlet 参数可以更聪明地使用，帮您实现批量自动化。
 
@@ -52,5 +51,4 @@ $files | Rename-Item -NewName {
 
 警告：在某些 PowerShell 版本中有一个不友好的 bug，重命名文件将改变 `Get-ChildItem` 的输出，所以如果您直接将 `Get-ChildItem` 的结果通过管道传给 `Rename-Item`，您可能会遇到无限死循环，文件会一直被重命名直到文件路径长度超过限制。要安全地使用它，请确保在将变量传给 `Rename-Item` 之前将 `Get-ChildItem` 的结果保存到变量中！
 
-<!--more-->
-本文国际来源：[Bulk-Renaming Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-pictures)
+<!--本文国际来源：[Bulk-Renaming Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-pictures)-->

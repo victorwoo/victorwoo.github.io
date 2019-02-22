@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何记录脚本结果，以及如何使用括号来同时输出和赋值：
 
@@ -101,5 +100,4 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Outputting and Assigning at the same time](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-amp-assigning-at-the-same-time)
+<!--本文国际来源：[Outputting and Assigning at the same time](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-amp-assigning-at-the-same-time)-->

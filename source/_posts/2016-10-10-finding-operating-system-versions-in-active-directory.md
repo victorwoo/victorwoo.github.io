@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您安装了带有 "ActiveDirectory" PowerShell 模块的 Microsoft RSAT 工具，以下是一个快速获取您环境中操作系统清单的快速方法：
 
@@ -33,5 +32,4 @@ Get-ADComputer -Filter { Name -like 'Serv*' } -Properties OperatingSystem, Opera
   Select-Object -Property Name, OperatingSystem, OperatingSystemServicePack, OperatingSystemVersion
 ```
 
-<!--more-->
-本文国际来源：[Finding Operating System Versions in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/finding-operating-system-versions-in-active-directory)
+<!--本文国际来源：[Finding Operating System Versions in Active Directory](http://community.idera.com/powershell/powertips/b/tips/posts/finding-operating-system-versions-in-active-directory)-->

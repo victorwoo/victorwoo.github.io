@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 的“安全”日志包含了丰富的审计信息。默认情况下，它记录了所有的提权请求。当您以管理员身份运行一个应用程序的时候，就会产生一条记录。
 
@@ -62,5 +61,4 @@ Out-GridView
 
 接下来，处理事件信息。所有相关的信息都可以在 `ReplacementStrings` 属性中找到。这个属性是一个数组。正如结果所展示的那样，ID 为 4672 的事件，第二个（下标为 1）元素为用户名，第三个（下标为 2）元素为域名，第五个（下标为 4）列出获取到的安全特权。
 
-<!--more-->
-本文国际来源：[Finding UAC Elevations](http://community.idera.com/powershell/powertips/b/tips/posts/finding-uac-elevations)
+<!--本文国际来源：[Finding UAC Elevations](http://community.idera.com/powershell/powertips/b/tips/posts/finding-uac-elevations)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是最简单的读取注册表值的方法：
 
@@ -24,5 +23,4 @@ tags:
     
 只需要将 `$Key` 替换成注册表项，将 `$Name` 替换成注册表键，就能读取它的值。
 
-<!--more-->
-本文国际来源：[Reading Registry Values Easily](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-easily)
+<!--本文国际来源：[Reading Registry Values Easily](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-easily)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 4.0 （Windows 8.1 自带）中的数组原生支持 Foreach 和 Where 操作。这是一个 geek 的写法，所以并不见得比传统的管道有明显的优势（除了也许性能有所提升之外）。
 
@@ -31,5 +30,4 @@ PowerShell 4.0 （Windows 8.1 自带）中的数组原生支持 Foreach 和 Wher
 
 	@(1..10).Where({$_ -gt 2}, 'skipuntil', 5).Foreach([Timespan])
 
-<!--more-->
-本文国际来源：[Hidden Array Extensions in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/hidden-array-extensions-in-powershell-4-0)
+<!--本文国际来源：[Hidden Array Extensions in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/hidden-array-extensions-in-powershell-4-0)-->

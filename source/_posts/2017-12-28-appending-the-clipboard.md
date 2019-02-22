@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5 带来了新的将文本复制到剪贴板，以及取出剪贴板文本的 cmdlet：`Set-Clipboard` 和 `Get-Clipboard`。
 
@@ -32,5 +31,4 @@ Set-ClipBoard "Starting at $(Get-Date)"
 
 这个脚本片段使用 `Set-Clipboard` 将信息粘贴至剪贴板中。脚本运行后，您可以将剪贴板内容粘贴至剪贴板来查看脚本输出的日志。
 
-<!--more-->
-本文国际来源：[Appending the Clipboard](http://community.idera.com/powershell/powertips/b/tips/posts/appending-the-clipboard)
+<!--本文国际来源：[Appending the Clipboard](http://community.idera.com/powershell/powertips/b/tips/posts/appending-the-clipboard)-->

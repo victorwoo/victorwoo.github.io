@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您使用 PowerShellGet 模块（默认随着 Windows 10 和 Server 2016 分发），您可以方便地下载和安装共享的 PowerShell 脚本和模块：
 
@@ -32,5 +31,4 @@ tags:
     PS> Register-PSRepository -Default
 ```
 
-<!--more-->
-本文国际来源：[Registering Default PowerShell Repository](http://community.idera.com/powershell/powertips/b/tips/posts/registering-default-powershell-repository)
+<!--本文国际来源：[Registering Default PowerShell Repository](http://community.idera.com/powershell/powertips/b/tips/posts/registering-default-powershell-repository)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技巧中您学到了如何用 `Invoke-WebRequest` 从 Google 图片搜索中获取图片链接。`Invoke-WebRequest` 还可以做更多的东西。它可以获取图片 URL 并下载图片。
 
@@ -39,5 +38,4 @@ tags:
 
 您可以下载所有匹配关键字“PowerShell”的高分辨率的图片到您指定的 $TargetFolder 文件夹中。
 
-<!--more-->
-本文国际来源：[Automatically Downloading Pictures via Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/automatically-downloading-pictures-via-google-picture-search)
+<!--本文国际来源：[Automatically Downloading Pictures via Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/automatically-downloading-pictures-via-google-picture-search)-->

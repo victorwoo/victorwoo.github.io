@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中，您可以使用变量来指代属性名。这段示例脚本定义了四个 profile 的属性名，然后在一个循环中分别查询这些属性值：
 
@@ -46,5 +45,4 @@ tags:
 	} |
 	Out-GridView
   
-<!--more-->
-本文国际来源：[Dynamic Parameters in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-parameters-in-powershell-4-0)
+<!--本文国际来源：[Dynamic Parameters in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-parameters-in-powershell-4-0)-->

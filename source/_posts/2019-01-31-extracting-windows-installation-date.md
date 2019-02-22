@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否关心过您的 Windows 已经安装了多久？一个单行的代码可以告诉您结果：
 
@@ -58,5 +57,4 @@ PS> (New-TimeSpan -Start (Get-CimInstance -Class Win32_OperatingSystem).InstallD
 204
 ```
 
-<!--more-->
-本文国际来源：[Extracting Windows Installation Date](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/extracting-windows-installation-date)
+<!--本文国际来源：[Extracting Windows Installation Date](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/extracting-windows-installation-date)-->

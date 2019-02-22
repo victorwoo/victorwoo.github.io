@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个快捷的脚本，扫描 Active Directory 中的所有 OU，得到所有的计算机账户，然后将每个 OU 的信息按照操作系统分组：
 
@@ -33,5 +32,4 @@ tags:
       } |
       Out-GridView
 
-<!--more-->
-本文国际来源：[Analyze Operating System by Organizational Unit](http://community.idera.com/powershell/powertips/b/tips/posts/analyze-operating-system-by-organizational-unit)
+<!--本文国际来源：[Analyze Operating System by Organizational Unit](http://community.idera.com/powershell/powertips/b/tips/posts/analyze-operating-system-by-organizational-unit)-->

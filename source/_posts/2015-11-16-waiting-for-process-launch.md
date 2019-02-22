@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 内置了等待一个进程或多个进程结束的功能：只需要用 `Wait-Process` 命令。
 
@@ -54,5 +53,4 @@ PowerShell 内置了等待一个进程或多个进程结束的功能：只需要
 
 当您忽略了 `-IgnoreAlreadyRunningProcesses` 参数时，如果已有至少一个 Notepad 的实例在运行，PowerShell 将会立即继续。
 
-<!--more-->
-本文国际来源：[Waiting for Process Launch](http://community.idera.com/powershell/powertips/b/tips/posts/waiting-for-process-launch)
+<!--本文国际来源：[Waiting for Process Launch](http://community.idera.com/powershell/powertips/b/tips/posts/waiting-for-process-launch)-->

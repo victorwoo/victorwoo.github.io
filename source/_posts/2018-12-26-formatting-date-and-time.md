@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过 `Get-Date` 的 `-Format` 参数可以方便地将日期和时间格式化为您所需的格式。您可以对当前时间使用它，也可以对外部的 `DateTime` 变量使用它。只需要使用日期和时间的格式化字符串就可以转换为您所需的输出格式。
 
@@ -43,5 +42,4 @@ Get-Date -Date $lastBoot -Format '"Last reboot at" MMM dd, yyyy "at" HH:mm:ss "a
     Last reboot at Nov 22, 2018 at 01:13:44 and 50000 Milliseconds.
 
 
-<!--more-->
-本文国际来源：[Formatting Date and Time](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatting-date-and-time)
+<!--本文国际来源：[Formatting Date and Time](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatting-date-and-time)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Cmdlet 和函数只能用认可的动词以便于用户查找命令，并且保持一致性。
 
@@ -26,5 +25,4 @@ Get-Command -CommandType Cmdlet, Function |
 
 这里返回的是所有不符合规定或根本没有命令动词的 cmdlet 和函数。
 
-<!--more-->
-本文国际来源：[Finding Unapproved Verbs](http://community.idera.com/powershell/powertips/b/tips/posts/finding-unapproved-verbs)
+<!--本文国际来源：[Finding Unapproved Verbs](http://community.idera.com/powershell/powertips/b/tips/posts/finding-unapproved-verbs)-->

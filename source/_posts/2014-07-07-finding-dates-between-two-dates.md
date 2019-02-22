@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要知道两个日期之间的间隔天数，那么可以用 `New-TimeSpan` 轻松地获得：
 
@@ -75,5 +74,4 @@ tags:
     
     "Workdays: $workdays"
 
-<!--more-->
-本文国际来源：[Finding Dates Between Two Dates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-dates-between-two-dates)
+<!--本文国际来源：[Finding Dates Between Two Dates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-dates-between-two-dates)-->

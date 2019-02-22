@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当你那使用 ADSISearcher 类型加速器来查找 Active Directory 账户时，它缺省情况下在您当前登录的域中查找。如果您需要在一个不同的域中查找，请确保相应地定义了搜索的根路径。
 
@@ -28,5 +27,4 @@ This example will find all accounts with a SamAccountName that starts with "tobi
 	# execute the query
 	$searcher.FindAll() 
 
-<!--more-->
-本文国际来源：[Searching in Different Domains](http://community.idera.com/powershell/powertips/b/tips/posts/searching-in-different-domains)
+<!--本文国际来源：[Searching in Different Domains](http://community.idera.com/powershell/powertips/b/tips/posts/searching-in-different-domains)-->

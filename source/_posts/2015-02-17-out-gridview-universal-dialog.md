@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -43,5 +42,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
     PS> 1..10 | Out-GridView -Title 'Pick favorite number' -OutputMode Single
 
-<!--more-->
-本文国际来源：[Out-GridView: Universal Dialog ](http://community.idera.com/powershell/powertips/b/tips/posts/out-gridview-universal-dialog)
+<!--本文国际来源：[Out-GridView: Universal Dialog ](http://community.idera.com/powershell/powertips/b/tips/posts/out-gridview-universal-dialog)-->

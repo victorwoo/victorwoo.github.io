@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 的函数缺省情况下可以在任何时候被覆盖，而且可以用 `Remove-Item` 来移除它：
 
@@ -93,5 +92,4 @@ At line:1 char:1
 
     Hello , I cannot be removed!
 
-<!--more-->
-本文国际来源：[Creating Write-Protected Functions](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/creating-write-protected-functions)
+<!--本文国际来源：[Creating Write-Protected Functions](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/creating-write-protected-functions)-->

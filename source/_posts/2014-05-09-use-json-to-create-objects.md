@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 JSON 用来描述对象的，类似 XML，但是 JSON 更简单得多.JSON 支持嵌套的对象属性，所以您可以从各种数据源中获取信息，然后将它们合并成一个自定义对象。
 
@@ -42,5 +41,4 @@ JSON 用来描述对象的，类似 XML，但是 JSON 更简单得多.JSON 支�
 
 ![](/img/2014-05-09-use-json-to-create-objects-001.png)
 
-<!--more-->
-本文国际来源：[Use JSON to Create Objects](http://community.idera.com/powershell/powertips/b/tips/posts/use-json-to-create-objects)
+<!--本文国际来源：[Use JSON to Create Objects](http://community.idera.com/powershell/powertips/b/tips/posts/use-json-to-create-objects)-->

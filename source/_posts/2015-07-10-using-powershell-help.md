@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要查看完整的 PowerShell 帮助，您首先需要从 Internet 下载帮助信息。只需要以管理员权限打开一个 PowerShell 控制台执行以下代码：
 
@@ -76,5 +75,4 @@ tags:
 
 当帮助文件复制到您语言对应的文件夹中后，您就可以在非英语系统中使用英语的帮助文件了。
 
-<!--more-->
-本文国际来源：[Using PowerShell Help](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-help)
+<!--本文国际来源：[Using PowerShell Help](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-help)-->

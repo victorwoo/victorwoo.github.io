@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以根据数据类型匹配自动地绑定参数。以下是一个体现该特性的示例
 
@@ -79,5 +78,4 @@ Integer String Date
         0        11/21/2017 11:44:33 AM
 ```
 
-<!--more-->
-本文国际来源：[Binding Parameters by Data Type](http://community.idera.com/powershell/powertips/b/tips/posts/binding-parameters-by-data-type)
+<!--本文国际来源：[Binding Parameters by Data Type](http://community.idera.com/powershell/powertips/b/tips/posts/binding-parameters-by-data-type)-->

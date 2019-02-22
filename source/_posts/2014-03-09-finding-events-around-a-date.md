@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 经常地，您会需要浏览某个指定日期附近的所有系统事件。我们假设某台机器在 08:47 崩溃了，您需要查看该时间前后 2 分钟之内的事件。
 
@@ -40,5 +39,4 @@ tags:
 
 这段代码示范了您可以获取一个时间段之内的事件，并且示范了如何查询多个事件日志。
 
-<!--more-->
-本文国际来源：[Finding Events around A Date](http://community.idera.com/powershell/powertips/b/tips/posts/finding-events-around-a-date)
+<!--本文国际来源：[Finding Events around A Date](http://community.idera.com/powershell/powertips/b/tips/posts/finding-events-around-a-date)-->

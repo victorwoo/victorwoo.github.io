@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell ISE 3 及以上版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell ISE 3 及以上版本_
 
 在 PowerShell ISE 中，只需要单击任何一个列出的名称，然后按下 `F1` 键，就可以在独立的帮主窗口中打开关联的主题。
 
-<!--more-->
-本文国际来源：[Use F1 in PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/use-f1-in-powershell-ise)
+<!--本文国际来源：[Use F1 in PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/use-f1-in-powershell-ise)-->

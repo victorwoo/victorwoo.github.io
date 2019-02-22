@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有多种方法可以创建自定义对象。以下是一种创新的办法，在很多种场景中都很有效：创建一个逗号分隔，每行表示一个值的列表文本，然后用 `ConvertFrom-Csv` 来创建对象：
 
@@ -66,6 +65,5 @@ tags:
 如结果所示，最后两种方法的效率是 CSV 方法的大约三倍。在我们的测试系统上，所有的测试都在一秒之内完成，所以现实环境中影响并不大。
 
 请挑选一个您自己最喜欢的方式——不过请注意最后一个例子需要 PowerShell 3.0 或更高的版本。
-<!--more-->
 
-本文国际来源：[Creating Objects with CSV](http://community.idera.com/powershell/powertips/b/tips/posts/creating-objects-with-csv)
+<!--本文国际来源：[Creating Objects with CSV](http://community.idera.com/powershell/powertips/b/tips/posts/creating-objects-with-csv)-->

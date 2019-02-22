@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 脚本块日志的迷你系列的第 4 部分。到目前为止，您已经了解了如何读取记录的 PowerShell 代码，以及如何打开详细模式。打开详细模式后，机器上运行的所有 PowerShell 代码都会记录下来，所以会产生大量的数据。为了不覆盖旧的日志数据，您需要增加日志文件的尺寸。以下是操作方法：
 
@@ -66,5 +65,4 @@ function Set-SBLLogSize
 PS> Set-SBLLogSize -MaxSizeMB 100
 ```
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-4)
+<!--本文国际来源：[Understanding Script Block Logging (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-4)-->

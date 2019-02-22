@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何获取 PowerShellGet 并在您的 PowerShell 版本中使用。现在我们来看看 PowerShell 陈列架能够多门方便地扩展 PowerShell 的功能。
 
@@ -39,5 +38,4 @@ New-QRCodeVCard -FirstName $first -LastName $last -Company $company -Email $emai
 Invoke-Item -Path $path
 ```
 
-<!--more-->
-本文国际来源：[PowerShell Gallery: Creating QRCode vCards](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-creating-qrcode-vcards)
+<!--本文国际来源：[PowerShell Gallery: Creating QRCode vCards](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-creating-qrcode-vcards)-->

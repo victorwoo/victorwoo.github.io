@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 支持使用进度条。这是一个很简单的例子：
 
@@ -71,5 +70,4 @@ $end = Get-Date
 
 当您增加 `$max` 的数值，您会注意到脚本并不会增加多少时间，因为调用 `Write-Progress` 的次数仍然没变。
 
-<!--more-->
-本文国际来源：[Using a Progress Bar Wisely](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-progress-bar-wisely)
+<!--本文国际来源：[Using a Progress Bar Wisely](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-progress-bar-wisely)-->

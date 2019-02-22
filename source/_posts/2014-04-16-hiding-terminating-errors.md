@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候，您会注意到虽然已经为 `-ErrorAction` 参数指定了 `"SilentlyContinue"` 值，cmdlet 还是会抛出错误。
 
@@ -30,5 +29,4 @@ tags:
     catch
     {} 
 
-<!--more-->
-本文国际来源：[Hiding Terminating Errors](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-terminating-errors)
+<!--本文国际来源：[Hiding Terminating Errors](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-terminating-errors)-->

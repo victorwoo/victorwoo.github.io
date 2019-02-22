@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您可能需要查看某个对象中包含的数据。例如，如果您查询 PowerShell 的进程并将它显示在一个网格视图窗口中，您可以查看对象的内容：
 
@@ -31,5 +30,4 @@ tags:
 
 现在，每个属性各显示在一行上，可以尽可能多地显示，而且可以根据内容搜索某个特定的属性。
 
-<!--more-->
-本文国际来源：[Displaying Object Properties One per Line](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-object-properties-one-per-line)
+<!--本文国际来源：[Displaying Object Properties One per Line](http://community.idera.com/powershell/powertips/b/tips/posts/displaying-object-properties-one-per-line)-->

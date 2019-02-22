@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个脚本中我们演示了如何以加密的方式将一个凭据保存到磁盘上。一个类似的方法只将密码保存到加密的文件中。这段代码将创建一个加密的密码文件：
 
@@ -40,5 +39,4 @@ $credential = New-Object -TypeName PSCredential($username, $password)
 Get-WmiObject -Class Win32_LogicalDisk -ComputerName SomeServer -Credential $credential
 ```
 
-<!--more-->
-本文国际来源：[Managing Credentials (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-4)
+<!--本文国际来源：[Managing Credentials (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-4)-->

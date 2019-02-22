@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了 `Get-FolderStructureWithPermission` 如何以结构化的形式记录并创建一个包含所有嵌套文件夹的清单，包含它们各自的 NTFS 安全设置。结果可以保存到一个变量中，或用 `Export-Csv` 序列化后保存到磁盘中。
 
@@ -61,5 +60,4 @@ $infos = Get-FolderStructureWithPermission -Path $home
 Set-FolderStructureWithPermission -Path c:\CloneHere -folderInfo $infos
 ```
 
-<!--more-->
-本文国际来源：[Cloning Folder Structures (with NTFS Permissions) – Part 2](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-folder-structures-with-ntfs-permissions-part-2)
+<!--本文国际来源：[Cloning Folder Structures (with NTFS Permissions) – Part 2](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-folder-structures-with-ntfs-permissions-part-2)-->

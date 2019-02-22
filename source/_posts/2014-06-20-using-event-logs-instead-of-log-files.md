@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 人们常常使用文件来记录日志。这样做并没有错，但是使用 Windows 内置的事件日志系统可能会简单得多。
 
@@ -30,5 +29,4 @@ tags:
 
 通过 `Limit-EventLog`，您还可以配置您的日志，限制最大大小。
 
-<!--more-->
-本文国际来源：[Using Event Logs Instead of Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/using-event-logs-instead-of-log-files)
+<!--本文国际来源：[Using Event Logs Instead of Log Files](http://community.idera.com/powershell/powertips/b/tips/posts/using-event-logs-instead-of-log-files)-->

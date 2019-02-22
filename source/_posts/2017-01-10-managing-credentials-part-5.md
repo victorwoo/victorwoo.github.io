@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当 PowerShell 自动加密一个安全字符串时，它使用您的身份作为密钥。只有您可以解密该安全字符串。而如果您想用一个共享的密码来加密一段安全字符串，会怎么样呢？
 
@@ -62,5 +61,4 @@ $credential
 
 在 PowerShell 5 中有一个简单得多的方法：`Protect-CMSMessage` 和 `Unprotect-CMSMessage`，它们使用数字证书和非对称加密。通过这种方法，加密安全信息的一方无需知道解密的密钥，反之亦然。加密的一方只需要制定谁（哪个证书）可用来解密保密信息。
 
-<!--more-->
-本文国际来源：[Managing Credentials (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-5)
+<!--本文国际来源：[Managing Credentials (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-5)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您没有安装 PowerShell 5.0，并且没有安装 .NET Framework 4.5，以下是一个使用 Windows 原生功能解压 ZIP 文件的办法。
 
@@ -38,5 +37,4 @@ tags:
 
 这个方法的好处是在需要覆盖文件的时候，会弹出 shell 的对话框。这个方法也可以解压 CAB 文件。
 
-<!--more-->
-本文国际来源：[Unzipping ZIP Files with any PowerShell Version](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files-with-any-powershell-version)
+<!--本文国际来源：[Unzipping ZIP Files with any PowerShell Version](http://community.idera.com/powershell/powertips/b/tips/posts/unzipping-zip-files-with-any-powershell-version)-->

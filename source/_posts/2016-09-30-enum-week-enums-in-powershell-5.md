@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 5 以上版本*
 
@@ -54,5 +53,4 @@ Computername: Test Type: Client
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Enum Week: Enums in PowerShell 5](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-enums-in-powershell-5)
+<!--本文国际来源：[Enum Week: Enums in PowerShell 5](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-enums-in-powershell-5)-->

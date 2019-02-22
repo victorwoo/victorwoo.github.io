@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 为了吸引用户的注意力，您的脚本可以很容易地播放 WAV 声音文件。以下是一个简单的函数：
 
@@ -28,5 +27,4 @@ tags:
 
 缺省情况下，PowerShell 将会等待直到声音播放完。如果您希望 PowerShell 继续执行而不是等待，请将 `PlaySync()` 替换成 `Play()`。
 
-<!--more-->
-本文国际来源：[Playing a Sound on Error](http://community.idera.com/powershell/powertips/b/tips/posts/playing-a-sound-on-error)
+<!--本文国际来源：[Playing a Sound on Error](http://community.idera.com/powershell/powertips/b/tips/posts/playing-a-sound-on-error)-->

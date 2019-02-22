@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您正在将日志活动写入文件，可能需要清除一些东西，例如在增加一个新文件的时候总是需要删除最旧的日志文件。
 
@@ -56,5 +55,4 @@ if ($NumberToDelete -gt 0)
 }
 ```
 
-<!--more-->
-本文国际来源：[Deleting the Oldest Log File](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/deleting-the-oldest-log-file)
+<!--本文国际来源：[Deleting the Oldest Log File](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/deleting-the-oldest-log-file)-->

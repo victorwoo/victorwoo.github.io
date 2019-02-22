@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是在 PowerShell 5 中使用新的类特性的另一个用例。在前一个例子中，我们演示了如何从 `System.Diagnostics.Process` 派生一个新类，从而获得代表进程的功能更强大的对象。
 
@@ -40,5 +39,4 @@ $client.DownloadString('http://www.psconf.eu')
 
 这样，"`“MyWebClient”`" 类继承于 `WebClient()` 并改变了 `ServerCertificateValidationCallBack` 的行为。它只是返回 `$true`，所以所有的连接都是成功的，而且证书检验变得无关紧要。
 
-<!--more-->
-本文国际来源：[Inheriting Classes in PowerShell 5 (part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/inheriting-classes-in-powershell-5-part-2)
+<!--本文国际来源：[Inheriting Classes in PowerShell 5 (part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/inheriting-classes-in-powershell-5-part-2)-->

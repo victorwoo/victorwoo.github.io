@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一段强制关闭 PowerShell ISE 中所有打开的文档的代码片段。请注意：它不经提示就关闭所有的文档。它适用于当您搞砸了，并且不准备保存脚本的情况：
 
@@ -45,5 +44,4 @@ foreach ($tab in $psise.PowerShellTabs)
 }
 ```
 
-<!--more-->
-本文国际来源：[Forcefully Close All PowerShell ISE Documents](http://community.idera.com/powershell/powertips/b/tips/posts/forcefully-close-all-powershell-ise-documents)
+<!--本文国际来源：[Forcefully Close All PowerShell ISE Documents](http://community.idera.com/powershell/powertips/b/tips/posts/forcefully-close-all-powershell-ise-documents)-->

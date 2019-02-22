@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想在 ISE 编辑器中打开一个脚本，一个快捷的方法是使用命令“ise”。例如要打开您的配置脚本（每次 ISE 启动时自动调用的脚本），请试试一下代码：
 
@@ -27,5 +26,4 @@ tags:
 
 （顺便提一下：有一个叫做 `psEdit` 的函数使用效果十分相似，但是只在 PowerShell ISE 内部有效，在 PowerShell.exe 控制台中无效。）
 
-<!--more-->
-本文国际来源：[Opening Files in ISE Editor](http://community.idera.com/powershell/powertips/b/tips/posts/opening-files-in-ise-editor)
+<!--本文国际来源：[Opening Files in ISE Editor](http://community.idera.com/powershell/powertips/b/tips/posts/opening-files-in-ise-editor)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想试试 PowerShell 远程处理，您至少需要在目标机器（您希望访问的机器）上启用它。要使用它，您需要目标机器上的本地管理员特权。请用管理员特权打开 PowerShell，并且运行以下代码：
 
@@ -40,5 +39,4 @@ Test-WSMan $IPorNameTargetComputer
 
 在下一个技能中，我们将看看能用 PowerShell 远程处理来做什么，以及如何远程执行脚本。
 
-<!--more-->
-本文国际来源：[Playing with PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/playing-with-powershell-remoting)
+<!--本文国际来源：[Playing with PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/playing-with-powershell-remoting)-->

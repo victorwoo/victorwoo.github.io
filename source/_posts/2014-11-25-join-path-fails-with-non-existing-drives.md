@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -49,5 +48,4 @@ $result
 
 如果您在 Windows 功能中启用了 Hyper-V 的 PowerShell 模块（如前一个技能中描述的一样的），您现在就可以通过 PowerShell 管理虚拟磁盘。
 
-<!--more-->
-本文国际来源：[Join-Path Fails with Nonexistent Drives](http://community.idera.com/powershell/powertips/b/tips/posts/join-path-fails-with-non-existing-drives)
+<!--本文国际来源：[Join-Path Fails with Nonexistent Drives](http://community.idera.com/powershell/powertips/b/tips/posts/join-path-fails-with-non-existing-drives)-->

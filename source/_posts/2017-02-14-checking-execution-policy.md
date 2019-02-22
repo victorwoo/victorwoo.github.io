@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 execution policy 决定了 PowerShell 能执行哪类脚本。您需要将 execution policy 设置成 `Undefined`、`Restricted`，或 `Default` 之外的值，来允许脚本执行。
 
@@ -35,5 +34,4 @@ execution policy 决定了 PowerShell 能执行哪类脚本。您需要将 execu
 
 如果您需要确保确保可以无人值守地运行任何地方的脚本，您可能需要使用 "`Bypass`" 设置，而不是 "`RemoteSigned`"。"`Bypass`" 允许运行任意位置的脚本，而且不像 "`“Unrestricted”`" 那样会弹出确认对话框。
 
-<!--more-->
-本文国际来源：[Checking Execution Policy](http://community.idera.com/powershell/powertips/b/tips/posts/checking-execution-policy)
+<!--本文国际来源：[Checking Execution Policy](http://community.idera.com/powershell/powertips/b/tips/posts/checking-execution-policy)-->

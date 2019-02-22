@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要查看一个指定的域用户是否存在，并且假设您已经安装了 ActiveDirectory PowerShell 模块，它是 RSAT（远程服务器管理工具）的一部分，那么有一个更巧的方法：
 
@@ -32,5 +31,4 @@ function Test-UserExists
 
 您也可以调整 LDAP 查询来基于其它属性检查用户。
 
-<!--more-->
-本文国际来源：[Test AD User Exists](http://community.idera.com/powershell/powertips/b/tips/posts/test-ad-user-exists)
+<!--本文国际来源：[Test AD User Exists](http://community.idera.com/powershell/powertips/b/tips/posts/test-ad-user-exists)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，一个脚本需要运行一个需提升（管理员）权限的命令。
 
@@ -23,5 +22,4 @@ tags:
     Start-Process -FilePath powershell.exe -ArgumentList "-noprofile -command $Command" `  
     -Verb runas 
 
-<!--more-->
-本文国际来源：[Running Commands Elevated in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/running-commands-elevated-in-powershell)
+<!--本文国际来源：[Running Commands Elevated in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/running-commands-elevated-in-powershell)-->

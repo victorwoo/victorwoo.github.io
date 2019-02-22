@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以将整个命令历史拷贝到剪贴板中：
 
@@ -25,5 +24,4 @@ tags:
 
     (Get-History -Count 5).CommandLine | clip.exe
 
-<!--more-->
-本文国际来源：[Copying Command History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history-0)
+<!--本文国际来源：[Copying Command History](http://community.idera.com/powershell/powertips/b/tips/posts/copying-command-history-0)-->

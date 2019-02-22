@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您克隆对象时，您可以修改它们的所有属性。克隆对象时可以导致原始对象“分离”，这是一个不错的主意。当您克隆了对象，您可以对该对象做任意的操作，例如修改或调整它的属性。
 
@@ -44,5 +43,4 @@ tags:
 
 该例子的结果以 MB 而不是字节为单位显示文件的大小，并且添加了一个称为“Age(days)”的列表示文件和文件夹创建以来的天数。
 
-<!--more-->
-本文国际来源：[Creating Great Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-great-reports)
+<!--本文国际来源：[Creating Great Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-great-reports)-->

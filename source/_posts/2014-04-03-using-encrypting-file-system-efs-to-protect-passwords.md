@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您必须在脚本中以硬编码的方式包含密码和其它隐私信息（正常情况下应避免使用），那么您还可以通过 EFS（加密文件系统）的方式来保障安全性。加密的脚本只能被加密者读取（和执行），所以只有您在自己的机器上能运行该脚本。
 
@@ -32,5 +31,4 @@ tags:
 
 请注意在许多企业环境中，EFS 系统是通过恢复密钥部署的。指定的维护人员可以通过主密钥解密文件。如果没有主密钥，一旦您丢失了您的 EFS 证书，就连您也无法查看或运行加密的脚本。
 
-<!--more-->
-本文国际来源：[Using Encrypting File System (EFS) to Protect Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/using-encrypting-file-system-efs-to-protect-passwords)
+<!--本文国际来源：[Using Encrypting File System (EFS) to Protect Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/using-encrypting-file-system-efs-to-protect-passwords)-->

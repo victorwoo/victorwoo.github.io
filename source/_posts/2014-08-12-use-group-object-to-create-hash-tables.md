@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -46,5 +45,4 @@ _适用于所有 PowerShell 版本_
     #$hash.Tiny
     $hash.Huge
 
-<!--more-->
-本文国际来源：[Use Group-Object to Create Hash Tables](http://community.idera.com/powershell/powertips/b/tips/posts/use-group-object-to-create-hash-tables)
+<!--本文国际来源：[Use Group-Object to Create Hash Tables](http://community.idera.com/powershell/powertips/b/tips/posts/use-group-object-to-create-hash-tables)-->

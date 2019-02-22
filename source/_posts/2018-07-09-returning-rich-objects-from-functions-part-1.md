@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果一个 PowerShell 函数需要返回多于一类信息，请确保将这些信息集中到一个富对象中。最简单的实现方式是创建一个类似 `[PSCustomObject]@{}` 这样的自定义对象：
 
@@ -48,5 +47,4 @@ BIOS   : \\DESKTOP-7AAMJLF\root\cimv2:Win32_BIOS.Name="1.6.1",SoftwareElementID=
 User   : tobwe
 ```
 
-<!--more-->
-本文国际来源：[Returning Rich Objects from Functions (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/returning-rich-objects-from-functions-part-1)
+<!--本文国际来源：[Returning Rich Objects from Functions (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/returning-rich-objects-from-functions-part-1)-->

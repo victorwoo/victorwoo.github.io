@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有很多办法可以加密文本。以下是一个未使用“密钥”的方法，所谓的密钥实际上是您的用户标识符加上机器名。
 
@@ -66,5 +65,4 @@ tags:
 
 这个方法可以用来安全地保存个人密码，这样您就不用每天都输入了。
 
-<!--more-->
-本文国际来源：[Encrypting Text](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-text)
+<!--本文国际来源：[Encrypting Text](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-text)-->

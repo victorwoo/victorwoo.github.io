@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您正在编写 PowerShell 函数，并且知道某个函数可能会造成很多危险结果，那么有一个简单的方法可以增加一层额外的安全防护。以下是了个函数，一个没有安全防护，而另一个有安全防护：
 
@@ -69,5 +68,4 @@ PS> Safety -Something test
 HARM DONE with test!
 ```
 
-<!--more-->
-本文国际来源：[Adding Extra Safety Net](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-extra-safety-net)
+<!--本文国际来源：[Adding Extra Safety Net](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-extra-safety-net)-->

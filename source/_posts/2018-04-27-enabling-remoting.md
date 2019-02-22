@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 cmdlet 有许多方法可以从另一台计算机远程获取信息。以下只是其中的一些方法：
 
@@ -39,5 +38,4 @@ Enable-PSRemoting -SkipNetworkProfileCheck -Force
 
 虽然第一条命令是已过时的，但仍然有效。它将管理员远程功能添加到防火墙例外中，允许基于 DCOM 的远程处理。第二行启用 PowerShell 远程处理。
 
-<!--more-->
-本文国际来源：[Enabling Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-remoting)
+<!--本文国际来源：[Enabling Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-remoting)-->

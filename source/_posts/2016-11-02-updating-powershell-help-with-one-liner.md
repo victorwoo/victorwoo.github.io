@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要获得 PowerShell 最全的输出信息，您需要更新 PowerShell 的帮助至少一次。这将下载并安装当您通过 cmdlet 运行 `Get-Help` 或是在 PowerShell ISE 中点击一个 cmdlet 并按 F1 时将出现的基础帮助文件集。
 
@@ -23,5 +22,4 @@ tags:
 Start-Process -FilePath powershell -Verb RunAs -ArgumentList "-noprofile -command Update-Help -UICulture en-us  -Force"
 ```
 
-<!--more-->
-本文国际来源：[Updating PowerShell Help with One-Liner](http://community.idera.com/powershell/powertips/b/tips/posts/updating-powershell-help-with-one-liner)
+<!--本文国际来源：[Updating PowerShell Help with One-Liner](http://community.idera.com/powershell/powertips/b/tips/posts/updating-powershell-help-with-one-liner)-->

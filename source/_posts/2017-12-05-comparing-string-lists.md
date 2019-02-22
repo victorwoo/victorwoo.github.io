@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个例子中我们使用 HashSet 来对比数字列表，并查找哪些元素在两个列表中都出现，或只在一个列表中出现。
 
@@ -65,5 +64,4 @@ $copy.SymmetricExceptWith($set2)
     Exclusive in both (no duplicates)
     Harry Mary Tobias Tom Tim
 
-<!--more-->
-本文国际来源：[Comparing String Lists](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-string-lists)
+<!--本文国际来源：[Comparing String Lists](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-string-lists)-->

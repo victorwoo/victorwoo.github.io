@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Maybe you’d like to add a column with incrementing indices to your objects. Try this:
 
@@ -25,5 +24,4 @@ When you run this chunk of code, you get a list of services in a grid view windo
 
 The technique can be used to add arbitrary columns. Simply use a hash table with key N[ame] for the column name, and key E[xpression] with the script block that generates the column content.
 
-<!--more-->
-本文国际来源：[Adding New Incrementing Number Column in a Grid View Window](http://community.idera.com/powershell/powertips/b/tips/posts/adding-new-incrementing-number-column-in-a-grid-view-window)
+<!--本文国际来源：[Adding New Incrementing Number Column in a Grid View Window](http://community.idera.com/powershell/powertips/b/tips/posts/adding-new-incrementing-number-column-in-a-grid-view-window)-->

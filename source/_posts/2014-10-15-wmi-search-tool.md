@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -94,5 +93,4 @@ WMI 是一个很棒很强大的技术：只需要指定一个 WMI 类名，您�
 
     PS> Get-WmiObject -Class CIM_CacheMemory | Select-Object -Property *
 
-<!--more-->
-本文国际来源：[WMI Search Tool](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-search-tool)
+<!--本文国际来源：[WMI Search Tool](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-search-tool)-->

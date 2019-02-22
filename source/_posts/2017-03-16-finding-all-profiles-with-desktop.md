@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这一行代码能够列出所有本地用户配置文件中的桌面——请确保以管理员身份运行这行代码才能查看其他人的配置文件：
 
@@ -30,5 +29,4 @@ Resolve-Path -Path C:\users\*\Desktop -ErrorAction SilentlyContinue |
 
 这段代码获取路径并用反斜杠将它们分割，创建一个路径元素的数组。下标 -2 是指倒数第二个元素，即用户名。
 
-<!--more-->
-本文国际来源：[Finding All Profiles with Desktop](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-profiles-with-desktop)
+<!--本文国际来源：[Finding All Profiles with Desktop](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-profiles-with-desktop)-->

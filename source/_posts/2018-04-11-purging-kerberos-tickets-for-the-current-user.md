@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果要应用更新的权限设置，并不需要重启系统。而只需要清除 Kerberos 票证就可以基于当前的权限获取一个新的票证。
 
@@ -28,5 +27,4 @@ Current LogonId is 0:0x2af9a
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Purging Kerberos Tickets for the Current User](http://community.idera.com/powershell/powertips/b/tips/posts/purging-kerberos-tickets-for-the-current-user)
+<!--本文国际来源：[Purging Kerberos Tickets for the Current User](http://community.idera.com/powershell/powertips/b/tips/posts/purging-kerberos-tickets-for-the-current-user)-->

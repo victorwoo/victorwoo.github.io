@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候，您也许听说过 `Trim()`、`TrimStart()` 和 `TrimEnd()` 可以 移除字符串中的文本。并且它们工作起来很正常：
 
@@ -56,5 +55,4 @@ $pattern = "$searchText$anchorTextEnd"
 $testvalue -replace $pattern
 ```
 
-<!--more-->
-本文国际来源：[Removing Text from Strings](http://community.idera.com/powershell/powertips/b/tips/posts/removing-text-from-strings)
+<!--本文国际来源：[Removing Text from Strings](http://community.idera.com/powershell/powertips/b/tips/posts/removing-text-from-strings)-->

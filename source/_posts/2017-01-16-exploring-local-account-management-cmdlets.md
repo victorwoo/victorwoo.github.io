@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5.1（随着 Windows 10 和 Server 2016 发布）现在原生支持管理本地账户。在前一个技能中您学习了如何使用 `Get-LocalUser` 命令。
 
@@ -51,5 +50,4 @@ Cmdlet      Set-LocalGroup          1.0.0.0 Microsoft.PowerShell.LocalAccounts
 Cmdlet      Set-LocalUser           1.0.0.0 Microsoft.PowerShell.LocalAccounts
 ```
 
-<!--more-->
-本文国际来源：[Exploring Local Account Management Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-local-account-management-cmdlets)
+<!--本文国际来源：[Exploring Local Account Management Cmdlets](http://community.idera.com/powershell/powertips/b/tips/posts/exploring-local-account-management-cmdlets)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您打开一个 EXE 文件时，PowerShell 将会开心地启动它，然后什么也不管：
 
@@ -21,5 +20,4 @@ tags:
 
 ![](/img/2014-02-21-keeping-a-handle-to-a-process-002.png)
 
-<!--more-->
-本文国际来源：[Keeping a Handle to a Process](http://community.idera.com/powershell/powertips/b/tips/posts/keeping-a-handle-to-a-process)
+<!--本文国际来源：[Keeping a Handle to a Process](http://community.idera.com/powershell/powertips/b/tips/posts/keeping-a-handle-to-a-process)-->

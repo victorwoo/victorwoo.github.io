@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有一个十分有用的控制台程序叫做 quser.exe 可以告诉您哪些用户登录到了一台机器上。该可执行程序返回的是纯文本，但通过一点点正则表达式，该文本可以转换成 CSV 并导入 PowerShell。
 
@@ -21,5 +20,4 @@ tags:
 
 ![](/img/2014-01-14-finding-logged-on-user-001.png)
 
-<!--more-->
-本文国际来源：[Finding Logged-On User](http://community.idera.com/powershell/powertips/b/tips/posts/finding-logged-on-user)
+<!--本文国际来源：[Finding Logged-On User](http://community.idera.com/powershell/powertips/b/tips/posts/finding-logged-on-user)-->

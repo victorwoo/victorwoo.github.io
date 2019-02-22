@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何使用 `Invoke-WebRequest` 从网页下载 JSON 或 XML 数据。这个例子从 psconf.eu 下载 JSON 格式的议程表：
 
@@ -38,5 +37,4 @@ $url = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'
 (Invoke-RestMethod -Uri $url -UseBasicParsing).Envelope.Cube.Cube.Cube
 ```
 
-<!--more-->
-本文国际来源：[Downloading Information from Internet (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-5)
+<!--本文国际来源：[Downloading Information from Internet (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-5)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -23,5 +22,4 @@ _适用于所有 PowerShell 版本_
 
     Convert-Path -Path Microsoft.PowerShell.Core\FileSystem::C:\windows\explorer.exe
 
-<!--more-->
-本文国际来源：[Correcting PowerShell Paths](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-powershell-paths)
+<!--本文国际来源：[Correcting PowerShell Paths](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-powershell-paths)-->

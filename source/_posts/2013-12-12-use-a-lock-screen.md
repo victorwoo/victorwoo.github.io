@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 借助 WPF，PowerShell 用几行代码就可以创建窗口。以下是一个有趣的关于透明屏幕覆盖层的例子。
 
@@ -55,5 +54,4 @@ tags:
 
 您很快就会发现，锁屏确实可以防止鼠标点击，但是并不会屏蔽按键。这是一个有趣的技术，不是绝对安全的锁定。
 
-<!--more-->
-本文国际来源：[Use a Lock Screen](http://community.idera.com/powershell/powertips/b/tips/posts/use-a-lock-screen)
+<!--本文国际来源：[Use a Lock Screen](http://community.idera.com/powershell/powertips/b/tips/posts/use-a-lock-screen)-->

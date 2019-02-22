@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 若您要运行一个 PowerShell 脚本，您必须通过执行策略的允许。通常您需要使用这行代码来允许脚本运行：
 
@@ -27,5 +26,4 @@ tags:
 
 顺便说一下，这种技术不算是一个安全问题。执行策略通常不是一个安全边界。它并不是设计成用来把坏人挡在外面的。它只是为了保护您自己不做错事。所以无论您是通过 cmdlet 还是通过这段代码来启用脚本执行，您都是对自己执行 PowerShell 代码负责。
 
-<!--more-->
-本文国际来源：[PowerShell God Mode](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-god-mode)
+<!--本文国际来源：[PowerShell God Mode](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-god-mode)-->

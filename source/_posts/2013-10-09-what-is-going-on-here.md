@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 经常地，您需要用 PowerShell 来获取数据，并且您需要提取信息的一部分并且把它们用于报表。类似如下：
 
@@ -43,6 +42,5 @@ tags:
 
 	Serial Number is 00261-30000-00000-AA825
 
-<!--more-->
 
-本文国际来源：[What Is Going On Here?](http://community.idera.com/powershell/powertips/b/tips/posts/what-is-going-on-here)
+<!--本文国际来源：[What Is Going On Here?](http://community.idera.com/powershell/powertips/b/tips/posts/what-is-going-on-here)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-Service` cmdlet 有一系列缺点。例如，没有一个过滤运行中或停止的服务的参数，并且结果不包含服务的启动模式。
 
@@ -42,5 +41,4 @@ function Get-ServiceWithWMI
 PS C:\> Get-ServiceWithWMI -StartMode Disabled | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Alternate Get-Service](http://community.idera.com/powershell/powertips/b/tips/posts/alternate-get-service)
+<!--本文国际来源：[Alternate Get-Service](http://community.idera.com/powershell/powertips/b/tips/posts/alternate-get-service)-->

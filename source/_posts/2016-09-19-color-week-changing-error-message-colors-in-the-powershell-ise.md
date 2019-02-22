@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 本周我们将关注如何改变 PowerShell 控制台和 PowerShell ISE 的颜色，以便设置您的 PowerShell 环境。
 
@@ -31,5 +30,4 @@ $host.PrivateData.ErrorBackgroundColor="#00000000"
 $host.PrivateData.ErrorForegroundColor=[System.Windows.Media.Colors]::OrangeRed
 ```
 
-<!--more-->
-本文国际来源：[Color Week: Changing Error Message Colors in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-changing-error-message-colors-in-the-powershell-ise)
+<!--本文国际来源：[Color Week: Changing Error Message Colors in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-changing-error-message-colors-in-the-powershell-ise)-->

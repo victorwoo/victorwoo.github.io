@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何使用 `ActiveDirectory` 模块和它的 cmdlet 来查找组织中的所有域控制器，或执行任何其它 LDAP 查询。
 
@@ -30,5 +29,4 @@ $searcher.FindAll()
 $searcher.FindAll() | ForEach-Object { $_.GetDirectoryEntry() }
 ```
 
-<!--more-->
-本文国际来源：[Finding All Domain Controllers (no module required)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-domain-controllers-no-module-required)
+<!--本文国际来源：[Finding All Domain Controllers (no module required)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-domain-controllers-no-module-required)-->

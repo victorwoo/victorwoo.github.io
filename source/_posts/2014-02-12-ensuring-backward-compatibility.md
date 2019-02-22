@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您创建了这个函数：
 
@@ -58,5 +57,4 @@ tags:
 
 ![](/img/2014-02-12-ensuring-backward-compatibility-001.png)
 
-<!--more-->
-本文国际来源：[Ensuring Backward Compatibility](http://community.idera.com/powershell/powertips/b/tips/posts/ensuring-backward-compatibility)
+<!--本文国际来源：[Ensuring Backward Compatibility](http://community.idera.com/powershell/powertips/b/tips/posts/ensuring-backward-compatibility)-->

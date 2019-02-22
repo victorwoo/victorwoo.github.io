@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个 CSV 文件包含重复的表头时，它无法被导入。在前一个技能中我们掩饰了如何检测一个 CSV 文件中重复的表头。以下是一个自动更正重复项的实践。
 
@@ -117,5 +116,4 @@ Ausgelagerter Pool (Bytes) : 0
 
 如您所见，这个函数自动将第二个 "Status" 实例重命名为 "Status1"。
 
-<!--more-->
-本文国际来源：[Identifying Duplicate CSV Headers (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-duplicate-csv-headers-part-2)
+<!--本文国际来源：[Identifying Duplicate CSV Headers (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-duplicate-csv-headers-part-2)-->

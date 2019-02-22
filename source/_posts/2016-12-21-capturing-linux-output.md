@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您在 Linux 上运行 PowerShell，您可以混合使用 Linux 命令和 PowerShell 命令。要将 Linux 命令的输出赋值给 PowerShell 变量，请像这样写：
 
@@ -20,5 +19,4 @@ $content = (ls)
 ```
 请注意“`ls`”在 Windows 系统上是一个别名，但在 Linux 系统上指向的是原始的 ls 命令。
 
-<!--more-->
-本文国际来源：[Capturing Linux Output](http://community.idera.com/powershell/powertips/b/tips/posts/capturing-linux-output)
+<!--本文国际来源：[Capturing Linux Output](http://community.idera.com/powershell/powertips/b/tips/posts/capturing-linux-output)-->

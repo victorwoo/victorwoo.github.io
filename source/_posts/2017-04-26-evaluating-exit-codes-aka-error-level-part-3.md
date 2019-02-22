@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 中运行控制台应用程序的迷你系列的第三部分中，有一个小课题：如何独立于 PowerShell 运行一个控制台应用程序，并且当它执行完成后得到通知，并且获取它的 exit code？
 
@@ -41,5 +40,4 @@ $IsOnline = $process.ExitCode -eq 0
 $IsOnline
 ```
 
-<!--more-->
-本文国际来源：[Evaluating Exit Codes (aka Error Level – Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-exit-codes-aka-error-level-part-3)
+<!--本文国际来源：[Evaluating Exit Codes (aka Error Level – Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-exit-codes-aka-error-level-part-3)-->

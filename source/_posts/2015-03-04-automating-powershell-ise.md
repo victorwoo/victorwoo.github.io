@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -25,5 +24,4 @@ PowerShell ISE 是可以通过 `$psISE` 脚本化编程的。这个变量只在 
 
     $psise.CurrentFile.Editor.Text = $psise.CurrentFile.Editor.Text -replace 'testserver', 'ProductionServer'
 
-<!--more-->
-本文国际来源：[Automating PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/automating-powershell-ise)
+<!--本文国际来源：[Automating PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/automating-powershell-ise)-->

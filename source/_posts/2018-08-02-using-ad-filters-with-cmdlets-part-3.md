@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能中，我们开始学习 ActiveDirectory 模块（免费的 RSAT 工具）中的 cmdlet 如何过滤执行结果，并且开始以我们的方式插入快捷且完善的 LDAP 过滤器。
 
@@ -30,5 +29,4 @@ Select-Object samaccountname, operatingSystem
 Get-ADUser -LDAPFilter '(&(l=Wuppertal)(name=a*))'
 ```
 
-<!--more-->
-本文国际来源：[Using AD Filters with Cmdlets (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/using-ad-filters-with-cmdlets-part-3)
+<!--本文国际来源：[Using AD Filters with Cmdlets (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/using-ad-filters-with-cmdlets-part-3)-->

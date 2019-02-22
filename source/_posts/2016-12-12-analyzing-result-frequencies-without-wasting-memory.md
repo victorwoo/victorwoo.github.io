@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 用 `Group-Object` 可以基于共享的属性值对对象分组，但请不要忘记使用 `-NoElement` 参数来忽略实际的对象而只返回出现次数。
 
@@ -36,5 +35,4 @@ Count Name
 
 指定了 `-NoElement` 之后，您可以节约相当客观的内存，因为原对象不再包括在结果中。
 
-<!--more-->
-本文国际来源：[Analyzing Result Frequencies (without Wasting Memory)](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-result-frequencies-without-wasting-memory)
+<!--本文国际来源：[Analyzing Result Frequencies (without Wasting Memory)](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-result-frequencies-without-wasting-memory)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过 Internet 下载的脚本，很有可能被恶意软件感染过，或者源头是法非的数据来源。数字签名可以增加一个额外的信任和保护层。
 
@@ -63,5 +62,4 @@ Get-AuthenticodeSignature -FilePath $outPath
 
 如果 `Status` 的值是 `Valid`，那么您可以明确地确定创建脚本的人，而且您可以安全地认为它没有被其他人改过。不过，一个合法的签名并不是完全地保证，说明该脚本是无害的。
 
-<!--more-->
-本文国际来源：[Trusting Downloaded Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/trusting-downloaded-scripts)
+<!--本文国际来源：[Trusting Downloaded Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/trusting-downloaded-scripts)-->

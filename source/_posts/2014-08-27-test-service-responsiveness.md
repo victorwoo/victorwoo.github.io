@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -36,5 +35,4 @@ _适用于 PowerShell 所有版本_
      
 请注意，该示例代码假设服务正在运行。如果您想试试的话，您可以自己检测一下，排除非正在运行的服务。
 
-<!--more-->
-本文国际来源：[Test Service Responsiveness](http://community.idera.com/powershell/powertips/b/tips/posts/test-service-responsiveness)
+<!--本文国际来源：[Test Service Responsiveness](http://community.idera.com/powershell/powertips/b/tips/posts/test-service-responsiveness)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 由于没有内置的管理 NTFS 权限的 cmdlet，所以有越来越多的开源 PowerShell module 实现这个功能。一个有前途的 module 是由 Raimund Andree，一个德国的 Microsoft 工程师写的。他也将在即将到来的 PowerShell 欧洲会议 ([www.psconf.eu](http://www.psconf.eu)) 中演讲。
 
@@ -84,5 +83,4 @@ Get-NTFSAccess -Path $Path |
 
 警告：您需要管理员权限才能更改 NTFS 权限，即使是操作您拥有的文件系统对象。
 
-<!--more-->
-本文国际来源：[Managing NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ntfs-permissions1)
+<!--本文国际来源：[Managing NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ntfs-permissions1)-->

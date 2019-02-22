@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 效果图：
 
@@ -20,7 +19,6 @@ tags:
 您总是可以将多个对象通过管道输出到 `Out-GridView` 并且得到一个美观的窗口，窗口中含有一个表格，表格中的每一行对应对象所有属性。当您需要显示很多对象的时候这种做法十分有效。
 
 如果您只是希望显示单个对象的所有属性，那么显示为一个竖排的表格则更为美观。实际上您可以通过名为 `PropertyGrid` 的控件来实现。以下是相应的方法：
-<!--more-->
 
 	Function Show-Object
 	{
@@ -55,6 +53,5 @@ tags:
 	$host | Show-Object
 	Get-Item -Path $pshome\powershell.exe | Show-Object
 
-<!--more-->
 
-本文国际来源：[Vertical Grid View](http://community.idera.com/powershell/powertips/b/tips/posts/vertical-grid-view)
+<!--本文国际来源：[Vertical Grid View](http://community.idera.com/powershell/powertips/b/tips/posts/vertical-grid-view)-->

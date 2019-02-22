@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个快速但浪费的统计文件数量的方法如下：
 
@@ -29,5 +28,4 @@ tags:
 
 这里使用流来获取项目的数量，所以 PowerShell 不需要在内存中存储所有文件。
 
-<!--more-->
-本文国际来源：[Counting Files Efficiently (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/counting-files-efficiently-part-1)
+<!--本文国际来源：[Counting Files Efficiently (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/counting-files-efficiently-part-1)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 只能在它的进程空间里设置环境变量，所以这些改变无法保存，并且在 PowerShell 之外不可见。
 
@@ -56,5 +55,4 @@ PS> Set-EnvironmentVariable -Name test -Value "" -Target User
 
 另一个值得注意的地方是 `-Target` 参数的类型定义：因为制定了一个枚举类型，所以当您在 PowerShell ISE 或其它带有智能提示的编辑器中使用这个函数时，该编辑器将会贴心地提供智能提示选择。
 
-<!--more-->
-本文国际来源：[Permanently Setting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/permanently-setting-environment-variables)
+<!--本文国际来源：[Permanently Setting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/permanently-setting-environment-variables)-->

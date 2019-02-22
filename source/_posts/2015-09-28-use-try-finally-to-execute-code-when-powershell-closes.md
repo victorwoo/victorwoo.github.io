@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要在 PowerShell 退出之前执行一些代码，您可以像这样简单地使用 `try`..`finally` 代码块：
 
@@ -27,5 +26,4 @@ tags:
 
 当然这得当脚本确实在运行时才有效。
 
-<!--more-->
-本文国际来源：[Use try…finally to Execute Code when PowerShell Closes](http://community.idera.com/powershell/powertips/b/tips/posts/use-try-finally-to-execute-code-when-powershell-closes)
+<!--本文国际来源：[Use try…finally to Execute Code when PowerShell Closes](http://community.idera.com/powershell/powertips/b/tips/posts/use-try-finally-to-execute-code-when-powershell-closes)-->

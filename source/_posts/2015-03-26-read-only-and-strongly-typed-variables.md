@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -57,5 +56,4 @@ _适用于 PowerShell 所有版本_
 
 如您所见，“`ReadOnly`”选项是一个软保护开关。您可以控制它开和关。在前一个技能中，您学到了“`Constant`”选项。`Constant` 的意思如它们的名字：常量。和“`ReadOnly`”不同，常量无法变回可写状态。
 
-<!--more-->
-本文国际来源：[Read-Only and Strongly Typed Variables](http://community.idera.com/powershell/powertips/b/tips/posts/read-only-and-strongly-typed-variables)
+<!--本文国际来源：[Read-Only and Strongly Typed Variables](http://community.idera.com/powershell/powertips/b/tips/posts/read-only-and-strongly-typed-variables)-->

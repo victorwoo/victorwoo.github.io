@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要安全地使用临时的 AD 账号，例如给客户或是顾问使用，请记得设置一个失效日期。
 
@@ -52,5 +51,4 @@ tags:
     
     Set-ADUser -Identity $user -AccountExpirationDate $expirationDate -Server $ServerName -Credential $Credential
 
-<!--more-->
-本文国际来源：[Setting AD Account Expiration Date](http://community.idera.com/powershell/powertips/b/tips/posts/setting-ad-account-expiration-date)
+<!--本文国际来源：[Setting AD Account Expiration Date](http://community.idera.com/powershell/powertips/b/tips/posts/setting-ad-account-expiration-date)-->

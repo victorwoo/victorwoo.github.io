@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 任何从 Internet 下载的以及从邮件接收到的文件，都被 Windows 隐式地标记为不安全的。如果文件包含可执行文件或二进制文件，它们必须解锁以后才可以运行。
 
@@ -32,5 +31,4 @@ PowerShell 3.0 以及以上的版本可以检测到包含“下载标记”的�
 	  Get-Item |
 	  Unblock-File
 
-<!--more-->
-本文国际来源：[Unblocking Download Files](http://community.idera.com/powershell/powertips/b/tips/posts/unblocking-download-files)
+<!--本文国际来源：[Unblocking Download Files](http://community.idera.com/powershell/powertips/b/tips/posts/unblocking-download-files)-->

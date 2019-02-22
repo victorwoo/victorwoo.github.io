@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -53,5 +52,4 @@ Internet 有许多信息提供服务，许多返回的是 JSON 数据格式。�
 
 请注意 Web Service 的提供者可能随时改变服务的实现。示例代码中的 Web Service 只能当做学习的例子来用。
 
-<!--more-->
-本文国际来源：[Using JSON-based Web Services](http://community.idera.com/powershell/powertips/b/tips/posts/using-json-based-web-services)
+<!--本文国际来源：[Using JSON-based Web Services](http://community.idera.com/powershell/powertips/b/tips/posts/using-json-based-web-services)-->

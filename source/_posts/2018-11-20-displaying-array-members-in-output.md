@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您输出包含数组属性的对象时，只会显示 4 个数组元素，然后用省略号截断剩余的结果：
 
@@ -101,5 +100,4 @@ ccSvcHst   {2584, 2644, 2656, 2400, 3080, 3120, 3124, 3128, 3132, 3136, 3140,
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Displaying Array Members in Output](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/displaying-array-members-in-output)
+<!--本文国际来源：[Displaying Array Members in Output](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/displaying-array-members-in-output)-->

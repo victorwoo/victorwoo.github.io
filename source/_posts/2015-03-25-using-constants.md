@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -30,5 +29,4 @@ PowerShell 中的变量是不稳定的。您可以覆盖或是删除它们——
 
 如果该文件存在，PowerShell 将会在任何实例启动之前先执行它。如果您在此定义了常量——例如您的公司名、重要的服务器列表等——该信息将在所有 PowerShell 宿主内有效，而且无法被覆盖。
 
-<!--more-->
-本文国际来源：[Using Constants](http://community.idera.com/powershell/powertips/b/tips/posts/using-constants)
+<!--本文国际来源：[Using Constants](http://community.idera.com/powershell/powertips/b/tips/posts/using-constants)-->

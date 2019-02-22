@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Invoke-WebRequest` 可以从 internet 下载文件。这个例子将下载一个 33MB 的 NASA 公开视频到您的计算机上，然后用您计算机上 WMV 视频文件的关联应用打开它：
 
@@ -23,5 +22,4 @@ tags:
     
     Invoke-Item -Path $Destination
 
-<!--more-->
-本文国际来源：[Downloading Files](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-files)
+<!--本文国际来源：[Downloading Files](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-files)-->

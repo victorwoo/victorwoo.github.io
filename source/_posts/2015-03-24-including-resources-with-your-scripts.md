@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -27,5 +26,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 `$PSScriptRoot` 总是指向脚本所在的目录（所以如果脚本尚未保存或是以交互式查询该变量，得到的结果是空）。
 
-<!--more-->
-本文国际来源：[Including Resources with Your Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/including-resources-with-your-scripts)
+<!--本文国际来源：[Including Resources with Your Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/including-resources-with-your-scripts)-->

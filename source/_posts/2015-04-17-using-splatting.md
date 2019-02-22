@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过 splatting 技术，您可以调用 cmdlet，并可以控制提交的参数。
 
@@ -31,5 +30,4 @@ tags:
     $params.ErrorAction = 'SilentlyContinue'
     Get-ChildItem @params
 
-<!--more-->
-本文国际来源：[Using Splatting](http://community.idera.com/powershell/powertips/b/tips/posts/using-splatting)
+<!--本文国际来源：[Using Splatting](http://community.idera.com/powershell/powertips/b/tips/posts/using-splatting)-->

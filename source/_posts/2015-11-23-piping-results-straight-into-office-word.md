@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 只需要几行代码，您就可以实现一个 `Out-OfficeWord` 指令。它接受传入的数据并将它们插入一个新的 Word 文档中（假设 Word 已经安装）。
 
@@ -49,5 +48,4 @@ tags:
 
 接下来，您可以将结果另存为 PDF、改进格式，或打印出来。
 
-<!--more-->
-本文国际来源：[Piping Results Straight Into Office Word](http://community.idera.com/powershell/powertips/b/tips/posts/piping-results-straight-into-office-word)
+<!--本文国际来源：[Piping Results Straight Into Office Word](http://community.idera.com/powershell/powertips/b/tips/posts/piping-results-straight-into-office-word)-->

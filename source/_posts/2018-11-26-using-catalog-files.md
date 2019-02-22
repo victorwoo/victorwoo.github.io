@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 目录文件支持 (.cat) 是 PowerShell 5.1 新引入的特性。目录文件基本上是包含哈希值的文件列表。您可以用它们来确保一个指定的文件结构没有改变。
 
@@ -48,5 +47,4 @@ Test-FileCatalog -Detailed -Path $path -CatalogFilePath $catPath
 
 请注意 `New-FileCatalog` 当前并不支持路径中的特殊字符，例如德语的 "Umlaute"。
 
-<!--more-->
-本文国际来源：[Using Catalog Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-catalog-files)
+<!--本文国际来源：[Using Catalog Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-catalog-files)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是关于 PowerShell 脚本块日志的迷你系列的第 2 部分。缺省情况下，只有被认为有潜在威胁的命令会记录日志。当启用了详细日志后，由所有用户执行的所有执行代码都会被记录。
 
@@ -135,5 +134,4 @@ function Get-LoggedCode
 
 请注意即便详细脚本日志被关闭，PowerShell 将仍会记录和安全相关的代码。
 
-<!--more-->
-本文国际来源：[Understanding Script Block Logging (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-3)
+<!--本文国际来源：[Understanding Script Block Logging (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-script-block-logging-part-3)-->

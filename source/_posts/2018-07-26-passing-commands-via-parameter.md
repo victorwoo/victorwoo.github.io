@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 函数参数有一个很少见的用法：用户可以传入一个输出命令：
 
@@ -35,5 +34,4 @@ Get-ProcessList -OutputMode String
 Get-ProcessList -OutputMode GridView
 ```
 
-<!--more-->
-本文国际来源：[Passing Commands via Parameter](http://community.idera.com/powershell/powertips/b/tips/posts/passing-commands-via-parameter)
+<!--本文国际来源：[Passing Commands via Parameter](http://community.idera.com/powershell/powertips/b/tips/posts/passing-commands-via-parameter)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有两个 cmdlet 可以获取 WMI 数据：旧的 `Get-WmiObject` cmdlet 和新的 `Get-CimInstance` cmdlet。当在本地使用时，两者的行为十分相像。然而当远程使用的时候，两者的区别十分明显。
 
@@ -35,5 +34,4 @@ $sh = Get-CimInstance -ClassName Win32_Share -CimSession $session
 Remove-CimSession -CimSession $session
 ```
 
-<!--more-->
-本文国际来源：[WMI Quick Primer (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-2)
+<!--本文国际来源：[WMI Quick Primer (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-quick-primer-part-2)-->

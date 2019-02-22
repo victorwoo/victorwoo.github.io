@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -41,5 +40,4 @@ PowerShell 使用逗号来分隔参数，所以在 `param()` 块中的 "1" 之�
       "Your choice: $ServerID"
     }
 
-<!--more-->
-本文国际来源：[Using Arrays as Parameter Default Values](http://community.idera.com/powershell/powertips/b/tips/posts/using-arrays-as-parameter-default-values)
+<!--本文国际来源：[Using Arrays as Parameter Default Values](http://community.idera.com/powershell/powertips/b/tips/posts/using-arrays-as-parameter-default-values)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 4.0 开始，脚本作者可以决定隐藏某些参数，使之不在智能感知中出现。通过这种方式，可以在 ISE 的智能感知上下文菜单中隐藏不常用的参数。
 
@@ -39,6 +38,5 @@ tags:
 
 在帮助窗口，隐藏参数总是可以显示，您可以通过类似这种方式打开：
 ![](/img/2013-10-29-hiding-parameters-from-intellisense-002.png)
-<!--more-->
 
-本文国际来源：[Hiding Parameters from IntelliSense](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-parameters-from-intellisense)
+<!--本文国际来源：[Hiding Parameters from IntelliSense](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-parameters-from-intellisense)-->

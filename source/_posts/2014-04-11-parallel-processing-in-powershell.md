@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果想提升一个脚本的执行速度，您也许会发现后台任务十分有用。它们适用于做大量并发处理的脚本。
 
@@ -73,5 +72,4 @@ PowerShell 是单线程的，一个时间只能处理一件事。使用后台任
 
 这段代码仅仅执行了 5.05 秒。所以后台任务只对于长期运行并且各自占用差不多时间的任务比较有效。由于这三个测试任务返回了大量的数据，所以并发执行带来的好处差不多被将执行结果序列化并传回前台进程的过程给抵消掉了。
 
-<!--more-->
-本文国际来源：[Parallel Processing in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/parallel-processing-in-powershell)
+<!--本文国际来源：[Parallel Processing in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/parallel-processing-in-powershell)-->

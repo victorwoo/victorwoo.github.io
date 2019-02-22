@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以前，我们用 `chkdsk.exe` 来修复磁盘。现在这个功能仍然能用。
 
@@ -32,5 +31,4 @@ PS>
 
 `-SpotFix` 选项：暂时将卷置于脱机，并只修复记录在 `$corrupt` 文件中的错误（相当于 `chkdsk /spotfix`）。
 
-<!--more-->
-本文国际来源：[Repairing Disk Drives](http://community.idera.com/powershell/powertips/b/tips/posts/repairing-disk-drives)
+<!--本文国际来源：[Repairing Disk Drives](http://community.idera.com/powershell/powertips/b/tips/posts/repairing-disk-drives)-->

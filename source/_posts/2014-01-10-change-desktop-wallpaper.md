@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以通过调用 Windows API，实现更改当前桌面背景并且立即生效。以下函数实现立刻更换桌面背景：
 
@@ -66,5 +65,4 @@ PowerShell 可以通过调用 Windows API，实现更改当前桌面背景并且
 	
 	Set-Wallpaper -Path 'C:\Windows\Web\Wallpaper\Characters\img24.jpg'
 
-<!--more-->
-本文国际来源：[Change Desktop Wallpaper](http://community.idera.com/powershell/powertips/b/tips/posts/change-desktop-wallpaper)
+<!--本文国际来源：[Change Desktop Wallpaper](http://community.idera.com/powershell/powertips/b/tips/posts/change-desktop-wallpaper)-->

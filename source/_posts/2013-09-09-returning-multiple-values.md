@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个PowerShell函数可以有多个返回值。要接收这些返回值，只需要将返回值赋给多个变量：
 
@@ -31,6 +30,5 @@ tags:
 	
 	"Today is $day, the month is $month, and it is $time" 
 
-<!--more-->
 
-本文国际来源：[Returning Multiple Values](http://community.idera.com/powershell/powertips/b/tips/posts/returning-multiple-values)
+<!--本文国际来源：[Returning Multiple Values](http://community.idera.com/powershell/powertips/b/tips/posts/returning-multiple-values)-->

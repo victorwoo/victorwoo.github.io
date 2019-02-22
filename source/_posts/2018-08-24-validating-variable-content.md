@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，您可以为一个变量增加一个验证器。该验证器可以接受一个正则表达式，而且当您向该变量赋值时，该验证其检查新内容是否匹配正则表达式模式。如果不匹配，将会抛出一个异常，而该变量内容保持不变。
 
@@ -23,5 +22,4 @@ tags:
 
 运行这段代码，然后尝试将一个新的 mac 地址赋值给该变量。如果新的 mac 地址不符合验证器，PowerShell 将抛出一个异常。
 
-<!--more-->
-本文国际来源：[Validating Variable Content](http://community.idera.com/powershell/powertips/b/tips/posts/validating-variable-content)
+<!--本文国际来源：[Validating Variable Content](http://community.idera.com/powershell/powertips/b/tips/posts/validating-variable-content)-->

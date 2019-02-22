@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 2 以上版本*
 
@@ -25,5 +24,4 @@ netsh firewall set service remoteadmin enable
 
 虽然该命令已经准备淘汰，不过它仍然能用，而且是配置防火墙的最简单方法。
 
-<!--more-->
-本文国际来源：[Enabling Remote Administration](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-remote-administration)
+<!--本文国际来源：[Enabling Remote Administration](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-remote-administration)-->

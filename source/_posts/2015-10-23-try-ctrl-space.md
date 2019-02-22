@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell ISE 中，有两个键盘快捷键可能对您有用。按下 `TAB` 键的功能就像在控制台中一样，并且每次您按下 `TAB`，您会得到一个 Tab 展开的结果。
 
@@ -19,5 +18,4 @@ tags:
 
 从 PowerShell 5.0 开始，`CTRL` + `SPACE` 变得更为重要，特别是当您在书写 DSC（所需状态配置）配置脚本时。PowerShell ISE 提供了针对 DSC 的扩展智能感知帮助，但在许多情况下并不会自动弹出智能感知菜单。仅当按下 `CTRL` + `SPACE` 时才能获得智能感知帮助。
 
-<!--more-->
-本文国际来源：[Try CTRL+SPACE!](http://community.idera.com/powershell/powertips/b/tips/posts/try-ctrl-space)
+<!--本文国际来源：[Try CTRL+SPACE!](http://community.idera.com/powershell/powertips/b/tips/posts/try-ctrl-space)-->

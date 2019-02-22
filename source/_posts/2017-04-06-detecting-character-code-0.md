@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，字符串适用 "`\0`" 作为分隔符。不像其它大多数分隔符，这个分隔符并不显示在文本输出中，但仍然可以用于分割文本。
 
@@ -28,5 +27,4 @@ $text
 $text -split "`0"
 ```
 
-<!--more-->
-本文国际来源：[Detecting Character Code 0](http://community.idera.com/powershell/powertips/b/tips/posts/detecting-character-code-0)
+<!--本文国际来源：[Detecting Character Code 0](http://community.idera.com/powershell/powertips/b/tips/posts/detecting-character-code-0)-->

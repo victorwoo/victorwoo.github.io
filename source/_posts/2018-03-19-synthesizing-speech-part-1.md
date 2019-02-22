@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能中，我们演示了 PowerShell 如何通过播放系统声音或 WAV 声音文件来生成声音信号。PowerShell 也可以调用内置的语音合成器：
 
@@ -32,5 +31,4 @@ $synthesizer.Rate = -10
 $synthesizer.Speak('Uh, I am not feeling that well!')
 ```
 
-<!--more-->
-本文国际来源：[Synthesizing Speech (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-part-1)
+<!--本文国际来源：[Synthesizing Speech (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-part-1)-->

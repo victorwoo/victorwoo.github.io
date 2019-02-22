@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -31,5 +30,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
     PS> Get-Process | Select-Object -Property Name, Company, StartTime | Out-GridView
 
-<!--more-->
-本文国际来源：[Exporting Out-GridView Content ](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-out-gridview-content)
+<!--本文国际来源：[Exporting Out-GridView Content ](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-out-gridview-content)-->

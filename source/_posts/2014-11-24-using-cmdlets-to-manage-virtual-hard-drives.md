@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 8.1 Pro/Enterprise 或 Server 2012 R2_
 
@@ -36,5 +35,4 @@ Cmdlet          Add-VMNetworkAdapter                               Hyper-V
 (...)
 ```
 
-<!--more-->
-本文国际来源：[Using Cmdlets to Manage Virtual Hard Drives](http://community.idera.com/powershell/powertips/b/tips/posts/using-cmdlets-to-manage-virtual-hard-drives)
+<!--本文国际来源：[Using Cmdlets to Manage Virtual Hard Drives](http://community.idera.com/powershell/powertips/b/tips/posts/using-cmdlets-to-manage-virtual-hard-drives)-->

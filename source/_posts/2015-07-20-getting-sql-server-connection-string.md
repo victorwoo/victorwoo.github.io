@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望用 PowerShell 访问 SQL Server，您需要一个连接字符串。连接字符串包含了访问 SQL Server 实例所需的所有信息。
 
@@ -36,5 +35,4 @@ tags:
 
 当您运行 `Get-ConnectionString` 时，PowerShell 会打开一个对话框，您可以提交和测试连接的情况。当您关闭对话框窗口时，PowerShell 将返回由 UI 对话框创建的连接字符串。
 
-<!--more-->
-本文国际来源：[Getting SQL Server Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/getting-sql-server-connection-string)
+<!--本文国际来源：[Getting SQL Server Connection String](http://community.idera.com/powershell/powertips/b/tips/posts/getting-sql-server-connection-string)-->

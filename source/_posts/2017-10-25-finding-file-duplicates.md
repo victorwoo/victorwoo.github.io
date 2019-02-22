@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何用 `Get-FileHash` cmdlet（PowerShell 5 新增的功能）来生成脚本文件的 MD5 哈希。
 
@@ -38,5 +37,4 @@ Get-ChildItem -Path $home -Filter *.ps1 -Recurse |
     Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Finding File Duplicates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-file-duplicates)
+<!--本文国际来源：[Finding File Duplicates](http://community.idera.com/powershell/powertips/b/tips/posts/finding-file-duplicates)-->

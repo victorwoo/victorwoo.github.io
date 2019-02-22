@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell允许您存取多个数组元素。通过使用 `-help` 和 `-join`，您可以很方便地通过这种方式处理多个文件系统路径。
 
@@ -29,6 +28,5 @@ PowerShell允许您存取多个数组元素。通过使用 `-help` 和 `-join`�
 	$array = $path -split '\\'
 	$array[2] = 'OtherUser'
 	$array -join '\'
-<!--more-->
 
-本文国际来源：[Manipulating File System Paths](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths)
+<!--本文国际来源：[Manipulating File System Paths](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths)-->

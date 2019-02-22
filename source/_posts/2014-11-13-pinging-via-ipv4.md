@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -19,5 +18,4 @@ _适用于 PowerShell 所有版本_
 
     PS> ping localhost -4
 
-<!--more-->
-本文国际来源：[Pinging via IPv4 ](http://community.idera.com/powershell/powertips/b/tips/posts/pinging-via-ipv4)
+<!--本文国际来源：[Pinging via IPv4 ](http://community.idera.com/powershell/powertips/b/tips/posts/pinging-via-ipv4)-->

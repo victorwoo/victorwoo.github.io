@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 8.1/Server 2012 R2_
 
@@ -57,5 +56,4 @@ Windows 8.1 和 Server 2012 R2 带来了一系列好用的网卡管理 cmdlet。
 
 请注意您需要管理员权限来查看电源管理设置，否则会得到一个误导性的错误信息，提示设备工作不正常。
 
-<!--more-->
-本文国际来源：[Examining Wi-Fi Adapters and Power Management](http://community.idera.com/powershell/powertips/b/tips/posts/examining-wi-fi-adapters-and-power-management)
+<!--本文国际来源：[Examining Wi-Fi Adapters and Power Management](http://community.idera.com/powershell/powertips/b/tips/posts/examining-wi-fi-adapters-and-power-management)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 LDAP 查询的功能非常强大，可以帮助查找缺少信息的账户。
 
@@ -29,5 +28,4 @@ LDAP 查询的功能非常强大，可以帮助查找缺少信息的账户。
 	  ForEach-Object { $_.GetDirectoryEntry() } |
 	  Select-Object -Property sAMAccountName, name, mail
 
-<!--more-->
-本文国际来源：[Finding Active Directory Users with Missing Mail Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-users-with-missing-mail-address)
+<!--本文国际来源：[Finding Active Directory Users with Missing Mail Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-users-with-missing-mail-address)-->

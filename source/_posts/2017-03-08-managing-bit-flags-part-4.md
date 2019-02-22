@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 5 中，对枚举的新支持特性使得处理比特位比您在前面的 PowerShell 技能中看到的简单得多。现在设置或清除比特位不再需要冗长的逻辑操作符。
 
@@ -141,5 +140,4 @@ PS C:\> [Int]$flags
 
 相当棒，对吧？
 
-<!--more-->
-本文国际来源：[Managing Bit Flags (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-4)
+<!--本文国际来源：[Managing Bit Flags (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-bit-flags-part-4)-->

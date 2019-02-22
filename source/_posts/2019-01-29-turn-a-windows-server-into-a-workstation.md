@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 5 及以上版本提供了一个自动添加 Windows 功能的 cmdlet，所以如果您正在运行 Windows Server 并且想使用 Workstation 功能，请以管理员权限打开一个 PowerShell，然后运行以下代码：
 
@@ -19,5 +18,4 @@ PowerShell 5 及以上版本提供了一个自动添加 Windows 功能的 cmdlet
 Enable-WindowsOptionalFeature -FeatureName DesktopExperience -All -Online -NoRestart 
 ```
 
-<!--more-->
-本文国际来源：[Turn a Windows Server into a Workstation](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/turn-a-windows-server-into-a-workstation)
+<!--本文国际来源：[Turn a Windows Server into a Workstation](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/turn-a-windows-server-into-a-workstation)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们开始学习 ActiveDirectory 模块（免费的 RSAT 工具）中的 cmdlet 如何过滤执行结果，并且学习了如何合并过滤器表达式。今天我们将学习如何处理日期和时间。
 
@@ -51,5 +50,4 @@ Get-ADUser -LDAPFilter "(pwdLastSet<=$cutDateAD)" -Properties pwdLastSet |
 
 实际上，当调用一个 `DateTime` 对象的 `ToFileTimeUtc()` 方法之后，将返回 AD 格式的数据。类似地，当您运行 `[DateTime]::FromFileTimeUtc()` 时，将会把 AD 格式转换为一个真实的 `DateTime` 对象。
 
-<!--more-->
-本文国际来源：[Using AD Filters with Cmdlets (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/using-ad-filters-with-cmdlets-part-4)
+<!--本文国际来源：[Using AD Filters with Cmdlets (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/using-ad-filters-with-cmdlets-part-4)-->

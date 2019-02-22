@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您需要重新创建一个嵌套的文件夹结构，并且希望克隆 NTFS 权限。今天我们我们专注第一个步骤：记录一个已有的文件夹结构，包括 SDDL 格式的 NTFS 权限。
 
@@ -78,5 +77,4 @@ SDDL : O:S-1-5-21-2012478179-265285931-690539891-1001G:S-1-5-21-2012478179-26528
 
 免责声明：这里呈现的所有代码仅供学习使用。由于我们没有投入大量精力去测试它，所以没有任何保障，而且它并不是生产准备就绪的代码。您有责任对这段代码进行测试，并决定它是否完美符合您的需要。
 
-<!--more-->
-本文国际来源：[Cloning Folder Structures (with NTFS Permissions) – Part 1](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-folder-structures-with-ntfs-permissions-part-1)
+<!--本文国际来源：[Cloning Folder Structures (with NTFS Permissions) – Part 1](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-folder-structures-with-ntfs-permissions-part-1)-->

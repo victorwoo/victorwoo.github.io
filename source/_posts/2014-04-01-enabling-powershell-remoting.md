@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望用 PowerShell 远程管理来执行另一台机器上的命令或脚本，那么您需要以完整管理员权限启用目标机器上的远程管理功能：
 
@@ -29,5 +28,4 @@ tags:
 
 当远程管理打开以后，您可以通过 `Enter-PSSession` 访问远程系统，并且您可以用 `Invoke-Command` 在这些机器上运行命令或脚本。
 
-<!--more-->
-本文国际来源：[Enabling PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-powershell-remoting)
+<!--本文国际来源：[Enabling PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-powershell-remoting)-->

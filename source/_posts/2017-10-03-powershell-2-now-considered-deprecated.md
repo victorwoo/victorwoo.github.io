@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Microsoft 刚刚宣布 PowerShell 2 很快将会标记为“已过期的”。它在一段时间内仍然可以用，但是友情提醒您最好不要使用它，并请关注 PowerShell 5。
 
@@ -42,5 +41,4 @@ PS>
 
 对于服务器系统，请使用 `Remove-WindowsFeature`。
 
-<!--more-->
-本文国际来源：[PowerShell 2 Now Considered Deprecated](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-2-now-considered-deprecated)
+<!--本文国际来源：[PowerShell 2 Now Considered Deprecated](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-2-now-considered-deprecated)-->

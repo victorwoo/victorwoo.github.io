@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 脚本块是一段可执行的 PowerShell 代码。您通常可以将语句包裹在大括号中创建脚本块。
 
@@ -27,5 +26,4 @@ tags:
     
     PS> Invoke-Command -ScriptBlock ([ScriptBlock]::Create('notepad'))
 
-<!--more-->
-本文国际来源：[Create Dynamic Script Blocks](http://community.idera.com/powershell/powertips/b/tips/posts/create-dynamic-script-blocks)
+<!--本文国际来源：[Create Dynamic Script Blocks](http://community.idera.com/powershell/powertips/b/tips/posts/create-dynamic-script-blocks)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们学习了如何有效地统计一个文件夹中项目的数量。以下是更多的例子。
 
@@ -47,5 +46,4 @@ $count = Get-ChildItem -Path $env:windir -Force -Recurse -Include *.log, *.txt -
 
 （请注意：`-Depth` 参数是 PowerShell 5 引入的）
 
-<!--more-->
-本文国际来源：[Counting Files Efficiently (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/counting-files-efficiently-part-2)
+<!--本文国际来源：[Counting Files Efficiently (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/counting-files-efficiently-part-2)-->

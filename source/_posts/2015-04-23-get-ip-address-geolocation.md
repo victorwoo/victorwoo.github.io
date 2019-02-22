@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您希望知道某个公网 IP 地址位于什么地方吗？假设您有 Internet 连接，您可以查询公共信息服务来获得。
 
@@ -26,5 +25,4 @@ tags:
     
     $geoip.Response
 
-<!--more-->
-本文国际来源：[Get IP Address Geolocation](http://community.idera.com/powershell/powertips/b/tips/posts/get-ip-address-geolocation)
+<!--本文国际来源：[Get IP Address Geolocation](http://community.idera.com/powershell/powertips/b/tips/posts/get-ip-address-geolocation)-->

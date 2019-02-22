@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，您可能会需要更新一个 Excel 工作表中的值。PowerShell 可以操作 Excel 对象模型，不过它很慢。以下是一个打开 Excel 文件，然后写入信息到 A1 单元格，最后保存更改的例子，
 
@@ -35,5 +34,4 @@ $workbook.Save()
 $excel.Quit()
 ```
 
-<!--more-->
-本文国际来源：[Saving Values to Excel Sheet](http://community.idera.com/powershell/powertips/b/tips/posts/saving-values-to-excel-sheet)
+<!--本文国际来源：[Saving Values to Excel Sheet](http://community.idera.com/powershell/powertips/b/tips/posts/saving-values-to-excel-sheet)-->

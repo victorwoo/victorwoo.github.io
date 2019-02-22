@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 可以通过调用操作符，例如 "`&`"、"`.`" 或调用 `Invoke()` 方法调用在一个脚本块中的代码。
 
@@ -35,5 +34,4 @@ $result2.GetType().FullName
 $arrayList = [Collections.ArrayList]@(Get-Process)
 ```
 
-<!--more-->
-本文国际来源：[Invoking a Script Block](http://community.idera.com/powershell/powertips/b/tips/posts/invoking-a-script-block)
+<!--本文国际来源：[Invoking a Script Block](http://community.idera.com/powershell/powertips/b/tips/posts/invoking-a-script-block)-->

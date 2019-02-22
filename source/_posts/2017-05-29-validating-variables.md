@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 变量和函数参数可以通过验证属性自动地验证有效性。以下是一个简单的例子，确保 `$test1` 只能存储 1-10 之间的值：
 
@@ -60,5 +59,4 @@ At line:7 char:3
     + FullyQualifiedErrorId : You have  submitted a value lower than 1. That  will not work, dummy!
 ```
 
-<!--more-->
-本文国际来源：[Validating Variables](http://community.idera.com/powershell/powertips/b/tips/posts/validating-variables)
+<!--本文国际来源：[Validating Variables](http://community.idera.com/powershell/powertips/b/tips/posts/validating-variables)-->

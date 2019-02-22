@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
      
 PowerShell 6 (PowerShell Core) 终于支持 SSH 了：您可以使用 SSH 来连接非 Windows 机器来进行 PowerShell 远程操作。
@@ -68,5 +67,4 @@ Set-SCPFolder
 Set-SFTPFile
 ```
 
-<!--more-->
-本文国际来源：[Using SSH from PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/using-ssh-from-powershell)
+<!--本文国际来源：[Using SSH from PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/using-ssh-from-powershell)-->

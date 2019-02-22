@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否曾希望将文本直接发送到记事本，而并不将它保存到文件中？
 
@@ -69,5 +68,4 @@ PS> Get-Service | Out-String | Out-Notepad
 
 这两行代码，都能打开一个全新的 Notepad 实例，所有服务信息都写入 Notepad。请注意它们的不同：第一行代码创建一个对象名称的列表。如果您希望对象的显示像在 PowerShell 中那样详细，请确保将他们通过管道送给 Notepad 之前先将它们用管道送给 `Out-String`。
 
-<!--more-->
-本文国际来源：[Out-Notepad: Send Information to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/out-notepad-send-information-to-notepad)
+<!--本文国际来源：[Out-Notepad: Send Information to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/out-notepad-send-information-to-notepad)-->

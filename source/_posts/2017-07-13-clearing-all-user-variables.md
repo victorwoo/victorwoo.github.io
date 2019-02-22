@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用类似这样的方法来查找内置的 PowerShell 变量：
 
@@ -90,5 +89,4 @@ PS> Get-UserVariable
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Clearing All User Variables](http://community.idera.com/powershell/powertips/b/tips/posts/clearing-all-user-variables)
+<!--本文国际来源：[Clearing All User Variables](http://community.idera.com/powershell/powertips/b/tips/posts/clearing-all-user-variables)-->

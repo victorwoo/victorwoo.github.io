@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如要自动打印 PDF 文档，不幸的是无法使用 `Out-Printer`。`Out-Printer` 只能发送纯文本文档到打印机。
 
@@ -40,5 +39,4 @@ Start-Process -FilePath $Path -Verb Print -PassThru |
   Stop-Process
 ```
 
-<!--more-->
-本文国际来源：[Printing PDF Files (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/printing-pdf-files-part-1)
+<!--本文国际来源：[Printing PDF Files (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/printing-pdf-files-part-1)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 3 开始，`PSCustomObject` 可以将从其他地方收集的有用信息方便地合并进来。以下例子从不同的 WMI 类获取各种信息，并且输出为一个清单。该清单可以传递给其它命令，也可以直接使用：
 
@@ -40,5 +39,4 @@ $os = Get-WmiObject -Class Win32_OperatingSystem -ComputerName $Computername
 }
 ```
 
-<!--more-->
-本文国际来源：[Create Summary Objects for Inventory](http://community.idera.com/powershell/powertips/b/tips/posts/create-summary-objects-for-inventory)
+<!--本文国际来源：[Create Summary Objects for Inventory](http://community.idera.com/powershell/powertips/b/tips/posts/create-summary-objects-for-inventory)-->

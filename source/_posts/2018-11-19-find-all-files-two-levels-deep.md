@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是另一个文件系统的任务：列出一个文件夹结构中所有 *.log 文件，但最多只包含 2 级文件夹深度：
 
@@ -22,5 +21,4 @@ Get-ChildItem -Path c:\windows -Filter *.log -Recurse -Depth 2 -File -Force -Err
 
 幸运的是，PowerShell 5 对 `Get-ChildItem` 命令增加了好用的 `-Depth` 选项。
 
-<!--more-->
-本文国际来源：[Find All Files Two Levels Deep](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/find-all-files-two-levels-deep)
+<!--本文国际来源：[Find All Files Two Levels Deep](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/find-all-files-two-levels-deep)-->

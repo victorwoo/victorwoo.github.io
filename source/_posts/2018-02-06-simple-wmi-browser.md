@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WMI 是一个丰富的信息库——如果您知道 WMI 的类名：
 
@@ -61,5 +60,4 @@ $classes |
 
 声明：有部分类有几千个实例，例如 CIM_File。当选择了一个有这么多实例的 WMI 类时，该脚本将执行很长时间才能完成。
 
-<!--more-->
-本文国际来源：[Simple WMI Browser](http://community.idera.com/powershell/powertips/b/tips/posts/simple-wmi-browser)
+<!--本文国际来源：[Simple WMI Browser](http://community.idera.com/powershell/powertips/b/tips/posts/simple-wmi-browser)-->

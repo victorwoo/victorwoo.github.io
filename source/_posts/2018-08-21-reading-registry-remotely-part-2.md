@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个例子中我们演示了使用早期的 DCOM 协议从远程读取另一台机器的注册表代码。
 
@@ -44,5 +43,4 @@ Invoke-Command -ScriptBlock $code -ComputerName $ComputerName |
 PS C:\> Enable-PSRemoting -SkipNetworkProfileCheck -Force
 ```
 
-<!--more-->
-本文国际来源：[Reading Registry Remotely (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-remotely-part-2)
+<!--本文国际来源：[Reading Registry Remotely (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-remotely-part-2)-->

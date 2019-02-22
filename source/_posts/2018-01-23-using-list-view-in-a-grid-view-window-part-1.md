@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个最简单的硬件清单功能可以用一行代码实现：
 
@@ -43,5 +42,4 @@ $data |
 
 本质上，网格视图窗口现在显示的是多个键值对，而不是单一的一个对象。
 
-<!--more-->
-本文国际来源：[Using List View in a Grid View Window (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-list-view-in-a-grid-view-window-part-1)
+<!--本文国际来源：[Using List View in a Grid View Window (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-list-view-in-a-grid-view-window-part-1)-->

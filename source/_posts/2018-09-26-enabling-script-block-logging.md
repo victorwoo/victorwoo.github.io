@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们深入了解了 PowerShell 5 脚本块日志的工作方式：简而言之，启用了以后，机器上运行的所有 PowerShell 代码在机器上的执行过程都将记录日志，这样您可以浏览源代码并查看机器上运行了什么 PowerShell 代码。
 
@@ -29,5 +28,4 @@ Enable-SBL
 Get-SBLEvent | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Enabling Script Block Logging](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-script-block-logging)
+<!--本文国际来源：[Enabling Script Block Logging](http://community.idera.com/powershell/powertips/b/tips/posts/enabling-script-block-logging)-->

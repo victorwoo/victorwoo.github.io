@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是另一个听起来复杂，但实际上并没有那么复杂的文件系统任务。假设您需要移除某个文件系统指定层级之下所有文件夹。以下是实现方法：
 
@@ -39,5 +38,4 @@ Get-ChildItem -Path "c:\sample\*\*\" -Directory -Recurse |
     Remove-Item -Recurse -WhatIf
 ```
 
-<!--more-->
-本文国际来源：[Deleting All Subfolders Below A Given Level](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/deleting-all-subfolders-below-a-given-level)
+<!--本文国际来源：[Deleting All Subfolders Below A Given Level](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/deleting-all-subfolders-below-a-given-level)-->

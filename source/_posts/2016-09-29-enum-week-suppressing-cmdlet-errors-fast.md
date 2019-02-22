@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这周我们将关注枚举类型：它们是什么，以及如何利用它们。
 
@@ -81,5 +80,4 @@ PS> Get-Process -FileVersionInfo -ea 4
 ```
 请注意：您也可以在脚本中使用这些快捷方式，但最好不要这么做。脚本中应当按照 PowerShell 的缺省写法，才能清晰易读。
 
-<!--more-->
-本文国际来源：[Enum Week: Suppressing Cmdlet Errors - Fast](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-suppressing-cmdlet-errors-fast)
+<!--本文国际来源：[Enum Week: Suppressing Cmdlet Errors - Fast](http://community.idera.com/powershell/powertips/b/tips/posts/enum-week-suppressing-cmdlet-errors-fast)-->

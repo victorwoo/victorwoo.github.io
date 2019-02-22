@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 现在是开源的，而且 PowerShell 下一个主要的 release 是在开放的环境中开发。如果您希望看一眼预览版，只需要打开源项目的发布发布页面，并且下载合适的 release：
 
@@ -45,5 +44,4 @@ PS C:\Users\tobwe\Downloads\PowerShell_6.0.0-alpha.15-win10-win2k16-x64>
 
 如果您是一个开发者，请查看 GitHub 工程：您可以查看所有源代码，甚至可以加入这个版本的开发者社区。
 
-<!--more-->
-本文国际来源：[Playing with PowerShell 6.0](http://community.idera.com/powershell/powertips/b/tips/posts/playing-with-powershell-6-0)
+<!--本文国际来源：[Playing with PowerShell 6.0](http://community.idera.com/powershell/powertips/b/tips/posts/playing-with-powershell-6-0)-->

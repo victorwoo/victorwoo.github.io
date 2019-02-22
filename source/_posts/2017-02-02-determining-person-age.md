@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是如何基于生日确定一个人的年龄？您可以将 `Get-Date` 命令返回的当前时间减去生日事件，但是结果并不包含年数：
 
@@ -60,5 +59,4 @@ $age = (New-Object DateTime -ArgumentList $ticks).Year -1
 Born on 1978-12-09 = 38 Years old (at time of printing)
 ```
 
-<!--more-->
-本文国际来源：[Determining Person Age](http://community.idera.com/powershell/powertips/b/tips/posts/determining-person-age)
+<!--本文国际来源：[Determining Person Age](http://community.idera.com/powershell/powertips/b/tips/posts/determining-person-age)-->

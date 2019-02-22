@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们开始学习 ActiveDirectory 模块（免费的 RSAT 工具）中的 cmdlet 如何过滤执行结果。您学到了过滤器看起来像 PowerShell 代码，但是实际上不是。
 
@@ -45,5 +44,4 @@ Get-ADUser -LDAPFilter '(profilePath=*)' -Properties profilePath |
 Select-Object samaccountName, profilePath
 ```
 
-<!--more-->
-本文国际来源：[Using AD Filters with Cmdlets (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-ad-filters-with-cmdlets-part-2)
+<!--本文国际来源：[Using AD Filters with Cmdlets (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-ad-filters-with-cmdlets-part-2)-->

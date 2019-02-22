@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您将文本内容写入到文件时，PowerShell cmdlet 可以指定文件编码。编码决定了字符的存储方式，并且当某个字符显示乱码时，通常是由于编码不匹配造成的。
 
@@ -47,5 +46,4 @@ $NewPath = "$env:temp\export_new.csv"
 Remove-BomFromFile -OldPath $Path -NewPath $NewPath
 ```
 
-<!--more-->
-本文国际来源：[Dealing with File Encoding and BOM](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-file-encoding-and-bom)
+<!--本文国际来源：[Dealing with File Encoding and BOM](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-file-encoding-and-bom)-->

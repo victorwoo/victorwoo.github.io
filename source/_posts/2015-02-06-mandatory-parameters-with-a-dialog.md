@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -65,5 +64,4 @@ _适用于 PowerShell 所有版本_
     
     PS>
 
-<!--more-->
-本文国际来源：[Mandatory Parameters with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameters-with-a-dialog)
+<!--本文国际来源：[Mandatory Parameters with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameters-with-a-dialog)-->

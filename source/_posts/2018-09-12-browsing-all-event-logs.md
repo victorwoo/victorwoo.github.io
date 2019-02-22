@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-EventLog` 总是需要您通过 `LogName` 明确地指定一个事件日志。您无法使用通配符，并且无法一次性浏览所有事件日志。
 
@@ -64,5 +63,4 @@ Get-EventLog -LogName * |
   }
 ```
 
-<!--more-->
-本文国际来源：[Browsing All Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/browsing-all-event-logs)
+<!--本文国际来源：[Browsing All Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/browsing-all-event-logs)-->

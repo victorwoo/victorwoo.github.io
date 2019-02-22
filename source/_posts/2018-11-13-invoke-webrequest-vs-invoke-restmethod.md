@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Invoke-WebRequest` 只是简单地从任意的网站下载内容。接下来读取内容并分析它，是您的工作。在前一个技能中我们解释了如何下载 PowerShell 代码，并且执行它：
 
@@ -53,5 +52,4 @@ $data = Invoke-RestMethod -Uri $url
 $data.Envelope.Cube.Cube.Cube
 ```
 
-<!--more-->
-本文国际来源：[Invoke-WebRequest vs. Invoke-RestMethod](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/invoke-webrequest-vs-invoke-restmethod)
+<!--本文国际来源：[Invoke-WebRequest vs. Invoke-RestMethod](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/invoke-webrequest-vs-invoke-restmethod)-->

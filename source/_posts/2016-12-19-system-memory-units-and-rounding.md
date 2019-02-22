@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，您可能会需要不同的度量单位。例如整个系统的内存是以字节计算的。以下是一些将字节转换为 GB 并且仍然保证可读性的例子：
 
@@ -42,5 +41,4 @@ $memoryGB
     15.9
     15.9 GB
 
-<!--more-->
-本文国际来源：[System Memory, Units, and Rounding](http://community.idera.com/powershell/powertips/b/tips/posts/system-memory-units-and-rounding)
+<!--本文国际来源：[System Memory, Units, and Rounding](http://community.idera.com/powershell/powertips/b/tips/posts/system-memory-units-and-rounding)-->

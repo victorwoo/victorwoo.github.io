@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了文字转语音引擎。这个引擎可以将文本转为一个 WAV 声音文件。这样我们可以利用它来生成语音信息：
 
@@ -29,5 +28,4 @@ $synthesizer.SetOutputToDefaultAudioDevice()
 Invoke-Item -Path $Path
 ```
 
-<!--more-->
-本文国际来源：[Synthesizing Speech – Recording to File (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-recording-to-file-part-2)
+<!--本文国际来源：[Synthesizing Speech – Recording to File (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-recording-to-file-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您能指出这段代码的错误吗？
 
@@ -41,5 +40,4 @@ PS C:\>
 
 所以请始终确保知道内置的别名——它们的优先级永远比函数或其它命令高。更好的做法是，按照最佳实践，始终用 Verb-Noum 的方式来命名您的函数。
 
-<!--more-->
-本文国际来源：[Beware of Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/beware-of-aliases)
+<!--本文国际来源：[Beware of Aliases](http://community.idera.com/powershell/powertips/b/tips/posts/beware-of-aliases)-->

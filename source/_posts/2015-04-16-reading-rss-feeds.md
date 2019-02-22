@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们可以通过 XML 对象来读取 RSS 频道信息，然而 XML 对象不支持代理服务器。
 
@@ -31,5 +30,4 @@ tags:
 
 这段代码将显示 PowerShell 团队博客数据。
 
-<!--more-->
-本文国际来源：[Reading RSS Feeds](http://community.idera.com/powershell/powertips/b/tips/posts/reading-rss-feeds)
+<!--本文国际来源：[Reading RSS Feeds](http://community.idera.com/powershell/powertips/b/tips/posts/reading-rss-feeds)-->

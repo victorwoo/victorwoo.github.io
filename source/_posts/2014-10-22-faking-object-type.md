@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -35,5 +34,4 @@ The object pretends to be a process object, and ETS will format it accordingly:
     
     PS>
 
-<!--more-->
-本文国际来源：[Faking Object Type](http://community.idera.com/powershell/powertips/b/tips/posts/faking-object-type)
+<!--本文国际来源：[Faking Object Type](http://community.idera.com/powershell/powertips/b/tips/posts/faking-object-type)-->

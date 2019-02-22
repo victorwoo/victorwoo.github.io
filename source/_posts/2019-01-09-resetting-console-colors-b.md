@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 控制台里很容易把控制台颜色搞乱。一个不经意的调用意外地改变了颜色值，或者脚本错误地设置了颜色，可能会导致意外的结果。要验证这种情况，请打开一个 PowerShell 控制台（不是编辑器！），并且运行这段代码：
 
@@ -27,5 +26,4 @@ PS> [Console]::ResetColor()
 
 接着运行 `Clear-Host` 可以清空显示。
 
-<!--more-->
-本文国际来源：[Resetting Console Colors](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/resetting-console-colors-b)
+<!--本文国际来源：[Resetting Console Colors](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/resetting-console-colors-b)-->

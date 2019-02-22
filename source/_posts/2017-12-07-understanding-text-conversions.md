@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有许多方法能将对象转换为文本。如果您在某些情况下弄糊涂了，这篇文章能帮您快速搞清。请看：
 
@@ -51,5 +50,4 @@ $a.ToString()
 $a | Out-String
 ```
 
-<!--more-->
-本文国际来源：[Understanding Text Conversions](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-text-conversions)
+<!--本文国际来源：[Understanding Text Conversions](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-text-conversions)-->

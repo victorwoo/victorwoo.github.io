@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当通过 PowerShell 的 "`env:`" 驱动器来设置环境变量，您只需要操作其中的数据即可。它会应用到当前的 PowerShell 实例，和所有由它启动的应用程序。不过改变并不会保存。
 
@@ -29,5 +28,4 @@ $scope = [EnvironmentVariableTarget]::User
 
 要彻底删除一个环境变量，请将 `$value` 设置成一个空字符串。
 
-<!--more-->
-本文国际来源：[Setting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/setting-environment-variables)
+<!--本文国际来源：[Setting Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/setting-environment-variables)-->

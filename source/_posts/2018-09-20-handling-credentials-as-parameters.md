@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 凭据是包含用户名和加密的密码的对象。如果您的 PowerShell 函数可以接受凭据，那么加上 `PSCredential` 类型：
 
@@ -62,5 +61,4 @@ function Connect-Server
 }
 ```
 
-<!--more-->
-本文国际来源：[Handling Credentials as Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/handling-credentials-as-parameters)
+<!--本文国际来源：[Handling Credentials as Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/handling-credentials-as-parameters)-->

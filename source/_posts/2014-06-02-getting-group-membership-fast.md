@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要了解您的用户账户所在的 Active Directory 组，通常需要查询 Active Directory，并且还需要查找嵌套的组成员身份。
 
@@ -27,5 +26,4 @@ tags:
         $objUser.Value
       } 
 
-<!--more-->
-本文国际来源：[Getting Group Membership - Fast](http://community.idera.com/powershell/powertips/b/tips/posts/getting-group-membership-fast)
+<!--本文国际来源：[Getting Group Membership - Fast](http://community.idera.com/powershell/powertips/b/tips/posts/getting-group-membership-fast)-->

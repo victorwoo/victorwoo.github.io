@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -27,5 +26,4 @@ _适用于所有 PowerShell 版本_
     
     cmd.exe /c echo ÄÖÜäöüß
 
-<!--more-->
-本文国际来源：[Correcting ISE Encoding](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-ise-encoding)
+<!--本文国际来源：[Correcting ISE Encoding](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-ise-encoding)-->

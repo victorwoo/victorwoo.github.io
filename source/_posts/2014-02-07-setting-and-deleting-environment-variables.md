@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以很容易地读取环境变量。以下代码返回当前的 Windows 文件夹：
 
@@ -47,5 +46,4 @@ PowerShell 可以很容易地读取环境变量。以下代码返回当前的 Wi
 
 	PS> Set-EnvironmentVariable -Name TestVar -Value '' -Target User
 
-<!--more-->
-本文国际来源：[Setting (And Deleting) Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/setting-and-deleting-environment-variables)
+<!--本文国际来源：[Setting (And Deleting) Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/setting-and-deleting-environment-variables)-->

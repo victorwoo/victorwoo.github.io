@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -32,5 +31,4 @@ _适用于 PowerShell 所有版本_
     S-1-5-21-1907506615-3936657230-268413... C:\Users\Tobias                         
     S-1-5-80-3880006512-4290199581-164872... C:\Users\MSSQL$SQLEXPRESS
 
-<!--more-->
-本文国际来源：[Read User Profiles from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/read-user-profiles-from-registry)
+<!--本文国际来源：[Read User Profiles from Registry](http://community.idera.com/powershell/powertips/b/tips/posts/read-user-profiles-from-registry)-->

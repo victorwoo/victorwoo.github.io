@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要快速地在 Internet Explorer 中打开新的网页，您可以像这样定义一个名为 `Show-WebPage` 的新函数：
 
@@ -36,5 +35,4 @@ tags:
 
 那么将会使用您的缺省浏览器来打开该 URL。
 
-<!--more-->
-本文国际来源：[Open Web Page](http://community.idera.com/powershell/powertips/b/tips/posts/open-web-page)
+<!--本文国际来源：[Open Web Page](http://community.idera.com/powershell/powertips/b/tips/posts/open-web-page)-->

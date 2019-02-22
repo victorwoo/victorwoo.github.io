@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问网页。如果您将两者合并成一个动态参数，就能得到一个专业的，支持实时汇率的货币换算器。
 
@@ -113,5 +112,4 @@ PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问�
     Euro     : 92,0734520623789
     Date     : 26.01.2016 21:33:01
 
-<!--more-->
-本文国际来源：[Converting Currencies](http://community.idera.com/powershell/powertips/b/tips/posts/converting-currencies)
+<!--本文国际来源：[Converting Currencies](http://community.idera.com/powershell/powertips/b/tips/posts/converting-currencies)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个例子中我们演示了 `Rename-Item` 中 `NewName` 的神奇功能。它可以接受一个新的文件名，也可以接受一个脚本块。脚本块可以用来批量命名大量文件。
 
@@ -88,5 +87,4 @@ WARNING: Ending...
 
 事实证明，这个魔法十分简单：`Par2` 的参数定义显示它可以接受管道输入。它不关心是由属性名输入 (ValueFromPipelineByPropertyName) 还是通过值输入 (ValueFromPipeline)。在这些例子中，当您将一个脚本块传给参数时，PowerShell 将该脚本块当作管道输入值的接口：`$_` 引用输入的对象，脚本块可以使用任何需要的代码来计算需要绑定到参数的值。
 
-<!--more-->
-本文国际来源：[Using Magic Script Block Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-magic-script-block-parameters)
+<!--本文国际来源：[Using Magic Script Block Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-magic-script-block-parameters)-->

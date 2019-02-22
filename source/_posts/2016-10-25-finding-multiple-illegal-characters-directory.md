@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 之前发，我们演示了如何用 `-match` 操作符来查找一段文本中的非法字符。不过，`-match` 操作符只能查找第一个匹配项。要列出字符串中的所有非法字符，请使用这种方法：
 
@@ -34,5 +33,4 @@ $invalid = $allMatch.Value | Sort-Object -Unique
     Illegal characters found: _, ö, ß
 
 
-<!--more-->
-本文国际来源：[Finding Multiple Illegal Characters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-multiple-illegal-characters-directory)
+<!--本文国际来源：[Finding Multiple Illegal Characters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-multiple-illegal-characters-directory)-->

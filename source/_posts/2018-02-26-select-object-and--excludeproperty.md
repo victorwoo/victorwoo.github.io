@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一行常常迷惑 PowerShell 用户的代码：
 
@@ -44,5 +43,4 @@ SMBIOSBIOSVersion   : 1.6.1
 SMBIOSPresent       : True
 ```
 
-<!--more-->
-本文国际来源：[Select-Object and -ExcludeProperty](http://community.idera.com/powershell/powertips/b/tips/posts/select-object-and--excludeproperty)
+<!--本文国际来源：[Select-Object and -ExcludeProperty](http://community.idera.com/powershell/powertips/b/tips/posts/select-object-and--excludeproperty)-->

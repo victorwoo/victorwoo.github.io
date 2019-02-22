@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Select-Object` 命令有一个 `-First` 参数，接受一个数字值。它将只返回前 x 个元素。听起来挺简单的，而且它的确就这么简单。
 
@@ -36,5 +35,4 @@ tags:
     
 这一次，`Get-ChildItem` 将会在找到一个文件后立即停止。
 
-<!--more-->
-本文国际来源：[Save Time With Select-Object -First!](http://community.idera.com/powershell/powertips/b/tips/posts/save-time-with-select-object-first)
+<!--本文国际来源：[Save Time With Select-Object -First!](http://community.idera.com/powershell/powertips/b/tips/posts/save-time-with-select-object-first)-->

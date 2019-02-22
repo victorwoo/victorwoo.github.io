@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 是否曾好奇如何列出一个函数或 cmdlet 暴露出的所有属性？以下是实现方法：
 
@@ -39,5 +38,4 @@ InputObject  True (ByValue)                 ServiceController[]
 Name         True (ByPropertyName, ByValue) String[]
 ```
 
-<!--more-->
-本文国际来源：[Programmatically listing any Cmdlet or Function Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/programmatically-listing-any-cmdlet-or-function-parameters)
+<!--本文国际来源：[Programmatically listing any Cmdlet or Function Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/programmatically-listing-any-cmdlet-or-function-parameters)-->

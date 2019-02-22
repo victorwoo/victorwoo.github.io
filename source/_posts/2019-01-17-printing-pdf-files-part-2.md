@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何用 PowerShell 将 PDF 文档发送到缺省的 PDF 打印机。这个通用方案对于简单场景是没问题的，但是无法让用户指定打印机。
 
@@ -64,5 +63,4 @@ $arguments='/S /T "{0}" "{1}" "{2}" {3}' -f $PDFPath, $printername, $drivername,
 Start-Process $Software -ArgumentList $arguments -Wait
 ```
 
-<!--more-->
-本文国际来源：[Printing PDF Files (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/printing-pdf-files-part-2)
+<!--本文国际来源：[Printing PDF Files (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/printing-pdf-files-part-2)-->

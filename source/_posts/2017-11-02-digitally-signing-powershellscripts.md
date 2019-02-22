@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中您学习了如何创建一个自签名的代码签名证书、将证书保存为一个 PFX 文件，并且将它加载进内存。
 
@@ -50,5 +49,4 @@ Get-AuthenticodeSignature
 
 如果您收到“UnknownError”消息，这并不代表是一个未知错误，而是代表脚本未受纂改但签名在系统中是未知的（或非受信的）。
 
-<!--more-->
-本文国际来源：[Digitally Signing PowerShell Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/digitally-signing-powershellscripts)
+<!--本文国际来源：[Digitally Signing PowerShell Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/digitally-signing-powershellscripts)-->

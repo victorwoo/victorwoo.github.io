@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您将一个数值赋给一个变量时，您也许希望按不同的单位显示该数字。字节的方式很清晰，但是有些时候以 KB 或 MB 的方式显示更合适。
 
@@ -45,5 +44,4 @@ tags:
     PS> $a.GetType().Name
     Int32
 
-<!--more-->
-本文国际来源：[Outputting File Sizes in Different Formats](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-file-sizes-in-different-formats)
+<!--本文国际来源：[Outputting File Sizes in Different Formats](http://community.idera.com/powershell/powertips/b/tips/posts/outputting-file-sizes-in-different-formats)-->

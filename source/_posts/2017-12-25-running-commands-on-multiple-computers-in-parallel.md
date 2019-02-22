@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您已经启用了 PowerShell 远程处理（请看我们之前的技能），那么您可以同时在多台计算机上运行命令。
 
@@ -32,5 +31,4 @@ Invoke-Command -ScriptBlock $code -ComputerName $listOfComputers -Throttle 1000
 
 例如，如果您将 `$code` 中的代码替换为 `Stop-Computer -Force`，所有机器将会被关闭。
 
-<!--more-->
-本文国际来源：[Running Commands on Multiple Computers in Parallel](http://community.idera.com/powershell/powertips/b/tips/posts/running-commands-on-multiple-computers-in-parallel)
+<!--本文国际来源：[Running Commands on Multiple Computers in Parallel](http://community.idera.com/powershell/powertips/b/tips/posts/running-commands-on-multiple-computers-in-parallel)-->

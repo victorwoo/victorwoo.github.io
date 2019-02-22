@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下几行代码能在远程服务器上创建一个 SMB 共享：
 
@@ -34,5 +33,4 @@ $shareName = 'ScriptExchange'
 net use * "\\$computername\$shareName"
 ```
 
-<!--more-->
-本文国际来源：[Creating SMB Shares Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/creating-smb-shares-remotely)
+<!--本文国际来源：[Creating SMB Shares Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/creating-smb-shares-remotely)-->

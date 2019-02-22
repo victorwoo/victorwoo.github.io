@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -27,5 +26,4 @@ Get-Random -InputObject 1, 2, 3, 5, 8, 13 -Count ([int]::MaxValue)
 1, 2, 3, 5, 8, 13 | Sort-Object -Property { Get-Random }
 ```
 
-<!--more-->
-本文国际来源：[Randomize Lists of Numbers](http://community.idera.com/powershell/powertips/b/tips/posts/randomize-lists-of-numbers)
+<!--本文国际来源：[Randomize Lists of Numbers](http://community.idera.com/powershell/powertips/b/tips/posts/randomize-lists-of-numbers)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 类中的方法可以重载：您可以定义多个同名的方法，但是参数类型不同。它用起来和 cmdlet 中的参数集类似。请看：
 
@@ -87,5 +86,4 @@ VERBOSE: Last step took  68.8883 ms.
 69
 ```
 
-<!--more-->
-本文国际来源：[Using Classes (Overloading - Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-overloading-part-4)
+<!--本文国际来源：[Using Classes (Overloading - Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-overloading-part-4)-->

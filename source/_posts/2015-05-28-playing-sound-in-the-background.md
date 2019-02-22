@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的脚本执行起来需要较长时间，您可能会希望播放一段系统声音文件。以下是一个实现该功能的示例代码：
 
@@ -40,5 +39,4 @@ tags:
 
 这段示例代码使用 Windows 文件夹中找到的第一个 WAV 文件，然后在脚本的执行期间播放它。您当然也可以指定其它 WAV 文件的路径。
 
-<!--more-->
-本文国际来源：[Playing Sound in the Background](http://community.idera.com/powershell/powertips/b/tips/posts/playing-sound-in-the-background)
+<!--本文国际来源：[Playing Sound in the Background](http://community.idera.com/powershell/powertips/b/tips/posts/playing-sound-in-the-background)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们展示了一个可以显示 PowerShell ISE 中所有打开的脚本的所有变量名的脚本。
 
@@ -34,5 +33,4 @@ tags:
 
 当您运行这段代码后，您可以按下 `ALT`+`V` 打开一个网格窗口显示所有打开的脚本中用到的变量。
 
-<!--more-->
-本文国际来源：[Adding "List All Variables" to PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/adding-quot-list-all-variables-quot-to-powershell-ise)
+<!--本文国际来源：[Adding "List All Variables" to PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/adding-quot-list-all-variables-quot-to-powershell-ise)-->

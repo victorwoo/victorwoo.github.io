@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 不仅是一个自动化操作的语言，而且是另一个用户操作界面。如果您不喜欢图形界面，那么练习使用 PowerShell 通过简单的别名来启动您需要的工具。
 
@@ -29,5 +28,4 @@ PowerShell 不仅是一个自动化操作的语言，而且是另一个用户操
 
 ![](/img/2014-02-25-using-aliases-to-launch-windows-components-003.png)
 
-<!--more-->
-本文国际来源：[Using Aliases to Launch Windows Components](http://community.idera.com/powershell/powertips/b/tips/posts/using-aliases-to-launch-windows-components)
+<!--本文国际来源：[Using Aliases to Launch Windows Components](http://community.idera.com/powershell/powertips/b/tips/posts/using-aliases-to-launch-windows-components)-->

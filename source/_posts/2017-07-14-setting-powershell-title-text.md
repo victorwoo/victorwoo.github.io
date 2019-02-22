@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许知道可以通过类似这样一行代码改变 PowerShell 宿主窗口的标题文本：
 
@@ -40,5 +39,4 @@ function prompt
 
 PowerShell 每次完成一条命令之后，都会执行 "`prompt`" 函数。在标题栏中，您将始终能看到当前的路径和日期，而 PowerShell 编辑器中的命令提示符被简化成 "PS> "。
 
-<!--more-->
-本文国际来源：[Setting PowerShell Title Text](http://community.idera.com/powershell/powertips/b/tips/posts/setting-powershell-title-text)
+<!--本文国际来源：[Setting PowerShell Title Text](http://community.idera.com/powershell/powertips/b/tips/posts/setting-powershell-title-text)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一行可以转储所有禁用了所有设置的组策略对象的代码：
 
@@ -21,5 +20,4 @@ Get-Gpo -All | Where-Object GpoStatus -eq AllSettingsDisabled
 
 这个示例需要 Microsoft 免费的 RSAT 工具。
 
-<!--more-->
-本文国际来源：[Finding Disabled GPOs](http://community.idera.com/powershell/powertips/b/tips/posts/finding-disabled-gpos)
+<!--本文国际来源：[Finding Disabled GPOs](http://community.idera.com/powershell/powertips/b/tips/posts/finding-disabled-gpos)-->

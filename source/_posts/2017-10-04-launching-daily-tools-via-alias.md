@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可能知道一些 PowerShell 预定义的缩写名称：例如 `dir` 和 `ls` 等别名能够节约您每天的打字时间。有许多好的原因值得扩展这些别名的列表并且增加您日常使用的工具。
 
@@ -40,5 +39,4 @@ C:\Users\username\Documents\WindowsPowerShell\profile.ps1
 PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
 ```
 
-<!--more-->
-本文国际来源：[Launching Daily Tools via Alias](http://community.idera.com/powershell/powertips/b/tips/posts/launching-daily-tools-via-alias)
+<!--本文国际来源：[Launching Daily Tools via Alias](http://community.idera.com/powershell/powertips/b/tips/posts/launching-daily-tools-via-alias)-->

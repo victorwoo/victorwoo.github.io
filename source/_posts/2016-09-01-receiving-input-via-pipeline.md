@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能里我们演示了 `Convert-Umlaut` 如何转换一个字符串中的特殊字符。这在一个函数接受管道输入的时候更有用。让我们来看看增加这种特性所需要做的改变。
 
@@ -90,5 +89,4 @@ function Convert-Umlaut
     Moessler, Christiansoen
 ```
 
-<!--more-->
-本文国际来源：[Receiving Input via Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/receiving-input-via-pipeline)
+<!--本文国际来源：[Receiving Input via Pipeline](http://community.idera.com/powershell/powertips/b/tips/posts/receiving-input-via-pipeline)-->

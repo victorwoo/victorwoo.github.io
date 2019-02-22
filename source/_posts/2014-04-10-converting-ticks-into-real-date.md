@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Active Directory 内部使用 tick （从 1601 年起的百纳秒数）来表示日期和时间。在以前，要将这个大数字转换为人类可读的日期和时间是很困难的。以下是一个很简单的办法：
 
@@ -21,5 +20,4 @@ Active Directory 内部使用 tick （从 1601 年起的百纳秒数）来表示
 
 ![](/img/2014-04-10-converting-ticks-into-real-date-001.png)
 
-<!--more-->
-本文国际来源：[Converting Ticks into Real Date](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-into-real-date)
+<!--本文国际来源：[Converting Ticks into Real Date](http://community.idera.com/powershell/powertips/b/tips/posts/converting-ticks-into-real-date)-->

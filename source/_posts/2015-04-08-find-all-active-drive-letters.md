@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要快速地获取所有驱动器号，请使用以下代码：
 
@@ -28,5 +27,4 @@ tags:
     F:\
     G:\
 
-<!--more-->
-本文国际来源：[Find All Active Drive Letters ](http://community.idera.com/powershell/powertips/b/tips/posts/find-all-active-drive-letters)
+<!--本文国际来源：[Find All Active Drive Letters ](http://community.idera.com/powershell/powertips/b/tips/posts/find-all-active-drive-letters)-->

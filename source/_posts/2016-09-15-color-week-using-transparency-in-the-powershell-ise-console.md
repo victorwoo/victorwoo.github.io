@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 本周我们将关注如何改变 PowerShell 控制台和 PowerShell ISE 的颜色，以便设置您的 PowerShell 环境。
 
@@ -58,5 +57,4 @@ PS C:\> [System.Windows.Media.Colors]::Yellow.ToString()
 PS>$psise.Options.ConsolePaneTextBackgroundColor="#33FFFF00"
 ```
 
-<!--more-->
-本文国际来源：[Color Week: Using Transparency in the PowerShell ISE Console](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-using-transparency-in-the-powershell-ise-console)
+<!--本文国际来源：[Color Week: Using Transparency in the PowerShell ISE Console](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-using-transparency-in-the-powershell-ise-console)-->

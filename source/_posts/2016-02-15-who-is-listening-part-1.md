@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一个过去十分好用的 `netstat.exe` 可以告诉您应用程序在监听哪些端口，不过结果是纯文本。PowerShell 可以用正则表达式将文本分割成 CSV 数据，`ConvertFrom-Csv` 可以将文本转换为真实的对象。
 
@@ -61,5 +60,4 @@ Format-List
     process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 
               AdobeIPCBroker...}
 
-<!--more-->
-本文国际来源：[Who Is Listening? (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-1)
+<!--本文国际来源：[Who Is Listening? (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-1)-->

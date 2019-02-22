@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设一个脚本已经向某个文件夹写入了多个日志文件，所有文件名都为 *.log。您可能希望将它们合并为一个大文件。以下是一个简单的实践：
 
@@ -41,5 +40,4 @@ Invoke-Item -Path $OutPath
 
 它利用了 `Get-ChildItem` 的灵活性，而且可以在读取内容之前对文件排序。通过这种方法，日志保持了顺序，并且最终的日志信息总是在日志文件的最上部。
 
-<!--more-->
-本文国际来源：[Concatenating Text Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/concatenating-text-files)
+<!--本文国际来源：[Concatenating Text Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/concatenating-text-files)-->

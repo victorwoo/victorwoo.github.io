@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候当您尝试连接 WEB 服务时，PowerShell 可能会弹出无法设置安全的 SSL 通道提示。
 
@@ -64,5 +63,4 @@ $AllProtocols = [Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
     Hann Münden          8006707
     HannoverMesseLaatzen 8003487
 
-<!--more-->
-本文国际来源：[Solving SSL Connection Problems](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/solving-ssl-connection-problems)
+<!--本文国际来源：[Solving SSL Connection Problems](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/solving-ssl-connection-problems)-->

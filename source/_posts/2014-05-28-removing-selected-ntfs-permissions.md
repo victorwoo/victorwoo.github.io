@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许需要从 NTFS 权限中移除某些权限。我们假设您希望移除某个用户的所有权限，因为他已经离开了这个部门。
 
@@ -53,5 +52,4 @@ tags:
         }
     }
 
-<!--more-->
-本文国际来源：[Removing Selected NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/removing-selected-ntfs-permissions)
+<!--本文国际来源：[Removing Selected NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/removing-selected-ntfs-permissions)-->

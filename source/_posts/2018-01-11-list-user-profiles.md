@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们收到很多反馈，关于如何处理用户配置文件的技能，所以我们决定增加几个额外的技能。
 
@@ -39,5 +38,4 @@ Get-CimInstance -ClassName Win32_UserProfile |
 
 网格视图显示了一个名为 `UserName` 的额外列，其中包括指定用户配置文件的明文用户名。
 
-<!--more-->
-本文国际来源：[List User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/list-user-profiles)
+<!--本文国际来源：[List User Profiles](http://community.idera.com/powershell/powertips/b/tips/posts/list-user-profiles)-->

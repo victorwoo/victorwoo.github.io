@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的技能中我们演示如何用 `Invoke-WebRequest` 从 internet 下载文件。然而，它只适用于 HTTP 地址。如果您用的是 HTTPS 地址，将会失败：
 
@@ -31,5 +30,4 @@ Invoke-Item -Path $destination
 
 执行完这行代码之后，之前的代码就运行正常了，可以下载 psconf.eu PDF 格式的议程表到您的桌面上，然后尝试打开该文件。
 
-<!--more-->
-本文国际来源：[Downloading Information from Internet (Part 8)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-8)
+<!--本文国际来源：[Downloading Information from Internet (Part 8)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-8)-->

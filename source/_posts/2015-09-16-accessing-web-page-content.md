@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 3.0 开始，`Invoke-WebRequest` 命令可以轻松地下载网页内容。例如这个例子可以从 [www.powertheshell.com](http://www.powertheshell.com) 获取所有链接：
 
@@ -31,5 +30,4 @@ tags:
 
 当您用这种方法处理其它 URL 时，您可能偶尔会遇到弹出一个安全警告框，提示需要存储 cookie 的权限。要禁止这些对话框出现并静默执行命令，请使用 `-UseBasicParsing` 参数。
 
-<!--more-->
-本文国际来源：[Accessing Web Page Content](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-web-page-content)
+<!--本文国际来源：[Accessing Web Page Content](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-web-page-content)-->

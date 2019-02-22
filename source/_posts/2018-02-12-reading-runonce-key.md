@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 注册表中的 `RunOnce` 键存储了所有的自启动。它可能是空的。要检查自启动的应用程序请试试这段代码：
 
@@ -29,5 +28,4 @@ $key = Get-Item -Path $path
 $key.GetValueNames() | ForEach-Object { $key.GetValue($_) }
 ```
 
-<!--more-->
-本文国际来源：[Reading RunOnce Key](http://community.idera.com/powershell/powertips/b/tips/posts/reading-runonce-key)
+<!--本文国际来源：[Reading RunOnce Key](http://community.idera.com/powershell/powertips/b/tips/posts/reading-runonce-key)-->

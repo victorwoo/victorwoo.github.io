@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -24,5 +23,4 @@ _适用于 PowerShell 所有版本_
     $serial = (Get-WmiObject -ComputerName $ComputerName -Class Win32_BIOS).SerialNumber
     "Your computer serial is $serial"
 
-<!--more-->
-本文国际来源：[Getting Computer Serial Number](http://community.idera.com/powershell/powertips/b/tips/posts/getting-computer-serial-number)
+<!--本文国际来源：[Getting Computer Serial Number](http://community.idera.com/powershell/powertips/b/tips/posts/getting-computer-serial-number)-->

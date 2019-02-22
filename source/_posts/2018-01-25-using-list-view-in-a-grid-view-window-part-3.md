@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了 `ConvertObject-ToHashTable` 函数，它能方便地将对象显示在一个网格视图窗口中。
 
@@ -57,5 +56,4 @@ Get-WmiObject -Class Win32_BIOS |
     Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Using List View in a Grid View Window (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/using-list-view-in-a-grid-view-window-part-3)
+<!--本文国际来源：[Using List View in a Grid View Window (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/using-list-view-in-a-grid-view-window-part-3)-->

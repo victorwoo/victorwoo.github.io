@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您需要在一个独立的 powershell.exe 以一个 PowerShell 命令的方式执行代码时，并不十分安全。这要看您从哪儿调用 powershell.exe，您的代码参数可能被解析器修改，而且代码中的特殊字符可能会造成宿主混淆。
 
@@ -29,5 +28,4 @@ tags:
     
     Start-Process -FilePath powershell.exe -ArgumentList $args
 
-<!--more-->
-本文国际来源：[Encode PowerShell Commands](http://community.idera.com/powershell/powertips/b/tips/posts/encode-powershell-commands)
+<!--本文国际来源：[Encode PowerShell Commands](http://community.idera.com/powershell/powertips/b/tips/posts/encode-powershell-commands)-->

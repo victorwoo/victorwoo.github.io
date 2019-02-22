@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 同时有五个主要版本在发行。除掉最新的小版本，例如 Windows 10 和 Server 2016 上的 PowerShell 5.1。加上 beta 版和预发行版本，以及 Linux 和 Nano 服务器上的 PowerShell。哇哦！
 
@@ -65,5 +64,4 @@ PSComputerName  PSVersion     PSVersionFriendlyName
 CLIENT12        5.1.14393.0   Windows PowerShell 5.1 Preview
 ```
 
-<!--more-->
-本文国际来源：[Shed Light into the PowerShell Version Jungle](http://community.idera.com/powershell/powertips/b/tips/posts/shed-light-into-the-powershell-version-jungle)
+<!--本文国际来源：[Shed Light into the PowerShell Version Jungle](http://community.idera.com/powershell/powertips/b/tips/posts/shed-light-into-the-powershell-version-jungle)-->

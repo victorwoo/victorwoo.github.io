@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 对于无人值守的脚本，以硬编码的方式将密码保存在脚本中是不安全且不推荐的。
 
@@ -31,5 +30,4 @@ $credential = New-Object -TypeName PSCredential($username, $password)
 Get-WmiObject -Class Win32_LogicalDisk -ComputerName SomeServer -Credential $credential
 ```
 
-<!--more-->
-本文国际来源：[Managing Credentials (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-3)
+<!--本文国际来源：[Managing Credentials (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-credentials-part-3)-->

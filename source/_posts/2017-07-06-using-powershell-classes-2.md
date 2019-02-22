@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，您可以定义 PowerShell 类。您可以使用类来创建新对象，并通过创建一个或多个构造函数，您可以方便地初始化新创建的对象。
 
@@ -73,5 +72,4 @@ PS>
 
 每次调用都使用一个新的构造函数，并且该类根据需要创建相应的对象。
 
-<!--more-->
-本文国际来源：[Using PowerShell Classes 2](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-classes-2)
+<!--本文国际来源：[Using PowerShell Classes 2](http://community.idera.com/powershell/powertips/b/tips/posts/using-powershell-classes-2)-->

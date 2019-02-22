@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的脚本需要图标或图片等资源，您不需要另外发布这些资源。它们可以用 Base64 编码并且以纯文本的方式加到您的脚本中。
 
@@ -51,5 +50,4 @@ $pictureString
 
 明天，我们将演示如何将 Base64 编码后的图片加载到内存中，并在自己的 WPF 窗口中显示。
 
-<!--more-->
-本文国际来源：[Encoding Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/encoding-pictures)
+<!--本文国际来源：[Encoding Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/encoding-pictures)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能里我们演示了如何用 PowerShell 播放系统声音。对于更灵活一些的场景，PowerShell 也可以播放任意的 *.wav 声音文件：
 
@@ -46,5 +45,4 @@ $soundPlayer.PlayLooping()
 $soundPlayer.Stop()
 ```
 
-<!--more-->
-本文国际来源：[Playing Sound Files](http://community.idera.com/powershell/powertips/b/tips/posts/playing-sound-files)
+<!--本文国际来源：[Playing Sound Files](http://community.idera.com/powershell/powertips/b/tips/posts/playing-sound-files)-->

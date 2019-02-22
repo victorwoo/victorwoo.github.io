@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以用这样的一段脚本远程执行 `gpupdate.exe`：
 
@@ -39,5 +38,4 @@ tags:
 
 这段脚本利用了 PowerShell 远程管理技术，所以它需要目标计算机启用了 PowerShell 远程管理，并且您需要这些机器的本地管理员权限。
 
-<!--more-->
-本文国际来源：[gpupdate on Remote Machines](http://community.idera.com/powershell/powertips/b/tips/posts/gpupdate-on-remote-machines)
+<!--本文国际来源：[gpupdate on Remote Machines](http://community.idera.com/powershell/powertips/b/tips/posts/gpupdate-on-remote-machines)-->

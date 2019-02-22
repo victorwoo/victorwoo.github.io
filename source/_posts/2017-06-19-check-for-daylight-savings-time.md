@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下用 PowerShell 来查看是否使用了夏时制的方法——进行 GMT 计算时可能需要的细节：
 
@@ -19,5 +18,4 @@ tags:
 (Get-Date).IsDaylightSavingTime()
 ```
 
-<!--more-->
-本文国际来源：[Check for Daylight Savings Time](http://community.idera.com/powershell/powertips/b/tips/posts/check-for-daylight-savings-time)
+<!--本文国际来源：[Check for Daylight Savings Time](http://community.idera.com/powershell/powertips/b/tips/posts/check-for-daylight-savings-time)-->

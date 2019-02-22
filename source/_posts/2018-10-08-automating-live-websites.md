@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，需要自动化操作某些已经人工打开的网站。也许您需要先用 WEB 表单登录到内部的网页。假设网站是通过 Internet Explorer 加载的（不是 Edge 或任何第三方浏览器），您可以使用 COM 接口来访问浏览器的实时内容。
 
@@ -50,5 +49,4 @@ PS> $browser.Document.building.innerHTML
 
 使用 Internet Explorer 对象模型来进行更多高级操作，例如下载文件或视频，并不是完全不可行。但基本上是十分复杂的，您需要向用户界面发送点击和按键动作。
 
-<!--more-->
-本文国际来源：[Automating “Live” Websites](http://community.idera.com/powershell/powertips/b/tips/posts/automating-live-websites)
+<!--本文国际来源：[Automating “Live” Websites](http://community.idera.com/powershell/powertips/b/tips/posts/automating-live-websites)-->

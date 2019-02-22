@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您在使用PowerShell 3.0和ISE编辑器，那么您必须知道以下3个最有用的技巧：
 
@@ -20,6 +19,5 @@ tags:
 2. 当您选取一段代码后，按下 `F8` 将执行选中部分的代码。这个技巧在被注释的区域里也可以使用。所以您可以用 `<#` 和 `#>` 将一些代码注释掉，当需要执行的时候，选中它们并按下 `F8` 键。
 
 3. 若要获得cmdlet的上下文帮助，点击脚本中的cmdlet并按 `F1` 键。
-<!--more-->
 
-本文国际来源：[Vertical Grid View](http://community.idera.com/powershell/powertips/b/tips/posts/vertical-grid-view)
+<!--本文国际来源：[Vertical Grid View](http://community.idera.com/powershell/powertips/b/tips/posts/vertical-grid-view)-->

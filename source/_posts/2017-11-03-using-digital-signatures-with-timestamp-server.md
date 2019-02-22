@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您对脚本文件签名时，会希望签名保持完整，即便为它签名的证书将来过期了。关键的是证书在签名的时候是合法的。
 
@@ -35,5 +34,4 @@ Where-Object {
 Set-AuthenticodeSignature -Certificate $cert -TimestampServer http://timestamp.digicert.com -WhatIf
 ```
 
-<!--more-->
-本文国际来源：[Using Digital Signatures with Timestamp Server](http://community.idera.com/powershell/powertips/b/tips/posts/using-digital-signatures-with-timestamp-server)
+<!--本文国际来源：[Using Digital Signatures with Timestamp Server](http://community.idera.com/powershell/powertips/b/tips/posts/using-digital-signatures-with-timestamp-server)-->

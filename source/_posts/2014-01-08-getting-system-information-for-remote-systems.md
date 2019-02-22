@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在上一个技巧当中您已学到如何用 systeminfo.exe 获取丰富的系统资料。systeminfo.exe 内置了远程的功能，所以如果您拥有了适当的权限，您可以获取远程主机的系统信息。
 
@@ -32,5 +31,4 @@ tags:
 ![](/img/2014-01-08-getting-system-information-for-remote-systems-001.png)
 
 
-<!--more-->
-本文国际来源：[Getting System Information for Remote Systems](http://community.idera.com/powershell/powertips/b/tips/posts/getting-system-information-for-remote-systems)
+<!--本文国际来源：[Getting System Information for Remote Systems](http://community.idera.com/powershell/powertips/b/tips/posts/getting-system-information-for-remote-systems)-->

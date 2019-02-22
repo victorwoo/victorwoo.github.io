@@ -9,7 +9,6 @@ categories:
 tags:
 - powershell
 - script
-- translation
 ---
 我假设许多读者用PowerShell生成服务器、事件以及Windows网络上各种数据的报表。您也许创建过纯文本文件，甚至漂亮的HTML报表。但是您也可以用上Microsoft Word，当然，前提是您已经安装了Word。在这个系列的第二部分，我将会向您演示[如何用PowerShell为Word文档套用样式][2]。
 
@@ -20,7 +19,6 @@ PowerShell可以通过COM接口控制Word应用程序。有趣的地方是，虽
 
 	PS C:\> $word=new-object -ComObject "Word.Application"
 
-<!--more-->
 如果您好奇的话，可以将这个对象输出到 `Get-Member` 命令。我们将创建一系列对象，您可以将每一个对象通过管道输出到 `Get-Member` 来探索它们。
 
 下一步，我们创建一个文档对象。

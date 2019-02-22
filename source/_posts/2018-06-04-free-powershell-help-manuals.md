@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 即便是有经验的 PowerShell 用户也会经常忽略 PowerShell 强大的帮助系统，它类似 Linux 中的 man page。您所需要做的只是一次性下载帮助文件。要下载帮助文件，您需要在提升权限的 PowerShell 中运行以下代码：
 
@@ -56,5 +55,4 @@ Get-Help about* |
 
 当运行这行代码时，PowerShell 将搜索帮助主题并打开一个网格视图。只需要按住 `CTRL` 并选择所有您想阅读的主题，然后单击确认。选中的主题将会在独立的帮助查看窗口中打开。
 
-<!--more-->
-本文国际来源：[Free PowerShell Help Manuals](http://community.idera.com/powershell/powertips/b/tips/posts/free-powershell-help-manuals)
+<!--本文国际来源：[Free PowerShell Help Manuals](http://community.idera.com/powershell/powertips/b/tips/posts/free-powershell-help-manuals)-->

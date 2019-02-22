@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 Server 2012 R2 和 Windows .1 中，有许多有用的新模块，包含了许多新的 cmdlet，例如 `New-SmbShare` 可以快速地创建新的文件共享。
 
@@ -28,5 +27,4 @@ $description = 'Place log files here'
 
 $share.Create( $path, $name, 0, $maxallowed,$description,$null,$null)
 ```
-<!--more-->
-本文国际来源：[Creating File Shares](http://community.idera.com/powershell/powertips/b/tips/posts/creating-file-shares)
+<!--本文国际来源：[Creating File Shares](http://community.idera.com/powershell/powertips/b/tips/posts/creating-file-shares)-->

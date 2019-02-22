@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 提供了 `Get-TimeZone` 命令，能返回所有定义过的时区和它们的时差。以下是列出世界时钟相关的代码：
 
@@ -54,5 +53,4 @@ Get-TimeZone -ListAvailable | ForEach-Object {
     Eastern Standard Time (Mexico) : 02:41h (Chetumal)
     Eastern Standard Time          : 02:41h ()
 
-<!--more-->
-本文国际来源：[World Time Clock](http://community.idera.com/powershell/powertips/b/tips/posts/world-time-clock)
+<!--本文国际来源：[World Time Clock](http://community.idera.com/powershell/powertips/b/tips/posts/world-time-clock)-->

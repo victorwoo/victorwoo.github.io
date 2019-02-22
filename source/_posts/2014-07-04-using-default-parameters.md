@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 PowerShell 3.0 中，任意的 cmdlet 参数都可以定义一个缺省值。
 
@@ -31,5 +30,4 @@ tags:
 
     $PSDefaultParameterValues.Clear()
 
-<!--more-->
-本文国际来源：[Using Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parameters)
+<!--本文国际来源：[Using Default Parameters](http://community.idera.com/powershell/powertips/b/tips/posts/using-default-parameters)-->

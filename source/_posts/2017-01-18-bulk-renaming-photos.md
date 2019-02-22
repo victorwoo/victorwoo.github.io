@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个快速批量重命名文件的方法，可以用于照片或其它文件。请看：
 
@@ -28,5 +27,4 @@ Get-ChildItem -Path $Path -Filter $Filter |
 
 要递归地重命名文件，请向 `Get-ChildItem` 命令添加 `-Recurse` 参数。但是，请小心。这一小段代码可能会导致一不小心对无数文件重命名。
 
-<!--more-->
-本文国际来源：[Bulk Renaming Photos](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-photos)
+<!--本文国际来源：[Bulk Renaming Photos](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-renaming-photos)-->

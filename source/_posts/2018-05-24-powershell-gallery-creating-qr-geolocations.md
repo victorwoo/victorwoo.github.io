@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何获取 PowerShellGet 并在您的 PowerShell 版本中运行。现在我们来看看 PowerShell 陈列架能够如何方便地扩展 PowerShell 功能。
 
@@ -41,5 +40,4 @@ Invoke-Item -Path $path
 
 当您在上述例子中传入一个地址，它将自动通过 Google 免费的 API 翻译成经纬度。这可能并不总是起作用，并且需要 Internet 连接。如果您知道您的位置的经纬度，您当然也可以通过 `-Latitude` 和 `Longitude` 参数传入经纬度。
 
-<!--more-->
-本文国际来源：[PowerShell Gallery: Creating QR GeoLocations](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-creating-qr-geolocations)
+<!--本文国际来源：[PowerShell Gallery: Creating QR GeoLocations](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-gallery-creating-qr-geolocations)-->

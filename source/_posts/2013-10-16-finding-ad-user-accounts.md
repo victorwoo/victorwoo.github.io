@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有很多用于 Active Directory 的 Module 和 Cmdlet，但是有些时候用 .NET 代码来做反而更方便快捷。
 
@@ -29,6 +28,5 @@ tags:
 	# find account location
 	$searcher.FindAll() | Select-Object -ExpandProperty Path
 
-<!--more-->
 
-本文国际来源：[Finding AD User Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-user-accounts)
+<!--本文国际来源：[Finding AD User Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-user-accounts)-->

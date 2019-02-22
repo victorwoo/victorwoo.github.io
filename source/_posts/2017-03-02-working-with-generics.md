@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 泛型可以作为实际类型的占位符，您可能会好奇为什么它会有意思。
 
@@ -39,5 +38,4 @@ False
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Working With Generics](http://community.idera.com/powershell/powertips/b/tips/posts/working-with-generics)
+<!--本文国际来源：[Working With Generics](http://community.idera.com/powershell/powertips/b/tips/posts/working-with-generics)-->

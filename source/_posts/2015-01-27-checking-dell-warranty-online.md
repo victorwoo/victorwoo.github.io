@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -67,5 +66,4 @@ _适用于 PowerShell 2.0 及以上版本_
     SystemModel    : GX270
     SystemShipDate : 23.03.2004 07:00:00
 
-<!--more-->
-本文国际来源：[Checking DELL Warranty Online](http://community.idera.com/powershell/powertips/b/tips/posts/checking-dell-warranty-online)
+<!--本文国际来源：[Checking DELL Warranty Online](http://community.idera.com/powershell/powertips/b/tips/posts/checking-dell-warranty-online)-->

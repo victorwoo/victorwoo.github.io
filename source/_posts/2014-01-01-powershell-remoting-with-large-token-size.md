@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Kerberos 令牌大小取决于用户组成员的数量。在某些重度使用组成员的企业环境中，令牌的大小可能会溢出 PowerShell 远程管理的限制。在这些情况下，PowerShell 远程管理操作会失败，提示一句模糊的信息。
 
@@ -21,5 +20,4 @@ Kerberos 令牌大小取决于用户组成员的数量。在某些重度使用�
 	New-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\HTTP\Parameters `-Name "MaxFieldLength" -Value 65335 -PropertyType "DWORD"
 	New-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\HTTP\Parameters `-Name "MaxRequestBytes" -Value 40000 -PropertyType "DWORD"
 
-<!--more-->
-本文国际来源：[PowerShell Remoting with Large Token Size](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-remoting-with-large-token-size)
+<!--本文国际来源：[PowerShell Remoting with Large Token Size](http://community.idera.com/powershell/powertips/b/tips/posts/powershell-remoting-with-large-token-size)-->

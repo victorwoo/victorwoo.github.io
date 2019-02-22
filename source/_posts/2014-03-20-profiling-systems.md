@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您只是需要获取本地系统或远程系统的常见配置信息，那么不必浪费时间去研究自己的解决方案。只需要使用 `systeminfo.exe`，然后将数据导入 PowerShell：
 
@@ -35,5 +34,4 @@ tags:
 
 如果您想用别的名字来获取信息，只需根据需要改变属性名列表。例如您不喜欢“System Boot Time”，那么只需要在脚本中将它重命名为“BootTime”。
 
-<!--more-->
-本文国际来源：[Profiling Systems](http://community.idera.com/powershell/powertips/b/tips/posts/profiling-systems)
+<!--本文国际来源：[Profiling Systems](http://community.idera.com/powershell/powertips/b/tips/posts/profiling-systems)-->

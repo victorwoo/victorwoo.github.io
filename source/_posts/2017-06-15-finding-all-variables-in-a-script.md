@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们掩饰了如何分析一段脚本块的内容并且搜索变量或命令。这种技术也适用于基于文本的脚本。以下脚本将会检查自己并且提取出变量和命令：
 
@@ -39,5 +38,4 @@ $ast.FindAll( { $true }, $true)  |
 
 请确保将脚本保存到硬盘，或为 `$filepath` 指定一个不同的实际存在的脚本路径。
 
-<!--more-->
-本文国际来源：[Finding All Variables in a Script](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-variables-in-a-script)
+<!--本文国际来源：[Finding All Variables in a Script](http://community.idera.com/powershell/powertips/b/tips/posts/finding-all-variables-in-a-script)-->

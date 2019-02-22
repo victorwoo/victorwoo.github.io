@@ -6,7 +6,6 @@ description: Powershell Multi Line Input Box Dialog, Open File Dialog, Folder Br
 categories: powershell
 tags:
 - powershell
-- translation
 ---
 我热爱 PowerShell，当我需要提示用户输入时，我常常更喜欢使用 GUI 控件，而不是让他们什么都往控制台里输入；有些东西比如说浏览文件或文件夹，或输入多行文本，不是很方便直接往 PowerShell 的命令行窗口中输入。所以我想我可以分享一些我常常用于这些场景的 PowerShell 脚本。
 
@@ -181,8 +180,7 @@ tags:
 Happy coding!
 
 [1]: /download/PowerShellGuiFunctions.ps1 "PowerShellGuiFunctions.ps1"
-<!--more-->
 [2]: http://blogs.technet.com/b/heyscriptingguy/archive/2009/09/01/hey-scripting-guy-september-1.aspx "Hey, Scripting Guy! Can I Open a File Dialog Box with Windows PowerShell?"
 [3]: http://technet.microsoft.com/en-us/library/ff730941.aspx "Windows PowerShell Tip of the Week"
 
-本文国际来源：[Powershell Multi Line Input Box Dialog, Open File Dialog, Folder Browser Dialog, Input Box, and Message Box](http://blog.danskingdom.com/powershell-multi-line-input-box-dialog-open-file-dialog-folder-browser-dialog-input-box-and-message-box/)
+<!--本文国际来源：[Powershell Multi Line Input Box Dialog, Open File Dialog, Folder Browser Dialog, Input Box, and Message Box](http://blog.danskingdom.com/powershell-multi-line-input-box-dialog-open-file-dialog-folder-browser-dialog-input-box-and-message-box/)-->

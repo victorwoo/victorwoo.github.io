@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -23,5 +22,4 @@ _适用于 PowerShell 所有版本_
       [Timespan]::FromMilliseconds($millisec)
     }
 
-<!--more-->
-本文国际来源：[Getting System Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/gettingsystemuptime)
+<!--本文国际来源：[Getting System Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/gettingsystemuptime)-->

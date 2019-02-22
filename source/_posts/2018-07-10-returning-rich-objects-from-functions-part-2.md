@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个函数返回多于四个属性时，PowerShell 将输出结果格式化为列表，否则格式化为表格。在您学习新的方法来影响这种行为之前，请自己验证一下。以下函数返回一个多于 6 个属性的对象：
 
@@ -142,5 +141,4 @@ BIOS   : \\DESKTOP-7AAMJLF\root\cimv2:Win32_BIOS.Name="1.6.1",SoftwareElementID=
 User   : tobwe
 ```
 
-<!--more-->
-本文国际来源：[Returning Rich Objects from Functions (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/returning-rich-objects-from-functions-part-2)
+<!--本文国际来源：[Returning Rich Objects from Functions (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/returning-rich-objects-from-functions-part-2)-->

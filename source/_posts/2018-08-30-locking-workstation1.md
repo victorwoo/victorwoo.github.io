@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望在 PowerShell 中锁定当前工作站，您可以利用 PowerShell 可以运行可执行程序的特性。以下是一个使用 `rundll32.exe` 来调用一个 Windows 内部函数来锁定工作站的快速函数：
 
@@ -22,5 +21,4 @@ function Lock-Workstation
 }
 ```
 
-<!--more-->
-本文国际来源：[Locking Workstation](http://community.idera.com/powershell/powertips/b/tips/posts/locking-workstation1)
+<!--本文国际来源：[Locking Workstation](http://community.idera.com/powershell/powertips/b/tips/posts/locking-workstation1)-->

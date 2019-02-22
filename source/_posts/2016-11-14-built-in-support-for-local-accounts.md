@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5.1 开始，终于内置支持了本地用户账户。PowerShell 5.1 现在支持 Windows 10 和 Windows Server 2016：
 
@@ -33,5 +32,4 @@ tags:
     Set-LocalGroup
     Set-LocalUser
 
-<!--more-->
-本文国际来源：[Built-In Support for Local Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/built-in-support-for-local-accounts)
+<!--本文国际来源：[Built-In Support for Local Accounts](http://community.idera.com/powershell/powertips/b/tips/posts/built-in-support-for-local-accounts)-->

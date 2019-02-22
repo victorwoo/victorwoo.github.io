@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否使用 `Read-Host` 来接受用户的输入？如果您是这么做的，请重新考虑一下。`Read-Host` 总是提示用户，并且用了 `Read-Host` 就无法自动化运行脚本：
 
@@ -41,5 +40,4 @@ param
 
 这样，您可以完全控制提示的内容，并且用户又可以通过实参传入参数，并且无人值守运行脚本。
 
-<!--more-->
-本文国际来源：[Avoid Read-Host](http://community.idera.com/powershell/powertips/b/tips/posts/avoid-read-host)
+<!--本文国际来源：[Avoid Read-Host](http://community.idera.com/powershell/powertips/b/tips/posts/avoid-read-host)-->

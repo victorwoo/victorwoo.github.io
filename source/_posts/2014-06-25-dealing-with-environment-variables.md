@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要在 PowerShell 中读取 Windows 环境变量，只需要使用“env:”前缀：
 
@@ -32,5 +31,4 @@ tags:
 	ALLUSERSPROFILE                C:\ProgramData
 	USERDOMAIN                     TobiasAir1
 
-<!--more-->
-本文国际来源：[Dealing with Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-environment-variables)
+<!--本文国际来源：[Dealing with Environment Variables](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-environment-variables)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 3.0 开始，PowerShell 具备了能够智能识别哪些 Cmdlet 是由哪个扩展 Module 导出的特性。所以您再也不需要知道 Module 的名称并且（用 `Import-Module` 手动导入它）。与之相反，自动完成和智能感知特性将为所有安装在标准 Module 文件夹中的每一个命令提供建议。以下是列出这些标准文件夹的方法：
 
@@ -24,5 +23,4 @@ tags:
 
 	PS> $env:PSModulePath += ';g:\mypersonalmodules'
 
-<!--more-->
-本文国际来源：[Loading Modules Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/loading-modules-automatically)
+<!--本文国际来源：[Loading Modules Automatically](http://community.idera.com/powershell/powertips/b/tips/posts/loading-modules-automatically)-->

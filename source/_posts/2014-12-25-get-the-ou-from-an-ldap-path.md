@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -25,5 +24,4 @@ _适用于 PowerShell 所有版本_
 
 这段代码将返回该 LDAP 路径（LDAP 路径是从右往左读的，所以最后一个 OU 是字符串中的第一个 OU），而且稍作修改就可以读取其它部分。例如，将下标从 0 改为 -1 就可以读取路径中的第一个 OU。
 
-<!--more-->
-本文国际来源：[Get the OU from an LDAP Path](http://community.idera.com/powershell/powertips/b/tips/posts/get-the-ou-from-an-ldap-path)
+<!--本文国际来源：[Get the OU from an LDAP Path](http://community.idera.com/powershell/powertips/b/tips/posts/get-the-ou-from-an-ldap-path)-->

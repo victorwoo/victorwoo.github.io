@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候从一个指定的 AD 用户读取所有属性到一个哈希表中十分有用。通过这种方法，您可以编辑他们，并使用 `Set-ADUser` 和它的 `-Add` 或 `-Replace` 参数将他们应用于另一个用户账户。
 
@@ -38,5 +37,4 @@ $name |
 
 请注意 `$blacklist` 的使用：这个列表可以包含任何希望排除的属性名。
 
-<!--more-->
-本文国际来源：[Turning AD User into a Hash Table](http://community.idera.com/powershell/powertips/b/tips/posts/turning-ad-user-into-a-hash-table)
+<!--本文国际来源：[Turning AD User into a Hash Table](http://community.idera.com/powershell/powertips/b/tips/posts/turning-ad-user-into-a-hash-table)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -25,5 +24,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 请注意 `$PSScriptRoot` 总是指向脚本所在文件夹的路径（从 PowerShell 3.0 开始）。请确保已经保存了您的脚本，因为只有保存过的脚本才有父文件夹。
 
-<!--more-->
-本文国际来源：[Loading Functions from Separate File](http://community.idera.com/powershell/powertips/b/tips/posts/loading-functions-from-separate-file)
+<!--本文国际来源：[Loading Functions from Separate File](http://community.idera.com/powershell/powertips/b/tips/posts/loading-functions-from-separate-file)-->

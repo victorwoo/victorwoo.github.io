@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 或以上版本_
 
@@ -42,5 +41,4 @@ _适用于 PowerShell 3.0 或以上版本_
     
     PS>
 
-<!--more-->
-本文国际来源：[Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newobjects)
+<!--本文国际来源：[Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newobjects)-->

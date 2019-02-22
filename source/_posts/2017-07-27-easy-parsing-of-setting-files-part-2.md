@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们使用了 `ConvertFrom-StringData` 来将纯文本键值对转换为哈希表。
 
@@ -57,5 +56,4 @@ Machine                        Server12
 Path                           c:\test
 ```
 
-<!--more-->
-本文国际来源：[Easy Parsing of Setting Files (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/easy-parsing-of-setting-files-part-2)
+<!--本文国际来源：[Easy Parsing of Setting Files (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/easy-parsing-of-setting-files-part-2)-->

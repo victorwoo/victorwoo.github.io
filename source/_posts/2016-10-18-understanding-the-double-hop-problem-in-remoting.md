@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您用 `Invoke-Command` 远程执行 PowerShell 代码时，您的凭据将会锁定在首个连接的机器上。
 
@@ -30,5 +29,4 @@ Invoke-Command -ScriptBlock $code -ComputerName server1
 
 这段代码试图在远程访问一个文件共享。但是即便您有权限访问该共享，这段远程代码也无法使用您的身份进行第三方验证（在这个例子中是文件服务器）。
 
-<!--more-->
-本文国际来源：[Understanding the Double-Hop Problem in Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-double-hop-problem-in-remoting)
+<!--本文国际来源：[Understanding the Double-Hop Problem in Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-the-double-hop-problem-in-remoting)-->

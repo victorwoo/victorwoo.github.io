@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能里，我们创建了 PowerShell 命令的速查表。我们使用了它的名称和提要来创建速查表，类似这样：
 
@@ -108,5 +107,4 @@ Set-PrintConfiguration The Set-PrintConfiguration cmdlet sets the printer co...
 Set-Printer            The Set-Printer cmdlet updates the configuration of t...
 ```
 
-<!--more-->
-本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-4)
+<!--本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-4)-->

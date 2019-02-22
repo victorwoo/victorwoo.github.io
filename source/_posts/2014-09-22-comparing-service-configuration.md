@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 或更高版本_
 
@@ -31,5 +30,4 @@ _适用于 PowerShell 3.0 或更高版本_
 
 得到的结果是服务配置差异的清单。
 
-<!--more-->
-本文国际来源：[Comparing Service Configuration ](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-service-configuration)
+<!--本文国际来源：[Comparing Service Configuration ](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-service-configuration)-->

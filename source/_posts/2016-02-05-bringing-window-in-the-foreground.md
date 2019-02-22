@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 可以使用 `Add-Type` 来操作 Windows 内置的 API 功能。通过这种方法，可以很容易地将所有进程的窗口置于前台。以下是您需要的函数：
 
@@ -46,5 +45,4 @@ PowerShell 可以使用 `Add-Type` 来操作 Windows 内置的 API 功能。通�
     Start-Sleep -Seconds 2
     Show-Process -Process (Get-Process -Id $PID)
 
-<!--more-->
-本文国际来源：[Bringing Window in the Foreground](http://community.idera.com/powershell/powertips/b/tips/posts/bringing-window-in-the-foreground)
+<!--本文国际来源：[Bringing Window in the Foreground](http://community.idera.com/powershell/powertips/b/tips/posts/bringing-window-in-the-foreground)-->

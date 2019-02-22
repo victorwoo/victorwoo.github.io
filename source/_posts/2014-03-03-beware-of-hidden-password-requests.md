@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以在任何主机上运行 PowerShell，powershell.exe 和 powershell_ise.exe 随着 Windows 发布。比起简单的 PowerShell 控制台，许多人更喜欢图形化的 ISE 编辑器。
 
@@ -25,5 +24,4 @@ tags:
 
 所以当您的脚本用到了控制台应用程序时，您最好在传统的 PowerShell 控制台中运行它们。
 
-<!--more-->
-本文国际来源：[Beware Of Hidden Password Requests](http://community.idera.com/powershell/powertips/b/tips/posts/beware-of-hidden-password-requests)
+<!--本文国际来源：[Beware Of Hidden Password Requests](http://community.idera.com/powershell/powertips/b/tips/posts/beware-of-hidden-password-requests)-->

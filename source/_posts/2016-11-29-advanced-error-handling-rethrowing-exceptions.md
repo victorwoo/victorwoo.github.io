@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在处理错误时，您有时会希望将原始的异常替换成您自己的。以下是一个例子：
 
@@ -81,5 +80,4 @@ Do-Something: A fatal error occured Cannot find a process with the name
 
 这样调用者可以看到返回的错误信息，并且经过内部处理之后，还可以传递原始的错误信息。
 
-<!--more-->
-本文国际来源：[Advanced Error Handling: Rethrowing Exceptions](http://community.idera.com/powershell/powertips/b/tips/posts/advanced-error-handling-rethrowing-exceptions)
+<!--本文国际来源：[Advanced Error Handling: Rethrowing Exceptions](http://community.idera.com/powershell/powertips/b/tips/posts/advanced-error-handling-rethrowing-exceptions)-->

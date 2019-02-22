@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们创建了一个名为 `Test-OnlineFast` 的高速的新的 PowerShell 函数，它使用 WMI 来高速 ping 任意数量的计算机。今天我们将通过向 ping 的结果增加一些列额外的属性使它变得更有用。
 
@@ -136,5 +135,4 @@ function Test-OnlineFast
 }
 ```
 
-<!--more-->
-本文国际来源：[Creating Highspeed Ping (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-5)
+<!--本文国际来源：[Creating Highspeed Ping (Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-5)-->

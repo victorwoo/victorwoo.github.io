@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下代码演示了如何查找一个用户名的 SID：
 
@@ -49,5 +48,4 @@ DefaultAccount S-1-5-21-2951074159-1791007430-3873049619-503
 Guest          S-1-5-21-2951074159-1791007430-3873049619-501
 ```
 
-<!--more-->
-本文国际来源：[Converting User Name to SID](http://community.idera.com/powershell/powertips/b/tips/posts/converting-user-name-to-sid)
+<!--本文国际来源：[Converting User Name to SID](http://community.idera.com/powershell/powertips/b/tips/posts/converting-user-name-to-sid)-->

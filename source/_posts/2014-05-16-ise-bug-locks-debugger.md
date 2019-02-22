@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 Powershell ISE 中，有一个模糊的缺陷，可能会导致调试器死锁。受影响的 PowerShell 版本有 3.0 和 4.0。
 
@@ -41,5 +40,4 @@ tags:
 
 这个缺陷在对通过 here string 定义的脚本变量缩进的时候暴露出来。
 
-<!--more-->
-本文国际来源：[ISE Bug Locks Debugger](http://community.idera.com/powershell/powertips/b/tips/posts/ise-bug-locks-debugger)
+<!--本文国际来源：[ISE Bug Locks Debugger](http://community.idera.com/powershell/powertips/b/tips/posts/ise-bug-locks-debugger)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 可以为类的属性手动指定一个数据类型和缺省值。当您从一个类实例化一个对象时，属性已经填充好并且只接受指定的数据类型：
 
@@ -41,5 +40,4 @@ $infoObj.Name = 'test'
 $infoObj
 ```
 
-<!--more-->
-本文国际来源：[Using Classes (Initializing Properties - Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-initializing-properties-part-2)
+<!--本文国际来源：[Using Classes (Initializing Properties - Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-initializing-properties-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是获取当前 Windows 产品序列号的单行代码：
 
@@ -19,5 +18,4 @@ tags:
 (Get-WmiObject -Class "SoftwareLicensingService").OA3xOriginalProductKey
 ```
 
-<!--more-->
-本文国际来源：[Retrieving Windows Product Key](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/retrieving-windows-product-key)
+<!--本文国际来源：[Retrieving Windows Product Key](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/retrieving-windows-product-key)-->

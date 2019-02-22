@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -35,5 +34,4 @@ _适用于 PowerShell 所有版本_
       Where-Object { ($_ -like '*successfully installed*') -or ($_ -like '*framework*') } |
       Out-GridView
 
-<!--more-->
-本文国际来源：[Understanding Sequential Filtering](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-sequential-filtering)
+<!--本文国际来源：[Understanding Sequential Filtering](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-sequential-filtering)-->

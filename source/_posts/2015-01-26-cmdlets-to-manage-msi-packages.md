@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 2.0 及以上版本_
 
@@ -59,5 +58,4 @@ _适用于 PowerShell 2.0 及以上版本_
     Cmdlet          Uninstall-MSIPatch                                 MSI
     Cmdlet          Uninstall-MSIProduct                               MSI
 
-<!--more-->
-本文国际来源：[Cmdlets to Manage MSI Packages](http://community.idera.com/powershell/powertips/b/tips/posts/cmdlets-to-manage-msi-packages)
+<!--本文国际来源：[Cmdlets to Manage MSI Packages](http://community.idera.com/powershell/powertips/b/tips/posts/cmdlets-to-manage-msi-packages)-->

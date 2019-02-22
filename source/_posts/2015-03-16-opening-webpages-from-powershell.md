@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -33,5 +32,4 @@ _适用于 PowerShell 所有版本_
 
 要让 PowerShell 在启动时自动打开网页，请确保 `$profile` 指向的文件路径存在。下一步，打开该脚本，并添加启动命令。
 
-<!--more-->
-本文国际来源：[Opening Webpages from PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/opening-webpages-from-powershell)
+<!--本文国际来源：[Opening Webpages from PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/opening-webpages-from-powershell)-->

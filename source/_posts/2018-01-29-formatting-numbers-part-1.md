@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下 `Get-DisplayFileSize` 函数接受任何字节数值，并且返回一个以 "MB"、"GB" 或 "PB" 为单位的，格式良好的大小值。
 
@@ -68,5 +67,4 @@ PS> Get-DisplayFileSize ($formatted * 2)
 2,27 TB
 ```
 
-<!--more-->
-本文国际来源：[Formatting Numbers (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-part-1)
+<!--本文国际来源：[Formatting Numbers (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-part-1)-->

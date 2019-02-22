@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您需要将登录凭据缓存到一个文件，通常的做法是用管道将凭据传给 `Export-Clixml` 命令，这将会产生一个很长的 XML 文件。使用 `Import-Clixml` 命令，缓存的凭据可以随时导回脚本中。PowerShell 自动使用用户和机器身份来加密密码（它只能被同一个人在同一台机器上读取）。
 
@@ -65,5 +64,4 @@ Start-Process notepad -Credential $cred
 
 也请注意密码事是以加密的方式存储的。加密是以您的账户和机器作为密钥。所以保存的密码是经过安全加密的，但是这里展示的技术只适合同一个人（在同一台机器上）希望下次再使用保存的凭据。一个使用场景是保存再您自己机器上常用的脚本凭据。
 
-<!--more-->
-本文国际来源：[Caching Credentials Using JSON](http://community.idera.com/powershell/powertips/b/tips/posts/caching-credentials-using-json)
+<!--本文国际来源：[Caching Credentials Using JSON](http://community.idera.com/powershell/powertips/b/tips/posts/caching-credentials-using-json)-->

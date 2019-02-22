@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候您可能需要创建非表格形式的，个性化的报表。
 
@@ -48,5 +47,4 @@ $Path = "$env:temp\excel.xlsx"
 $workbook.SaveAs($Path)
 ```
 
-<!--more-->
-本文国际来源：[Creating Excel Reports (Part 3 – Individually Accessing Workbook)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports-part-3-individually-accessing-workbook)
+<!--本文国际来源：[Creating Excel Reports (Part 3 – Individually Accessing Workbook)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-excel-reports-part-3-individually-accessing-workbook)-->

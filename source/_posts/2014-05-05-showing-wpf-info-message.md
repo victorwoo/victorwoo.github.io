@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WPF (Windows Presentation Foundation) 是一种创建窗体和对话框的技术。WPF 的好处是窗体设计和程序代码可以分离。
 
@@ -49,5 +48,4 @@ WPF (Windows Presentation Foundation) 是一种创建窗体和对话框的技术
     Start-Sleep -Seconds 5
     $window.Close()
 
-<!--more-->
-本文国际来源：[Showing WPF Info Message](http://community.idera.com/powershell/powertips/b/tips/posts/showing-wpf-info-message)
+<!--本文国际来源：[Showing WPF Info Message](http://community.idera.com/powershell/powertips/b/tips/posts/showing-wpf-info-message)-->

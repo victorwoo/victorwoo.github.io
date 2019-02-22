@@ -40,7 +40,6 @@ tags:
 代码中用到了参数分组、`-WhatIf` 处理等技术，供参考。
 
 以下是源代码：
-<!--more-->
 
     # Require PowerShell 3.0 or higher.
 

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，您可能会需要从 Excel 工作表中读取信息。PowerShell 可以操作 Microsoft Excel 对象模型，虽然它的速度很慢。
 
@@ -35,5 +34,4 @@ $excel.Quit()
 "Cell A1 contained '$info'"
 ```
 
-<!--more-->
-本文国际来源：[Reading Excel Cells](http://community.idera.com/powershell/powertips/b/tips/posts/readingexcel-cells)
+<!--本文国际来源：[Reading Excel Cells](http://community.idera.com/powershell/powertips/b/tips/posts/readingexcel-cells)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -37,5 +36,4 @@ _适用于 PowerShell 所有版本_
 
 `Get-Content` 能够检测非标准的行尾符，所以结果是各行的字符串数组。当您将这些行写入一个新文件时，一切都会变正常，因为 `Set-Content` 会使用缺省的行尾符。
 
-<!--more-->
-本文国际来源：[Normalizing Line Endings](http://community.idera.com/powershell/powertips/b/tips/posts/normalizing-line-endings)
+<!--本文国际来源：[Normalizing Line Endings](http://community.idera.com/powershell/powertips/b/tips/posts/normalizing-line-endings)-->

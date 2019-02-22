@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许知道 `Get-EventLog` 命令。该命令能从一个指定的系统日志中读取所有条目：
 
@@ -25,5 +24,4 @@ tags:
       Select-Object -ExpandProperty Entries -ErrorAction SilentlyContinue |
       Where-Object { $_.EntryType -eq 'Error' }
 
-<!--more-->
-本文国际来源：[Analyzing (All) Event Log Entries](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-all-event-log-entries)
+<!--本文国际来源：[Analyzing (All) Event Log Entries](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-all-event-log-entries)-->

@@ -99,5 +99,4 @@ PowerShell 使我们拥有了一门非常强大的脚本语言。许多产品，
 
 注：文中涉及到的 csharptemplate.ps1 可以在这里[下载][csharptemplate.ps1]。
 [csharptemplate.ps1]: /assets/download/csharptemplate.ps1
-<!--more-->
-本文国际来源：[Using CSharp (C#) code in Powershell scripts](http://blogs.technet.com/b/stefan_gossner/archive/2010/05/07/using-csharp-c-code-in-powershell-scripts.aspx)
+<!--本文国际来源：[Using CSharp (C#) code in Powershell scripts](http://blogs.technet.com/b/stefan_gossner/archive/2010/05/07/using-csharp-c-code-in-powershell-scripts.aspx)-->

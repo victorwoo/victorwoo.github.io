@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 缺省情况下，AD 对象是受保护防止意外删除的。要移除一个指定的范围内所有对象（例如某个机构之下）的这种保护，请试试这段代码：
 
@@ -24,5 +23,4 @@ tags:
 
 注意：这段代码需要免费的 RSAT 工具所带的 ActiveDirectory 模块。
 
-<!--more-->
-本文国际来源：[Bulk-Remove Protection for Accidental Deletion in AD](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-remove-protection-for-accidental-deletion-in-ad)
+<!--本文国际来源：[Bulk-Remove Protection for Accidental Deletion in AD](http://community.idera.com/powershell/powertips/b/tips/posts/bulk-remove-protection-for-accidental-deletion-in-ad)-->

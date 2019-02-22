@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 使用内置的 Windows 事件日志架构来记录脚本日志是很棒的方法，而且非常简单。以下是准备日志记录的初始步骤（需要管理员特权）：
 
@@ -38,5 +37,4 @@ Write-EventLog -LogName PSScriptLog -Source Logon -EntryType Warning -EventId 12
 PS C:\> Get-EventLog -LogName PSScriptLog -EntryType Error -Message *test.ps1*
 ```
 
-<!--more-->
-本文国际来源：[Using Windows EventLog for Script Logging](http://community.idera.com/powershell/powertips/b/tips/posts/using-windows-eventlog-for-script-logging)
+<!--本文国际来源：[Using Windows EventLog for Script Logging](http://community.idera.com/powershell/powertips/b/tips/posts/using-windows-eventlog-for-script-logging)-->

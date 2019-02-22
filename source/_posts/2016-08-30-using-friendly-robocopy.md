@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 2.0 以上版本*
 
@@ -68,5 +67,4 @@ function Invoke-Robocopy
 }
 ```
 
-<!--more-->
-本文国际来源：[Using Friendly Robocopy](http://community.idera.com/powershell/powertips/b/tips/posts/using-friendly-robocopy)
+<!--本文国际来源：[Using Friendly Robocopy](http://community.idera.com/powershell/powertips/b/tips/posts/using-friendly-robocopy)-->

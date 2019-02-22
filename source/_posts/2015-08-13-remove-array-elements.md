@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您曾经比较过两个数组吗？`Compare-Object` 可能有用。请试试这段代码：
 
@@ -31,5 +30,4 @@ tags:
     Compare-Object -ReferenceObject $array1 -DifferenceObject $array2 -ExcludeDifferent -IncludeEqual |
       Select-Object -ExpandProperty InputObject
 
-<!--more-->
-本文国际来源：[Remove Array Elements](http://community.idera.com/powershell/powertips/b/tips/posts/remove-array-elements)
+<!--本文国际来源：[Remove Array Elements](http://community.idera.com/powershell/powertips/b/tips/posts/remove-array-elements)-->

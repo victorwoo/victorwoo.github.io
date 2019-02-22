@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您用 `Import-Csv` 将一个 CSV 列表导入 PowerShell，或用任何其它类型的对象来处理时：如何自动确定对象的属性？以下是一个简单的方法：
 
@@ -48,5 +47,4 @@ $keyNames | ForEach-Object {
 }
 ```
 
-<!--more-->
-本文国际来源：[Examining Object Properties Programmatically](http://community.idera.com/powershell/powertips/b/tips/posts/examining-object-properties-programmatically)
+<!--本文国际来源：[Examining Object Properties Programmatically](http://community.idera.com/powershell/powertips/b/tips/posts/examining-object-properties-programmatically)-->

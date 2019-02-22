@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WMI 是一个装满信息的宝库。以下这行代码将读取本地分区以及它们的数据块大小信息：
 
@@ -26,6 +25,5 @@ WMI 是一个装满信息的宝库。以下这行代码将读取本地分区以�
 	  Where-Object { ($_.Qualifiers | Select-Object -ExpandProperty Name) -notcontains 'Association' } |
 	  Where-Object { $_.Name -notlike '*_Perf*' }
 
-<!--more-->
 
-本文国际来源：[Checking Disk Partitions and Block Size](http://community.idera.com/powershell/powertips/b/tips/posts/checking-disk-partitions-and-block-size)
+<!--本文国际来源：[Checking Disk Partitions and Block Size](http://community.idera.com/powershell/powertips/b/tips/posts/checking-disk-partitions-and-block-size)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有时候，PowerShell 脚本的作者将脚本放在直接下载的服务器上。让我们寻找一种最有效的通过 PowerShell 下载文本文件的方法。我们将以 PowerShell Team 成员 Lee Holmes 发布的著名的 "Dancing Rick ASCII" 脚本作为我们的例子。它的下载地址位于这里（需要翻墙）：
 
@@ -88,5 +87,4 @@ $code = Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $outPath
 PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
-<!--more-->
-本文国际来源：[The Best Ways to Download Script Files](http://community.idera.com/powershell/powertips/b/tips/posts/the-best-ways-to-download-script-files)
+<!--本文国际来源：[The Best Ways to Download Script Files](http://community.idera.com/powershell/powertips/b/tips/posts/the-best-ways-to-download-script-files)-->

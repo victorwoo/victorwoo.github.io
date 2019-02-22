@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Microsoft Excel 是一个不那么容易直接运行的程序的例子：Excel 的路径也许是各不相同的，取决于 Office 的版本以及平台的架构（32 位或 64 位）。
 
@@ -25,5 +24,4 @@ PowerShell 有一个十分智能的 cmdlet 来用于运行程序：`Start-Proces
 
 	PS> Start-Process -FilePath 'C:\Program*\Microsoft Office\Office*\EXCEL.EXE'
 
-<!--more-->
-本文国际来源：[Launching Any Excel Version](http://community.idera.com/powershell/powertips/b/tips/posts/launching-any-excel-version)
+<!--本文国际来源：[Launching Any Excel Version](http://community.idera.com/powershell/powertips/b/tips/posts/launching-any-excel-version)-->

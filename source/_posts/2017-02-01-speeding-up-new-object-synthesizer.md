@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `New-Object` 创建新的对象实例，在之前的“语音之周”中，您已经见到了如何创建一个语音合成器对象，并且将文本转换为语音：
 
@@ -56,5 +55,4 @@ $result
 ```
 请注意：一旦您使用 `New()` 来代替 `New-Object`，您的代码需要 PowerShell 5.0 以上版本。
 
-<!--more-->
-本文国际来源：[Speeding Up New-Object Synthesizer](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-new-object-synthesizer)
+<!--本文国际来源：[Speeding Up New-Object Synthesizer](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-new-object-synthesizer)-->

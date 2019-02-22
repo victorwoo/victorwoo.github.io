@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -97,5 +96,4 @@ PowerShell 为多数常见的 .NET 类型定义了一个短名字。要查看已
     InstanceArray                                                  CimInstance[]                                                
     Unknown                                                        UnknownType
 
-<!--more-->
-本文国际来源：[Simplifying .NET Types](http://community.idera.com/powershell/powertips/b/tips/posts/simplifying-net-types)
+<!--本文国际来源：[Simplifying .NET Types](http://community.idera.com/powershell/powertips/b/tips/posts/simplifying-net-types)-->

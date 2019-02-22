@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 通过一行 WMI 代码，就可以查看您的 CPU 详情：
 
@@ -21,5 +20,4 @@ tags:
     ----                                    ------------- -------------------------
     Intel(R) Core(TM) i7-26...                          2                         4
 
-<!--more-->
-本文国际来源：[Get CPU Cores and Processor Information](http://community.idera.com/powershell/powertips/b/tips/posts/get-cpu-cores-and-processor-information)
+<!--本文国际来源：[Get CPU Cores and Processor Information](http://community.idera.com/powershell/powertips/b/tips/posts/get-cpu-cores-and-processor-information)-->

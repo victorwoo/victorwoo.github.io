@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要操作本地用户账号并设置一个新密码，您可以使用底层的 WinNT: 命名空间。
 
@@ -25,5 +24,4 @@ tags:
     $admin = [adsi]("WinNT://$env:computername/administrator, user")
     $admin.psbase.invoke('SetPassword', $Password)
 
-<!--more-->
-本文国际来源：[Changing Local Administrator Account Password](http://community.idera.com/powershell/powertips/b/tips/posts/changing-local-administrator-account-password)
+<!--本文国际来源：[Changing Local Administrator Account Password](http://community.idera.com/powershell/powertips/b/tips/posts/changing-local-administrator-account-password)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的机器通过不同网络连接，连到了 internet（或 VPN），以下两个函数可能对您有用。
 
@@ -52,5 +51,4 @@ WARNING: Connected via DELL network card
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Checking Network Connections](http://community.idera.com/powershell/powertips/b/tips/posts/checking-network-connections)
+<!--本文国际来源：[Checking Network Connections](http://community.idera.com/powershell/powertips/b/tips/posts/checking-network-connections)-->

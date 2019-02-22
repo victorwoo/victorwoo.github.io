@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 10 自带优秀的文本转语音功能，以及不同的高品质语音。要查看哪些语音可用，请试试以下代码：
 
@@ -67,5 +66,4 @@ $synthesizer.GetInstalledVoices().VoiceInfo |
 [https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices](https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices). 
 请注意 `SeletVoice()` 并不能使用所有已安装的语音。
 
-<!--more-->
-本文国际来源：[Synthesizing Speech – Using Different Voices (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-using-different-voices-part-4)
+<!--本文国际来源：[Synthesizing Speech – Using Different Voices (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-using-different-voices-part-4)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在 Windows 10 中，不像 Windows Server，您无法使用 `Get-WindowsFeature` 和 `Add-WindowsFeature` cmdlet 来管理 Windows 功能。
 
@@ -26,5 +25,4 @@ Enable-WindowsOptionalFeature -Online -All -FeatureName Microsoft-Hyper-V -NoRes
 
 请注意 `-All` 参数：如果您忽略了该参数，那么您需要自行确保所有先决条件和依赖项都已安装好，才能添加另一个新项。如果您懒，或者不了解依赖项，那么 `-All` 参数将自动为您安装所有必须的依赖项。
 
-<!--more-->
-本文国际来源：[Managing Windows Features (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-features-part-2)
+<!--本文国际来源：[Managing Windows Features (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-windows-features-part-2)-->

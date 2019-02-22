@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 之前我们演示了如何使用简易的基于正则表达式的方法来查找字符串中的非法字符。我们鼓励您将这种策略运用到各种需要验证的字符串中。
 
@@ -46,5 +45,4 @@ else
     Do not use these characters in paths: | < >
 
 
-<!--more-->
-本文国际来源：[Finding Illegal Characters in Paths (File System)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-illegal-characters-in-paths-file-system-directory)
+<!--本文国际来源：[Finding Illegal Characters in Paths (File System)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-illegal-characters-in-paths-file-system-directory)-->

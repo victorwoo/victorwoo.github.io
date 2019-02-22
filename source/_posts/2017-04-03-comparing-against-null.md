@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想检查一个变量是否为 `$Null`（空），请记住始终将 `$null` 放在比较运算符的左边。大多数情况下，顺序不重要：
 
@@ -68,5 +67,4 @@ $null -eq $a  # works: $false
 
 可以将 `$null` 放在比较运算符的左侧而不是右侧，来消除这个问题。
 
-<!--more-->
-本文国际来源：[Comparing Against $NULL](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-against-null)
+<!--本文国际来源：[Comparing Against $NULL](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-against-null)-->

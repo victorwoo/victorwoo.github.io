@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要检查 Windows 中安装的所有更新，有一个 COM 库可以帮您完成这个任务。但是这个库用起来不是很直观，而且也不支持远程。
 
@@ -73,5 +72,4 @@ tags:
 
 ![](/img/2014-05-26-checking-windows-updates-001.png)
 
-<!--more-->
-本文国际来源：[Checking Windows Updates](http://community.idera.com/powershell/powertips/b/tips/posts/checking-windows-updates)
+<!--本文国际来源：[Checking Windows Updates](http://community.idera.com/powershell/powertips/b/tips/posts/checking-windows-updates)-->

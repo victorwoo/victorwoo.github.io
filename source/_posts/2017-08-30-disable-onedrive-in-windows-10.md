@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否也为任务栏中的 OneDrive 图标感到烦恼？如果您从未使用 OneDrive，以下是两个易于使用的 PowerShell 函数，能够帮助您在资源管理器中隐藏（和显示）OneDrive 图标：
 
@@ -34,5 +33,4 @@ function Enable-OneDrive
 
 执行后不需要重启，结果立即生效。
 
-<!--more-->
-本文国际来源：[Disable OneDrive in Windows 10](http://community.idera.com/powershell/powertips/b/tips/posts/disable-onedrive-in-windows-10)
+<!--本文国际来源：[Disable OneDrive in Windows 10](http://community.idera.com/powershell/powertips/b/tips/posts/disable-onedrive-in-windows-10)-->

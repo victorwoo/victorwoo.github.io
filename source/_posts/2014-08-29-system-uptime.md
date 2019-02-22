@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -46,5 +45,4 @@ Windows 每次启动的时候，都启动一个高精度计数器，这个计数
 
 在这个例子中，它们没有区别。但是它在其它情况下可能很有用。例如，您还可以使用 `FromTicks()` 方法将时钟周期数（Windows 系统中的最小时间周期单位）转换为时间间隔。
 
-<!--more-->
-本文国际来源：[System Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/system-uptime)
+<!--本文国际来源：[System Uptime](http://community.idera.com/powershell/powertips/b/tips/posts/system-uptime)-->

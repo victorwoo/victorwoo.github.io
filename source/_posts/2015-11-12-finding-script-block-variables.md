@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 脚本块定义了一段 PowerShell 代码而并不执行它。最简单的定义脚本块的方法是将代码放入花括号中。
 
@@ -30,5 +29,4 @@ tags:
     $scriptblock.Ast.FindAll( { $args[0] -is [System.Management.Automation.Language.VariableExpressionAst] }, $true ) |
       Select-Object -ExpandProperty VariablePath | Select-Object -ExpandProperty UserPath
 
-<!--more-->
-本文国际来源：[Finding Script Block Variables](http://community.idera.com/powershell/powertips/b/tips/posts/finding-script-block-variables)
+<!--本文国际来源：[Finding Script Block Variables](http://community.idera.com/powershell/powertips/b/tips/posts/finding-script-block-variables)-->

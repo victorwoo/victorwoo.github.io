@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 4.0 及以上版本_
 
@@ -29,5 +28,4 @@ PowerShell 的语法糖能让您省略这些语句中的大括号：
 
 请注意该方法是针对数组的。相对于传统的管道方法，这种方法速度更快，但是内存消耗更大。
 
-<!--more-->
-本文国际来源：[Quick Loop](http://community.idera.com/powershell/powertips/b/tips/posts/quick-loop)
+<!--本文国际来源：[Quick Loop](http://community.idera.com/powershell/powertips/b/tips/posts/quick-loop)-->

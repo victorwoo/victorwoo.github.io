@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要将一系列信息打包起来的最好方法就是将它们存储在自定义对象中。最简单最快捷的方法就是用 `PSCustomObject`：
 
@@ -57,5 +56,4 @@ $o = [PSCustomObject]@{
     
     PS C:\>
 
-<!--more-->
-本文国际来源：[Fast Approach to Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/fast-approach-to-creating-new-objects)
+<!--本文国际来源：[Fast Approach to Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/fast-approach-to-creating-new-objects)-->

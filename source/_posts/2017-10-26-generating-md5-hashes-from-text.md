@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-FileHash` cmdlet 可以从文件内容生成哈希值。它无法从任意文本生成哈希值。并且只适用于 PowerShell 5 及更高的版本。
 
@@ -47,5 +46,4 @@ ed076287532e86365e841e92bfc50d8c
 PS C:\>
 ```
 
-<!--more-->
-本文国际来源：[Generating MD5 Hashes from Text](http://community.idera.com/powershell/powertips/b/tips/posts/generating-md5-hashes-from-text)
+<!--本文国际来源：[Generating MD5 Hashes from Text](http://community.idera.com/powershell/powertips/b/tips/posts/generating-md5-hashes-from-text)-->

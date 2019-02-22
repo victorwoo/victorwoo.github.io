@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 远程处理是一个查询多台计算机的快速方法，因为 PowerShell 远程处理是并行工作的。以下是一个演示一系列有趣技术的真实案例。
 
@@ -39,5 +38,4 @@ Compare-Object -ReferenceObject $infos.$computer1 -DifferenceObject $infos.$comp
   Select-Object -Property ProcessName, Id, PSComputerName, SideIndicator
 ```
 
-<!--more-->
-本文国际来源：[Comparing Computer Data Received from PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-computer-data-received-from-powershell-remoting)
+<!--本文国际来源：[Comparing Computer Data Received from PowerShell Remoting](http://community.idera.com/powershell/powertips/b/tips/posts/comparing-computer-data-received-from-powershell-remoting)-->

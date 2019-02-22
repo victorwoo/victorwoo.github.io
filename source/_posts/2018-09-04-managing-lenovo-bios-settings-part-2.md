@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们解释了如何转储 Lenovo 计算机的 BIOS 设置。要调整设置，您需要了解某个设置支持的各种选项。以下是一段转储某个（Lenovo 电脑的）BIOS 设置的所有可选项的代码：
 
@@ -135,5 +134,4 @@ ForEach-Object {
     NetworkBoot                         USBFDD                                  True {HDD0, HDD1, HDD2, HDD3...}
     BootOrderLock                       Disable                                 True {Disable, Enable}
 
-<!--more-->
-本文国际来源：[Managing Lenovo BIOS Settings (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-2)
+<!--本文国际来源：[Managing Lenovo BIOS Settings (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-2)-->

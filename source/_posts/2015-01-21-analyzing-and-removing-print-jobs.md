@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 8.1 或 Server 2012 R2_
 
@@ -60,5 +59,4 @@ Windows 8.1 和 Server 2012 R2 引入了一个名为“PrintManagement”的模�
      } |
      Remove-PrintJob -CimSession $ComputerName
 
-<!--more-->
-本文国际来源：[Analyzing and Removing Print Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-and-removing-print-jobs)
+<!--本文国际来源：[Analyzing and Removing Print Jobs](http://community.idera.com/powershell/powertips/b/tips/posts/analyzing-and-removing-print-jobs)-->

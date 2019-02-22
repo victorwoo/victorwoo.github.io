@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们解释了如何在 IntelliSense 中隐藏参数。今天我们想向您介绍一个很酷的副作用！
 
@@ -113,5 +112,4 @@ VERBOSE:  Hello tom
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Hiding Common Parameters](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hiding-common-parameters)
+<!--本文国际来源：[Hiding Common Parameters](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/hiding-common-parameters)-->

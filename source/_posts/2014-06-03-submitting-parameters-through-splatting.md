@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Splatting 是 PowerShell 3.0 引入的概念，但是许多用户还没有听说这个概念。这是一种以可编程的方式将参数传给 cmdlet 的技术。请看：
 
@@ -28,5 +27,4 @@ Splatting 是 PowerShell 3.0 引入的概念，但是许多用户还没有听说
 
 当您的代码需要决定哪些参数需要传给 cmdlet 时，Splatting 十分有用。您的代码可以只需要维护一个哈希表，然后选择性地将它传给 cmdlet。
 
-<!--more-->
-本文国际来源：[Submitting Parameters through Splatting](http://community.idera.com/powershell/powertips/b/tips/posts/submitting-parameters-through-splatting)
+<!--本文国际来源：[Submitting Parameters through Splatting](http://community.idera.com/powershell/powertips/b/tips/posts/submitting-parameters-through-splatting)-->

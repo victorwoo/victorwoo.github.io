@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 要在一个字符串中插入一个变量，您也许已经知道可以使用如下的双引号方式：
 
@@ -49,5 +48,4 @@ tags:
     'Current Background Color: {0}' -f $host.UI.RawUI.BackgroundColor
 
 
-<!--more-->
-本文国际来源：[Expanding Variables in Strings](http://community.idera.com/powershell/powertips/b/tips/posts/expanding-variables-in-strings)
+<!--本文国际来源：[Expanding Variables in Strings](http://community.idera.com/powershell/powertips/b/tips/posts/expanding-variables-in-strings)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 将 "`..`" 操作符的功能定义为生成一个数字列表。通过 `-join` 操作符，您可以将这些数字转换为几乎您想要的所有东西，例如逗号分隔的值。
 
@@ -32,5 +31,4 @@ PowerShell 将 "`..`" 操作符的功能定义为生成一个数字列表。通�
     
     1..10 | ForEach-Object { 'Server{0:0000}' -f $_ }
 
-<!--more-->
-本文国际来源：[Turning Lists of Numbers Into Useful Lists](http://community.idera.com/powershell/powertips/b/tips/posts/turning-lists-of-numbers-into-useful-lists)
+<!--本文国际来源：[Turning Lists of Numbers Into Useful Lists](http://community.idera.com/powershell/powertips/b/tips/posts/turning-lists-of-numbers-into-useful-lists)-->

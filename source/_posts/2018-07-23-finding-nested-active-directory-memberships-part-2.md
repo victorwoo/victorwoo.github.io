@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何使用 ActiveDirectory 模块中的 cmdlet 来查找某个 Active Directory 用户所有直接和间接的成员。
 
@@ -54,5 +53,4 @@ function Get-NestedGroupMember
 Get-NestedGroupMember -distinguishedName 'CN=UserName,DC=powershell,DC=local'
 ```
 
-<!--more-->
-本文国际来源：[Finding Nested Active Directory Memberships (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-nested-active-directory-memberships-part-2)
+<!--本文国际来源：[Finding Nested Active Directory Memberships (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/finding-nested-active-directory-memberships-part-2)-->

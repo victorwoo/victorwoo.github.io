@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-PfxCertificate` 可以从 PFX 文件中导入数字证书。然而，他只能获取一个证书。所以如果您的 PFX 文件中包含多个证书，您无法使用这个 cmdlet 获取其它的证书。
 
@@ -25,5 +24,4 @@ tags:
 	$cert.Import($pfxpath, $password, 'Exportable')
 	$cert
 
-<!--more-->
-本文国际来源：[Importing Multiple Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/importing-multiple-certificates-from-pfx-files)
+<!--本文国际来源：[Importing Multiple Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/importing-multiple-certificates-from-pfx-files)-->

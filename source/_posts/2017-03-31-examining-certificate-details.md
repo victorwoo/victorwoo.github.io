@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您想检查和查看一个证书文件的详细信息而不需要将它导入证书存储空间，以下是一个简单的例子：
 
@@ -36,5 +35,4 @@ PS C:\> $cert.NotAfter
 Monday June 12 2017 06:00:00
 ```
 
-<!--more-->
-本文国际来源：[Examining Certificate Details](http://community.idera.com/powershell/powertips/b/tips/posts/examining-certificate-details)
+<!--本文国际来源：[Examining Certificate Details](http://community.idera.com/powershell/powertips/b/tips/posts/examining-certificate-details)-->

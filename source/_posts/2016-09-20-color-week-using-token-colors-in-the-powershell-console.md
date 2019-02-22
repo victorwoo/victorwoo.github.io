@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 *支持 PowerShell 3 以上版本*
 
@@ -33,5 +32,4 @@ PS C:\> Import-Module -Name PSReadLine
 
 当它加载完成后，PowerShell 控制台就可以显示彩色的符号。
 
-<!--more-->
-本文国际来源：[Color Week: Using Token Colors in the PowerShell Console](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-using-token-colors-in-the-powershell-console)
+<!--本文国际来源：[Color Week: Using Token Colors in the PowerShell Console](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-using-token-colors-in-the-powershell-console)-->

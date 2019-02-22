@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 带来了一系列硬编码的类型加速器，它们的效果就像通常使用的 .NET 类型，而且由于它们比原始数据类型名称短很多，所以它们“加快了打字速度”。
 
@@ -50,5 +49,4 @@ PS> $a
 3
 ```
 
-<!--more-->
-本文国际来源：[Understanding Type Accelerators (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-type-accelerators-part-2)
+<!--本文国际来源：[Understanding Type Accelerators (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-type-accelerators-part-2)-->

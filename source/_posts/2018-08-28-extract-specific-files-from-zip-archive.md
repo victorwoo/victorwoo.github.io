@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 提供了新的 cmdlet，例如 `Extract-Archive`，可以从一个 ZIP 文件中解压（所有的）文件。然而，只能解压整个压缩包。
 
@@ -67,5 +66,4 @@ $zip.Dispose()
 explorer $OutPath
 ```
 
-<!--more-->
-本文国际来源：[Extract Specific Files from ZIP Archive](http://community.idera.com/powershell/powertips/b/tips/posts/extract-specific-files-from-zip-archive)
+<!--本文国际来源：[Extract Specific Files from ZIP Archive](http://community.idera.com/powershell/powertips/b/tips/posts/extract-specific-files-from-zip-archive)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何使用 `Invoke-WebRequest` 从网页下载数据，例如从一个提供随机借口的网页中获取借口。然而，当您做测试的时候，有可能每次都获取到相同的借口（或数据）。
 
@@ -43,5 +42,4 @@ if ($page.Content -match $pattern)
 }
 ```
 
-<!--more-->
-本文国际来源：[Downloading Information from Internet (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-4)
+<!--本文国际来源：[Downloading Information from Internet (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-4)-->

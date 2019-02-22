@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下通过一个非常规的办法实现检查一段脚本是否以管理员权限运行（通过提升UAC），这体现了PowerShell强大的灵活性：
 
@@ -29,6 +28,5 @@ tags:
 	
 	}
 
-<!--more-->
 
-本文国际来源：[Testing Administrator Privileges](http://community.idera.com/powershell/powertips/b/tips/posts/testing-administrator-privileges)
+<!--本文国际来源：[Testing Administrator Privileges](http://community.idera.com/powershell/powertips/b/tips/posts/testing-administrator-privileges)-->

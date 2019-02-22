@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 带来了两个 cmdlet，可以用来从 internet 获取信息。今天，我们重点关注 `Invoke-WebRequest`。
 
@@ -38,5 +37,4 @@ $($page.Content | ConvertFrom-Json) | Out-GridView
 
 通过这种方法，您可以下载网页上的任意信息，然后处理它。如果一个 web 页返回的是 XML，您可以将它转换为 XML，而如果它是纯 HTML，您可以使用正则表达式来提取您需要的信息。更多信息请见将来的技能。
 
-<!--more-->
-本文国际来源：[Downloading Information from Internet (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-1)
+<!--本文国际来源：[Downloading Information from Internet (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-information-from-internet-part-1)-->

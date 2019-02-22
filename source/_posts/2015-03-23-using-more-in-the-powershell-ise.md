@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell ISE_
 
@@ -77,5 +76,4 @@ _适用于 PowerShell ISE_
         184      23    41800      44212   223     1,77  17244 chrome                                                                            
     Press ENTER to continue
 
-<!--more-->
-本文国际来源：[Using “more” in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-more-in-the-powershell-ise)
+<!--本文国际来源：[Using “more” in the PowerShell ISE](http://community.idera.com/powershell/powertips/b/tips/posts/using-more-in-the-powershell-ise)-->

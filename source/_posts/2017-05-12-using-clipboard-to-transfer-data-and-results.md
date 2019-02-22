@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 终于，在 PowerShell 5 中原生支持将结果发送到剪贴板中，以及从剪贴板中接收结果：
 
@@ -30,5 +29,4 @@ Cmdlet      Set-Clipboard 3.1.0.0 Microsoft.PowerShell.Management
 PS> $list = (Get-ClipBoard) -like '*err*'
 ```
 
-<!--more-->
-本文国际来源：[Using Clipboard to Transfer Data and Results](http://community.idera.com/powershell/powertips/b/tips/posts/using-clipboard-to-transfer-data-and-results)
+<!--本文国际来源：[Using Clipboard to Transfer Data and Results](http://community.idera.com/powershell/powertips/b/tips/posts/using-clipboard-to-transfer-data-and-results)-->

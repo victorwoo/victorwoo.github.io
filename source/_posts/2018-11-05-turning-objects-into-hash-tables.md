@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前的一个技能中我们介绍了如何用 `Get-Member` 获取对象的属性。以下是另一个可以传入任何对象，将它转为一个包含排序属性的哈希表，然后排除所有空白属性的用例。
 
@@ -51,5 +50,4 @@ $hashtable = $process | ForEach-Object {
 $hashtable | Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Turning Objects into Hash Tables](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/turning-objects-into-hash-tables)
+<!--本文国际来源：[Turning Objects into Hash Tables](http://community.idera.com/database-tools/powershell/powertips/b/tips/posts/turning-objects-into-hash-tables)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否想知道当您不在的时候是否有人登录过您的 PC？在前一个技能中我们解释了如何从 Windows 安全日志中解析详细的审计信息，假设您拥有管理员权限。
 
@@ -75,5 +74,4 @@ Get-LogonInfo -After $yesterday -Path *\lsass.exe |
 Out-GridView
 ```
 
-<!--more-->
-本文国际来源：[Auditing Logons](http://community.idera.com/powershell/powertips/b/tips/posts/auditing-logons)
+<!--本文国际来源：[Auditing Logons](http://community.idera.com/powershell/powertips/b/tips/posts/auditing-logons)-->

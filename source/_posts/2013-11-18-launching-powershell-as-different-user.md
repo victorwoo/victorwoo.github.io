@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您将 PowerShell 固定到任务栏后，您可以右键单击固定的 PowerShell 图标来打开一个跳转列表并且使用完整的 Administrator 特权来打开 PowerShell 或 ISE 编辑器。
 
@@ -19,5 +18,4 @@ tags:
 
 并没有针对 ISE 编辑器的这个选项，但是当您以不同的凭据运行了 PowerShell 之后，您可以简单地键入命令“`ise`”来以相同的账户运行 ISE 编辑器。
 
-<!--more-->
-本文国际来源：[Launching PowerShell as Different User](http://community.idera.com/powershell/powertips/b/tips/posts/launching-powershell-as-different-user)
+<!--本文国际来源：[Launching PowerShell as Different User](http://community.idera.com/powershell/powertips/b/tips/posts/launching-powershell-as-different-user)-->

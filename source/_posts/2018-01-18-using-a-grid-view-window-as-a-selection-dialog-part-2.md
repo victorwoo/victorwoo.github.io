@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何使用哈希表来显示简单的选择对话框，而当用户选择了一个对象时，返回完整的对象。
 
@@ -49,5 +48,4 @@ $hashTable.Keys |
 
 当用户选择了一个元素，这段代码返回原始的（完整）对象。这样即便网格视图窗口显示的是对象的一部分，整个对象任然可以用。
 
-<!--more-->
-本文国际来源：[Using a Grid View Window as a Selection Dialog (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-grid-view-window-as-a-selection-dialog-part-2)
+<!--本文国际来源：[Using a Grid View Window as a Selection Dialog (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/using-a-grid-view-window-as-a-selection-dialog-part-2)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有一系列方法可以将十进制数据转为十六进制表示：
 
@@ -25,5 +24,4 @@ $value = 255
 '{0:X10}' -f $value
 ```
 
-<!--more-->
-本文国际来源：[Creating Hexadecimal Values](http://community.idera.com/powershell/powertips/b/tips/posts/creating-hexadecimal-values)
+<!--本文国际来源：[Creating Hexadecimal Values](http://community.idera.com/powershell/powertips/b/tips/posts/creating-hexadecimal-values)-->

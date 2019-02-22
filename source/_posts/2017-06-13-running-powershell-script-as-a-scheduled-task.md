@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您需要以固定的频率运行一段 PowerShell 脚本，何不以计划任务的方式运行它呢？以下是一段帮您新建一个每天上午 6 点执行一个 PowerShell 脚本的计划任务的代码：
 
@@ -29,5 +28,4 @@ $Action= New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-execution
 Register-ScheduledTask -TaskName $TaskName -Trigger $Trigger -User $User -Action $Action -RunLevel Highest -Force
 ```
 
-<!--more-->
-本文国际来源：[Running PowerShell Script as a Scheduled Task](http://community.idera.com/powershell/powertips/b/tips/posts/running-powershell-script-as-a-scheduled-task)
+<!--本文国际来源：[Running PowerShell Script as a Scheduled Task](http://community.idera.com/powershell/powertips/b/tips/posts/running-powershell-script-as-a-scheduled-task)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 使用这段代码片段可以强制用户改变他/她的密码：
 
@@ -19,5 +18,4 @@ tags:
     
     Set-ADUser -Identity username -ChangePasswordAtNextLogon $true
 
-<!--more-->
-本文国际来源：[Force User to Change Password](http://community.idera.com/powershell/powertips/b/tips/posts/force-user-to-change-password)
+<!--本文国际来源：[Force User to Change Password](http://community.idera.com/powershell/powertips/b/tips/posts/force-user-to-change-password)-->

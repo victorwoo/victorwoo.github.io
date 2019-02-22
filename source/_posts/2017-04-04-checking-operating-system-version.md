@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一个简单快速的检查操作系统版本的方法：
 
@@ -32,5 +31,4 @@ PS C:\> [Environment]::OSVersion.Version.Major -eq 10
 True
 ```
 
-<!--more-->
-本文国际来源：[Checking Operating System Version](http://community.idera.com/powershell/powertips/b/tips/posts/checking-operating-system-version)
+<!--本文国际来源：[Checking Operating System Version](http://community.idera.com/powershell/powertips/b/tips/posts/checking-operating-system-version)-->

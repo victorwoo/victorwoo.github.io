@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 7/Server 2008 R2_
 
@@ -50,5 +49,4 @@ _适用于 Windows 7/Server 2008 R2_
         '32-bit'
     }
 
-<!--more-->
-本文国际来源：[Detecting 64-bit Operating System](http://community.idera.com/powershell/powertips/b/tips/posts/detecting-64-bit-operating-system)
+<!--本文国际来源：[Detecting 64-bit Operating System](http://community.idera.com/powershell/powertips/b/tips/posts/detecting-64-bit-operating-system)-->

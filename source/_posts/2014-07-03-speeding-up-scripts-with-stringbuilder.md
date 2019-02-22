@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 我们的脚本常常需要向已有的文本中添加新的文本。以下是一段您可能很熟悉的代码：
 
@@ -38,5 +37,4 @@ tags:
       $sb.ToString() 
     }
 
-<!--more-->
-本文国际来源：[Speeding Up Scripts with StringBuilder](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-scripts-with-stringbuilder)
+<!--本文国际来源：[Speeding Up Scripts with StringBuilder](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-scripts-with-stringbuilder)-->

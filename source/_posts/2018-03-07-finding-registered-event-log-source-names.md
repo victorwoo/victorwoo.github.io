@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您用 Write-EventLog 将日志写入日志记录时，您需要指定一个合法的事件源名称。然而，并没有一个很方便的办法能查出哪个事件源文件对应注册到某个事件日志。这在您用 `New-EventLog` 创建新的事件日志时可能会带来麻烦：您不能指定一个已经存在的事件源名称。
 
@@ -53,5 +52,4 @@ $Sources["Application"]
 $Sources["System"]
 ```
 
-<!--more-->
-本文国际来源：[Finding Registered Event Log Source Names](http://community.idera.com/powershell/powertips/b/tips/posts/finding-registered-event-log-source-names)
+<!--本文国际来源：[Finding Registered Event Log Source Names](http://community.idera.com/powershell/powertips/b/tips/posts/finding-registered-event-log-source-names)-->

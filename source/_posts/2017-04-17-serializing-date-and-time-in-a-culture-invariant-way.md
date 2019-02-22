@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您保存日期和时间到文本中时，例如导出到 CSV 时，或创建文本报告时，`DateTime` 对象将会按照您的区域设置转换为相应的日期和时间格式：
 
@@ -48,5 +47,4 @@ Friday, February 3, 2017 19:22:11
 
 另外，这种设计保证它们在使用字母排序时顺序是正确的。
 
-<!--more-->
-本文国际来源：[Serializing Date and Time in a Culture-Invariant Way](http://community.idera.com/powershell/powertips/b/tips/posts/serializing-date-and-time-in-a-culture-invariant-way)
+<!--本文国际来源：[Serializing Date and Time in a Culture-Invariant Way](http://community.idera.com/powershell/powertips/b/tips/posts/serializing-date-and-time-in-a-culture-invariant-way)-->

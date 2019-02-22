@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -38,5 +37,4 @@ WMI 服务可以用来汇报许多关于计算机硬件的详细信息。通常�
     Cirrus Logic, Inc.  Cirrus Logic CS4... OK                                    3
     Intel(R) Corpora... Intel(R) Display... OK                                    3
 
-<!--more-->
-本文国际来源：[WMI Device Inventory ](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-device-inventory)
+<!--本文国际来源：[WMI Device Inventory ](http://community.idera.com/powershell/powertips/b/tips/posts/wmi-device-inventory)-->

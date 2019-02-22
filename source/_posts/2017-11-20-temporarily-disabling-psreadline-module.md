@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 从 PowerShell 5 开始，PowerShell 控制台支持彩色文本特性，以及一系列由 PSReadLine 模块提供的新特性。
 
@@ -31,5 +30,4 @@ Remove-Module psreadline
 Import-Module psreadline
 ```
 
-<!--more-->
-本文国际来源：[Temporarily Disabling PSReadLine Module](http://community.idera.com/powershell/powertips/b/tips/posts/temporarily-disabling-psreadline-module)
+<!--本文国际来源：[Temporarily Disabling PSReadLine Module](http://community.idera.com/powershell/powertips/b/tips/posts/temporarily-disabling-psreadline-module)-->

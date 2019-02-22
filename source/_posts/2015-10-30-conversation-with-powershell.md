@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 今日的技能是当您键入一个未知的命令时，使用可编程的 `CommandNotFoundHandler` 让 PowerShell 和您对话：
 
@@ -31,5 +30,4 @@ tags:
 
 当您运行这段代码（并且打开您的声音）后，当用户输入一个未知的命令时，PowerShell 将会开口说话，并且抱怨它不知道您的命令。您可能会听到该声音两次：如果该命令不以 "`get-`" 开头，PowerShell 首先会试图查找一个以 "`get-`" 开头，并以您键入的名字结尾的命令。
 
-<!--more-->
-本文国际来源：[Conversation with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/conversation-with-powershell)
+<!--本文国际来源：[Conversation with PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/conversation-with-powershell)-->

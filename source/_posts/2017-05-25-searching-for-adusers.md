@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 免费的 Microsoft RSAT 工具给我们带来了 "ActiveDirectory" PowerShell module：许多 cmdlet 可以帮助您管理 Active Directory 用户和计算机。
 
@@ -21,5 +20,4 @@ tags:
 Search-ADAccount -AccountInactive -TimeSpan 120 -UsersOnly
 ```
 
-<!--more-->
-本文国际来源：[Searching for ADUsers](http://community.idera.com/powershell/powertips/b/tips/posts/searching-for-adusers)
+<!--本文国际来源：[Searching for ADUsers](http://community.idera.com/powershell/powertips/b/tips/posts/searching-for-adusers)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 大多数旧的 VBS 脚本可以容易地翻译为 PowerShell。VBS 中关键的命令是 "`CreateObject`"。它能让您操作系统的库。PowerShell 将 "`CreateObject`" 翻译为 "`New-Object -ComObject`"，而对象模型和成员名称保持相同：
 
@@ -77,5 +76,4 @@ Switch          Method     static System.Object Switch(Params System.Object[...
 PS>
 ```
 
-<!--more-->
-本文国际来源：[Translating VBScript to PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/translating-vbscript-to-powershell)
+<!--本文国际来源：[Translating VBScript to PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/translating-vbscript-to-powershell)-->

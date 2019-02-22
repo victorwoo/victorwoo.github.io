@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 文件的命名是十分敏感的，不能包含某些特定的保留字符。要验证文件名并确保这些字符是合法的，以下对昨天的脚本（检查文件系统路径）做了一点改进。这个脚本检查文件名的合法性：
 
@@ -42,5 +41,4 @@ else
     Do not use these characters in file names: : ?
 
 
-<!--more-->
-本文国际来源：[Check File Names for Illegal Characters](http://community.idera.com/powershell/powertips/b/tips/posts/check-file-names-for-illegal-characters-directory)
+<!--本文国际来源：[Check File Names for Illegal Characters](http://community.idera.com/powershell/powertips/b/tips/posts/check-file-names-for-illegal-characters-directory)-->

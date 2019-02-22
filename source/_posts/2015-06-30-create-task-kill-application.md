@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 只需要通过一个管道命令，PowerShell 就能够打开一个包含正在运行的程序列表。您可以选择列表中的一个或多个进程（按住 `CTRL` 键选择多余一个条目），然后 PowerShell 可以结束选中的程序。
 
@@ -25,5 +24,4 @@ tags:
 
 结束程序会导致选中的应用程序立即停止。所有未保存的数据都会丢失。
 
-<!--more-->
-本文国际来源：[Create “Task Kill” Application](http://community.idera.com/powershell/powertips/b/tips/posts/create-task-kill-application)
+<!--本文国际来源：[Create “Task Kill” Application](http://community.idera.com/powershell/powertips/b/tips/posts/create-task-kill-application)-->

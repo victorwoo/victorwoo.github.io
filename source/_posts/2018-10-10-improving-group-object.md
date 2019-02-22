@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在每一个技能中我们解释了 `Group-Object` 能为您做什么，以及它有多么好用。不幸的是，`Group-Object` 的性能不理想。如果您试图对大量对象分组，该 cmdlet 可能会消耗大量时间。
 
@@ -159,5 +158,4 @@ $stop = Get-Date
 
 在我们的测试中，`Group-ObjectFast` 比 `Group-Object` 快了大约 10 倍。
 
-<!--more-->
-本文国际来源：[Improving Group-Object](http://community.idera.com/powershell/powertips/b/tips/posts/improving-group-object)
+<!--本文国际来源：[Improving Group-Object](http://community.idera.com/powershell/powertips/b/tips/posts/improving-group-object)-->

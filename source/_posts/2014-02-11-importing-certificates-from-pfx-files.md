@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可以使用 `Get-PfxCertificate` 来从 PFX 文件中读取数字证书，然后用数字证书来为脚本文件签名，例如：
 
@@ -33,5 +32,4 @@ tags:
 	$cert.Import($pfxpath, $password, 'Exportable')
 	$cert
 
-<!--more-->
-本文国际来源：[Importing Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/importing-certificates-from-pfx-files)
+<!--本文国际来源：[Importing Certificates from PFX Files](http://community.idera.com/powershell/powertips/b/tips/posts/importing-certificates-from-pfx-files)-->

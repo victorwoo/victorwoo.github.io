@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 PowerShell 中输入 `h` 命令，您可以看到在这个会话中输入的命令历史。受到 Pratek Singh 的启发 [Powershell Get-History+ – Geekeefy](https://geekeefy.wordpress.com/2017/06/20/powershell-get-history/)，以下是一个灵活的 `h+` 命令，它能够在网格界面窗口中显示历史纪录，并且支持选定历史记录。按住 `CTRL` 键可以选择多个项目。
 
@@ -28,5 +27,4 @@ Function h+
 
 只需要将 h+ 函数加入您的配置文件脚本中（可以通过 `$profile` 找到路径）这样它随时可以拿来使用。
 
-<!--more-->
-本文国际来源：[A better Get-History](http://community.idera.com/powershell/powertips/b/tips/posts/a-better-get-history)
+<!--本文国际来源：[A better Get-History](http://community.idera.com/powershell/powertips/b/tips/posts/a-better-get-history)-->

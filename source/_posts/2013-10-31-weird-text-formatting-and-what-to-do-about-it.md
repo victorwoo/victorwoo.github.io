@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 试试以下的代码并且找到问题所在：
 
@@ -36,5 +35,4 @@ tags:
 	PS> "PowerShell process description: $desc"
 	PowerShell process description: Windows PowerShell ISE
  
-<!--more-->
-本文国际来源：[Weird Text Formatting (and what to do about it)](http://community.idera.com/powershell/powertips/b/tips/posts/weird-text-formatting-and-what-to-do-about-it)
+<!--本文国际来源：[Weird Text Formatting (and what to do about it)](http://community.idera.com/powershell/powertips/b/tips/posts/weird-text-formatting-and-what-to-do-about-it)-->

@@ -12,7 +12,6 @@ tags:
 - guide
 ---
 ![](/img/2015-01-21-AngularJS-Best-Practices-001.png)
-<!--more-->
 
 # johnpapa/[angularjs-styleguide](https://github.com/johnpapa/angularjs-styleguide)
 

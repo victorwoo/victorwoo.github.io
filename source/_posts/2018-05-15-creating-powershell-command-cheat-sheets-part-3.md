@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中，我们创建了 PowerShell 命令的速查表并且将他们转换为可被浏览器打开和打印的 HTML 报告。它可以正常工作，但是输出页面不是非常精致。只要加上一些 HTML 延时，您的命令列表就可以上黄金档啦，而且您还可以用这个例子中的技术来“美化”任何通过 PowerShell 的 `ConvertTo-Html` 创建的 HTML 表格：
 
@@ -45,5 +44,4 @@ Get-Command -Module $moduleName |
 Invoke-Item -Path $OutFile
 ```
 
-<!--more-->
-本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-3)
+<!--本文国际来源：[Creating PowerShell Command Cheat Sheets (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-powershell-command-cheat-sheets-part-3)-->

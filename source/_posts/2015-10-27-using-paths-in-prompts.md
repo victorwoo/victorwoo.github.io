@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 缺省的 PowerShell 提示符显示当前的位置。当您在很深的嵌套文件夹中时，这将占用您的输入空间，而且会导致需要滚动才能看清。
 
@@ -34,5 +33,4 @@ tags:
 
 如果您想用这些方法，请将它们放在自启动脚本中（缺省情况下可能不存在）。它的路径可以通过 `$profile` 变量找到。
 
-<!--more-->
-本文国际来源：[Using Paths in Prompts](http://community.idera.com/powershell/powertips/b/tips/posts/using-paths-in-prompts)
+<!--本文国际来源：[Using Paths in Prompts](http://community.idera.com/powershell/powertips/b/tips/posts/using-paths-in-prompts)-->

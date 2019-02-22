@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 MD5 文件哈希可以唯一确定文件内容，并且可以用来检测文件内容是否唯一。在 PowerShell 5 中，有一个新的 cmdlet 可以创建文件哈希。以下代码将在您的用户配置文件中查找所有 PowerShell 脚本，并且为每个文件生成 MD5 哈希：
 
@@ -49,5 +48,4 @@ C7E3AAD4816FD98443A7F1C94155954D C:\Users\tobwe\.nuget\packages\microsoft.co...
 ...
 ```
 
-<!--more-->
-本文国际来源：[Creating MD5 File Hashes](http://community.idera.com/powershell/powertips/b/tips/posts/creating-md5-file-hashes)
+<!--本文国际来源：[Creating MD5 File Hashes](http://community.idera.com/powershell/powertips/b/tips/posts/creating-md5-file-hashes)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当一个脚本在远程执行时，您可能会遇到“拒绝访问”的问题，这通常和双跃点 (double-hop) 问题有关。以下是一个例子，并且我们将演示如何解决它：
 
@@ -55,5 +54,4 @@ Invoke-Command -ScriptBlock $code -ComputerName $target
 
 当您使用 CredSSP 时，您不再能使用透明的登录。取而代之的是，您必须使用 `-Credential` 来指定用户账户。
 
-<!--more-->
-本文国际来源：[Understanding and Avoiding Double-Hop](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-and-avoiding-double-hop)
+<!--本文国际来源：[Understanding and Avoiding Double-Hop](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-and-avoiding-double-hop)-->

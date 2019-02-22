@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您可能知道 PowerShell 支持配置脚本。只需要确保 `$profile` 所指定的文件存在即可。它是一个普通的脚本，每当 PowerShell 宿主启动的时候都会执行。
 
@@ -31,5 +30,4 @@ tags:
     
 它们的路径基本上相同，除了后者文件名不含宿主名，而只是叫做“profile.ps1”。
 
-<!--more-->
-本文国际来源：[Using Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-profile-scripts)
+<!--本文国际来源：[Using Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-profile-scripts)-->

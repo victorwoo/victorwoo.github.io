@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们介绍了如何在 PowerShell 中管理 Lenovo BIOS。通常，只需要管理单个设置。请注意某些操作需要管理员特权。
 
@@ -57,5 +56,4 @@ $SaveSettings = Get-WmiObject -Class Lenovo_SaveBiosSettings -Namespace root\wmi
 $SaveSettings.SaveBiosSettings().return
 ```
 
-<!--more-->
-本文国际来源：[Managing Lenovo BIOS Settings (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-3)
+<!--本文国际来源：[Managing Lenovo BIOS Settings (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/managing-lenovo-bios-settings-part-3)-->

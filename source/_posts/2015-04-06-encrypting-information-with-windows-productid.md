@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及以上版本_
 
@@ -51,5 +50,4 @@ _适用于 PowerShell 3.0 及以上版本_
 
 请注意如何 `PSCredential` 对象来对密文进行解密并还原出明文的。
 
-<!--more-->
-本文国际来源：[Encrypting Information with Windows ProductID](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-information-with-windows-productid)
+<!--本文国际来源：[Encrypting Information with Windows ProductID](http://community.idera.com/powershell/powertips/b/tips/posts/encrypting-information-with-windows-productid)-->

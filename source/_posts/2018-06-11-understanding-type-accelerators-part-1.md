@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 “类型加速器”类似 .NET 类型别名。它们的目的是节约打字。例如，`[ADSI]` “类型”实际上并不存在。它只不过是 `System.DirectoryServices.DirectoryEntry` 的别名。您可以将 `[ADSI]` 替换为 `[System.DirectoryServices.DirectoryEntry]`：
 
@@ -127,5 +126,4 @@ psaliasproperty              System.Management.Automation.PSAliasProperty
 psvariableproperty           System.Management.Automation.PSVariableProperty
 ```
 
-<!--more-->
-本文国际来源：[Understanding Type Accelerators (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-type-accelerators-part-1)
+<!--本文国际来源：[Understanding Type Accelerators (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/understanding-type-accelerators-part-1)-->

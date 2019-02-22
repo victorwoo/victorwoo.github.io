@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 10 和 Windows Server 2016 终于带来了内置的 PDF 打印机，名为 "Microsoft Print to PDF"。您可以在 PowerShell 中用它来创建 PDF 文件。请运行这段代码来测试您的 PDF 打印机：
 
@@ -49,5 +48,4 @@ PS> Get-Service | Out-Printer -Name "Microsoft Print to PDF"
 
 打印机驱动将会打开一个对话框，您可以选择输出的文件名。如果不希望显示这个对话框，而以无人值守的方式打印，我们将在明天介绍。
 
-<!--more-->
-本文国际来源：[Sending PowerShell Results to PDF (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-1)
+<!--本文国际来源：[Sending PowerShell Results to PDF (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-1)-->

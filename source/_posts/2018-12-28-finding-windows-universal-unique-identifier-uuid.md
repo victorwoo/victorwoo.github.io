@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 每个 Windows 的安装都有一个唯一的 UUID，您可以用它来区分机器。计算机名可能会改变，但 UUID 不会。
 
@@ -61,5 +60,4 @@ Guid
   6cb3cb1a-b094-425b-8ccb-e74c2034884f
 ```
 
-<!--more-->
-本文国际来源：[Finding Windows Universal Unique Identifier (UUID)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/finding-windows-universal-unique-identifier-uuid)
+<!--本文国际来源：[Finding Windows Universal Unique Identifier (UUID)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/finding-windows-universal-unique-identifier-uuid)-->

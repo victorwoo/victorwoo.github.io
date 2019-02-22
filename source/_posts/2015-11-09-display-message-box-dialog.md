@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 是基于控制台的，但有些时候加入一些简单的对话框也很不错。以下是一个称为 `Show-MessageBox` 的函数，可以显示所有标准消息框，并支持智能显示参数：
 
@@ -45,5 +44,4 @@ PowerShell 是基于控制台的，但有些时候加入一些简单的对话框
       Restart-Computer -Force -WhatIf
     }
 
-<!--more-->
-本文国际来源：[Display Message Box Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/display-message-box-dialog)
+<!--本文国际来源：[Display Message Box Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/display-message-box-dialog)-->

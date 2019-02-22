@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有两种方法可以替换一个字符串中的问本：`Replace()` 方法，和 `-replace` 操作符。它们的工作机制是不同的。
 
@@ -42,5 +41,4 @@ PS> 'Hello World.' -replace [Regex]::Escape('.'), '!'
 Hello World!
 ```
 
-<!--more-->
-本文国际来源：[How .Replace() and -replace differ](http://community.idera.com/powershell/powertips/b/tips/posts/how-replace-and-replace-differ)
+<!--本文国际来源：[How .Replace() and -replace differ](http://community.idera.com/powershell/powertips/b/tips/posts/how-replace-and-replace-differ)-->

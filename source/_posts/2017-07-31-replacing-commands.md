@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell 有一系列“秘密”的（更好的说法是没有在文档中体现的）设置。一个是 `PreCommandLookupAction`，它有一个很强的功能：当 PowerShell 一旦准备好执行一个命令时，就会先执行这个操作。
 
@@ -47,5 +46,4 @@ $ExecutionContext.SessionState.InvokeCommand.PreCommandLookupAction = {
 
 这个事件处理器寻找 `Get-Service` 命令，并将它替换成 `dir`。所以当您运行 `Get-Service` 时，会变成获得一个文件夹列表。当然，这是没有实际意义的，正常情况下应该使用 alias 别名。下一个技巧中，我们将演示一些更有用的例子。
 
-<!--more-->
-本文国际来源：[Replacing Commands](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-commands)
+<!--本文国际来源：[Replacing Commands](http://community.idera.com/powershell/powertips/b/tips/posts/replacing-commands)-->

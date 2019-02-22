@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是另一小段用于生成由指定数量的大小写字母、数字，和特殊字符组成的随机密码：
 
@@ -34,5 +33,4 @@ $password = $password | Get-Random -Count $length
 $password -join ''
 ```
 
-<!--more-->
-本文国际来源：[Creating Random Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/creating-randompasswords)
+<!--本文国际来源：[Creating Random Passwords](http://community.idera.com/powershell/powertips/b/tips/posts/creating-randompasswords)-->

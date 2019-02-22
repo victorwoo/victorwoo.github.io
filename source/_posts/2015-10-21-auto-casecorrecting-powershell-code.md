@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您编写 PowerShell 脚本时，可能常常没有使用正确的大小写，或只使用部分参数名，或使用别名而不是 cmdlet 名称。这些技术上都是可行的，因为 PowerShell 命令是大小写不敏感的，参数名可以省略，并且别名也是一种合法的命令类型。
 
@@ -19,5 +18,4 @@ tags:
 
 在 PowerShell ISE 中，要纠正这些东西，只需要将光标放置在命令名或参数名处，然后按下 `TAB` 键。Tab 展开功能将会读取原有的代码并将它替换成大小写正确的、名字完整的版本。
 
-<!--more-->
-本文国际来源：[Auto-CaseCorrecting PowerShell Code](http://community.idera.com/powershell/powertips/b/tips/posts/auto-casecorrecting-powershell-code)
+<!--本文国际来源：[Auto-CaseCorrecting PowerShell Code](http://community.idera.com/powershell/powertips/b/tips/posts/auto-casecorrecting-powershell-code)-->

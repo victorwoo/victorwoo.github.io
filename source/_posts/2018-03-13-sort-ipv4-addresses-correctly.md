@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个示例中我们发布了一个超快的名为 `Test-OnlieFast` 的函数，并且这个函数可以在短时间内 ping 整个 IP 段：
 
@@ -150,5 +149,4 @@ function Test-OnlineFast
 }
 ```
 
-<!--more-->
-本文国际来源：[Sort IPv4 Addresses Correctly](http://community.idera.com/powershell/powertips/b/tips/posts/sort-ipv4-addresses-correctly)
+<!--本文国际来源：[Sort IPv4 Addresses Correctly](http://community.idera.com/powershell/powertips/b/tips/posts/sort-ipv4-addresses-correctly)-->

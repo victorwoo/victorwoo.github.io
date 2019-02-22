@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您也许知道 PowerShell 支持命令的别名。但是您是否知道也可以在函数定义内部为 PowerShell 函数定义别名（PowerShell 4 引入的功能）呢？让我们来看看：
 
@@ -35,5 +34,4 @@ Alias           Beer -> Get-AlcoholicBeverage
 Alias           Drink -> Get-AlcoholicBeverage
 ```
 
-<!--more-->
-本文国际来源：[Auto-Declaring Alias Names for Functions](http://community.idera.com/powershell/powertips/b/tips/posts/auto-declaring-alias-names-for-functions)
+<!--本文国际来源：[Auto-Declaring Alias Names for Functions](http://community.idera.com/powershell/powertips/b/tips/posts/auto-declaring-alias-names-for-functions)-->

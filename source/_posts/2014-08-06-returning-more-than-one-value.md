@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -34,5 +33,4 @@ _适用于所有 PowerShell 版本_
 
 这个测试函数产生 3 段信息，然后将结果存储在 3 个不同的变量中。
 
-<!--more-->
-本文国际来源：[Returning More Than One Value](http://community.idera.com/powershell/powertips/b/tips/posts/returning-more-than-one-value)
+<!--本文国际来源：[Returning More Than One Value](http://community.idera.com/powershell/powertips/b/tips/posts/returning-more-than-one-value)-->

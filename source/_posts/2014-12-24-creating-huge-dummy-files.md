@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -27,5 +26,4 @@ _适用于 PowerShell 所有版本_
     
     explorer.exe "/select,$Path"
 
-<!--more-->
-本文国际来源：[Creating Huge Dummy Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-huge-dummy-files)
+<!--本文国际来源：[Creating Huge Dummy Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-huge-dummy-files)-->

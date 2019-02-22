@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本及 SQLServer_
 
@@ -43,5 +42,4 @@ _适用于 PowerShell 所有版本及 SQLServer_
     
     Invoke-Item -Path $Path
 
-<!--more-->
-本文国际来源：[Accessing SQLServer Database](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-sqlserver-database)
+<!--本文国际来源：[Accessing SQLServer Database](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-sqlserver-database)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 控制台_
 
@@ -33,5 +32,4 @@ _适用于 PowerShell 控制台_
 
 它能即时输出结果，因为它一旦从管道接收到数据，就可以开始处理。
 
-<!--more-->
-本文国际来源：[Use Out-Host instead of More](http://community.idera.com/powershell/powertips/b/tips/posts/use-out-host-instead-of-more)
+<!--本文国际来源：[Use Out-Host instead of More](http://community.idera.com/powershell/powertips/b/tips/posts/use-out-host-instead-of-more)-->

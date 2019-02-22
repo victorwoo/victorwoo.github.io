@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 您是否曾需要了解某个月的第一天和最后一天？
 
@@ -33,5 +32,4 @@ $startOfMonth
 $endOfMonth
 ```
 
-<!--more-->
-本文国际来源：[Finding First and Last Day in Month](http://community.idera.com/powershell/powertips/b/tips/posts/finding-first-and-last-day-in-month)
+<!--本文国际来源：[Finding First and Last Day in Month](http://community.idera.com/powershell/powertips/b/tips/posts/finding-first-and-last-day-in-month)-->

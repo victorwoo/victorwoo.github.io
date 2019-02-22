@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您想了解一个数组是否包含某个指定的元素，PowerShell 提供了 `-contains` 操作符。然而这个操作符不支持通配符，所以您只能使用精确匹配。
 
@@ -29,5 +28,4 @@ $a -contains 'Hannover'
 @($a) -like 'Ha*'
 ```
 
-<!--more-->
-本文国际来源：[Determine if Array Contains Value – Using Wildcards](http://community.idera.com/powershell/powertips/b/tips/posts/determine-if-array-contains-value-using-wildcards)
+<!--本文国际来源：[Determine if Array Contains Value – Using Wildcards](http://community.idera.com/powershell/powertips/b/tips/posts/determine-if-array-contains-value-using-wildcards)-->

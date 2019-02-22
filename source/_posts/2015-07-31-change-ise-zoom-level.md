@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 PowerShell ISE 的右下角有一个缩放滑竿，您也可以用 PowerShell 代码来控制它。
 
@@ -46,5 +45,4 @@ PowerShell ISE 的右下角有一个缩放滑竿，您也可以用 PowerShell �
     
     $psise.Options.Zoom = $zoom
 
-<!--more-->
-本文国际来源：[Change ISE Zoom Level](http://community.idera.com/powershell/powertips/b/tips/posts/change-ise-zoom-level)
+<!--本文国际来源：[Change ISE Zoom Level](http://community.idera.com/powershell/powertips/b/tips/posts/change-ise-zoom-level)-->

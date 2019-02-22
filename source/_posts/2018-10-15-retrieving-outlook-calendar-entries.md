@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 If you use Outlook to organize your calendar events, here is a useful PowerShell function that connects to Outlook and dumps your calendar entries:
 
@@ -38,5 +37,4 @@ Try this:
      
     PS> Get-OutlookCalendar | Out-GridView
 
-<!--more-->
-本文国际来源：[Retrieving Outlook Calendar Entries](http://community.idera.com/powershell/powertips/b/tips/posts/retrieving-outlook-calendar-entries)
+<!--本文国际来源：[Retrieving Outlook Calendar Entries](http://community.idera.com/powershell/powertips/b/tips/posts/retrieving-outlook-calendar-entries)-->

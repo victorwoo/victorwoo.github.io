@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 XPS 是由 Microsoft 开发的类似 PDF 的文档格式。虽然它并没有大规模使用，但它仍然是一种打印信息到文件的很好的内部格式。要无人值守地打印到 XPS 文件，首先您需要设置一个新的打印机，该打印机将自动打印到一个指定的输出文件：
 
@@ -69,5 +68,4 @@ systeminfo.exe /FO CSV | ConvertFrom-Csv | Out-PrinterXPS -Path $Path
 Invoke-Item -Path $Path
 ```
 
-<!--more-->
-本文国际来源：[Automatically Printing to XPS Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/automatically-printing-to-xps-files)
+<!--本文国际来源：[Automatically Printing to XPS Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/automatically-printing-to-xps-files)-->

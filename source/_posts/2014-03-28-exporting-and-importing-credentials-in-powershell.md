@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 凭据对象包含了用户名和密码。您可以用 `Get-Credential` 来创建它们，然后将该对象传递给任何包含 `-Credential` 参数的 cmdlet。
 
@@ -63,5 +62,4 @@ tags:
 
 加密解密的“奥秘”在于您的身份，所以只有您（导出凭据的用户）可以将它再次导入。无需在您的脚本中硬编码隐私信息。
 
-<!--more-->
-本文国际来源：[Exporting and Importing Credentials in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-and-importing-credentials-in-powershell)
+<!--本文国际来源：[Exporting and Importing Credentials in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-and-importing-credentials-in-powershell)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您在 PowerShell 中读取环境变量时，您可能会使用 "`env:`" 驱动器。例如这行代码使用 `%USERNAME%` 环境变量，告知您执行这段代码的用户名：
 
@@ -52,5 +51,4 @@ $content = [Environment]::GetEnvironmentVariable($name, $scope)
 [Environment]::SetEnvironmentVariable("PS_Info", "", "user")
 ```
 
-<!--more-->
-本文国际来源：[Reading Environment Variables Freshly](http://community.idera.com/powershell/powertips/b/tips/posts/reading-environment-variables-freshly)
+<!--本文国际来源：[Reading Environment Variables Freshly](http://community.idera.com/powershell/powertips/b/tips/posts/reading-environment-variables-freshly)-->

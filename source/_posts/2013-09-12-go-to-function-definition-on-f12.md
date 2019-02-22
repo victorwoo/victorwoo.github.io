@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您将要编写又长又复杂，有很多函数的PowerShell代码，那么这篇文章对您有所帮助。在其它开发环境中，当您将光标停在一个函数上，并按下F12键，编辑器将跳转到函数的定义处。而PowerShell ISE并不会那么做。
 
@@ -45,6 +44,5 @@ tags:
 
 	$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add("Goto Definition",{Find-Definition},'F12') 
 
-<!--more-->
 
-本文国际来源：[Go to Function Definition on F12](http://community.idera.com/powershell/powertips/b/tips/posts/go-to-function-definition-on-f12)
+<!--本文国际来源：[Go to Function Definition on F12](http://community.idera.com/powershell/powertips/b/tips/posts/go-to-function-definition-on-f12)-->

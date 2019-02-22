@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Group-Object` 是一个好用的 cmdlet：它可以方便地可视化分组。请查看以下示例：
 
@@ -102,5 +101,4 @@ $hash = Get-Service |
 $hash.'Running'
 ```
 
-<!--more-->
-本文国际来源：[Discover Group-Object](http://community.idera.com/powershell/powertips/b/tips/posts/discover-group-object)
+<!--本文国际来源：[Discover Group-Object](http://community.idera.com/powershell/powertips/b/tips/posts/discover-group-object)-->

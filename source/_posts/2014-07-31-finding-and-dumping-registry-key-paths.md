@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于所有 PowerShell 版本_
 
@@ -30,5 +29,4 @@ _适用于所有 PowerShell 版本_
         Convert-Path -Path $_.PSPath
       }
 
-<!--more-->
-本文国际来源：[Finding and Dumping Registry Key Paths](http://community.idera.com/powershell/powertips/b/tips/posts/finding-and-dumping-registry-key-paths)
+<!--本文国际来源：[Finding and Dumping Registry Key Paths](http://community.idera.com/powershell/powertips/b/tips/posts/finding-and-dumping-registry-key-paths)-->

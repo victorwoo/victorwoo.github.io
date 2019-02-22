@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 对象和类型中包括方法和属性等成员，但只有少数是公开可见和可使用的。还有许多隐藏（私有）的成员。在生产系统上使用这些成员是不明智的，当它们更新版本的时候，您并不会得到通知，所以可能会工作不正常。所以对于高级的 PowerShell 开发者来说是一个很好奇的地方。
 
@@ -127,5 +126,4 @@ c:\windows\system32\windowspowershell\v1.0\Modules
 
 再次强调，这仅仅适用于希望更深入了解对象和类型内部的工作机制的高级用户。`ImpliedReflection` 模块用于操作私有成员。在生产环境下，您需要十分谨慎地操作私有成员。
 
-<!--more-->
-本文国际来源：[Accessing Hidden (Private) Member](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-hidden-private-member)
+<!--本文国际来源：[Accessing Hidden (Private) Member](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-hidden-private-member)-->

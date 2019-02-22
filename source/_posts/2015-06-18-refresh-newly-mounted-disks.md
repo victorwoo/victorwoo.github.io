@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的脚本刚刚挂载了一个新的驱动器，PowerShell 可能无法立即存取它（例如通过 `Get-ChildItem`），因为 Powerell 尚未更新它的驱动器列表。
 
@@ -19,5 +18,4 @@ tags:
 
     $null = Get-PSDrive
 
-<!--more-->
-本文国际来源：[Refresh Newly Mounted Disks](http://community.idera.com/powershell/powertips/b/tips/posts/refresh-newly-mounted-disks)
+<!--本文国际来源：[Refresh Newly Mounted Disks](http://community.idera.com/powershell/powertips/b/tips/posts/refresh-newly-mounted-disks)-->

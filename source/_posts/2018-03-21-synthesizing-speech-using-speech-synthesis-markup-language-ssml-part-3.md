@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Windows 内置的文字转语音引擎可以输入纯文本，并且将它转换为语音，但它也可以通过“语音合成标记语言”来控制。通过这种方式，您可以对语音调优，控制音调，以及语言。
 
@@ -81,5 +80,4 @@ $speaker.Rate = 0
 $speaker.Speak($text)
 ```
 
-<!--more-->
-本文国际来源：[Synthesizing Speech – Using Speech Synthesis Markup Language SSML (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-using-speech-synthesis-markup-language-ssml-part-3)
+<!--本文国际来源：[Synthesizing Speech – Using Speech Synthesis Markup Language SSML (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-using-speech-synthesis-markup-language-ssml-part-3)-->

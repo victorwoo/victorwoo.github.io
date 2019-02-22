@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 一台机器上只能有一个物理登录的用户。物理登录的用户意味着正坐在机器旁边的那个用户。
 
@@ -32,5 +31,4 @@ tags:
 
 运行 `Get-LoggedOnUser` 命令后能够获得本机上物理登录的用户名。指定 `-ComputerName`（或者 `-Credential`）参数可以获得远程机器上物理登录的用户名。
 
-<!--more-->
-本文国际来源：[Find Physically Logged On User](http://community.idera.com/powershell/powertips/b/tips/posts/find-physically-logged-on-user)
+<!--本文国际来源：[Find Physically Logged On User](http://community.idera.com/powershell/powertips/b/tips/posts/find-physically-logged-on-user)-->

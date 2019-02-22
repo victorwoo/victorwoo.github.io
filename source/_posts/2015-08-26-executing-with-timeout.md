@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Start-Process` 可以启动进程但是不支持超时。如果您需要在指定的超时时间后结束一个跑飞了的进程，您可以使用类似这样的方法：
 
@@ -38,5 +37,4 @@ tags:
 
 这个例子的处理代码是启动第二个 PowerShell 实例，在新的实例中执行 `Start-Sleep` 命令来模拟某些长时间运行的任务。如果您将 `Start-Sleep` 的参数调整为短于 `$maximumRuntimeSeconds` 指定的值，那么操作将会在指定的超时值之内完成，而您的脚本将不会结束该进程。
 
-<!--more-->
-本文国际来源：[Executing with Timeout](http://community.idera.com/powershell/powertips/b/tips/posts/executing-with-timeout)
+<!--本文国际来源：[Executing with Timeout](http://community.idera.com/powershell/powertips/b/tips/posts/executing-with-timeout)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -41,5 +40,4 @@ PS> Get-WmiObject -Class Win32_OperatingSystem | Select-Object -ExpandProperty C
 Microsoft Windows 8.1 Pro
 ```
 
-<!--more-->
-本文国际来源：[Finding Out Windows Version](http://community.idera.com/powershell/powertips/b/tips/posts/finding-out-windows-version)
+<!--本文国际来源：[Finding Out Windows Version](http://community.idera.com/powershell/powertips/b/tips/posts/finding-out-windows-version)-->

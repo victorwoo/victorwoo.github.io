@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您的显示驱动程序支持WMI，那么您可以用PowerShell改变显示器的亮度——甚至是远程的计算机！
 
@@ -47,6 +46,5 @@ tags:
 	    Start-Sleep -Seconds 1    
 	}
 
-<!--more-->
 
-本文国际来源：[Setting Monitor Brightness](http://community.idera.com/powershell/powertips/b/tips/posts/setting-monitor-brightness)
+<!--本文国际来源：[Setting Monitor Brightness](http://community.idera.com/powershell/powertips/b/tips/posts/setting-monitor-brightness)-->

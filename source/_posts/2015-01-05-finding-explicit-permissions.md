@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -29,5 +28,4 @@ _适用于 PowerShell 所有版本_
 
 如果结果为真，该文件夹会汇报给您。
 
-<!--more-->
-本文国际来源：[Finding Explicit Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/finding-explicit-permissions)
+<!--本文国际来源：[Finding Explicit Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/finding-explicit-permissions)-->

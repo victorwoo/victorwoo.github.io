@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 3.0 及更高版本_
 
@@ -39,5 +38,4 @@ _适用于 PowerShell 3.0 及更高版本_
     d--hs        08.01.2012     10:38            NetHood                                                             
     (...)
 
-<!--more-->
-本文国际来源：[Dealing with Hidden Files](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-hidden-files)
+<!--本文国际来源：[Dealing with Hidden Files](http://community.idera.com/powershell/powertips/b/tips/posts/dealing-with-hidden-files)-->

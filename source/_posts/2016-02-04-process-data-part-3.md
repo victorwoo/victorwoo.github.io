@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在第 1 和 第 2 部分，您学到了如何 PowerShell 函数如何处理通过参数和通过管道传入的信息。在这部分中，我们打算介绍一个函数如何接收多行文本并将它加工成一个字符串。
 
@@ -62,5 +61,4 @@ tags:
 
 请注意参数：它使用了 `[AllowEmptyString()]` 属性。它确保可以接受空字符串参数。在 mandatory （必须）参数中，如果没有这个属性，是不允许空字符串的。
 
-<!--more-->
-本文国际来源：[Process Data (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/process-data-part-3)
+<!--本文国际来源：[Process Data (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/process-data-part-3)-->

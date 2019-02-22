@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何用 WMI 快速 ping 多台计算机。那么今天我们将它封装为一个可复用的 PowerShell 函数。它可以快速地 ping 一台或多台计算机。
 
@@ -70,5 +69,4 @@ Address      StatusCode
 (...)
 ```
 
-<!--more-->
-本文国际来源：[Creating Highspeed Ping (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-4)
+<!--本文国际来源：[Creating Highspeed Ping (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/creating-highspeed-ping-part-4)-->

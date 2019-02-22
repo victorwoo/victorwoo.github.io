@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Get-EventLog` 命令每次只能读取一个事件日志。然而如果您希望从多个事件日志中读取事件，您可以传入数组信息：
 
@@ -32,5 +31,4 @@ tags:
 	Get-CimInstance -Class Win32_NTLogEvent -Filter 'Type="Error" and (LogFile="System" or LogFile="Application")' |
 	  Select-Object -First 100 -Property TimeGenerated, LogFile, EventCode, Message
 
-<!--more-->
-本文国际来源：[Getting Error Events from Multiple Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/getting-error-events-from-multiple-event-logs)
+<!--本文国际来源：[Getting Error Events from Multiple Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/getting-error-events-from-multiple-event-logs)-->

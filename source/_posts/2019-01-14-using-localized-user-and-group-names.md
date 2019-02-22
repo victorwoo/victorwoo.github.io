@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 以下是一行返回由当前用户 SID 解析成名字的代码：
 
@@ -37,5 +36,4 @@ $groupname = $parts[-1]
 Get-LocalGroupMember -Group $groupname
 ```
 
-<!--more-->
-本文国际来源：[Using Localized User and Group Names](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-localized-user-and-group-names)
+<!--本文国际来源：[Using Localized User and Group Names](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-localized-user-and-group-names)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能里我们演示了如何将文本发送到一个全新的记事本实例中。今天，您会获得一个增强版的 `Out-Notepad`：您现在可以通过管道传输任何东西到记事本了。如果内容不是字符串，`Out-Notepad` 会使用内置的 PowerShell ETS 将它转换为文本并且合适地显示出来：
 
@@ -72,5 +71,4 @@ function Out-Notepad
 
 另外您可能需要最大化记事本或禁用换行来查看正确的格式。
 
-<!--more-->
-本文国际来源：[Sending Objects to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/sending-objects-to-notepad)
+<!--本文国际来源：[Sending Objects to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/sending-objects-to-notepad)-->

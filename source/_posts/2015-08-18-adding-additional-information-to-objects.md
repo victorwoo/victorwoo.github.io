@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您获取结果信息时，您可能会希望向结果对象添加一些额外的属性，这样待会儿就可以知道它们是从哪儿来的。
 
@@ -31,5 +30,4 @@ tags:
     
     $list | ForEach-Object { 'Process {0} on {1}' -f $_.Name, $_.PC }
 
-<!--more-->
-本文国际来源：[Adding Additional Information to Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-additional-information-to-objects)
+<!--本文国际来源：[Adding Additional Information to Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-additional-information-to-objects)-->

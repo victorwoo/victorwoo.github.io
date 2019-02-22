@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 Windows 8.1 和 Server 2012 R2_
 
@@ -65,5 +64,4 @@ Windows 8.1 和 Server 2012 R2 带来了一个叫做“PrintManagement”的模�
 
 如您所见，它们实际上是 PowerShell 函数而不是二进制 Cmdlet。
 
-<!--more-->
-本文国际来源：[Managing Printers](http://community.idera.com/powershell/powertips/b/tips/posts/managing-printers)
+<!--本文国际来源：[Managing Printers](http://community.idera.com/powershell/powertips/b/tips/posts/managing-printers)-->

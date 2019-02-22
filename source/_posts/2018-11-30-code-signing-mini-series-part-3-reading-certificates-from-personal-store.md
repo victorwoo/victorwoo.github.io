@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 可以通过加载至 Windows 证书存储的方式永久地安装证书。PowerShell 可以通过 `cert:` 驱动器存取这个存储。以下这行代码将显示所有个人证书：
 
@@ -82,5 +81,4 @@ Thumbprint                                Subject
 
 请关注下一个技能来学习如何使用证书来实际签名 PowerShell 代码！
 
-<!--more-->
-本文国际来源：[Code-Signing Mini-Series (Part 3: Reading Certificates from Personal Store)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-3-reading-certificates-from-personal-store)
+<!--本文国际来源：[Code-Signing Mini-Series (Part 3: Reading Certificates from Personal Store)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/code-signing-mini-series-part-3-reading-certificates-from-personal-store)-->

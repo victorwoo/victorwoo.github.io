@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 `Measure-Object` 也可以计算属性值的总和。它可以用来计算文件夹大小。以下代码计算用户配置文件（可能需要一些时间，视找到的文件数量而定）。它只是将所有文件的“Length”属性相加：
 
@@ -36,5 +35,4 @@ $size = (Get-ChildItem -Path $home -Filter *.ps1 -Force -Recurse -ErrorAction Si
 'Folder Size: {0:n2} MB' -f ($size/1MB)
 ```
 
-<!--more-->
-本文国际来源：[Calculating Folder File Size](http://community.idera.com/powershell/powertips/b/tips/posts/calculating-folder-file-size)
+<!--本文国际来源：[Calculating Folder File Size](http://community.idera.com/powershell/powertips/b/tips/posts/calculating-folder-file-size)-->

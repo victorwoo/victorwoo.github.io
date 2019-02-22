@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 WPF (Windows Presentation Foundation) 不仅仅是创建 UI 的技术。您可以用它来创建任意类型的矢量图并将它保存为图形文件。
 
@@ -101,5 +100,4 @@ PS> Invoke-Item -Path $file
 * PowerShell 可以使用 `[Windows.Markup.XAMLReader]` 类来快速地将任意合法的 XAML 转换为一个 `UIElement` 对象。
 * `UIElement` 对象可以保存成图形文件，例如 PNG 图像，可以在窗口中显示，或者打印出来。在这个例子中，我们主要是将它保存为文件，然后我们用了一个非常简单的 XAML 定义。您现在可能会感到很好奇。通过 Google 搜索一下这个例子中的方法，您将会找到很多知识。
 
-<!--more-->
-本文国际来源：[Converting Text to Image](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-text-to-image)
+<!--本文国际来源：[Converting Text to Image](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-text-to-image)-->

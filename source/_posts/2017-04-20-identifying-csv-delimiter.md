@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当使用 `Import-Csv` 导入一个 CSV 文件，需要指定一个分隔符。如果用错了，显然会导入失败。您需要事先知道 CSV 文件使用的分隔符。
 
@@ -54,5 +53,4 @@ PS> Get-CsvDelimiter -Path $env:temp\test.csv
 #
 ```
 
-<!--more-->
-本文国际来源：[Identifying CSV Delimiter](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-csv-delimiter)
+<!--本文国际来源：[Identifying CSV Delimiter](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-csv-delimiter)-->

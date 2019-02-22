@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如前一个技能所述，`$FormatEnumerationLimit` 隐藏变量决定了输出时会在多少个元素后截断。以下是再次演示该区别的例子：
 
@@ -90,5 +89,4 @@ function Test-Formatting
 Test-Formatting
 ```
 
-<!--more-->
-本文国际来源：[$FormatEnumerationLimit Scoping Issues](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatenumerationlimit-scoping-issues)
+<!--本文国际来源：[$FormatEnumerationLimit Scoping Issues](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/formatenumerationlimit-scoping-issues)-->

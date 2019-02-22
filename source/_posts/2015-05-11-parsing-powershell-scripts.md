@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望为 PowerShell 脚本语法着色，例如用 HTML 将它们格式化，以下是一个起步示例：
 
@@ -29,5 +28,4 @@ tags:
 
 该信息是格式化 PowerShell 代码所需要的。您可以为 token 类型指定颜色，并为 PowerShell 代码创建自己的文档。
 
-<!--more-->
-本文国际来源：[Parsing PowerShell Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-powershell-scripts)
+<!--本文国际来源：[Parsing PowerShell Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/parsing-powershell-scripts)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们通过 PowerShell 后台作业实现了超时机制，这样您可以设置某段代码执行的最大允许时间，超过该时间将抛出一个异常。
 
@@ -69,5 +68,4 @@ PS> Invoke-CodeWithTimeout -Code { Start-Sleep -Seconds 3; Get-Date } -Timeout 5
 Thursday November 1, 2018 14:53:26
 ```
 
-<!--more-->
-本文国际来源：[Executing Code with a Timeout (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/executing-code-with-a-timeout-part-2)
+<!--本文国际来源：[Executing Code with a Timeout (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/executing-code-with-a-timeout-part-2)-->

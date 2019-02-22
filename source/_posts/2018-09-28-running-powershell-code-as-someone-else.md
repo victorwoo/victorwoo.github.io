@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 本地管理员权限十分强大，您需要使用类似 JEA 等技术来尽可能减少本地管理员的数量。为什么？请看以下示例。如果您有某台机器上的本地管理员特权，而且启用了 PowerShell 远程操作，那么您可以发送任意的 PowerShell 代码到那台机器上，并且以登录到那台机器上的用户的上下文执行该代码。
 
@@ -118,5 +117,4 @@ Invoke-PowerShellAsInteractiveUser -ScriptCode $pirateCode -Computername $Comput
 
 显然，需要调整 `$ComputerName` 对应到您拥有本地管理员特权，并且启用了 PowerShell 远程操作系统上。并且，这段代码需要用户物理登录。如果没有物理登录的用户，那么将没有可以进入的用户回话，这段代码将会执行失败。
 
-<!--more-->
-本文国际来源：[Running PowerShell Code as Someone Else](http://community.idera.com/powershell/powertips/b/tips/posts/running-powershell-code-as-someone-else)
+<!--本文国际来源：[Running PowerShell Code as Someone Else](http://community.idera.com/powershell/powertips/b/tips/posts/running-powershell-code-as-someone-else)-->

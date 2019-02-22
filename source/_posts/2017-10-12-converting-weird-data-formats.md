@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 有些时候，您会被奇怪的数据格式难住，例如在 log 文件中，它无法自动转换为 `DateTime` 对象。以下是一个快速的解析此类日期时间信息的方法：
 
@@ -31,5 +30,4 @@ $weirdDate = '03 12 --- 1988'
     m,mm: Minute  
     s,ss: Second
 
-<!--more-->
-本文国际来源：[Converting Weird Data Formats](http://community.idera.com/powershell/powertips/b/tips/posts/converting-weird-data-formats)
+<!--本文国际来源：[Converting Weird Data Formats](http://community.idera.com/powershell/powertips/b/tips/posts/converting-weird-data-formats)-->

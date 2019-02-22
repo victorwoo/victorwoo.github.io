@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个技能中我们演示了如何向一个文件夹增加 NTFS 权限。要查看可以设置哪些权限，看以下示例：
 
@@ -60,5 +59,4 @@ tags:
     # set new permissions
     $acl | Set-Acl -Path $path
 
-<!--more-->
-本文国际来源：[Managing NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ntfs-permissions)
+<!--本文国际来源：[Managing NTFS Permissions](http://community.idera.com/powershell/powertips/b/tips/posts/managing-ntfs-permissions)-->

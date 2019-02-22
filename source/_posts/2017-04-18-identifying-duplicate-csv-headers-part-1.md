@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 CSV 文件只是文本文件，所以可以很容易地提取它的第一行并检查它的表头。如果您手头没有一个 CSV 文件，这行代码可以快速帮您创建一个：
 
@@ -63,5 +62,4 @@ Count Name
 
 显然，在本地化时，Microsoft 将 "State" 和 "Status" 两个单词都翻译成了德文的 "Status"，造成了重复的列标题。
 
-<!--more-->
-本文国际来源：[Identifying Duplicate CSV Headers (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-duplicate-csv-headers-part-1)
+<!--本文国际来源：[Identifying Duplicate CSV Headers (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/identifying-duplicate-csv-headers-part-1)-->

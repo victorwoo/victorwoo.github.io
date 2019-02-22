@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在前一个示例中我们延时了如何使用内置的 "Microsoft Print to PDF" 打印机来将 PowerShell 输出结果发送到 PDF 文件。然而，这个打印机会提示选择选择输出的文件，所以不适合自动化任务。
 
@@ -107,5 +106,4 @@ explorer "/select,$OutPath"
 
 当运行这段代码时，将会在桌面上创建一个新的 `result.pdf` 文件。它包含了所有服务的列表。您可以将任何结果通过管道输出到 `Out-Printer` 来创建 PDF 文件。
 
-<!--more-->
-本文国际来源：[Sending PowerShell Results to PDF (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-2)
+<!--本文国际来源：[Sending PowerShell Results to PDF (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-2)-->

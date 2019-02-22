@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 本周我们将关注如何改变 PowerShell 控制台和 PowerShell ISE 的颜色，以便设置您的 PowerShell 环境。
 
@@ -33,5 +32,4 @@ PS C:\> $psise.Options.ConsolePaneForegroundColor = 'DarkGray'
 PS C:\> $psise.Options.ConsolePaneForegroundColor = 'White'
 ```
 
-<!--more-->
-本文国际来源：[Color Week: Using Clear Names for PowerShell ISE Colors](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-using-clear-names-for-powershell-ise-colors)
+<!--本文国际来源：[Color Week: Using Clear Names for PowerShell ISE Colors](http://community.idera.com/powershell/powertips/b/tips/posts/color-week-using-clear-names-for-powershell-ise-colors)-->

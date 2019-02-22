@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您将某个值赋给一个变量时，您可以用括号把表达式括起来。这个表达式还将返回该数值。我们看看它的样子：
 
@@ -37,5 +36,4 @@ tags:
 
 现在 `$c` 将包含所有大写形式的服务名。很另类的写法。
 
-<!--more-->
-本文国际来源：[Multiple Assignments in One Line](http://community.idera.com/powershell/powertips/b/tips/posts/multiple-assignments-in-one-line)
+<!--本文国际来源：[Multiple Assignments in One Line](http://community.idera.com/powershell/powertips/b/tips/posts/multiple-assignments-in-one-line)-->

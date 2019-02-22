@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 大多数已安装的文件将自己注册在 Windows 注册表中的四个位置。以下是一个名为 `Get-InstalledSoftware` 的快速 PowerShell 函数，它能够查询所有这些键名，然后输出找到的软件的信息。
 
@@ -72,5 +71,4 @@ function Get-InstalledSoftware
     (...)
 ```
 
-<!--more-->
-本文国际来源：[Find Installed Software](http://community.idera.com/powershell/powertips/b/tips/posts/find-installed-software)
+<!--本文国际来源：[Find Installed Software](http://community.idera.com/powershell/powertips/b/tips/posts/find-installed-software)-->

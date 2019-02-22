@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 在之前介绍的技巧中我们介绍了如何将文件系统路径转化为数组，并且通过改变或排除数组的一部分元素创建一个新的路径。
 您可以通过将数组转化为 `ArrayList` 类型来使其变得更简单。现在，您可以非常容易地删除现有的或增加新的路径元素。
@@ -31,6 +30,5 @@ tags:
 
 	C:\MyUsers\Desktop\NewSubFolder\AnotherNewSubFolder\functions.ps1
 
-<!--more-->
 
-本文国际来源：[Manipulating File System Paths (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths-part-3)
+<!--本文国际来源：[Manipulating File System Paths (Part 3)](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-file-system-paths-part-3)-->

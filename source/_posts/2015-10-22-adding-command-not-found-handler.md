@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当 PowerShell 遇到一个未知的命令名时，您会见到一条红色的信息。
 
@@ -34,5 +33,4 @@ tags:
     
     }
 
-<!--more-->
-本文国际来源：[Adding Command Not Found Handler](http://community.idera.com/powershell/powertips/b/tips/posts/adding-command-not-found-handler)
+<!--本文国际来源：[Adding Command Not Found Handler](http://community.idera.com/powershell/powertips/b/tips/posts/adding-command-not-found-handler)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当运行一个控制台应用程序时，它通常会返回一个数字型的 exit code。该 exit code 的含义取决于控制台应用程序，要查询应用程序才能理解 exit code 的含义。PowerShell 也会将 exit code 传递给用户。它通过 `$LASTEXITCODE` 体现。
 
@@ -29,5 +28,4 @@ $IsOnline = $LASTEXITCODE -eq 0
 $IsOnline
 ```
 
-<!--more-->
-本文国际来源：[Evaluating Exit Codes (aka Error Level – Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-exit-codes-aka-error-level-part-1)
+<!--本文国际来源：[Evaluating Exit Codes (aka Error Level – Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/evaluating-exit-codes-aka-error-level-part-1)-->

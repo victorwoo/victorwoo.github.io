@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 文本文件可以以不同的编码存储。需要正确地指定编码，才能正确地读取它们。这是为什么多数读取文本文件的 cmdlet 提供 `-Encoding` 参数（例如 `Get-Content`）。如果没有指定正确的编码，您可能会看到一堆乱码。
 
@@ -73,5 +72,4 @@ System.Text.ASCIIEncoding   C:\Users\tobwe\.vscode\extensions\ms-vscode.powers..
 System.Text.UTF8Encoding    C:\Users\tobwe\.vscode\extensions\ms-vscode.powers...
 ```
 
-<!--more-->
-本文国际来源：[Get Text File Encoding](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/get-text-file-encoding)
+<!--本文国际来源：[Get Text File Encoding](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/get-text-file-encoding)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 Class 也可以称为构造函数。构造函数是创建一个新对象的方法。构造函数只是和类名相同的方法。通过构造函数，可以更简单地创建事先为属性赋过值的对象。以下是一个例子：“`Person`”类定义了一个 person。
 
@@ -58,5 +57,4 @@ Frank     Peterson  40 4/12/1976 12:00:00 AM
 Helen     Stewards  29 11/19/1987 12:00:00 AM
 ```
 
-<!--more-->
-本文国际来源：[Using Classes (Constructors - Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-constructors-part-5)
+<!--本文国际来源：[Using Classes (Constructors - Part 5)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-constructors-part-5)-->

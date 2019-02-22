@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -27,5 +26,4 @@ _适用于 PowerShell 所有版本_
       Write-Warning ('Access denied: ' + $_.CategoryInfo.TargetName)
     }
 
-<!--more-->
-本文国际来源：[Finding Files plus Errors](http://community.idera.com/powershell/powertips/b/tips/posts/finding-files-plus-errors)
+<!--本文国际来源：[Finding Files plus Errors](http://community.idera.com/powershell/powertips/b/tips/posts/finding-files-plus-errors)-->

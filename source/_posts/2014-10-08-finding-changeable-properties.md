@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 _适用于 PowerShell 所有版本_
 
@@ -34,5 +33,4 @@ _适用于 PowerShell 所有版本_
     MinWorkingSet              Property       System.IntPtr MinWorkingSet  {get;set;}  
     PriorityBoostEnabled       Property       bool PriorityBoostEnabled  {get;set;}
 
-<!--more-->
-本文国际来源：[Finding Changeable Properties](http://community.idera.com/powershell/powertips/b/tips/posts/finding-changeable-properties)
+<!--本文国际来源：[Finding Changeable Properties](http://community.idera.com/powershell/powertips/b/tips/posts/finding-changeable-properties)-->

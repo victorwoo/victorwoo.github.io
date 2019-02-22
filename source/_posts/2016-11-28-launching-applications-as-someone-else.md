@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 假设您想以不同的身份打开多个 PowerShell 控制台，或以其他人的身份打开任何程序。
 
@@ -35,5 +34,4 @@ Start-Process -FilePath powershell -Credential $cred -Work c:\ -LoadUserProfile
 
 这将以您之前指定的用户身份创建一个新的 PowerShell 实例——无需手动登录。
 
-<!--more-->
-本文国际来源：[Launching Applications as Someone Else](http://community.idera.com/powershell/powertips/b/tips/posts/launching-applications-as-someone-else)
+<!--本文国际来源：[Launching Applications as Someone Else](http://community.idera.com/powershell/powertips/b/tips/posts/launching-applications-as-someone-else)-->

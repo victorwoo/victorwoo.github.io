@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 下载大型的文件是一个挑战，因为下载的过程可能比机器的开机时间还长。通过 BitsTransfer，您可以在后台下载文件，甚至当机器关机或重启后，仍然能够续传直到完成。
 
@@ -47,5 +46,4 @@ And if you have Admin privileges, you can even dump the jobs from other users, i
 PS> Get-BitsTransfer -AllUsers
 ```
 
-<!--more-->
-本文国际来源：[Downloading Data with BitsTransfer in the Background](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-data-with-bitstransfer-in-the-background)
+<!--本文国际来源：[Downloading Data with BitsTransfer in the Background](http://community.idera.com/powershell/powertips/b/tips/posts/downloading-data-with-bitstransfer-in-the-background)-->

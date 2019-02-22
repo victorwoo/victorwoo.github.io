@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是一个清晰的检测和验证数据的快捷方法。假设您需要验证一个电子邮件地址是否包含非法字符：
 
@@ -36,5 +35,4 @@ else
     Invalid character in email address: ö
 
 
-<!--more-->
-本文国际来源：[Checking Email Addresses (and Other Text) for Illegal Chars](http://community.idera.com/powershell/powertips/b/tips/posts/checking-email-addresses-and-other-text-for-illegal-chars-directory)
+<!--本文国际来源：[Checking Email Addresses (and Other Text) for Illegal Chars](http://community.idera.com/powershell/powertips/b/tips/posts/checking-email-addresses-and-other-text-for-illegal-chars-directory)-->

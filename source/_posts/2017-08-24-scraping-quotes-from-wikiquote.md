@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当从 CSV 加载数据到 Excel 中时，我们无法指定格式。
 
@@ -106,5 +105,4 @@ Get-Quote -Topic Jewel
 Get-Quote -Topic PowerShell
 ```
 
-<!--more-->
-本文国际来源：[Scraping Quotes from WikiQuote](http://community.idera.com/powershell/powertips/b/tips/posts/scraping-quotes-from-wikiquote)
+<!--本文国际来源：[Scraping Quotes from WikiQuote](http://community.idera.com/powershell/powertips/b/tips/posts/scraping-quotes-from-wikiquote)-->

@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 这是获取地理位置信息的另一个免费源，它能够获取您当前的公网 IP 和位置信息：
 
@@ -32,5 +31,4 @@ loc      : 51.2993,9.4910
 org      : AS3320 Deutsche Telekom AG
 ```
 
-<!--more-->
-本文国际来源：[Get GeoLocation of Computer](http://community.idera.com/powershell/powertips/b/tips/posts/get-geolocation-of-computer)
+<!--本文国际来源：[Get GeoLocation of Computer](http://community.idera.com/powershell/powertips/b/tips/posts/get-geolocation-of-computer)-->

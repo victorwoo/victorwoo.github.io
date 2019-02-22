@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 如果您希望将 Windows Server 2012 （或 Windows Server 2008 R2）作为工作站机器使用并且使它看起来像 Windows 8（包括在文件浏览器中刻录 ISO 文件，以及个性化您的桌面和其它设置），您所需要做的只是添加桌面体验功能。以下是用 PowerShell 实现的方法：
 
@@ -21,5 +20,4 @@ tags:
 
 	Import-Module ServerManager
 
-<!--more-->
-本文国际来源：[Installing Server 2012 Desktop Experience](http://community.idera.com/powershell/powertips/b/tips/posts/installing-server-2012-desktop-experience)
+<!--本文国际来源：[Installing Server 2012 Desktop Experience](http://community.idera.com/powershell/powertips/b/tips/posts/installing-server-2012-desktop-experience)-->

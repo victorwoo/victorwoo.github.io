@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 读写注册表的 `HKEY_LOCAL_USER` 十分容易，因为这个配置单元对于所有用户都一致。那么如何读写其他用户的 `HKEY_CURRENT_USER` 配置单元？
 
@@ -87,5 +86,4 @@ PS C:\> $null = REG UNLOAD HKEY_Users\UserTobias
 
 请注意这条命令将会抛出一个 "Access Denied" 错误，如果您没有管理员特权，或者该注册表配置单元正在被其他人使用。例如，如果您启动了 regedit.exe，当该用户配置单元加载以后，regedit.exe 可以显示加载的用户配置单元，而当 regedit 处于打开状态时，该配置单元被锁定并且无法关闭。
 
-<!--more-->
-本文国际来源：[Manipulating Registry User Hive](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-registry-user-hive)
+<!--本文国际来源：[Manipulating Registry User Hive](http://community.idera.com/powershell/powertips/b/tips/posts/manipulating-registry-user-hive)-->

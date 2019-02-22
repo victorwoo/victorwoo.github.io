@@ -11,7 +11,6 @@ tags:
 - tip
 - powertip
 - series
-- translation
 ---
 当您调用一个函数时，PowerShell 会增加嵌套的深度。当一个函数调用另一个函数，或是一段脚本时，将进一步增加嵌套的深度。以下是一个能够告诉您当前代码嵌套深度的函数：
 
@@ -107,5 +106,4 @@ tags:
 
 `Test-NestLevel` 总是从当前的代码中返回嵌套的级别到全局作用域。
 
-<!--more-->
-本文国际来源：[Test Nested Depth](http://community.idera.com/powershell/powertips/b/tips/posts/test-nested-depth)
+<!--本文国际来源：[Test Nested Depth](http://community.idera.com/powershell/powertips/b/tips/posts/test-nested-depth)-->
