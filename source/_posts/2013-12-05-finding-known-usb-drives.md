@@ -20,8 +20,8 @@ tags:
 
 结果看起来如下：
 
-	FriendlyName                                CompatibleIDs                              Mfg                                       
-	------------                                -------------                              ---                                       
+	FriendlyName                                CompatibleIDs                              Mfg
+	------------                                -------------                              ---
 	SCANNER USB Device                          {USBSTOR\Disk, USBSTOR\RAW, GenDisk}       @disk.inf,%genmanufacturer%;(Standard d...
 	Android UMS Composite USB Device            {USBSTOR\Disk, USBSTOR\RAW, GenDisk}       @disk.inf,%genmanufacturer%;(Standard d...
 	Android UMS Composite USB Device            {USBSTOR\Disk, USBSTOR\RAW, GenDisk}       @disk.inf,%genmanufacturer%;(Standard d...

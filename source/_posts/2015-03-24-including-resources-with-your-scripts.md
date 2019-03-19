@@ -20,7 +20,7 @@ _适用于 PowerShell 3.0 及以上版本_
 
     $picture = "$PSScriptRoot\Resources\picture.png"
     Test-Path -Path $picture
-    
+
     $data = "$PSScriptRoot\Resources\somedata.txt"
     Get-Content -Path $data
 

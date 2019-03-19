@@ -58,7 +58,7 @@ tags:
 	updated   : 2014-06-13T11:00:00Z
 	content   : content
 	author    : author
-	
+
 	title     : Be Aware of Side Effects
 	link      : link
 	id        : /cs/blogs/tips/archive/2014/06/12/be-aware-of-side-effects.aspx
@@ -76,14 +76,14 @@ tags:
 
 	$feed | sort { $_.id } | foreach {
 	    $entry = $_
-	
+
 	    if ($entry.id -cmatch '^/cs/blogs/tips/archive/(?<year>\d{4})/(?<month>\d{2})/(?<day>\d{2})/(?<name>.+)\.aspx$') {
 		    $year = $matches['year']
 	        $month = $matches['month']
 	        $day = $matches['day']
 	        $name = $matches['name']
 	    }
-	
+
 	    $targetFile = Join-Path $folder "$year-$month-$day-$name.md"
 
 ## 跳过已有的文件
@@ -105,17 +105,17 @@ tags:
 	categories: [powershell, tip]
 	tags: [powershell, tip, powertip, series, translation]
 	{1}
-	
+
 	<!--more-->
 	本文国际来源：[{2}]({3})
 	'@
 	    $entryUrl = 'http://powershell.com' + $entry.link.href
 	    $htmlContent = $entry.content.'#text'
-	
+
 	    $htmlDoc = Get-Document $htmlContent
 	    $htmlContent = $htmlDoc.documentElement.innerHTML
 	    $htmlDoc.Close()
-	
+
 	    $markdown = Get-Markdown $htmlContent
 	    return $postTemplate -f $entry.title, $markdown, $entry.title, $entryUrl
 	}
@@ -134,7 +134,7 @@ tags:
 	    } else {
 	        $htmlDoc.write($text)
 	    }
-	
+
 	    return $htmlDoc
 	}
 
@@ -199,7 +199,7 @@ index.js 脚本的内容如下：
 	    markdownFile = args[1],
 	    html,
 	    markdown;
-	
+
 	html = fs.readFileSync(htmlFile, { encoding: 'utf8' });
 	markdown = html2markdown(html, { inlineStyle: true });
 	fs.writeFileSync(markdownFile, markdown);
@@ -261,11 +261,11 @@ markdown 中的图片是这样表示的：
 	    $index = 1
 	    $fileBaseName = ([System.IO.FileInfo]$file).BaseName
 	    [System.Collections.Generic.Dictionary[[string],[string]]] $dict = New-Object 'System.Collections.Generic.Dictionary[[string], [string]]'
-    
+
 	    cat $file -Encoding UTF8 -Raw | % {
 	        $regex = [regex] '!\[(?<desc>.*?)\]\((?<url>.*?)\)'
 	        $matches = $regex.Matches($_)
-	        
+
 	        if ($matches.Count) {
 	            $matches.ForEach({
 	                $fullMatch = $_.Value
@@ -282,7 +282,7 @@ markdown 中的图片是这样表示的：
 	            })
 	        }
 	    }
-    
+
 	    $newContent = cat $file -Encoding UTF8 -Raw | % {
 	        $line = $_
 	        $dict.Keys | % {
@@ -292,7 +292,7 @@ markdown 中的图片是这样表示的：
 	        }
 	        $line
 	    }
-    
+
 	    $bytes = [System.Text.Encoding]::UTF8.GetBytes($newContent)
 	    sc $file $bytes -Encoding Byte
 	    #[IO.File]::WriteAllText($file, $newContent, [System.Text.Encoding]::UTF8)

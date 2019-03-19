@@ -21,34 +21,34 @@ tags:
 您可以在没有 PowerShell 和 PowerShell 远程操作的情况下做相同的事情，只是使用纯 cmd 以及 `psexec` 等工具。
 
 ```powershell
-function Invoke-PowerShellAsInteractiveUser 
+function Invoke-PowerShellAsInteractiveUser
 {
     param(
         [Parameter(Mandatory)]
         [ScriptBlock]
         $ScriptCode,
-    
+
         [Parameter(Mandatory)]
         [String[]]
         $Computername
     )
 
     # this runs on the target computer
-    $code = { 
-      
+    $code = {
+
         param($ScriptCode)
 
         # turn PowerShell code into base64 stream
         $bytes = [System.Text.Encoding]::Unicode.GetBytes($ScriptCode)
         $encodedCommand = [Convert]::ToBase64String($bytes)
-        
+
         # find out who is physically logged on
         $os = Get-WmiObject -Class Win32_ComputerSystem
         $username = $os.UserName
 
         # define a scheduled task in the interactive user context
         # with highest privileges
-        $xml = @"  
+        $xml = @"
 <?xml version="1.0" encoding="UTF-16"?>
 <Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo />
@@ -84,16 +84,16 @@ function Invoke-PowerShellAsInteractiveUser
   </Principals>
 </Task>
 "@
-      
-        # define, run, then delete the scheduled job          
+
+        # define, run, then delete the scheduled job
         $jobname = 'remotejob' + (Get-Random)
         $xml | Out-File -FilePath "$env:temp\tj1.xml"
-        $null = schtasks.exe /CREATE /TN $jobname /XML $env:temp\tj1.xml 
+        $null = schtasks.exe /CREATE /TN $jobname /XML $env:temp\tj1.xml
         Start-Sleep -Seconds 1
-        $null = schtasks.exe /RUN /TN $jobname 
-        $null = schtasks.exe /DELETE /TN $jobname  /F 
+        $null = schtasks.exe /RUN /TN $jobname
+        $null = schtasks.exe /DELETE /TN $jobname  /F
     }
-    
+
     # run the code on the target machine, and submit the PowerShell code to execute
     Invoke-Command -ScriptBlock $code -ComputerName $computername -ArgumentList $ScriptCode
 }
@@ -106,7 +106,7 @@ $ComputerName = 'ENTER THE COMPUTER NAME'
 
 $pirateCode = {
     Start-Process -FilePath www.microsoft.com
-    
+
     $sapi = New-Object -ComObject Sapi.SpVoice
     $sapi.Speak("You are hacked...!")
     Start-Sleep -Seconds 6

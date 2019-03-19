@@ -31,9 +31,9 @@ function Show-BalloonTip
     Add-Type -AssemblyName  System.Windows.Forms
 
     # we use private variables only. No need for global scope
-    $balloon = New-Object System.Windows.Forms.NotifyIcon 
-    $cleanup = 
-    {    
+    $balloon = New-Object System.Windows.Forms.NotifyIcon
+    $cleanup =
+    {
         # this gets executed when the user clicks the balloon tip dialog
 
         # take the balloon from the event arguments, and dispose it
@@ -46,10 +46,10 @@ function Show-BalloonTip
         Unregister-Event  -SourceIdentifier $name2
         Remove-Job -Name $name2
     }
-    $showBalloon = 
+    $showBalloon =
     {
         # this gets executed when the user clicks the tray icon
-        $event.Sender.ShowBalloonTip(5000) 
+        $event.Sender.ShowBalloonTip(5000)
     }
 
     # use unique names for event handlers so you can open multiple balloon tips
@@ -61,7 +61,7 @@ function Show-BalloonTip
 
     # use the current application icon as tray icon
     $path = (Get-Process -id $pid).Path
-    $balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
+    $balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path)
 
     # configure the balloon tip
     $balloon.BalloonTipIcon  = $Icon
@@ -69,9 +69,9 @@ function Show-BalloonTip
     $balloon.BalloonTipTitle  = $Title
 
     # make the tray icon visible
-    $balloon.Visible  = $true 
+    $balloon.Visible  = $true
     # show the balloon tip
-    $balloon.ShowBalloonTip(5000) 
+    $balloon.ShowBalloonTip(5000)
 }
 ```
 

@@ -3,7 +3,7 @@ layout: post
 title: Excel 列号和数字互相转换
 date: 2014-08-05 17:08:51
 description: Conversion between number and excel column
-categories: 
+categories:
 - powershell
 - office
 tags:
@@ -51,25 +51,25 @@ Excel 列号 -> 数字
         }
         return $result
     }
-    
+
     function ConvertTo-ExcelColumn ($number) {
         $ids = while ($number -gt 0) {
             ($number - 1) % 26 + 1 + 64
             $number = [math]::Truncate(($number - 1) / 26)
         }
-    
+
         [array]::Reverse($ids)
         return [System.Text.Encoding]::ASCII.GetString([array]$ids)
     }
 
 测试代码：
-    
+
     echo "A`t$(ConvertFrom-ExcelColumn A)"
     echo "AB`t$(ConvertFrom-ExcelColumn AB)"
     echo "AC`t$(ConvertFrom-ExcelColumn AC)"
-    
+
     echo ''
-    
+
     @(1..2) + @(25..28) | foreach {
         echo "$_`t$(ConvertTo-ExcelColumn $_)"
     }
@@ -79,7 +79,7 @@ Excel 列号 -> 数字
     A   1
     AB  28
     AC  29
-    
+
     1   A
     2   B
     25  Y

@@ -17,7 +17,7 @@ tags:
 这是一段停止 Windows 更新服务的例子。当您以普通用户运行这段代码时，它将自动弹出提权的对话框，然后在一个新的管理员外壳中执行您的代码：
 
     #requires -Version 2
-    
+
     Start-Process -FilePath powershell.exe -Verb runas -ArgumentList 'Stop-Service -Name wuauserv' -WindowStyle Minimized
 
 <!--本文国际来源：[Executing Selected Code as Admin](http://community.idera.com/powershell/powertips/b/tips/posts/executing-selected-code-as-admin)-->

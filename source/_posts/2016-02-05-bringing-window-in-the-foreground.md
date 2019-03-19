@@ -21,7 +21,7 @@ PowerShell 可以使用 `Add-Type` 来操作 Windows 内置的 API 功能。通�
         [DllImport("user32.dll")] public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);
         [DllImport("user32.dll")] public static extern int SetForegroundWindow(IntPtr hwnd);
       '
-    
+
       if ($Maximize) { $Mode = 3 } else { $Mode = 4 }
       $type = Add-Type -MemberDefinition $sig -Name WindowAPI -PassThru
       $hwnd = $process.MainWindowHandle

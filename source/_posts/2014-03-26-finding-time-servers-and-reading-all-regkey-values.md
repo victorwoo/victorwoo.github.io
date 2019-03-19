@@ -19,7 +19,7 @@ tags:
 ![](/img/2014-03-26-finding-time-servers-and-reading-all-regkey-values-001.png)
 
 	$path = 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers'
-	
+
 	$key = Get-Item -Path $path
 	Foreach ($valuename in $key.GetValueNames())
 	{

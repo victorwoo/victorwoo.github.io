@@ -18,9 +18,9 @@ tags:
 
 	# get 10 results max
 	$searcher.SizeLimit = 10
-	
+
 	# find account location
-	$searcher.FindAll() | 
+	$searcher.FindAll() |
 	  # get account object
 	  ForEach-Object { $_.GetDirectoryEntry() } |
 	  # display all properties

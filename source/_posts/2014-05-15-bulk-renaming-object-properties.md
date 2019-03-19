@@ -24,20 +24,20 @@ tags:
         }
         $_
     }
-    
+
     $newProps = @{
       Company = 'Manufacturer'
       Description = 'Purpose'
       MainWindowTitle = 'TitlebarText'
     }
-    
+
     # get raw data
-    Get-Process | 
+    Get-Process |
         # add alias properties as specified in $newProps
         Rename-Property $newProps |
         # select the properties you want to display
         # can be original properties and/or newly added alias properties
-        Select-Object -Property Name, Manufacturer, Purpose, TitlebarText 
+        Select-Object -Property Name, Manufacturer, Purpose, TitlebarText
 
 `Rename-Property` 自动加入了 `$newProps` 中指定的所有属性。结果对象中含有名为“Manufacturer”、“Purpose”和“TitlebarText”的新属性。您可以接着使用 `Select-Object` 来选择您想在报表中包含的属性。您可以从原先存在的属性中选择，也可以从新增加的别名属性中选择。
 

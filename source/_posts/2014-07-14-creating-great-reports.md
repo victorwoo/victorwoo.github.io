@@ -25,13 +25,13 @@ tags:
       ForEach-Object {
         # calculate the file/folder age in days
         $_.'Age(days)' = (New-Timespan -Start $_.LastWriteTime).Days
-    
+
         # if it is a file, change size in bytes to size in MB
         if ($_.PSisContainer -eq $false)
         {
           $_.Length = ('{0:N1} MB' -f ($_.Length / 1MB))
         }
-    
+
         # do not forget to return the adjusted object so the next one gets it
         $_
       } |
@@ -39,7 +39,7 @@ tags:
       Select-Object -Property LastWriteTime, 'Age(days)', Length, Name |
       # sort them as you like:
       Sort-Object -Property LastWriteTime -Descending |
-      Out-GridView 
+      Out-GridView
 
 该例子的结果以 MB 而不是字节为单位显示文件的大小，并且添加了一个称为“Age(days)”的列表示文件和文件夹创建以来的天数。
 

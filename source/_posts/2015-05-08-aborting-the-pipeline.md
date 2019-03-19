@@ -17,8 +17,8 @@ tags:
 这个例子试着在 Windows 文件夹中查找 explorer.exe 的第一个实例。由于 `Select-Object` 语句的作用，一旦找到第一个实例，管道就结束了。如果没有这个语句，即便已经查找到所需的数据，`Get-ChildItem` 也会不断地递归扫描 Windows 文件夹。
 
     #requires -Version 3
-    
-    
+
+
     Get-ChildItem -Path c:\Windows -Recurse -Filter explorer.exe -ErrorAction SilentlyContinue |
     Select-Object -First 1
 

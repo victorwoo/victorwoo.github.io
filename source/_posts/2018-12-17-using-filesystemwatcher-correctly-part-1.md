@@ -19,12 +19,12 @@ tags:
 ```powershell
     # make sure you adjust this
     $PathToMonitor = "c:\test"
-    
-    
+
+
     $FileSystemWatcher = New-Object System.IO.FileSystemWatcher
     $FileSystemWatcher.Path  = $PathToMonitor
     $FileSystemWatcher.IncludeSubdirectories = $true
-    
+
     Write-Host "Monitoring content of $PathToMonitor"
     explorer $PathToMonitor
     while ($true) {
@@ -34,7 +34,7 @@ tags:
           # get information about the changes detected
           Write-Host "Change detected:"
           $Change | Out-Default
-    
+
           # uncomment this to see the issue
           #Start-Sleep -Seconds 5
       }

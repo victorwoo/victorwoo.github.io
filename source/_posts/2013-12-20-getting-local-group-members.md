@@ -15,11 +15,11 @@ tags:
 在 PowerShell 中，通过 .NET Framework 3.51 或更高的版本，可以使用面向对象的方式管理本地用户和组。以下代码可以列出本机上的管理员用户：
 
 	Add-Type -AssemblyName System.DirectoryServices.AccountManagement
-	
+
 	$type = New-Object DirectoryServices.AccountManagement.PrincipalContext('Machine', `$env:COMPUTERNAME)
-	
+
 	$group = [DirectoryServices.AccountManagement.GroupPrincipal]::FindByIdentity($type, `'SAMAccountName', 'Administrators')
-	
+
 	$group.Members | Select-Object -Property SAMAccountName, LastPasswordSet, LastLogon, Enabled
 
 您还可以获取更多的信息，比如试着查询组本身的信息：

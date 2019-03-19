@@ -18,8 +18,8 @@ tags:
 
     $object1 = @{Name='Weltner'; ID=12 }
     $object2 = @{Name='Frank'; ID=99 }
-    
-    
+
+
     $a = $object1, $object2
     $b = $a.Clone()
     $b[0].Name = 'changed'
@@ -30,8 +30,8 @@ tags:
 
     $object1 = @{Name='Weltner'; ID=12 }
     $object2 = @{Name='Frank'; ID=99 }
-    
-    
+
+
     $a = $object1, $object2
     $b = $a.Clone()
     $b[0] = 'deleted'

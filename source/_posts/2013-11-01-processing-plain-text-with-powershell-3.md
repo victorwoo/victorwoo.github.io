@@ -24,9 +24,9 @@ tags:
 根据以上规律编写 PowerShell 代码：
 
 	$charSet = 'ABCEFGHXYZ'.ToCharArray()
-	
+
 	$text = 'ABC-EFGH-XYZ'
-	
+
 	$array = ($text.ToUpper().ToCharArray() | % {
 		if ($_ -eq '-') {
 		    '-'
@@ -34,7 +34,7 @@ tags:
 		    [string]([System.Array]::IndexOf($charSet, $_))
 		}
 	})
-	
+
 	$array -join ''
 
 结果是：

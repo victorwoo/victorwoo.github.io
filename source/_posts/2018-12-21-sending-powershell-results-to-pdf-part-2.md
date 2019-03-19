@@ -42,17 +42,17 @@ $port = Get-PrinterPort -Name $PDFFilePath -ErrorAction SilentlyContinue
 if ($port -eq $null)
 {
     # create printer port
-    Add-PrinterPort -Name $PDFFilePath 
+    Add-PrinterPort -Name $PDFFilePath
 }
 
 # add printer
-Add-Printer -DriverName "Microsoft Print to PDF" -Name $printerName -PortName $PDFFilePath 
+Add-Printer -DriverName "Microsoft Print to PDF" -Name $printerName -PortName $PDFFilePath
 
 # print a test page to the printer
 if ($TestPage)
 {
     $printerObject = Get-CimInstance Win32_Printer -Filter "name LIKE '$printerName'"
-    $null = $printerObject | Invoke-CimMethod -MethodName printtestpage 
+    $null = $printerObject | Invoke-CimMethod -MethodName printtestpage
     Start-Sleep -Seconds 1
     Invoke-Item -Path $PDFFilePath
 }
@@ -79,10 +79,10 @@ Get-Service | Out-Printer -Name "PrintPDFUnattended"
 
 # wait for the print job to be completed, then move file
 $ok = $false
-do { 
-    Start-Sleep -Milliseconds 500 
+do {
+    Start-Sleep -Milliseconds 500
     Write-Host '.' -NoNewline
-                
+
     $fileExists = Test-Path -Path $TempPDF
     if ($fileExists)
     {

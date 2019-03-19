@@ -19,17 +19,17 @@ tags:
     $Source = 'C:\somezipfile.zip'
     $Destination = 'C:\somefolder'
     $ShowDestinationFolder = $true
-    
+
     if ((Test-Path $Destination) -eq $false)
     {
       $null = mkdir $Destination
     }
-    
+
     $shell = New-Object -ComObject Shell.Application
     $sourceFolder = $shell.NameSpace($Source)
     $destinationFolder = $shell.NameSpace($Destination)
     $DestinationFolder.CopyHere($sourceFolder.Items())
-    
+
     if ($ShowDestinationFolder)
     {
       explorer.exe $Destination

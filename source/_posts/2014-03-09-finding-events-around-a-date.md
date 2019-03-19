@@ -18,19 +18,19 @@ tags:
 
     $deltaminutes = 2
     $delta = New-TimeSpan -Minutes $deltaminutes
-    
+
     $time = Read-Host -Prompt 'Enter time of event (yyyy-MM-dd HH:mm:ss or HH:mm)'
-    
+
     $datetime = Get-Date -Date $time
     $start = $datetime - $delta
     $end = $datetime + $delta
-    
+
     $result = @(Get-EventLog -LogName System -Before $end -After $start)
-    $result += Get-EventLog -LogName Application -Before $end -After $start 
-    
+    $result += Get-EventLog -LogName Application -Before $end -After $start
+
     $result | Sort-Object -Property TimeGenerated -Descending |
-      Out-GridView -Title "Events +/− $deltaminutes minutes around $datetime" 
-    
+      Out-GridView -Title "Events +/− $deltaminutes minutes around $datetime"
+
 当您运行它时，它需要用户输入一个时间或日期 + 时间值。然后，您可以获得该时间点前后 2 分钟之内系统和应用程序日志中的所有事件。
 
 ![](/img/2014-03-09-finding-events-around-a-date-001.png)

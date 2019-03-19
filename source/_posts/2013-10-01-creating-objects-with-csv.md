@@ -17,7 +17,7 @@ tags:
 	for($x=0; $x -lt 20; $x++)
 	{
 	    ($x,(Get-Random),(Get-Date) -join ',') | ConvertFrom-Csv -Header ID, RandomNumber, Date
-	} 
+	}
 
 不过，这种做法效率并不是很高。还有三种其它方法可以用来创建对象。分别用 `Measure-Command` 测量创建 2000 个对象所消耗的时间：
 

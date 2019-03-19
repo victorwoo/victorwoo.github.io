@@ -41,10 +41,10 @@ function Invoke-Robocopy
 
         [String]
         $Filter = '*',
-        
+
         [Switch]
         $Recurse,
-        
+
         [Switch]
         $Open
     )
@@ -57,13 +57,13 @@ function Invoke-Robocopy
     {
         $DoRecurse = ''
     }
-  
-  robocopy $Source $Destination $Filter $DoRecurse /R:0 
+
+  robocopy $Source $Destination $Filter $DoRecurse /R:0
 
   if ($Open)
   {
       explorer.exe $Destination
-  }    
+  }
 }
 ```
 

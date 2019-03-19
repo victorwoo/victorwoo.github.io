@@ -57,7 +57,7 @@ PowerShell 实现
 ---------------
 
 	$DebugPreference = "Continue"
-	
+
 	$txt="192.168.1
 	192.168.2
 	192.168.3
@@ -72,11 +72,11 @@ PowerShell 实现
 	192.16.99
 	192.16.100"
 	$txt += "`n999.999.999"
-	
+
 	$startIP = @(0, 0, 0)
 	$endIP = @(0, 0, 0)
 	$result = @()
-	
+
 	-split $txt | % {
 	    $fullSegments = ($_ -split "\." | % {
 	        "{0:D3}" -f [int]$_
@@ -87,7 +87,7 @@ PowerShell 实现
 	    $segments = @($_ -split "\." | % {
 	        [int]$_
 	    })
-	
+
 	    if ($endIP[0] -eq $segments[0] -and
 	        $endIP[1] -eq $segments[1] -and
 	        $endIP[2] + 1 -eq $segments[2]) {
@@ -102,12 +102,12 @@ PowerShell 实现
 	            Write-Debug '一段IP'
 	            $result += ($startIP -join ".") + "-" + ($endIP -join ".")
 	        }
-	
+
 	        $startIP = $segments
 	        $endIP = $segments
 	    }
 	}
-	
+
 	$result | select -Skip 1
 
 源代码请在[这里下载](/assets/download/Sort-IP.ps1)。

@@ -28,7 +28,7 @@ Get-EventLog -LogName System -EntryType Error -After $startDate |
   Set-Content -Path $Path
 
 # open the file with associated program
-Invoke-Item -Path $Path 
+Invoke-Item -Path $Path
 ```
 
 不过，输出的报告可能有点丑，因为包含了许多无用的信息。所以美化的第一步是选择报告中需要的属性。只需要在代码中加入 `Select-Object`：

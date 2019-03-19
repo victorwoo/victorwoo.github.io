@@ -15,7 +15,7 @@ tags:
 从 PowerShell 4.0 开始，方法名可以是一个变量。以下是一个简单的例子：
 
 	$method = 'ToUpper'
-	'Hello'.$method() 
+	'Hello'.$method()
 
 当您需要调用的方法须通过一段脚本计算得到的时候，这个特性十分有用。
 
@@ -27,7 +27,7 @@ tags:
 	    $Text,
 	    [Switch]$ToUpper
 	  )
-	
+
 	  if ($ToUpper)
 	  {
 	    $method = 'ToUpper'
@@ -37,7 +37,7 @@ tags:
 	    $method = 'ToLower'
 	  }
 	  $text.$method()
-	} 
+	}
 
 以下是用户调用该函数的方法：
 
@@ -58,7 +58,7 @@ tags:
 	    $Text,
 	    [Switch]$ToUpper
 	  )
-	
+
 	  if ($ToUpper)
 	  {
 	    $method = 'ToUpper'
@@ -69,6 +69,6 @@ tags:
 	  }
 	  $methodInfo = $Text.GetType().GetMethod($method, [type[]]@())
 	  $methodInfo.Invoke($Text, $null)
-	} 
+	}
 
 <!--本文国际来源：[Dynamic Methods in PowerShell 4](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-methods-in-powershell-4)-->

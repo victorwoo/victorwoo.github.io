@@ -17,7 +17,7 @@ PowerShell 通过 `cert:` 驱动器来存取您的证书存储。
 您可以根据指定的规则用这个驱动器来查找证书。以下代码将列出所有 `NotAfter` 字段中有值并在今日之前（意味着证书已过期）的证书：
 
 	$today = Get-Date
-	
+
 	Get-ChildItem -Path cert:\ -Recurse |
 	  Where-Object { $_.NotAfter -ne $null  } |
 	  Where-Object { $_.NotAfter -lt $today } |

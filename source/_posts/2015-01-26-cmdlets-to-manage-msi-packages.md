@@ -22,15 +22,15 @@ _适用于 PowerShell 2.0 及以上版本_
 
 这是获取新的 MSI 相关 cmdlet 的方法：
 
-     
+
     PS> Get-Command -Module MSI
-    
+
     CommandType     Name                                               ModuleName
     -----------     ----                                               ----------
     Function        Get-MSIComponentState                              MSI
     Function        Get-MSISharedComponentInfo                         MSI
     Function        Install-MSIAdvertisedFeature                       MSI
-    Cmdlet          Add-MSISource                                      MSI       
+    Cmdlet          Add-MSISource                                      MSI
     Cmdlet          Clear-MSISource                                    MSI
     Cmdlet          Edit-MSIPackage                                    MSI
     Cmdlet          Export-MSIPatchXml                                 MSI
@@ -44,16 +44,16 @@ _适用于 PowerShell 2.0 及以上版本_
     Cmdlet          Get-MSIProductInfo                                 MSI
     Cmdlet          Get-MSIProperty                                    MSI
     Cmdlet          Get-MSIRelatedProductInfo                          MSI
-    Cmdlet          Get-MSISource                                      MSI                            
+    Cmdlet          Get-MSISource                                      MSI
     Cmdlet          Get-MSISummaryInfo                                 MSI
-    Cmdlet          Get-MSITable                                       MSI            
-    Cmdlet          Install-MSIPatch                                   MSI                    
-    Cmdlet          Install-MSIProduct                                 MSI          
-    Cmdlet          Measure-MSIProduct                                 MSI                             
+    Cmdlet          Get-MSITable                                       MSI
+    Cmdlet          Install-MSIPatch                                   MSI
+    Cmdlet          Install-MSIProduct                                 MSI
+    Cmdlet          Measure-MSIProduct                                 MSI
     Cmdlet          Remove-MSILoggingPolicy                            MSI
     Cmdlet          Remove-MSISource                                   MSI
     Cmdlet          Repair-MSIProduct                                  MSI
-    Cmdlet          Set-MSILoggingPolicy                               MSI                  
+    Cmdlet          Set-MSILoggingPolicy                               MSI
     Cmdlet          Test-MSIProduct                                    MSI
     Cmdlet          Uninstall-MSIPatch                                 MSI
     Cmdlet          Uninstall-MSIProduct                               MSI

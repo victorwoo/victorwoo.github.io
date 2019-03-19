@@ -20,7 +20,7 @@ tags:
     function Test-Port
     {
         Param([string]$ComputerName,$port = 5985,$timeout = 1000)
-    
+
         try
         {
             $tcpclient = New-Object -TypeName system.Net.Sockets.TcpClient
@@ -34,7 +34,7 @@ tags:
             else
             {
                 # Close the connection and report the error if there is one
-    
+
                 $null = $tcpclient.EndConnect($iar)
                 $tcpclient.Close()
                 return $true
@@ -45,7 +45,7 @@ tags:
             $false
         }
     }
-    
+
     Get-ADComputer -Filter * |
     Select-Object -ExpandProperty dnsHostName |
     ForEach-Object {

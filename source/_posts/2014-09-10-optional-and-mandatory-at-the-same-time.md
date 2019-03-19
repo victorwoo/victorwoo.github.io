@@ -32,7 +32,7 @@ _适用于 PowerShell 所有版本_
      $chosen = $PSCmdlet.ParameterSetName
      "You have chosen $chosen parameter set."
     }
-    
+
     # -Computername is optional
     Connect-Somewhere
     # here, -Computername is mandatory

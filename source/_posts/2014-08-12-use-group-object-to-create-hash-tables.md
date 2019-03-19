@@ -18,17 +18,17 @@ _适用于所有 PowerShell 版本_
 
 这个功能十分有用，特别是当您用 `Group-Object` 来返回哈希表时。它将生成一个按服务状态分组的哈希表：
 
-    $hash = Get-Service | 
+    $hash = Get-Service |
       Group-Object -Property Status -AsHashTable -AsString
-    
+
 您现在可以通过这种方式获取所有正在运行（或已停止的）服务：
 
     $hash.Running
-    $hash.Stopped 
+    $hash.Stopped
 
 可以用任何想要的属性来分组。这个例子将用三个组来分组文件：一组为小文件，一个组为中等文件，另一个组位大文件。
 
-    $code = 
+    $code =
     {
       if ($_.Length -gt 1MB)
       {'huge'}
@@ -37,11 +37,11 @@ _适用于所有 PowerShell 版本_
       else
       {'tiny'}
     }
-    
+
     $hash = Get-ChildItem -Path c:\windows |
       Group-Object -Property $code -AsHashTable -AsString
-    
-    
+
+
     #$hash.Tiny
     $hash.Huge
 

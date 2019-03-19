@@ -23,7 +23,7 @@ $pattern = '[^a-z0-9\.@]'
 # find all matches, case-insensitive
 $allMatch = [regex]::Matches($mail, $pattern, 'IgnoreCase')
 # create list of invalid characters
-$invalid = $allMatch.Value | Sort-Object -Unique 
+$invalid = $allMatch.Value | Sort-Object -Unique
 
 'Illegal characters found: {0}' -f ($invalid -join ', ')
 ```

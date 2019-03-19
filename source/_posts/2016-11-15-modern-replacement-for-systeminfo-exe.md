@@ -18,15 +18,15 @@ tags:
 
     PS C:\> $info.Domain
     WORKGROUP
-    
+
     PS C:\> $info.'Logon Server'
     \\DESKTOP-7AAMJLF
 
 在 PowerShell 5.1 （Windows 10 和 Server 2016 ）中，有一个现代的替代品：
 
     PS C:\> Get-ComputerInfo
-    
-    
+
+
     WindowsBuildLabEx                                       : 14393.321.amd64fre.rs1_release_inmarket.161004-2338
     WindowsCurrentVersion                                   : 6.3
     WindowsEditionId                                        : Professional
@@ -34,27 +34,27 @@ tags:
     WindowsInstallDateFromRegistry                          : 8/17/2016 1:40:27 PM
     WindowsProductId                                        : 00350-50721-50845-ACOEM
     WindowsProductName                                      : Windows 10 Pro
-    WindowsRegisteredOrganization                           : 
+    WindowsRegisteredOrganization                           :
     WindowsRegisteredOwner                                  : topoftheworld
     WindowsSystemRoot                                       : C:\WINDOWS
     BiosCharacteristics                                     : {7, 9, 11, 12...}
     BiosBIOSVersion                                         : {DELL   - 1072009, 1.4.4, American Megatrends - 5000B}
-    BiosBuildNumber                                         : 
+    BiosBuildNumber                                         :
     BiosCaption                                             : 1.4.4
-    BiosCodeSet                                             : 
+    BiosCodeSet                                             :
     BiosCurrentLanguage                                     : en|US|iso8859-1
     BiosDescription                                         : 1.4.4
     BiosEmbeddedControllerMajorVersion                      : 255
     BiosEmbeddedControllerMinorVersion                      : 255
     BiosFirmwareType                                        : Uefi
-    BiosIdentificationCode                                  : 
+    BiosIdentificationCode                                  :
     BiosInstallableLanguages                                : 2
-    BiosInstallDate                                         : 
-    BiosLanguageEdition                                     : 
+    BiosInstallDate                                         :
+    BiosLanguageEdition                                     :
     BiosListOfLanguages                                     : {en|US|iso8859-1, }
     BiosManufacturer                                        : Dell Inc.
     BiosName                                                : 1.4.4
-    BiosOtherTargetOS                                       : 
+    BiosOtherTargetOS                                       :
     BiosPrimaryBIOS                                         : True
     BiosReleaseDate                                         : 6/14/2016 2:00:00 AM
     BiosSeralNumber                                         : DLGQD72
@@ -72,8 +72,8 @@ tags:
     CsAutomaticManagedPagefile                              : True
     CsAutomaticResetBootOption                              : True
     CsAutomaticResetCapability                              : True
-    CsBootOptionOnLimit                                     : 
-    CsBootOptionOnWatchDog                                  : 
+    CsBootOptionOnLimit                                     :
+    CsBootOptionOnWatchDog                                  :
     CsBootROMSupported                                      : True
     CsBootStatus                                            : {0, 0, 0, 0...}
     CsBootupState                                           : Normal boot
@@ -90,10 +90,10 @@ tags:
     CsFrontPanelResetStatus                                 : Unknown
     CsHypervisorPresent                                     : False
     CsInfraredSupported                                     : False
-    CsInitialLoadInfo                                       : 
-    CsInstallDate                                           : 
+    CsInitialLoadInfo                                       :
+    CsInstallDate                                           :
     CsKeyboardPasswordStatus                                : Unknown
-    CsLastLoadInfo                                          : 
+    CsLastLoadInfo                                          :
     CsManufacturer                                          : Dell Inc.
     CsModel                                                 : XPS 13 9350
     CsName                                                  : CLIENT
@@ -107,20 +107,20 @@ tags:
     CsPauseAfterReset                                       : -1
     CsPCSystemType                                          : Mobile
     CsPCSystemTypeEx                                        : Mobile
-    CsPowerManagementCapabilities                           : 
-    CsPowerManagementSupported                              : 
+    CsPowerManagementCapabilities                           :
+    CsPowerManagementSupported                              :
     CsPowerOnPasswordStatus                                 : Unknown
     CsPowerState                                            : Unknown
     CsPowerSupplyState                                      : Safe
-    CsPrimaryOwnerContact                                   : 
+    CsPrimaryOwnerContact                                   :
     CsPrimaryOwnerName                                      : user@company.de
     CsResetCapability                                       : Other
     CsResetCount                                            : -1
     CsResetLimit                                            : -1
     CsRoles                                                 : {LM_Workstation, LM_Server, NT, Potential_Browser...}
     CsStatus                                                : OK
-    CsSupportContactDescription                             : 
-    CsSystemFamily                                          : 
+    CsSupportContactDescription                             :
+    CsSystemFamily                                          :
     CsSystemSKUNumber                                       : 0704
     CsSystemType                                            : x64-based PC
     CsThermalState                                          : Safe
@@ -133,7 +133,7 @@ tags:
     OsType                                                  : WINNT
     OsOperatingSystemSKU                                    : 48
     OsVersion                                               : 10.0.14393
-    OsCSDVersion                                            : 
+    OsCSDVersion                                            :
     OsBuildNumber                                           : 14393
     OsHotFixes                                              : {KB3176936, KB3194343, KB3199209, KB3199986...}
     OsBootDevice                                            : \Device\HarddiskVolume1
@@ -163,7 +163,7 @@ tags:
     OsTotalVirtualMemorySize                                : 19135892
     OsFreeVirtualMemory                                     : 8607696
     OsInUseVirtualMemory                                    : 10528196
-    OsTotalSwapSpaceSize                                    : 
+    OsTotalSwapSpaceSize                                    :
     OsSizeStoredInPagingFiles                               : 2490368
     OsFreeSpaceInPagingFiles                                : 2442596
     OsPagingFiles                                           : {C:\pagefile.sys}
@@ -173,15 +173,15 @@ tags:
     OsMaxNumberOfProcesses                                  : 4294967295
     OsMaxProcessMemorySize                                  : 137438953344
     OsMuiLanguages                                          : {de-DE, en-US}
-    OsNumberOfLicensedUsers                                 : 
+    OsNumberOfLicensedUsers                                 :
     OsNumberOfProcesses                                     : 157
     OsNumberOfUsers                                         : 2
-    OsOrganization                                          : 
+    OsOrganization                                          :
     OsArchitecture                                          : 64-bit
     OsLanguage                                              : de-DE
     OsProductSuites                                         : {TerminalServicesSingleSession}
-    OsOtherTypeDescription                                  : 
-    OsPAEEnabled                                            : 
+    OsOtherTypeDescription                                  :
+    OsPAEEnabled                                            :
     OsPortableOperatingSystem                               : False
     OsPrimary                                               : True
     OsProductType                                           : WorkStation
@@ -191,7 +191,7 @@ tags:
     OsServicePackMinorVersion                               : 0
     OsStatus                                                : OK
     OsSuites                                                : {TerminalServices, TerminalServicesSingleSession}
-    OsServerLevel                                           : 
+    OsServerLevel                                           :
     KeyboardLayout                                          : de-DE
     TimeZone                                                : (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna
     LogonServer                                             : \\CLIENT
@@ -202,11 +202,11 @@ tags:
     HyperVRequirementVirtualizationFirmwareEnabled          : True
     HyperVRequirementVMMonitorModeExtensions                : True
     DeviceGuardSmartStatus                                  : Off
-    DeviceGuardRequiredSecurityProperties                   : 
-    DeviceGuardAvailableSecurityProperties                  : 
-    DeviceGuardSecurityServicesConfigured                   : 
-    DeviceGuardSecurityServicesRunning                      : 
-    DeviceGuardCodeIntegrityPolicyEnforcementStatus         : 
+    DeviceGuardRequiredSecurityProperties                   :
+    DeviceGuardAvailableSecurityProperties                  :
+    DeviceGuardSecurityServicesConfigured                   :
+    DeviceGuardSecurityServicesRunning                      :
+    DeviceGuardCodeIntegrityPolicyEnforcementStatus         :
     DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus :
 
 

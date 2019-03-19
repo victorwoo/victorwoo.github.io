@@ -32,7 +32,7 @@ function Send-OutlookMail
         $AttachmentPath
     )
 
-    
+
     $outlook = New-Object -ComObject Outlook.Application
     $mail = $outlook.CreateItem(0)
     $mail.Subject = $Subject

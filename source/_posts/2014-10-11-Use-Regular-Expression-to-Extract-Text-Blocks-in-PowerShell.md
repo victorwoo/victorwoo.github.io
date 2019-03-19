@@ -73,7 +73,7 @@ tags:
     while ($match.Success) {
         $resultlist.Add($match.Groups['block'].Value) | out-null
         $match = $match.NextMatch()
-    } 
+    }
 
     $resultlist | ForEach-Object {
         echo $_

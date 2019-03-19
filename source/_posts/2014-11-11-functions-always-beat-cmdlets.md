@@ -21,32 +21,32 @@ _适用于 PowerShell 所有版本_
     function Get-Process
     {
       'go away'
-    } 
+    }
 
 以下是意料之中的执行结果：
 
     PS> Get-Process
-    go away 
+    go away
 
 甚至如果您指定了 cmdlet 的完整限定名，函数也可以优先执行：
 
     function Microsoft.PowerShell.Management\Get-Process
     {
       'go away'
-    } 
+    }
 
 执行结果：
 
-    PS> Microsoft.PowerShell.Management\Get-Process -Id $pid 
-    go away 
+    PS> Microsoft.PowerShell.Management\Get-Process -Id $pid
+    go away
 
 这也适用于别名。它们的优先级甚至比函数更高。
 
 唯一能确保确实执行的是 cmdlet 的方法是直接存取模块，选择希望执行的 cmdlet，然后直接调用它：
 
     $module = Get-Module Microsoft.PowerShell.Management
-    $cmdlet = $module.ExportedCmdlets['Get-Process'] 
-    & $cmdlet   
+    $cmdlet = $module.ExportedCmdlets['Get-Process']
+    & $cmdlet
 
 或者，只需要用 `-noprofile` 参数启动一个新的 PowerShell，确保没有人能混进您的 PowerShell 环境即可。
 

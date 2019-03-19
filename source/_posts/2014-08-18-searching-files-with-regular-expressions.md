@@ -14,7 +14,7 @@ tags:
 ---
 _适用于 PowerShell 所有版本_
 
-`Get-ChildItem` 不支持高级的文件过滤。当您使用简单的通配符时，无法利用上正则表达式。 
+`Get-ChildItem` 不支持高级的文件过滤。当您使用简单的通配符时，无法利用上正则表达式。
 
 要用上正则表达式，需要增加一个过滤用的 cmdlet 和 `-match` 操作符。
 
@@ -22,7 +22,7 @@ _适用于 PowerShell 所有版本_
 
     Get-ChildItem -Path $env:windir -Recurse -ErrorAction SilentlyContinue |
       Where-Object { $_.BaseName -match '\d{2}' -and $_.Name.Length -le 8 }
-    
+
 请注意 `BaseName` 属性的使用。它只返回主文件名（不包含扩展名）。通过这种方式，扩展名中的数字不会被包含在内。
 
 <!--本文国际来源：[Searching Files with Regular Expressions](http://community.idera.com/powershell/powertips/b/tips/posts/searching-files-with-regular-expressions)-->

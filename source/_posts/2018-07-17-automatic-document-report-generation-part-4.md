@@ -44,28 +44,28 @@ Document 'HighlightedReport'  {
 
     # IMPORTANT: run this information through Select-Object to get a cloned copy
     # of the original objects so that style information can be appended
-    $services = Get-Service | 
-            Select-Object -Property DisplayName, Status, StartType | 
+    $services = Get-Service |
+            Select-Object -Property DisplayName, Status, StartType |
             Sort-Object -Property DisplayName
 
     # write heading
     Paragraph "Services ($($services.Count) Services found):"
-    
+
     # define style to use for highlighting
     Style -Name HighlightedService -Color Red -BackgroundColor Yellow -Bold
 
     # apply a different format to cell "Status" for all objects where
     # status is "Stopped" and StartType is "Automatic"
-    $services | 
-        Where { $_.Status -eq 'Stopped' -and $_.StartType -eq 'Automatic'} | 
+    $services |
+        Where { $_.Status -eq 'Stopped' -and $_.StartType -eq 'Automatic'} |
         Set-Style -Property Status -Style HighlightedService
-    
-    # create the table    
-    $services | 
+
+    # create the table
+    $services |
         Table -Columns DisplayName,Status,StartType -Headers 'Display Name','Status','Startup Type' -Tabs 1
-    
-    
-} | 
+
+
+} |
 Export-Document -Path $OutPath -Format Word,Html,Text
 
 # open the generated documents

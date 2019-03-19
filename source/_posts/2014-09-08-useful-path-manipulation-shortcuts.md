@@ -19,7 +19,7 @@ _适用于 PowerShell 所有版本_
     [System.IO.Path]::GetFileNameWithoutExtension('file.ps1')
     [System.IO.Path]::GetExtension('file.ps1')
     [System.IO.Path]::ChangeExtension('file.ps1', '.copy.ps1')
-    
+
     [System.IO.Path]::GetFileNameWithoutExtension('c:\test\file.ps1')
     [System.IO.Path]::GetExtension('c:\test\file.ps1')
     [System.IO.Path]::ChangeExtension('c:\test\file.ps1', '.bak')

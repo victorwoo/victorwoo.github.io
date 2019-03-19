@@ -19,7 +19,7 @@ tags:
 ```powershell
 $header = ‘NewHeader1’, 'NewHeader2', 'NewHeader3'
 
-Get-Content N:\somepathtofile\userlist.csv -Encoding Default | 
+Get-Content N:\somepathtofile\userlist.csv -Encoding Default |
  Select-Object -Skip 1 |
  ConvertFrom-CSV -UseCulture -Header $header
 ```

@@ -22,17 +22,17 @@ tags:
 	    (
 	        [Parameter(Mandatory=$true)]
 	        $Keyword,
-	
+
 	        $Maximum = 20,
 	        $StartPath = $env:USERPROFILE
 	    )
-	
+
 	    Get-ChildItem -Path $StartPath -Filter *.ps1 -Recurse -ErrorAction SilentlyContinue |
 	      Select-String -SimpleMatch -Pattern $Keyword -List |
 	      Select-Object -Property FileName, Path, Line -First $Maximum |
 	      Out-GridView -Title 'Select Script File' -PassThru |
 	      ForEach-Object { ise $_.Path }
-	} 
+	}
 
 默认情况下，`Find-Script` 只返回满足搜索条件的前 20 个脚本。您可以通过 `-Maximum` 和 `-StartPath` 参数来改变最大搜索条数和搜索位置。
 

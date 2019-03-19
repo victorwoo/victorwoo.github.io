@@ -17,7 +17,7 @@ _适用于 PowerShell 所有版本_
 如果您想知道是否有已插入电脑的 USB 存储设备，那么 WMI 可以做到：
 
     Get-WmiObject -Class Win32_PnPEntity |
-      Where-Object { $_.DeviceID -like 'USBSTOR*' } 
+      Where-Object { $_.DeviceID -like 'USBSTOR*' }
 
 这将返回所有“`USBSTOR`”类的即插即用设备。
 

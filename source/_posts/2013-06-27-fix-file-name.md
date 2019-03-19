@@ -20,7 +20,7 @@ tags:
 			[Parameter(Mandatory = $true, ValueFromPipeline = $true)]
 			[string]$FileSystemName
 		)
-		
+
 		process{
 			$deviceFiles = 'CON', 'PRN', 'AUX', 'CLOCK$', 'NUL', 'COM1', 'COM2', 'COM3', 'COM4', 'COM5', 'COM6', 'COM7', 'COM8', 'COM9', 'LPT1', 'LPT2', 'LPT3', 'LPT4', 'LPT5', 'LPT6', 'LPT7', 'LPT8', 'LPT9'
 			$fileName = [System.IO.Path]::GetFileNameWithoutExtension($FileSystemName)
@@ -29,26 +29,26 @@ tags:
 			{
 				$extension = $extension.Substring(1)
 			}
-			
+
 			if ($deviceFiles -contains $fileName)
 			{
 				$fileName = "_$fileName"
 			}
-			
+
 			if ($deviceFiles -contains $extension)
 			{
-				$extension = "_$extension"	
+				$extension = "_$extension"
 			}
-			
+
 			if ($extension -eq '')
 			{
 				$FileSystemName = "$fileName$extension"
 			}
 			else
 			{
-				$FileSystemName = "$fileName.$extension"	
+				$FileSystemName = "$fileName.$extension"
 			}
-			
+
 			$FileSystemName = $FileSystemName -creplace '[\\/|?"*:<>\x00\x1F\t\r\n]', '.'
 			return $FileSystemName
 		}

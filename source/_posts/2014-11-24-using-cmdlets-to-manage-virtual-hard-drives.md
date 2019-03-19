@@ -14,7 +14,7 @@ tags:
 ---
 _适用于 Windows 8.1 Pro/Enterprise 或 Server 2012 R2_
 
-Windows 8.1 和 Server 2012 R2 带来一系列额外的 cmdlet 命令，有一部分用于管理虚拟磁盘。不过，在使用这些 cmdlet 之前，您需要先启用“Hyper-V 角色”（请注意需要 Windows 8.1 Pro 或 Enterprise 版才支持客户端的 Hyper-V。“Home”版则不支持该功能）。 
+Windows 8.1 和 Server 2012 R2 带来一系列额外的 cmdlet 命令，有一部分用于管理虚拟磁盘。不过，在使用这些 cmdlet 之前，您需要先启用“Hyper-V 角色”（请注意需要 Windows 8.1 Pro 或 Enterprise 版才支持客户端的 Hyper-V。“Home”版则不支持该功能）。
 
 在 Windows 8.1 中，您需要手动做以下操作：打开控制面板，进入程序/程序和功能。您也可以在 PowerShell 中键入“appwiz.cpl”打开该功能。
 
@@ -25,13 +25,13 @@ Windows 8.1 和 Server 2012 R2 带来一系列额外的 cmdlet 命令，有一�
 ```
 PS> Get-Command -Module Hyper-V
 
-CommandType     Name                                               ModuleName     
------------     ----                                               ----------     
-Cmdlet          Add-VMDvdDrive                                     Hyper-V        
-Cmdlet          Add-VMFibreChannelHba                              Hyper-V        
-Cmdlet          Add-VMHardDiskDrive                                Hyper-V        
-Cmdlet          Add-VMMigrationNetwork                             Hyper-V        
-Cmdlet          Add-VMNetworkAdapter                               Hyper-V         
+CommandType     Name                                               ModuleName
+-----------     ----                                               ----------
+Cmdlet          Add-VMDvdDrive                                     Hyper-V
+Cmdlet          Add-VMFibreChannelHba                              Hyper-V
+Cmdlet          Add-VMHardDiskDrive                                Hyper-V
+Cmdlet          Add-VMMigrationNetwork                             Hyper-V
+Cmdlet          Add-VMNetworkAdapter                               Hyper-V
 (...)
 ```
 

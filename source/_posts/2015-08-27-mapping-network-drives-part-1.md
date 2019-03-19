@@ -16,11 +16,11 @@ PowerShell 支持控制台命令，所以如果您需要映射一个网络驱动
 
     #requires -Version 1
     net.exe use M: '\\dc-01\somefolder' /PERSISTENT:YES
-    
+
     Test-Path -Path M:\
-    
+
     explorer.exe M:\
-    
+
 
 如果您忽略“`/PERSISTENT:YES`”参数，那么映射的驱动器将只是临时的，注销并登录后将不会自动重连。
 

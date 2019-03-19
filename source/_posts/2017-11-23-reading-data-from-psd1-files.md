@@ -15,7 +15,7 @@ tags:
 一个脚本有多种方法可以保存数据信息。有一种方式特别方便。以下是实现的代码：
 
 ```powershell
-Import-LocalizedData -BaseDirectory $PSScriptRoot -FileName data.psd1 -BindingVariable Info 
+Import-LocalizedData -BaseDirectory $PSScriptRoot -FileName data.psd1 -BindingVariable Info
 
 $Info
 ```

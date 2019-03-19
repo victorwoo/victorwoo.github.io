@@ -29,7 +29,7 @@ SMBIOSBIOSVersion : A03
 Manufacturer      : Dell Inc.
 Name              : A03
 SerialNumber      : 5TQLM32
-Version           : DELL   - 1072009 
+Version           : DELL   - 1072009
 ```
 
 虽然 `Get-WmiObject` 仍然存在，但 `Get-CimInstance` 绝对是未来的选择。这个 Cmdlet 支持 WMI 类的智能提示（在 PowerShell ISE 中），并且返回的数据可读性更好：例如日期是以人类可读的日期格式返回，而 `Get-WmiObject` 显示 WMI 内部原始的日期格式。

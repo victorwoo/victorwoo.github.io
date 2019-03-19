@@ -19,11 +19,11 @@ tags:
     #requires -Version 1 -Modules ActiveDirectory
     # create an empty hash table
     $custom = @{}
-    
+
     # add the attribute names and values
     $custom.ExtensionAttribute3 = 12
     $custom.ExtensionAttribute4 = 'Hello'
-    
+
     # assign the attributes to your current user object
     $user = $env:USERNAME
     Set-ADUser -Identity $user -Add $custom

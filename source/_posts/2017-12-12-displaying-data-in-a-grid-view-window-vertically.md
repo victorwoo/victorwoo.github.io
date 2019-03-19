@@ -39,11 +39,11 @@ function Flip-Object
     )
     process
     {
-        
-        $InputObject | 
+
+        $InputObject |
         ForEach-Object {
             $instance = $_
-            $instance | 
+            $instance |
             Get-Member -MemberType *Property |
             Select-Object -ExpandProperty Name |
             ForEach-Object {
@@ -52,8 +52,8 @@ function Flip-Object
                     Value = $instance.$_
                 }
             }
-        } 
-            
+        }
+
     }
 }
 ```

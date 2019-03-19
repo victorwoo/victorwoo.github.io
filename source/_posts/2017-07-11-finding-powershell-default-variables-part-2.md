@@ -22,7 +22,7 @@ function Get-BuiltInPSVariable($Name='*')
   # create a new PowerShell
   $ps = [PowerShell]::Create()
   # get all variables inside of it
-  $null = $ps.AddScript('$null=$host;Get-Variable') 
+  $null = $ps.AddScript('$null=$host;Get-Variable')
   $ps.Invoke() |
     Where-Object Name -like $Name
   # dispose new PowerShell
@@ -35,18 +35,18 @@ function Get-BuiltInPSVariable($Name='*')
 
 您现在可以获取所有的 PowerShell 内置变量，或搜索指定的变量：
 
-```powershell     
+```powershell
 PS> Get-BuiltInPSVariable -Name *pref*
 
-Name                           Value                                                                         
-----                           -----                                                                         
-ConfirmPreference              High                                                                          
-DebugPreference                SilentlyContinue                                                              
-ErrorActionPreference          Continue                                                                      
-InformationPreference          SilentlyContinue                                                              
-ProgressPreference             Continue                                                                      
-VerbosePreference              SilentlyContinue                                                              
-WarningPreference              Continue                                                                      
+Name                           Value
+----                           -----
+ConfirmPreference              High
+DebugPreference                SilentlyContinue
+ErrorActionPreference          Continue
+InformationPreference          SilentlyContinue
+ProgressPreference             Continue
+VerbosePreference              SilentlyContinue
+WarningPreference              Continue
 WhatIfPreference               False
 ```
 

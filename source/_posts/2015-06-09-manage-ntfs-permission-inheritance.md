@@ -19,23 +19,23 @@ tags:
     # create folder
     $Path = 'c:\PermissionNoInheritance'
     $null = New-Item -Path $Path -ItemType Directory -ErrorAction SilentlyContinue
-    
+
     # get current permissions
     $acl = Get-Acl -Path $path
-    
+
     # add a new permission for current user
     $permission = $env:username, 'Read,Modify', 'ContainerInherit, ObjectInherit', 'None', 'Allow'
     $rule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permission
     $acl.SetAccessRule($rule)
-    
+
     # add a new permission for Administrators
     $permission = 'Administrators', 'FullControl', 'ContainerInherit, ObjectInherit', 'None', 'Allow'
     $rule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permission
     $acl.SetAccessRule($rule)
-    
+
     # disable inheritance
     $acl.SetAccessRuleProtection($true, $false)
-    
+
     # set new permissions
     $acl | Set-Acl -Path $path
 

@@ -19,10 +19,10 @@ _适用于 PowerShell 所有版本_
 通过一个 cmdlet 过滤器，您可以很方便地查看您关注的 hotfix。这个例子只返回编号为“KB25”开头的 hotfix：
 
     Get-HotFix |
-      Where-Object { 
-        $_.HotfixID -like 'KB25*'  
+      Where-Object {
+        $_.HotfixID -like 'KB25*'
       }
-    
+
 
 请注意 `Get-HotFix` 有一个 `-ComputerName` 参数，所以如果您拥有了合适的权限，那么您也可以从远程计算机中获取 hotfix 信息。
 

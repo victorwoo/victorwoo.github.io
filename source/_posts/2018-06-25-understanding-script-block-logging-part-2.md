@@ -19,7 +19,7 @@ function Get-LoggedCode
 {
     # read all raw events
     $logInfo = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-    Get-WinEvent -FilterHashtable $logInfo | 
+    Get-WinEvent -FilterHashtable $logInfo |
         # take each raw set of data...
         ForEach-Object {
             # create a new object and extract the interesting
@@ -34,7 +34,7 @@ function Get-LoggedCode
                 # determine current and total part
                 PartCurrent = $_.Properties[0].Value
                 PartTotal = $_.Properties[1].Value
-                
+
                 # if total part is 1, code is not fragmented
                 IsMultiPart = $_.Properties[1].Value -ne 1
                 # path of script file (this is empty for interactive
@@ -46,7 +46,7 @@ function Get-LoggedCode
                 # user who executed the code (SID)
                 User = $_.UserId
             }
-        } 
+        }
 }
 ```
 
@@ -58,7 +58,7 @@ Code        : function Get-LoggedCode
                 {
                     # read all raw events
                     $logInfo = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-                    Get-WinEvent -FilterHashtable $logInfo | 
+                    Get-WinEvent -FilterHashtable $logInfo |
                         # take each raw set of data...
                         ForEach-Object {
                             # create a new object and extract the interesting
@@ -73,7 +73,7 @@ Code        : function Get-LoggedCode
                                 # determine current and total part:
                                 PartCurrent = $_.Properties[0].Value
                                 PartTotal = $_.Properties[1].Value
-                                
+
                                 # if total part is 1, code is not fragmented:
                                 IsMultiPart = $_.Properties[1].Value -ne 1
                                 # path of script file (this is empty for interactive
@@ -85,17 +85,17 @@ Code        : function Get-LoggedCode
                                 # user who executed the code (SID)
                                 User = $_.UserId
                             }
-                        } 
+                        }
                 }
-                
-                
-                
+
+
+
 PartCurrent : 1
 PartTotal   : 1
 IsMultiPart : False
 Path        : D:\sample.ps1
 Level       : Warning
-User        : S-1-5-21-2012478179-265285931-690539891-1001 
+User        : S-1-5-21-2012478179-265285931-690539891-1001
 ```
 
 在我们的代码中，我们添加了 `Select-Object` 来读取整个日志，而不是最后一条日志。这里，我们得到我们刚刚执行的代码。您机器上的执行情况可能有所不同，原因如下：
@@ -106,10 +106,10 @@ User        : S-1-5-21-2012478179-265285931-690539891-1001
 ```powershell
 PS> Get-LoggedCode | Group-Object Level
 
-Count Name                      Group                                                             
------ ----                      -----                                                             
+Count Name                      Group
+----- ----                      -----
     549 Verbose                   {@{Time=25.05.2018 10:57:52; Code=prompt;..
-    36 Warning                   {@{Time=25.05.2018 10:57:52; Code={...   
+    36 Warning                   {@{Time=25.05.2018 10:57:52; Code={...
 ```
 
 请注意：由于日志的体积非常大，所以长的代码被分成多块。"`IsMultiPart`"、"`PartCurrent`" 和 "`PartTotal`" 属性可以提供这方面的有用信息。

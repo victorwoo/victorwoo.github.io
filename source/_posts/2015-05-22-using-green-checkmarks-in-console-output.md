@@ -21,12 +21,12 @@ tags:
       ForegroundColor = 'Green'
       NoNewLine = $true
       }
-    
+
     Write-Host "Status check... " -NoNewline
     Start-Sleep -Seconds 1
     Write-Host @greenCheck
     Write-Host " (Done)"
-    
+
 
 这样当您需要一个绿色的复选标记时，使用这行代码：
 

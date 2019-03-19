@@ -17,10 +17,10 @@ _适用于 PowerShell 所有版本_
 您也许听说过长网址的缩短服务。有许多这类免费的服务。以下是一个将任何网址转化为短网址的脚本：
 
     $OriginalURL = 'http://www.powertheshell.com/isesteroids2'
-    
+
     $url = "http://tinyurl.com/api-create.php?url=$OriginalURL"
     $webclient = New-Object -TypeName System.Net.WebClient
-    $webclient.DownloadString($url) 
+    $webclient.DownloadString($url)
 
 只需要将需要缩短的网址赋给 `$OriginalURL`，运行脚本。它将返回对应的短网址。
 

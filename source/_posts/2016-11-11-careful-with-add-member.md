@@ -25,10 +25,10 @@ $o
 这可以工作，结果类似这样：
 
 
-    PS C:\> $o 
+    PS C:\> $o
 
-    Notes     Date                 
-    -----     ----                 
+    Notes     Date
+    -----     ----
     Something 10/28/2016 3:56:53 PM
 
 然而，这样做效率不高。因为 `Add-Member` 时动态地扩展现有的对象，而不是创建新的对象。以上代码可以用这种方法更容易地实现：
@@ -56,26 +56,26 @@ $o | Add-Member -MemberType ScriptProperty -Name CurrentDate -Value { Get-Date }
 现在请看多次查询该对象时，它的 `Date` 和 `CurrentDate` 属性
 
 ```
-PS C:\> $o 
+PS C:\> $o
 
-Notes     Date                  CurrentDate          
------     ----                  -----------          
+Notes     Date                  CurrentDate
+-----     ----                  -----------
 Something 10/28/2016 4:01:54 PM 10/28/2016 4:01:57 PM
 
 
-​    
-PS C:\> $o 
+​
+PS C:\> $o
 
-Notes     Date                  CurrentDate          
------     ----                  -----------          
+Notes     Date                  CurrentDate
+-----     ----                  -----------
 Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:00 PM
 
 
-​    
-PS C:\> $o 
+​
+PS C:\> $o
 
-Notes     Date                  CurrentDate          
------     ----                  -----------          
+Notes     Date                  CurrentDate
+-----     ----                  -----------
 Something 10/28/2016 4:01:54 PM 10/28/2016 4:02:02 PM
 ```
 

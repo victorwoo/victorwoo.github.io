@@ -50,9 +50,9 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $zip = [System.IO.Compression.ZipFile]::OpenRead($Path)
 
 # find all files in ZIP that match the filter (i.e. file extension)
-$zip.Entries | 
+$zip.Entries |
   Where-Object { $_.FullName -like $Filter } |
-  ForEach-Object { 
+  ForEach-Object {
     # extract the selected items from the ZIP archive
     # and copy them to the out folder
     $FileName = $_.Name

@@ -22,7 +22,7 @@ _适用于 PowerShell 2.0 及以上版本_
 
     $extensions = '*.ps1', '.txt'
     $cleanExtensions = $extensions -replace '^\.', '*.'
-    
+
     $extensions
     $cleanExtensions
 

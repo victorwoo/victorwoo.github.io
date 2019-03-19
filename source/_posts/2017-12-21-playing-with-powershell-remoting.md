@@ -35,7 +35,7 @@ Test-WSMan $IPorNameTargetComputer
     wsmid           : http://schemas.dmtf.org/wbem/wsman/identity/1/wsmanidentity.xsd
     ProtocolVersion : http://schemas.dmtf.org/wbem/wsman/1/wsman.xsd
     ProductVendor   : Microsoft Corporation
-    ProductVersion  : OS: 0.0.0 SP: 0.0 Stack: 3.0 
+    ProductVersion  : OS: 0.0.0 SP: 0.0 Stack: 3.0
 
 在下一个技能中，我们将看看能用 PowerShell 远程处理来做什么，以及如何远程执行脚本。
 

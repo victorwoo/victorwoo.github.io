@@ -22,17 +22,17 @@ _适用于 PowerShell 所有版本_
     {
       $service = Get-WmiObject -Class Win32_Service -Filter "Name='$ServiceName'"
       $processID = $service.processID
-      
+
       $process = Get-Process -Id $processID
-      
+
       $process.Responding
     }
-    
+
 这个例子将会检测 Spooler 服务是否可响应：
-     
+
     PS> Test-ServiceResponding -ServiceName Spooler
     True
-     
+
 请注意，该示例代码假设服务正在运行。如果您想试试的话，您可以自己检测一下，排除非正在运行的服务。
 
 <!--本文国际来源：[Test Service Responsiveness](http://community.idera.com/powershell/powertips/b/tips/posts/test-service-responsiveness)-->

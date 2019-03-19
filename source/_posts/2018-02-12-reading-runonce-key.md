@@ -16,7 +16,7 @@ Windows 注册表中的 `RunOnce` 键存储了所有的自启动。它可能是�
 
 ```powershell
 $path = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce'
-$properties = Get-ItemProperty -Path $path 
+$properties = Get-ItemProperty -Path $path
 $properties
 ```
 

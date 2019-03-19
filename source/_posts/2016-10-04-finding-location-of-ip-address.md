@@ -20,7 +20,7 @@ tags:
 function Get-IPLocation([Parameter(Mandatory)]$IPAddress)
 {
     Invoke-RestMethod -Method Get -Uri "http://geoip.nekudo.com/api/$IPAddress" |
-      Select-Object -ExpandProperty Country -Property City, IP, Location 
+      Select-Object -ExpandProperty Country -Property City, IP, Location
 }
 ```
 
@@ -35,7 +35,7 @@ name     : United States
 code     : US
 city     : Mountain View
 ip       : 8.8.8.8
-location : @{accuracy_radius=1000; latitude=37,386; longitude=-122,0838; time_zone=America/Los_Angeles} 
+location : @{accuracy_radius=1000; latitude=37,386; longitude=-122,0838; time_zone=America/Los_Angeles}
 ```
 
 And here is how you can resolve any hostname to an IP address, for example, the famous powershellmagazine.com:
@@ -55,11 +55,11 @@ name     : United States
 code     : US
 city     : New York
 ip       : 104.131.21.239
-location : @{accuracy_radius=1000; latitude=40,7143; longitude=-74,006; 
+location : @{accuracy_radius=1000; latitude=40,7143; longitude=-74,006;
            time_zone=America/New_York}
 ```
 
-(of course this is just where the server sits, not Aleksandar or Ravi or all the other fine editors 
+(of course this is just where the server sits, not Aleksandar or Ravi or all the other fine editors
 （当然这只代表了服务器的所在地，而不是 Aleksandar or Ravi 及其它知名编辑的位置 ![](/img/2016-10-04-finding-location-of-ip-address-001.png)）
 
 <!--本文国际来源：[Finding Location of IP Address](http://community.idera.com/powershell/powertips/b/tips/posts/finding-location-of-ip-address)-->

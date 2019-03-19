@@ -21,7 +21,7 @@ tags:
 	# finding first match
 	$searcher.FindOne()
 	# finding ALL matches
-	$searcher.FindAll() 
+	$searcher.FindAll()
 
 这段代码将查找所有 SamAccountName 以 "tobias" 开头的用户账号。您可以接着用这个方法来便捷地找出这个用户所在的位置：
 

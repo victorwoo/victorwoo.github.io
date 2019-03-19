@@ -29,7 +29,7 @@ function Do-Something
 
     # handle the error, OR SHOWN HERE: issue a new exception to the caller
     $newE = New-Object -TypeName System.InvalidOperationException('Do-Something: A fatal error occured', $oldE)
-    Throw $newE   
+    Throw $newE
   }
 }
 
@@ -71,11 +71,11 @@ catch [System.InvalidOperationException]
 
 
 ```
-Message                             Originalmessage                              
--------                             ---------------                              
-Do-Something: A fatal error occured Cannot find a process with the name          
-                                    "NotThereOhWell". Verify the process name    
-                                    and call the cmdlet again.   
+Message                             Originalmessage
+-------                             ---------------
+Do-Something: A fatal error occured Cannot find a process with the name
+                                    "NotThereOhWell". Verify the process name
+                                    and call the cmdlet again.
 ```
 
 这样调用者可以看到返回的错误信息，并且经过内部处理之后，还可以传递原始的错误信息。

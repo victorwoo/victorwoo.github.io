@@ -19,14 +19,14 @@ tags:
 ```powershell
 # create profile if it does not yet exist
 $exists = Test-Path -Path $Profile.CurrentUserAllHosts
-if (!$exists) 
-{ 
-    $null = New-Item -Path $Profile.CurrentUserAllHosts -ItemType File -Force 
+if (!$exists)
+{
+    $null = New-Item -Path $Profile.CurrentUserAllHosts -ItemType File -Force
 }
 
 # add code to profile
 @'
-$greetings = 
+$greetings =
 'Hello there!',
 'Glad to see you!',
 'Happy coding!',

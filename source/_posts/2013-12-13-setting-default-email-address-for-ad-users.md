@@ -20,7 +20,7 @@ tags:
 	$SearchRoot = 'LDAP://CN=Users,{0}' -f ([ADSI]'').distinguishedName.ToString()
 	# adjust LDAPFilter. Example: (!mail=*) = all users with no defined mail attribute
 	$LdapFilter = "(&(objectClass=user)(objectCategory=person)(!mail=*))"
-	
+
 	$Searcher = New-Object DirectoryServices.DirectorySearcher($SearchRoot, $LdapFilter)
 	$Searcher.PageSize = 1000
 	$Searcher.FindAll() | ForEach-Object {
@@ -29,7 +29,7 @@ tags:
 	  {
 	        # Set mail attribute
 	        $User.Put("mail", ('{0}.{1}@mycompany.com' -f $user.givenName.ToString(), $user.sn.ToString()))
-	
+
 	        # Commit the change
 	        $User.SetInfo()
 	  }

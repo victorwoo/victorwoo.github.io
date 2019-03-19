@@ -58,9 +58,9 @@ ToUInt64
 ```powershell
 PS> [BitConverter]::ToUInt32
 
-OverloadDefinitions                                   
--------------------                                   
-static uint32 ToUInt32(byte[] value, int startIndex)  
+OverloadDefinitions
+-------------------
+static uint32 ToUInt32(byte[] value, int startIndex)
 ```
 
 <!--本文国际来源：[Converting IEEE754 (Float) (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/converting-ieee754-float-part-1)-->

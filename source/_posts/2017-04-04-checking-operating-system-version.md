@@ -18,8 +18,8 @@ tags:
 PS C:\> [Environment]::OSVersion
 
 
-Platform ServicePack Version      VersionString                    
--------- ----------- -------      -------------                    
+Platform ServicePack Version      VersionString
+-------- ----------- -------      -------------
     Win32NT             10.0.14393.0 Microsoft Windows NT 10.0.14393.0
 ```
 

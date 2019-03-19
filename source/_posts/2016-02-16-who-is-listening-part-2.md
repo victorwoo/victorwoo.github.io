@@ -24,7 +24,7 @@ $Process = @{
   Name = 'Name'
   Expression = {
     $id = $_.OwningProcess
-    $name = (Get-Process -Id $id).Name 
+    $name = (Get-Process -Id $id).Name
     if ($name -eq 'svchost')
     {
       if ($service.ContainsKey($id) -eq $false)
@@ -40,24 +40,24 @@ $Process = @{
   }
 }
 
-Get-NetTCPConnection | 
-Select-Object -Property LocalPort, OwningProcess, $Process | 
+Get-NetTCPConnection |
+Select-Object -Property LocalPort, OwningProcess, $Process |
 Sort-Object -Property LocalPort, Name -Unique
 ```
 
 结果类似如下：
 
-    LocalPort OwningProcess Name                                                   
-    --------- ------------- ----                                                   
-          135           916 RpcEptMapper,RpcSs                                     
-          139             4 System                                                 
-          445             4 System                                                 
-         5354          2480 mDNSResponder                                          
-         5985             4 System                                                 
+    LocalPort OwningProcess Name
+    --------- ------------- ----
+          135           916 RpcEptMapper,RpcSs
+          139             4 System
+          445             4 System
+         5354          2480 mDNSResponder
+         5985             4 System
          7680           544 Appinfo,BITS,Browser,CertPropSvc,DoSvc,iphlpsvc,Lanm...
-         7779             4 System                                                 
-        15292          7364 Adobe Desktop Service                                  
-        27015          2456 AppleMobileDeviceService                               
+         7779             4 System
+        15292          7364 Adobe Desktop Service
+        27015          2456 AppleMobileDeviceService
     (...)
 
 <!--本文国际来源：[Who is Listening? (Part 2)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-2)-->

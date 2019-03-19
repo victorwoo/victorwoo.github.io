@@ -13,7 +13,7 @@ function Get-Index ($year, $month, $day, $name, $title) {
 $currentYear = 0
 $currentMonth = 0
 $sb = New-Object System.Text.StringBuilder
-dir (Join-Path $sourcePath *.md) | Where-Object Name -ne '2013-09-09-index.md' | Sort-Object Name | foreach {
+Get-ChildItem (Join-Path $sourcePath *.md) | Where-Object Name -ne '2013-09-09-index.md' | Sort-Object Name | ForEach-Object {
     Write-Debug $_.Name
     $original = Read-HexoBlog $_
 
@@ -62,4 +62,4 @@ dir (Join-Path $sourcePath *.md) | Where-Object Name -ne '2013-09-09-index.md' |
 $body = $sb.ToString()
 $indexBlog = Read-HexoBlog (Join-Path $sourcePath 2013-09-09-index.md)
 $out = Out-HexoBlog $indexBlog.Meta $body
-Set-Content (Join-Path $sourcePath 2013-09-09-index.md) $out -Encoding UTF8
+Set-Content (Join-Path $sourcePath 2013-09-09-index.md) $out -Encoding utf8NoBOM

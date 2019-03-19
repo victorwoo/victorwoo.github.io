@@ -299,7 +299,7 @@ $xaml = @'
 
 $reader = [System.XML.XMLReader]::Create([System.IO.StringReader]$XAML)
 $window = [System.Windows.Markup.XAMLReader]::Load($reader)
-$image =  $window.FindName('Img1')   
+$image =  $window.FindName('Img1')
 $image.Source = Convert-Base64Bitmap2Picture -Base64Text $Picture1
 $window.ShowDialog()
 ```

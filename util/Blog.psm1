@@ -33,7 +33,7 @@ function Get-Blocks ($path) {
     
     $separactor = '---'
     $lineNumber = 0
-    $lines = gc $path -Encoding UTF8
+    $lines = Get-Content $path -Encoding utf8NoBOM
     foreach ($line in $lines) {
         if ($line.Trim() -eq $separactor) {
             # 解析到分隔符

@@ -17,7 +17,7 @@ tags:
 若要操作路径长度不固定的情况，试着利用变量。这个例子将会去除第1层和第2层子文件夹，无论路径有多长：
 
 	$path = 'C:\users\Tobias\Desktop\functions.ps1'
-	
+
 	$array = $path -split '\\'
 	$length = $array.Count
 	$newpath = $array[,0+3..$length]

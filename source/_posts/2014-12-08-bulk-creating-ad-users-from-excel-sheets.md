@@ -20,13 +20,13 @@ _需要 ActiveDirectory Module_
 
     Import-Csv -Path F:\userlist.csv -UseCulture -Encoding Default |
     ForEach-Object {
-      
-      $_.AccountPassword = $_.AccountPassword | 
+
+      $_.AccountPassword = $_.AccountPassword |
                                ConvertTo-SecureString -Force -AsPlainText
-      $_ 
-    
+      $_
+
     } |
-    New-ADUser -WhatIf 
+    New-ADUser -WhatIf
 
 CSV 文件所需的只是 `New-ADUser` 所需要的参数作为列名。一个详尽的列表可能包含以下列名：`Name`、`SamAccountName`、`Description`、`Company`、`City`、`Path`、`AccountPassword`。
 

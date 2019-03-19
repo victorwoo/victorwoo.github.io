@@ -19,7 +19,7 @@ tags:
 ```
 $file = [System.IO.Path]::GetTempFileName()
 Test-Path -Path $file
-```    
+```
 
 所以如果在脚本中只是使用这个方法来创建临时文件名的话，会留下一大堆孤立的文件。
 

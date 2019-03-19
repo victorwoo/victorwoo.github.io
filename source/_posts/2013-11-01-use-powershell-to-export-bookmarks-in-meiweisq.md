@@ -154,13 +154,13 @@ Javascript 的时间转换
 
 	$email = 'victorwoo@gmail.com'
 	$password = 'xxx'
-	
+
 	$homeUrl = 'http://meiweisq.com/home'
 	$loginAction = 'http://meiweisq.com/login'
-	
+
 	$bookmarksPerPage = 30
 	$countPerExport = 10
-	
+
 	function Get-DeliciousHtml($bookmarks) {
 	    $pre = @"
 	<!DOCTYPE NETSCAPE-Bookmark-file-1>
@@ -171,17 +171,17 @@ Javascript 的时间转换
 	<TITLE>Bookmarks</TITLE>
 	<H1>Bookmarks</H1>
 	<DL><p>
-	
+
 	"@
-	
+
 	    $post = @"
 	</DL><p>
 	"@
-	
+
 	    $bookmarkTemplate = @"
 	<DT><A HREF="{0}" ADD_DATE="{1}" PRIVATE="{2}" TAGS="{3}">{4}</A>
 	<DD>{5}
-	
+
 	"@
 	    $result = $pre
 	    $bookmarks | foreach {
@@ -193,9 +193,9 @@ Javascript 的时间转换
 	    $result += $post
 	    return $result
 	}
-	
+
 	$startTime = [datetime]::Now
-	
+
 	echo 'Requesting home'
 	$response = Invoke-WebRequest -Uri $homeUrl -Method Default -SessionVariable rb -ContentType application/html
 	if ($response.StatusCode -ne 200) {
@@ -203,7 +203,7 @@ Javascript 的时间转换
 	    return
 	}
 	$response.Content > mwsq_login.html
-	
+
 	echo 'Logining'
 	$loginForm = ($response.Forms | where { $_.Action -eq '/login' })[0]
 	$loginForm.Fields['email'] = $email
@@ -211,31 +211,31 @@ Javascript 的时间转换
 	$loginForm.Fields['type'] = '登录'
 	$loginForm.Fields['return-url'] = '/home'
 	$loginForm.Fields['remember'] = 'off'
-	
+
 	$response = Invoke-WebRequest -Uri $loginAction -WebSession $rb -Method POST -Body $loginForm
 	if ($response.StatusCode -ne 200) {
 	    Write-Warning "[$response.StatusCode] $loginAction"
 	    return
 	}
 	$response.Content > mwsq_home.html
-	
+
 	if ($response.Content -cnotmatch '1 - (\d+) 共 (\d+) 个书签') {
 	    Write-Warning '找不到书签个数'
 	    return
 	}
-	
+
 	$page1Count = $Matches[1]
 	$totalCount = $Matches[2]
 	echo "1 - $page1Count 共 $totalCount 个书签"
 	$pageCount = [math]::Ceiling($totalCount / $bookmarksPerPage)
 	echo "共 $pageCount 页"
 	echo ''
-	
+
 	$bookmarks = @()
 	for ($page = 1; $page -le $pageCount; $page++) {
 	    $uri = 'http://meiweisq.com/home?page=' + $page
 	    echo "Requesting $uri"
-	
+
 	    $isSuccess = $false
 	    while (!$isSuccess) {
 	        try {
@@ -247,7 +247,7 @@ Javascript 的时间转换
 	            $isSuccess = $true
 	        } catch { }
 	    }
-	
+
 	    $response.Content > current_page.html
 	    $html = $response.ParsedHtml
 	    $linksDiv = ($html.getElementsByTagName('div') | where { $_.classname -eq 'links' })[0]
@@ -263,60 +263,60 @@ Javascript 的时间转换
 	        echo "$($bookmarks.Length + 1) of $totalCount"
 	        $div = $_
 	        $linkTitle = $div.getElementsByTagName('a') | where { $_.className -eq 'link-title' }
-	
+
 	        $title = $linkTitle | select -exp innerText
 	        $title = $title.Trim()
 	        echo $title
-	
+
 	        $url = $linkTitle | select -exp href
 	        echo $url
-	        
+
 	        $linkTime = $div.getElementsByTagName('p') | where { $_.className -eq 'link-time' } | select -exp innerText
 	        $linkTime = $linkTime.Trim()
 	        echo $linkTime
-	
+
 	        $ul = $div.getElementsByTagName('ul') | where { $_.className -cmatch '\btags[\s,$]' }
 	        $tags = $ul.getElementsByTagName('a') | where { $_.className -cmatch 'tag' }
 	        $tagNames = $tags | foreach { $_.getAttribute('tag') }
 	        if ($tagNames -eq $null) {
 	            $tagNames = @()
 	        }
-	        
-	        
+
+
 	        echo "[$([string]::Join(' | ', $tagNames))]"
 	        echo ''
-	
+
 	        $bookmark = [PSObject]@{
 	            Title = $title
 	            Url = $url
 	            LinkTime = $linkTime
 	            Tags = [string]::Join(', ', $tagNames)
 	        }
-	
+
 	        $bookmarks += New-Object -TypeName PSObject -Property $bookmark
-	    }   
+	    }
 	}
-	
+
 	echo 'Exporting html thant you can import into del.icio.us'
 	$index = 0
 	while ($index -lt $totalCount) {
 	    $currentCountInExport = [math]::Min($countPerExport, $totalCount - $index)
 	    $endIndex = $index + $currentCountInExport
-	
+
 	    $deliciousHtml = Get-DeliciousHtml ($bookmarks | select -Skip $index -First $currentCountInExport)
 	    $deliciousHtml | sc -Encoding UTF8 ("meiweisq-export-{0:yyyyMMdd}-{1}-{2}.html" -f [datetime]::Now, $index, $endIndex)
 	    $index += $currentCountInExport
 	}
-	
+
 	$deliciousHtml = Get-DeliciousHtml $bookmarks
 	$deliciousHtml | sc -Encoding UTF8 ("meiweisq-export-{0:yyyyMMdd}-all.html" -f [datetime]::Now)
-	
+
 	echo 'Exporting CSV.'
 	$bookmarks | Export-Csv ("meiweisq-export-{0:yyyyMMdd}.csv" -f [datetime]::Now) -Encoding UTF8 -NoTypeInformation
-	
+
 	echo 'Exporting GUI.'
 	$bookmarks | Out-GridView
-	
+
 	echo 'All done.'
 
 您也可以[点击这里下载](/assets/download/Export-Meiweisq.ps1)源代码。

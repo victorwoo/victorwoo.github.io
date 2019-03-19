@@ -19,41 +19,41 @@ tags:
 以下代码演示了这个技能：
 
     #requires -Version 1
-    
-    
+
+
     function Test-ArrayAsReturnValue1
     {
       param($count)
-    
+
       $array = 1..$count
-    
+
       return $array
     }
-    
+
     function Test-ArrayAsReturnValue2
     {
       param($count)
-    
+
       $array = 1..$count
-    
+
       return ,$array
     }
-    
+
     'Result 1:'
     Test-ArrayAsReturnValue1 -count 10 | ForEach-Object -Process {
-      $_.GetType().FullName 
+      $_.GetType().FullName
     }
-    
+
     'Result 2:'
     Test-ArrayAsReturnValue2 -count 10 | ForEach-Object -Process {
-      $_.GetType().FullName 
+      $_.GetType().FullName
     }
 
 当您运行这段代码时，第一个例子将返回数组中的元素。第二个例子将会把整个数组传递给循环。
 
-     
-    PS C:\> 
-    
+
+    PS C:\>
+
     Result 1:
     System.Int32
     System.Int32
@@ -65,7 +65,7 @@ tags:
     System.Int32
     System.Int32
     System.Int32
-    
+
     Result 2:
     System.Object[]
 

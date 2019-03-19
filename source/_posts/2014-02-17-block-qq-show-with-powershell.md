@@ -19,30 +19,30 @@ tags:
 	$folder
 	$rdbFile = Join-Path $folder 'Bundle.rdb'
 	$rdbDir = Join-Path $folder 'Bundle'
-	
+
 	$xmlPath = Join-Path $folder 'Bundle\I18N\2052\UrlBundle.xml'
-	
+
 	if (Test-Path "$rdbFile.bak") {
 	    Write-Warning "$rdbFile.bak 文件已存在，请确认是否已经替换？"
 	    Write-Warning "程序退出。"
 	    return
 	}
-	
+
 	$rdbFile
 	.\RDB.exe """$rdbFile"""
 	move $rdbFile "$rdbFile.bak"
 	.\D4QQenc.exe (Join-Path $folder 'Bundle\I18N\2052\UrlBundle.xml.enc')
-	
+
 	del (Join-Path $folder 'Bundle\I18N\2052\UrlBundle.xml.enc')
-	
+
 	[xml]$urlBundle = Get-Content $xmlPath -Encoding UTF8 | where { $_ -ne '' }
-	
+
 	@('IDS_QQSHOW_MARKET', 'IDS_3DSHOW_MARKET', 'IDS_FLASHSHOW_MARKET') | foreach {
 	    $id = $_
 	    ($urlBundle.StringBundle.String | where { $_.id -eq $id })."#text" = ''
 	}
 	$urlBundle.OuterXml | Set-Content $xmlPath -Encoding UTF8
-	
+
 	.\RDB.exe """$rdbDir"""
 
 您也可以从这里 [下载](/assets/download/Disable-QQShow.zip) 写好的脚本，祝您使用愉快。

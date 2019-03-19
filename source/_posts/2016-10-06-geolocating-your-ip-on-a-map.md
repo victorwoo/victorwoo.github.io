@@ -15,8 +15,8 @@ tags:
 在前一个技能当中，通过 Internet 能知道您的 IP 地址，以及地理位置。您可以获得当前公开 IP 地址的经纬度，代码如下：
 
 ```powershell
-$ip = Invoke-RestMethod -Uri http://checkip.amazonaws.com/ 
-$geo = Invoke-RestMethod -Uri "http://geoip.nekudo.com/api/$IP" 
+$ip = Invoke-RestMethod -Uri http://checkip.amazonaws.com/
+$geo = Invoke-RestMethod -Uri "http://geoip.nekudo.com/api/$IP"
 $latitude = $geo.Location.Latitude
 $longitude = $geo.Location.Longitude
 
@@ -26,8 +26,8 @@ $longitude = $geo.Location.Longitude
 如果您希望看到它究竟在什么位置，可以将这些信息连到 Google Maps 上：
 
 ```powershell
-$ip = Invoke-RestMethod -Uri http://checkip.amazonaws.com/ 
-$geo = Invoke-RestMethod -Uri "http://geoip.nekudo.com/api/$IP" 
+$ip = Invoke-RestMethod -Uri http://checkip.amazonaws.com/
+$geo = Invoke-RestMethod -Uri "http://geoip.nekudo.com/api/$IP"
 $latitude = $geo.Location.Latitude
 $longitude = $geo.Location.Longitude
 

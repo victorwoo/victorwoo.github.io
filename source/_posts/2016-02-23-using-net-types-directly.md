@@ -16,21 +16,21 @@ Cmdlet 内含了纯 .NET 代码，所以感谢 cmdlet，我们通常无需接触
 
     #requires -Version 2
     [System.Convert]::ToString(687687687, 2)
-    
+
     [Math]::Round(4.6)
-    
+
     [Guid]::NewGuid()
-    
+
     [System.IO.Path]::ChangeExtension('c:\test.txt', 'bak')
-    
+
     [System.Net.DNS]::GetHostByName('dell1')
     [System.Net.DNS]::GetHostByAddress('192.168.1.124')
-    
+
     [Environment]::SetEnvironmentVariable()
-    
+
     # dangerous, save your work first
     [Environment]::FailFast('Oops')
-    
+
     Add-Type -AssemblyName PresentationFramework
     $dialog = New-Object Microsoft.Win32.OpenFileDialog
     $dialog.ShowDialog()

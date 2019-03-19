@@ -21,29 +21,29 @@ _适用于 PowerShell 3.0 及以上版本_
     $Path = "$env:temp\secret.txt"
     $Secret = 'Hello World!'
     $Passphrase = 'Some secret key'
-    
+
     $key = [Byte[]]($Passphrase.PadRight(24).Substring(0,24).ToCharArray())
-    
+
     $Secret |
-      ConvertTo-SecureString -AsPlainText -Force | 
-      ConvertFrom-SecureString -Key $key | 
+      ConvertTo-SecureString -AsPlainText -Force |
+      ConvertFrom-SecureString -Key $key |
       Out-File -FilePath $Path
-    
+
     notepad $Path
 
 要解密一段密文，您需要知道对应的密码：
 
     $Passphrase = Read-Host 'Enter the secret pass phrase'
-    
+
     $Path = "$env:temp\secret.txt"
-    
+
     $key = [Byte[]]($Passphrase.PadRight(24).Substring(0,24).ToCharArray())
-    
+
     try
     {
       $decryptedTextSecureString = Get-Content -Path $Path -Raw |
       ConvertTo-SecureString -Key $key -ErrorAction Stop
-    
+
       $cred = New-Object -TypeName System.Management.Automation.PSCredential('dummy', $decryptedTextSecureString)
       $decryptedText = $cred.GetNetworkCredential().Password
     }

@@ -17,9 +17,9 @@ tags:
 ```powershell
 function Invoke-Comment
 {
-    $file = $psise.CurrentFile                              
-    $comment = ($file.Editor.SelectedText -split '\n' | ForEach-Object { "#$_" }) -join "`n"                                                 
-    $file.Editor.InsertText($comment)                     
+    $file = $psise.CurrentFile
+    $comment = ($file.Editor.SelectedText -split '\n' | ForEach-Object { "#$_" }) -join "`n"
+    $file.Editor.InsertText($comment)
 }
 
 $psise.CurrentPowerShellTab.AddOnsMenu.Submenus.Add('Comment Out', { Invoke-Comment }, 'CTRL+K')

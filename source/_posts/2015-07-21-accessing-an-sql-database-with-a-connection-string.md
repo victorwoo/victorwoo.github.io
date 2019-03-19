@@ -15,20 +15,20 @@ tags:
 在前一个技能中我们揭示了如何创建一个 SQL Server 的连接字符串。无论您用什么方式创建了这个字符串——假设您已拥有了一个合法的数据库连接字符串，这个例子将演示如何对数据库执行 SQL 命令。
 
     #requires -Version 2
-    
+
     # make sure this is a valid connection string to your database
     # see www.connectionstrings.com for reference
     $connectionString = 'Provider=SQLOLEDB.1;Password=.topSecret!;Persist Security
      Info=True;User ID=sa;Initial Catalog=test;Data Source=myDBServer\SQLEXPRESS2012'
-    
+
     # make sure this is valid SQL for your database
     # so in this case, make sure there is a table called "test"
     $sql = 'select * from test'
-    
+
     $db = New-Object -ComObject ADODB.Connection
     $db.Open($connectionString)
     $rs = $db.Execute($sql)
-    
+
     $results = While ($rs.EOF -eq $false)
     {
         $CustomObject = New-Object -TypeName PSObject

@@ -22,12 +22,12 @@ tags:
 	  $ProgressPreference = 'SilentlyContinue'
 	  $page = Invoke-WebRequest -Uri $url -UseBasicParsing
 	  $pattern = '<br><font size = "\+2">(.+)'
-	
+
 	  if ($page.Content -match $pattern)
 	  {
 	    $matches[1]
 	  }
-	} 
+	}
 
 如果您需要通过代理服务器或者身份认证来访问 Internet，那么请查看函数中 `Invoke-WebRequest` 的参数。您可以通过它提交代理服务器信息，例如身份验证信息。
 

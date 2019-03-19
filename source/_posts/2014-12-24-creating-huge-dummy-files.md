@@ -18,12 +18,12 @@ _适用于 PowerShell 所有版本_
 
     $Path = "$env:temp\hugefile.txt"
     $Size = 200MB
-    
+
     $stream = New-Object System.IO.FileStream($Path, [System.IO.FileMode]::CreateNew)
     $stream.Seek($Size, [System.IO.SeekOrigin]::Begin)
     $stream.WriteByte(0)
     $Stream.Close()
-    
+
     explorer.exe "/select,$Path"
 
 <!--本文国际来源：[Creating Huge Dummy Files](http://community.idera.com/powershell/powertips/b/tips/posts/creating-huge-dummy-files)-->

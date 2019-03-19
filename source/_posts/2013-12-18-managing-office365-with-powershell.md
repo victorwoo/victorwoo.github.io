@@ -15,12 +15,12 @@ tags:
 您知道吗？您也可以用 PowerShell 管理您的 Office365 账户。如果您拥有一个 Office365 账户，请试试以下脚本：
 
 	$OfficeSession = New-PSSession -ConfigurationName Microsoft.Exchange `-ConnectionUri https://ps.outlook.com/powershell/ -Credential (Get-Credential) `-Authentication Basic -AllowRedirection
-	
+
 	$import = Import-PSSession $OfficeSession -Prefix Off365
-	
+
 	Get-Command -Noun Off365*
 
-这段代码将使用您的凭据连接 Office 365，然后导入用于管理 Office 365 的 PowerShell cmdlet。您大约可以获得 400 个新的 cmdlet。如果您收到“Access Denied”提示，那么有可能您的账户没有足够的权限，或者您敲错了密码。 
+这段代码将使用您的凭据连接 Office 365，然后导入用于管理 Office 365 的 PowerShell cmdlet。您大约可以获得 400 个新的 cmdlet。如果您收到“Access Denied”提示，那么有可能您的账户没有足够的权限，或者您敲错了密码。
 
 注意所有导入的 cmdlet 都是以 `Off365` 为前缀的，所以要查看所有的邮箱，请试试以下代码：
 

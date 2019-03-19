@@ -17,21 +17,21 @@ PowerShell 带来了两个 cmdlet，可以用来从 internet 获取信息。今�
 这个 cmdlet 提供了一个简单的 web 客户端。传给它一个 URL，它就可以帮您下载该网页。以下简单的几行代码可以帮您下载 psconf.eu 的议程表：
 
 ```powershell
-$page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing 
+$page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing
 $page.Content
 ```
 
 由于它是 JSON 格式的，所以可以将它通过管道传递给 `ConvertFrom-Json` 来获得对象：
 
 ```powershell
-$page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing 
+$page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing
 $page.Content | ConvertFrom-Json | Out-GridView
 ```
 
 然而，有些时候（例如这个例子），它并不能正确地“展开”集合结果，所以得手工操作它：
 
 ```powershell
-$page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing 
+$page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing
 $($page.Content | ConvertFrom-Json) | Out-GridView
 ```
 

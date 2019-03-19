@@ -69,7 +69,7 @@ function Test-Department
     {
         # take the dynamic parameters from $PSBoundParameters
         $Department = $PSBoundParameters.Department
-    
+
         "Chosen department for $Company : $Department"
     }
 }

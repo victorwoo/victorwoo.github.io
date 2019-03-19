@@ -22,9 +22,9 @@ _适用于所有 PowerShell 版本_
 这段代码返回了 `true`，该 UNC 路径存在。现在将当前驱动器变为一个非文件系统驱动器，然后再次实验：
 
     PS> cd hkcu:\
-    
+
     PS> Test-Path -Path \\127.0.0.1\c$
-    False 
+    False
 
 同样的路径现在返回了 `false`。这是因为 UNC 路径并不包含驱动器号，而 PowerShell 需要驱动器号来指定正确的提供器。如果一个路径不包含驱动器号，那么 PowerShell 假设使用当前驱动器的提供器。所以如果您将当前的目录改为注册表，PowerShell 尝试在那儿查找 UNC 路径，那么就会失败。
 
@@ -34,15 +34,15 @@ _适用于所有 PowerShell 版本_
 
     PS> Test-Path -Path FileSystem::\\127.0.0.1\c$
     True
-    
+
     PS> cd hkcu:\
-    
+
     PS> Test-Path -Path \\127.0.0.1\c$
     False
-    
+
     PS> Test-Path -Path FileSystem::\\127.0.0.1\c$
     True
-    
+
 
 如果您遇到了 `net use` 产生的问题，也可以使用同样的办法，在路径前面加上 `“FileSystem::`。该问题可以立刻得到解决。
 

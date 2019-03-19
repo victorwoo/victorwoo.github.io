@@ -24,27 +24,27 @@ foreach($color1 in (0..15))
         Write-Host -ForegroundColor ([ConsoleColor]$color1) -BackgroundColor ([ConsoleColor]$color2) -Object "X" -NoNewline
     }
 
-    Write-Host 
+    Write-Host
 }
 
 
-    
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
-XXXXXXXXXXXXXXXX 
+
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXX
 ```
 
 通过使用 VT 转义序列，您可以使用范围更广的颜色。可以将前景色和背景色设为任意的 RGB 颜色。每个通道可以有 8 比特 (0-255)：
@@ -88,12 +88,12 @@ foreach($rback in (0..255))
                     {
                         $null = $line.Append("$esc[38;2;$r;$g;$b;48;2;$rback;$gback;${bback}mX$esc[0m")
                     }
-                    
+
                     $text = $line.ToString()
                     Write-Host "$setCursorTop$Text"
                 }
 
-                Write-Host 
+                Write-Host
             }
         }
     }

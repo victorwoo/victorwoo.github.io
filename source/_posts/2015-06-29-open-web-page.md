@@ -15,7 +15,7 @@ tags:
 要快速地在 Internet Explorer 中打开新的网页，您可以像这样定义一个名为 `Show-WebPage` 的新函数：
 
     #requires -Version 2
-    
+
     function Show-WebPage
     {
         param
@@ -23,7 +23,7 @@ tags:
             [Parameter(Mandatory = $true, HelpMessage = 'URL to open')]
             $URL
         )
-    
+
         Start-Process -FilePath iexplore.exe -ArgumentList $URL
     }
 

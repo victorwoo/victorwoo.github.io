@@ -16,14 +16,14 @@ tags:
 
 	PS> $env:windir
 	C:\Windows
-	
+
 	PS> $env:USERNAME
 	Tobias
 
 实际上，“env:”是一个虚拟驱动器，所以您可以用它来查找所有（或一部分）环境变量。这段代码将列出所有名字中含有“user”的环境变量：
 
 	PS> dir env:\*user*
-	
+
 	Name                           Value
 	----                           -----
 	USERPROFILE                    C:\Users\Tobias

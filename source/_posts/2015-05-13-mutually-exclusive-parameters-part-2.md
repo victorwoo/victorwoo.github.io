@@ -22,21 +22,21 @@ PowerShell 函数中的互斥参数使用“`ParameterSetName`”属性将参数
       param
       (
         $id,
-    
+
         [Parameter(ParameterSetName='LocalOnly', Mandatory=$false)]
         $LocalAction,
-    
+
         [Parameter(ParameterSetName='Credential', Mandatory=$true)]
         [Parameter(ParameterSetName='NonCredential', Mandatory=$false)]
         $ComputerName,
-    
+
         [Parameter(ParameterSetName='Credential', Mandatory=$false)]
         $Credential
       )
-    
+
       $PSCmdlet.ParameterSetName
       $PSBoundParameters
-    
+
       if ($PSBoundParameters.ContainsKey('ComputerName'))
       {
         Write-Warning 'Remote Call!'

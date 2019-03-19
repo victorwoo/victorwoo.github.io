@@ -25,26 +25,26 @@ function New-CodeSigningCert
     [Parameter(Mandatory)]
     [String]
     $FriendlyName,
-    
+
     [Parameter(Mandatory)]
     [String]
     $Name,
-    
+
     [Parameter(Mandatory,ParameterSetName="Export")]
     [SecureString]
     $Password,
-    
+
     [Parameter(Mandatory,ParameterSetName="Export")]
     [String]
     $FilePath,
-    
+
     [Switch]
     $Trusted
   )
-  
+
     $cert = New-SelfSignedCertificate -KeyUsage DigitalSignature -KeySpec Signature -FriendlyName $FriendlyName -Subject "CN=$Name" -KeyExportPolicy ExportableEncrypted -CertStoreLocation Cert:\CurrentUser\My -NotAfter (Get-Date).AddYears(5) -TextExtension @('2.5.29.37={text}1.3.6.1.5.5.7.3.3')
-  
-  
+
+
   if ($Trusted)
   {
     $Store = New-Object system.security.cryptography.X509Certificates.x509Store("Root", "CurrentUser")
@@ -55,7 +55,7 @@ function New-CodeSigningCert
 
 
   $parameterSet = $PSCmdlet.ParameterSetName.ToLower()
-  
+
   if ($parameterSet -eq "export")
   {
     $cert | Export-PfxCertificate -Password $Password -FilePath $FilePath
@@ -69,7 +69,7 @@ function New-CodeSigningCert
 以下是如何以 pfx 文件的形式创建代码签名证书的方法：
 
 ```powershell
-PS> New-CodeSigningCert -FriendlyName 'Tobias Code-Signing Test Cert' -Name TobiasCS -FilePath "$home\desktop\myCert.pfx" 
+PS> New-CodeSigningCert -FriendlyName 'Tobias Code-Signing Test Cert' -Name TobiasCS -FilePath "$home\desktop\myCert.pfx"
 ```
 
 您将会收到提示，要求输入用来保护 pfx 文件的密码。请记住该密码，一会儿导入 pfx 文件的时候需要该密码。
@@ -77,13 +77,13 @@ PS> New-CodeSigningCert -FriendlyName 'Tobias Code-Signing Test Cert' -Name Tobi
 以下是如何在个人证书存储中创建代码签名证书的方法：
 
 ```powershell
-PS> New-CodeSigningCert -FriendlyName 'Tobias Code-Signing Test Cert' -Name TobiasCS -Trusted 
+PS> New-CodeSigningCert -FriendlyName 'Tobias Code-Signing Test Cert' -Name TobiasCS -Trusted
 ```
 
 调用这个函数之后，您的证书现在位于 `cert:` 驱动器中，您现在可以像这样查看它：
 
 ```powershell
-PS C:\> dir Cert:\CurrentUser\my  
+PS C:\> dir Cert:\CurrentUser\my
 ```
 
 同样地，您可以打开个人证书存储来管理它：

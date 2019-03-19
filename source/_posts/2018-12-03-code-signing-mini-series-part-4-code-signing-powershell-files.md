@@ -37,7 +37,7 @@ Get-ChildItem -Path $PathWithScripts -Filter *.ps1 -Recurse |
 ```powershell
 # apply signatures to all scripts in the folder
 Get-ChildItem -Path $PathWithScripts -Filter *.ps1 -Recurse |
-  Set-AuthenticodeSignature -Certificate $cert -TimestampServer http://timestamp.digicert.com  
+  Set-AuthenticodeSignature -Certificate $cert -TimestampServer http://timestamp.digicert.com
 ```
 
 使用时间戳服务器会减慢签名的速度但是确保不会用过期的证书签名：例如当某天一本证书过期了，但是签名仍然有效。因为官方的时间戳服务器，签名仍然有效，因为官方的时间戳服务器证明该签名是在证书过期之前应用的。

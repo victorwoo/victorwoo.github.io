@@ -42,10 +42,10 @@ PS> Write-EventLog -LogName PowerShellPrivateLog -Message 'Something went wrong!
 
 PS> Get-EventLog -LogName PowerShellPrivateLog | ft -AutoSize
 
-Index Time         EntryType   Source InstanceID Message              
------ ----         ---------   ------ ---------- -------              
+Index Time         EntryType   Source InstanceID Message
+----- ----         ---------   ------ ---------- -------
     2 Jan 30 21:57 Error       Work            1 Something went wrong!
-    1 Jan 30 21:57 Information Work            1 Script Started 
+    1 Jan 30 21:57 Information Work            1 Script Started
 ```
 
 当您创建日志时，必须指定一个合法的 `-Source` 名称。使用这项技术的一个好处是您可以用 `Get-EventLog` 来方便地分析您的日志记录。

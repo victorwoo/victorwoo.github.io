@@ -22,7 +22,7 @@ tags:
 	    $e = $psISE.CurrentFile.Editor
 	    $Column = $e.CaretColumn
 	    $Line = $e.CaretLine
-	    
+
 	    $AST = [Management.Automation.Language.Parser]::ParseInput($e.Text,[ref]$null,[ref]$null)
 	    $AST.Find({param($ast)
 	            ($ast -is [System.Management.Automation.Language.CommandAst]) -and
@@ -31,7 +31,7 @@ tags:
 	            ($ast.Extent.EndLineNumber -eq $Line -and $ast.Extent.EndColumnNumber -ge $Column))}, $true) |
 	            Select-Object -ExpandProperty CommandElements |
 	            ForEach-Object {
-	                $name = $_.Value  
+	                $name = $_.Value
 	                $AST.Find({param($ast)
 	                        ($ast -is [System.Management.Automation.Language.FunctionDefinitionAst]) -and
 	                        ($ast.Name -eq $name)}, $true) |
@@ -42,7 +42,7 @@ tags:
 	            }
 	}
 
-	$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add("Goto Definition",{Find-Definition},'F12') 
+	$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add("Goto Definition",{Find-Definition},'F12')
 
 
 <!--本文国际来源：[Go to Function Definition on F12](http://community.idera.com/powershell/powertips/b/tips/posts/go-to-function-definition-on-f12)-->

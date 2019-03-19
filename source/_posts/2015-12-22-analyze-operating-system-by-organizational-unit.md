@@ -15,11 +15,11 @@ tags:
 以下是一个快捷的脚本，扫描 Active Directory 中的所有 OU，得到所有的计算机账户，然后将每个 OU 的信息按照操作系统分组：
 
     #requires -Version 2 -Modules ActiveDirectory
-    
+
     Get-ADOrganizationalUnit -Filter * |
       ForEach-Object {
         $OU = $_
-    
+
         Get-ADComputer -Filter * -SearchBase $OU.DistinguishedName -SearchScope SubTree -Properties Enabled, OperatingSystem |
           Where-Object { $_.Enabled -eq $true } |
           Group-Object -Property OperatingSystem -NoElement |

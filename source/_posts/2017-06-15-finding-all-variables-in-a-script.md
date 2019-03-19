@@ -21,7 +21,7 @@ $tokens = $errors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile($filepath, [ref]$tokens, [ref]$errors )
 
 # find variables
-$ast.FindAll( { $true }, $true) | 
+$ast.FindAll( { $true }, $true) |
   Where-Object { $_.GetType().Name -eq 'VariableExpressionAst' } |
   Select-Object -Property VariablePath -ExpandProperty Extent |
   Select-Object -Property * -ExcludeProperty *ScriptPosition |
@@ -29,7 +29,7 @@ $ast.FindAll( { $true }, $true) |
 
 
 # find commands
-$ast.FindAll( { $true }, $true)  | 
+$ast.FindAll( { $true }, $true)  |
   Where-Object { $_.GetType().Name -eq 'CommandAst' } |
   Select-Object -ExpandProperty Extent  |
   Select-Object -Property * -ExcludeProperty *ScriptPosition |

@@ -21,7 +21,7 @@ PS> $host.UI.RawUI.ForegroundColor = 'Red'
 
 PS> $host.UI.RawUI.ForegroundColor = 'White'
 
-PS>  
+PS>
 ```
 
 这些命令先将前景色改为红色，然后改回白色。
@@ -30,7 +30,7 @@ PS>
 但是您怎么知道控制台支持的颜色名称呢？首先您需要知道 `ForegroundColor` 的真实数据类型：
 
 ```powershell
-PS> $host.UI.RawUI.ForegroundColor.GetType().FullName 
+PS> $host.UI.RawUI.ForegroundColor.GetType().FullName
 System.ConsoleColor
 ```
 

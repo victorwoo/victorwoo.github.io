@@ -17,7 +17,7 @@ tags:
 例如，当您试图根据电子邮箱查找用户时，客户端的 `Where-Object` 语句将会将所有 AD 用户推到您的计算机上，并且通过本地的 `Where-Object` 来确认您需要的用户：
 
     #requires -Version 1 -Modules ActiveDirectory
-    
+
     # inefficient client-side filter
     Get-ADUser -Filter * | Where-Object { $_.mail -ne $null }
 
@@ -26,10 +26,10 @@ tags:
 所以更常见的是，在第一处使用 LDAP 查询字符串更自然。这两条语句将会快速地找出所有包含（和不包含）邮箱地址的用户账户：
 
     #requires -Version 1 -Modules ActiveDirectory
-    
+
     # any user with a mail address
     Get-ADUser -LDAPFilter '(mail=*)'
-    
+
     # any user with NO mail address
     Get-ADUser -LDAPFilter '(!mail=*)'
 

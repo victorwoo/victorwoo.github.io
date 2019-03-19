@@ -21,7 +21,7 @@ PowerShell 是令人惊叹的。它可以根据您选择的关键词搜索 YouTu
 PowerShell 将会启动您的 Web 浏览器并且播放视频。太棒了！
 
 	$keyword = "Learn PowerShell"
-	
+
 	Invoke-RestMethod -Uri "https://gdata.youtube.com/feeds/api/videos?v=2&q=$($keyword.Replace(' ','+'))" |
 	Select-Object -Property Title, @{N='Author';E={$_.Author.Name}}, @{N='Link';E={$_.Content.src}}, @{N='Updated';E={[DateTime]$_.Updated}} |
 	Sort-Object -Property Updated -Descending |

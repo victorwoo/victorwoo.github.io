@@ -23,9 +23,9 @@ function Get-ProcessList
     [ValidateSet('GridView','String')]
     $OutputMode = 'String'
   )
-  
+
   Get-Process | & "Out-$OutputMode"
-  
+
 }
 
 # output as a string

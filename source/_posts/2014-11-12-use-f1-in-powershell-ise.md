@@ -17,9 +17,9 @@ _适用于 PowerShell ISE 3 及以上版本_
 当您下载了 PowerShell 帮助文件之后（在提升权限的 shell 中，用 `Update-Help`），您就可以用 `Get-Help` 命令来查找许多有用主题背后的信息。例如，以下代码将列出所有包含关键字“Parameter”的主题：
 
     PS> Get-Help parameter
-    
-    Name                              Category  Module                    Synopsis 
-    ----                              --------  ------                    -------- 
+
+    Name                              Category  Module                    Synopsis
+    ----                              --------  ------                    --------
     Get-ClusterParameter              Cmdlet    FailoverClusters          Get-Cl...
     Set-ClusterParameter              Cmdlet    FailoverClusters          Set-Cl...
     about_CommonParameters            HelpFile                            Descri...
@@ -27,7 +27,7 @@ _适用于 PowerShell ISE 3 及以上版本_
     about_Parameters                  HelpFile                            Descri...
     about_Parameters_Default_Values   HelpFile                            Descri...
     about_ActivityCommonParameters    HelpFile                            Descri...
-    about_WorkflowCommonParameters    HelpFile                   
+    about_WorkflowCommonParameters    HelpFile
 
 一般性的帮助主题都是以“about_”开头的。
 

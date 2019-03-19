@@ -29,7 +29,7 @@ tags:
 # 故障转移代码
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/js/libs/jquery-2.0.3.min.js"><\/script>')</script>  
+    <script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/js/libs/jquery-2.0.3.min.js"><\/script>')</script>
 
 # 引用多个script
 

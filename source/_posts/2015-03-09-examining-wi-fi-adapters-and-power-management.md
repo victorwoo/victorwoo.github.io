@@ -17,31 +17,31 @@ _适用于 Windows 8.1/Server 2012 R2_
 Windows 8.1 和 Server 2012 R2 带来了一系列好用的网卡管理 cmdlet。例如当您希望调查 Wi-Fi 连接问题时，或是检查为什么 Wake-On-LAN 功能未能唤醒机器时，检查网卡电源管理设置就十分有意思了。
 
 现在是小菜一碟了：
-     
+
     PS> Get-NetAdapter
-    
+
     Name                      InterfaceDescription                   ifIndex Status
-                           
+
     ----                      --------------------                    ------- -----
     Bluetooth-Netzwerkverb... Bluetooth-Gerät (PAN)                         7 Di...
-    WiFi                      Intel(R) Wireless-N 7260                      3 Up   
-    
-    
-    
+    WiFi                      Intel(R) Wireless-N 7260                      3 Up
+
+
+
     PS> Get-NetAdapter -Name WiFi
-    
+
     Name                      InterfaceDescription                   ifIndex Status
-                          
+
     ----                      --------------------                    ------- -----
-    WiFi                      Intel(R) Wireless-N 7260                      3 Up    
-     
+    WiFi                      Intel(R) Wireless-N 7260                      3 Up
+
 
 只要您知道网卡的名称，那么查询它电源管理设置的方法是：
 
-     
+
     PS> Get-NetAdapter -Name WiFi | Get-NetAdapterPowerManagement
-    
-    
+
+
     InterfaceDescription    : Intel(R) Wireless-N 7260
     Name                    : WiFi
     ArpOffload              : Enabled
@@ -51,8 +51,8 @@ Windows 8.1 和 Server 2012 R2 带来了一系列好用的网卡管理 cmdlet。
     SelectiveSuspend        : Unsupported
     DeviceSleepOnDisconnect : Disabled
     WakeOnMagicPacket       : Enabled
-    WakeOnPattern           : Enabled 
-     
+    WakeOnPattern           : Enabled
+
 
 请注意您需要管理员权限来查看电源管理设置，否则会得到一个误导性的错误信息，提示设备工作不正常。
 

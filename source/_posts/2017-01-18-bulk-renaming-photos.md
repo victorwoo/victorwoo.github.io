@@ -19,7 +19,7 @@ tags:
 $Path = "$home\Pictures"
 $Filter = '*.jpg'
 
-Get-ChildItem -Path $Path -Filter $Filter | 
+Get-ChildItem -Path $Path -Filter $Filter |
   Rename-Item -NewName {$_.name -replace 'DSC','TEST'}
 ```
 

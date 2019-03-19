@@ -38,8 +38,8 @@ Document 'Report'  {
     Paragraph 'BIOS details:' -Bold
     $bios = Get-WmiObject -Class Win32_BIOS | Out-String
     Paragraph $bios.Trim()
-} | 
-Export-Document -Path $OutPath -Format Word,Html,Text 
+} |
+Export-Document -Path $OutPath -Format Word,Html,Text
 
 # open the generated documents
 explorer $OutPath

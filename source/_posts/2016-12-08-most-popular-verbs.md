@@ -15,8 +15,8 @@ tags:
 让我们来看看您的 PowerShell 中哪个命令动词是最常用的：
 
 ```powershell
-Get-Command -CommandType cmdlet, function | 
-Group-Object -Property Verb | 
+Get-Command -CommandType cmdlet, function |
+Group-Object -Property Verb |
 Sort-Object -Property Count -Descending
 ```
 
@@ -24,14 +24,14 @@ Sort-Object -Property Count -Descending
 
 
 ```
-Count Name                      Group                                            
------ ----                      -----                                            
+Count Name                      Group
+----- ----                      -----
   456 Get                       {Get-AppBackgroundTask, Get-AppvVirtualProcess...
   210 Set                       {Set-AssignedAccess, Set-AutologgerConfig, Set...
   120 Remove                    {Remove-AutologgerConfig, Remove-BCDataCacheEx...
   102 New                       {New-AutologgerConfig, New-DAEntryPointTableIt...
    72 Enable                    {Enable-BCDistributed, Enable-BCDowngrading, E...
-   70                           {A:, ABC, AfterAll, AfterAll...}                 
+   70                           {A:, ABC, AfterAll, AfterAll...}
    67 Add                       {Add-BCDataCacheExtension, Add-BitLockerKeyPro...
    65 Disable                   {Disable-BC, Disable-BCDowngrading, Disable-BC...
    28 Start                     {Start-Animation, Start-AppBackgroundTask, Sta...
@@ -81,46 +81,46 @@ Count Name                      Group
     3 Expand                    {Expand-Archive, Expand-WindowsCustomDataImage...
     3 Dismount                  {Dismount-DiskImage, Dismount-AppxVolume, Dism...
     3 Close                     {Close-Control, Close-SmbOpenFile, Close-SmbSe...
-    3 Convert                   {Convert-Alias, Convert-Path, Convert-String}    
-    2 Use                       {Use-Transaction, Use-WindowsUnattend}           
+    3 Convert                   {Convert-Alias, Convert-Path, Convert-String}
+    2 Use                       {Use-Transaction, Use-WindowsUnattend}
     2 Undo                      {Undo-DtcDiagnosticTransaction, Undo-Transaction}
-    2 Trace                     {Trace-Command, Trace-SteroidsOutput}            
-    2 Split                     {Split-Path, Split-WindowsImage}                 
-    2 Resolve                   {Resolve-DnsName, Resolve-Path}                  
-    2 Measure                   {Measure-Command, Measure-Object}                
-    2 Join                      {Join-DtcDiagnosticResourceManager, Join-Path}   
-    2 Exit                      {Exit-PSHostProcess, Exit-PSSession}             
-    2 Read                      {Read-PrinterNfcTag, Read-Host}                  
-    2 Block                     {Block-FileShareAccess, Block-SmbShareAccess}    
-    2 Enter                     {Enter-PSHostProcess, Enter-PSSession}           
-    2 Revoke                    {Revoke-FileShareAccess, Revoke-SmbShareAccess}  
-    2 Do                        {Do-Something, Do-SomethingWeird}                
-    2 Sync                      {Sync-NetIPsecRule, Sync-AppvPublishingServer}   
-    2 Edit                      {Edit-StringList, Edit-CIPolicyRule}             
-    2 Hide                      {Hide-UIElement, Hide-VirtualDisk}               
-    2 Grant                     {Grant-FileShareAccess, Grant-SmbShareAccess}    
-    1 Unlock                    {Unlock-BitLocker}                               
-    1 Unpublish                 {Unpublish-AppvClientPackage}                    
-    1 Unprotect                 {Unprotect-CmsMessage}                           
-    1 Open                      {Open-NetGPO}                                    
-    1 Lock                      {Lock-BitLocker}                                 
-    1 Tee                       {Tee-Object}                                     
-    1 Switch                    {Switch-Certificate}                             
-    1 Sort                      {Sort-Object}                                    
-    1 Backup                    {Backup-BitLockerKeyProtector}                   
-    1 Protect                   {Protect-CmsMessage}                             
-    1 Compress                  {Compress-Archive}                               
-    1 Pop                       {Pop-Location}                                   
-    1 Merge                     {Merge-CIPolicy}                                 
-    1 Encrypt                   {Encrypt-Text}                                   
-    1 Limit                     {Limit-EventLog}                                 
-    1 Group                     {Group-Object}                                   
-    1 ForEach                   {ForEach-Object}                                 
-    1 Confirm                   {Confirm-SecureBootUEFI}                         
-    1 Decrypt                   {Decrypt-Text}                                   
-    1 Compare                   {Compare-Object}                                 
-    1 Checkpoint                {Checkpoint-Computer}                            
-    1 Push                      {Push-Location}                                  
+    2 Trace                     {Trace-Command, Trace-SteroidsOutput}
+    2 Split                     {Split-Path, Split-WindowsImage}
+    2 Resolve                   {Resolve-DnsName, Resolve-Path}
+    2 Measure                   {Measure-Command, Measure-Object}
+    2 Join                      {Join-DtcDiagnosticResourceManager, Join-Path}
+    2 Exit                      {Exit-PSHostProcess, Exit-PSSession}
+    2 Read                      {Read-PrinterNfcTag, Read-Host}
+    2 Block                     {Block-FileShareAccess, Block-SmbShareAccess}
+    2 Enter                     {Enter-PSHostProcess, Enter-PSSession}
+    2 Revoke                    {Revoke-FileShareAccess, Revoke-SmbShareAccess}
+    2 Do                        {Do-Something, Do-SomethingWeird}
+    2 Sync                      {Sync-NetIPsecRule, Sync-AppvPublishingServer}
+    2 Edit                      {Edit-StringList, Edit-CIPolicyRule}
+    2 Hide                      {Hide-UIElement, Hide-VirtualDisk}
+    2 Grant                     {Grant-FileShareAccess, Grant-SmbShareAccess}
+    1 Unlock                    {Unlock-BitLocker}
+    1 Unpublish                 {Unpublish-AppvClientPackage}
+    1 Unprotect                 {Unprotect-CmsMessage}
+    1 Open                      {Open-NetGPO}
+    1 Lock                      {Lock-BitLocker}
+    1 Tee                       {Tee-Object}
+    1 Switch                    {Switch-Certificate}
+    1 Sort                      {Sort-Object}
+    1 Backup                    {Backup-BitLockerKeyProtector}
+    1 Protect                   {Protect-CmsMessage}
+    1 Compress                  {Compress-Archive}
+    1 Pop                       {Pop-Location}
+    1 Merge                     {Merge-CIPolicy}
+    1 Encrypt                   {Encrypt-Text}
+    1 Limit                     {Limit-EventLog}
+    1 Group                     {Group-Object}
+    1 ForEach                   {ForEach-Object}
+    1 Confirm                   {Confirm-SecureBootUEFI}
+    1 Decrypt                   {Decrypt-Text}
+    1 Compare                   {Compare-Object}
+    1 Checkpoint                {Checkpoint-Computer}
+    1 Push                      {Push-Location}
     1 Where                     {Where-Object}
 ```
 
@@ -128,18 +128,18 @@ Count Name                      Group
 
 
 ```
-PS C:\> Get-Command -CommandType cmdlet, function  | 
-Group-Object -Property Verb | 
+PS C:\> Get-Command -CommandType cmdlet, function  |
+Group-Object -Property Verb |
 Sort-Object -Property Count -Descending |
 Where-Object { $_.Name } |
 Select-Object -First 6 -Property Count, Name
 
-Count Name  
------ ----  
-  456 Get   
-  210 Set   
+Count Name
+----- ----
+  456 Get
+  210 Set
   120 Remove
-  102 New   
+  102 New
    72 Enable
    67 Add
 ```

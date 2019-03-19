@@ -18,7 +18,7 @@ tags:
 
 ```powershell
 $Path = "$home\desktop\tobias.pfx"
-$cert = Get-PfxCertificate -FilePath $Path 
+$cert = Get-PfxCertificate -FilePath $Path
 
 $cert | Select-Object -Property *
 ```
@@ -35,16 +35,16 @@ function Load-PfxCertificate
     [String]
     [Parameter(Mandatory)]
     $FilePath,
-    
+
     [SecureString]
     [Parameter(Mandatory)]
     $Password
   )
-  
+
   # get clear text password
   $plaintextPassword = [PSCredential]::new("X", $Password).GetNetworkCredential().Password
-  
-  
+
+
   [void][System.Reflection.Assembly]::LoadWithPartialName("System.Security")
   $container = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
   $container.Import($FilePath, $plaintextPassword, 'PersistKeySet')
@@ -54,16 +54,16 @@ function Load-PfxCertificate
 
 以下是这个函数工作的方式：
 
-```powershell     
+```powershell
 PS C:\> $pwd = 'secret' | ConvertTo-SecureString -AsPlainText -Force
 PS C:\> $path = "$home\desktop\tobias.pfx"
 PS C:\> $cert = Load-PfxCertificate -FilePath $path -Password $pwd
 
 PS C:\> $cert
 
-Thumbprint                                Subject                              
-----------                                -------                              
-322CA0B1F37F43B26D4D8DE17DCBF3E2C17CE111  CN=Tobias 
+Thumbprint                                Subject
+----------                                -------
+322CA0B1F37F43B26D4D8DE17DCBF3E2C17CE111  CN=Tobias
 ```
 
 修改 `Load-PfxCertificate` 的最后一行，可以支持多于一个证书。改函数永远返回第一个证书 (`$container[0]`)，但是可以选择任意另一个下标。

@@ -23,8 +23,8 @@ $TaskName = 'RunPSScriptAt6'
 $User= "train\tweltner"
 $scriptPath = "\\Server01\Scripts\find-newaduser.ps1"
 
-$Trigger= New-ScheduledTaskTrigger -At 6:00am -Daily 
-$Action= New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-executionpolicy bypass -noprofile -file $scriptPath" 
+$Trigger= New-ScheduledTaskTrigger -At 6:00am -Daily
+$Action= New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-executionpolicy bypass -noprofile -file $scriptPath"
 Register-ScheduledTask -TaskName $TaskName -Trigger $Trigger -User $User -Action $Action -RunLevel Highest -Force
 ```
 

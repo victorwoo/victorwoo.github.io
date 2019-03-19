@@ -15,7 +15,7 @@ tags:
 在前一个技能中我们演示了如何在任何版本的 PowerShell 中用 .NET 方法导入数字证书。新版本的 PowerShell 有一个 "PKI" module，其中包括了 `Import-Certificate` cmdlet，导入证书变得更简单了。
 
 ```powershell
-#requires -Version 2.0 -Modules PKI 
+#requires -Version 2.0 -Modules PKI
 # importing to personal store
 $Path = 'C:\Path\To\CertFile.cer'
 Import-Certificate -FilePath $Path -CertStoreLocation Cert:\CurrentUser\My

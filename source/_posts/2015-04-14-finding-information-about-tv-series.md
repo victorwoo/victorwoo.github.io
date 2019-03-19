@@ -17,14 +17,14 @@ PowerShell 可以查询基于 XML 内容的网站，以下是一个查询电影�
 只需要输入您感兴趣的电视剧名称即可。如果您不能直接访问 Internet，可以用 `-Proxy` 参数指定代理服务器。
 
     #requires -Version 3
-    
+
     $name = 'stargate'
     $url = "http://thetvdb.com/api/GetSeries.php?seriesname=$name&language=en"
-    
+
     $page = Invoke-WebRequest -Uri $url <#-Proxy 'http://proxy....:8080' -ProxyUseDefaultCredentials#>
     $content = $page.Content
-    
-    
+
+
     $xml = [XML]$content
     $xml.Data.Series | Out-GridView
 

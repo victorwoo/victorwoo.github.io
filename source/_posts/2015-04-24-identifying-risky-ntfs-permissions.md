@@ -20,15 +20,15 @@ tags:
 
     # list of paths to check for dangerous NTFS permissions
     $pathsToCheck = $env:Path -split ';'
-    
+
     # these are the bits to watch for
     # if *any* one of these is set, the folder is reported
     $dangerousBitsMask = '011010000000101010110'
     $dangerousBits = [Convert]::ToInt64($dangerousBitsMask, 2)
-    
+
     # check all paths...
-    $pathsToCheck | 
-    ForEach-Object { 
+    $pathsToCheck |
+    ForEach-Object {
       $path = $_
       # ...get NTFS security descriptor...
       $acl = Get-Acl -Path  $path

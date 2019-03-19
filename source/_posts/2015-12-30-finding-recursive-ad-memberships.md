@@ -17,7 +17,7 @@ tags:
 您所需的是某个成员的 DN。然后，您可以像这样使用它：
 
 ```powershell
-#requires -Version 1 -Modules ActiveDirectory 
+#requires -Version 1 -Modules ActiveDirectory
 
 $DN = 'place DN here!'
 Get-ADGroup -LDAPFilter "(member:1.2.840.113556.1.4.1941:=$($DN))"

@@ -22,7 +22,7 @@ $UserName = $env:USERNAME
 $Password = Read-Host -Prompt "Enter password to test"
 
 # test password
-Add-Type -AssemblyName System.DirectoryServices.AccountManagement 
+Add-Type -AssemblyName System.DirectoryServices.AccountManagement
 $type = [DirectoryServices.AccountManagement.ContextType]::Machine
 $PrincipalContext = [DirectoryServices.AccountManagement.PrincipalContext]::new($type)
 $PrincipalContext.ValidateCredentials($UserName,$Password)

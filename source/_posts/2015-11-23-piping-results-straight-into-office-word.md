@@ -15,23 +15,23 @@ tags:
 只需要几行代码，您就可以实现一个 `Out-OfficeWord` 指令。它接受传入的数据并将它们插入一个新的 Word 文档中（假设 Word 已经安装）。
 
     #requires -Version 1
-    
+
     function Out-OfficeWord
     {
       param
       (
         $Font = 'Courier',
-        
+
         $FontSize = 12,
-        
+
         $Width = 80,
-        
+
         [switch]
         $Landscape
       )
-    
+
       $Text = $Input | Out-String -Width $Width
-      
+
       $WordObj = New-Object -ComObject Word.Application
       $document = $WordObj.Documents.Add()
       $document.PageSetup.Orientation = [Int][bool]$Landscape

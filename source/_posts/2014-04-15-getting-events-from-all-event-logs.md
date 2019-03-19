@@ -18,26 +18,26 @@ tags:
 
     # calculate start time (one hour before now)
     $Start = (Get-Date) - (New-Timespan -Hours 1)
-    $Computername = $env:COMPUTERNAME 
-     
+    $Computername = $env:COMPUTERNAME
+
     # Getting all event logs
     Get-EventLog -AsString -ComputerName $Computername |
       ForEach-Object {
         # write status info
         Write-Progress -Activity "Checking Eventlogs on \\$ComputerName" -Status $_
-    
+
         # get event entries and add the name of the log this came from
         Get-EventLog -LogName $_ -EntryType Error, Warning -After $Start -ComputerName $ComputerName -ErrorAction SilentlyContinue |
-          Add-Member NoteProperty EventLog $_ -PassThru 
-           
+          Add-Member NoteProperty EventLog $_ -PassThru
+
       } |
       # sort descending
       Sort-Object -Property TimeGenerated -Descending |
       # select the properties for the report
-      Select-Object EventLog, TimeGenerated, EntryType, Source, Message | 
+      Select-Object EventLog, TimeGenerated, EntryType, Source, Message |
       # output into grid view window
-      Out-GridView -Title "All Errors & Warnings from \\$Computername" 
-    
+      Out-GridView -Title "All Errors & Warnings from \\$Computername"
+
 在这个脚本的顶部，您可以设置希望查询的远程主机，以及希望获取的最近小时数。
 
 接下来，这个脚本获取该机器上所有可用的日志文件，然后用一个循环来获取指定时间区间中的错误和警告记录。要想知道哪个事件是来自哪个日志文件，脚本还用 `Add-Member` 为日志记录添加了一个新的“EventLog”属性。

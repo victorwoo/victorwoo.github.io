@@ -15,7 +15,7 @@ tags:
 这行代码将在您的配置文件中查找所有 Word 文档：
 
 ```powershell
-Get-ChildItem -Path $home -Filter *.doc* -Recurse 
+Get-ChildItem -Path $home -Filter *.doc* -Recurse
 ```
 
 If you’d like, you can easily print them all. Here is how:

@@ -24,7 +24,7 @@ tags:
     $Filter = '*.ps1'
     $Prefix = 'powershellscript'
     $Counter = 1
-    
+
     Get-ChildItem -Path $Path -Filter $Filter -Recurse |
       Rename-Item -NewName {
         $extension = [System.IO.Path]::GetExtension($_.Name)

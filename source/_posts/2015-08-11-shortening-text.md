@@ -16,14 +16,14 @@ tags:
 
     $text = "Some text"
     $fromRight = 3
-    
+
     $text.Substring(0, $text.Length - $fromRight)
 
 一个更强大的方法是使用 `-replace` 操作符结合正则表达式：
 
     $text = "Some text"
     $fromRight = 3
-    
+
     $text -replace ".{$fromRight}$"
 
 这段代码将去掉文字尾部（`$`）之前 `$fromRight` 个任意字符（"`.`"）。
@@ -32,7 +32,7 @@ tags:
 
     $text1 = "Some text with digits267686783"
     $text2 = "Some text with digits3"
-    
+
     $text1 -replace "\d{0,5}$"
     $text2 -replace "\d{0,5}$"
 

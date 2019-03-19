@@ -18,23 +18,23 @@ tags:
 
 以下是一段示例代码：
 
-    filter Stop-Pipeline 
+    filter Stop-Pipeline
     {
          param
          (
              [scriptblock]
              $condition = {$true}
          )
-    
-         if (& $condition) 
+
+         if (& $condition)
          {
            continue
          }
          $_
     }
-    
+
     do {
-        Get-ChildItem c:\Windows -Recurse -ErrorAction SilentlyContinue | Stop-Pipeline { ($_.FullName.ToCharArray() -eq '\').Count -gt 3 } 
+        Get-ChildItem c:\Windows -Recurse -ErrorAction SilentlyContinue | Stop-Pipeline { ($_.FullName.ToCharArray() -eq '\').Count -gt 3 }
     } while ($false)
 
 该管道方法递归扫描 Windows 文件夹。代码中有一个名为 `Stop-Pipeline` 的新命令。您可以将一个脚本块传给它，如果该脚本块的执行结果为 `$true`，该管道将会退出。
@@ -47,9 +47,9 @@ tags:
 
     $start = Get-Date
     $MaxSeconds = 10
-    
+
     do {
-        Get-ChildItem c:\Windows -Recurse -ErrorAction SilentlyContinue | Stop-Pipeline { ((Get-Date) - $start).TotalSeconds -gt $MaxSeconds } 
+        Get-ChildItem c:\Windows -Recurse -ErrorAction SilentlyContinue | Stop-Pipeline { ((Get-Date) - $start).TotalSeconds -gt $MaxSeconds }
     } while ($false)
 
 如果您希望保存管道的结果而不是输出它们，只需要在“do”语句之前放置一个变量。

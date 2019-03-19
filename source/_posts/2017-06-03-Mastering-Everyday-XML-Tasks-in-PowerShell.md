@@ -23,70 +23,70 @@ PowerShell 对 XML 的支持非常酷。这篇文章整理了所有日常的 XML
 
     # 这是文档存储的路径:
     $Path = "$env:temp\inventory.xml"
-    
+
     # 新建一个 XMLTextWriter 来创建 XML:
     $XmlWriter = New-Object System.XMl.XmlTextWriter($Path,$Null)
-    
+
     # 设置排版参数:
     $xmlWriter.Formatting = 'Indented'
     $xmlWriter.Indentation = 1
     $XmlWriter.IndentChar = "`t"
-    
+
     # 写入头部:
     $xmlWriter.WriteStartDocument()
-    
+
     # 声明 XSL
     $xmlWriter.WriteProcessingInstruction("xml-stylesheet", "type='text/xsl' href='style.xsl'")
-    
+
     # 创建根对象“machines”，并且添加一些属性
     $XmlWriter.WriteComment('List of machines')
     $xmlWriter.WriteStartElement('Machines')
     $XmlWriter.WriteAttributeString('current', $true)
     $XmlWriter.WriteAttributeString('manager', 'Tobias')
-    
+
     # 加入一些随机的节点
     for($x=1; $x -le 10; $x++)
     {
         $server = 'Server{0:0000}' -f $x
         $ip = '{0}.{1}.{2}.{3}' -f  (0..256 | Get-Random -Count 4)
-    
+
         $guid = [System.GUID]::NewGuid().ToString()
-    
+
         # 每个数据集的名字都是“machine”，并且增加一个随机的属性：
         $XmlWriter.WriteComment("$x. machine details")
         $xmlWriter.WriteStartElement('Machine')
         $XmlWriter.WriteAttributeString('test', (Get-Random))
-    
+
         # 增加三条信息：
         $xmlWriter.WriteElementString('Name',$server)
         $xmlWriter.WriteElementString('IP',$ip)
         $xmlWriter.WriteElementString('GUID',$guid)
-    
+
         # 增加一个含有属性和正文的节点：
         $XmlWriter.WriteStartElement('Information')
         $XmlWriter.WriteAttributeString('info1', 'some info')
         $XmlWriter.WriteAttributeString('info2', 'more info')
         $XmlWriter.WriteRaw('RawContent')
         $xmlWriter.WriteEndElement()
-    
+
         # 增加一个含有 CDATA 段的节点：
         $XmlWriter.WriteStartElement('CodeSegment')
         $XmlWriter.WriteAttributeString('info3', 'another attribute')
         $XmlWriter.WriteCData('this is untouched code and can contain special characters /\@<>')
         $xmlWriter.WriteEndElement()
-    
+
         # 关闭“machine”节点：
         $xmlWriter.WriteEndElement()
     }
-    
+
     # 关闭“machines”节点：
     $xmlWriter.WriteEndElement()
-    
+
     # 完成整个文档：
     $xmlWriter.WriteEndDocument()
     $xmlWriter.Flush()
     $xmlWriter.Close()
-    
+
     notepad $path
 
 这段脚本用随机数据生成了一个虚拟的服务器进货单。结果自动用记事本，看起来如下：
@@ -128,13 +128,13 @@ PowerShell 对 XML 的支持非常酷。这篇文章整理了所有日常的 XML
 
     # 这是 XML 例子文件的存储路径：
     $Path = "$env:temp\inventory.xml"
-    
+
     # 将它加载入 XML 对象：
     $xml = New-Object -TypeName XML
     $xml.Load($Path)
     # 注意：如果 XML 格式是非法的，这里会报异常
     # 一定要注意节点名不能包含空格
-    
+
     # 只需要在节点中自由遍历，就能 select 获得您要的信息：
     $Xml.Machines.Machine | Select-Object -Property Name, IP
 
@@ -157,7 +157,7 @@ PowerShell 对 XML 的支持非常酷。这篇文章整理了所有日常的 XML
 
     # 这是 XML 例子文件的存储路径：
     $Path = "$env:temp\inventory.xml"
-    
+
     # 将它读入一个 XML 对象：
     [XML]$xml = Get-Content $Path
 
@@ -206,7 +206,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
     $item.node.Name = "NewServer0006"
     $item.node.IP = "10.10.10.12"
     $item.node.Information.Info1 = 'new attribute info'
-    
+
     $NewPath = "$env:temp\inventory2.xml"
     $xml.Save($NewPath)
     notepad $NewPath
@@ -230,7 +230,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
     {
         $item.node.Name = 'Prod_' + $item.node.Name
     }
-    
+
     $NewPath = "$env:temp\inventory2.xml"
     $xml.Save($NewPath)
     notepad $NewPath
@@ -267,16 +267,16 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
     # 克隆已有的节点结构
     $item = Select-XML -Xml $xml -XPath '//Machine[1]'
     $newnode = $item.Node.CloneNode($true)
-    
+
     # 根据需要更新信息
     # 所有其它信息都和原始节点中的一致
     $newnode.Name = 'NewServer'
     $newnode.IP = '1.2.3.4'
-    
+
     # 获取您希望新节点所附加到的父节点：
     $machines = Select-XML -Xml $xml -XPath '//Machines'
     $machines.Node.AppendChild($newnode)
-    
+
     $NewPath = "$env:temp\inventory2.xml"
     $xml.Save($NewPath)
     notepad $NewPath
@@ -319,7 +319,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
 以下是称为 `Get-ObjectProperty` 的辅助函数，有点类似 `Get-Member` 的意思。它能告诉您对象中的哪个属性存放了您想要的值。让我们来看看：
 
     PS> $host | Get-ObjectProperty -Depth 2 -Name *color*
-    
+
     Name                    Value                   Path                    Type
     ----                    -----                   ----                    ----
     TokenColors                                     $obj1.PrivateData.To... Microsoft.PowerShel...
@@ -348,7 +348,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
 虽然您可以通过管道输入多个对象，但是最好一次只导入一个，以免产生大量的结果数据。这行代码将列出进程对象所有嵌套的属性，递归层次为 5，将产生大量的结果：
 
     PS> Get-Process -id $pid | Get-ObjectProperty -Depth 5 -IsNumeric
-    
+
     Name                    Value                   Path                    Type
     ----                    -----                   ----                    ----
     Handles                 684                     $obj1.Handles           System.Int32
@@ -375,7 +375,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
 这行代码将返回 spooler 服务对象中所有“String”类型的嵌套属性：
 
     PS> Get-Service -Name spooler | Get-ObjectProperty -Type System.String
-    
+
     Name                    Value                   Path                    Type
     ----                    -----                   ----                    ----
     Name                    spooler                 $obj1.Name              System.String
@@ -387,7 +387,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
     Name                    RpcEptMapper            $obj1.RequiredServic... System.String
     DisplayName             RPC Endpoint Mapper     $obj1.RequiredServic... System.String
     (...)
-    
+
 
 以下是 `Get-ObjectProperty` 的源代码。它虽然不只是几行代码，但仍然相当短小精悍。
 
@@ -401,14 +401,14 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
         $Value = '*',
         $Type = '*',
         [Switch]$IsNumeric,
-    
+
         [Parameter(Mandatory=$true,ValueFromPipeline=$true)]
         [Object[]]$InputObject,
-    
+
         $Depth = 4,
         $Prefix = '$obj'
       )
-    
+
       Begin
       {
         $x = 0
@@ -419,12 +419,12 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
             $Node,
             [String[]]$Prefix
           )
-    
+
           $Value = @{Name='Value'; Expression={$_.'#text' }}
           Select-Xml -Xml $Node -XPath 'Property' | ForEach-Object {$i=0} {
             $rv = $_.Node | Select-Object -Property Name, $Value, Path, Type
             $isCollection = $rv.Name -eq 'Property'
-    
+
             if ($isCollection)
             {
               $CollectionItem = "[$i]"
@@ -435,9 +435,9 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
             {
               $rv.Path = ($Prefix + $rv.Name) -join '.'
             }
-    
+
             $rv
-    
+
             if (Select-Xml -Xml $_.Node -XPath 'Property')
             {
               if ($isCollection)
@@ -454,7 +454,7 @@ XPath 是非常强大的 XML 查询语言。您在网上到处都可以找到它
           }
         }
       }
-    
+
       Process
       {
         $x++

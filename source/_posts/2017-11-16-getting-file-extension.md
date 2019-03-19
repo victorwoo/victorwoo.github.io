@@ -14,8 +14,8 @@ tags:
 ---
 By converting a path to a FileInfo object, you can easily determine the path parent folder or file extension. Have a look:
 
-    ([IO.FileInfo]'c:\test\abc.ps1').Extension 
-    
+    ([IO.FileInfo]'c:\test\abc.ps1').Extension
+
     ([IO.FileInfo]'c:\test\abc.ps1').DirectoryName
 
 <!--本文国际来源：[Getting File Extension](http://community.idera.com/powershell/powertips/b/tips/posts/getting-file-extension)-->

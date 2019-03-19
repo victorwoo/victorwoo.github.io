@@ -20,7 +20,7 @@ tags:
       {
         $text += "status $x"
       }
-      $text 
+      $text
     }
 
 这段代码运行起来非常慢，因为当您向字符串中添加文本时，整个字符串都需要重新构造。然而，有一个专用的对象，叫做 `StringBuilder`。它可以做相同的事情，但是速度飞快：
@@ -28,13 +28,13 @@ tags:
     Measure-Command {
       $sb = New-Object -TypeName System.Text.StringBuilder
       $null = $sb.Append("Hello")
-      
+
       for ($x=0; $x -lt 100000; $x++)
       {
         $null = $sb.Append("status $x")
       }
-      
-      $sb.ToString() 
+
+      $sb.ToString()
     }
 
 <!--本文国际来源：[Speeding Up Scripts with StringBuilder](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-scripts-with-stringbuilder)-->

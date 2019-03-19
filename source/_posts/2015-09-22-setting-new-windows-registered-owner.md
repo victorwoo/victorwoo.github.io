@@ -15,10 +15,10 @@ tags:
 这一小段代码将提示输入新的注册所有者名，然后将更新 Windows 注册表中的值。请注意需要管理员权限。
 
     #requires -RunAsAdministrator
-    
-    
+
+
     $NewName = Read-Host -Prompt 'Enter New Registered Windows Owner'
-    
+
     Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name RegisteredOwner -Value $NewName -Type String
 
 这也是一个更改 Windows 注册表的模板代码。

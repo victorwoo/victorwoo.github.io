@@ -22,7 +22,7 @@ PowerShell 可以处理包含字符代码 0 的字符串。它用反斜杠后跟
 # create a sample text
 $text = "Part 1`0Part 2`0Part 3"
 # delimiter does not show in output...
-$text 
+$text
 # ...but can be used to split:
 $text -split "`0"
 ```

@@ -20,9 +20,9 @@ tags:
     $code = {
       Get-Process
     }
-    
+
     Invoke-Command -ScriptBlock $code -ComputerName dc-01
-    
+
 
 然而，如果您将结果用管道输出到 `Out-GridView`，`PSComputerName` 属性消失了。
 
@@ -33,7 +33,7 @@ tags:
       Get-Process |
         Select-Object -Property Name, ID, Handles, CPU
     }
-    
+
     Invoke-Command -ScriptBlock $code -ComputerName dc-01 |
       Out-GridView
 

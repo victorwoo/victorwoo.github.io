@@ -18,7 +18,7 @@ tags:
 PS> $key = (Get-WmiObject -Class SoftwareLicensingService).OA3xOriginalProductKey
 
 PS> $key
-KJU8F-XXUZH-UU776-IUZGT-HHGR5  
+KJU8F-XXUZH-UU776-IUZGT-HHGR5
 ```
 
 今日知识点：
@@ -41,15 +41,15 @@ OA3xOriginalProductKeyPkPn                     : [TH]X19-99481
 PolicyCacheRefreshRequired                     : 0
 RemainingWindowsReArmCount                     : 1001
 RequiredClientCount                            : 4294967295
-TokenActivationAdditionalInfo                  : 
-TokenActivationCertificateThumbprint           : 
+TokenActivationAdditionalInfo                  :
+TokenActivationCertificateThumbprint           :
 TokenActivationGrantNumber                     : 4294967295
-TokenActivationILID                            : 
+TokenActivationILID                            :
 TokenActivationILVID                           : 4294967295
 Version                                        : 10.0.17134.471
 VLActivationInterval                           : 4294967295
 VLRenewalInterval                              : 4294967295
-PSComputerName                                 : DESKTOP-7AAMJLF 
+PSComputerName                                 : DESKTOP-7AAMJLF
 ```
 
 <!--本文国际来源：[Managing Windows License Key](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/managing-windows-license-key)-->
@@ -70,7 +70,7 @@ tags:
 PS> $key = (Get-WmiObject -Class SoftwareLicensingService).OA3xOriginalProductKey
 
 PS> $key
-KJU8F-XXUZH-UU776-IUZGT-HHGR5  
+KJU8F-XXUZH-UU776-IUZGT-HHGR5
 ```
 
 今日知识点：
@@ -93,15 +93,15 @@ OA3xOriginalProductKeyPkPn                     : [TH]X19-99481
 PolicyCacheRefreshRequired                     : 0
 RemainingWindowsReArmCount                     : 1001
 RequiredClientCount                            : 4294967295
-TokenActivationAdditionalInfo                  : 
-TokenActivationCertificateThumbprint           : 
+TokenActivationAdditionalInfo                  :
+TokenActivationCertificateThumbprint           :
 TokenActivationGrantNumber                     : 4294967295
-TokenActivationILID                            : 
+TokenActivationILID                            :
 TokenActivationILVID                           : 4294967295
 Version                                        : 10.0.17134.471
 VLActivationInterval                           : 4294967295
 VLRenewalInterval                              : 4294967295
-PSComputerName                                 : DESKTOP-7AAMJLF 
+PSComputerName                                 : DESKTOP-7AAMJLF
 ```
 
 <!--本文国际来源：[Managing Windows License Key](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/managing-windows-license-key)-->

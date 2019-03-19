@@ -13,7 +13,7 @@ tags:
 例如，Twitter上的这条问题：
 
 > PowerShell 的 `TimeSpan` 参数将10理解为10个计时周期，10:00理解为10小时，"10"理解为10天。
-> 
+>
 > 译者注：计时周期的概念请参见 [TimeSpan.Ticks 属性](http://msdn.microsoft.com/zh-cn/library/system.timespan.ticks.aspx)。
 
 但是，这是怎么做到的呢？
@@ -52,13 +52,13 @@ tags:
 
 好了，现在考考您能不能指出这些分别是什么类型的转换，以及为什么？
 
-	[TimeSpan] 10 
-	[TimeSpan] "10" 
-	[TimeSpan] "0:10" 
+	[TimeSpan] 10
+	[TimeSpan] "10"
+	[TimeSpan] "0:10"
 
 希望本文对您有所帮助！
 
-Lee Holmes \[MSFT\]   
+Lee Holmes \[MSFT\]
 Windows PowerShell开发团队
 
 <!--本文国际来源：[Understanding PowerShell's Type Conversion Magic](http://blogs.msdn.com/b/powershell/archive/2013/06/11/understanding-powershell-s-type-conversion-magic.aspx)-->

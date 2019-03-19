@@ -21,17 +21,17 @@ _适用于 PowerShell 所有版本_
 `Sort-Object` 确保您的结果在输出到 grid view 窗口之前是不重复的。
 
     $list = @()
-    
-    $list += Get-WmiObject -Class Win32_Service -Filter 'State="Stopped" and StartMode="Auto" and ExitCode!=0' | 
-      Select-Object -Property Name, DisplayName, ExitCode, Description, PathName, DesktopInteract 
-    
-    $list += Get-WmiObject -Class Win32_Service -Filter 'ExitCode!=0 and ExitCode!=1077' | 
-      Select-Object -Property Name, DisplayName, ExitCode, Description, PathName, DesktopInteract 
-    
-    
+
+    $list += Get-WmiObject -Class Win32_Service -Filter 'State="Stopped" and StartMode="Auto" and ExitCode!=0' |
+      Select-Object -Property Name, DisplayName, ExitCode, Description, PathName, DesktopInteract
+
+    $list += Get-WmiObject -Class Win32_Service -Filter 'ExitCode!=0 and ExitCode!=1077' |
+      Select-Object -Property Name, DisplayName, ExitCode, Description, PathName, DesktopInteract
+
+
     $list |
       # remove identical (-Unique)
-      Sort-Object -Unique -Property Name | 
+      Sort-Object -Unique -Property Name |
       Out-GridView
 
 <!--本文国际来源：[Combining Results](http://community.idera.com/powershell/powertips/b/tips/posts/combining-results)-->

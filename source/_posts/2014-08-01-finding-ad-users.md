@@ -21,15 +21,15 @@ _适用于所有 PowerShell 版本_
     $SAMAccountName = 'tobias'
     $SearchRoot = 'LDAP://OU=customer,DC=company,DC=com'
     $SearchScope = 'OneLevel'
-    
+
     $ldap = "(&(objectClass=user)(samAccountName=*$SAMAccountName*))"
     $searcher = [adsisearcher]$ldap
     $searcher.SearchRoot = $SearchRoot
     $searcher.PageSize = 999
     $searcher.SearchScope = $SearchScope
-    
-    $searcher.FindAll() | 
-      ForEach-Object { $_.GetDirectoryEntry()  } | 
+
+    $searcher.FindAll() |
+      ForEach-Object { $_.GetDirectoryEntry()  } |
       Select-Object -Property *
 
 <!--本文国际来源：[Finding AD Users](http://community.idera.com/powershell/powertips/b/tips/posts/finding-ad-users)-->

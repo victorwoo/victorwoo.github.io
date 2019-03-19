@@ -27,9 +27,9 @@ $page.Images | Select-Object src, outerHTML | Out-GridView -Title Images
 
 ```powershell
 $url = "http://powershellmagazine.com"
-$page = Invoke-WebRequest -URI $url 
+$page = Invoke-WebRequest -URI $url
 
-$page.Links | Select-Object InnerText, href | Out-GridView -Title Links 
+$page.Links | Select-Object InnerText, href | Out-GridView -Title Links
 ```
 
 请注意 `Invoke-WebRequest` 需要您实现设置并且至少打开一次 Internet Explorer，除非您指定了 `-UseBasicParsing`。

@@ -15,7 +15,7 @@ tags:
 有些时候，您可能会需要不同的度量单位。例如整个系统的内存是以字节计算的。以下是一些将字节转换为 GB 并且仍然保证可读性的例子：
 
 ```powershell
-$memory = Get-WmiObject -Class Win32_ComputerSystem | 
+$memory = Get-WmiObject -Class Win32_ComputerSystem |
   Select-Object -ExpandProperty TotalPhysicalMemory
 
 $memoryGB = $memory/1GB

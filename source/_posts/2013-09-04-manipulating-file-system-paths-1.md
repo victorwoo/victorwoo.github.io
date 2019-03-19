@@ -24,7 +24,7 @@ PowerShell允许您存取多个数组元素。通过使用 `-help` 和 `-join`�
 若要重命名第二层子文件夹，试试以下代码：
 
 	$path = 'C:\users\Tobias\Desktop\functions.ps1'
-	
+
 	$array = $path -split '\\'
 	$array[2] = 'OtherUser'
 	$array -join '\'

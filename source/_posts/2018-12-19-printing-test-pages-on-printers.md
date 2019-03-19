@@ -17,12 +17,12 @@ tags:
 ```powershell
 #requires -Version 3.0 -Modules CimCmdlets, PrintManagement
 
-Get-Printer | 
+Get-Printer |
     Out-GridView -Title 'Print test page on selected printers' -OutputMode Multiple |
     ForEach-Object {
         $printerName = $_.Name
         $result = Get-CimInstance Win32_Printer -Filter "name LIKE '$printerName'" |
-            Invoke-CimMethod -MethodName printtestpage 
+            Invoke-CimMethod -MethodName printtestpage
         if ($result.ReturnValue -eq 0)
         {
             "Test page printed on $printerName."

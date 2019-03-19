@@ -39,11 +39,11 @@ Target path does not exist
 In Zeile:8 Zeichen:3
 +   throw "Target path does not exist"
 +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Target path does not exist:String) [], RuntimeExceptio 
+    + CategoryInfo          : OperationStopped: (Target path does not exist:String) [], RuntimeExceptio
     n
     + FullyQualifiedErrorId : Target path does not exist
 
-PS> 
+PS>
 ```
 
 然而，这是基于 `$ErrorActionPreference` 为缺省值 "Continue" 时的行为。当一个用户恰好将它改为 "SilentlyContinue" 来禁止错误信息时，throw 会被彻底忽略，而且所有代码将会执行：

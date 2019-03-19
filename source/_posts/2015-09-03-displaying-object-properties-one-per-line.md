@@ -23,9 +23,9 @@ tags:
     $object = Get-Process -Id $pid
     ($object | Get-Member -MemberType *Property).Name |
       ForEach-Object {
-    
+
           New-Object PSObject -Property ([Ordered]@{Property=$_; Value=$object.$_ })
-    
+
       } | Out-GridView
 
 现在，每个属性各显示在一行上，可以尽可能多地显示，而且可以根据内容搜索某个特定的属性。

@@ -20,5 +20,5 @@ tags:
 	$account = [ADSI]"LDAP://<SID=$SID>"
 	$account
 	$account.distinguishedName
- 
+
 <!--本文国际来源：[Finding Active Directory Accounts by SID](http://community.idera.com/powershell/powertips/b/tips/posts/finding-active-directory-accounts-by-sid)-->

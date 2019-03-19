@@ -22,16 +22,16 @@ tags:
 	    (
 	        $Name = '*',
 	        $DisplayName = '*',
-	        $Started 
+	        $Started
 	    )
 	    $pattern = '^.*\.exe\b'
-	
+
 	    $Name = $Name.Replace('*','%')
 	    $DisplayName = $DisplayName.Replace('*','%')
-	
+
 	    Get-WmiObject -Class Win32_Service -Filter "Name like '$Name' and DisplayName like '$DisplayName'"|
 	      ForEach-Object {
-	
+
 	        if ($_.PathName -match $pattern)
 	        {
 	            $Path = $matches[0].Trim('"')
@@ -50,7 +50,7 @@ tags:
 	        }
 	      }
 	}
-	 
+
 	Find-Service | Out-GridView
 
 <!--本文国际来源：[Finding Services in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/finding-services-in-powershell)-->

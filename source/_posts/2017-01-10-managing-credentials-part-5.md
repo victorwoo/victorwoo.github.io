@@ -18,7 +18,7 @@ tags:
 
 ```powershell
 # $secretKey MUST be of length 8 or 16
-# anyone who knows the secret can decrypt the password 
+# anyone who knows the secret can decrypt the password
 $secretKey = 'mysecretmysecret'
 $password = 'myPassword'
 

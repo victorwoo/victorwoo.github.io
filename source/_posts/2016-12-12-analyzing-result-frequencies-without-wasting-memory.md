@@ -23,13 +23,13 @@ Get-ChildItem -Path c:\Windows -File | Group-Object -Property Extension -NoEleme
 结果看起来如下：
 
 ```
-Count Name                     
------ ----                     
-   11 .exe                     
-    1 .dat                     
-    9 .log                     
-    4 .xml                     
-    1 .txt     
+Count Name
+----- ----
+   11 .exe
+    1 .dat
+    9 .log
+    4 .xml
+    1 .txt
 ...
 ```
 

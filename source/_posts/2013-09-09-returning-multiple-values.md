@@ -18,17 +18,17 @@ tags:
 	{
 	    # Value 1
 	    Get-Date -Format 'dddd'
-	
+
 	    # Value 2
 	    Get-Date -Format 'MMMM'
-	
+
 	    # Value 3
 	    Get-Date -Format 'HH:mm:ss'
 	}
-	
+
 	$day, $month, $time = Get-DateTimeInfo
-	
-	"Today is $day, the month is $month, and it is $time" 
+
+	"Today is $day, the month is $month, and it is $time"
 
 
 <!--本文国际来源：[Returning Multiple Values](http://community.idera.com/powershell/powertips/b/tips/posts/returning-multiple-values)-->

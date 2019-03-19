@@ -24,9 +24,9 @@ tags:
 当您将源对象通过管道传给 `Out-GridView` 命令时，用户将能看到所有的普通对象属性。这也许没问题，但如果您希望用户体验更好一些，您可以使用一些更高级的 PowerShell 技巧：
 
     #requires -Version 3
-    
+
     $prompt = 'Choose the process you want to terminate:'
-    
+
     Get-Process |
       Where-Object { $_.MainWindowTitle } |
       ForEach-Object {

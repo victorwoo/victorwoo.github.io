@@ -27,14 +27,14 @@ _适用于 PowerShell 所有版本_
             [System.Diagnostics.ProcessPriorityClass]
             $Priority
         )
-        
+
         $process = Get-Process -Id $pid
         $process.PriorityClass = $Priority
-    } 
+    }
 
 要降低脚本的优先级，请这样调用：
 
-    Set-Priority -Priority BelowNormal 
+    Set-Priority -Priority BelowNormal
 
 您可以稍后将优先级调回 Normal，甚至可以调高优先级使脚本获得更多资源执行。例如需要执行更重的任务，不过这会使 UI 响应性变得更差。
 

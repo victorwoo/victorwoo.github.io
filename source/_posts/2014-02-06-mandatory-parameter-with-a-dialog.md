@@ -21,7 +21,7 @@ tags:
 	            [Parameter(Mandatory=$true)]
 	            $Path
 	      )
-	
+
 	      "You entered $Path"
 	}
 
@@ -44,7 +44,7 @@ tags:
 	              if ($dlg.ShowDialog() -eq 'OK') { $dlg.FileName } else { throw 'No Path submitted'}
 	            )
 	      )
-	
+
 	      "You entered $Path"
 	}
 

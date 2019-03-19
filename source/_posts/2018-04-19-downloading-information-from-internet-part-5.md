@@ -21,7 +21,7 @@ $page = Invoke-WebRequest -Uri powershell.beer -UseBasicParsing $($page.Content 
 这个例子下载 XML 格式的货币兑换率：
 
 ```powershell
-$url = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'$result = Invoke-WebRequest -Uri $url -UseBasicParsing$xml = [xml]$result.Content$xml.Envelope.Cube.Cube.Cube 
+$url = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'$result = Invoke-WebRequest -Uri $url -UseBasicParsing$xml = [xml]$result.Content$xml.Envelope.Cube.Cube.Cube
 ```
 
 现在，有另一个名为 `Invoke-RestMethod` 的 cmdlet，专门设计来获取对象数据。基本上，它的工作方式和 `Invoke-WebRequest` 很接近，但是能够自动识别数据格式，并相应地转换它的类型。以下是用一行代码获取 psconf.eu 议程表的例子：

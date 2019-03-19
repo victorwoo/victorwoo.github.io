@@ -15,17 +15,17 @@ tags:
 以下单行代码可以列出指定月份的所有工作日：
 
     $month = 7
-    1..31 | ForEach-Object { Get-Date -Day $_ -Month $month } | 
+    1..31 | ForEach-Object { Get-Date -Day $_ -Month $month } |
       Where-Object { $_.DayOfWeek -gt 0 -and $_.DayOfWeek -lt 6 }
-    
+
 
 只需要将月份赋值给 `$month`（例子中以 7 月为例）。
 
 多添一些代码，就可以从管道中返回工作日的数量：
 
     $month = 7
-    1..31 | ForEach-Object { Get-Date -Day $_ -Month $month } | 
-      Where-Object { $_.DayOfWeek -gt 0 -and $_.DayOfWeek -lt 6 } | 
+    1..31 | ForEach-Object { Get-Date -Day $_ -Month $month } |
+      Where-Object { $_.DayOfWeek -gt 0 -and $_.DayOfWeek -lt 6 } |
       Measure-Object |
       Select-Object -ExpandProperty Count
 

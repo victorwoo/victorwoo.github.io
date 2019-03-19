@@ -18,8 +18,8 @@ tags:
 #requires -Version 2.0
 Add-Type -AssemblyName System.Speech
 $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer
-$speak.GetInstalledVoices() | 
-  Select-Object -ExpandProperty VoiceInfo | 
+$speak.GetInstalledVoices() |
+  Select-Object -ExpandProperty VoiceInfo |
   Select-Object -Property Culture, Name, Gender, Age
 ```
 

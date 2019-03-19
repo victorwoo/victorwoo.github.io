@@ -17,7 +17,7 @@ tags:
 以下是一个快速的测试，检查内存中的所有变量并查找凭据，然后返回变量和用户名，以及明文形式的密码：
 
 ```powershell
-    Get-Variable | 
+    Get-Variable |
         Where-Object Value -is [System.Management.Automation.PSCredential] |
         ForEach-Object {
             [PSCustomObject]@{

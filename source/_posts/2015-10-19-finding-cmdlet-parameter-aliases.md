@@ -17,9 +17,9 @@ PowerShell cmdlet 和函数可以带有参数，并且这些参数可以有（�
 参数别名不是自动完成的。您需要预先知道它们。以下这个脚本可以提取任意 PowerShell 函数或 cmdlet 的参数别名：
 
     #requires -Version 3
-    
+
     $command = 'Get-Process'
-    
+
     (Get-Command $command).Parameters.Values |
       Select-Object -Property Name, Aliases
 

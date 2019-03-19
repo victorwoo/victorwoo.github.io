@@ -19,12 +19,12 @@ tags:
 以下查询将会返回您域中的所有用户账户（在运行这个查询之前，您也许需要联系一下您的域管理员）：
 
 	$searcher = [ADSISearcher]"sAMAccountType=$(0x30000000)"
-	
+
 	# get all results, do not stop at 1000 results
 	$searcher.PageSize = 1000
-	
-	$searcher.FindAll() | 
-	  ForEach-Object { $_.GetDirectoryEntry() } | 
+
+	$searcher.FindAll() |
+	  ForEach-Object { $_.GetDirectoryEntry() } |
 	  Select-Object -Property * |
 	  Out-GridView
 

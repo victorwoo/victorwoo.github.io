@@ -20,12 +20,12 @@ tags:
       Get-EventLog -LogName System -EntryType Error |
       Out-GridView
     }
-    
-    $Bytes = [System.Text.Encoding]::Unicode.GetBytes($code.ToString()) 
-    $Encoded = [Convert]::ToBase64String($Bytes) 
-    
+
+    $Bytes = [System.Text.Encoding]::Unicode.GetBytes($code.ToString())
+    $Encoded = [Convert]::ToBase64String($Bytes)
+
     $args = '-noprofile -encodedcommand ' + $Encoded
-    
+
     Start-Process -FilePath powershell.exe -ArgumentList $args
 
 <!--本文国际来源：[Encode PowerShell Commands](http://community.idera.com/powershell/powertips/b/tips/posts/encode-powershell-commands)-->

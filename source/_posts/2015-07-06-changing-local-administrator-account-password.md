@@ -20,7 +20,7 @@ tags:
 
     #requires -Version 1
     $Password = 'P@ssw0rd'
-    
+
     $admin = [adsi]("WinNT://$env:computername/administrator, user")
     $admin.psbase.invoke('SetPassword', $Password)
 

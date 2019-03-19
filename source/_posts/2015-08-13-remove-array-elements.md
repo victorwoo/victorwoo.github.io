@@ -16,7 +16,7 @@ tags:
 
     $array1 = 1..100
     $array2 = 2,4,80,98
-    
+
     Compare-Object -ReferenceObject $array1 -DifferenceObject $array2 |
       Select-Object -ExpandProperty InputObject
 
@@ -26,7 +26,7 @@ tags:
 
     $array1 = 1..100
     $array2 = 2,4,80,98, 112
-    
+
     Compare-Object -ReferenceObject $array1 -DifferenceObject $array2 -ExcludeDifferent -IncludeEqual |
       Select-Object -ExpandProperty InputObject
 

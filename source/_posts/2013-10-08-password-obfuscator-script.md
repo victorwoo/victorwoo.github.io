@@ -16,22 +16,22 @@ tags:
 
 以下是一个脚本生成器。运行它，并且输入一个域/用户名和密码，脚本生成器会为您生成一段新脚本。
 
-	$pwd = Read-Host 'Enter Password' 
+	$pwd = Read-Host 'Enter Password'
 	$user = Read-Host 'Enter Username'
-	$key = 1..32 | 
+	$key = 1..32 |
 	  ForEach-Object { Get-Random -Maximum 256 }
-	
-	$pwdencrypted = $pwd | 
-	  ConvertTo-SecureString -AsPlainText -Force | 
+
+	$pwdencrypted = $pwd |
+	  ConvertTo-SecureString -AsPlainText -Force |
 	  ConvertFrom-SecureString -Key $key
-	
+
 	$text = @()
-	$text += '$password = "{0}"' -f ($pwdencrypted -join ' ') 
+	$text += '$password = "{0}"' -f ($pwdencrypted -join ' ')
 	$text += '$key = "{0}"' -f ($key -join ' ')
-	$text += '$passwordSecure = ConvertTo-SecureString -String $password -Key ([Byte[]]$key.Split(" "))' 
+	$text += '$passwordSecure = ConvertTo-SecureString -String $password -Key ([Byte[]]$key.Split(" "))'
 	$text += '$cred = New-Object system.Management.Automation.PSCredential("{0}", $passwordSecure)' -f $user
 	$text += '$cred'
-	
+
 	$newFile = $psise.CurrentPowerShellTab.Files.Add()
 	$newFile.Editor.Text = $text | Out-String
 
@@ -41,7 +41,7 @@ tags:
 	$key = "246 185 95 207 87 105 146 74 99 163 58 194 93 229 80 241 160 35 68 220 130 193 84 113 122 155 208 49 152 86 85 178"
 	$passwordSecure = ConvertTo-SecureString -String $password -Key ([Byte[]]$key.Split(" "))
 	$cred = New-Object system.Management.Automation.PSCredential("test\tobias", $passwordSecure)
-	$cred 
+	$cred
 
 当您运行它，它将生成一个 `Credential` 对象，您可以立即将它用于身份验证。只要将它传给一个需要 `Credential` 对象的形参即可。
 

@@ -18,13 +18,13 @@ tags:
 
     $object1 = @{Name='Weltner'; ID=12 }
     $object2 = @{Name='Frank'; ID=99 }
-    
-    
+
+
     $a = $object1, $object2
-    
+
     # clone entire object by serializing it back and forth:
     $b = $a | ConvertTo-Json -Depth 99 | ConvertFrom-Json
-    
+
     $b[0].Name = 'changed'
     $b[0].Name
     $a[0].Name
@@ -33,10 +33,10 @@ tags:
 
     PS C:\> $a[0].GetType().FullName
     System.Collections.Hashtable
-    
+
     PS C:\> $b[0].GetType().FullName
     System.Management.Automation.PSCustomObject
-    
+
     PS C:\>
 
 <!--本文国际来源：[Cloning Objects](http://community.idera.com/powershell/powertips/b/tips/posts/cloning-objects-0)-->

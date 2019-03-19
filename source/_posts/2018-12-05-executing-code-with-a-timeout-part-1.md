@@ -45,7 +45,7 @@ function Invoke-CodeWithTimeout
 
 所以基本上说，要让代码执行的时间不超过 5 秒，请试试以下代码：
 
-```powershell     
+```powershell
 PS> Invoke-CodeWithTimeout -Code { Start-Sleep -Seconds 6; Get-Date } -Timeout 5
 Job timed out.
 At line:18 char:7
@@ -53,11 +53,11 @@ At line:18 char:7
 +       ~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : OperationStopped: (Job timed out.:String) [], RuntimeException
     + FullyQualifiedErrorId : Job timed out.
-    
+
 
 PS> Invoke-CodeWithTimeout -Code { Start-Sleep -Seconds 3; Get-Date } -Timeout 5
 
-Thursday November 1, 2018 14:53:26 
+Thursday November 1, 2018 14:53:26
 ```
 
 该方法有效。但是，它所使用的作业相关的开销相当大。创建后台作业并将数据返回到前台任务的开销可能增加了额外的时间。所以我们将在明天的技能中寻求一个更好的方法。

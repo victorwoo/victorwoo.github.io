@@ -25,43 +25,43 @@ tags:
 当帮助文件安装完后，在 PowerShell 4.0 及以上版本就可以使用了。您可以显示一个命令的完整帮助，或只是显示示例代码：
 
     PS> Get-Help -Name Get-Random -ShowWindow
-    
+
     PS> Get-Help -Name Get-Random -Examples
-    
+
     NAME
         Get-Random
-        
+
     SYNOPSIS
         Gets a random number, or selects objects randomly from a collection.
-        
+
         -------------------------- EXAMPLE 1 --------------------------
-        
+
         PS C:\>Get-Random
         3951433
-        
-        
+
+
         This command gets a random integer between 0 (zero) and Int32.MaxValue.
-        
-        
-        
-        
+
+
+
+
         -------------------------- EXAMPLE 2 --------------------------
-        
+
         PS C:\>Get-Random -Maximum 100
         47
-        
-        
+
+
         This command gets a random integer between 0 (zero) and 99.
-        
-        
-        
+
+
+
        ...
 
 在 PowerShell 3.0 中，如果您并不是使用英语，您需要手动将帮助文件从 en-US 文件夹复制到您语言对应的文件夹中：
 
     #requires -RunAsAdministrator
     #requires -Version 3
-    
+
     $locale = $host.CurrentUICulture.Name
     if ($locale -eq 'en-us')
     {

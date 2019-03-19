@@ -32,7 +32,7 @@ function Test-Stream
   Write-Error 'Error Information'
 
   # new in PowerShell 5.0
-  Write-Information 'Auxiliary Information' 
+  Write-Information 'Auxiliary Information'
 }
 ```
 
@@ -50,8 +50,8 @@ function Test-Stream
     + Test-Stream
     + ~~~~~~~~~~~
         + CategoryInfo          : NotSpecified: (:) [Write-Error],  WriteErrorException
-        + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Test-Stream 
-     
+        + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Test-Stream
+
     PS C:\> $result =  Test-Stream
     Mandatory User  Information
     WARNING: Warning  Information
@@ -60,13 +60,13 @@ function Test-Stream
     + Test-Stream
     + ~~~~~~~~~~~
         + CategoryInfo          : NotSpecified: (:) [Write-Error],  WriteErrorException
-        + FullyQualifiedErrorId :  Microsoft.PowerShell.Commands.WriteErrorException,Test-Stream 
-     
+        + FullyQualifiedErrorId :  Microsoft.PowerShell.Commands.WriteErrorException,Test-Stream
+
     PS C:\> $result
     Return Value 1
     Return Value 2
     Return Value 3
-     
+
     PS C:\>
 ```
 
@@ -92,7 +92,7 @@ Return Value 3
 VERBOSE: Additional Information
 DEBUG: Developer Information
 Mandatory User Information
-Auxiliary Information 
+Auxiliary Information
 ```
 
 要恢复缺省值，请复位 preference 变量：
@@ -111,7 +111,7 @@ function Test-CommonParameter
 {
     [CmdletBinding()]
     param()
-    
+
     "VerbosePreference = $VerbosePreference"
     "DebugPreference = $DebugPreference"
 }

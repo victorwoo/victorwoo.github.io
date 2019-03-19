@@ -19,12 +19,12 @@ If you find yourself always using the same parameter values over again, try usin
 # hash table
 # Key =
 # Cmdlet:Parameter
-# Value = 
+# Value =
 # Default value for parameter
 # * (Wildcard) can be used
 
-$PSDefaultParameterValues = @{ 
-'Stop-Process:ErrorAction' = 'SilentlyContinue' 
+$PSDefaultParameterValues = @{
+'Stop-Process:ErrorAction' = 'SilentlyContinue'
 '*:ComputerName' = 'DC-01'
 'Get-*:Path' = 'c:\windows'
 }
@@ -32,8 +32,8 @@ $PSDefaultParameterValues = @{
 
 在它的核心部分，有一个名为 `$PSDefaultParametersValues` 的哈希表。缺省情况下，这个变量不存在或者为空。如果您想将缺省参数复位为它们的缺省值，请运行以下代码：
 
-```powershell     
-PS> $PSDefaultParameterValues = $null 
+```powershell
+PS> $PSDefaultParameterValues = $null
 ```
 
 哈希表的键是 cmdlet 名和参数值，通过 `***` 来分隔。支持通配符。哈希表的值是缺省参数值。

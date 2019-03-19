@@ -16,8 +16,8 @@ tags:
 
     # User logged on to a physical box
     Get-WmiObject -Class Win32_ComputerSystem | Select-object -ExpandProperty UserName
-    
-    
+
+
     # Owners of explorer.exe processes (desktop is an Explorer process)
     Get-WmiObject -Class Win32_Process -Filter 'Name="explorer.exe"'  |
       ForEach-Object {

@@ -86,22 +86,22 @@ URL 编码
 	$userName = 'vichamp'
 	$importFileName = 'meiweisq-export-20131030.csv'
 	#$importFileName = 'failed_import.csv'
-	
+
 	Add-Type -AssemblyName 'System.Web'
 	#$password = ConvertTo-SecureString –String "xxx" –AsPlainText -Force
-	
+
 	$credential = Get-Credential -UserName $userName -Message '请输入密码'
-	
+
 	function Get-QueryString ($params) {
 	    $keyValuePairs = ($params.Keys | % {
 	        write ('{0}={1}' -f $_, $params[$_])
 	    })
 	    return $keyValuePairs -join '&'
 	}
-	
+
 	$startTime = [datetime]::Now
 	$template = 'https://api.del.icio.us/v1/posts/add?{0}'
-	
+
 	$bookmarks = Import-Csv $importFileName
 	$failedBookmarks = @()
 	$index = 0
@@ -116,10 +116,10 @@ URL 编码
 	    $params.Add('replace', 'no')
 	    $params.Add('shared', 'yes')
 	    $params.Add('url', $_.Url)
-	
+
 	    $queryString = Get-QueryString $params
 	    $url = $template -f $queryString
-	
+
 	    $message = "Bookmark: {0} / {1}, Elapsed: {2}" -f @(
 	        $($index + 1),
 	        $bookmarks.Length,
@@ -127,23 +127,23 @@ URL 编码
 	    )
 	    Write-Progress -Activity 'Adding bookmarks' -PercentComplete (100 * $index / $bookmarks.Length) -CurrentOperation $message
 	    #echo "Requesting $_.Url"
-	
+
 	    $isSuccess = $false
 	    try {
 	        [xml]$response = Invoke-WebRequest -Uri $url -Credential $credential
 	        $isSuccess = $response.StatusCode -eq 200 -and $response.result.code -eq 'done'
 	    } catch { }
-	
+
 	    if ($isSuccess) {
 	        Write-Output "[SUCC] $($_.Url)"
 	    } else {
 	        Write-Warning "[FAIL] $($_.Url)"
 	        $failedBookmarks += $_
 	    }
-	
+
 	    $index++
 	}
-	
+
 	$failedBookmarks | Export-Csv 'failed_import.csv' -Encoding UTF8 -NoTypeInformation
 
 您也可以[点击这里下载](/assets/download/Import-Delicious.ps1)源代码。

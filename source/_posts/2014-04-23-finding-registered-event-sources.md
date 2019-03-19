@@ -18,6 +18,6 @@ tags:
 
     $LogName = 'System'
     $path = "HKLM:\System\CurrentControlSet\services\eventlog\$LogName"
-    Get-ChildItem -Path $path -Name 
+    Get-ChildItem -Path $path -Name
 
 <!--本文国际来源：[Finding Registered Event Sources](http://community.idera.com/powershell/powertips/b/tips/posts/finding-registered-event-sources)-->

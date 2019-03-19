@@ -19,7 +19,7 @@ tags:
 从 PowerShell 5 开始，您可以用 "`Enum`"创建您自己的枚举类型。通过这种方式，用户可以用可阅读的名字，而不是幻数。
 
 ```powershell
-#requires -Version  5.0 
+#requires -Version  5.0
 
 Enum ComputerType
 {
@@ -29,18 +29,18 @@ Enum ComputerType
   Client
 }
 
-function Connect-Computer 
+function Connect-Computer
 {
-  param 
+  param
   (
-    [ComputerType] 
-    $Type, 
+    [ComputerType]
+    $Type,
 
-    [string] 
-    $Name 
+    [string]
+    $Name
   )
 
-  "Computername: $Name Type: $Type" 
+  "Computername: $Name Type: $Type"
 }
 ```
 

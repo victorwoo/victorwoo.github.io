@@ -15,7 +15,7 @@ tags:
 通过一行 WMI 代码，就可以查看您的 CPU 详情：
 
     PS> Get-WmiObject -Class Win32_Processor | Select-Object -Property Name, Number*
-    
+
     Name                                    NumberOfCores NumberOfLogicalProcessors
     ----                                    ------------- -------------------------
     Intel(R) Core(TM) i7-26...                          2                         4

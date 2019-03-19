@@ -15,7 +15,7 @@ tags:
 使用这段代码片段可以强制用户改变他/她的密码：
 
     #requires -Version 1 -Modules ActiveDirectory
-    
+
     Set-ADUser -Identity username -ChangePasswordAtNextLogon $true
 
 <!--本文国际来源：[Force User to Change Password](http://community.idera.com/powershell/powertips/b/tips/posts/force-user-to-change-password)-->

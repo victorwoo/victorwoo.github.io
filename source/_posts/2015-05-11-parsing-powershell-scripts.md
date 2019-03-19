@@ -19,9 +19,9 @@ tags:
     $content = $psise.CurrentFile.Editor.Text
     $token = $null
     $errors = $null
-    
+
     $token = [System.Management.Automation.PSParser]::Tokenize($content, [ref]$errors)
-    
+
     $token | Out-GridView
 
 您可以简单地使用 `Get-Content` 来读取任何脚本中的内容。读取到的结果是一个由 token 对象组成的数组。它们包含了语法元素类型，以及起止位置。

@@ -17,14 +17,14 @@ tags:
 这个例子用 `Invoke-WebRequest` 通过代理服务器来获取 RSS 数据（如果忽略 `-Proxy` 参数则直接获取），然后将结果转换为 XML。
 
     #requires -Version 3
-    
-    
+
+
     $url = 'http://blogs.msdn.com/b/powershell/rss.aspx'
-    
+
     $page = Invoke-WebRequest -Uri $url <#-Proxy 'http://proxy...:8080' -ProxyUseDefaultCredentials#>
     $content = $page.Content
-    
-    
+
+
     $xml = [XML]$content
     $xml.rss.channel.item  | Out-GridView
 

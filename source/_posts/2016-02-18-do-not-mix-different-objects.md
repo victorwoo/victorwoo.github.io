@@ -23,14 +23,14 @@ tags:
     URL = 'www.psconf.eu'
     }
     New-Object -TypeName PSObject -Property $hash
-    
+
     $b = Get-Process -Id $pid
     $b
 
 当您运行这段代码时，您将得到这样的结果：
 
-    Date           URL           Name                     City    
-    ----           ---           ----                     ----    
+    Date           URL           Name                     City
+    ----           ---           ----                     ----
     April 20, 2016 www.psconf.eu PowerShell Conference EU Hannover
                                  powershell_ise
 

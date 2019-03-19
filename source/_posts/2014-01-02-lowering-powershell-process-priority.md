@@ -25,9 +25,9 @@ tags:
 > 要找到明确的文档比较困难，但是有一个取巧的办法：故意打错。比如说我们可以打成 `$process.PriorityClass = 'trudellic'`，运行以后提示：
 >
 	Exception setting "PriorityClass": "Cannot convert value "trudellic" to type
-	"System.Diagnostics.ProcessPriorityClass". 
+	"System.Diagnostics.ProcessPriorityClass".
 	Error: "Unable to match the identifier name trudellic to a valid enumerator name.
 
-> 这时候可用的值在错误提示中就暴露出来了 :-)  
+> 这时候可用的值在错误提示中就暴露出来了 :-)
 
 <!--本文国际来源：[Lowering PowerShell Process Priority](http://community.idera.com/powershell/powertips/b/tips/posts/lowering-powershell-process-priority)-->

@@ -21,14 +21,14 @@ PowerShell 将 "`..`" 操作符的功能定义为生成一个数字列表。通�
 或者使用 `-f` 操作符来创建服务器列表。以下是示例代码：
 
     #requires -Version 1
-    
-    
+
+
     1..10 -join ','
-    
+
     [Char[]][Byte[]](65..90) -join ','
-    
+
     ([Char[]][Byte[]](65..90) | ForEach-Object { $_ + ':\' })  -join ','
-    
+
     1..10 | ForEach-Object { 'Server{0:0000}' -f $_ }
 
 <!--本文国际来源：[Turning Lists of Numbers Into Useful Lists](http://community.idera.com/powershell/powertips/b/tips/posts/turning-lists-of-numbers-into-useful-lists)-->

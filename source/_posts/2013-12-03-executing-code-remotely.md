@@ -26,7 +26,7 @@ tags:
 	{
 	      Get-Process -Name powershell*, wsmprovhost -ErrorAction SilentlyContinue
 	}
-	
+
 	$list = 'server1', 'w2k12-niki', 'pc11box'
 	Invoke-Command -ScriptBlock $code #-ComputerName $list
 

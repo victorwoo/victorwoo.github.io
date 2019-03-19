@@ -17,7 +17,7 @@ PowerShell ISE 是编写 PowerShell 脚本最重要的环境。熟练掌握 ISE 
 ```powershell
 PS> $gps = $psISE.GetType().Assembly
 PS> $gps
-    
+
 GAC    Version        Location
 ---    -------        --------
 True   v4.0.30319     C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.PowerShell.GPowerShell\...
@@ -33,7 +33,7 @@ GuiStrings.resources
 ```
 
 然后我们创建一个 `ResourceManager` 对象来存取程序集中的资源。在构造函数中将需要打开的资源名（去掉 _.resources_ 扩展名）以及包含资源的程序集对象传给它。
-    
+
 ```powershell
 $rm = New-Object System.Resources.ResourceManager GuiStrings,$gps
 ```
@@ -43,7 +43,7 @@ $rm = New-Object System.Resources.ResourceManager GuiStrings,$gps
 ```powershell
       $rs = $rm.GetResourceSet((Get-Culture),$true,$true)
       $rs
-       
+
       Name                           Value
       ----                           -----
       SnippetToolTipPath             路径: {0}
@@ -52,7 +52,7 @@ $rm = New-Object System.Resources.ResourceManager GuiStrings,$gps
       NewRunspace                    新建 PowerShell 选项卡(_E)
     > EditorSelectToPreviousChara... Shift+Left
     > RemoveAllBreakpointsShortcut   Ctrl+Shift+F9
-      SaveScriptQuestion             是否保存 {0}? 
+      SaveScriptQuestion             是否保存 {0}?
 ```
 
 查看输出结果，我们可以发现包含“>”的几行类似按键组合信息。如果您仔细查看输出结果，将会发现规律是 `Name` 以 `Shortcut` 结尾（有可能包含数字），以及以 `F` 开头加 1 至 2 位数字并带有 `Keyboard` 关键字的。通过下面一行代码，我们可以过滤出所有和键盘有关系的项目并对它们进行排序。

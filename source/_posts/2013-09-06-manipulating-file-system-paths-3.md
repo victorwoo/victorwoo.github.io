@@ -18,13 +18,13 @@ tags:
 这个例子将第一个层文件夹重命名，排除第二层子文件夹，并在第4层子文件夹之后增加一个子文件夹：
 
 	$path = 'C:\users\Tobias\Desktop\functions.ps1'
-	
+
 	[System.Collections.ArrayList]$array = $path -split '\\'
 	$array[1] = 'MyUsers'
 	$array.RemoveAt(2)
 	$array.Insert(3, 'NewSubFolder')
 	$array.Insert(4, 'AnotherNewSubFolder')
-	$array -join '\' 
+	$array -join '\'
 
 结果路径是：
 

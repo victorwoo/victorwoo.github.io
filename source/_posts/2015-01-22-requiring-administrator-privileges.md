@@ -18,9 +18,9 @@ _适用于 PowerShell 4.0 及以上版本_
 
     #requires -version 4.0
     #requires –runasadministrator
-    
-    
-    'I am Admin!' 
+
+
+    'I am Admin!'
 
 如果这个脚本没有使用管理员身份运行，它将显示一个有意义错误提示信息，说明它为何无法运行。
 

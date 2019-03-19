@@ -21,7 +21,7 @@ tags:
 要限制结果只包含硬盘驱动器，并且只包含空闲容量低于指定值的硬盘驱动器，请试试以下代码：
 
     $limit = 80GB
-    Get-WmiObject -Class Win32_LogicalDisk -Filter "DriveType=3 and Freespace<$limit" | 
-      Select-Object -Property VolumeName, Freespace, DeviceID 
+    Get-WmiObject -Class Win32_LogicalDisk -Filter "DriveType=3 and Freespace<$limit" |
+      Select-Object -Property VolumeName, Freespace, DeviceID
 
 <!--本文国际来源：[Finding Hard Drives Running Low on Storage](http://community.idera.com/powershell/powertips/b/tips/posts/finding-hard-drives-running-low-on-storage)-->

@@ -17,10 +17,10 @@ tags:
     $subject = 'Sending via MAPI client'
     $body = 'My Message'
     $to = 'tobias@powertheshell.com'
-    
+
     $mail = "mailto:$to&subject=$subject&body=$body"
-    
-    Start-Process -FilePath $mail 
+
+    Start-Process -FilePath $mail
 
 这个脚本利用了 mailto: 语法。如果您已安装了一个 MAPI 客户端，这将打开一个电子邮件表单并且将脚本指定的内容填充进去。不过您需要手工发送邮件。
 

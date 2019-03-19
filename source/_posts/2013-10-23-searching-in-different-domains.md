@@ -19,12 +19,12 @@ This example will find all accounts with a SamAccountName that starts with "tobi
 
 	# get all users with a SamAccountName that starts with "tobias"
 	$searcher = [ADSISearcher]"(&(objectClass=User)(objectCategory=person)(sAMAccountName=tobias*))"
-	
+
 	# use powershell.local for searching
 	$domain = New-Object System.DirectoryServices.DirectoryEntry('DC=powershell,DC=local')
 	$searcher.SearchRoot = $domain
-	
+
 	# execute the query
-	$searcher.FindAll() 
+	$searcher.FindAll()
 
 <!--本文国际来源：[Searching in Different Domains](http://community.idera.com/powershell/powertips/b/tips/posts/searching-in-different-domains)-->

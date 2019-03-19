@@ -20,7 +20,7 @@ tags:
 
 ```powershell
 $obj = New-Object -ComObject Shell.Application
-$browser = $obj.Windows() | 
+$browser = $obj.Windows() |
     Where-Object FullName -like '*iexplore.exe' |
     # adjust the below to match your URL
     Where-Object LocationUrl -like '*powershellmagazine.com*' |
@@ -34,7 +34,7 @@ $browser = $obj.Windows() |
 如果您希望挖掘网页中的所有图片，以下是获取所有图片列表的方法：
 
 ```powershell
-$browser.Document.images | Out-GridView 
+$browser.Document.images | Out-GridView
 ```
 
 类似地，如果您希望挖掘网页的内容信息，以下代码返回页面的 HTML：

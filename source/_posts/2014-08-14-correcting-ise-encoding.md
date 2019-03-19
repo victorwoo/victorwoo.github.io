@@ -18,12 +18,12 @@ _适用于所有 PowerShell 版本_
 
     # Repair encoding. This REQUIRES a console app to run first because only
     # then will ISE actually create its hidden background console
-    
+
     $null = cmd.exe /c echo
     [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-    
+
     # Now all is fine
-    
+
     cmd.exe /c echo ÄÖÜäöüß
 
 <!--本文国际来源：[Correcting ISE Encoding](http://community.idera.com/powershell/powertips/b/tips/posts/correcting-ise-encoding)-->

@@ -34,7 +34,7 @@ function Out-PDFFile
     $printer = Get-Printer -Name $printerName -ErrorAction SilentlyContinue
     if (!$?)
     {
-        Write-Warning "Printer $printerName does not exist." 
+        Write-Warning "Printer $printerName does not exist."
         Write-Warning "Make sure you have created this printer (see previous tips)!"
         return
     }
@@ -45,7 +45,7 @@ function Out-PDFFile
     # is the printer set up correctly and the port name is the output file path?
     if ($TempPDF -notlike '?:\*')
     {
-        Write-Warning "Printer $printerName is not set up correctly." 
+        Write-Warning "Printer $printerName is not set up correctly."
         Write-Warning "Make sure you have created this printer as instructed (see previous tips)!"
         return
     }
@@ -59,10 +59,10 @@ function Out-PDFFile
 
     # wait for the print job to be completed, then move file
     $ok = $false
-    do { 
-        Start-Sleep -Milliseconds 500 
+    do {
+        Start-Sleep -Milliseconds 500
         Write-Host '.' -NoNewline
-                
+
         $fileExists = Test-Path -Path $TempPDF
         if ($fileExists)
         {

@@ -18,10 +18,10 @@ tags:
 # ping the specified servers with a given timeout (milliseconds)
 $ComputerName = 'google.de','microsoft.com','r13-c00'
 $TimeoutMillisec = 1000
-    
+
 # convert list of computers into a WMI query string
 $query = $ComputerName -join "' or Address='"
-    
+
 Get-WmiObject -Class Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec" | Select-Object -Property Address, StatusCode
 ```
 

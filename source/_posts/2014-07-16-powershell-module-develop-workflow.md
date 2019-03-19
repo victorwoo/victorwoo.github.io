@@ -24,7 +24,7 @@ tags: powershell
 
     if (gmo Test-Module) { rmo Test-Module }
     ipmo Test-Module
-    
+
     Test-Module # 实际的业务
 
 这样，每次重新运行 .ps1 脚本时，都会重新加载新的 .psm1 文件。待调试完之后，可以把头两行注释掉。

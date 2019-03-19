@@ -43,7 +43,7 @@ PS> Get-WmiObject -Class SoftwareLicensingService
 
 __GENUS                                        : 2
 __CLASS                                        : SoftwareLicensingService
-__SUPERCLASS                                   : 
+__SUPERCLASS                                   :
 __DYNASTY                                      : SoftwareLicensingService
 __RELPATH                                      : SoftwareLicensingService.Version="10.0.17134.471"
 __PROPERTY_COUNT                               : 38
@@ -51,9 +51,9 @@ __DERIVATION                                   : {}
 __SERVER                                       : DESKTOP-7AAMJLF
 __NAMESPACE                                    : root\cimv2
 __PATH                                         : \\DESKTOP-7AAMJLF\root\cimv2:SoftwareLicensingService.Version="10.0.17134.471"
-ClientMachineID                                : 
-DiscoveredKeyManagementServiceMachineIpAddress : 
-DiscoveredKeyManagementServiceMachineName      : 
+ClientMachineID                                :
+DiscoveredKeyManagementServiceMachineIpAddress :
+DiscoveredKeyManagementServiceMachineName      :
 DiscoveredKeyManagementServiceMachinePort      : 0
 IsKeyManagementServiceMachine                  : 0
 KeyManagementServiceCurrentCount               : 4294967295
@@ -62,15 +62,15 @@ KeyManagementServiceFailedRequests             : 4294967295
 KeyManagementServiceHostCaching                : True
 KeyManagementServiceLicensedRequests           : 4294967295
 KeyManagementServiceListeningPort              : 1688
-KeyManagementServiceLookupDomain               : 
+KeyManagementServiceLookupDomain               :
 KeyManagementServiceLowPriority                : False
-KeyManagementServiceMachine                    : 
+KeyManagementServiceMachine                    :
 KeyManagementServiceNonGenuineGraceRequests    : 4294967295
 KeyManagementServiceNotificationRequests       : 4294967295
 KeyManagementServiceOOBGraceRequests           : 4294967295
 KeyManagementServiceOOTGraceRequests           : 4294967295
 KeyManagementServicePort                       : 1688
-KeyManagementServiceProductKeyID               : 
+KeyManagementServiceProductKeyID               :
 KeyManagementServiceTotalRequests              : 4294967295
 KeyManagementServiceUnlicensedRequests         : 4294967295
 OA2xBiosMarkerMinorVersion                     : 1
@@ -81,10 +81,10 @@ OA3xOriginalProductKeyPkPn                     : [TH]XXXXXXX
 PolicyCacheRefreshRequired                     : 0
 RemainingWindowsReArmCount                     : 1001
 RequiredClientCount                            : 4294967295
-TokenActivationAdditionalInfo                  : 
-TokenActivationCertificateThumbprint           : 
+TokenActivationAdditionalInfo                  :
+TokenActivationCertificateThumbprint           :
 TokenActivationGrantNumber                     : 4294967295
-TokenActivationILID                            : 
+TokenActivationILID                            :
 TokenActivationILVID                           : 4294967295
 Version                                        : 10.0.17134.471
 VLActivationInterval                           : 4294967295
@@ -99,7 +99,7 @@ PS> $all = Get-WmiObject -Class SoftwareLicensingService
 
 PS> $all.OA3xOriginalProductKeyDescription
 [4.0] Professional OEM:DM
- 
+
 
 funcValue 1
 }

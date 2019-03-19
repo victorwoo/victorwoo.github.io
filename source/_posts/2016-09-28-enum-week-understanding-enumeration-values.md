@@ -47,8 +47,8 @@ PS> $host.UI.RawUI.ForegroundColor = 15
 当然，很明显地，代码变得很难读懂。不过，还是有一种使用场合。如果您想随机设置您的控制台颜色，您可以使用数值型的值。一共有 16 种控制台颜色，所以这段代码能够用一个随机的背景色和前景色重新为您的控制台着色：
 
 ```powershell
-$background, $foreground = 0..15 | Get-Random -Count 2 
-$host.UI.RawUI.BackgroundColor = $background 
+$background, $foreground = 0..15 | Get-Random -Count 2
+$host.UI.RawUI.BackgroundColor = $background
 $host.UI.RawUI.ForegroundColor = $foreground
 ```
 

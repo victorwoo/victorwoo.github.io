@@ -22,7 +22,7 @@ $hostname = 'powershellmagazine.com'
 # and disregard text results
 $null = ping.exe $hostname -n 2 -w 2000
 # instead look at the exit code delivered in
-# $LASTEXITCODE. Ping.exe returns 0 if a 
+# $LASTEXITCODE. Ping.exe returns 0 if a
 # response was received:
 $IsOnline = $LASTEXITCODE -eq 0
 $IsOnline

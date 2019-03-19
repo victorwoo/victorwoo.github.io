@@ -16,7 +16,7 @@ PowerShell 的函数可以模拟一个真实二进制 cmdlet 的所有特性，�
 
 如果您是一个开发者并且有兴趣创开发二进制 cmdlet，以下是一个快速的入门。该入门演示如何用纯 PowerShell 创建并编译真正的 cmdlet：
 
-    # C# definition for cmdlet                
+    # C# definition for cmdlet
     $code = @'
     using System;
     using System.Collections.Generic;
@@ -24,35 +24,35 @@ PowerShell 的函数可以模拟一个真实二进制 cmdlet 的所有特性，�
     using System.Linq;
     using System.Text;
     using System.Management.Automation;
-    
+
     namespace CustomCmdlet
     {
         [Cmdlet("Get", "Magic", SupportsTransactions = false)]
         public class test : PSCmdlet
         {
             private int _Age;
-    
+
             [Alias(new string[]
             {
                 "HowOld", "YourAge"
             }), Parameter(Position = 0,ValueFromPipeline = true)]
-            
+
             public int Age
             {
                 get { return _Age; }
                 set { _Age = value; }
             }
-    
+
             private string _Name;
-    
+
             [Parameter(Position = 1)]
             public string Name
             {
                 get { return _Name; }
                 set { _Name = value; }
             }
-    
-    
+
+
             protected override void BeginProcessing()
             {
                 this.WriteObject("Good morning...");
@@ -70,7 +70,7 @@ PowerShell 的函数可以模拟一个真实二进制 cmdlet 的所有特性，�
             }
         }
     }
-    
+
     '@
     # compile C# code to DLL
     # use a timestamp to create unique file names
@@ -79,7 +79,7 @@ PowerShell 的函数可以模拟一个真实二进制 cmdlet 的所有特性，�
     $datetime = Get-Date -Format yyyyMMddHHmmssffff
     $DLLPath = "$env:temp\myCmdlet($datetime).dll"
     Add-Type -TypeDefinition $code -OutputAssembly $DLLPath
-    
+
     # import a module
     Import-Module -Name $DLLPath -Verbose
 

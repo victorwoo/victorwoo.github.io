@@ -15,7 +15,7 @@ tags:
 PowerShell 可以操作所有公公的 .NET 类，所以创建一个对话框真的很简单：
 
 ```powershell
-$result = [System.Windows.MessageBox]::Show('Do you want to restart?','Restart','YesNo','Warning') 
+$result = [System.Windows.MessageBox]::Show('Do you want to restart?','Restart','YesNo','Warning')
 
 $result
 ```
@@ -39,7 +39,7 @@ function Show-MessageBox
 
     [Windows.MessageBoxButton]$Button = 'OK',
 
-    [Windows.MessageBoxImage]$Icon = 'Information'    
+    [Windows.MessageBoxImage]$Icon = 'Information'
   )
 
   [Windows.MessageBox]::Show($Prompt, $Title, $Button, $Icon)

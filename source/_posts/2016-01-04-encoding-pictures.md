@@ -17,7 +17,7 @@ tags:
 这个例子演示了如何将一个 JPG 图片转换为 Base64 编码的字符串：
 
 ```powershell
-function Convert-JPG2Base64 
+function Convert-JPG2Base64
  {
      param
      (

@@ -24,7 +24,7 @@ $result = foreach ($item in $elements)
     Start-Sleep -Milliseconds 50
 }
 
-$result | Out-GridView 
+$result | Out-GridView
 ```
 
 您无法直接通过管道输出结果。以下代码会产生语法错误：
@@ -37,7 +37,7 @@ Foreach ($item in $elements)
     "processing $item"
     # simulate some work and delay
     Start-Sleep -Milliseconds 50
-} | Out-GridView 
+} | Out-GridView
 ```
 
 可以使用 `$()` 语法来使用管道，但是仍然要等待循环结束并且将整个结果作为一个整体发送到管道：
@@ -50,7 +50,7 @@ $(foreach ($item in $elements)
     "processing $item"
     # simulate some work and delay
     Start-Sleep -Milliseconds 50
-}) | Out-GridView 
+}) | Out-GridView
 ```
 
 一下是一个鲜为人知的技巧，向 `foreach` 循环增加实时流功能：只需要使用一个脚本块！
@@ -63,7 +63,7 @@ $elements = 1..100
     "processing $item"
     # simulate some work and delay
     Start-Sleep -Milliseconds 50
-}} | Out-GridView 
+}} | Out-GridView
 ```
 
 现在您可以“看到”它们处理的结果，并且享受实时流的效果。
@@ -75,7 +75,7 @@ $elements = 1..100
 
 $elements | ForEach-Object {
     $item = $_
-    
+
     "processing $item"
     # simulate some work and delay
     Start-Sleep -Milliseconds 50

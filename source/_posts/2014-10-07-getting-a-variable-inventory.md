@@ -20,22 +20,22 @@ _适用于 PowerShell ISE 3 或更高版本_
 
     function Get-Variable
     {
-      
+
       $token = $null
       $errors = $null
-      
+
       $ast = [System.Management.Automation.Language.Parser]::ParseInput($psise.CurrentFile.Editor.Text, [ref] $token, [ref] $errors)
-      
+
       # not complete, add variables you want to exclude from the list:
       $systemVariables = '_', 'null', 'psitem', 'true', 'false', 'args', 'host'
-      
+
       $null = $ast.FindAll({ $args[0] -is [System.Management.Automation.Language.CommandAst] }, $true)
-      $token | 
+      $token |
         Where-Object { $_.Kind -eq 'Variable'} |
         Select-Object -ExpandProperty Name |
         Where-Object { $systemVariables -notcontains $_ } |
         Sort-Object -Unique
-    } 
+    }
 
 只需要用系统自带的 ISE 编辑器打开这个脚本，然后在交互式控制台中运行 `Get-Variable`。
 

@@ -18,9 +18,9 @@ _适用于 PowerShell 任何版本_
 
     $text1 = 'this is all lower-case'
     $text2 = 'this is NOT all lower-case'
-    
+
     $text1 -cmatch '[A-Z]'
-    $text2 -cmatch '[A-Z]' 
+    $text2 -cmatch '[A-Z]'
 
 得到的结果分别是“`Frue`”和“`False`”。
 
@@ -28,9 +28,9 @@ _适用于 PowerShell 任何版本_
 
     $text1 = 'this is all lower-case'
     $text2 = 'this is NOT all lower-case'
-    
+
     $text1 -cmatch '^[a-z\s-]*$'
-    $text2 -cmatch '^[A-Z\s-]*$' 
+    $text2 -cmatch '^[A-Z\s-]*$'
 
 得到的结果分别是“`True`”和“`False`”。
 

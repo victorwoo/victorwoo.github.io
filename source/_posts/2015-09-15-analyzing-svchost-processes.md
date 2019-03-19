@@ -17,7 +17,7 @@ tags:
 要更好地理解这些进程后隐藏着哪些服务，您可以使用这样的代码：
 
     #requires -Version 2
-    # Hash table defines two keys: 
+    # Hash table defines two keys:
     # Name and Expression
     # they can be used with Select-Object
     # to produce "calculated" properties
@@ -34,11 +34,11 @@ tags:
         }
       }
     }
-    
+
     # create a service lookup table with ProcessID as a key
     $serviceList = Get-WmiObject -Class Win32_Service |
     Group-Object -Property ProcessID -AsString -AsHashTable
-      
+
     # get all running processes...
     Get-Process |
     # add the new calculated column defined in $Service...

@@ -33,7 +33,7 @@ $status = @{
         }
     }
 }
-$Searcher.QueryHistory(0, $historyCount) | 
+$Searcher.QueryHistory(0, $historyCount) |
 Select-Object Title, Description, Date, $status |
 Out-GridView
 ```

@@ -22,7 +22,7 @@ tags:
     # so PowerShell uses the current directory instead to find the PSProvider
     # for UNC paths, to be safe, always add the provider name manually
     $exists = Test-Path -Path 'FileSystem::\\server12\fileshare'
-    
+
     $exists
 
 <!--本文国际来源：[Safely Use UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/safely-use-unc-paths)-->

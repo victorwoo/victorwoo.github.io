@@ -17,13 +17,13 @@ tags:
 这个脚本演示了如何批量重命名图片文件：
 
     $i = 0
-    
+
     Get-ChildItem -Path c:\pictures -Filter *.jpg |
     ForEach-Object {
         $extension = $_.Extension
         $newName = 'pic_{0:d6}{1}' -f  $i, $extension
         $i++
-        Rename-Item -Path $_.FullName -NewName $newName 
+        Rename-Item -Path $_.FullName -NewName $newName
     }
 
 文件夹中所有的 JPG 文件都被重命名了。新的文件名是“pic_”加上四位数字。

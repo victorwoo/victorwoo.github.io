@@ -32,18 +32,18 @@ Test-FileCatalog -Detailed -Path $path -CatalogFilePath $catPath
 
     Status        : Valid
     HashAlgorithm : SHA1
-    CatalogItems  : {[remoting systeminventar.ps1, 
-                    F43C8D6F9CB93FB9AA5DBA6733D9996645832256], [klonen und 
-                    prozessprio.ps1, F3DE20424CD90CDB5B85933B777A2F9A3F3D3187], 
-                    [scriptblock rueckgabewerte.ps1, 
-                    EB239D7906EF42E2639CACBE68C6FDD8F4AD899F], [Untitled4.ps1, 
+    CatalogItems  : {[remoting systeminventar.ps1,
+                    F43C8D6F9CB93FB9AA5DBA6733D9996645832256], [klonen und
+                    prozessprio.ps1, F3DE20424CD90CDB5B85933B777A2F9A3F3D3187],
+                    [scriptblock rueckgabewerte.ps1,
+                    EB239D7906EF42E2639CACBE68C6FDD8F4AD899F], [Untitled4.ps1,
                     E5E4DC20934287ED869230706A1DEEDEB550B8DE]...}
-    PathItems     : {[beispielsyntax.ps1, 
-                    5183C82B7F0F3D0623242DD5F97A658724BE3B81], [closure.ps1, 
-                    D2A036B068548B3E773E3BEBCF40997231576ED1], [debug1.ps1, 
-                    3547D2659792A9ABA9E6E12F287D7A8116540FCF], [debug2.ps1, 
+    PathItems     : {[beispielsyntax.ps1,
+                    5183C82B7F0F3D0623242DD5F97A658724BE3B81], [closure.ps1,
+                    D2A036B068548B3E773E3BEBCF40997231576ED1], [debug1.ps1,
+                    3547D2659792A9ABA9E6E12F287D7A8116540FCF], [debug2.ps1,
                     76C63FA578C09F30DF2BE055C37C039AFB1EFEDE]...}
-    Signature     : System.Management.Automation.Signature 
+    Signature     : System.Management.Automation.Signature
 
 请注意 `New-FileCatalog` 当前并不支持路径中的特殊字符，例如德语的 "Umlaute"。
 

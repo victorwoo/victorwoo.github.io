@@ -28,7 +28,7 @@ $username = 'user01'
 $sid = (New-Object Security.Principal.NTAccount($domain, $username)).Translate([Security.Principal.SecurityIdentifier]).Value
 
 Get-WmiObject -ClassName Win32_UserProfile -Filter "SID='$sid'" |
-  ForEach-Object { 
+  ForEach-Object {
     $_.Delete()
   }
 ```

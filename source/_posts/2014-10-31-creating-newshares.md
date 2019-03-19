@@ -18,10 +18,10 @@ WMI 可以方便地创建新的共享文件夹。以下是一段创建本地共�
 
     $ShareName = 'NewShare'
     $Path = 'c:\123'
-    
-    If (!(Get-WmiObject -Class Win32_Share -Filter "name='$ShareName'")) 
-    { 
-      $Shares=[WMICLASS]"WIN32_Share" 
+
+    If (!(Get-WmiObject -Class Win32_Share -Filter "name='$ShareName'"))
+    {
+      $Shares=[WMICLASS]"WIN32_Share"
       $Shares.Create($Path,$ShareName,0).ReturnValue
     }
     else
@@ -34,10 +34,10 @@ WMI 可以方便地创建新的共享文件夹。以下是一段创建本地共�
     $ShareName = 'NewShare'
     $Path = 'c:\123'
     $Server = 'MyServer'
-    
-    If (!(Get-WmiObject -Class Win32_Share -Filter "name='$ShareName'")) 
-    { 
-      $Shares=[WMICLASS]"\\$Server\root\cimv2:WIN32_Share" 
+
+    If (!(Get-WmiObject -Class Win32_Share -Filter "name='$ShareName'"))
+    {
+      $Shares=[WMICLASS]"\\$Server\root\cimv2:WIN32_Share"
       $Shares.Create($Path,$ShareName,0).ReturnValue
     }
     else

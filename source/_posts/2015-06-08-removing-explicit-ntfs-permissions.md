@@ -16,14 +16,14 @@ tags:
 
     # make sure this folder exists
     $Path = 'c:\sampleFolderNTFS'
-    
+
     # get explicit permissions
     $acl = Get-Acl -Path $path
     $acl.Access |
       Where-Object { $_.isInherited -eq $false } |
       # ...and remove them
       ForEach-Object { $acl.RemoveAccessRuleAll($_) }
-    
+
     # set new permissions
     $acl | Set-Acl -Path $path
 

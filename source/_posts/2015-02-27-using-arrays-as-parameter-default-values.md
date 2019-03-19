@@ -22,7 +22,7 @@ _适用于 PowerShell 3.0 及以上版本_
       (
         $ServerID = 1,2,5,10,11
       )
-    
+
       "Your choice: $ServerID"
     }
 
@@ -36,7 +36,7 @@ PowerShell 使用逗号来分隔参数，所以在 `param()` 块中的 "1" 之�
       (
         $ServerID = (1,2,5,10,11)
       )
-    
+
       "Your choice: $ServerID"
     }
 

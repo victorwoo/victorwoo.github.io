@@ -18,7 +18,7 @@ _适用于所有 PowerShell 版本_
 
     Get-ChildItem -Path HKCU:\ -Include *PowerShell* -Recurse -ErrorAction SilentlyContinue |
       Select-Object -Property *Path* |
-      Out-GridView 
+      Out-GridView
 
 这段代码输出所有名称中包含“_Path_”的属性。如您所见，注册表键中有两个属性包含该关键字：_PSPath_ 和 _PSParentPath_。两者都是 PowerShell 内置的路径格式。
 

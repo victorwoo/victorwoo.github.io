@@ -19,20 +19,20 @@ tags:
         param
         (
             [String[]]
-            $ComputerName 
+            $ComputerName
         )
-    
-        $code = {     
+
+        $code = {
             $rv = 1 | Select-Object -Property ComputerName, ExitCode
             $null = gpupdate.exe /force
             $rv.Exitcode = $LASTEXITCODE
             $rv.ComputerName = $env:COMPUTERNAME
-            $rv  
+            $rv
         }
         Invoke-Command -ScriptBlock $code -ComputerName $ComputerName |
           Select-Object -Property ComputerName, ExitCode
-    
-    } 
+
+    }
 
 `Start-GPUpdate` 接受一个或多个计算机名，然后对每台计算机运行 `gpupdate.exe`，并返回执行结果。
 

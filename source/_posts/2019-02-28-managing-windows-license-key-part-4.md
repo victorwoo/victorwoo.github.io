@@ -15,7 +15,7 @@ tags:
 `Slmgr.vbs` 是一个用于自动化 Windows 许可证管理的古老的 VBScript。在前一个技能中我们开始直接读取 WMI，跳过 `slmgr.vbs`。除了已经介绍过的 `SoftwareLicensingService` 类，还有一个 `SoftwareLicensingProduct` 拥有许多实例并且获取需要一些时间：
 
 ```powershell
-Get-WmiObject -Class SoftwareLicensingProduct | Out-GridView 
+Get-WmiObject -Class SoftwareLicensingProduct | Out-GridView
 ```
 
 描述列展示了这个类描述了 Windows 中许多不同的可用的许可证类型，只有其中的一部分有获得授权。要获得有用的信息，您需要过滤出正在使用的许可证信息。
@@ -39,7 +39,7 @@ Get-WmiObject -Class SoftwareLicensingProduct -Filter 'ProductKeyId != NULL' | S
     UseLicenseUrl          : https://activation.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?c
                              onfigextension=o14
     ValidationUrl          : https://go.microsoft.com/fwlink/?LinkID=187557
-    
+
     Name                   : Office 16, Office16ProPlusMSDNR_Retail edition
     Description            : Office 16, RETAIL channel
     LicenseStatus          : 1
@@ -51,7 +51,7 @@ Get-WmiObject -Class SoftwareLicensingProduct -Filter 'ProductKeyId != NULL' | S
     UseLicenseUrl          : https://activation.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?c
                              onfigextension=o14
     ValidationUrl          : https://go.microsoft.com/fwlink/?LinkID=187557
-    
+
     Name                   : Windows(R), Professional edition
     Description            : Windows(R) Operating System, OEM_DM channel
     LicenseStatus          : 1
@@ -67,7 +67,7 @@ Get-WmiObject -Class SoftwareLicensingProduct -Filter 'ProductKeyId != NULL' | S
 如您所见，日期是以 WMI 格式返回的。用 `Get-CimInstance` 代替 `Get-WmiObject` 来获取“真实的”日期对象：
 
 ```powershell
-PS> Get-CimInstance -Class SoftwareLicensingProduct -Filter 'ProductKeyId != NULL' | Select-Object -Property Name, Description, LicenseStatus, EvaluationEndDate, PartialProductKey, ProductKeyChannel, RemainingAppRearmCount, trustedTime, UseLicenseUrl, ValidationUrl  
+PS> Get-CimInstance -Class SoftwareLicensingProduct -Filter 'ProductKeyId != NULL' | Select-Object -Property Name, Description, LicenseStatus, EvaluationEndDate, PartialProductKey, ProductKeyChannel, RemainingAppRearmCount, trustedTime, UseLicenseUrl, ValidationUrl
 ```
 
 今日知识点：

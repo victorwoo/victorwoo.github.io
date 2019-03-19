@@ -15,7 +15,7 @@ tags:
 假设您有一系列 Word 文档，并且希望知道它们共有多少页。以下是一个函数，传入一个 Word 文件参数，便能得到它包含多少页：
 
     #requires -Version 1
-    
+
     # adjust path to point to an existing Word file:
     $Path = "C:\...\SomeChapter.doc"
     $word = New-Object -ComObject Word.Application

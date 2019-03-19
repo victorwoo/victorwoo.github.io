@@ -15,9 +15,9 @@ tags:
 有时候您会见到用 `Select-Object` 向已有对象增加信息的脚本，类似以下代码：
 
 ```powershell
-Get-Process | 
+Get-Process |
     Select-Object -Property *, Sender|
-    ForEach-Object { 
+    ForEach-Object {
         $_.Sender = $env:COMPUTERNAME
         $_
     }

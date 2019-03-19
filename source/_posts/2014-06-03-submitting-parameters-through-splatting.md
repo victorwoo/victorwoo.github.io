@@ -20,8 +20,8 @@ Splatting 是 PowerShell 3.0 引入的概念，但是许多用户还没有听说
     $infos.Filter = '*.log'
     $infos.ErrorAction = 'SilentlyContinue'
     $infos.Remove('Recurse')
-    
-    dir @infos 
+
+    dir @infos
 
 这个例子定义了一个包含键值对的哈希表。每个键对应 dir 命令中的一个参数，并且每个值作为实参传递给对应的形参。
 

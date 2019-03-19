@@ -27,9 +27,9 @@ _适用于 Windows 8.1、Server 2012 R2_
 要查看该模块提供的其它 cmdlet，请试试这行代码：
 
     PS> Get-Command -Module ActiveDirectory
-    
-    CommandType     Name                                               ModuleName  
-    -----------     ----                                               ----------  
+
+    CommandType     Name                                               ModuleName
+    -----------     ----                                               ----------
     Cmdlet          Add-ADCentralAccessPolicyMember                    ActiveDir...
     Cmdlet          Add-ADComputerServiceAccount                       ActiveDir...
     Cmdlet          Add-ADDomainControllerPasswordReplicationPolicy    ActiveDir...

@@ -19,7 +19,7 @@ tags:
 这段代码将重启 Spooler 服务（需要提升权限），并将命令发送到另一个 PowerShell 进程中。如果当前进程没有管理员权限，它将自动提升权限。
 
     $command = 'Restart-Service -Name spooler'
-    Start-Process -FilePath powershell.exe -ArgumentList "-noprofile -command $Command" `  
-    -Verb runas 
+    Start-Process -FilePath powershell.exe -ArgumentList "-noprofile -command $Command" `
+    -Verb runas
 
 <!--本文国际来源：[Running Commands Elevated in PowerShell](http://community.idera.com/powershell/powertips/b/tips/posts/running-commands-elevated-in-powershell)-->

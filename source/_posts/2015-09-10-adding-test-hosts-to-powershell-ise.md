@@ -15,7 +15,7 @@ tags:
 要在随 PowerShell 3.0 以上版本发行的 PowerShell ISE 中打开一个新的测试宿主，这是一个小小的辅助函数：
 
     #requires -Version 3
-    
+
     function New-PSHost
     {
         param
@@ -23,7 +23,7 @@ tags:
             [Parameter(Mandatory = $true)]
             $Name
         )
-    
+
         $newTab = $psise.PowerShellTabs.Add()
         $newTab.DisplayName = $Name
     }

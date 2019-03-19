@@ -19,31 +19,31 @@ PowerShell 是单线程的，一个时间只能处理一件事。使用后台任
 以下是三个可以并发执行的任务：
 
     $start = Get-Date
-    
+
     # get all hotfixes
     $task1 = { Get-Hotfix }
-    
+
     # get all scripts in your profile
     $task2 = { Get-Service | Where-Object Status -eq Running }
-    
+
     # parse log file
     $task3 = { Get-Content -Path $env:windir\windowsupdate.log | Where-Object { $_ -like '*successfully installed*' } }
-    
+
     # run 2 tasks in the background, and 1 in the foreground task
-    $job1 =  Start-Job -ScriptBlock $task1 
-    $job2 =  Start-Job -ScriptBlock $task2 
+    $job1 =  Start-Job -ScriptBlock $task1
+    $job2 =  Start-Job -ScriptBlock $task2
     $result3 = Invoke-Command -ScriptBlock $task3
-    
+
     # wait for the remaining tasks to complete (if not done yet)
     $null = Wait-Job -Job $job1, $job2
-    
+
     # now they are done, get the results
     $result1 = Receive-Job -Job $job1
     $result2 = Receive-Job -Job $job2
-    
+
     # discard the jobs
     Remove-Job -Job $job1, $job2
-    
+
     $end = Get-Date
     Write-Host -ForegroundColor Red ($end - $start).TotalSeconds
 
@@ -52,21 +52,21 @@ PowerShell 是单线程的，一个时间只能处理一件事。使用后台任
 我们测试一下三个任务在前台顺序执行所消耗的时间：
 
     $start = Get-Date
-    
+
     # get all hotfixes
     $task1 = { Get-Hotfix }
-    
+
     # get all scripts in your profile
     $task2 = { Get-Service | Where-Object Status -eq Running }
-    
+
     # parse log file
     $task3 = { Get-Content -Path $env:windir\windowsupdate.log | Where-Object { $_ -like '*successfully installed*' } }
-    
+
     # run them all in the foreground:
-    $result1 = Invoke-Command -ScriptBlock $task1 
-    $result2 = Invoke-Command -ScriptBlock $task2 
+    $result1 = Invoke-Command -ScriptBlock $task1
+    $result2 = Invoke-Command -ScriptBlock $task2
     $result3 = Invoke-Command -ScriptBlock $task3
-    
+
     $end = Get-Date
     Write-Host -ForegroundColor Red ($end - $start).TotalSeconds
 

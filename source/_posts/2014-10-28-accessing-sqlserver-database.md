@@ -20,9 +20,9 @@ _适用于 PowerShell 所有版本及 SQLServer_
     $Server                         = '192.168.100.200'
     $UserName                         = 'DatabaseUserName'
     $Password                       = 'SecretPassword'
-    
+
     $SqlQuery                       = 'Select * FROM TestTable'
-    
+
     # Accessing Data Base
     $SqlConnection                  = New-Object -TypeName System.Data.SqlClient.SqlConnection
     $SqlConnection.ConnectionString = "Data Source=$Server;Initial Catalog=$Database;user id=$UserName;pwd=$Password"
@@ -32,14 +32,14 @@ _适用于 PowerShell 所有版本及 SQLServer_
     $SqlAdapter                     = New-Object System.Data.SqlClient.SqlDataAdapter
     $SqlAdapter.SelectCommand       = $SqlCmd
     $set                            = New-Object data.dataset
-    
+
     # Filling Dataset
     $SqlAdapter.Fill($set)
-    
+
     # Consuming Data
     $Path = "$env:temp\report.hta"
     $set.Tables[0] | ConvertTo-Html | Out-File -FilePath $Path
-    
+
     Invoke-Item -Path $Path
 
 <!--本文国际来源：[Accessing SQLServer Database](http://community.idera.com/powershell/powertips/b/tips/posts/accessing-sqlserver-database)-->

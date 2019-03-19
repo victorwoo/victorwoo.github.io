@@ -16,8 +16,8 @@ tags:
 
     $storage = "$env:temp\secretdata.txt"
     $mysecret = 'Hello, I am safe.'
-    
-    $mysecret | 
+
+    $mysecret |
       ConvertTo-SecureString -AsPlainText -Force |
       ConvertFrom-SecureString |
       Out-File -FilePath $storage
@@ -31,13 +31,13 @@ tags:
 要得到明文，请使用这段代码：
 
     $storage = "$env:temp\secretdata.txt"
-    $secureString = Get-Content -Path $storage | 
+    $secureString = Get-Content -Path $storage |
       ConvertTo-SecureString
-      
+
     $ptr = [System.Runtime.InteropServices.Marshal]::SecureStringToGlobalAllocUnicode($secureString)
-    $mysecret = [System.Runtime.InteropServices.Marshal]::PtrToStringUni($ptr) 
-    
-    $mysecret 
+    $mysecret = [System.Runtime.InteropServices.Marshal]::PtrToStringUni($ptr)
+
+    $mysecret
 
 它可以正常使用——您可以获得和加密前一模一样的文本。
 

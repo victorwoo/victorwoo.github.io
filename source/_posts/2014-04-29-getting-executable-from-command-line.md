@@ -24,15 +24,15 @@ tags:
       (
         $CommandLine
       )
-      
+
       $divider = ' '
-      if ($CommandLine.StartsWith('"')) 
-      { 
+      if ($CommandLine.StartsWith('"'))
+      {
         $divider = '"'
         $CommandLine = $CommandLine.SubString(1)
       }
-      
+
       $CommandLine.Split($divider)[0]
-    } 
+    }
 
 <!--本文国际来源：[Getting Executable from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-executable-from-command-line)-->

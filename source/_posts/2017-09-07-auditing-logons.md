@@ -37,7 +37,7 @@ function Get-LogonInfo
   $null = $PSBoundParameters.Remove('User')
   $null = $PSBoundParameters.Remove('Path')
   $null = $PSBoundParameters.Remove('Newest')
-    
+
 
   Get-EventLog -LogName Security -InstanceId 4624 @PSBoundParameters |
   ForEach-Object {

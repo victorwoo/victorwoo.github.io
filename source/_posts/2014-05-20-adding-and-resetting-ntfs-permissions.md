@@ -19,36 +19,36 @@ tags:
     # create a sample file to apply security rules to
     $Path = "$env:temp\examplefile.txt"
     $null = New-Item -Path $Path -ItemType File -ErrorAction SilentlyContinue
-    
+
     # use current user or replace with another user name
     $username = "$env:USERDOMAIN\$env:USERNAME"
-    
+
     # define the new access rights
-    $colRights = [System.Security.AccessControl.FileSystemRights]'Read, Write' 
-    $InheritanceFlag = [System.Security.AccessControl.InheritanceFlags]::None 
-    $PropagationFlag = [System.Security.AccessControl.PropagationFlags]::None 
-    $objType =[System.Security.AccessControl.AccessControlType]::Allow 
-    $objUser = New-Object System.Security.Principal.NTAccount($username) 
-    
+    $colRights = [System.Security.AccessControl.FileSystemRights]'Read, Write'
+    $InheritanceFlag = [System.Security.AccessControl.InheritanceFlags]::None
+    $PropagationFlag = [System.Security.AccessControl.PropagationFlags]::None
+    $objType =[System.Security.AccessControl.AccessControlType]::Allow
+    $objUser = New-Object System.Security.Principal.NTAccount($username)
+
     # create new access control entry
     $objACE = New-Object System.Security.AccessControl.FileSystemAccessRule `
-        ($objUser, $colRights, $InheritanceFlag, $PropagationFlag, $objType) 
-    
+        ($objUser, $colRights, $InheritanceFlag, $PropagationFlag, $objType)
+
     # get existing access control list for a file or folder
-    $objACL = Get-Acl -Path $Path 
-    
+    $objACL = Get-Acl -Path $Path
+
     # add rule
-    $objACL.AddAccessRule($objACE) 
-    
+    $objACL.AddAccessRule($objACE)
+
     # disable inheritance (if needed)
     $objACL.SetAccessRuleProtection($true, $false)
-    
+
     # apply changed access control list to file
     Set-Acl -Path $Path -AclObject $objACL
-    
+
     # show file in the File Explorer
     explorer.exe "/SELECT,$Path"
-    
+
 执行完成之后，该脚本在文件管理器中打开测试文件，并选中它。您可以右键单击该文件并选择 `属性` > `安全` 来查看新的设置。
 
 要查看有哪些存取权限可用，请在 ISE 编辑器中键入以下这行：

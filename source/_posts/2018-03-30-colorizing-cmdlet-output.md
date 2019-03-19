@@ -35,7 +35,7 @@ $ColoredName = @{
     }
 }
 
-Get-ChildItem $env:windir | 
+Get-ChildItem $env:windir |
     Select-Object -Property Mode, LastWriteTime, Length, $ColoredName
 ```
 

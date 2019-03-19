@@ -16,20 +16,20 @@ tags:
 
 和其它情况类似，您可以通过组策略控制重启，而且多数组策略设置只是注册表键而已。以下是一个通过设置注册表键来实现控制安装更新后的重启设置的示例脚本：
 
-    $code = 
+    $code =
     {
       $key = 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU'
       $name = 'NoAutoRebootWithLoggedOnUsers'
       $type = 'DWord'
       $value = 1
-    
+
       if (!(Test-Path -Path $key))
       {
         $null = New-Item -Path $key -Force
       }
       Set-ItemProperty -Path $key -Name $name -Value $value -Type $type
     }
-    
+
     Start-Process -FilePath powershell.exe -ArgumentList $code -Verb runas -WorkingDirectory c:\
 
 请注意该脚本如何操作注册表：它实际上是通过另一个 PowerShell 实例间接执行的。第二个实例是通过 `Start-Process` 启动的，而“`-Verb Runas`”确保了以管理员身份运行这段代码。

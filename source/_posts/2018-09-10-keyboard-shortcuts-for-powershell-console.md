@@ -17,10 +17,10 @@ PowerShell 控制台从 5.0 版开始发布了一个名为 `PSReadLine` 的模�
 请看这个示例：
 
 ```powershell
-Set-PSReadlineKeyHandler -Chord Ctrl+H -ScriptBlock { 
-  Get-History | 
-  Out-GridView -Title 'Select Command' -PassThru | 
-  Invoke-History 
+Set-PSReadlineKeyHandler -Chord Ctrl+H -ScriptBlock {
+  Get-History |
+  Out-GridView -Title 'Select Command' -PassThru |
+  Invoke-History
 }
 ```
 

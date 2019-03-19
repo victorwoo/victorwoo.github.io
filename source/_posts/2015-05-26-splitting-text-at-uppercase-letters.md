@@ -15,7 +15,7 @@ tags:
 要在一段文本的每个大写字符出分割这段文本，而不用提供一个大写字符的列表，请试试这个例子：
 
     $text = 'MapNetworkDriveWithCredential'
-    
+
     [Char[]]$raw = foreach ($character in $text.ToCharArray())
     {
       if ([Char]::IsUpper($character))
@@ -24,7 +24,7 @@ tags:
       }
       $character
     }
-    
+
     $newtext = (-join $raw).Trim()
     $newtext
 

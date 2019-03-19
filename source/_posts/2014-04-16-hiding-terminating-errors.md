@@ -24,9 +24,9 @@ tags:
 
     try
     {
-      Get-EventLog -LogName Security 
+      Get-EventLog -LogName Security
     }
     catch
-    {} 
+    {}
 
 <!--本文国际来源：[Hiding Terminating Errors](http://community.idera.com/powershell/powertips/b/tips/posts/hiding-terminating-errors)-->

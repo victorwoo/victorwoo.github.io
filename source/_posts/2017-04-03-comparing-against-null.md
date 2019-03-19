@@ -30,16 +30,16 @@ False
 
 ```powershell
 # this all produces inconsistent and fishy results
-    
+
 $a = $null
 $a -eq $null  # works: returns $true
-    
+
 $a = 1,2,3
 $a -eq $null  # fails: returns $null
-    
+
 $a = 1,2,$null,3,4
 $a -eq $null  # fails: returns $null
-    
+
 $a = 1,2,$null,3,4,$null,5
 $a -eq $null  # fails: returns array of 2x $null
 ($a -eq $null).Count
@@ -51,16 +51,16 @@ $a -eq $null  # fails: returns array of 2x $null
 
 ```powershell
 # by reversing the operands, all is FINE:
-    
+
 $a = $null
 $null -eq $a  # works: $true
-    
+
 $a = 1,2,3
 $null -eq $a  # works: $false
-    
+
 $a = 1,2,$null,3,4
 $null -eq $a  # works: $false
-    
+
 $a = 1,2,$null,3,4,$null,5
 $null -eq $a  # works: $false
 ```

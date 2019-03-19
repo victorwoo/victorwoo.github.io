@@ -34,8 +34,8 @@ $Path = "c:\docs\document.pdf"
 # choose a delay (in seconds) for the print out to complete
 $PrintDelay = 10
 
-Start-Process -FilePath $Path -Verb Print -PassThru | 
-  ForEach-Object{ Start-Sleep $printDelay; $_} | 
+Start-Process -FilePath $Path -Verb Print -PassThru |
+  ForEach-Object{ Start-Sleep $printDelay; $_} |
   Stop-Process
 ```
 

@@ -95,7 +95,7 @@ tags:
         Param (
             $Uri
         )
-        
+
         $Uri = $Uri.Replace('/view/', '/learn/')
         $Uri = $Uri.Replace('/qa/', '/learn/')
         $Uri = $Uri.Replace('/note/', '/learn/')
@@ -196,7 +196,7 @@ tags:
             if ($_.Title -cnotmatch '(?m)^\d') {
                 return
             }
-        
+
             $title = $_.Title
             Write-Progress -Activity '下载视频' -Status '获取视频地址'
             $videoUrl = Get-VideoUri $_.ID
@@ -225,10 +225,10 @@ tags:
         if ($Combine) {
             # -and ($actualDownloadAny -or -not (Test-Path $targetFile))) {
             if ($actualDownloadAny -or -not (Test-Path $targetFile) -or (Test-Path $targetFile) -and $PSCmdlet.ShouldProcess('分段视频', '合并')) {
-                Write-Progress -Activity '下载视频' -Status '合并视频'    
+                Write-Progress -Activity '下载视频' -Status '合并视频'
                 Write-Output ("合并视频（共 {0:N0} 个）" -f $outputPathes.Count)
                 $outputPathes.Insert(0, $targetFile)
-            
+
                 $eap = $ErrorActionPreference
                 $ErrorActionPreference = "SilentlyContinue"
                 .\FlvBind.exe $outputPathes.ToArray()

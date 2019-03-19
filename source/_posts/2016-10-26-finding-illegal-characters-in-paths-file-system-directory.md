@@ -25,7 +25,7 @@ $illegal =[Regex]::Escape(-join [System.Io.Path]::GetInvalidPathChars())
 $pattern = "[$illegal]"
 
 # find illegal characters
-$invalid = [regex]::Matches($pathToCheck, $pattern, 'IgnoreCase').Value | Sort-Object -Unique 
+$invalid = [regex]::Matches($pathToCheck, $pattern, 'IgnoreCase').Value | Sort-Object -Unique
 
 $hasInvalid = $invalid -ne $null
 if ($hasInvalid)

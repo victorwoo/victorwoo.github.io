@@ -63,7 +63,7 @@ $synthesizer.GetInstalledVoices().VoiceInfo |
 
 哪些语音可用，依赖于系统已安装了哪些语言。以下链接解释了不同语言的 Windows 10 自带了哪些语音：
 
-[https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices](https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices). 
+[https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices](https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices).
 请注意 `SeletVoice()` 并不能使用所有已安装的语音。
 
 <!--本文国际来源：[Synthesizing Speech – Using Different Voices (Part 4)](http://community.idera.com/powershell/powertips/b/tips/posts/synthesizing-speech-using-different-voices-part-4)-->

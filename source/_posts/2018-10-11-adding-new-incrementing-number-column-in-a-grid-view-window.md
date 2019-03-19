@@ -18,7 +18,7 @@ Maybe you’d like to add a column with incrementing indices to your objects. Tr
     Get-Service |
       Select-Object -Property @{N='ID#';E={$script:startcount++;$startcount}}, * |
       Out-GridView
-    
+
 
 When you run this chunk of code, you get a list of services in a grid view window, and the first column “ID#” is added with incrementing ID numbers.
 

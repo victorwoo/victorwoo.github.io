@@ -15,7 +15,7 @@ tags:
 如果您想检查和查看一个证书文件的详细信息而不需要将它导入证书存储空间，以下是一个简单的例子：
 
 ```powershell
-# replace path with actual path to CER file 
+# replace path with actual path to CER file
 $Path = 'C:\Path\To\CertificateFile\test.cer'
 
 Add-Type -AssemblyName System.Security

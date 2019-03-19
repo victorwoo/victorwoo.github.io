@@ -22,7 +22,7 @@ $path = 'C:\Windows\Logs\DISM\dism.log'
 
 # slow reading line-by-line
 Measure-Command {
-  $text = Get-Content -Path $Path 
+  $text = Get-Content -Path $Path
 }
 
 # fast reading entire text as one large string

@@ -19,7 +19,7 @@ tags:
 ```powershell
 function Decrypt-Text
 {
-  
+
   param
   (
     [String]
@@ -36,7 +36,7 @@ function Decrypt-Text
 
 function Encrypt-Text
 {
-  
+
   param
   (
     [String]
@@ -45,13 +45,13 @@ function Encrypt-Text
   )
   process
   {
-     $Text | 
-       ConvertTo-SecureString -AsPlainText -Force | 
+     $Text |
+       ConvertTo-SecureString -AsPlainText -Force |
        ConvertFrom-SecureString
   }
 }
 
-'PowerShell Rocks' | Encrypt-Text 
+'PowerShell Rocks' | Encrypt-Text
 'Hello, World!' | Encrypt-Text | Decrypt-Text
 ```
 

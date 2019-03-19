@@ -20,8 +20,8 @@ tags:
 
     # classic:
     Get-ChildItem -Path c:\windows -Filter *.ps1 -Recurse -ErrorAction SilentlyContinue
-    
-    
+
+
     # Splatting
     $params = @{}
     $params.Path = 'c:\windows'

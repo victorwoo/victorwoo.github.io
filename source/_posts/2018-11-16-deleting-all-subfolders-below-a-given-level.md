@@ -18,7 +18,7 @@ tags:
 # Task:
 
 # remove all folders one level below the given path
-Get-ChildItem -Path "c:\sample\*\" -Directory -Recurse | 
+Get-ChildItem -Path "c:\sample\*\" -Directory -Recurse |
     # remove -WhatIf to actually delete
     # ATTENTION: test thoroughly before doing this!
     # you may want to add -Force to Remove-Item to forcefully delete
@@ -31,7 +31,7 @@ Get-ChildItem -Path "c:\sample\*\" -Directory -Recurse |
 # Task:
 
 # remove all folders TWO levels below the given path
-Get-ChildItem -Path "c:\sample\*\*\" -Directory -Recurse | 
+Get-ChildItem -Path "c:\sample\*\*\" -Directory -Recurse |
     # remove -WhatIf to actually delete
     # ATTENTION: test thoroughly before doing this!
     # you may want to add -Force to Remove-Item to forcefully delete

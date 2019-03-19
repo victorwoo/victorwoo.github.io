@@ -16,7 +16,7 @@ tags:
 
 	$month = 8
 	$year = 2013
-	
+
 	1..[DateTime]::DaysInMonth($year,$month) |
 	  ForEach-Object { Get-Date -Day $_ -Month $month -Year $year }
 
@@ -24,20 +24,20 @@ tags:
 
 	$month = 8
 	$year = 2013
-	
+
 	1..[DateTime]::DaysInMonth($year,$month) |
 	  ForEach-Object { Get-Date -Day $_ -Month $month -Year $year } |
 	  Where-Object { 0,6 -notcontains $_.DayOfWeek }
-	
+
 类似地，以下代码将统计指定月份所有星期三和星期五的天数：
 
 	$month = 8
 	$year = 2013
-	
+
 	$days = 1..[DateTime]::DaysInMonth($year,$month) |
 	  ForEach-Object { Get-Date -Day $_ -Month $month -Year $year } |
 	  Where-Object { 3,5 -contains $_.DayOfWeek }
-	
+
 	$days
 	"There are {0} Wednesdays and Fridays" -f $days.Count
 

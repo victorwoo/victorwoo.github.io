@@ -24,11 +24,11 @@ function Get-LoggedCode
 
   # read all raw events
   $logInfo = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-  Get-WinEvent -FilterHashtable $logInfo | 
+  Get-WinEvent -FilterHashtable $logInfo |
   # take each raw set of data...
   ForEach-Object {
     # store the code in this entry
-    
+
     # if this is the first part, take it
     if ($_.Properties[0].Value -eq 1)
     {
@@ -39,7 +39,7 @@ function Get-LoggedCode
     {
       $code += $_.Properties[2].Value
     }
-  
+
     # return the object when all parts have been processed
     if ($_.Properties[0].Value -eq $_.Properties[1].Value)
     {
@@ -65,9 +65,9 @@ function Get-LoggedCode
       }
       else
       {
-    
+
       }
-  
+
       # create a new object and extract the interesting
       # parts from the raw data to compose a "cooked"
       # object with useful data
@@ -82,13 +82,13 @@ function Get-LoggedCode
         # log level
         # by default, only level "Warning" will be logged
         Level = $_.LevelDisplayName
-        # user who executed the code 
+        # user who executed the code
         # take the real user name from the cache of translated
         # user names
         User = $translateTable[$userSID]
       }
     }
-  } 
+  }
 }
 ```
 

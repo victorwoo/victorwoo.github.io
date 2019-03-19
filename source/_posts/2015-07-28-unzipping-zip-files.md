@@ -15,14 +15,14 @@ tags:
 在 PowerShell 5.0 中，有一个新的 cmdlet 可以解压 ZIP 文件：
 
     #requires -Version 5
-    
+
     $Source = 'C:\somezipfile.zip'
     $Destination = 'C:\somefolder'
     $Overwrite = $true
     $ShowDestinationFolder = $true
-    
+
     Expand-Archive -Path $Source -DestinationPath $Destination -Force:$Overwrite
-    
+
     if ($ShowDestinationFolder)
     {
       explorer.exe $Destination

@@ -22,27 +22,27 @@ tags:
       (
         [System.String]
         $Username = 'XYZ@t-mobile.de',
-        
+
         [System.String]
         $Password = 'topsecret'
       )
-      
+
       # change this to match your provider logon page URL
       $url = 'https://hotspot.t-mobile.net/wlan/start.do'
-    
-      $r = Invoke-WebRequest -Uri $url -SessionVariable fb   
-      
+
+      $r = Invoke-WebRequest -Uri $url -SessionVariable fb
+
       $form = $r.Forms[0]
-      
+
       # change this to match the website form field names:
       $form.Fields['username'] = $Username
       $form.Fields['password'] = $Password
-      
+
       # change this to match the form target URL
       $r = Invoke-WebRequest -Uri ('https://hotspot.t-mobile.net' + $form.Action) -WebSession $fb -Method POST -Body $form.Fields
       Write-Host 'Connected' -ForegroundColor Green
-      Start-Process 'http://www.google.de' 
-    } 
+      Start-Process 'http://www.google.de'
+    }
 
 简而言之，`Invoke-WebRequest` 可以到导航到一个页面，填充表单数据，然后提交表单。要能提交正确的数据，您需要查看登录网页的的源代码（导航到该页面，在浏览器中右键单击选择显示 HTML 源代码）。
 

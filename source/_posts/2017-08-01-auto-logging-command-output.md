@@ -39,17 +39,17 @@ $ExecutionContext.SessionState.InvokeCommand.PreCommandLookupAction = {
         $eventArgs.CommandScriptBlock = {
             # run the original command without "*", and
             # submit original arguments if there have been any
-            $( 
+            $(
             if ($args.Count -eq 0)
             { & $command }
             else
             { & $command $args }
-            ) | 
+            ) |
             # log output to file
-            Tee-Object -FilePath $debugPath | 
-            # open the file once all output has been processed 
+            Tee-Object -FilePath $debugPath |
+            # open the file once all output has been processed
             ForEach-Object -Process { $_ } -End {
-               if (Test-Path $debugPath) { notepad $debugPath } 
+               if (Test-Path $debugPath) { notepad $debugPath }
             }
         }.GetNewClosure()
     }

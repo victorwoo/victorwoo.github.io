@@ -18,9 +18,9 @@ _适用于 PowerShell 所有版本_
 
     $FolderToCopyFrom = 'C:\folder1'
     $FolderToCopyTo = 'C:\folder2'
-    
+
     $securityDescriptor = Get-Acl -Path $FolderToCopyFrom
-    Set-Acl -Path $FolderToCopyTo -AclObject $securityDescriptor 
+    Set-Acl -Path $FolderToCopyTo -AclObject $securityDescriptor
 
 复制安全描述符操作可能需要管理员权限。请注意第二个文件夹的所有安全规则都会被第一个文件夹的安全信息覆盖。
 

@@ -18,17 +18,17 @@ _适用于 PowerShell 控制台_
 
 在 PowerShell 控制台中，许多用户在要分页输出数据时仍然采用管道输出到 `more.com` 的老办法：
 
-    PS> dir c:\windows | more 
+    PS> dir c:\windows | more
 
 这看起来能用。不过当您输出大量数据到管道的时候，PowerShell 看起来卡住了：
 
-    PS> dir c:\windows -Recurse -ErrorAction SilentlyContinue | more 
+    PS> dir c:\windows -Recurse -ErrorAction SilentlyContinue | more
 
 这是因为 `more.com` 无法实时工作。它会首先收集所有的输入数据，然后开始分页输出。
 
 更好的办法是使用 `Out-Host` cmdlet，结合 `-Paging` 参数：
 
-    PS> dir c:\windows -Recurse -ErrorAction SilentlyContinue | Out-Host -Paging 
+    PS> dir c:\windows -Recurse -ErrorAction SilentlyContinue | Out-Host -Paging
 
 它能即时输出结果，因为它一旦从管道接收到数据，就可以开始处理。
 

@@ -20,11 +20,11 @@ Internet 有许多信息提供服务，许多返回的是 JSON 数据格式。�
 
     # ask for part of the train station name
     $name = Read-Host 'Enter part of train station Name'
-    
+
     # query webservice
     $url = "http://openbahnapi.appspot.com/rest/stations/list?contains=$name"
     $site = Invoke-WebRequest -Uri $url
-    
+
     # get JSON result
     ($site.Content | ConvertFrom-Json ).value
 
@@ -43,8 +43,8 @@ Internet 有许多信息提供服务，许多返回的是 JSON 数据格式。�
     Hannover-Leinhausen
     Hannover Anderten-Misburg
     Hannover-Bornum
-    
-    PS>  
+
+    PS>
 
 这段代码并不仅限于德国铁路系统，所以如果您不是对德国铁路系统特别兴趣的话，可以调用任何基于 JSON 的 Web Service。
 

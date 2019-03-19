@@ -19,9 +19,9 @@ PowerShell 远程连接默认情况下不会传递您的凭据，不会使用您
 这是一个典型的错误代码：
 
 ```powershell
-$code = 
+$code =
 {
-  Get-ChildItem -Path  \\fls01\#TRAIN1\PowerShell\Class  
+  Get-ChildItem -Path  \\fls01\#TRAIN1\PowerShell\Class
 }
 
 Invoke-Command -ScriptBlock $code -ComputerName server1

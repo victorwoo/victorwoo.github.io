@@ -26,7 +26,7 @@ Get-ChildItem -Path $LogFileDir -Filter *.log |
   # (oldest first)...
   Sort-Object -Property LastWriteTime |
   # take the first (oldest) one
-  Select-Object -First 1 | 
+  Select-Object -First 1 |
   # remove it (remove -whatif to actually delete)
   Remove-Item -WhatIf
 ```
@@ -49,7 +49,7 @@ if ($NumberToDelete -gt 0)
       # (oldest first)...
       Sort-Object -Property LastWriteTime |
       # take the first (oldest) one
-      Select-Object -First $NumberToDelete | 
+      Select-Object -First $NumberToDelete |
       # remove it (remove -whatif to actually delete)
       Remove-Item -WhatIf
 }

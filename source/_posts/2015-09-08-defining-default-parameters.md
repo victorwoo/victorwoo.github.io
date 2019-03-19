@@ -25,9 +25,9 @@ PowerShell 可以为任意参数定义缺省值，所以如果您总是需要传
 
 `$PSDefaultParameterValues` 实际上是一个哈希表，所以您可以覆盖缺省值，或将当前定义的所有缺省值导出成列表：
 
-    Name                           Value                                                                 
-    ----                           -----                                                                 
-    *-AD*:Server                   dc-01                                                                 
+    Name                           Value
+    ----                           -----
+    *-AD*:Server                   dc-01
     Get-ChildItem:Path             C:\$Recycle.Bin
 
 要清空所有缺省参数，请清除哈希表：

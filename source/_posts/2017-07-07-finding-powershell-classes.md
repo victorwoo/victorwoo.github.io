@@ -19,7 +19,7 @@ tags:
 ```powershell
 class TestClass
 {
-    
+
 }
 ```
 
@@ -28,10 +28,10 @@ class TestClass
 ```powershell
 function Get-PSClass($Name = '*')
 {
-    [AppDomain]::CurrentDomain.GetAssemblies() | 
-    Where-Object { $_.GetCustomAttributes($false) | 
-        Where-Object { $_ -is [System.Management.Automation.DynamicClassImplementationAssemblyAttribute]} } | 
-        ForEach-Object { $_.GetTypes() | 
+    [AppDomain]::CurrentDomain.GetAssemblies() |
+    Where-Object { $_.GetCustomAttributes($false) |
+        Where-Object { $_ -is [System.Management.Automation.DynamicClassImplementationAssemblyAttribute]} } |
+        ForEach-Object { $_.GetTypes() |
         Where-Object IsPublic |
         Where-Object { $_.Name -like $Name } |
         Select-Object -ExpandProperty Name
@@ -41,13 +41,13 @@ function Get-PSClass($Name = '*')
 
 执行这个函数后，它会返回当前内存中所有定义的 PowerShell 类（在我们的 PowerShell 例子中，在前几个技能实验中有好几个 PowerShell 类）：
 
-```powershell     
+```powershell
 PS> Get-PSClass
 HelperStuff
 Employee
 TestClass
 
-PS>  
+PS>
 ```
 
 您也可以显示地测试一个类名：
@@ -56,10 +56,10 @@ PS>
 PS> Get-PSClass -Name TestClass
 TestClass
 
-PS> (Get-PSClass -Name TestClass) -ne $null 
+PS> (Get-PSClass -Name TestClass) -ne $null
 True
 
-PS> (Get-PSClass -Name TestClassNotExisting) -ne $null 
+PS> (Get-PSClass -Name TestClassNotExisting) -ne $null
 False
 ```
 

@@ -54,24 +54,24 @@ tags:
 编辑 `xampp\apache\conf\extra\httpd-vhosts.conf`，在尾部添加：
 
     ProxyRequests Off
-    
+
     <Proxy *>
         Order deny,allow
         Allow from all
     </Proxy>
-    
+
     <VirtualHost *:80>
         ServerName blog.test.com
         ProxyPass / http://127.0.0.1:81/
         ProxyPassReverse / http://127.0.0.1:81/
     </VirtualHost>
-    
+
     <VirtualHost *:80>
         ServerName img.test.com
         ProxyPass / http://127.0.0.1:82/
         ProxyPassReverse / http://127.0.0.1:82/
     </VirtualHost>
-    
+
     <VirtualHost *:80>
         ServerName js.test.com
         ProxyPass / http://127.0.0.1:83/

@@ -23,14 +23,14 @@ tags:
       param(
         [string]
         $commandName,
-    
+
         [System.Management.Automation.CommandLookupEventArgs]
         $eventArgs
       )
-    
+
       Write-Warning "Command $commandName was not found. Opening LookilookiTool."
       $eventArgs.CommandScriptBlock = { Show-Command }
-    
+
     }
 
 <!--本文国际来源：[Adding Command Not Found Handler](http://community.idera.com/powershell/powertips/b/tips/posts/adding-command-not-found-handler)-->

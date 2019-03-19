@@ -20,10 +20,10 @@ AD 安全描述符有可能非常复杂。复制 AD 安全信息却非常简单�
 
     #requires -Version 2 -Modules ActiveDirectory
     Import-Module -Name ActiveDirectory
-    
+
     # read AD security from NewOU1
     $sd = Get-Acl -Path 'AD:\OU=NewOU1,DC=powershell,DC=local'
-    
+
     # assign security to NewOU2
     Set-Acl -Path 'AD:\OU=NewOU2,DC=powershell,DC=local' -AclObject $sd
 

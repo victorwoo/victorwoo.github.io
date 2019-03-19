@@ -16,7 +16,7 @@ How would you query for all AD users with names that start with a “e”-“g�
 
     Get-ADUser -filter {(name -lt 'E') -or (name -gt 'G')} |
       Select-Object -ExpandProperty Name
-    
+
 
 this example requires the free RSAT tools from Microsoft to be installed)
 

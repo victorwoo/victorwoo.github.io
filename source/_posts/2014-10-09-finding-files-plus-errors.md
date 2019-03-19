@@ -21,7 +21,7 @@ _适用于 PowerShell 所有版本_
 以下是一段在 Windows 文件夹中搜索所有 PowerShell 脚本的脚本。它将这些文件保存在 `$PSScripts` 变量中。同时，它将所有的错误信息记录在 `$ErrorList` 变量中，并列出所有不可存取的文件夹。
 
     $PSScripts = Get-ChildItem -Path c:\windows -Filter *.ps1 -Recurse -ErrorAction SilentlyContinue -ErrorVariable ErrorList
-    
+
     $ErrorList | ForEach-Object {
       Write-Warning ('Access denied: ' + $_.CategoryInfo.TargetName)
     }

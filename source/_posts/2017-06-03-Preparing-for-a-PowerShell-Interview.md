@@ -172,7 +172,7 @@ PowerShell 往往提供多种方法来实现同一件事情。当然，这些方
         )
         $number1 + $number2
     }
-     
+
     PS C:\> sum 10 30
     40
 
@@ -196,7 +196,7 @@ PowerShell 往往提供多种方法来实现同一件事情。当然，这些方
 
     PS C:\> sum 10 30
     40
-     
+
     PS C:\> sum 10 30 40
     sum : A positional parameter cannot be found that accepts argument '40'.
     At line:1 char:1

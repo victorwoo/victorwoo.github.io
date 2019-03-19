@@ -26,22 +26,22 @@ tags:
 
 这段代码定义了一个 person 变量。您可以这样查看 person 的内容：
 
-    PS> $person  
-	Name                           Value  
-	----                           -----  
-	Name                           Weltner  
-	Id                             12  
+    PS> $person
+	Name                           Value
+	----                           -----
+	Name                           Weltner
+	Id                             12
 	Address                        {Street, Details, City}
-    
+
 您还可以这样方便地获取其中的一部分信息：
 
 	PS> $person
 	Name
 	Weltner
-	
+
 	PS> $person.Address.City
 	Folsom
-	
+
 	PS> $person.Address.Details.ScenicView
 	False
 

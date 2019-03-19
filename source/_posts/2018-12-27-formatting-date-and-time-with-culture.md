@@ -39,14 +39,14 @@ $christmasEve.ToString('"Christmas Eve in" yyyy "will be on" dddd.')
 ```powershell
 PS> $christmasEve.ToString
 
-OverloadDefinitions                                                                                     
--------------------                                                                                     
-string ToString()                                                                                       
-string ToString(string format)                                                                          
-string ToString(System.IFormatProvider provider)                                                        
-string ToString(string format, System.IFormatProvider provider)                                         
-string IFormattable.ToString(string format, System.IFormatProvider formatProvider)                      
-string IConvertible.ToString(System.IFormatProvider provider)   
+OverloadDefinitions
+-------------------
+string ToString()
+string ToString(string format)
+string ToString(System.IFormatProvider provider)
+string ToString(string format, System.IFormatProvider provider)
+string IFormattable.ToString(string format, System.IFormatProvider formatProvider)
+string IConvertible.ToString(System.IFormatProvider provider)
 ```
 
 以下是无论在什么语言的操作系统上都以英文输出周几的解决方案：
@@ -57,7 +57,7 @@ $culture = [CultureInfo]'en-us'
 $christmasEve.ToString('"Christmas Eve in" yyyy "will be on" dddd.', $culture)
 
 
-Christmas Eve in 2018 will be on Monday. 
+Christmas Eve in 2018 will be on Monday.
 ```
 
 如果要显示其它地区的语言，例如要查看中文或泰文中“星期一”的表达：

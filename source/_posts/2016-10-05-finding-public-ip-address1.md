@@ -23,7 +23,7 @@ Invoke-RestMethod -Uri http://checkip.amazonaws.com/
 
 ```powershell
 #requires -Version 3.0
-$ip = Invoke-RestMethod -Uri http://checkip.amazonaws.com/ 
+$ip = Invoke-RestMethod -Uri http://checkip.amazonaws.com/
 Invoke-RestMethod -Uri "http://geoip.nekudo.com/api/$IP" |
   Select-Object -ExpandProperty Country
 ```

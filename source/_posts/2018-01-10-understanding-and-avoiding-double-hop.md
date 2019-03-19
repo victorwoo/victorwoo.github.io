@@ -37,10 +37,10 @@ Invoke-Command -ScriptBlock $code -ComputerName $target
 $TargetServer = 'ServerA'
 
 # configure the computer you directly connect to
-Invoke-Command -ScriptBlock { 
+Invoke-Command -ScriptBlock {
     Enable-WSManCredSSP -Role Server -Force | Out-String
-    } -ComputerName $TargetServer 
-    
+    } -ComputerName $TargetServer
+
 # establish CredSSP trust
 Enable-WSManCredSSP -Role Client -DelegateComputer $TargetServer -Force
 ```
@@ -48,7 +48,7 @@ Enable-WSManCredSSP -Role Client -DelegateComputer $TargetServer -Force
 当这个信任存在时，您可以使用 CredSSP 规避双跃点问题。以下是如何在 CredSSP 启用的情况下如何远程运行代码的方法：
 
 ```powershell
-Invoke-Command -ScriptBlock $code -ComputerName $target 
+Invoke-Command -ScriptBlock $code -ComputerName $target
 -Authentication Credssp -Credential mydomain\myUser
 ```
 

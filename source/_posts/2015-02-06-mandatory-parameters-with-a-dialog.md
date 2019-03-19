@@ -21,9 +21,9 @@ _适用于 PowerShell 所有版本_
       param
       (
         [Parameter(Mandatory = $true)]
-        $Path 
+        $Path
       )
-    
+
       "You entered $Path."
     }
 
@@ -31,14 +31,14 @@ _适用于 PowerShell 所有版本_
 
     PS> Get-Something -Path test
     You entered test.
-    
-    PS> Get-Something 
+
+    PS> Get-Something
     Cmdlet Get-Something at command pipeline position 1
     Supply values for the following parameters:
     Path: test
     You entered test.
-    
-    PS>  
+
+    PS>
 
 但是您是否知道还可以通过这种方式获取一个必选参数？
 
@@ -48,20 +48,20 @@ _适用于 PowerShell 所有版本_
       (
         $Path = $(Read-Host 'Please, enter a Path value')
       )
-    
+
       "You entered $Path."
-    } 
+    }
 
 这种方法将控制权交给您，以下是它看起来的样子：
 
-     
+
     PS> Get-Something -Path test
     You entered test.
-    
-    PS> Get-Something 
+
+    PS> Get-Something
     Please, enter a Path value: test
     You entered test.
-    
+
     PS>
 
 <!--本文国际来源：[Mandatory Parameters with a Dialog](http://community.idera.com/powershell/powertips/b/tips/posts/mandatory-parameters-with-a-dialog)-->

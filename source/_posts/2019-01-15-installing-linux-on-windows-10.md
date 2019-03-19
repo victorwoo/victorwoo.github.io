@@ -15,7 +15,7 @@ tags:
 Windows 中带有适用于 Linux 的 Windows 子系统 (WSL) 功能，您可以通过它来运行各种 Linux 发型版。通过提升权限的 PowerShell 来启用 WSL：
 
 ```powershell
-Enable-WindowsOptionalFeature -FeatureName Microsoft-Windows-Subsystem-Linux -Online  
+Enable-WindowsOptionalFeature -FeatureName Microsoft-Windows-Subsystem-Linux -Online
 ```
 
 下一步，在 Windows 10 中打开 Microsoft Store，并且搜索 "Linux"。安装某个支持的 Linux 发行版（例如，Debian）！

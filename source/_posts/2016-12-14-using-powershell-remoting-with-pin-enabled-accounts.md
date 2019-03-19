@@ -15,8 +15,8 @@ tags:
 如果您设置了 PIN 用来登录您的电脑，对您自己的机器使用 PowerShell remoting 可能会失败，提示如下奇怪的错误信息：
 
 ```
-PS C:\>  Invoke-Command { "Hello" } -ComputerName $env:computername 
-[DESKTOP-7AAMJLF]  Connecting to remote server DESKTOP-7AAMJLF failed with the following error  message : WinRM cannot process the request. The following error with  errorcode 0x8009030e occurred while using Negotiate authentication: A specified logon session does not exist. It may already have been terminated. 
+PS C:\>  Invoke-Command { "Hello" } -ComputerName $env:computername
+[DESKTOP-7AAMJLF]  Connecting to remote server DESKTOP-7AAMJLF failed with the following error  message : WinRM cannot process the request. The following error with  errorcode 0x8009030e occurred while using Negotiate authentication: A specified logon session does not exist. It may already have been terminated.
  Possible causes are:
   -The user name or password specified are  invalid.
   -Kerberos is used when no authentication  method and no user name are specified.
@@ -27,7 +27,7 @@ PS C:\>  Invoke-Command { "Hello" } -ComputerName $env:computername
   -Check the Event Viewer for events related to  authentication.
   -Change the authentication method; add the  destination computer to the WinRM TrustedHosts configuration setting or use  HTTPS transport.
  Note that computers in the TrustedHosts list  might not be authenticated.
-  -For more information about WinRM  configuration, run the following command: winrm help config. For more  information, see the 
+  -For more information about WinRM  configuration, run the following command: winrm help config. For more  information, see the
 about_Remote_Troubleshooting  Help topic.
     + CategoryInfo          : OpenError: (DESKTOP-7AAMJLF:String)  [], PSRemotingTransportException
     + FullyQualifiedErrorId :  1312,PSSessionStateBroken

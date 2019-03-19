@@ -15,12 +15,12 @@ tags:
 如果您需要确保给定的字符串有一致的宽度，那么您可以使用 .NET 方法来适当地对齐字符串：
 
     $mytext = 'Test'
-    
+
     $paddedText = $mytext.PadLeft(15)
     "Here is the text: '$paddedText'"
-    
+
     $paddedText = $mytext.PadRight(15)
-    "Here is the text: '$paddedText'" 
+    "Here is the text: '$paddedText'"
 
 以下是结果：
 

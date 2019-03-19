@@ -35,7 +35,7 @@ function Explore-WMI
   # query class...
   Get-WmiObject -Class $class.Name |
   # and show all of its properties
-  Select-Object -Property * 
+  Select-Object -Property *
 
 
   # output code

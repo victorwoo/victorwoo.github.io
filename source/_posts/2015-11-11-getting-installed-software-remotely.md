@@ -17,42 +17,42 @@ tags:
 如果您在远程系统上已经安装了 PowerShell 远程操作（在 Windows Server 2012 及以上版本中默认是开启的），并且如果您拥有合适的权限，请试试这个增强的版本。它同时支持本地和远程调用：
 
     #requires -Version 2
-    
+
     function Get-Software
     {
         param
         (
             [string]
             $DisplayName='*',
-    
+
             [string]
             $UninstallString='*',
-    
+
             [string[]]
             $ComputerName
         )
-    
+
         [scriptblock]$code =
         {
-    
+
             param
             (
             [string]
             $DisplayName='*',
-    
+
             [string]
             $UninstallString='*'
-    
+
             )
           $keys = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
            'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
-        
+
           Get-ItemProperty -Path $keys |
           Where-Object { $_.DisplayName } |
           Select-Object -Property DisplayName, DisplayVersion, UninstallString |
           Where-Object { $_.DisplayName -like $DisplayName } |
           Where-Object { $_.UninstallString -like $UninstallString }
-    
+
         }
         if ($PSBoundParameters.ContainsKey('ComputerName'))
         {

@@ -15,7 +15,7 @@ tags:
 缺省情况下，AD 对象是受保护防止意外删除的。要移除一个指定的范围内所有对象（例如某个机构之下）的这种保护，请试试这段代码：
 
     #requires -Version 1 -Modules ActiveDirectory
-    
+
     Get-ADObject -Filter * -SearchBase 'OU=TestOU,DC=Vision,DC=local"' |
     ForEach-Object -Process {
         Set-ADObject -ProtectedFromAccidentalDeletion $false -Identity $_

@@ -13,7 +13,7 @@ tags:
 	$wordBreakers = ",. ()\\/';-<>_#"
 	$wordTemplate = '^Pub\w+'
 	cd D:\Dropbox\workdir\LandiStore\BOCISTDemo\src\Project
-	
+
 	$content = (dir *.c -Recurse | % { cat $_} ) -join "`n"
 	$words = $content.Split($wordBreakers)
 	$words = $words | ? {$_ -Match $wordTemplate}

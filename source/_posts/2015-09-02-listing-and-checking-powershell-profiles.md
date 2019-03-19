@@ -26,7 +26,7 @@ tags:
       ForEach-Object {
           $path = $profile.$_
           New-Object PSObject -Property ([Ordered]@{Path=$Path; Exists=(Test-Path $Path) })
-    
+
       }
 
 输出结果类似如下：

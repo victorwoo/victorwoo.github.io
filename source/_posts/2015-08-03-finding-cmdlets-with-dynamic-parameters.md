@@ -17,24 +17,24 @@ tags:
 要查找所有带动态参数的 cmdlet，请试试这段代码：
 
     #requires -Version 2
-    
+
     $cmdlets = Get-Command -CommandType Cmdlet
-    
+
     $cmdlets.Count
-    
+
     $loaded = $cmdlets |
     Where-Object { $_.ImplementingType }
-    
+
     $loaded.Count
-    
+
     $dynamic = $loaded |
     Where-Object {
         $cmdlet = New-Object -TypeName $_.ImplementingType.FullName
         $cmdlet -is [System.Management.Automation.IDynamicParameters]
       }
-      
+
     $dynamic.Count
-    
+
     $dynamic | Out-GridView
 
 您将只会获得已加载并且包含动态参数的 cmdlet。

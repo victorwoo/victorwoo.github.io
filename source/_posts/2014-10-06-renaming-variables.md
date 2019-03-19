@@ -24,19 +24,19 @@ _适用于 PowerShell ISE 3 或更高版本_
       (
         [Parameter(Mandatory=$true)]
         $OldName,
-        
+
         [Parameter(Mandatory=$true)]
         $NewName
       )
-      
+
       $InputText = $psise.CurrentFile.Editor.Text
       $token = $null
       $errors = $null
-      
+
       $ast = [System.Management.Automation.Language.Parser]::ParseInput($InputText, [ref] $token, [ref] $errors)
-      
-      $token | 
-      Where-Object { $_.Kind -eq 'Variable'} | 
+
+      $token |
+      Where-Object { $_.Kind -eq 'Variable'} |
       Where-Object { $_.Name -eq $OldName } |
       Sort-Object { $_.Extent.StartOffset } -Descending |
       ForEach-Object {
@@ -44,15 +44,15 @@ _适用于 PowerShell ISE 3 或更高版本_
         $end = $_.Extent.EndOffset
         $InputText = $InputText.Remove($start, $end-$start).Insert($start, $NewName)
       }
-      
+
       $psise.CurrentFile.Editor.Text = $InputText
-    } 
+    }
 
 运行这个函数之后，您将得到一个名为 `Rename-Variable` 的新命令。
 
 下一步，在 ISE 编辑器中打开一个脚本，然后在控制台面板中，键入以下内容（当然，需要将旧的变量名“_oldVariableName_”改为您当前所打开的 ISE 脚本中实际存在的变量名）。
 
-    PS> Rename-Variable -OldName oldVariableName -NewName theNEWname   
+    PS> Rename-Variable -OldName oldVariableName -NewName theNEWname
 
 立刻，旧变量的所有出现的地方都被替换成新的变量名。
 

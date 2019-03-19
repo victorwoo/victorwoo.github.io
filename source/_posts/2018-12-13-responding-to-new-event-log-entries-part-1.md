@@ -28,7 +28,7 @@ $Action = {
     $entry = $event.SourceEventArgs.Entry
 
     # do something based on the event
-    if ($entry.EventId -eq 1 -and $entry.Source -eq 'WinLogon') 
+    if ($entry.EventId -eq 1 -and $entry.Source -eq 'WinLogon')
     {
         Write-Host "Test event was received!"
     }
@@ -59,7 +59,7 @@ Powershell.exe -noprofile -noexit -file “c:\yourpath.ps1”
 要移除事件处理器，请运行以下代码：
 
 ```powershell
-PS> Unregister-Event -SourceIdentifier NewEventHandler 
+PS> Unregister-Event -SourceIdentifier NewEventHandler
 PS> Remove-Job -Name NewEventHandler
 ```
 

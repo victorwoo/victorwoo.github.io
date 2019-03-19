@@ -15,7 +15,7 @@ tags:
 如果想知道某个特定的设备是否连接到您的计算机上，您可以使用 WMI 来提取所有即插即用设备的名称：
 
 ```powershell
-Get-WmiObject -Class Win32_PnpEntity | 
+Get-WmiObject -Class Win32_PnpEntity |
   Select-Object -ExpandProperty Caption
 ```
 

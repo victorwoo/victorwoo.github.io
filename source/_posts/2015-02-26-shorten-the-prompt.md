@@ -19,7 +19,7 @@ _适用于 PowerShell 3.0 及以上版本_
 最有效最简单的方法是将当前目录改为根目录：
 
     PS C:\Users\Tobias\Documents> cd \
-    
+
     PS C:\>
 
 或者，可以调整 `prompt` 函数，使它在其它地方显示当前路径，例如在标题栏：

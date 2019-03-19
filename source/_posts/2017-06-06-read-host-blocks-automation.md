@@ -27,8 +27,8 @@ param
 
 当您运行以上脚本时，它像 `Read-Host` 一模一样地显示提示信息。您也可以通过参数执行该脚本：
 
-```powershell     
-PS> C:\myscript.ps1 –Name test –Id 12 
+```powershell
+PS> C:\myscript.ps1 –Name test –Id 12
 ```
 
 If you do not need custom prompting, you can go even simpler, and declare parameters as mandatory by adding [Parameter(Mandatory)] above each parameter variable.

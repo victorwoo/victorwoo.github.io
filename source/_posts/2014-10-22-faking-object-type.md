@@ -20,18 +20,18 @@ PowerShell 内部的类型扩展系统的作用是负责将对象转换为文本
       ProcessName = 'notepad'
       ID = -1
       PSTypeName = 'System.Diagnostics.Process'
-    } 
+    }
 
 The object pretends to be a process object, and ETS will format it accordingly:
 
     PS> $object
-    
-    Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName          
-    -------  ------    -----      ----- -----   ------     -- -----------          
-                  0        0          0     0              -1 notepad              
-    
-    
-    
+
+    Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
+    -------  ------    -----      ----- -----   ------     -- -----------
+                  0        0          0     0              -1 notepad
+
+
+
     PS>
 
 <!--本文国际来源：[Faking Object Type](http://community.idera.com/powershell/powertips/b/tips/posts/faking-object-type)-->

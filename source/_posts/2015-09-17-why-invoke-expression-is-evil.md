@@ -19,15 +19,15 @@ tags:
 以下是一个安全并有趣的例子，演示了如何从下载到执行一段代码：
 
     #requires -Version 3
-    
+
     Invoke-Expression -Command (Invoke-WebRequest -Uri 'http://bit.ly/e0Mw9w' -UseBasicParsing).Content
 
 如果您不希望发生意外，这行代码可以帮您预览将会发生什么。请在 PowerShell ISE 中运行这段代码。它将显示从 internet 下载的 PowerShell 代码，而不是立即执行它：
 
     #requires -Version 3
-    
+
     $file = $psise.CurrentPowerShellTab.Files.Add()
-    
+
     $file.Editor.text = (Invoke-WebRequest -Uri 'http://bit.ly/e0Mw9w' -UseBasicParsing).Content
 
 <!--本文国际来源：[Why Invoke-Expression is Evil](http://community.idera.com/powershell/powertips/b/tips/posts/why-invoke-expression-is-evil)-->

@@ -22,7 +22,7 @@ tags:
 这样就可以看到一个完美分割过的列表了。当然，利用 PowerShell 强大的查询功能，还可以进一步节省眼力。例如我们要查询所有包含“_bin_”的路径：
 
     PS > (type env:path) -split ';' | sls bin
-    
+
     C:\PROGRAM FILES (X86)\JAVA\JDK1.7.0_45\JRE\BIN
     C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X86
     C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X64

@@ -22,7 +22,7 @@ Resolve-Path -Path C:\users\*\Desktop -ErrorAction SilentlyContinue
 
 ```powershell
 Resolve-Path -Path C:\users\*\Desktop -ErrorAction SilentlyContinue |
-    ForEach-Object { 
+    ForEach-Object {
         $_.Path.Split('\')[-2]
     }
 ```

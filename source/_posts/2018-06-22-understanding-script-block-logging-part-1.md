@@ -29,7 +29,7 @@ Get-WinEvent -FilterHashtable $logInfo |
 
     Creating Scriptblock text (1 of 1):
     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass
-    
+
     ScriptBlock ID: aeb85bcb-98be-42d0-b695-fbbb975ec5d2
     Path:
 

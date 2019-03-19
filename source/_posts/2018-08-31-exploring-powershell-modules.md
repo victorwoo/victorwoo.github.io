@@ -24,7 +24,7 @@ if ('' -eq $ModuleName)
 {
     Write-Warning "$Name was defined in memory, no module available."
     return
-} 
+}
 
 Write-Warning "$Name resides in $ModuleName module"
 

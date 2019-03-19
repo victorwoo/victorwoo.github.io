@@ -45,7 +45,7 @@ tags:
             [Parameter(Mandatory = $true, ValueFromPipeline = $true, HelpMessage = 'Enter an ed2k:// url')]
             $Link
         )
-    
+
         $regex = [regex]@'
     (?x)
     \bed2k://
@@ -70,7 +70,7 @@ tags:
                     Port = $sourcesPort[$i]
                 }
             }
-    
+
             $result = [PSCustomObject][Ordered]@{
                 File = $match.Groups['FILE_NAME'].Value;
                 FileSize = $match.Groups['FILE_SIZE'].Value;
@@ -83,10 +83,10 @@ tags:
         } else {
             $result = $null
         }
-    
+
         return $result
     }
-    
+
     Get-Ed2kLink 'ed2k://|file|BingPinyinSetup_1.5.24.02.exe|31485072|C8C9282E6112455E624EE82941E5BA00|p=79A822E1788353E0B289D2ADD5DA3BDE:FB9BB40DEDB1D2307E9D734A6416704B:0732B122C4ECF70065B181C92BF72400:437958DF590D764DE1694F91AC085225|h=HLXRQSANEO5MHIVOYNM5FNQOHJG3D5MP|s=http://www.abc.com/def.zip|s=http://www.vichamp.com/qq.zip|/|sources,127.0.0.1:1234,192.168.1.1:8888|/'
 
 执行结果如下：

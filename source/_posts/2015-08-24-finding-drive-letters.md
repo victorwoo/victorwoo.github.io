@@ -15,7 +15,7 @@ tags:
 以下是一个查找保留驱动器号的简单函数：
 
     #requires -Version 3
-    
+
     function Get-DriveLetter
     {
         (Get-WmiObject -Class Win32_LogicalDisk).DeviceID
@@ -28,19 +28,19 @@ tags:
     D:
     Y:
     Z:
-    
+
     PS>
 
 要查看某个给定的驱动器号是否被保留，可以使用这段代码：
 
     PS> $letters = Get-DriveLetter
-    
+
     PS> $letters -contains 'c:'
     True
-    
+
     PS> $letters -contains 'f:'
     False
-    
+
     PS>
 
 <!--本文国际来源：[Finding Drive Letters](http://community.idera.com/powershell/powertips/b/tips/posts/finding-drive-letters)-->

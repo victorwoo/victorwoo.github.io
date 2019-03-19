@@ -16,15 +16,15 @@ _适用于 PowerShell 2.0 及以上版本_
 
 这个例子演示了两件事情：如何限制一个参数为指定的数据类型、如何使用 .NET 方法来将 IP 地址转化为机器名：
 
-    function Resolve-IPAddress 
-    {    
+    function Resolve-IPAddress
+    {
         param (
-            [IPAddress] 
+            [IPAddress]
             $IPAddress
         )
-    
+
         [Net.DNS]::GetHostByAddress($IPAddress)
-    } 
+    }
 
 通过为 `$IPAddress` 参数前附加一个类型（例如“`IPAddress`”），您可以让 PowerShell 来校验输入数据的合法性。
 
@@ -33,23 +33,23 @@ _适用于 PowerShell 2.0 及以上版本_
 这是您使用了新的 `Resolve-IPAddress` 函数的效果：
 
     PS> Resolve-IPAddress -IPAddress 127.0.0.1
-    
-    HostName                     Aliases                     AddressList                
-    --------                     -------                     -----------                
-    TobiasAir1                   {}                          {127.0.0.1}                
-    
-    
-    
+
+    HostName                     Aliases                     AddressList
+    --------                     -------                     -----------
+    TobiasAir1                   {}                          {127.0.0.1}
+
+
+
     PS> Resolve-IPAddress -IPAddress 300.200.100.1
-     Resolve-IPAddress : Cannot process argument transformation on parameter 
-    'IPAddress'. Cannot convert value "300.200.100.1" to type "System.Net.IPAddress". 
+     Resolve-IPAddress : Cannot process argument transformation on parameter
+    'IPAddress'. Cannot convert value "300.200.100.1" to type "System.Net.IPAddress".
     Error: "An invalid IP address was specified."
     At line:1 char:30
     + Resolve-IPAddress -IPAddress 300.200.100.1
     +                              ~~~~~~~~~~~~~
-        + CategoryInfo          : InvalidData: (:) [Resolve-IPAddress], ParameterBindin 
+        + CategoryInfo          : InvalidData: (:) [Resolve-IPAddress], ParameterBindin
        gArgumentTransformationException
-        + FullyQualifiedErrorId : ParameterArgumentTransformationError,Resolve-IPAddres 
+        + FullyQualifiedErrorId : ParameterArgumentTransformationError,Resolve-IPAddres
        s
 
 <!--本文国际来源：[Resolving IP Addresses (and Parameter Types, Too)](http://community.idera.com/powershell/powertips/b/tips/posts/resolving-ip-addresses-and-parameter-types-too)-->

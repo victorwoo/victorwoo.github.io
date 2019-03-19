@@ -10,7 +10,7 @@ tags:
 ---
 英文：
 
-    Given input X I would expect output Y, but your app gives me Z instead. 
+    Given input X I would expect output Y, but your app gives me Z instead.
 
 中文：
 

@@ -19,7 +19,7 @@ tags:
 答：用以下代码：
 
 	$a = "Windows PowerShell is the next generation cmd prompt and scripting language from Microsoft. It can be a replacement for vbscript and for the cmd prompt in most circumstances."
-	
+
 	Measure-Object -InputObject $a -Word
 
 原文：
@@ -35,7 +35,7 @@ Q: How can you be sure that was thirty words or less?
 A: By using the following code:
 
 	$a = "Windows PowerShell is the next generation cmd prompt and scripting language from Microsoft. It can be a replacement for vbscript and for the cmd prompt in most circumstances."
-	
+
 	Measure-Object -InputObject $a -Word
 
 [本文国际来源](http://i1.blogs.technet.com/b/heyscriptingguy/archive/2012/08/12/powertip-define-powershell-in-thirty-words-or-less.aspx)

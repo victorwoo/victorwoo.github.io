@@ -21,15 +21,15 @@ PowerShell ISE 只支持行断点：它们的作用是当调试器命中指定�
 要在某个变量被赋予一个新值的时候使脚本停下来，请使用这段示例代码（请先保存后执行）：
 
     $bp = Set-PSBreakpoint -Variable a -Mode Write -Script $psise.CurrentFile.FullPath
-    
+
     $a = 1
     $a
-    
+
     $a
-    
+
     $a = 200
     $a
-    
+
     Remove-PSBreakpoint -Breakpoint $bp
 
 当您运行它时，PowerShell 调试器将会在 `$a` 被赋予一个新值的时候暂停脚本执行。
@@ -38,15 +38,15 @@ PowerShell ISE 只支持行断点：它们的作用是当调试器命中指定�
 
     $Condition = { if ($a -is [Int] -and $a -gt 100) { break }  }
     $bp = Set-PSBreakpoint -Variable a -Mode Write -Script $psise.CurrentFile.FullPath -Action $Condition
-    
+
     $a = 1
     $a
-    
+
     $a
-    
+
     $a = 200
     $a
-    
+
     Remove-PSBreakpoint -Breakpoint $bp
 
 <!--本文国际来源：[Conditional Breakpoints](http://community.idera.com/powershell/powertips/b/tips/posts/conditional-breakpoints)-->

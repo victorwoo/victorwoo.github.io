@@ -32,28 +32,28 @@ _适用于 PowerShell 3.0 及更高版本_
       (
         [Parameter(Mandatory = $true)]
         $Path,
-        
+
         $Filter = '*',
-        
+
         [System.Int32]
         $MaxDepth = 3,
-        
+
         [System.Int32]
         $Depth = 0
       )
-      
+
       $Depth++
-    
-      Get-ChildItem -Path $Path -Filter $Filter -File 
-      
+
+      Get-ChildItem -Path $Path -Filter $Filter -File
+
       if ($Depth -le $MaxDepth)
       {
         Get-ChildItem -Path $Path -Directory |
           ForEach-Object { Get-MyChildItem -Path $_.FullName -Filter $Filter -Depth $Depth -MaxDepth $MaxDepth}
       }
-      
+
     }
-    
+
     Get-MyChildItem -Path c:\windows -Filter *.log -MaxDepth 2 -ErrorAction SilentlyContinue |
       Select-Object -ExpandProperty FullName
 

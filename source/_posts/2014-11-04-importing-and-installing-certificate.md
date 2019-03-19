@@ -20,11 +20,11 @@ _适用于 PowerShell 所有版本_
     $password = 'test'
     [System.Security.Cryptography.X509Certificates.StoreLocation]$Store = 'CurrentUser'
     $StoreName = 'root'
-    
+
     Add-Type -AssemblyName System.Security
     $certificate = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
     $certificate.Import($pfxpath, $password, 'Exportable')
-    
+
     $Store = New-Object system.security.cryptography.X509Certificates.x509Store($StoreName, $StoreLocation)
     $Store.Open('ReadWrite')
     $Store.Add($certificate)

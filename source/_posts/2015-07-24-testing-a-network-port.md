@@ -20,7 +20,7 @@ tags:
     function Test-Port
     {
         Param([string]$ComputerName,$port = 5985,$timeout = 1000)
-    
+
         try
         {
             $tcpclient = New-Object -TypeName system.Net.Sockets.TcpClient
@@ -34,7 +34,7 @@ tags:
             else
             {
                 # Close the connection and report the error if there is one
-    
+
                 $null = $tcpclient.EndConnect($iar)
                 $tcpclient.Close()
                 return $true
@@ -48,7 +48,7 @@ tags:
 
 所以如果您希望知道一台远程计算机是否启用了 PowerShell 远程操作，您只需要运行：
 
-    PS> Test-Port -ComputerName TestServer 
+    PS> Test-Port -ComputerName TestServer
     False
 
 由于缺省的超时值是 1 秒，您最多等待 1 秒就能等到响应。

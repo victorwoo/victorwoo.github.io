@@ -24,7 +24,7 @@ function Out-Notepad
   (
     [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
     [String]
-    [AllowEmptyString()] 
+    [AllowEmptyString()]
     $Text
   )
 
@@ -63,7 +63,7 @@ function Out-Notepad
 ```powershell
 PS> Get-Service | Out-Notepad
 
-PS> Get-Service | Out-String | Out-Notepad 
+PS> Get-Service | Out-String | Out-Notepad
 ```
 
 这两行代码，都能打开一个全新的 Notepad 实例，所有服务信息都写入 Notepad。请注意它们的不同：第一行代码创建一个对象名称的列表。如果您希望对象的显示像在 PowerShell 中那样详细，请确保将他们通过管道送给 Notepad 之前先将它们用管道送给 `Out-String`。

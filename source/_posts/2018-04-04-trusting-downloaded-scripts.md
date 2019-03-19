@@ -17,7 +17,7 @@ tags:
 作为示例，我们将测试官方的 "Chocolatey" 安装脚本，它的下载地址在这里：
 
     https://chocolatey.org/install.ps1
-    
+
 
 当您在浏览器中打开这个 URL 时，您将会看到一个十分长的 PowerShell 脚本，您现在需要十分谨慎地检查每一行代码，在运行它之前确保它是完整的，并且不会作恶。
 
@@ -36,10 +36,10 @@ Get-AuthenticodeSignature -FilePath $outPath
 结果看起来类似这样：
 
         Directory: C:\Users\tobwe\AppData\Local\Temp
-    
-    
-    SignerCertificate                         Status         Path                       
-    -----------------                         ------         ----                       
+
+
+    SignerCertificate                         Status         Path
+    -----------------                         ------         ----
     493018BA27EAA09B895BC5660E77F694B84877C7  Valid          installChocolatey.ps1
 
 

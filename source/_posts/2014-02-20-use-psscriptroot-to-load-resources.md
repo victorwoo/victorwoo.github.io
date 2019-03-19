@@ -19,7 +19,7 @@ tags:
 	# this loads the script "library1.ps1" if it is located in the very
 	# same folder as this script.
 	# Requires PowerShell 3.0 or better.
-	
+
 	. "$PSScriptRoot\library1.ps1"
 
 类似地，如果您希望将您的 library 脚本保存在一个子文件夹中，请试验以下脚本（假设库脚本放在您脚本所在文件夹中的“resources”子文件夹下）：
@@ -27,7 +27,7 @@ tags:
 	# this loads the script "library1.ps1" if it is located in the subfolder
 	# "resources" in the folder this script is in.
 	# Requires PowerShell 3.0 or better.
-	
+
 	. "$PSScriptRoot\resources\library1.ps1"
 
 <!--本文国际来源：[Use $PSScriptRoot to Load Resources](http://community.idera.com/powershell/powertips/b/tips/posts/use-psscriptroot-to-load-resources)-->

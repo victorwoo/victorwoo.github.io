@@ -24,7 +24,7 @@ PS C:\> ipconfig | Select-String 'IPv4'
 如果您只对实际的 IP 地址感兴趣，您可以改进这个结果，用正则表达式来提取您感兴趣的部分：
 
 ```powershell
-PS C:\> $data = ipconfig | select-string 'IPv4' 
+PS C:\> $data = ipconfig | select-string 'IPv4'
 PS C:\> [regex]::Matches($data,"\b(?:\d{1,3}\.){3}\d{1,3}\b") | Select-Object -ExpandProperty Value
 
 192.168.2.112

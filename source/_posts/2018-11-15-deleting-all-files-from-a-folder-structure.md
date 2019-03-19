@@ -22,7 +22,7 @@ tags:
 $Path = "c:\sample"
 $WhiteList = "important.txt", "something.csv"
 
-Get-ChildItem -Path $Path -File -Exclude $WhiteList -Recurse -Force | 
+Get-ChildItem -Path $Path -File -Exclude $WhiteList -Recurse -Force |
     # remove -WhatIf if you want to actually delete files
 # ATTENTION: test thoroughly before doing this!
 # you may want to add -Force to Remove-Item to forcefully remove files

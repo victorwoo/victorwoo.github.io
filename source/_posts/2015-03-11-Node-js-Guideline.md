@@ -8,7 +8,7 @@ tags:
 - node.js
 - guideline
 ---
-Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台， 
+Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台，
 
 用来方便地搭建快速的易于扩展的网络应用。Node.js 借助事件驱动，非阻塞 I/O 模型变得轻量和高效，非常适合运行在分布式设备的数据密集型的实时应用。
 

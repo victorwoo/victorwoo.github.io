@@ -19,11 +19,11 @@ tags:
 ```powershell
 #requires -Version 3.0
 
-# here is the list of download URLs - get it and 
+# here is the list of download URLs - get it and
 # convert the JSON format
 $url = 'http://www.mediathekdirekt.de/good.json'
-$web = Invoke-WebRequest -Uri $url -UseBasicParsing 
-$videos = $web.Content | ConvertFrom-Json 
+$web = Invoke-WebRequest -Uri $url -UseBasicParsing
+$videos = $web.Content | ConvertFrom-Json
 
 # get all videos, create a nice title to display,
 # and attach the original data to each entry

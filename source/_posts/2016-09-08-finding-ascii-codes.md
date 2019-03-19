@@ -17,15 +17,15 @@ tags:
 只需要打开 PowerShell 然后输入以下代码：
 
 ```powershell
-# paste character(s)  inside the quotes   
+# paste character(s)  inside the quotes
 
-$text = ''   
+$text = ''
 
-foreach($char in [char[]]$text)  
+foreach($char in [char[]]$text)
 
-{  
+{
 
-  'Character {0,-3} Decimal {1,-5} Hex  {1,-4:X}' -f $char, [int]$char   
+  'Character {0,-3} Decimal {1,-5} Hex  {1,-4:X}' -f $char, [int]$char
 
 }
 ```

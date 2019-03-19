@@ -22,14 +22,14 @@ PowerShell代码：
 	Add-Type -AssemblyName System.Web
 	$baseUrl = 'http://www.cheat-sheets.org'
 	$result = Invoke-WebRequest $baseUrl
-	$result.Links | 
+	$result.Links |
 	    ? {$_.href -Like '*.pdf'} |
 	    select -ExpandProperty href |
 	    sort |
-	    % { 
+	    % {
 	        if ($_ -like '/*')
 	        {
-	            $baseUrl + $_ 
+	            $baseUrl + $_
 	        } else {
 	            $_
 	        }
@@ -38,7 +38,7 @@ PowerShell代码：
 	        echo "Downloading $_"
 	        $fileName = $_.Substring($_.LastIndexOf("/") + 1)
 	        $localFileName = [System.Web.HttpUtility]::UrlDecode($fileName)
-	
+
 	        if (Test-Path $localFileName) {
 	            return
 	        }

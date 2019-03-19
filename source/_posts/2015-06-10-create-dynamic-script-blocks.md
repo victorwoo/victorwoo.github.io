@@ -21,9 +21,9 @@ tags:
 通过这种方法，您的代码首先以字符串的形式创建代码，然后将字符串转换为脚本块，然后将脚本块传递给您需要的 cmdlet（例如 `Invoke-Command`）：
 
     PS> Invoke-Command -ScriptBlock 'notepad'
-    Cannot convert  the "notepad" value of type "System.String" to type  
+    Cannot convert  the "notepad" value of type "System.String" to type
     "System.Management.Automation.ScriptBlock". (raised by:  Invoke-Command)
-    
+
     PS> Invoke-Command -ScriptBlock ([ScriptBlock]::Create('notepad'))
 
 <!--本文国际来源：[Create Dynamic Script Blocks](http://community.idera.com/powershell/powertips/b/tips/posts/create-dynamic-script-blocks)-->

@@ -19,15 +19,15 @@ _适用于 PowerShell 所有版本_
     # find first available WAV file in Windows folder
     $WAVPath = Get-ChildItem -Path $env:windir -Filter *.wav -Recurse -ErrorAction SilentlyContinue |
       Select-Object -First 1 -ExpandProperty FullName
-    
-    
+
+
     # load file and play it
     "Playing $WAVPath..."
-    
+
     $player = New-Object Media.SoundPlayer $WAVPath
     $player.Play()
-    
-    "Done!" 
+
+    "Done!"
 
 这段脚本的第一部分在 Windows 文件夹中查找第一个 WAV 文件。当然，您可以将您喜欢的 WAV 文件路径赋给 `$WAVFile`。
 
@@ -38,14 +38,14 @@ _适用于 PowerShell 所有版本_
     # find first available WAV file in Windows folder
     $WAVPath = Get-ChildItem -Path $env:windir -Filter *.wav -Recurse -ErrorAction SilentlyContinue |
       Select-Object -First 1 -ExpandProperty FullName
-    
-    
+
+
     # load file and play it
-    
+
     $player = New-Object Media.SoundPlayer $WAVPath
     $player.PlayLooping()
-    
-    1..100 | ForEach-Object { 
+
+    1..100 | ForEach-Object {
       Write-Progress -Activity 'Doing Something. Hang in' -Status $_ -PercentComplete $_
       Start-Sleep -MilliSeconds (Get-Random -Minimum 300 -Maximum 1300)
       }

@@ -22,7 +22,7 @@ tags:
 	        [Switch]
 	        $IAmSecret
 	    )
-	    
+
 	    if ($IAmSecret)
 	    {
 	     "Doing secret things with $Name"

@@ -17,10 +17,10 @@ _需要 _ActiveDirectory 模块_
 有些时候您也许希望在一个 AD 账户中直接存取终端服务相关的属性。以下是一些演示如何实现该功能的示例代码：
 
     $Identity = 'SomeUserName'
-    
+
     $distinguishedName = (Get-ADUser -Identity $Identity -Properties distinguishedName).distinguishedName
     $ADUser = [ADSI]"LDAP://$distinguishedName"
-    
+
     $TSProfilePath = $ADUser.psbase.InvokeGet('terminalservicesprofilepath')
     $TSHomeDir = $ADUser.psbase.InvokeGet('TerminalServicesHomeDirectory')
     $TSHomeDrive = $ADUser.psbase.InvokeGet('TerminalServicesHomeDrive')

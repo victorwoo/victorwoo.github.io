@@ -19,10 +19,10 @@ tags:
 请看如何对一个简单的字符串做操作：
 
     $a = "some text"
-    
+
     $a = $a | Add-Member -MemberType NoteProperty -Name Origin -Value $env:computername -PassThru
     $a = $a | Add-Member -MemberType ScriptProperty -Name Time -Value { Get-Date } -PassThru
-    
+
     $a
     $a.Origin
     $a.Time

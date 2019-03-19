@@ -22,7 +22,7 @@ $all = Get-ADUser -filter {memberof -recursivematch $dn}
 $all | Out-GridView
 ```
 
-（请注意您需要来自 Microsoft 免费的 RSAT 工具来使用这些示例中的 cmdlet。） 
+（请注意您需要来自 Microsoft 免费的 RSAT 工具来使用这些示例中的 cmdlet。）
 
 当您将 `$groupname` 中的组名改为您组织中存在的 AD 组名后，该代码不仅返回组中的直接用户，而且包含既在该组又在其它组中的直接用户。
 

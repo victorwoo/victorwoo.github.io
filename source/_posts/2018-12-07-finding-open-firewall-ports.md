@@ -16,7 +16,7 @@ tags:
 
 ```powershell
 $firewall = New-object -ComObject HNetCfg.FwPolicy2
-$firewall.Rules |  Where-Object {$_.Action -eq 0} | 
+$firewall.Rules |  Where-Object {$_.Action -eq 0} |
     Select-Object Name, ApplicationName,LocalPorts
 ```
 
@@ -24,10 +24,10 @@ $firewall.Rules |  Where-Object {$_.Action -eq 0} |
 
     Name           ApplicationName                                         LocalPorts
     ----           ---------------                                         ----------
-    pluginhost.exe C:\users\tobwe\appdata\local\skypeplugin\pluginhost.exe *         
-    pluginhost.exe C:\users\tobwe\appdata\local\skypeplugin\pluginhost.exe *         
-    spotify.exe    C:\users\tobwe\appdata\roaming\spotify\spotify.exe      *         
-    spotify.exe    C:\users\tobwe\appdata\roaming\spotify\spotify.exe      *     
+    pluginhost.exe C:\users\tobwe\appdata\local\skypeplugin\pluginhost.exe *
+    pluginhost.exe C:\users\tobwe\appdata\local\skypeplugin\pluginhost.exe *
+    spotify.exe    C:\users\tobwe\appdata\roaming\spotify\spotify.exe      *
+    spotify.exe    C:\users\tobwe\appdata\roaming\spotify\spotify.exe      *
 
 
 在 Windows 10 和 Server 2016 中，有一系列现成的跟防火墙有关的 cmdlet：
@@ -35,34 +35,34 @@ $firewall.Rules |  Where-Object {$_.Action -eq 0} |
 ```powershell
 PS> Get-Command -Noun *Firewall*
 
-CommandType     Name                                               Version    Source                    
------------     ----                                               -------    ------                    
-Function        Copy-NetFirewallRule                               2.0.0.0    NetSecurity               
-Function        Disable-NetFirewallRule                            2.0.0.0    NetSecurity               
-Function        Enable-NetFirewallRule                             2.0.0.0    NetSecurity               
-Function        Get-NetFirewallAddressFilter                       2.0.0.0    NetSecurity               
-Function        Get-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity               
-Function        Get-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity               
-Function        Get-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity               
-Function        Get-NetFirewallPortFilter                          2.0.0.0    NetSecurity               
-Function        Get-NetFirewallProfile                             2.0.0.0    NetSecurity               
-Function        Get-NetFirewallRule                                2.0.0.0    NetSecurity               
-Function        Get-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity               
-Function        Get-NetFirewallServiceFilter                       2.0.0.0    NetSecurity               
-Function        Get-NetFirewallSetting                             2.0.0.0    NetSecurity               
-Function        New-NetFirewallRule                                2.0.0.0    NetSecurity               
-Function        Remove-NetFirewallRule                             2.0.0.0    NetSecurity               
-Function        Rename-NetFirewallRule                             2.0.0.0    NetSecurity               
-Function        Set-NetFirewallAddressFilter                       2.0.0.0    NetSecurity               
-Function        Set-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity               
-Function        Set-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity               
-Function        Set-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity               
-Function        Set-NetFirewallPortFilter                          2.0.0.0    NetSecurity               
-Function        Set-NetFirewallProfile                             2.0.0.0    NetSecurity               
-Function        Set-NetFirewallRule                                2.0.0.0    NetSecurity               
-Function        Set-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity               
-Function        Set-NetFirewallServiceFilter                       2.0.0.0    NetSecurity               
-Function        Set-NetFirewallSetting                             2.0.0.0    NetSecurity               
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Copy-NetFirewallRule                               2.0.0.0    NetSecurity
+Function        Disable-NetFirewallRule                            2.0.0.0    NetSecurity
+Function        Enable-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Get-NetFirewallAddressFilter                       2.0.0.0    NetSecurity
+Function        Get-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity
+Function        Get-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity
+Function        Get-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity
+Function        Get-NetFirewallPortFilter                          2.0.0.0    NetSecurity
+Function        Get-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Get-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Get-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity
+Function        Get-NetFirewallServiceFilter                       2.0.0.0    NetSecurity
+Function        Get-NetFirewallSetting                             2.0.0.0    NetSecurity
+Function        New-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Remove-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Rename-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Set-NetFirewallAddressFilter                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity
+Function        Set-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity
+Function        Set-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity
+Function        Set-NetFirewallPortFilter                          2.0.0.0    NetSecurity
+Function        Set-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Set-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Set-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity
+Function        Set-NetFirewallServiceFilter                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallSetting                             2.0.0.0    NetSecurity
 Function        Show-NetFirewallRule                               2.0.0.0    NetSecurity
 ```
 

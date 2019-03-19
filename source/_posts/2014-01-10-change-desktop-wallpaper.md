@@ -19,11 +19,11 @@ PowerShell 可以通过调用 Windows API，实现更改当前桌面背景并且
 	    param(
 	        [Parameter(Mandatory=$true)]
 	        $Path,
-	
+
 	        [ValidateSet('Center', 'Stretch')]
 	        $Style = 'Stretch'
 	    )
-	
+
 	    Add-Type @"
 	using System;
 	using System.Runtime.InteropServices;
@@ -59,10 +59,10 @@ PowerShell 可以通过调用 Windows API，实现更改当前桌面背景并且
 	}
 	}
 	"@
-	
+
 	    [Wallpaper.Setter]::SetWallpaper( $Path, $Style )
 	}
-	
+
 	Set-Wallpaper -Path 'C:\Windows\Web\Wallpaper\Characters\img24.jpg'
 
 <!--本文国际来源：[Change Desktop Wallpaper](http://community.idera.com/powershell/powertips/b/tips/posts/change-desktop-wallpaper)-->

@@ -17,12 +17,12 @@ tags:
 当您使用 `ConvertTo-TextEncrypted` 命令加密文本时，结果只能由同一个人在同一台机器上使用 `ConvertFrom-TextEncrypted` 命令来解密：
 
     #requires -Version 2
-    
-    
+
+
     function ConvertTo-TextEncrypted
     {
         param([Parameter(ValueFromPipeline = $true)]$Text)
-    
+
         process
         {
             $Text |
@@ -30,17 +30,17 @@ tags:
             ConvertFrom-SecureString
         }
     }
-    
-    
+
+
     function ConvertFrom-TextEncrypted
     {
         param([Parameter(ValueFromPipeline = $true)]$Text)
-    
+
         process
         {
             $SecureString = $Text |
             ConvertTo-SecureString
-    
+
             $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecureString)
             [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
         }

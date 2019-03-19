@@ -17,13 +17,13 @@ tags:
 以下例子需要同时安装了英语和德语的语音。如果您没有安装德语语音，请使当地修改脚本中的语言 ID。以下是查找系统中可用的语言 ID 的方法：
 
 ```powershell
-PS C:\> Add-Type -AssemblyName System.Speech 
+PS C:\> Add-Type -AssemblyName System.Speech
 
 PS C:\> $speak.GetInstalledVoices() | Select-Object -ExpandProperty VoiceInfo | Select-Object -ExpandProperty Culture | Sort-Object -Unique
 
-LCID             Name             DisplayName                                                                                         
-----             ----             -----------                                                                                         
-1031             de-DE            German (Germany)                                                                                    
+LCID             Name             DisplayName
+----             ----             -----------
+1031             de-DE            German (Germany)
 1033             en-US            English (United States)
 ```
 
@@ -34,7 +34,7 @@ LCID             Name             DisplayName
 Add-Type -AssemblyName System.Speech
 $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer
 $ssml = '
-<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" 
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
     xml:lang="en-US">
     <voice xml:lang="en-US">
     <prosody rate="1">

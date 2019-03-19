@@ -21,7 +21,7 @@ PowerShell 用哈希表来设置一个用户账户的 AD 属性这是一种多�
     $infos = @{}
     $infos.l = 'Bahamas'
     $infos.mail = 'sunny@offshore.com'
-    
+
     Set-ADUser -Identity testuser -Replace $infos
 
 <!--本文国际来源：[Setting Active Directory Attributes](http://community.idera.com/powershell/powertips/b/tips/posts/setting-active-directory-attributes)-->

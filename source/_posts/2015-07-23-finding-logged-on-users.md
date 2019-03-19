@@ -22,7 +22,7 @@ tags:
             $ComputerName,
             $Credential
         )
-    
+
         Get-WmiObject -Class Win32_LogonSession @PSBoundParameters |
         ForEach-Object {
             $_.GetRelated('Win32_UserAccount') |

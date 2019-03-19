@@ -24,14 +24,14 @@ PowerShell 可以很容易地读取环境变量。以下代码返回当前的 Wi
 	    (
 	        [Parameter(Mandatory=$true, HelpMessage='Help note')]
 	        $Name,
-	
+
 	        [System.EnvironmentVariableTarget]
 	        $Target,
-	
+
 	        $Value = $null
-	
+
 	    )
-	
+
 	    [System.Environment]::SetEnvironmentVariable($Name, $Value, $Target )
 	}
 

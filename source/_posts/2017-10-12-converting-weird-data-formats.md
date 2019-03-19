@@ -22,12 +22,12 @@ $weirdDate = '03 12 --- 1988'
 
 如您所见，`ParseExact()` 用标准的 .NET 日期和时间字符，如您所愿处理自定义日期和时间格式。以下是大小写敏感的：
 
-    yy,yyyy: Year  
-    M, MM, MMM, MMMM: Month  
-    d,dd,ddd,dddd: Day  
-    H, HH: Hour (24hr clock)  
-    h,hh: Hour (12hr clock)  
-    m,mm: Minute  
+    yy,yyyy: Year
+    M, MM, MMM, MMMM: Month
+    d,dd,ddd,dddd: Day
+    H, HH: Hour (24hr clock)
+    h,hh: Hour (12hr clock)
+    m,mm: Minute
     s,ss: Second
 
 <!--本文国际来源：[Converting Weird Data Formats](http://community.idera.com/powershell/powertips/b/tips/posts/converting-weird-data-formats)-->

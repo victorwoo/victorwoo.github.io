@@ -20,14 +20,14 @@ tags:
     {
       'PS> '
       $host.UI.RawUI.WindowTitle = Get-Location
-    } 
+    }
 
 请注意 `$profile` 指定的配置脚本是和宿主有关的。每个宿主有独立的配置脚本（包括 PowerShell 控制台、ISE 编辑器以及所有的 PowerShell 宿主）。
 
 要在所有宿主中自动执行代码，请使用这个文件：
 
-    $profile.CurrentUserAllHosts 
-    
+    $profile.CurrentUserAllHosts
+
 它们的路径基本上相同，除了后者文件名不含宿主名，而只是叫做“profile.ps1”。
 
 <!--本文国际来源：[Using Profile Scripts](http://community.idera.com/powershell/powertips/b/tips/posts/using-profile-scripts)-->

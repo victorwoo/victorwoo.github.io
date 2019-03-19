@@ -23,7 +23,7 @@ function ConvertFrom-SID
   (
     [Parameter(Mandatory,ValueFromPipeline,ValueFromPipelineByPropertyName)]
     [Alias('Value')]
-    $Sid 
+    $Sid
   )
 
   process

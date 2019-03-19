@@ -49,9 +49,9 @@ Get-NetAdapter |
         Where{$_.Assignment -like "*$macString*"}.
         Foreach{$_.ManufacturerName}
 
-        $_ | 
+        $_ |
             Add-Member -MemberType NoteProperty -Name Manufacturer -Value $manufacturer[0] -PassThru |
-            Select-Object -Property Name, Mac*, Manufacturer  
+            Select-Object -Property Name, Mac*, Manufacturer
     }
 ```
 

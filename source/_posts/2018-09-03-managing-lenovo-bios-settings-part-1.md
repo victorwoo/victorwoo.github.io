@@ -15,7 +15,7 @@ tags:
 不幸的是，没有一个标准的方法来管理计算机厂商的 BIOS 设置。每个厂商使用专有的方法。对于 Lenovo 电脑，您可以使用 WMI 来存取和转储 BIOS 设置：
 
 ```powershell
-Get-WmiObject -Class Lenovo_BiosSetting -Namespace root\wmi | 
+Get-WmiObject -Class Lenovo_BiosSetting -Namespace root\wmi |
 Where-Object CurrentSetting |
 ForEach-Object {
     $parts = $_.CurrentSetting.Split(',')

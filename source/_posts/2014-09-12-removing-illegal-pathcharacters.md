@@ -20,13 +20,13 @@ _适用于 PowerShell 所有版本_
 
     function Get-LegalPathName($Path)
     {
-      $illegalChars = [System.IO.Path]::GetInvalidFileNameChars() 
-    
-      foreach($illegalChar in $illegalChars) 
+      $illegalChars = [System.IO.Path]::GetInvalidFileNameChars()
+
+      foreach($illegalChar in $illegalChars)
       { $Path = $Path.Replace($illegalChar, '_') }
-    
+
       $Path
-    }  
+    }
 
 这是结果看起来的样子：
 

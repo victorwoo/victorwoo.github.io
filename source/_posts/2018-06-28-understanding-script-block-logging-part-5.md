@@ -24,7 +24,7 @@ function Get-LoggedCode
 
   # read all raw events
   $logInfo = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-  Get-WinEvent -FilterHashtable $logInfo | 
+  Get-WinEvent -FilterHashtable $logInfo |
   # take each raw set of data...
   ForEach-Object {
     # turn SID into user
@@ -49,9 +49,9 @@ function Get-LoggedCode
     }
     else
     {
-    
+
     }
-  
+
     # create a new object and extract the interesting
     # parts from the raw data to compose a "cooked"
     # object with useful data
@@ -64,7 +64,7 @@ function Get-LoggedCode
       # determine current and total part
       PartCurrent = $_.Properties[0].Value
       PartTotal = $_.Properties[1].Value
-                
+
       # if total part is 1, code is not fragmented
       IsMultiPart = $_.Properties[1].Value -ne 1
       # path of script file (this is empty for interactive
@@ -73,12 +73,12 @@ function Get-LoggedCode
       # log level
       # by default, only level "Warning" will be logged
       Level = $_.LevelDisplayName
-      # user who executed the code 
+      # user who executed the code
       # take the real user name from the cache of translated
       # user names
       User = $translateTable[$userSID]
     }
-  } 
+  }
 }
 ```
 

@@ -31,12 +31,12 @@ PS> $host.UI.RawUI.ForegroundColor = 'White'
 ```powershell
 PS> $host.UI.RawUI | Get-Member -Name ForegroundColor
 
-​    
+​
    TypeName: System.Management.Automation.Internal.Host.InternalHostRawUserInterface
 
-Name            MemberType Definition                                    
-----            ---------- ----------                                    
-ForegroundColor Property   System.ConsoleColor ForegroundColor {get;set;} 
+Name            MemberType Definition
+----            ---------- ----------
+ForegroundColor Property   System.ConsoleColor ForegroundColor {get;set;}
 ```
 
 该属性实际上是 "`System.ConsoleColor`" 类型。当您传入一个类似 "`Gray`" 或 "`White`" 的字符串时，PowerShell 实际上在后台查询 `System.ConsoleColor` 类型可选的值，并将传入的字符串做转换。
@@ -44,7 +44,7 @@ ForegroundColor Property   System.ConsoleColor ForegroundColor {get;set;}
 一个不为人知的事实是：不需要严格的匹配。您可以用这种方法写：
 
 ```powershell
-    PS>  $host.UI.RawUI.ForegroundColor = 'R'  
+    PS>  $host.UI.RawUI.ForegroundColor = 'R'
 
     PS>  $host.UI.RawUI.ForegroundColor = 'W'
 ```powershell

@@ -22,7 +22,7 @@ tags:
         [String[]]
         $ComputerName
       )
-    
+
       foreach -parallel -throttlelimit 8 ($Machine in $ComputerName)
       {
         "Begin $Machine"
@@ -30,9 +30,9 @@ tags:
         "End $Machine"
       }
     }
-    
+
     $list = 1..20
-    
+
     Test-ParallelForeach -ComputerName $list | Out-GridView
 
 `Test-ParallelForeach` 处理一个计算机列表（在这个例子中，是一个数字列表）。它们同时执行。要控制资源的使用，并行循环将节流限制为 8，所以所以在这个例子中的 20 台计算机是 8 个一组处理的。

@@ -17,8 +17,8 @@ _适用于 PowerShell 所有版本_
 要查看某个进程的所有者以及有多少个实例在运行，请试试以下这段代码：
 
     $ProcessName = 'explorer.exe'
-    
-    (Get-WmiObject -Query "select * from Win32_Process where name='$ProcessName'").GetOwner().User 
+
+    (Get-WmiObject -Query "select * from Win32_Process where name='$ProcessName'").GetOwner().User
 
 请注意：有许多办法能够查看当前登录的用户，并且根据您使用环境的不同，这里展示的方法可能有一定的局限性。它假设当前用户使用图形界面登录。由于在 server core 的机器上，只能运行非图形界面的进程，所以该脚本在该情况下不能检测连接到主机的用户名。
 
@@ -27,17 +27,17 @@ _适用于 PowerShell 所有版本_
 当加入一个 `Sort-Object` 命令之后，您就可以轻松地排除重复项：
 
     $ProcessName = 'explorer.exe'
-    
+
     (Get-WmiObject –Query "select * from Win32_Process where name='$ProcessName'").GetOwner().User |
       Sort-Object -Unique
 
 如果改变进程名，您会发现其它有趣的东西。这段代码将列出当前通过 PowerShell 远程操作访问您机器的所有用户：
 
     $ProcessName = 'wsmprovhost.exe'
-    
+
     try
     {
-    
+
       (Get-WmiObject -Query "select * from Win32_Process where name='$ProcessName'").GetOwner().User |
       Sort-Object -Unique
     }

@@ -17,18 +17,18 @@ tags:
 以下代码的作用是左侧补零：
 
     $number = 68
-    '{0:d7}' -f $number 
+    '{0:d7}' -f $number
 
 这段代码将生成一个左补零的 7 位数字。调整“d”后的数字可以控制位数。
 
 要限制小数的位数，请使用“n”来代替“d”。这一次，“n”后的数字控制小数的位数：
 
     $number = 35553568.67826738
-    '{0:n1}' -f $number 
+    '{0:n1}' -f $number
 
 类似地，用“p”来格式化百分比：
 
     $number = 0.32562176536
-    '{0:p2}' -f $number 
+    '{0:p2}' -f $number
 
 <!--本文国际来源：[Formatting Numbers Easily](http://community.idera.com/powershell/powertips/b/tips/posts/formatting-numbers-easily)-->

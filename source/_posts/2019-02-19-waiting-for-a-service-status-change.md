@@ -38,8 +38,8 @@ catch [System.ServiceProcess.TimeoutException]
 * 要发现隐藏在对象中的其它方法，请使用以下代码：
 
 ```powershell
-# get some object 
-$objects = Get-Process 
+# get some object
+$objects = Get-Process
 
 # dump the methods
 $objects | Get-Member -MemberType *method* | Select-Object -Property Name, Definition

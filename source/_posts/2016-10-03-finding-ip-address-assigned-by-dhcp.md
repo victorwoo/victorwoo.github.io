@@ -19,8 +19,8 @@ tags:
 ```powershell
 #requires -Version 3.0 -Modules NetTCPIP
 
-Get-NetIPAddress | 
-  Where-Object PrefixOrigin -eq dhcp | 
+Get-NetIPAddress |
+  Where-Object PrefixOrigin -eq dhcp |
   Select-Object -ExpandProperty IPAddress
 ```
 

@@ -17,7 +17,7 @@ tags:
 	function Test-Ping
 	{
 	    param([Parameter(ValueFromPipeline=$true)]$Name)
-	
+
 	    process {
 	      $null = ping.exe $Name -n 1 -w 1000
 	      if($LASTEXITCODE -eq 0) { $Name }

@@ -17,7 +17,7 @@ tags:
 您可以使用小括号：
 
     PS> ($result = Get-Service)
-    
+
     Status   Name               DisplayName
     ------   ----               -----------
     Running  AdobeARMservice    Adobe Acrobat Update Service
@@ -26,7 +26,7 @@ tags:
 或者使用 `OutVariable` 通用参数：
 
     PS> Get-Service -OutVariable result
-    
+
     Status   Name               DisplayName
     ------   ----               -----------
     Running  AdobeARMservice    Adobe Acrobat Update Service

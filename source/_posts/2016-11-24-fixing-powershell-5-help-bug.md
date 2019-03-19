@@ -17,25 +17,25 @@ tags:
 ```powershell
 PS C:\> Get-Help about*
 
-Name                              Category  Module                    Synopsis                                              
-----                              --------  ------                    --------                                              
-about_Aliases                     HelpFile                            SHORT DESCRIPTION                                     
-about_Arithmetic_Operators        HelpFile                            SHORT DESCRIPTION                                     
-about_Arrays                      HelpFile                            SHORT DESCRIPTION                                     
-about_Assignment_Operators        HelpFile                            SHORT DESCRIPTION                                     
-about_Automatic_Variables         HelpFile                            SHORT DESCRIPTION                                     
-about_Break                       HelpFile                            SHORT DESCRIPTION                                     
-about_Classes                     HelpFile                            SHORT DESCRIPTION                                     
-about_Command_Precedence          HelpFile                            SHORT DESCRIPTION                                     
-about_Command_Syntax              HelpFile                            SHORT DESCRIPTION                                     
-about_Comment_Based_Help          HelpFile                            SHORT DESCRIPTION                                     
-about_CommonParameters            HelpFile                            SHORT DESCRIPTION                                     
-about_Comparison_Operators        HelpFile                            SHORT DESCRIPTION                                     
-about_Continue                    HelpFile                            SHORT DESCRIPTION                                     
-about_Core_Commands               HelpFile                            SHORT DESCRIPTION                                     
-about_Data_Sections               HelpFile                            SHORT DESCRIPTION                                     
-about_Debuggers                   HelpFile                            SHORT DESCRIPTION                                     
-about_DesiredStateConfiguration   HelpFile                            SHORT DESCRIPTION 
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+about_Aliases                     HelpFile                            SHORT DESCRIPTION
+about_Arithmetic_Operators        HelpFile                            SHORT DESCRIPTION
+about_Arrays                      HelpFile                            SHORT DESCRIPTION
+about_Assignment_Operators        HelpFile                            SHORT DESCRIPTION
+about_Automatic_Variables         HelpFile                            SHORT DESCRIPTION
+about_Break                       HelpFile                            SHORT DESCRIPTION
+about_Classes                     HelpFile                            SHORT DESCRIPTION
+about_Command_Precedence          HelpFile                            SHORT DESCRIPTION
+about_Command_Syntax              HelpFile                            SHORT DESCRIPTION
+about_Comment_Based_Help          HelpFile                            SHORT DESCRIPTION
+about_CommonParameters            HelpFile                            SHORT DESCRIPTION
+about_Comparison_Operators        HelpFile                            SHORT DESCRIPTION
+about_Continue                    HelpFile                            SHORT DESCRIPTION
+about_Core_Commands               HelpFile                            SHORT DESCRIPTION
+about_Data_Sections               HelpFile                            SHORT DESCRIPTION
+about_Debuggers                   HelpFile                            SHORT DESCRIPTION
+about_DesiredStateConfiguration   HelpFile                            SHORT DESCRIPTION
 ```
 
 如果没有显示上述的内容，您也许还没有事先运行过 `Update-Help` 来下载帮助文件，或者您被 bug 吃了。

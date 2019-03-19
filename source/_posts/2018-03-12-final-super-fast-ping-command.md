@@ -118,7 +118,7 @@ function Test-OnlineFast
 
 让我们首先来确认 `Test-OnlineFast` 是如何工作的。以下是一些示例。我们首先 ping 一系列计算机。您可以同时使用计算机名和 IP 地址：
 
-```powershell  
+```powershell
 PS> Test-OnlineFast -ComputerName google.de, powershellmagazine.com, 10.10.10.200, 127.0.0.1
 
 Address                Online DNSName                Status

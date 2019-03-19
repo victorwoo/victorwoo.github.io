@@ -21,19 +21,19 @@ _适用于 PowerShell 所有版本_
 以下是一个示例代码，演示了如何创建一个彩色的服务状态报表：
 
     $path = "$env:temp\report.hta"
-    
+
     $beginning = {
      @'
         <html>
         <head>
         <title>Report</title>
         <STYLE type="text/css">
-            h1 {font-family:SegoeUI, sans-serif; font-size:20} 
-            th {font-family:SegoeUI, sans-serif; font-size:15} 
-            td {font-family:Consolas, sans-serif; font-size:12} 
-    
+            h1 {font-family:SegoeUI, sans-serif; font-size:20}
+            th {font-family:SegoeUI, sans-serif; font-size:15}
+            td {font-family:Consolas, sans-serif; font-size:12}
+
         </STYLE>
-    
+
         </head>
         <image src="http://www.yourcompany.com/yourlogo.gif" />
         <h1>System Report</h1>
@@ -41,11 +41,11 @@ _适用于 PowerShell 所有版本_
         <tr><th>Status</th><th>Name</th></tr>
     '@
     }
-    
+
     $process = {
         $status = $_.Status
         $name = $_.DisplayName
-    
+
         if ($status -eq 'Running')
         {
             '<tr>'
@@ -61,23 +61,23 @@ _适用于 PowerShell 所有版本_
             '</tr>'
         }
     }
-    
-    
-    $end = { 
+
+
+    $end = {
     @'
         </table>
         </html>
         </body>
     '@
-    
-    
+
+
     }
-    
-    
-    Get-Service | 
+
+
+    Get-Service |
       ForEach-Object -Begin $beginning -Process $process -End $end |
       Out-File -FilePath $path -Encoding utf8
-    
+
     Invoke-Item -Path $path
 
 <!--本文国际来源：[Creating Colorful HTML Reports](http://community.idera.com/powershell/powertips/b/tips/posts/creating-colorful-html-reports)-->

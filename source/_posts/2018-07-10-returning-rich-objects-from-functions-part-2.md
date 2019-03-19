@@ -15,7 +15,7 @@ tags:
 当一个函数返回多于四个属性时，PowerShell 将输出结果格式化为列表，否则格式化为表格。在您学习新的方法来影响这种行为之前，请自己验证一下。以下函数返回一个多于 6 个属性的对象：
 
 ```powershell
-function Get-TestData 
+function Get-TestData
 {
     # if a function is to return more than one information kind,
     # wrap it in a custom object
@@ -34,7 +34,7 @@ function Get-TestData
 
 结果是以表格形式呈现：
 
-```powershell     
+```powershell
 PS> Get-TestData
 
 
@@ -49,11 +49,11 @@ User   : tobwe
 
 当移除掉一些属性，限制属性个数为 4 个或更少时，PowerShell 输出一个表格：
 
-```powershell     
+```powershell
 PS> Get-TestData
 
-ID    Random Text  User 
---    ------ ----  ---- 
+ID    Random Text  User
+--    ------ ----  ----
     1 567248729 Hello tobwe
 ```
 
@@ -64,14 +64,14 @@ Cmdlet 默认情况下只显示属性的一部分：
 ```powershell
 PS> Get-Service | Select-Object -First 1
 
-Status   Name               DisplayName                           
-------   ----               -----------                           
+Status   Name               DisplayName
+------   ----               -----------
 Running  AdobeARMservice    Adobe Acrobat Update Service
 ```
 
 使用 `Select-Object` 可以显示地获得所有属性的列表：
 
-```powershell     
+```powershell
 PS> Get-Service | Select-Object -First 1 -Property *
 
 
@@ -85,18 +85,18 @@ DependentServices   : {}
 MachineName         : .
 ServiceName         : AdobeARMservice
 ServicesDependedOn  : {}
-ServiceHandle       : 
+ServiceHandle       :
 Status              : Running
 ServiceType         : Win32OwnProcess
 StartType           : Automatic
-Site                : 
+Site                :
 Container
 ```
 
 显然，有第一公民和第二公民之分。在您自己的函数中，您可以类似这样定义第一公民：
 
 ```powershell
-function Get-TestData 
+function Get-TestData
 {
     # define the first-class citizen
     [string[]]$visible = 'ID','Date','User'
@@ -114,17 +114,17 @@ function Get-TestData
     } |
     # add the first-class citizen info to your object
     Add-Member -MemberType MemberSet -Name PSStandardMembers -Value $info -PassThru
-    
+
 }
 ```
 
 现在，您的函数的行为类似 cmdlet，而且您没有定义多于 4 个一等公民，所以缺省情况下得到一个表格的形式：
 
-```powershell     
+```powershell
 PS> Get-TestData
 
-ID Date                User 
--- ----                ---- 
+ID Date                User
+-- ----                ----
     1 25.05.2018 13:15:15 tobwe
 
 

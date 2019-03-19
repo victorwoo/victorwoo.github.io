@@ -17,8 +17,8 @@ tags:
 ```powershell
 # create a script block with internal variables
 # that will persist
-$c = & { 
-    # define an internal variable that will 
+$c = & {
+    # define an internal variable that will
     # PERSIST and keep its value even though
     # the function exits
     $a = 0
@@ -33,15 +33,15 @@ $c = & {
 
 这段代码创建一个包含内部变量的脚本块。当您多次运行这个脚本块时，计数器会累加：
 
-```powershell     
-PS> & $c 
+```powershell
+PS> & $c
 You called me 1 times!
 
-PS> & $c 
+PS> & $c
 You called me 2 times!
 
-PS> & $c 
-You called me 3 times!   
+PS> & $c
+You called me 3 times!
 ```
 
 然而，脚本内的 `$a` 变量的作用域既不是 `global` 也不是 `scriptglobal`。它的作用域只在脚本块的内部：
@@ -52,8 +52,8 @@ PS> $a
 
 要将脚本块转换为函数，请加上这段代码：
 
-```powershell     
-PS> Set-Item -Path function:Test-Function -Value $c 
+```powershell
+PS> Set-Item -Path function:Test-Function -Value $c
 
 PS> Test-Function
 You called me 5 times!

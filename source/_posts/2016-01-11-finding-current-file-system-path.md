@@ -21,20 +21,20 @@ PS HKCU:\> $ExecutionContext.SessionState.Path
 
 CurrentLocation CurrentFileSystemLocation
 --------------- -------------------------
-HKCU:\          C:\                      
+HKCU:\          C:\
 
 
-​    
+​
 PS HKCU:\> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation
 
 Path
 ----
-C:\ 
+C:\
 
 
-​    
+​
 PS HKCU:\> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation.Path
-C:\ 
+C:\
 ```
 
 <!--本文国际来源：[Finding Current File System Path](http://community.idera.com/powershell/powertips/b/tips/posts/finding-current-file-system-path)-->

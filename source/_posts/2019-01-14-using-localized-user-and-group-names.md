@@ -23,7 +23,7 @@ tags:
 ```powershell
 PS> ([System.Security.Principal.SecurityIdentifier]'S-1-5-32-544').Translate( [System.Security.Principal.NTAccount]).Value
 
-VORDEFINIERT\Administratoren 
+VORDEFINIERT\Administratoren
 ```
 
 类似地，以下代码总是列出本地的 Administrators，无论是什么语言的操作系统：

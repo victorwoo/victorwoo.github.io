@@ -29,7 +29,7 @@ Path = 'C:'
 
     $hashtable = @{}
     $path = 'z:\yourfilename.config'
-    
+
     $payload = Get-Content -Path $path |
     Where-Object { $_ -like '*=*' } |
     ForEach-Object {

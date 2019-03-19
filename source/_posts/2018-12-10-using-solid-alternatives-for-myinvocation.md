@@ -38,7 +38,7 @@ function test
     $PSScriptRoot
 }
 
-test 
+test
 ```
 
 现在，`$MyInvocation` 变得没有价值，因为它重视返回调用本脚本块的调用者信息。

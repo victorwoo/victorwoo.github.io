@@ -31,7 +31,7 @@ PowerShell 自动化脚本
 
 	$pattern = '45004E0041006400420072006F0077007300650072004300740072006C'
 	$replacement = $pattern -replace '.', '0'
-	
+
 	function Replace-Pattern ($buffer, $pattern, $replacement) {
 	    $isPatternMatched = $false
 	    for ($offset = 6220000; $offset -lt $buffer.Length - $pattern.Length; $offset++) {
@@ -47,18 +47,18 @@ PowerShell 自动化脚本
 	            break
 	        }
 	    }
-	
+
 	    if ($isPatternMatched) {
 	        for ($index = 0; $index -lt $pattern.Length; $index++) {
 	            $buffer[$offset + $index] = [byte]0
 	        }
-	
+
 	        return $true
 	    } else {
 	        return $false
 	    }
 	}
-	
+
 	function Convert-HexStringToByteArray
 	{
 	    ################################################################
@@ -77,19 +77,19 @@ PowerShell 自动化脚本
 	    ################################################################
 	    [CmdletBinding()]
 	    Param ( [Parameter(Mandatory = $True, ValueFromPipeline = $True)] [String] $String )
-	 
+
 	    #Clean out whitespaces and any other non-hex crud.
 	    $String = $String.ToLower() -replace '[^a-f0-9\\\,x\-\:]',''
-	 
+
 	    #Try to put into canonical colon-delimited format.
 	    $String = $String -replace '0x|\\x|\-|,',':'
-	 
+
 	    #Remove beginning and ending colons, and other detritus.
 	    $String = $String -replace '^:+|:+$|x|\\',''
-	 
+
 	    #Maybe there's nothing left over to convert...
 	    if ($String.Length -eq 0) { ,@() ; return }
-	 
+
 	    #Split string with or without colon delimiters.
 	    if ($String.Length -eq 1)
 	    { ,@([System.Convert]::ToByte($String,16)) }
@@ -102,14 +102,14 @@ PowerShell 自动化脚本
 	    #The strange ",@(...)" syntax is needed to force the output into an
 	    #array even if there is only one element in the output (or none).
 	}
-	
+
 	echo '本程序用于去除 Evernote 非会员左下角的正方形广告。'
 	echo '请稍候……'
-	
+
 	$patternArray = Convert-HexStringToByteArray $pattern
 	$replacementArray = Convert-HexStringToByteArray $replacement
-	
-	
+
+
 	$path = "${Env:ProgramFiles}\Evernote\Evernote\Evernote.exe"
 	$path86 = "${Env:ProgramFiles(x86)}\Evernote\Evernote\Evernote.exe"
 	if (Test-Path $path) {
@@ -120,9 +120,9 @@ PowerShell 自动化脚本
 	    Write-Warning '没有找到 Evernote.exe。'
 	    exit
 	}
-	
+
 	$exe = gc $execute -ReadCount 0 -Encoding byte
-	
+
 	if (Replace-Pattern $exe $patternArray $replacementArray) {
 	    $newFileName = $execute.Name + '.bak'
 	    $newPath = Join-Path $execute.DirectoryName $newFileName

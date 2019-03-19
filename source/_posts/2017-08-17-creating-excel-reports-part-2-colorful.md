@@ -29,9 +29,9 @@ $html = & {
         {
             $color = 'red'
         }
-        
+
         '<tr><td>{0}</td><td bgcolor="{2}">{1}</td></tr>' -f $_.Name, $_.Status, $color
-    
+
     }
     '</table>'
 }
@@ -40,7 +40,7 @@ $PathHTML = "$env:temp\report.htm"
 $html | Set-Content $PathHTML -Encoding UTF8
 # open as HTML
 Invoke-Item -Path $PathHTML
-# open as Excel report 
+# open as Excel report
 Start-Process -FilePath excel -ArgumentList """$PathHTML"""
 ```
 

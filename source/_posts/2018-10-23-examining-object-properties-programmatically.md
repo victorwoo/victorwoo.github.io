@@ -16,10 +16,10 @@ tags:
 
 ```powershell
 # take any object, and dump a list of its properties
-Get-Process -Id $pid | 
-    Get-Member -MemberType *property | 
-    Select-Object -ExpandProperty Name | 
-    Sort-Object 
+Get-Process -Id $pid |
+    Get-Member -MemberType *property |
+    Select-Object -ExpandProperty Name |
+    Sort-Object
 ```
 
 为什么这种方法有用？有许多使用场景。例如，您可以检测一个注册表键的名称，支持用通配符转储所有的命令：
@@ -35,7 +35,7 @@ $default = 'PSChildName','PSDrive','PSParentPath','PSPath','PSProvider'
 
 # each value surfaces as object property
 # get property (value) names
-$keyNames = $Values | 
+$keyNames = $Values |
     Get-Member -MemberType *Property |
     Select-Object -ExpandProperty Name |
     Where-Object { $_ -notin $default } |

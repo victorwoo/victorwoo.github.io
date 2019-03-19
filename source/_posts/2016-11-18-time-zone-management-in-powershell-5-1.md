@@ -15,9 +15,9 @@ tags:
 PowerShell 5.1（随 Windows 10 和 Server 2016 发布）带来一系列管理计算机时区的新 cmdlet。`Get-TimeZone` 返回当前的设置，而 `Set-TimeZone` 可以改变时区设置：
 
     PS C:\> Get-TimeZone
-    
+
     Id                         : W. Europe Standard Time
-    DisplayName                : (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, 
+    DisplayName                : (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm,
                                  Vienna
     StandardName               : W. Europe Standard Time
     DaylightName               : W. Europe Daylight Time

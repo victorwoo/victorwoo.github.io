@@ -18,7 +18,7 @@ _适用于 PowerShell 3.0 及以上版本_
 
 试试这种方法！首先，生成一些数据，然后将它用管道输出到网格视图窗口：
 
-    PS> Get-Process | Out-GridView 
+    PS> Get-Process | Out-GridView
 
 接下来，可以用顶部的文本框过滤结果，或单击列头来排序。
 

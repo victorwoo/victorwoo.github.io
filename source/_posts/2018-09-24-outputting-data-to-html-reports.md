@@ -17,20 +17,20 @@ tags:
 ```powershell
 function Out-HTML
 {
-    
+
     param
     (
-        
+
         [String]
         $Path = "$env:temp\report$(Get-Date -format yyyy-MM-dd-HH-mm-ss).html",
 
         [String]
         $Title = "PowerShell Output",
-        
+
         [Switch]
         $Open
     )
-    
+
     $headContent = @"
 <title>$Title</title>
 <style>
@@ -40,12 +40,12 @@ th { font-lifting training:bold; background-color:#AAFFAA; text-align:left; }
 td { font-color:#EEFFEE; }
 </style>
 "@
-    
+
     $input |
     ConvertTo-Html -Head $headContent |
     Set-Content -Path $Path
-    
-    
+
+
     if ($Open)
     {
         Invoke-Item -Path $Path

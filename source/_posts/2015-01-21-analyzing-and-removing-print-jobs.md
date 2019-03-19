@@ -21,7 +21,7 @@ Windows 8.1 和 Server 2012 R2 引入了一个名为“PrintManagement”的模�
 可以通过这种方式获取所有的状态码：
 
     PS> Import-Module PrintManagement
-     
+
     PS> [Microsoft.PowerShell.Cmdletization.GeneratedTypes.PrintJob.JobStatus]::GetNames([Microsoft.PowerShell.Cmdletization.GeneratedTypes.PrintJob.JobStatus])
     Normal
     Paused
@@ -43,17 +43,17 @@ Windows 8.1 和 Server 2012 R2 引入了一个名为“PrintManagement”的模�
 接下来，您可以过滤已有的打印任务。并且，比如打印出所有已完成或有错误的打印任务。这段代码将列出所有有错误或已完成的打印任务：
 
     $ComputerName = $env:COMPUTERNAME
-    
-    Get-Printer -ComputerName $ComputerName |  ForEach-Object { 
+
+    Get-Printer -ComputerName $ComputerName |  ForEach-Object {
       Get-PrintJob -PrinterName $_.Name -ComputerName $ComputerName |
         Where-Object { $_.JobStatus -eq 'Complete' -or $_.JobStatus -eq 'Error' -or $_.JobStatus -eq 'Printed'}
-     } 
+     }
 
 要移除这些打印任务，只需要加上 `Remove-PrintJob` 命令：
 
     $ComputerName = $env:COMPUTERNAME
-    
-    Get-Printer -ComputerName $ComputerName |  ForEach-Object { 
+
+    Get-Printer -ComputerName $ComputerName |  ForEach-Object {
       Get-PrintJob -PrinterName $_.Name -ComputerName $ComputerName |
         Where-Object { $_.JobStatus -eq 'Complete' -or $_.JobStatus -eq 'Error' -or $_.JobStatus -eq 'Printed'}
      } |

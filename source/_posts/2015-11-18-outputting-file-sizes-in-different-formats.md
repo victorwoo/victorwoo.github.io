@@ -19,8 +19,8 @@ tags:
 变量的内容并没有被改变，所以变量仍然存储着 Integer 数值。您可以安全地用于排序及和其它值比较：
 
     #requires -Version 1
-    
-    
+
+
     $a = 1257657656
     $a = $a | Add-Member -MemberType ScriptMethod -Name tostring -Force -Value { param($Unit = 1MB, $Digits=1, $Suffix=' MB') "{0:n$Digits}$Suffix" -f ($this/($Unit)) } -PassThru
 
@@ -28,19 +28,19 @@ tags:
 
     PS> $a
     1.199,4 MB
-    
+
     PS> $a.ToString(1GB, 0, ' GB')
     1 GB
-    
+
     PS> $a.ToString(1KB, 2, ' KB')
     1.228.181,30 KB
-    
+
     PS> $a -eq 1257657656
     True
-    
+
     PS> $a -eq 1257657657
     False
-    
+
     PS> $a.GetType().Name
     Int32
 

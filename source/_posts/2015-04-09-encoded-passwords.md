@@ -25,11 +25,11 @@ tags:
 
     $secret = '01000000d08c9ddf0115d1118c7a00c04fc297eb01000000d4a6c6bfcbbb75418de6e9672d85e73600...996f8365c8c82ea61f94927d3e3b14000000c6aecec683717376f0fb18519f326f6ac9cd89dc'
     $username = 'test\user'
-    
+
     $password = $secret | ConvertTo-SecureString
-    
+
     $credential = New-Object -TypeName System.Management.Automation.PSCredential($username, $password)
-    
+
     # example call
     Start-Process notepad -Credential $credential -WorkingDirectory c:\
 

@@ -23,13 +23,13 @@ function Clear-PowerShellLog
 {
   <#
       .SYNOPSIS
-      Ckears the entire PowerShell operational log including 
-      script blog logging entries. 
+      Ckears the entire PowerShell operational log including
+      script blog logging entries.
       Administrator privileges required.
 
       .DESCRIPTION
-      Clears the complete content of the log 
-      Microsoft-Windows-PowerShell/Operational. 
+      Clears the complete content of the log
+      Microsoft-Windows-PowerShell/Operational.
       This includes all logged script block code.
 
       .EXAMPLE
@@ -38,7 +38,7 @@ function Clear-PowerShellLog
   #>
   [CmdletBinding(ConfirmImpact='High')]
   param()
-    
+
   try
   {
     $ErrorActionPreference = 'Stop'

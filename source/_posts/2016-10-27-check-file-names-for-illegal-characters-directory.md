@@ -23,7 +23,7 @@ $illegal =[Regex]::Escape(-join [System.Io.Path]::GetInvalidFileNameChars())
 $pattern = "[$illegal]"
 
 # find illegal characters
-$invalid = [regex]::Matches($filenameToCheck, $pattern, 'IgnoreCase').Value | Sort-Object -Unique 
+$invalid = [regex]::Matches($filenameToCheck, $pattern, 'IgnoreCase').Value | Sort-Object -Unique
 
 $hasInvalid = $invalid -ne $null
 if ($hasInvalid)

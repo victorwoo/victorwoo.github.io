@@ -25,32 +25,32 @@ PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问�
         [Double]
         $Value
       )
-    
+
       dynamicparam
       {
         $Bucket = New-Object -TypeName System.Management.Automation.RuntimeDefinedParameterDictionary
-    
-        $Attributes = New-Object -TypeName System.Collections.ObjectModel.Collection[System.Attribute]    
+
+        $Attributes = New-Object -TypeName System.Collections.ObjectModel.Collection[System.Attribute]
         $AttribParameter = New-Object System.Management.Automation.ParameterAttribute
         $AttribParameter.Mandatory = $true
         $Attributes.Add($AttribParameter)
-        
+
         if ($script:currencies -eq $null)
         {
           $url = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'
           $result = Invoke-RestMethod  -Uri $url
           $script:currencies = $result.Envelope.Cube.Cube.Cube.currency
         }
-        
+
         $AttribValidateSet = New-Object System.Management.Automation.ValidateSetAttribute($script:currencies)
         $Attributes.Add($AttribValidateSet)
-    
+
         $Parameter = New-Object -TypeName System.Management.Automation.RuntimeDefinedParameter('Currency',[String], $Attributes)
         $Bucket.Add('Currency', $Parameter)
-    
+
         $Bucket
       }
-    
+
       begin
       {
         foreach ($key in $PSBoundParameters.Keys)
@@ -60,14 +60,14 @@ PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问�
             Set-Variable -Name $key -Value $PSBoundParameters.$key
           }
         }
-      
+
         $url = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'
         $rates = Invoke-RestMethod  -Uri $url
-        $rate = $rates.Envelope.Cube.Cube.Cube | 
+        $rate = $rates.Envelope.Cube.Cube.Cube |
         Where-Object { $_.currency -eq $Currency} |
         Select-Object -ExpandProperty Rate
       }
-    
+
       process
       {
         $result = [Ordered]@{
@@ -77,7 +77,7 @@ PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问�
           Euro = ($Value / $rate)
           Date = Get-Date
         }
-        
+
         New-Object -TypeName PSObject -Property $result
       }
     }
@@ -95,7 +95,7 @@ PowerShell 是一个非常有用的语言，可以调用 Web Service 和访问�
     Rate     : 7.4622
     Euro     : 13,4008737369677
     Date     : 26.01.2016 21:32:44
-    
+
     Value    : 66,9
     Currency : DKK
     Rate     : 7.4622

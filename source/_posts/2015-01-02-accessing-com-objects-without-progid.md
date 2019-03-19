@@ -19,13 +19,13 @@ _适用于 PowerShell 所有版本_
 以下是一个例子：
 
     $object = New-Object -ComObject Scripting.FileSystemObject
-    $object.Drives 
+    $object.Drives
 
 若不使用 `New-Object` 命令，您也可以用 .NET 方法来实现相同的目的：
 
     $type = [Type]::GetTypeFromProgID('Scripting.FileSystemObject')
     $object = [Activator]::CreateInstance($type)
-    $object.Drives 
+    $object.Drives
 
 采用后一种方法，您甚至可以实例化一个未暴露 ProgID 的 COM 对象。您所需的只是 GUID：
 

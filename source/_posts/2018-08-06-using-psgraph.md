@@ -44,14 +44,14 @@ graph site1 {
     subgraph 1 -Attributes @{label='Internal'} {
         # Internal API servers
         rank $apiServers
-        node $apiServers   
+        node $apiServers
         edge $webServers -to $apiServers
-    
+
         # Database Servers
         rank $databaseServers
         node $databaseServers @{shape='octagon'}
         edge $apiServers -to $databaseServers
-    }    
+    }
 } | Export-PSGraph -ShowGraph
 ```
 

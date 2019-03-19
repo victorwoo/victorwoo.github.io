@@ -17,8 +17,8 @@ tags:
 	function Get-MonitorBrightness
 	{
 	    param($ComputerName, $Credential)
-	
-	    Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness @PSBoundParameters | 
+
+	    Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness @PSBoundParameters |
 	        Select-Object -Property PSComputerName, CurrentBrightness, Levels
 	}
 

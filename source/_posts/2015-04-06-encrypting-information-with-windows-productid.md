@@ -22,30 +22,30 @@ _适用于 PowerShell 3.0 及以上版本_
 
     $Path = "$env:temp\secret.txt"
     $Secret = 'Hello World!'
-    
+
     $regKey = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name DigitalProductID
     $encryptionKey = $regKey.DigitalProductID
-    
+
     $Secret |
-      ConvertTo-SecureString -AsPlainText -Force | 
-      ConvertFrom-SecureString -Key ($encryptionKey[0..23]) | 
+      ConvertTo-SecureString -AsPlainText -Force |
+      ConvertFrom-SecureString -Key ($encryptionKey[0..23]) |
       Out-File -FilePath $Path
-    
+
     notepad $Path
 
 这是对加密的文本进行解密的代码：
 
     $Path = "$env:temp\secret.txt"
-    
+
     $regKey = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name DigitalProductID
     $encryptionKey = $regKey.DigitalProductID
-    
+
     $decryptedTextSecureString = Get-Content -Path $Path -Raw |
       ConvertTo-SecureString -Key ($secureKey[0..23])
-    
+
     $cred = New-Object -TypeName System.Management.Automation.PSCredential('dummy', $decryptedTextSecureString)
     $decryptedText = $cred.GetNetworkCredential().Password
-    
+
     "The decrypted secret text: $decryptedText"
 
 请注意如何 `PSCredential` 对象来对密文进行解密并还原出明文的。

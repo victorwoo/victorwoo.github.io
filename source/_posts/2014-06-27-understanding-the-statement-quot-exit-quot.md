@@ -16,13 +16,13 @@ PowerShell 支持基于作用域的 `exit` 关键字。它的工作方式也许�
 
 我们假设有这样一个函数：
 
-    function test 
+    function test
     {
       'A'
-      exit 
+      exit
       'B'
     }
-    
+
 当您将这个函数保存为一个脚本文件，然后执行这个脚本，将得到以下结果：
 
 	PS> C:\Users\Tobias\Documents\PowerShell\test12343.ps1
@@ -32,17 +32,17 @@ PowerShell 支持基于作用域的 `exit` 关键字。它的工作方式也许�
 
 `exit` 将会导致调用者上下文退出，而不仅仅是所在的函数。所以如果您将脚本像这样保存，您也许会有意外发现：
 
-    function test 
+    function test
     {
       'A'
-      exit 
+      exit
       'B'
     }
-    
+
     'Start'
     test
     'Stop'
-    
+
 
 现在的结果类似这样：
 

@@ -15,15 +15,15 @@ tags:
 如果您从 VBScript 迁移到 PowerShell，您也许会记得 VBScript 如何映射网络驱动器。这个选项在 PowerShell 中仍然有效。
 
     $helper = New-Object -ComObject WScript.Network
-    
+
     $helper.MapNetworkDrive('O:','\\dc-01\somefolder',$true)
     $helper.EnumNetworkDrives()
-    
+
     Test-Path -Path O:\
     explorer.exe O:\
     Get-PSDrive -Name O
-    
-    
+
+
     $helper.RemoveNetworkDrive('O:', $true, $true)
 
 如果您希望以不同的凭据登录，请使用这种方式：

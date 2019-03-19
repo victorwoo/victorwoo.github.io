@@ -15,15 +15,15 @@ tags:
 如果您在一个函数中定义了变量，那么这些变量只在函数作用域内有效。要查看在外层作用域的变量值，请使用带 `-Scope` 参数的 `Get-Variable` 命令：
 
     $a = 1
-    
+
     function test
     {
         $a = 2
         $parentVariable = Get-Variable -Name a -Scope 1
         $parentVariable.Value
     }
-    
-    test 
+
+    test
 
 当脚本调用“test”函数时，函数定义了一个 `$a` 并且将它的值设为 2。在调用者作用域中，变量 `$a` 的值是 1。通过 `Get-Variable`，函数内可以得到外层作用域中的变量值。
 

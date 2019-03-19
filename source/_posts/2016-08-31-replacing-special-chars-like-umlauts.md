@@ -31,9 +31,9 @@ function Convert-Umlaut
 
   $output = $Text.Replace('ö','oe').Replace('ä','ae').Replace('ü','ue').Replace('ß','ss').Replace('Ö','Oe').Replace('Ü','Ue').Replace('Ä','Ae')
   $isCapitalLetter = $Text -ceq $Text.toUpper()
-  if ($isCapitalLetter) 
-  { 
-    $output = $output.toUpper() 
+  if ($isCapitalLetter)
+  {
+    $output = $output.toUpper()
   }
   $output
 }
@@ -42,7 +42,7 @@ function Convert-Umlaut
 要转换一个字符串，请这样使用：
 
 ```shell
-PS C:\> Convert-Umlaut -Text "Mößler, Christiansön" 
+PS C:\> Convert-Umlaut -Text "Mößler, Christiansön"
 Moessler, Christiansoen
 ```
 

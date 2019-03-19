@@ -15,7 +15,7 @@ tags:
 当您启用了 `ScriptBlockLogging` 后，PowerShell 将会记录所有在您机器上执行的所有 PowerShell 代码。如果没有启用它，所有安全相关的代码仍然会记录。这样很不错。然而，该任何用户都可以读取该日志，所以任何人都可以类似这样浏览记录下的代码:
 
 ```powershell
-Get-WinEvent -FilterHashtable @{ ProviderName="Microsoft-Windows-PowerShell";  Id = 4104 } 
+Get-WinEvent -FilterHashtable @{ ProviderName="Microsoft-Windows-PowerShell";  Id = 4104 }
 ```
 
 To harden security and limit the access to the log file, you have two choices:
@@ -25,29 +25,29 @@ To harden security and limit the access to the log file, you have two choices:
 * 您可以增强 PowerShell 操作日志的存取安全，并且使用和传统的安全日志相同的存取方式。通过这种方法，只有管理员可以读取该日志。这是我们今天要在本技能中讨论的方案：
 
 ```powershell
-#requires -RunAsAdministrator 
-    
-# this is where the  PowerShell operational log stores its settings 
+#requires -RunAsAdministrator
+
+# this is where the  PowerShell operational log stores its settings
 $Path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\winevt\Channels\Microsoft-Windows-PowerShell/Operational"
-    
-# get the default  SDDL security definition for the classic security log 
+
+# get the default  SDDL security definition for the classic security log
 $sddlSecurity = ((wevtutil gl security) -like 'channelAccess*').Split(' ')[-1]
-    
-# get the current  SDDL security for the PowerShell log 
+
+# get the current  SDDL security for the PowerShell log
 $sddlPowerShell = (Get-ItemProperty -Path $Path).ChannelAccess
-    
-# store the current  SDDL security (just in case you want to restore it later) 
+
+# store the current  SDDL security (just in case you want to restore it later)
 $existsBackup = Test-Path -Path $Path
 if (!$existsBackup)
 {
     Set-ItemProperty -Path $Path -Name ChannelAccessBackup -Value $sddlPowerShell
 }
-    
-# set the hardened  security to the PowerShell operational log 
+
+# set the hardened  security to the PowerShell operational log
 Set-ItemProperty -Path $Path -Name ChannelAccess -Value $sddlSecurity
-    
-# restart the service  to take effect 
-Restart-Service -Name EventLog -Force 
+
+# restart the service  to take effect
+Restart-Service -Name EventLog -Force
 ```
 
 当您运行该脚本时，读取 PowerShell 操作日志的权限被限制为只有本地管理员。

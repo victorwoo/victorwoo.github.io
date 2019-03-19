@@ -31,15 +31,15 @@ function Show-CustomProgress
     try
     {
         $esc = [char]27
-    
+
         # let the caret move to column (horizontal) pos 12
         $column = 12
         $resetHorizontalPos = "$esc[${column}G"
         $gotoFirstColumn = "$esc[0G"
-        
+
         $hideCursor = "$esc[?25l"
         $showCursor = "$esc[?25h"
-        $resetAll = "$esc[0m" 
+        $resetAll = "$esc[0m"
 
         # write the template text
         Write-Host "${hideCursor}Processing     %." -NoNewline

@@ -19,8 +19,8 @@ tags:
 一旦变量被赋值之后，只需要用进程 ID 作为属性即可：
 
     PS> $serviceList.672
-    
-    
+
+
     ExitCode  : 0
     Name      : WSearch
     ProcessId : 672

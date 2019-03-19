@@ -28,7 +28,7 @@ function Get-NestedGroupMember
 
   process
   {
-        
+
     $DomainController = $env:logonserver.Replace("\\","")
     $Domain = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$DomainController")
     $Searcher = New-Object System.DirectoryServices.DirectorySearcher($Domain)

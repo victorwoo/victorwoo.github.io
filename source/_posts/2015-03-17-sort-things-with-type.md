@@ -18,7 +18,7 @@ _适用于 PowerShell 所有版本_
 
     # sorting primitive data
     1,5,2,1,6,3,12,6 | Sort-Object -Unique
-    
+
     # sorting object data
     Get-ChildItem -Path c:\windows | Sort-Object –Property name
 
@@ -28,9 +28,9 @@ _适用于 PowerShell 所有版本_
 
     # sorting string as numbers
     '1','5','3a','12','6' | Sort-Object -Property { $_ -as [int]  }
-    
+
     # sorting IPv4 addresses as versions
-    '1.2.3.4', '10.1.2.3', '100.4.2.1', '2.3.4.5', '9.10.11.12' | 
+    '1.2.3.4', '10.1.2.3', '100.4.2.1', '2.3.4.5', '9.10.11.12' |
       Sort-Object -Property { [version] $_ }
 
 <!--本文国际来源：[Sort Things with Type](http://community.idera.com/powershell/powertips/b/tips/posts/sort-things-with-type)-->

@@ -18,7 +18,7 @@ _适用于 PowerShell 所有版本_
 
     $result = New-TimeSpan -End '2014-12-25 06:45:00'
     $hours = [Int]$result.TotalHours
-    'Another {0:n0} hours to go...' -f $hours 
+    'Another {0:n0} hours to go...' -f $hours
 
 这个例子计算距离 2014 年圣诞节还剩余的小时数。只需要替换代码中的日期，就可以得到距您期待的事件到来还有多少小时。
 

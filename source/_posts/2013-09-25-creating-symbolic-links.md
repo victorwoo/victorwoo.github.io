@@ -22,14 +22,14 @@ tags:
 	    (
 	        [Parameter(Mandatory=$true)]
 	        $OriginalPath,
-	
+
 	        [Parameter(Mandatory=$true)]
 	        $MirroredPath,
-	
+
 	        [ValidateSet('File', 'Directory')]
 	        $Type='File'
 	    )
-	    
+
 	    if(!([bool]((whoami /groups) -match "S-1-16-12288") ))
 	    {
 	        Write-Warning 'Must be an admin'
@@ -39,15 +39,15 @@ tags:
 	        [DllImport("kernel32.dll")]
 	        public static extern bool CreateSymbolicLink(string lpSymlinkFileName, string lpTargetFileName, int dwFlags);
 	        '
-	    Add-Type -MemberDefinition $signature -Name Creator -Namespace SymbolicLink 
-	
+	    Add-Type -MemberDefinition $signature -Name Creator -Namespace SymbolicLink
+
 	    $Flags = [Int]($Type -eq 'Directory')
 	    [SymbolicLink.Creator]::CreateSymbolicLink($MirroredPath, $OriginalPath,$Flags)
 	}
-	
+
 	$downloads = "$env:userprofile\Downloads"
 	$desktop = "$env:userprofile\Desktop\MyDownloads"
-	
+
 	New-SymbolicLink -OriginalPath $downloads -MirroredPath $desktop -Type Directory
 
 当您（以管理员身份）运行这段代码时，它将使您能在桌面上访问下载文件夹。请右击符号链接并选择**属性**，并和“普通”的\*.link文件做对比。

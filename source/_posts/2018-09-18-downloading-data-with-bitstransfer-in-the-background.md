@@ -36,7 +36,7 @@ Complete-BitsTransfer
 要获取挂起的 BitsTransfer 任务的更多信息，请试试这段代码：
 
 ```powershell
-PS> Get-BitsTransfer | Select-Object -Property * 
+PS> Get-BitsTransfer | Select-Object -Property *
 ```
 
 And if you have Admin privileges, you can even dump the jobs from other users, including internal accounts. This way you’ll see updates and other things that are on their way to you:

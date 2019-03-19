@@ -41,17 +41,17 @@ Document 'ServiceReport'  {
 
     Paragraph -Style Heading1 "System Inventory for $env:computername"
     Paragraph -Style Heading2 "Services ($($services.Count) Services found):"
-    
+
     # generate a table with one line per service
-    $services | 
+    $services |
         # select the properties to display, and the header texts to use
         Table -Columns DisplayName, Status, StartType -Headers 'Service Name','Current State','Startup Type' -Width 0
-    
-} | 
+
+} |
 Export-Document -Path $OutPath -Format Word,Html,Text
 
 # open the generated documents
-explorer $OutPath 
+explorer $OutPath
 ```
 
 当您运行这段代码时，它生成三个名为 ServiceReport.docx/html/txt 的文件。如您所见，该报告包含表格形式的服务列表。

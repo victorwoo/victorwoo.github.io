@@ -23,8 +23,8 @@ Here is a clever trick how to find out how many lines a string (not a string arr
     Let's find out
     the number of lines.
     '@
-    
-    $text.Length - $text.Replace("`n",'').Length + 1 
+
+    $text.Length - $text.Replace("`n",'').Length + 1
 
 技术上来说，这个例子用的是 here-string 来创建多行字符串，不过这只是一个例子。它对所有类型的字符串都有效，无论它的来源是什么。
 

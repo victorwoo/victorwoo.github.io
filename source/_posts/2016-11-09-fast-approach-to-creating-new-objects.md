@@ -29,7 +29,7 @@ $o = [PSCustomObject]@{
 
     PS C:\> $o
 
-​    
+​
     Date     : 10/28/2016 3:47:27 PM
     BIOS     : \\DESKTOP-7AAMJLF\root\cimv2:Win32_BIOS.Name="1.4.4",SoftwareElementID="1.4.4",SoftwareElementState=3,TargetOpera
                tingSystem=0,Version="DELL   - 1072009"
@@ -38,22 +38,22 @@ $o = [PSCustomObject]@{
     Remark   : Some remark
 
 
-​    
-​    
+​
+​
     PS C:\> $o.Remark
     Some remark
-    
-    PS C:\> $o.OS 
-    
-    Platform ServicePack Version      VersionString                    
-    -------- ----------- -------      -------------                    
+
+    PS C:\> $o.OS
+
+    Platform ServicePack Version      VersionString
+    -------- ----------- -------      -------------
      Win32NT             10.0.14393.0 Microsoft Windows NT 10.0.14393.0
 
 
-​    
+​
     PS C:\> $o.OS.VersionString
     Microsoft Windows NT 10.0.14393.0
-    
+
     PS C:\>
 
 <!--本文国际来源：[Fast Approach to Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/fast-approach-to-creating-new-objects)-->

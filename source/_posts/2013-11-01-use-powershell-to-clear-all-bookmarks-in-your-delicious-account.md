@@ -96,7 +96,7 @@ API 文档中有一句严厉的警告，原文如下：
 	    if (!$lastSleepTime) {
 	        $lastSleepTime = Get-Date
 	    }
-	
+
 	    $span = $lastSleepTime + (New-TimeSpan -Seconds 1) - (Get-Date)
 	    Start-Sleep -Milliseconds $span.TotalMilliseconds
 	}
@@ -119,21 +119,21 @@ API 文档中有一句严厉的警告，原文如下：
 ======
 
 	$userName = 'vichamp'
-	
+
 	Add-Type -AssemblyName 'System.Web'
 	#$password = ConvertTo-SecureString –String "xxx" –AsPlainText -Force
-	
+
 	$credential = Get-Credential -UserName $userName -Message '请输入密码'
-	
+
 	function Invoke-StingySleep ($seconds) {
 	    if (!$lastSleepTime) {
 	        $lastSleepTime = Get-Date
 	    }
-	
+
 	    $span = $lastSleepTime + (New-TimeSpan -Seconds 1) - (Get-Date)
 	    #Start-Sleep -Milliseconds $span.TotalMilliseconds
 	}
-	
+
 	while ($true) {
 	    Invoke-StingySleep 1
 	    [xml]$listResponse = Invoke-WebRequest -Uri 'https://api.delicious.com/v1/posts/all?red=api' -Credential $credential
@@ -142,10 +142,10 @@ API 文档中有一句严厉的警告，原文如下：
 	        break
 	    }
 	    $links = $listResponse.posts.post | select -exp href -Unique
-	
+
 	    $links | foreach {
 	        $encodedLink = [System.Web.HttpUtility]::UrlEncode($_)
-	
+
 	        Invoke-StingySleep 1
 	        [xml]$response = Invoke-WebRequest -Uri "https://api.delicious.com/v1/posts/delete?url=$encodedLink"  -Credential $credential
 	        if ($response.result.code -eq 'done') {
@@ -155,7 +155,7 @@ API 文档中有一句严厉的警告，原文如下：
 	        }
 	    }
 	}
-	
+
 	echo 'Done'
 
 您也可以[点击这里下载](/assets/download/Clear-Delicious.ps1)源代码。

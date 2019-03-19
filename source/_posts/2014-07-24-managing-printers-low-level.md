@@ -17,8 +17,8 @@ _适用于所有 PowerShell 版本_
 新版本的 Windows 操作系统，例如 Windows 8 和 Windows Server 2012 对打印机支持得很好，不过如果您在运行旧版的 Windows，那么这段代码可能有所帮助：
 
     PS> rundll32.exe PRINTUI.DLL,PrintUIEntry
-    
-    PS> 
+
+    PS>
 
 请注意这段代码是大小写敏感的！请不要加空格，也不要改变大小写。
 

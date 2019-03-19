@@ -18,9 +18,9 @@ tags:
 
     $today = Get-Date
     $1day = New-TimeSpan -Days 1
-    
+
     $yesterday = $today - $1day
-    
-    Get-EventLog -LogName system -EntryType Error, Warning -After $yesterday 
+
+    Get-EventLog -LogName system -EntryType Error, Warning -After $yesterday
 
 <!--本文国际来源：[Finding Errors since Yesterday](http://community.idera.com/powershell/powertips/b/tips/posts/finding-errors-since-yesterday)-->

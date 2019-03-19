@@ -17,8 +17,8 @@ tags:
 
 	PS >(curl http://61.4.185.48:81/g/ -UseBasicParsing).Content -cmatch 'var id=(\d+);' | Out-Null
 	PS >irm "http://www.weather.com.cn/data/sk/$($matches[1]).html" | select -exp weatherinfo
-	
-	
+
+
 	city    : 福州
 	cityid  : 101230101
 	temp    : 15

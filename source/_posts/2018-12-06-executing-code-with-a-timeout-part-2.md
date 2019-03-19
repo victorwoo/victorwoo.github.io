@@ -40,11 +40,11 @@ function Invoke-CodeWithTimeout
         if ($timeConsumed.TotalSeconds -ge $Timeout) {
             $ps.Stop()
             $ps.Dispose()
-            throw "Job timed out."    
+            throw "Job timed out."
         }
         Start-Sleep -Milliseconds 300
     } until ($handle.isCompleted)
-    
+
     $ps.EndInvoke($handle)
     $ps.Runspace.Close()
     $ps.Dispose()
@@ -61,7 +61,7 @@ At line:24 char:13
 +       ~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : OperationStopped: (Job timed out.:String) [], RuntimeException
     + FullyQualifiedErrorId : Job timed out.
-    
+
 
 PS> Invoke-CodeWithTimeout -Code { Start-Sleep -Seconds 3; Get-Date } -Timeout 5
 

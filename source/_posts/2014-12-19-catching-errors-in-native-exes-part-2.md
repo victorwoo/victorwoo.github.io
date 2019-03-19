@@ -17,8 +17,8 @@ _适用于 PowerShell 所有版本_
 以下是检测控制台程序发出的错误的另一种方法：
 
     $ErrorActionPreference = 'Continue'
-    $result = net.exe user UserDoesNotExist 2>&1 
-    
+    $result = net.exe user UserDoesNotExist 2>&1
+
     # $? is $false when something went wrong
     if ($? -eq $false) {
         # read last error:
@@ -26,7 +26,7 @@ _适用于 PowerShell 所有版本_
         Write-Host "Something went wrong: $errMsg"
     } else {
         Write-Host 'All is fine.'
-    } 
+    }
 
 请注意 `$ErrorActionPreference` 的用法：当它设置为‘`Stop`’时，错误将被转换为一个 .NET 异常。`$ErrorActionPreference` 的缺省设置是‘`Continue`’。通过这个设置，脚本可以通过 `$err` 获得错误信息。
 

@@ -18,7 +18,7 @@ tags:
 
 	PS> Get-Command -Verb Get | Measure-Object
 	Count    : 422
-	
+
 	PS> Get-Command -Verb Get -ListImported | Measure-Object
 	Count    : 174
 

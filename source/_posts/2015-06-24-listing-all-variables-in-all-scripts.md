@@ -22,7 +22,7 @@ tags:
             [System.Management.Automation.PSParser]::Tokenize($_.Editor.Text, [ref]$errors) |
             Where-Object { $_.Type -eq 'Variable'} |
             Select-Object -Property Content |
-            Add-Member -MemberType NoteProperty -Name Script -Value $_.DisplayName -PassThru 
+            Add-Member -MemberType NoteProperty -Name Script -Value $_.DisplayName -PassThru
         } |
         Sort-Object -Property Content, Script -Unique
 

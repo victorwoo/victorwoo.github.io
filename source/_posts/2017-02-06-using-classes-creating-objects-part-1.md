@@ -16,11 +16,11 @@ tags:
 
 ```powershell
 #requires -Version 5.0
-class Info 
-{ 
+class Info
+{
   $Name
   $Computer
-  $Date 
+  $Date
 }
 
 # generic syntax to create a new object instance
@@ -43,8 +43,8 @@ $infoObj.GetType().Name
 您可以使用 `New-Object` 来创建这个类的任意多个新实例。每个实例代表有三个属性的 "Info" 类型的一个新对象。
 
 ```powershell
-Name            Computer        Date               
-----            --------        ----               
+Name            Computer        Date
+----            --------        ----
 
 DESKTOP-7AAMJLF DESKTOP-7AAMJLF 1/2/2017 2:00:02 PM
 Info
@@ -67,8 +67,8 @@ $infoObj.GetType().Name
 这种做法没有使用一个蓝本（类），而是根据哈希表创建独立的新对象：
 
 ```powershell
-Name            Computer        Date               
-----            --------        ----               
+Name            Computer        Date
+----            --------        ----
 DESKTOP-7AAMJLF DESKTOP-7AAMJLF 1/2/2017 2:02:39 PM
 PSCustomObject
 ```

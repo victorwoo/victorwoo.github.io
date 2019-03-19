@@ -36,9 +36,9 @@ PowerShell 将所有可执行程序（扩展名为 EXE 的文件）视为普通�
 显然地，您可以轻松地将设置恢复到缺省状态：
 
     PS> $ExecutionContext.SessionState.Applications.Add('*')
-    
+
     PS> explorer
-    
+
     PS>
 
 所以，该设置可以使执行 EXE 程序变得更困难（或者说防止不小心运行了不该运行的 EXE）。若真要将它作为安全策略，您还需要关闭所谓的“语言模式”。

@@ -23,7 +23,7 @@ tags:
     catch
     {
       Write-Warning "Error: $_"
-    } 
+    }
 
 以上代码将捕获第一个错误，但 cmdlet 将会停止执行，并且不会继续扫描剩下的子文件夹。
 
@@ -36,18 +36,18 @@ tags:
     catch
     {
       Write-Warning "Error: $_"
-    } 
+    }
 
 所以如果您希望一个 cmdlet 运行时不会中断，并且任然能获取一个您有权限的文件夹的完整列表，那么请不要使用异常处理器。相反，使用 `-ErrorVariable` 并将错误信息静默地保存到一个变量中。
 
 当该 cmdlet 执行结束时，您可以获取该变量的值并产生一个错误报告：
 
     Get-ChildItem -Path $env:windir -Filter *.ps1 -Recurse -ErrorAction SilentlyContinue -ErrorVariable myErrors
-    
+
     Foreach ($incidence in $myErrors)
     {
         Write-Warning ("Unable to access " + $incidence.CategoryInfo.TargetName)
-    }   
+    }
 
 ![](/img/2014-04-18-logging-all-errors-001.png)
 

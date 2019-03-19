@@ -27,9 +27,9 @@ PS> $PSVersionTable.PSVersion.Major
 
 这行代码将告诉您 PowerShell 2 子系统是否仍然存在：
 
-```powershell     
+```powershell
 PS> powershell -version 2.0
-Windows PowerShell 
+Windows PowerShell
 Copyright (C) 2009 Microsoft Corporation. All rights reserved.
 
 PS>

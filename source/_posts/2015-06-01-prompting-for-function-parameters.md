@@ -24,7 +24,7 @@ tags:
       (
         [string]
         $Name,
-    
+
         [int]
         $ID
       )
@@ -33,7 +33,7 @@ tags:
         Show-Command -Name Show-PromptInfo
         return
       }
-    
+
       "Your name is $name, and the id is $id."
     }
 
@@ -41,7 +41,7 @@ tags:
 
     PS> Show-PromptInfo -Name weltner -ID 12
     Your name is weltner, and the id is 12.
-    
+
     PS> Show-PromptInfo
     <# Dialog opens, then runs the function with submitted parameters#>
 

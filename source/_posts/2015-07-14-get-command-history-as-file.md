@@ -24,11 +24,11 @@ tags:
         $text = Get-History |
         Select-Object -ExpandProperty CommandLine |
         Out-String
-    
+
         $file = $psise.CurrentPowerShellTab.Files.Add()
         $file.Editor.Text = $text
     }
-    
+
     $psise.CurrentPowerShellTab.AddOnsMenu.Submenus.Add('Get Command History', $code, 'ALT+C')
 
 <!--本文国际来源：[Get Command History as File](http://community.idera.com/powershell/powertips/b/tips/posts/get-command-history-as-file)-->

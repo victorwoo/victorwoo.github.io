@@ -36,7 +36,7 @@ If you planned to get a list of stoppable services, the above line would not wor
 请注意用 `Where-Object` 的简化语法，您无法取得相反的结果。以下代码**并不会**生效：
 
     PS> Get-Service | Where-Object !CanStop
-    
+
     PS> Get-Service | Where-Object -not CanStop
 
 要使用这些条件，或者要合并比较条件，请使用完整语法：

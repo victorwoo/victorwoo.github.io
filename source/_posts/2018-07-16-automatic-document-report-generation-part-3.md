@@ -41,13 +41,13 @@ Document 'ServiceReport'  {
 
     Paragraph -Style Heading1 "System Inventory for $env:computername"
     Paragraph -Style Heading2 "Services ($($services.Count) Services found):"
-    
+
     # generate a table with one line per service
-    $services | 
+    $services |
         # select the properties to display, and the header texts to use
         Table -Columns DisplayName, Status, StartType -Headers 'Service Name','Current State','Startup Type' -Width 0
-    
-} | 
+
+} |
 Export-Document -Path $OutPath -Format Word,Html,Text
 
 # open the generated documents
@@ -68,17 +68,17 @@ if (!$exists) { $null = New-Item -Path $OutPath -ItemType Directory -Force }
 # generate document
 Document 'ADUser'  {
     # get 40 AD user to illustrate
-    $user = Get-ADUser -Filter * -ResultSetSize 40 -Properties mail | 
+    $user = Get-ADUser -Filter * -ResultSetSize 40 -Properties mail |
         Select-Object -Property Name, mail, SID
 
     Paragraph -Style Heading1 "AD User Liste"
-    
+
     # generate a table with one line per user
-    $user | 
+    $user |
         # select the properties to display, and the header texts to use
         Table -Columns Name, mail, SID -Headers 'Employee','Email','SID' -Width 0
-    
-} | 
+
+} |
 Export-Document -Path $OutPath -Format Word
 
 # open the generated documents

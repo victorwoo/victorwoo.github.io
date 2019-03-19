@@ -19,11 +19,11 @@ tags:
       param(
         [string]
         $commandName,
-    
+
         [System.Management.Automation.CommandLookupEventArgs]
         $eventArgs
       )
-    
+
       $Sapi = New-Object -ComObject Sapi.SpVoice
       $null = $Sapi.Speak("I don't know $commandName, stupid.")
     }

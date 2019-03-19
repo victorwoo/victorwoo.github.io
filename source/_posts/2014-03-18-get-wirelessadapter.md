@@ -23,10 +23,10 @@ tags:
         ForEach-Object {
           $wmipnpID = $_.Replace('\', '\\')
           Get-WmiObject -Class Win32_NetworkAdapter -Filter "PNPDeviceID='$wmipnpID'"
-        } 
-    } 
-    
-    
+        }
+    }
+
+
 
 只需要运行该函数：
 
@@ -38,7 +38,7 @@ tags:
 
     $adapter = Get-WirelessAdapter
     $adapter.Disable().ReturnValue
-    $adapter.Enable().ReturnValue 
+    $adapter.Enable().ReturnValue
 
 请注意返回值 5 意味着您没有足够的权限。请以管理员身份运行该脚本。
 

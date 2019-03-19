@@ -19,8 +19,8 @@ tags:
 以下代码将从 PowerShell 执行 robocopy.exe 并且递归地从 Windows 文件夹中拷贝所有的 JPG 图片到另一个 c:\jpegs 文件夹中，遇到错误不重试，并跳过 *winsxs* 文件夹。
 
     $arguments = "$env:windir\", 'c:\jpegs\','*.jpg', '/R:0', '/S', '/XD', '*winsxs*'
-      
-    Robocopy.exe $arguments 
+
+    Robocopy.exe $arguments
 
 如您所见，所有的参数都是字符串，并且它们都以一个字符串数组的形式传递。
 

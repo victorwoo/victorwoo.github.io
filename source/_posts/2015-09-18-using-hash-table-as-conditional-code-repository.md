@@ -15,10 +15,10 @@ tags:
 脚本中平时经常需要检测一个文件夹是否存在，如果不存在则创建：
 
     #requires -Version 1
-    
+
     $path = 'c:\testfolder'
     $exists = Test-Path -Path $path
-    
+
     if ($exists)
     {
       $null = New-Item -Path $path -ItemType Directory
@@ -32,14 +32,14 @@ tags:
 以下是一种很不常见的方法，以一种不同的概念实现相同的功能：
 
     #requires -Version 1
-    
+
     $Creator = @{
       $true = { Write-Warning 'Folder already present'}
       $false = {$null = New-Item -Path $Path -ItemType Directory
                 Write-Warning 'Folder created'}
     }
-    
-    
+
+
     $Path = 'c:\testfolder2'
     & $Creator[(Test-Path $Path)]
 

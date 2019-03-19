@@ -16,23 +16,23 @@ tags:
 
 这个函数将以缺省权限创建新的文件夹。该脚本使用 `icacls.exe` 来显式地为当前用户添加完全权限以及为本地管理员添加读取权限：
 
-    function New-Folder 
+    function New-Folder
     {
       param
       (
         [String]
         $path,
-        
+
         [String]
         $username = "$env:userdomain\$env:username"
       )
-      
-      If ( (Test-Path -Path $path) -eq $false ) 
+
+      If ( (Test-Path -Path $path) -eq $false )
       {
         New-Item $path -Type Directory | Out-Null
       }
-      
+
       icacls $path /inheritance:r /grant '*S-1-5-32-544:(OI)(CI)R' ('{0}:(OI)(CI)F' -f $username)
-    } 
-    
+    }
+
 <!--本文国际来源：[Applying NTFS Access Rules](http://community.idera.com/powershell/powertips/b/tips/posts/applying-ntfs-access-rules)-->

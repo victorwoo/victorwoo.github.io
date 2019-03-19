@@ -12,7 +12,7 @@ tags:
 - powertip
 - series
 ---
-当您远程执行 `Get-WmiObject` 命令时，它将会创建一个新的连接。所以如果您查询不同的 WMI 类时，每个查询会使用一个不同的连接，这样将会影响总体性能。 
+当您远程执行 `Get-WmiObject` 命令时，它将会创建一个新的连接。所以如果您查询不同的 WMI 类时，每个查询会使用一个不同的连接，这样将会影响总体性能。
 
 从 PowerShell 3.0 开始，有一些列新的 Cmdlet。使用这些 Cmdlet 可以容易地使用现有的连接高效地运行多个查询：
 
@@ -23,7 +23,7 @@ tags:
 会话缺省使用 WSMAN 协议：
 
 	PS> $session
-	
+
 	Id           : 1
 	Name         : CimSession1
 	InstanceId   : 0bb38128-3633-4eb8-8b55-6d2910b89bcd

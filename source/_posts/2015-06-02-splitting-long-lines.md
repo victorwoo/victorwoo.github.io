@@ -15,7 +15,7 @@ tags:
 为了提高可读性，您可以将超长的 PowerShell 代码行拆分成多行。
 
     Get-Service | Where-Object { $_.Status -eq 'Running' }
-    
+
     Get-Service |
       Where-Object { $_.Status -eq 'Running' }
 

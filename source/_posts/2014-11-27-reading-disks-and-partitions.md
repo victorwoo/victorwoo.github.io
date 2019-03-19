@@ -33,8 +33,8 @@ PS> Get-Partition
 ```
 PS> Get-Command -Name Get-Disk | Select-Object -ExpandProperty Module
 
-ModuleType Version    Name                                ExportedCommands        
----------- -------    ----                                ----------------        
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
 Manifest   2.0.0.0    Storage                             {Add-InitiatorIdToMas...
 ```
 
@@ -43,14 +43,14 @@ Manifest   2.0.0.0    Storage                             {Add-InitiatorIdToMas.
 ```
 PS> Get-Command -Module storage
 
-CommandType     Name                                               ModuleName     
------------     ----                                               ----------     
-Alias           Flush-Volume                                       Storage        
-Alias           Initialize-Volume                                  Storage        
-Alias           Write-FileSystemCache                              Storage        
-Function        Add-InitiatorIdToMaskingSet                        Storage        
-Function        Add-PartitionAccessPath                            Storage        
-Function        Add-PhysicalDisk                                   Storage      
+CommandType     Name                                               ModuleName
+-----------     ----                                               ----------
+Alias           Flush-Volume                                       Storage
+Alias           Initialize-Volume                                  Storage
+Alias           Write-FileSystemCache                              Storage
+Function        Add-InitiatorIdToMaskingSet                        Storage
+Function        Add-PartitionAccessPath                            Storage
+Function        Add-PhysicalDisk                                   Storage
 (...)
 ```
 

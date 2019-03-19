@@ -19,7 +19,7 @@ _适用于 PowerShell 所有版本_
 这段代码可以读取序列号：
 
     $ComputerName = $env:COMPUTERNAME
-    
+
     $serial = (Get-WmiObject -ComputerName $ComputerName -Class Win32_BIOS).SerialNumber
     "Your computer serial is $serial"
 

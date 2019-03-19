@@ -27,7 +27,7 @@ $textInfo.ToTitleCase($text.ToLower())
 以下是执行结果：
 
     Here Is Some TEXT That I Would Like To Title-Case (All Words Start With An Upper Letter
-    Here Is Some Text That I Would Like To Title-Case (All Words Start With An Upper Letter 
+    Here Is Some Text That I Would Like To Title-Case (All Words Start With An Upper Letter
 
 This method may be especially useful for list of names.
 这个方法对于姓名列表很有用。

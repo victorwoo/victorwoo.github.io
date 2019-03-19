@@ -25,11 +25,11 @@ _适用于 PowerShell 3.0 及以上版本_
 
 如果仔细观察，会发现当按下 `F1` 时，实际上是帮您输入了帮助命令。所以如果需要同样的操作方便性，但是显示的是在线的帮助，您以实现一个类似这样的函数：
 
-    function Get-Help($Name) { Get-Help $Name -Online }  
+    function Get-Help($Name) { Get-Help $Name -Online }
 
 然而，这可能会导致死循环，因为新创建的 `Get-Help` 会在内部调用自己。要让它正常工作，您需要您的函数内部是采用类似这样的方式调用原始的 `Get-Help` cmdlet：
 
-    function Get-Help($Name) { Microsoft.PowerShell.Core\Get-Help $Name -Online } 
+    function Get-Help($Name) { Microsoft.PowerShell.Core\Get-Help $Name -Online }
 
 当您运行这个函数是，您可以点击 PowerShell ISE 中的任意 cmdlet 名称，然后按 `F1` 键，就能够访问该 cmdlet 的在线解释——忽略您本机安装的帮助文件。
 

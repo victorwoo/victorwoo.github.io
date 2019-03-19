@@ -38,7 +38,7 @@ Get-Date -Date $lastBoot -Format '"Last reboot at" MMM dd, yyyy "at" HH:mm:ss "a
 格式化字符串既可以包括日期时间的通配符，也可以包括静态文本。只需要确保用双引号将静态文本包括起来。以下是执行结果（在德语系统上）：
 
     Donnerstag, 22. November 2018 01:13:44
-    
+
     Last reboot at Nov 22, 2018 at 01:13:44 and 50000 Milliseconds.
 
 

@@ -27,7 +27,7 @@ PS> Get-WmiObject -Class Win32_OperatingSystem | Select-Object -ExpandProperty O
 一个稍好的方式是用这段代码返回您当前使用的许可类型的明确的文字描述：
 
 ```
-PS> Get-WmiObject SoftwareLicensingProduct -Filter 'Name like "Windows%" and LicenseStatus=1' | Select-Object -ExpandProperty Name 
+PS> Get-WmiObject SoftwareLicensingProduct -Filter 'Name like "Windows%" and LicenseStatus=1' | Select-Object -ExpandProperty Name
 
 Windows(R), Professional edition
 ```

@@ -30,7 +30,7 @@ tags:
         }
         $i++
       } While ($ok)
-    
+
       $i
     }
 
@@ -41,17 +41,17 @@ tags:
     function Test-Diving
     {
         param($Depth)
-    
+
         if ($Depth -gt 10) { return }
-    
+
         "Diving deeper to $Depth meters..."
-    
+
         $currentDepth = Test-NestLevel
         "calculated depth: $currentDepth"
-    
+
         Test-Diving -depth ($Depth+1)
     }
-    
+
     Test-Diving -depth 1
 
 当您运行 `Test-Diving` 时，该函数将调用自身，直到达到 10 米深。该函数使用一个参数来控制嵌套深度，而 `Test-NestLevel` 的执行结果将返回相同的数字。
@@ -79,7 +79,7 @@ tags:
     calculated depth: 9
     diving deeper to 10 meters...
     calculated depth: 10
-    
+
     PS C:\> & { Test-Diving -Depth 1 }
     diving deeper to 1 meters...
     calculated depth: 2
@@ -101,7 +101,7 @@ tags:
     calculated depth: 10
     diving deeper to 10 meters...
     calculated depth: 11
-    
+
     PS C:\>
 
 `Test-NestLevel` 总是从当前的代码中返回嵌套的级别到全局作用域。

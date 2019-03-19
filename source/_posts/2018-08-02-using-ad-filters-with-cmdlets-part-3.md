@@ -20,7 +20,7 @@ LDAP 过滤器有一个强制的需求。您必须使用原始的 ActiveDirector
 
 ```powershell
 Get-ADComputer -LDAPFilter '(operatingSystem=*10*)' -Properties operatingSystem |
-Select-Object samaccountname, operatingSystem 
+Select-Object samaccountname, operatingSystem
 ```
 
 如果您想合并多个过滤器，请将它们加到小括号中，然后在前面添加 "&" 进行逻辑与操作，添加 "|" 进行逻辑或操作。所以这行代码查找所有从 Wuppertal 城市，名字以 "A" 开头的用户：

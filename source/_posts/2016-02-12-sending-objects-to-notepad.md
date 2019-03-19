@@ -22,7 +22,7 @@ function Out-Notepad
   (
     [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
     [Object]
-    [AllowEmptyString()] 
+    [AllowEmptyString()]
     $Object,
 
     [Int]
@@ -40,8 +40,8 @@ function Out-Notepad
   }
   end
   {
-    $text = $al | 
-    Format-Table -AutoSize -Wrap | 
+    $text = $al |
+    Format-Table -AutoSize -Wrap |
     Out-String -Width $Width
 
     $process = Start-Process notepad -PassThru
@@ -67,7 +67,7 @@ function Out-Notepad
 
 如果您通过管道传送对象，`Out-Notepad` 会将它们转换为文本并且不会截断任何东西。您可能会希望用 `-Width` 参数来确定页宽，以便正常显示：
 
-    PS C:\> Get-EventLog -LogName System -EntryType Error, Warning -Newest 10 | Out-Notepad -Width 130 
+    PS C:\> Get-EventLog -LogName System -EntryType Error, Warning -Newest 10 | Out-Notepad -Width 130
 
 另外您可能需要最大化记事本或禁用换行来查看正确的格式。
 

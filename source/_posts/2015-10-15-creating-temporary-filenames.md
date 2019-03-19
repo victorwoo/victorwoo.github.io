@@ -18,8 +18,8 @@ tags:
     $elements += [System.IO.Path]::GetTempPath()
     $elements += [System.Guid]::NewGuid()
     $elements += 'csv'
-    
-    
+
+
     $randomPath = '{0}{1}.{2}' -f $elements
     $randomPath
 
@@ -31,8 +31,8 @@ tags:
       $elements += [System.IO.Path]::GetTempPath()
       $elements += [System.Guid]::NewGuid()
       $elements += $Extension.TrimStart('.')
-    
-    
+
+
       '{0}{1}.{2}' -f $elements
     }
 
@@ -40,10 +40,10 @@ tags:
 
     PS C:\> New-TemporaryFileName
     C:\Users\Tobias\AppData\Local\Temp\8d8e5001-2be8-469d-9bc8-e2e3324cce66.txt
-    
+
     PS C:\> New-TemporaryFileName ps1
     C:\Users\Tobias\AppData\Local\Temp\412c40df-e691-44c1-8c94-f7ce30bb4875.ps1
-    
+
     PS C:\> New-TemporaryFileName csv
     C:\Users\Tobias\AppData\Local\Temp\47b1a65f-2705-4926-8a72-21f05430f2c5.csv
 

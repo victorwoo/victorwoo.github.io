@@ -37,7 +37,7 @@ function Copy-FileWithRobocopy
 
     [switch]$FlatCopy,
 
-    [switch]$NoRecurse 
+    [switch]$NoRecurse
   )
 
   $Recurse = '/S'
@@ -47,9 +47,9 @@ function Copy-FileWithRobocopy
 
   if ($FlatCopy)
   {
-    Get-ChildItem -Path $Destination -Recurse -Filter $Filter | 
+    Get-ChildItem -Path $Destination -Recurse -Filter $Filter |
       Move-Item -Destination $Destination -Force
-    Get-ChildItem -Path $Destination -Directory | 
+    Get-ChildItem -Path $Destination -Directory |
       Remove-Item -Recurse -Force
   }
 

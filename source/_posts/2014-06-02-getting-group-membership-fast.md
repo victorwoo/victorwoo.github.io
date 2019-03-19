@@ -21,9 +21,9 @@ tags:
     [System.Security.Principal.WindowsIdentity]::GetCurrent().Groups.Value |
       ForEach-Object {
         $sid = $_
-        $objSID = New-Object System.Security.Principal.SecurityIdentifier($sid) 
-        $objUser = $objSID.Translate( [System.Security.Principal.NTAccount]) 
+        $objSID = New-Object System.Security.Principal.SecurityIdentifier($sid)
+        $objUser = $objSID.Translate( [System.Security.Principal.NTAccount])
         $objUser.Value
-      } 
+      }
 
 <!--本文国际来源：[Getting Group Membership - Fast](http://community.idera.com/powershell/powertips/b/tips/posts/getting-group-membership-fast)-->

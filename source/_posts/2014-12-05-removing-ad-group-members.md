@@ -18,8 +18,8 @@ _需要 ActiveDirectory Module_
 
 ```
 $user = @()
-$user += Get-ADUser -Filter { Name -like 'H*'} 
-$user += Get-ADUser -Filter { Name -like '*ll*'} 
+$user += Get-ADUser -Filter { Name -like 'H*'}
+$user += Get-ADUser -Filter { Name -like '*ll*'}
 $user.Name
 
 Remove-ADGroupMember -Identity 'SomeGroup' -Members $user

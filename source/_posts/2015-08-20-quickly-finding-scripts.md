@@ -23,7 +23,7 @@ tags:
         $SearchPhrase,
         $Path = [Environment]::GetFolderPath('MyDocuments')
       )
-    
+
       Get-ChildItem -Path $Path  -Filter *.ps1 -Recurse -ErrorAction SilentlyContinue |
       Select-String -Pattern $SearchPhrase -List |
       Select-Object -Property Path, Line |

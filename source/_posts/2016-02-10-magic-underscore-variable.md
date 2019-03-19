@@ -37,7 +37,7 @@ function Test-DollarUnderscore
 
 ```powershell
 PS C:\> Test-DollarUnderscore -Test 'Some Data'
-received: Some Data 
+received: Some Data
 ```
 
 但是请看当您通过管道传送一个数据给该函数时发生了什么：
@@ -47,7 +47,7 @@ PS C:\> 1..4 | Test-DollarUnderscore -Test { "I am receiving $_" }
 received: I am receiving 1
 received: I am receiving 2
 received: I am receiving 3
-received: I am receiving 4 
+received: I am receiving 4
 ```
 
 `-Test` 参数瞬间自动神奇地接受脚本块了（虽然赋予的类型是 string）。而且在脚本块中，您可以存取输入管道的数据。

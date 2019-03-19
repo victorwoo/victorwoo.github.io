@@ -18,10 +18,10 @@ If you use Outlook to organize your calendar events, here is a useful PowerShell
     {
         # load the required .NET types
         Add-Type -AssemblyName 'Microsoft.Office.Interop.Outlook'
-        
+
         # access Outlook object model
         $outlook = New-Object -ComObject outlook.application
-    
+
         # connect to the appropriate location
         $namespace = $outlook.GetNameSpace('MAPI')
         $Calendar = [Microsoft.Office.Interop.Outlook.OlDefaultFolders]::olFolderCalendar
@@ -30,11 +30,11 @@ If you use Outlook to organize your calendar events, here is a useful PowerShell
         $folder.items |
           Select-Object -Property Start, Categories, Subject, IsRecurring, Organizer
     }
-    
+
 
 Try this:
 
-     
+
     PS> Get-OutlookCalendar | Out-GridView
 
 <!--本文国际来源：[Retrieving Outlook Calendar Entries](http://community.idera.com/powershell/powertips/b/tips/posts/retrieving-outlook-calendar-entries)-->

@@ -42,7 +42,7 @@ tags:
 假设您已创建了一个名为“_protectedfolder_”的文件夹：
 
     $Path = 'c:\protectedFolder'
-    
+
     # create new folder
     $null = New-Item -Path $Path -ItemType Directory
 
@@ -50,12 +50,12 @@ tags:
 
     # get permissions
     $acl = Get-Acl -Path $path
-    
+
     # add a new permission
     $permission = 'Tobias', 'Read,Write,Modify', 'ContainerInherit, ObjectInherit', 'None', 'Allow'
     $rule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permission
     $acl.SetAccessRule($rule)
-    
+
     # set new permissions
     $acl | Set-Acl -Path $path
 

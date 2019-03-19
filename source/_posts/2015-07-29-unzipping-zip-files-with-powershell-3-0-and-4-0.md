@@ -16,19 +16,19 @@ PowerShell 5.0 中引入了 ZIP 文件支持，但是如果您安装了 .NET Fra
 
     #requires -Version 2
     # .NET Framework 4.5 required!
-    
+
     Add-Type -AssemblyName System.IO.Compression.FileSystem -ErrorAction Stop
-    
+
     $Source = 'C:\somezipfile.zip'
     $Destination = 'C:\somefolder'
     $Overwrite = $true
     $ShowDestinationFolder = $true
-    
+
     if ((Test-Path $Destination) -eq $false)
     {
      $null = mkdir $Destination
     }
-    
+
     $Content = [IO.Compression.ZipFile]::OpenRead($Source).Entries
     $Content |
      ForEach-Object -Process {

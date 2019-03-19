@@ -41,7 +41,7 @@ $Action = {
     $text = "{0} was {1} at {2}" -f $FullPath, $ChangeType, $Timestamp
     Write-Host ""
     Write-Host $text -ForegroundColor Green
-    
+
     # you can also execute code based on change type here
     switch ($ChangeType)
     {
@@ -51,11 +51,11 @@ $Action = {
             # uncomment the below to mimick a time intensive handler
             <#
             Write-Host "Deletion Handler Start" -ForegroundColor Gray
-            Start-Sleep -Seconds 4    
+            Start-Sleep -Seconds 4
             Write-Host "Deletion Handler End" -ForegroundColor Gray
             #>
         }
-        'Renamed' { 
+        'Renamed' {
             # this executes only when a file was renamed
             $text = "File {0} was renamed to {1}" -f $OldName, $Name
             Write-Host $text -ForegroundColor Yellow
@@ -80,7 +80,7 @@ try
     {
         Wait-Event -Timeout 1
         Write-Host "." -NoNewline
-        
+
     } while ($true)
 }
 finally

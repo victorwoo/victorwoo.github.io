@@ -22,7 +22,7 @@ tags:
 
 $path = "$home\Pictures\psconf15.jpg"
 $url = 'http://www.powertheshell.com/wp-content/uploads/groupWPK2015.jpg'
-Invoke-WebRequest -Uri $url -OutFile $path  
+Invoke-WebRequest -Uri $url -OutFile $path
 
 Invoke-Item -Path $path
 ```
@@ -38,7 +38,7 @@ Invoke-Item -Path $path
 
   $path = "$home\Pictures\psconf15.jpg"
   $url = 'http://www.powertheshell.com/wp-content/uploads/groupWPK2015.jpg'
-  Invoke-WebRequest -Uri $url -OutFile $path 
+  Invoke-WebRequest -Uri $url -OutFile $path
 }
 Invoke-Item -Path $path
 ```

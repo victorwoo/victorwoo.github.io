@@ -18,7 +18,7 @@ tags:
 
 ```powershell
 # you are connecting to this computer
-# the computer in $destinationcomputer needs to have 
+# the computer in $destinationcomputer needs to have
 # PowerShell remoting enabled
 $DestinationComputer = 'server12'
 

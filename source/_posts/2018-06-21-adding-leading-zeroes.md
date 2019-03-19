@@ -18,7 +18,7 @@ tags:
 $number = 76
 $leadingZeroes = 8
 
-$number.Tostring().PadLeft($leadingZeroes, '0') 
+$number.Tostring().PadLeft($leadingZeroes, '0')
 
 Or, you can use the -f operator:
 

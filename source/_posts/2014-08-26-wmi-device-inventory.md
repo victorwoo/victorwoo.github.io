@@ -18,20 +18,20 @@ WMI 服务可以用来汇报许多关于计算机硬件的详细信息。通常�
 
 由于所有硬件类都继承自相同的 WMI 根类（`CIM_LogicalDevice`），所以您可以使用这个根类来查找所有的硬件：
 
-    Get-WmiObject -Class CIM_LogicalDevice | Out-GridView 
-    
+    Get-WmiObject -Class CIM_LogicalDevice | Out-GridView
+
 这将返回一个基本的硬件清单。不过您还可以做更多的事情。通过一点额外的代码，您可以用 WMI 获取一个硬件的类名清单：
 
-    Get-WmiObject -Class CIM_LogicalDevice | 
+    Get-WmiObject -Class CIM_LogicalDevice |
       Select-Object -Property __Class, Description |
       Sort-Object -Property __Class -Unique |
-      Out-GridView 
-    
+      Out-GridView
+
 您现在可以使用这些类名中的任意一个来查询某种特定的硬件，获取其详细信息：
 
-     
+
     PS> Get-WmiObject -Class Win32_SoundDevice
-    
+
     Manufacturer        Name                Status                       StatusInfo
     ------------        ----                ------                       ----------
     Cirrus Logic, Inc.  Cirrus Logic CS4... OK                                    3

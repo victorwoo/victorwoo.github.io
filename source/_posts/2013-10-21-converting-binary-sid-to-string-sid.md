@@ -16,16 +16,16 @@ Active Directory 账户有一个二进制形式存储的 SID。要将字节数�
 
 	# get current user
 	$searcher = [ADSISearcher]"(&(objectClass=User)(objectCategory=person)(sAMAccountName=$env:username))"
-	$user = $searcher.FindOne().GetDirectoryEntry() 
-	
+	$user = $searcher.FindOne().GetDirectoryEntry()
+
 	# get binary SID from AD account
 	$binarySID = $user.ObjectSid.Value
-	
+
 	# convert to string SID
 	$stringSID = (New-Object System.Security.Principal.SecurityIdentifier($binarySID,0)).Value
-	
+
 	$binarySID
-	$stringSID 
+	$stringSID
 
 在这个例子中，一个 ADSI 搜索器获取当前的用户账户（返回当前登录到一个域中的用户）。然后，将二进制的 SID 转换为 SID 字符串。
 

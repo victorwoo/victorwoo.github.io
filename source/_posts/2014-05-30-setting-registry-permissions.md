@@ -20,7 +20,7 @@ tags:
 
     $path = 'HKCU:\software\prototype'
     $sd = Get-Acl -Path $Path
-    $sd.Sddl | clip 
+    $sd.Sddl | clip
 
 这段代码将从您的注册表项中读取安全信息并将它复制到剪贴板中。
 
@@ -28,10 +28,10 @@ tags:
 
     # replace the content of this variable with the SDDL you just created
     $sddl = 'O:BAG:S-1-5-21-1908806615-3936657230-2684137421-1001D:PAI(A;CI;KR;;;BA)(A;CI;KA;;;S-1-5-21-1907506615-3936657230-2684137421-1001)'
-    
+
     $Path = 'HKCU:\software\newkey'
     $null = New-Item -Path $Path -ErrorAction SilentlyContinue
-    
+
     $sd = Get-Acl -Path $Path
     $sd.SetSecurityDescriptorSddlForm($sddl)
     Set-Acl -Path $Path -AclObject $sd

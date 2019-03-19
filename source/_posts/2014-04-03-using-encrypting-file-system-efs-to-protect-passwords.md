@@ -21,9 +21,9 @@ tags:
     # and remove the line that creates the script
     $path = "$env:temp\test.ps1"
     "Write-Host 'I run only for my master.'" > $path
-    
+
     $file = Get-Item -Path $path
-    $file.Encrypt() 
+    $file.Encrypt()
 
 当您运行这段脚本时，它将在您的临时文件夹中创建一个用 EFS 加密的新的 PowerShell 脚本（如果您见到一条错误提示信息，那么很有可能您机器上的 EFS 不可用或者被禁用了）。
 

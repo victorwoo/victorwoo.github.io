@@ -49,10 +49,10 @@ function Advanced
         [Parameter(Mandatory)]
         [string]
         $Name,
-        
+
         [int]
         $Id,
-        
+
         [switch]
         $Force
     )
@@ -65,13 +65,13 @@ function AdvancedWithoutCommon
         [Parameter(Mandatory)]
         [string]
         $Name,
-        
+
         [int]
         $Id,
-        
+
         [switch]
         $Force,
-        
+
         # add a dummy "DontShow" parameter
         [Parameter(DontShow)]
         $Anything
@@ -93,17 +93,17 @@ function Test
         [Parameter(Mandatory)]
         [string]
         $Name,
-        
+
         # add a dummy "DontShow" parameter
         [Parameter(DontShow)]
         $Anything
     )
-    
+
     Write-Verbose "Hello $Name"
 }
 
 
-    
+
 PS> Test -Name tom
 
 PS> Test -Name tom -Verbose

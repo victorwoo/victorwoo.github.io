@@ -18,21 +18,21 @@ tags:
 
     function Get-ConnectionString
     {
-      
+
       $Path = Join-Path -Path $env:TEMP -ChildPath 'dummy.udl'
-      
+
       $null = New-Item -Path $Path -ItemType File -Force
-      
-      $CommandArg = """$env:CommonProgramFiles\System\OLE DB\oledb32.dll"",OpenDSLFile "  + $Path 
-    
-      
+
+      $CommandArg = """$env:CommonProgramFiles\System\OLE DB\oledb32.dll"",OpenDSLFile "  + $Path
+
+
       Start-Process -FilePath Rundll32.exe -Argument $CommandArg -Wait
       $ConnectionString = Get-Content -Path $Path | Select-Object -Last 1
       $ConnectionString | clip.exe
       Write-Warning 'Connection String is also available from clipboard'
       $ConnectionString
-    
-    } 
+
+    }
 
 当您调用 `Get-ConnectionString` 方法时，将会创建一个临时的 udl 文件，并且用控制面板向导打开它。您可以通过向导完成配置。配置完成之后，PowerShell 将会检测临时文件并且返回连接字符串。
 

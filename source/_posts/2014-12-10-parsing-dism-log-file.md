@@ -19,7 +19,7 @@ _适用于 PowerShell 2.0 及更高版本_
 以下是一个简单的实践，演示如何解析这类日志文件并得到可用 PowerShell cmdlet 操作的富对象：
 
     $path = "$env:windir\logs\dism\dism.log"
-    
+
     Get-Content -Path $path |
     ForEach-Object {
       $_ -replace '\s{2,}', ','
@@ -27,12 +27,12 @@ _适用于 PowerShell 2.0 及更高版本_
     ConvertFrom-Csv -Header (1..20) |
     ForEach-Object {
       $array = @()
-      $array += $_.1 -split ' ' 
-      $array += $_.2 
-      $array += $_.3 
-      $array += $_.4 
+      $array += $_.1 -split ' '
+      $array += $_.2
+      $array += $_.3
+      $array += $_.4
       $array += $_.5
-      $array -join ',' 
+      $array -join ','
     } |
     ConvertFrom-Csv -Header (1..20) |
     Out-GridView

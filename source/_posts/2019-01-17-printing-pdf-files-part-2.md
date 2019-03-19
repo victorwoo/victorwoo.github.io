@@ -35,7 +35,7 @@ if ($Paths.Count -eq 0)
 # more than one found, choose one manually
 if ($Paths.Count -gt 1)
 {
-$Paths = @($Paths | 
+$Paths = @($Paths |
 Out-GridView -Title 'Choose Acrobat Reader' -OutputMode Single)
 }
 
@@ -50,8 +50,8 @@ if (!$exists)
 }
 
 # choose printer
-$printerName = Get-Printer | 
-    Select-Object -ExpandProperty Name | 
+$printerName = Get-Printer |
+    Select-Object -ExpandProperty Name |
     Sort-Object |
     Out-GridView -Title "Choose Printer" -OutputMode Single
 

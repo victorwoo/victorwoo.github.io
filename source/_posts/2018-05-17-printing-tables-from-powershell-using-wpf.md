@@ -48,8 +48,8 @@ $rowGroup = [System.Windows.Documents.TableRowGroup]::new()
 
 
 # produce the command data to display in the table
-Get-Command -Module $moduleName | 
-Get-Help | 
+Get-Command -Module $moduleName |
+Get-Help |
 ForEach-Object {
     # get the information to be added to the table
     $name = $_.Name
@@ -72,7 +72,7 @@ ForEach-Object {
     $row.AddChild($cell)
 
     # add a second cell with the command synopsis
-    $cell = [System.Windows.Documents.TableCell]::new()    
+    $cell = [System.Windows.Documents.TableCell]::new()
     $para = [System.Windows.Documents.Paragraph]::new()
     $inline = [System.Windows.Documents.Run]::new($synopsis)
     $inline.FontSize = 12
@@ -83,8 +83,8 @@ ForEach-Object {
 
     # add both cells to the table
     $rowGroup.AddChild($row)
-    
-    # add a second table row than spans two columns and holds the 
+
+    # add a second table row than spans two columns and holds the
     # command description in a smaller font:
     $row = [System.Windows.Documents.TableRow]::new()
     $cell = [System.Windows.Documents.TableCell]::new()
@@ -115,12 +115,12 @@ $printDialog = [System.Windows.Controls.PrintDialog]::new()
 # print dialog can not be shown in ISE due to threading issues
 # selecting a printer will work only when running this code in powershell.exe
 # else, the default printer is used
-try 
+try
 {
     $result = $printDialog.ShowDialog()
-    if ($result -eq $false) { 
+    if ($result -eq $false) {
         Write-Warning "User aborted."
-        return 
+        return
     }
 }
 catch {}

@@ -27,10 +27,10 @@ Get-AuthenticodeSignature -FilePath $outPath
 结果类似这样：
 
         Directory: C:\Users\tobwe\AppData\Local\Temp
-    
-    
-    SignerCertificate                         Status         Path                       
-    -----------------                         ------         ----                       
+
+
+    SignerCertificate                         Status         Path
+    -----------------                         ------         ----
     493018BA27EAA09B895BC5660E77F694B84877C7  Valid          installChocolatey.ps1
 
 "Status" 列报告了这个文件是否可信。然而如何获取更多的关于证书和它的所有者的信息，特别是找出 "493018BA27EAA09B895BC5660E77F694B84877C7" 是谁？

@@ -24,7 +24,7 @@ $xml.Load($url)
 
 # the subproperties (rss.channel.item) depend on the RSS feed you use
 # and may be named differently
-$xml.rss.channel.item  | 
+$xml.rss.channel.item  |
   Select-Object -Property title, link |
   Out-GridView -Title 'What would you like to read today?' -OutputMode Multiple |
   ForEach-Object {

@@ -21,11 +21,11 @@ tags:
 如果您不想使用本地命令（whoami.exe）的话，还可以使用更贴近PowerShell（或.NET）的方法，如以下代码所示：
 
 	function Test-Admin {
-	
+
 		$id = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
-	
+
 		$id.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-	
+
 	}
 
 

@@ -16,7 +16,7 @@ tags:
 
 ```powershell
 #requires -Module ActiveDirectory
-    
+
 function Get-NestedGroupMember
 {
     param
@@ -25,7 +25,7 @@ function Get-NestedGroupMember
         [string]
         $Identity
     )
-    
+
     process
     {
         $user = Get-ADUser -Identity $Identity

@@ -22,35 +22,35 @@ _适用于 PowerShell 所有版本_
 
     PS> $profile.AllUsersAllHosts
     C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1
-    
+
     PS> [int]$ID = 12
-    
+
     PS> $ID = 17
-    
+
     PS> $ID = '19'
-    
+
     PS> $ID = 'wrong'
-    Cannot convert type "string"...                                        
+    Cannot convert type "string"...
 
 请看 `$ID` 变量是如何成为一个只能存储 Integer 数据的变量。望您将一个非 Integer 值，（例如 '19'）传入时，它将自动转换成 Integer 类型。如果无法转换（例如 'wrong'），PowerShell 将会抛出一个错误。
 
 下一个约束条件是“只读”状态。如果您确信某个变量在脚本的某一部分中不可被更改，请将它保住为只读。任何试图改变该变量的操作都会触发一个 PowerShell 异常：
 
     PS> $a = 1
-    
+
     PS> $a = 100
-    
+
     PS> Set-Variable a -Option ReadOnly
-    
+
     PS> $a
     100
-    
+
     PS> $a = 200
     Cannot  overwrite variable.
-    
+
     PS> Set-Variable a -Option None -Force
-    
-    PS> $a = 212                                         
+
+    PS> $a = 212
 
 请注意写保护如何打开和关闭。要将写保护关闭，只需要将变量开关设为“`None`”，并且别忘了 `-Force` 开关。
 

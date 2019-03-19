@@ -21,12 +21,12 @@ tags:
 	    $Path,
 	    $Username
 	  )
-	
+
 	  If ( (Test-Path -Path $path) -eq $false )
 	  {
 	    New-Item $path -Type Directory | Out-Null
 	  }
-	
+
 	  icacls $path /inheritance:r /grant '*S-1-5-32-544:(OI)(CI)R' ('{0}:(OI)(CI)F' -f $username)
 	}
 

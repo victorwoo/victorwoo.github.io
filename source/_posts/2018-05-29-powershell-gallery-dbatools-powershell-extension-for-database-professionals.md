@@ -57,7 +57,7 @@ Alias           Copy-SqlServerAgent                                0.9.332    db
 Alias           Copy-SqlServerTrigger                              0.9.332    dba
 Alias           Copy-SqlSharedSchedule                             0.9.332    dba
 Alias           Copy-SqlSpConfigure                                0.9.332    dba
-Alias           Copy-SqlSsisCatalog                                0.9.332    dba 
+Alias           Copy-SqlSsisCatalog                                0.9.332    dba
 ...
 ```
 

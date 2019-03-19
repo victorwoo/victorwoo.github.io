@@ -21,15 +21,15 @@ PowerShell 可以为您的文件建立备份。您所需要调整的只是需要
 当您改变 `$Recurese` 的值时，脚本将会为您的用户文件夹下的所有 PowerShell 创建备份。
 
     #requires -Version 1
-    
+
     $ExtensionToBackup = '.ps1'
     $BackupExtension = '.ps1_old'
     $FolderToProcess = $HOME
     $Recurse = $false
-    
-    
+
+
     Get-ChildItem -Path $FolderToProcess -Filter $ExtensionToBackup -Recurse:$Recurse |
-      ForEach-Object { 
+      ForEach-Object {
         $newpath = [System.IO.Path]::ChangeExtension($_.FullName, $BackupExtension)
         Copy-Item -Path $_.FullName -Destination $newpath
      }

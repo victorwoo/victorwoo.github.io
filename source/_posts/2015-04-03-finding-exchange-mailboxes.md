@@ -16,19 +16,19 @@ _适用于 Microsoft Exchange 2013_
 
 要查看邮箱的个数，只需要使用 Exchange cmdlet 并且用 `Measure-Object` 来统计结果：
 
-    Get-Mailbox –ResultSize Unlimited | 
+    Get-Mailbox –ResultSize Unlimited |
       Measure-Object |
       Select-Object -ExpandProperty Count
 
 类似地，要查看所有共享的邮箱，使用这段代码：
 
-    Get-Mailbox –ResultSize Unlimited -RecipientTypeDetails SharedMailbox | 
+    Get-Mailbox –ResultSize Unlimited -RecipientTypeDetails SharedMailbox |
       Measure-Object |
       Select-Object -ExpandProperty Count
 
 若要只查看用户邮箱，需要稍微调整一下：
 
-    Get-Mailbox –ResultSize Unlimited -RecipientTypeDetails UserMailbox | 
+    Get-Mailbox –ResultSize Unlimited -RecipientTypeDetails UserMailbox |
       Measure-Object |
       Select-Object -ExpandProperty Count
 

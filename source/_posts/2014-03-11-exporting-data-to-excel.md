@@ -23,6 +23,6 @@ tags:
     $report = "$env:temp\report.csv"
     $ExcelPath = 'C:\Program Files*\Microsoft Office\OFFICE*\EXCEL.EXE'
     $RealExcelPath = Resolve-Path -Path $ExcelPath | Select-Object -First 1 -ExpandProperty Path
-    & $RealExcelPath $report 
+    & $RealExcelPath $report
 
 <!--本文国际来源：[Exporting Data to Excel](http://community.idera.com/powershell/powertips/b/tips/posts/exporting-data-to-excel)-->

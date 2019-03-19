@@ -17,8 +17,8 @@ tags:
 ```powershell
 PS> [System.Net.Dns]::GetHostEntry('')
 
-HostName        Aliases AddressList                                
---------        ------- -----------                                
+HostName        Aliases AddressList
+--------        ------- -----------
 DESKTOP-7AAMJLF {}      {fe80::532:c4e:c409:b987%18, 192.168.2.129}
 ```
 
@@ -27,8 +27,8 @@ DESKTOP-7AAMJLF {}      {fe80::532:c4e:c409:b987%18, 192.168.2.129}
 ```powershell
 PS> [System.Net.Dns]::GetHostEntry('microsoft.com')
 
-HostName      Aliases AddressList                                                   
---------      ------- -----------                                                   
+HostName      Aliases AddressList
+--------      ------- -----------
 microsoft.com {}      {40.113.200.201, 40.76.4.15, 104.215.148.63, 13.77.161.179...}
 ```
 
@@ -40,7 +40,7 @@ PS> [System.Net.Dns]::GetHostEntry('microsoft.com').AddressList.IPAddressToStrin
 40.76.4.15
 104.215.148.63
 13.77.161.179
-40.112.72.205 
+40.112.72.205
 ```
 
 今日知识点：

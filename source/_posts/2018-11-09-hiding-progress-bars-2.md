@@ -29,7 +29,7 @@ $old = $ProgressPreference
 $ProgressPreference = "SilentlyContinue"
 
 $url = "http://www.powertheshell.com/reference/wmireference/root/cimv2/"
-$page = Invoke-WebRequest -URI $url 
+$page = Invoke-WebRequest -URI $url
 
 $ProgressPreference = $old
 ```
@@ -40,7 +40,7 @@ $ProgressPreference = $old
 & {
     $ProgressPreference = "SilentlyContinue"
     $url = "http://www.powertheshell.com/reference/wmireference/root/cimv2/"
-    $page = Invoke-WebRequest -URI $url 
+    $page = Invoke-WebRequest -URI $url
 }
 
 $ProgressPreference

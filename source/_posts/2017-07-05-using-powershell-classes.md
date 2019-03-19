@@ -25,7 +25,7 @@ class HelperStuff
         if ($Text.Contains("`n")) { throw 'String contains multiple lines' }
         return $Text[0]
     }
-    
+
     # get file extension in lower case
     static [string] GetFileExtension([string]$Path)
     {
@@ -40,10 +40,10 @@ class HelperStuff
 PS> [HelperStuff]::GetFirstCharacter('Tobias')
 T
 
-PS> [HelperStuff]::GetFileExtension('c:\TEST.TxT') 
+PS> [HelperStuff]::GetFileExtension('c:\TEST.TxT')
 .txt
 
-PS> [HelperStuff]::GetFileExtension($profile) 
+PS> [HelperStuff]::GetFileExtension($profile)
 .ps1
 
 PS>

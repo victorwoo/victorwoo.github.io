@@ -18,7 +18,7 @@ tags:
 
 ```powershell
 $hostname = 'powershellmagazine.com'
-# run the console-based application synchronously in the PowerShell window, 
+# run the console-based application synchronously in the PowerShell window,
 # and return the process object (-PassThru)
 $process = Start-Process -FilePath ping -ArgumentList "$hostname -n 2 -w 2000" -Wait -NoNewWindow -PassThru
 

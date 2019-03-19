@@ -18,7 +18,7 @@ tags:
       I am safe here
       I can even use "quotes"
     "@
-    
+
     $text | Out-GridView
 
 值得注意的重点是分隔符包含（不可见的）回车符。必须在开始标记后有一个，在结束标记前有一个。
@@ -29,7 +29,7 @@ tags:
       I am safe here
       I can even use "quotes"
     }
-    
+
     $text.ToString() | Out-GridView
 
 虽然代码颜色不同，并且需要将脚本块转为字符串。这种方法有一定局限性，因为脚本块是一段 PowerShell 代码，并且它会被解析器解析。所以您只能包裹一段不会造成解析器混淆的文本。
@@ -40,7 +40,7 @@ tags:
       I am safe here
       I can even use "quotes
     }
-    
+
     $text.ToString() | Out-GridView
 
 <!--本文国际来源：[Define Multiline Text](http://community.idera.com/powershell/powertips/b/tips/posts/define-multiline-text)-->

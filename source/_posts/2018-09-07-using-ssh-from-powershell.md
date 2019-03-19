@@ -12,7 +12,7 @@ tags:
 - powertip
 - series
 ---
-     
+
 PowerShell 6 (PowerShell Core) 终于支持 SSH 了：您可以使用 SSH 来连接非 Windows 机器来进行 PowerShell 远程操作。
 
 如果只是需要用 SSH 连接到交换机或者其它设备，那么可以使用免费的模块。该模块为所有 PowerShell 添加了大量有用的新的 SSH 命令。以下是如何下载和安装该模块的方法：

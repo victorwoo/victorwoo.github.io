@@ -22,40 +22,40 @@ tags:
           (
             $CommandLine
           )
-      
+
           $divider = ' '
-          if ($CommandLine.StartsWith('"')) 
-          { 
+          if ($CommandLine.StartsWith('"'))
+          {
             $divider = '"'
             $CommandLine = $CommandLine.SubString(1)
           }
-      
+
           $CommandLine.Split($divider)[0]
-        } 
-      
+        }
+
       $path = 'Registry::HKEY_CLASSES_ROOT\mailto\shell\open\command'
-      
-      # create new object to return values 
+
+      # create new object to return values
       $returnValue = 1 | Select-Object -Property HasMapiClient, Path, MailTo
-      
+
       $returnValue.hasMAPIClient = Test-Path -Path $path
-      
+
       if ($returnValue.hasMAPIClient)
       {
         $values = Get-ItemProperty -Path $path
         $returnValue.MailTo = $values.'(default)'
-        $returnValue.Path = Remove-Argument $returnValue.MailTo 
+        $returnValue.Path = Remove-Argument $returnValue.MailTo
         if ((Test-Path -Path $returnValue.Path) -eq $false)
         {
           $returnValue.hasMAPIClient = $true
         }
       }
-      
-      
+
+
       $returnValue
-    } 
-    
-    Get-MAPIClient 
+    }
+
+    Get-MAPIClient
 
 以下是使用结果：
 

@@ -17,7 +17,7 @@ tags:
 以下是两个可能会遇到错误的 cmdlet。当这些 cmdlet 执行完成时，您将能通过 `$data1` 和 `$data2` 获得它们的执行结果，并在控制台中见到许多红色的错误信息：
 
 ```powershell
-$data1 = Get-ChildItem -Path c:\windows -Filter *.ps1 -Recurse 
+$data1 = Get-ChildItem -Path c:\windows -Filter *.ps1 -Recurse
 $data2 = Get-Process -FileVersionInfo
 ```
 

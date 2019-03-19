@@ -15,7 +15,7 @@ tags:
 在 PowerShell 中，一切都是用对象描述。以下是一个检查任意对象并将它的成员以文本的方式复制到剪贴板的单行代码：
 
 ```powershell
-"Hello" | 
+"Hello" |
   Get-Member |
   Format-Table -AutoSize -Wrap |
   Out-String -Width 150 |

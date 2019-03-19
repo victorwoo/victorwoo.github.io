@@ -20,22 +20,22 @@ _适用于 PowerShell 所有版本_
 
     $url = 'http://standards.ieee.org/develop/regauth/oui/oui.txt'
     $outfile = "$home\vendorlist.txt"
-    
+
     Invoke-WebRequest -Uri $url -OutFile $outfile
 
 下一步，您可以使用该清单来识别厂家信息。首先获取 MAC 地址，例如：
 
     PS> getmac
-    
-    Physical Address    Transport Name                                            
+
+    Physical Address    Transport Name
     =================== ==========================================================
-    5C-51-4F-62-F2-7D   \Device\Tcpip_{FF034A81-CBFE-4B11-9D81-FC8FC889A33C}      
-    5C-51-4F-62-F2-81   Media disconnected  
+    5C-51-4F-62-F2-7D   \Device\Tcpip_{FF034A81-CBFE-4B11-9D81-FC8FC889A33C}
+    5C-51-4F-62-F2-81   Media disconnected
 
 取 MAC 地址的前 3 个 8 进制字符，例如 _5c-51-4f_，然后用它在下载的文件中查询：
 
     PS> Get-Content -Path $outfile | Select-String 5c-51-4f -Context 0,6
-    
+
     >   5C-51-4F   (hex)        Intel Corporate
         5C514F     (base 16)        Intel Corporate
                         Lot 8, Jalan Hi-Tech 2/3

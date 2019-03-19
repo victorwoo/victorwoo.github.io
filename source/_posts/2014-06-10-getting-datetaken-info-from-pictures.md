@@ -18,19 +18,19 @@ tags:
 
     function Get-DateTaken
     {
-      param 
+      param
       (
         [Parameter(ValueFromPipeline=$true, ValueFromPipelineByPropertyName=$true)]
         [Alias('FullName')]
         [String]
         $Path
       )
-      
+
       begin
       {
         $shell = New-Object -COMObject Shell.Application
       }
-      
+
       process
       {
       $returnvalue = 1 | Select-Object -Property Name, DateTaken, Folder
@@ -39,13 +39,13 @@ tags:
         $shellfolder = $shell.Namespace($returnvalue.Folder)
         $shellfile = $shellfolder.ParseName($returnvalue.Name)
         $returnvalue.DateTaken = $shellfolder.GetDetailsOf($shellfile, 12)
-    
+
         $returnvalue
       }
     }
-    
+
     $picturePath = [System.Environment]::GetFolderPath('MyPictures')
-    Get-ChildItem -Path $picturePath -Recurse -ErrorAction SilentlyContinue | 
+    Get-ChildItem -Path $picturePath -Recurse -ErrorAction SilentlyContinue |
       Get-DateTaken
 
 <!--本文国际来源：[Getting DateTaken Info from Pictures](http://community.idera.com/powershell/powertips/b/tips/posts/getting-datetaken-info-from-pictures)-->

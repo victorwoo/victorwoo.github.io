@@ -19,10 +19,10 @@ Windows 8.1 和 Server 2012 R2 引入了一个名为“PrintManagement”的模�
 要列出指定计算机的所有打印任务，首先确定可用的打印机，然后用循环取出每个打印机的打印任务。这实际做起来十分简单：
 
     $ComputerName = $env:COMPUTERNAME
-    
-    Get-Printer -ComputerName $ComputerName |  ForEach-Object { 
+
+    Get-Printer -ComputerName $ComputerName |  ForEach-Object {
       Get-PrintJob -PrinterName $_.Name -ComputerName $ComputerName
-     } 
+     }
 
 如果该代码返回空，那么说明没有打印任务（或者您没有读取它们的权限）。
 

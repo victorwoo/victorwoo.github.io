@@ -33,12 +33,12 @@ $ExecutionContext.SessionState.InvokeCommand.PreCommandLookupAction = {
             # submit original arguments if there have been any
             $command = 'dir'
 
-            $( 
+            $(
             if ($args.Count -eq 0)
             { & $command }
             else
             { & $command $args }
-            ) 
+            )
         }.GetNewClosure()
     }
 }

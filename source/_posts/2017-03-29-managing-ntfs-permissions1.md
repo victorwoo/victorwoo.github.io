@@ -31,7 +31,7 @@ PS C:\> Get-Command -Module NTFSSecurity
 
 CommandType     Name                                               Version
 
------------     ----                                               -------    
+-----------     ----                                               -------
 Cmdlet          Add-NTFSAccess                                     4.2.3
 Cmdlet          Add-NTFSAudit                                      4.2.3
 Cmdlet          Clear-NTFSAccess                                   4.2.3
@@ -77,7 +77,7 @@ $path = 'c:\test1'
 
 mkdir $path
 
-Get-NTFSAccess -Path $Path | 
+Get-NTFSAccess -Path $Path |
     Add-NTFSAccess -Account training14\student14 -AccessRights CreateFiles -AccessType Allow
 ```
 

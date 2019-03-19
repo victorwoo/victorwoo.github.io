@@ -17,15 +17,15 @@ tags:
 最简单的情况下，这应该返回 $true，并且它的确返回了 $true（假设您没有禁用管理员共享）：
 
     $path = '\\127.0.0.1\c$'
-    
-    Test-Path -Path $path 
+
+    Test-Path -Path $path
 
 现在，同样的代码却返回 $false：
 
     Set-Location -Path HKCU:\
     $path = '\\127.0.0.1\c$'
-    
-    Test-Path -Path $path 
+
+    Test-Path -Path $path
 
 如果路径不是使用一个盘符，PowerShell 将使用当前路径，如果该路径指向一个非文件系统位置，`Test-Path` 将在该 provider 的上下文中解析 UNC 路径。由于注册表中没有这个路径，`Test-Path` 返回 $false。
 
@@ -33,7 +33,7 @@ tags:
 
     Set-Location -Path HKCU:\
     $path = 'filesystem::\\127.0.0.1\c$'
-    
-    Test-Path -Path $path 
+
+    Test-Path -Path $path
 
 <!--本文国际来源：[Testing UNC Paths](http://community.idera.com/powershell/powertips/b/tips/posts/testing-unc-paths)-->

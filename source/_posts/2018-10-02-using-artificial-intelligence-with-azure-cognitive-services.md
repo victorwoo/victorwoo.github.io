@@ -30,7 +30,7 @@ $requestParameters = "visualFeatures=Categories,Tags,Faces,ImageType,Description
 $uri = $uriBase + "?" + $requestParameters
 
 # get image file as a byte array
-$imageData = Get-Content $image -Encoding Byte 
+$imageData = Get-Content $image -Encoding Byte
 
 # wrap image into byte array content
 $content = [System.Net.Http.ByteArrayContent]::new($imageData)
@@ -66,8 +66,8 @@ a man and a woman standing in a room 0,94136500176759652
 
 PS C:\> $data.faces
 
-age gender faceRectangle                            
---- ------ -------------                            
+age gender faceRectangle
+--- ------ -------------
     23 Female @{top=114; left=229; width=47; height=47}
 
 
@@ -93,7 +93,7 @@ remote
 wii
 people
 white
-game 
+game
 ```
 
 您也可以查看一下通过 Web Service 返回的 JSON 数据：

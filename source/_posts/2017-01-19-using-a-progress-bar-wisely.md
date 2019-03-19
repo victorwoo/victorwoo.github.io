@@ -56,7 +56,7 @@ $interval = $max / 1000
 
 $min..$max | ForEach-Object {
   $percent = $_ * 100 / $max
-  
+
   if ($_ % $interval -eq 0)
   {
     Write-Progress -Activity 'Counting' -Status "Processing $_" -PercentComplete $percent

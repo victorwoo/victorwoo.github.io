@@ -38,13 +38,13 @@ $realDate = @{
     }
     else
     {
-      [DateTime]::FromFileTimeUtc($_.pwdLastset) 
+      [DateTime]::FromFileTimeUtc($_.pwdLastset)
     }
   }
 
 }
 
-Get-ADUser -LDAPFilter "(pwdLastSet<=$cutDateAD)" -Properties pwdLastSet | 
+Get-ADUser -LDAPFilter "(pwdLastSet<=$cutDateAD)" -Properties pwdLastSet |
   Select-Object -Property samaccountname, $realDate
 ```
 

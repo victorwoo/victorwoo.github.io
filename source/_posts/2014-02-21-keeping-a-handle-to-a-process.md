@@ -16,7 +16,7 @@ tags:
 
 ![](/img/2014-02-21-keeping-a-handle-to-a-process-001.png)
 
-如果您希望持有该进程的句柄，比如希望获得它的进程 ID，或者过一会儿检查该进程运行得如何，或者要中止它，请使用 `Start-Process` 和 `–PassThru` 参数。以下代码将返回一个进程对象： 
+如果您希望持有该进程的句柄，比如希望获得它的进程 ID，或者过一会儿检查该进程运行得如何，或者要中止它，请使用 `Start-Process` 和 `–PassThru` 参数。以下代码将返回一个进程对象：
 
 ![](/img/2014-02-21-keeping-a-handle-to-a-process-002.png)
 

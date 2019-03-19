@@ -25,7 +25,7 @@ Microsoft Excel包含一个非常复杂的COM对象模型，我们可以在Windo
 执行完这一步以后，Excel已经开始在后台运行，虽然看不见可交互窗口。
 
 	PS C:\> get-process excel
-	
+
 	Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
 	-------  ------    -----      ----- -----   ------     -- -----------
 	    203      23    16392      24340   267     0.28   1280 EXCEL
@@ -79,32 +79,32 @@ To fully exit, we'll close the workbook and quit Excel.
 如果您检查进程的话，您也许会发现Excel任然在运行，但它将会在5-10分钟之内退出，自少按我的经验是这样。以上是基本的要点，但在圆满完成之前，让我整理一个脚本，将这些材料整合在一起。
 
 	Param([string]$computer=$env:computername)
-	
+
 	#get disk data
 	$disks=Get-WmiObject -Class Win32_LogicalDisk -ComputerName $computer -Filter "DriveType=3"
-	
-	$xl=New-Object -ComObject "Excel.Application" 
-	
+
+	$xl=New-Object -ComObject "Excel.Application"
+
 	$wb=$xl.Workbooks.Add()
 	$ws=$wb.ActiveSheet
-	
+
 	$cells=$ws.Cells
-	
+
 	$cells.item(1,1)="{0} Disk Drive Report" -f $disks[0].SystemName
 	$cells.item(1,1).font.bold=$True
 	$cells.item(1,1).font.size=18
-	
+
 	#define some variables to control navigation
 	$row=3
 	$col=1
-	
+
 	#insert column headings
 	"Drive","SizeGB","FreespaceGB","UsedGB","%Free","%Used" | foreach {
 	    $cells.item($row,$col)=$_
 	    $cells.item($row,$col).font.bold=$True
 	    $col++
 	}
-	
+
 	foreach ($drive in $disks) {
 	    $row++
 	    $col=1
@@ -125,11 +125,11 @@ To fully exit, we'll close the workbook and quit Excel.
 	    $cells.item($Row,$col)=($drive.Size - $drive.Freespace) / $drive.size
 	    $cells.item($Row,$col).NumberFormat="0.00%"
 	}
-	
+
 	$xl.Visible=$True
-	
+
 	$filepath=Read-Host "Enter a path and filename to save the file"
-	
+
 	if ($filepath) {
 	    $wb.SaveAs($filepath)
 	}

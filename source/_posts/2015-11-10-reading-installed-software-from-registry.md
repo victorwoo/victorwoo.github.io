@@ -15,21 +15,21 @@ tags:
 以下是查看已安装的软件的快速方法。`Get-Software` 函数读取所有用户的 32 位和 64 位软件的安装地址。
 
     #requires -Version 1
-    
+
     function Get-Software
     {
         param
         (
             [string]
             $DisplayName='*',
-    
+
             [string]
             $UninstallString='*'
         )
-    
+
         $keys = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
                 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
-        
+
         Get-ItemProperty -Path $keys |
           Where-Object { $_.DisplayName } |
           Select-Object -Property DisplayName, DisplayVersion, UninstallString |

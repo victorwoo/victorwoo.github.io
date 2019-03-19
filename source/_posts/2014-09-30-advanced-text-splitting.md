@@ -28,14 +28,14 @@ _适用于 PowerShell 所有版本_
     PS> 'Hello, this is a text, and it has commas' -split ', '
     Hello
     this is a text
-    and it has commas 
+    and it has commas
 
 由于 `-split` 接受的操作数是一个正则表达式，所以以下代码将以逗号 + 至少一个空格作为分隔符：
 
     PS> 'Hello,    this is a    text, and it has commas' -split ',\s{1,}'
     Hello
     this is a    text
-    and it has commas 
+    and it has commas
 
 如果您需要的话，可以用 `(?=…)` 把分隔符包裹起来，以在结果中保留分隔符：
 

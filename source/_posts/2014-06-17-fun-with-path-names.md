@@ -19,7 +19,7 @@ tags:
 以下代码将排除掉某个路径下所有包含单词“test”的子文件夹：
 
     $path = 'C:\folder\test\unit1\testing\results\report.txt'
-    
+
     $path -split '\\' -notlike '*test*' -join '\'
 
 <!--本文国际来源：[Fun with Path Names](http://community.idera.com/powershell/powertips/b/tips/posts/fun-with-path-names)-->

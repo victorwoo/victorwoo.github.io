@@ -18,23 +18,23 @@ tags:
 
 以下是一个解决方案：使用 `Export-Credential` 函数将凭据保存到一个文件中：
 
-    function Export-Credential 
+    function Export-Credential
     {
        param
        (
          [Parameter(Mandatory=$true)]
          $Path,
-    
+
          [System.Management.Automation.Credential()]
          [Parameter(Mandatory=$true)]
          $Credential
        )
-        
-      $CredentialCopy = $Credential | Select-Object *    
-      $CredentialCopy.Password = $CredentialCopy.Password | ConvertFrom-SecureString    
+
+      $CredentialCopy = $Credential | Select-Object *
+      $CredentialCopy.Password = $CredentialCopy.Password | ConvertFrom-SecureString
       $CredentialCopy | Export-Clixml $Path
-    } 
-    
+    }
+
 这段代码将 tobias 用户的凭据保存到一个文件中：
 
 ![](/img/2014-03-28-exporting-and-importing-credentials-in-powershell-001.png)
@@ -43,19 +43,19 @@ tags:
 
 现在，当您需要凭据时，使用 `Import-Credential` 来从文件中取回它：
 
-    function Import-Credential 
+    function Import-Credential
     {
        param
        (
          [Parameter(Mandatory=$true)]
          $Path
        )
-        
-      $CredentialCopy = Import-Clixml $path    
-      $CredentialCopy.password = $CredentialCopy.Password | ConvertTo-SecureString    
+
+      $CredentialCopy = Import-Clixml $path
+      $CredentialCopy.password = $CredentialCopy.Password | ConvertTo-SecureString
       New-Object system.Management.Automation.PSCredential($CredentialCopy.username, $CredentialCopy.password)
     }
-    
+
 使用方法如下：
 
 ![](/img/2014-03-28-exporting-and-importing-credentials-in-powershell-002.png)

@@ -34,8 +34,8 @@ tr:nth-child(odd) { background: #b8d1f3; }
 </style>
 "@
 $Header = "<h1 align='center'>$title</h1>"
-Get-Command -Module $moduleName | 
-  Get-Help | 
+Get-Command -Module $moduleName |
+  Get-Help |
   Select-Object -Property Name, Synopsis |
   ConvertTo-Html -Title $Title -Head $StyleSheet -PreContent $Header |
   Set-Content -Path $OutFile

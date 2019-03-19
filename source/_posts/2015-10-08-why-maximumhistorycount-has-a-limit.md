@@ -15,7 +15,7 @@ tags:
 如果您想增加最大命令历史的容量，您可能会遇到这样的限制：
 
     PS C:\> $MaximumHistoryCount  = 100000
-    
+
     The variable cannot be  validated because the value 100000 is not a valid value for the Maximum
     HistoryCount variable.
 

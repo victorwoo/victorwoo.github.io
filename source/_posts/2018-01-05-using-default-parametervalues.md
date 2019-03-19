@@ -30,18 +30,18 @@ $PSDefaultParameterValues = @{
 
 ```powershell
 function testSimple
-{ 
-    param($Computername) 
-    
-    "Result Simple: $Computername" 
+{
+    param($Computername)
+
+    "Result Simple: $Computername"
 }
 
 function testAdvanced
-{ 
+{
     [CmdletBinding()]
-    param($Computername) 
-    
-    "Result Advanced: $Computername" 
+    param($Computername)
+
+    "Result Advanced: $Computername"
 }
 
 

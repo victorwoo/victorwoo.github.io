@@ -15,17 +15,17 @@ tags:
 您是否希望快速获取您的机器或是网络上的机器的 IP 地址列表？以下是实现方法：
 
     #requires -Version 3
-    
+
     $ComputerName = ''
-    
+
     [System.Net.Dns]::GetHostAddresses($ComputerName).IPAddressToString
 
 要只取 IPv4 地址，请使用这种方法：
 
     #requires -Version 1
-    
+
     $ComputerName = ''
-    
+
     [System.Net.Dns]::GetHostAddresses($ComputerName) |
     Where-Object {
       $_.AddressFamily -eq 'InterNetwork'
@@ -35,9 +35,9 @@ tags:
 类似地，要获取 IPv6 地址，请改成这种方法：
 
     #requires -Version 1
-    
+
     $ComputerName = ''
-    
+
     [System.Net.Dns]::GetHostAddresses($ComputerName) |
     Where-Object {
       $_.AddressFamily -eq 'InterNetworkV6'

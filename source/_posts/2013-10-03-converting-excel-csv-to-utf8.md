@@ -17,7 +17,7 @@ tags:
 要确保特殊字符不会丢失，您必须确保导入数据之前 CSV 文件采用的是 UTF-8 编码：
 
 	$Path = 'c:\temp\somedata.csv'
-	(Get-Content -Path $Path) | Set-Content -Path $Path -Encoding UTF8 
+	(Get-Content -Path $Path) | Set-Content -Path $Path -Encoding UTF8
 
 
 <!--本文国际来源：[Converting Excel CSV to UTF8](http://community.idera.com/powershell/powertips/b/tips/posts/converting-excel-csv-to-utf8)-->

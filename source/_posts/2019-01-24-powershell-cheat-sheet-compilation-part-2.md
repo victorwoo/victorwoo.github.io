@@ -22,7 +22,7 @@ $AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 # download page
 $url = "https://github.com/PrateekKumarSingh/CheatSheets/tree/master/Powershell"
 $page = Invoke-WebRequest -UseBasicParsing -Uri $url
-$links = $page.Links | 
+$links = $page.Links |
     Where-Object { $_.href -like '*.pdf' } |
     Select-Object -Property title, href |
     # turn URLs into directly downloadable absolute URLs

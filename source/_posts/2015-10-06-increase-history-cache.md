@@ -24,12 +24,12 @@ tags:
 
     PS C:\> $MaximumHistoryCount
     4096
-    
+
     PS C:\> $MaximumHistoryCount = 32KB-1
-    
+
     PS C:\> $MaximumHistoryCount
     32767
-    
+
     PS C:\>
 
 历史缓存最大允许的容量是 32KB-1。

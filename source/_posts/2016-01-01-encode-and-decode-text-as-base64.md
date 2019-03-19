@@ -23,7 +23,7 @@ $text = 'Hello World!'
 
 结果字符串看起来大概如下：
 
-    SABlAGwAbABvACAAVwBvAHIAbABkACEA 
+    SABlAGwAbABvACAAVwBvAHIAbABkACEA
 
 文本编码可以用于简易的混淆文本，或是保护文本防止不小心被错误地格式化。例如 PowerShell.exe 可运行 Base64 编码过的命令。以下是一个例子（请打开您机器的声音）：
 

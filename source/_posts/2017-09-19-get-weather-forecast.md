@@ -16,7 +16,7 @@ tags:
 
 ```powershell
 $City = 'New York'
-$weather = Invoke-WebRequest -Uri "http://wttr.in/$City" 
+$weather = Invoke-WebRequest -Uri "http://wttr.in/$City"
 $text = $weather.ParsedHtml.building.outerText
 
 $text

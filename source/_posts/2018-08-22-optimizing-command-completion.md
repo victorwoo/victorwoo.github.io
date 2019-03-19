@@ -19,7 +19,7 @@ Windows PowerShell (powershell.exe) 与 Linux 和 macOS 的 PowerShell (pwsh.exe
 要为 powershell.exe 添加这个行为，只需要运行这行代码：
 
 ```powershell
-PS C:\> Set-PSReadlineOption -EditMode Emacs  
+PS C:\> Set-PSReadlineOption -EditMode Emacs
 ```
 
 下次当您输入参数的开头部分并按下 `TAB` 键时，您可以立即见到所有可用的选择。接下来，当重复输入这个命令时，您可以键入选择的首字母，按下 `TAB` 键即可完成选择。

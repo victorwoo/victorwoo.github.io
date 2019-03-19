@@ -25,7 +25,7 @@ tags:
 
 ![Excel数据](/img/2013-09-21-integrating-microsoft-excel-with-powershell-reading-data-001.png)
 
-用工作簿对象的 `Open()` 方法打开文件。 
+用工作簿对象的 `Open()` 方法打开文件。
 
 	$wb=$xl.Workbooks.Open($file)
 	$ws=$wb.ActiveSheet
@@ -33,7 +33,7 @@ tags:
 $ws对象是我们对数据最重要的的引用点。我需要用的数据从A2单元格开始。在我的测试环境中，我也许知道我需要处理多少行，但是既然我知道从哪儿开始，我可以用一个Do循环来读取每一行，获取数据，进行进一步操作。
 
 	$Row=2
-	
+
 	do {
 	  $data=$ws.Range("A$Row").Text
 	...
@@ -43,7 +43,7 @@ $ws对象是我们对数据最重要的的引用点。我需要用的数据从A2
 当您处理Excel数据的时候，我建议您进行一系列校验。假设单元格里有一个数据，我假设它是一个机器名，那么我会试着ping一下它。
 
 	if ($data) {
-	    Write-Verbose "Querying $data" 
+	    Write-Verbose "Querying $data"
 	      $ping=Test-Connection -ComputerName $data -Quiet
 
 如果ping通了，我将会使用WMI来获取操作系统名称，否则我会设置$OS变量为$Null。
@@ -80,25 +80,25 @@ loop循环的最后一步是使行计数器自增1。
 我的脚本运行以后生成一下输出结果：
 
 	PS C:\scripts> .\Demo-ReadExcel.ps1
-	
+
 	AssetAge     : 687
 	Ping         : True
 	Computername : SERENITY
 	Location     : R1-1
 	OS           : Microsoft Windows 7 Ultimate
-	
+
 	AssetAge     : 293
 	Ping         : True
 	Computername : QUARK
 	Location     : R1-4
 	OS           : Microsoft Windows 7 Professional
-	
+
 	AssetAge     : 293
 	Ping         : False
 	Computername : SERVER01
 	Location     : R3-2
 	OS           :
-	
+
 	AssetAge     : 2005
 	Ping         : True
 	Computername : JDHIT-DC01

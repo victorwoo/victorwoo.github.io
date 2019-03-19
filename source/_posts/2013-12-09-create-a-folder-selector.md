@@ -16,11 +16,11 @@ tags:
 
 	Add-Type -AssemblyName System.Windows.Forms
 	[System.Windows.Forms.Application]::EnableVisualStyles()
-	
+
 	$FolderBrowser = New-Object System.Windows.Forms.FolderBrowserDialog
 	$null = $FolderBrowser.ShowDialog()
 	$Path = $FolderBrowser.SelectedPath
-	
+
 	"You selected: $Path"
 
 请注意前两行：当您在 ISE 编辑器中运行代码时不需要它们，但当您从 powershell.exe 中运行代码时需要它们。所以我们保留着两行来确保您的代码在各个 PowerShell 宿主中都能有效运行。

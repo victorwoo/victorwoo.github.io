@@ -20,9 +20,9 @@ tags:
       (
         [Parameter(Mandatory=$true,ValueFromPipeline=$true)]
         [Object[]]
-        $InputObject 
+        $InputObject
       )
-      
+
       process
       {
         $InputObject | ForEach-Object {
@@ -31,7 +31,7 @@ tags:
         }
       }
     }
-    
+
 这是该函数的使用效果：
 
     PS> Get-Something -InputObject 1,2,3,4
@@ -39,7 +39,7 @@ tags:
     processing 2
     processing 3
     processing 4
-    
+
     PS> 1,2,3,4 | Get-Something
     processing 1
     processing 2

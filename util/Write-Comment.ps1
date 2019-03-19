@@ -17,6 +17,6 @@ function Replace-Comment($file) {
     #Rename-Item 'temp.md' $file
 }
 
-dir "$sourcePath/*.md" | % {
+dir "$sourcePath/*.md" | ForEach-Object {
     Replace-Comment $_
 }

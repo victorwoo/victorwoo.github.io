@@ -19,20 +19,20 @@ _适用于 PowerShell 2.0 及以上版本_
     Get-ChildItem C:\ -Filter *.ps1 -Recurse |
       Where-Object { $_.Extension -eq '.ps1' } |
       Get-AuthenticodeSignature |
-      Where-Object { $_.Status -ne 'Valid' } 
+      Where-Object { $_.Status -ne 'Valid' }
 
 “好吧”，也许您会辩论，“可是我们没有签名证书或 PKI”。这不是问题。数字签名只和信任有关。所以即便是用免费的自签名证书也可以信任。您只需要声明信任谁即可。
 
 相对于依赖需要昂贵的官方代码签名的 Windows “根证书认证”，在您的内部安全审计中，您可以使用类似这样的自制方案：
 
-    $whitelist = @('D3037720F7E5CF2A9DBA855B65D98C2FE1387AD9', 
+    $whitelist = @('D3037720F7E5CF2A9DBA855B65D98C2FE1387AD9',
                    '6262A18EC19996DD521F7BDEAA0E079544B84241')
-    
+
     Get-ChildItem y:\Advanced -Filter *.ps1 -Recurse |
       Where-Object { $_.Extension -eq '.ps1' } |
       Get-AuthenticodeSignature |
       Select-Object -ExpandProperty SignerCertificate |
-      Where-Object { $whitelist -notcontains $_.Thumbprint -or $_.Status -eq 'HashMismatch'  } 
+      Where-Object { $whitelist -notcontains $_.Thumbprint -or $_.Status -eq 'HashMismatch'  }
 
 只需要将任何您信任的证书的唯一的证书指纹添加到白名单中。该证书是否是自签名的并不重要。白名单是最重要的，并且它是您私人的“吊销列表”：如果您不再信任某个证书，或某个证书丢失了，只需要将它的指纹从您的白名单中移除即可。
 

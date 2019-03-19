@@ -24,15 +24,15 @@ _适用于 PowerShell 2.0 及以上版本_
       (
         $Weekday
       )
-      
+
       "You chose $Weekday"
     }
 
 用户可以传入任何东西，不仅是正常的星期数：
 
     PS> Get-Weekday -Weekday NoWeekday
-    You chose NoWeekday                                                 
-     
+    You chose NoWeekday
+
 
 有些时候，您可能会看到用正则表达式实现的验证器：
 
@@ -43,7 +43,7 @@ _适用于 PowerShell 2.0 及以上版本_
         [ValidatePattern('Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday')]
         $Weekday
       )
-      
+
       "You chose $Weekday"
     }
 
@@ -58,7 +58,7 @@ _适用于 PowerShell 2.0 及以上版本_
         [ValidateSet('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')]
         $Weekday
       )
-      
+
       "You chose $Weekday"
     }
 
@@ -73,7 +73,7 @@ _适用于 PowerShell 2.0 及以上版本_
         [System.DayOfWeek]
         $Weekday
       )
-      
+
       "You chose $Weekday"
     }
 

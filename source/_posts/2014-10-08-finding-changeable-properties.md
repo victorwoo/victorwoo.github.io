@@ -19,18 +19,18 @@ _适用于 PowerShell 所有版本_
 以下是一个获取可改变的属性的简单技巧。这段代码是以当前 PowerShell 宿主的进程对象为例，但您可以用任意的 cmdlet 结果。
 
     $myProcess = Get-Process -Id $Pid
-    
-    $myProcess | 
-      Get-Member -MemberType Properties | 
-      Out-String -Stream | 
-      Where-Object { $_ -like '*set;*' } 
+
+    $myProcess |
+      Get-Member -MemberType Properties |
+      Out-String -Stream |
+      Where-Object { $_ -like '*set;*' }
 
 结果类似如下：
 
-     
-    EnableRaisingEvents        Property       bool EnableRaisingEvents {get;set;}     
-    MaxWorkingSet              Property       System.IntPtr MaxWorkingSet  {get;set;}  
-    MinWorkingSet              Property       System.IntPtr MinWorkingSet  {get;set;}  
+
+    EnableRaisingEvents        Property       bool EnableRaisingEvents {get;set;}
+    MaxWorkingSet              Property       System.IntPtr MaxWorkingSet  {get;set;}
+    MinWorkingSet              Property       System.IntPtr MinWorkingSet  {get;set;}
     PriorityBoostEnabled       Property       bool PriorityBoostEnabled  {get;set;}
 
 <!--本文国际来源：[Finding Changeable Properties](http://community.idera.com/powershell/powertips/b/tips/posts/finding-changeable-properties)-->

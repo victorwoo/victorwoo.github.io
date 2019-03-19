@@ -19,7 +19,7 @@ _适用于所有 PowerShell 版本_
 要测试一个脚本，您可以删除所有的别名然后试试脚本是否任然能运行。以下是如何删除特定 PowerShell 会话中的所有别名的方法（它不会影响其它 PowerShell 会话，并且不会永久地删除内置的别名）：
 
     PS> Get-Alias | ForEach-Object { Remove-Item -Path ("Alias:\" + $_.Name) -Force }
-    
+
     PS> dir
     dir : The term 'dir' is not recognized as the name of a cmdlet, function, script file, or operable
     program. Check the spelling of the name, or if a path was included, verify that the path is correct
@@ -29,7 +29,7 @@ _适用于所有 PowerShell 版本_
     + ~~~
         + CategoryInfo           : ObjectNotFound: (dir:String) [], CommandNotFoundException
         + FullyQualifiedErrorId : CommandNotFoundException
-    
+
     PS> Get-Alias
 
 如您所见，所有别名都清空了。现在如果一个脚本使用了别名，它将会抛出一个异常。而关闭并重启 PowerShell 之后，所有内置的别名都恢复了。

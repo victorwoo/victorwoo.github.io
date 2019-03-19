@@ -16,7 +16,7 @@ _适用于 PowerShell 所有版本_
 
 这个简单的函数可以返回当前系统的启动时间：
 
-    function Get-Uptime 
+    function Get-Uptime
     {
       $millisec = [Environment]::TickCount
       [Timespan]::FromMilliseconds($millisec)

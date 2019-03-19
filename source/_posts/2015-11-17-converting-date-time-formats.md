@@ -15,11 +15,11 @@ tags:
 以下是一个简单的 PowerShell 过滤器，它能够将任意的 `DateTime` 对象转换为您所需要的日期/时间格式：
 
     #requires -Version 1
-    
+
     filter Convert-DateTimeFormat
     {
       param($OutputFormat='yyyy-MM-dd HH:mm:ss fff')
-      
+
       try {
         ([DateTime]$_).ToString($OutputFormat)
       } catch {}
@@ -27,16 +27,16 @@ tags:
 
 以下是如何运行它的一些例子：
 
-     
+
     PS> Get-Date | Convert-DateTimeFormat
     2015-10-23 14:38:37 140
-    
+
     PS> Get-Date | Convert-DateTimeFormat -OutputFormat 'dddd'
     Friday
-    
+
     PS> Get-Date | Convert-DateTimeFormat -OutputFormat 'MM"/"dd"/"yyyy'
     10/23/2015
-    
+
     PS> '2015-12-24' | Convert-DateTimeFormat -OutputFormat 'dddd'
     Thursday
 

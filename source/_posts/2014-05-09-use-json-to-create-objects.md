@@ -28,12 +28,12 @@ JSON 用来描述对象的，类似 XML，但是 JSON 更简单得多.JSON 支�
         "OS" : "$([Environment]::OSVersion.VersionString)"
      }
     "@
-    
+
     $info = ConvertFrom-Json -InputObject $json
-    
+
     $info.ServerName
     $info.BIOS.Version
-    $info.OS 
+    $info.OS
 
 您接下来可以操作结果对象——获取信息，或增加、更新详细信息。
 

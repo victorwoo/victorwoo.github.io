@@ -23,22 +23,22 @@ _需要 ActiveDirectory 模块_
     # both Registry keys must exist
     $KeyToCopySecurityFrom = 'HKLM:\Software\Key1'
     $KeyToCopySecurityTo = 'HKLM:\Software\Key1'
-    
+
     $securityDescriptor = Get-Acl -Path $KeyToCopySecurityFrom
-    Set-Acl -Path $KeyToCopySecurityTo -AclObject $securityDescriptor  
+    Set-Acl -Path $KeyToCopySecurityTo -AclObject $securityDescriptor
 
 类似地，如果您从微软安装了 RSAT 工具并启用了 ActiveDirectory PowerShell 模块，您就可以使用它的 PowerShell 驱动器 AD: 来对 AD 对象做类似的操作，例如，从一个 OU 克隆委派权限到另一个 OU 上。
 
 您现在可以根据需要读取、修改或重新应用如委派控制、防止意外删除等 Active Directory 特性。
 
     Import-Module ActiveDirectory
-    
+
     # both OUs must exist
     $OUtoCopyFrom = 'AD:\OU=Employees,DC=TRAINING,DC=POWERSHELL'
     $OUtoCopyTo = 'AD:\OU=TestEmployees,DC=TRAINING,DC=POWERSHELL'
-    
+
     $securityDescriptor = Get-Acl -Path $OUtoCopyFrom
-    Set-Acl -Path $OUtoCopyTo -AclObject $securityDescriptor  
+    Set-Acl -Path $OUtoCopyTo -AclObject $securityDescriptor
 
 您现在可以对任何 AD 对象通过这种方式读取和写入安全信息，包括 DNS 信息。您所需要的只是知道您想读写的对象的 LDAP 路径。
 

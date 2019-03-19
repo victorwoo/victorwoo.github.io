@@ -18,7 +18,7 @@ tags:
 
     # install features on server and save result in $result
     Install-WindowsFeature -Name AD-Domain-Services, DNS -IncludeManagementTools -OutVariable result -Verbose
-    
+
     # view the result of your change
     Get-WindowsFeature -Name $result.FeatureResult.Name
 

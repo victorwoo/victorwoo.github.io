@@ -24,9 +24,9 @@ tags:
 	# Created on:   2013-3-7 16:21
 	# Created by:   Victor.Woo
 	# Organization: www.vichamp.com
-	# Filename:  Get-ThingsDone.ps1   
+	# Filename:  Get-ThingsDone.ps1
 	#========================================================================
-    
+
 	function Check-Enviroment
 	{
 	  $gtdPath = "HKCU:\Software\Vichamp\GTD"
@@ -34,7 +34,7 @@ tags:
 	  {
 	    return
 	  }
-	
+
 	  $runPath = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run'
 	  $run = Get-ItemProperty $runPath
 	  if ($run.GTD -eq $null)
@@ -57,7 +57,7 @@ tags:
 	    }
 	  }
 	}
-	
+
 	function TryCreate-Directory ([Parameter(Mandatory = $True)] [string]$dirName)
 	{
 	  $private:dir = Join-Path $baseDir $dirName
@@ -67,7 +67,7 @@ tags:
 	    mkdir $dir | Out-Null
 	  }
 	}
-	
+
 	function TryCreate-Directories ()
 	{
 	  Write-Output "正在检查目录完整性"
@@ -76,7 +76,7 @@ tags:
 	    TryCreate-Directory $_
 	  }
 	}
-	
+
 	function Remove-Directories ()
 	{
 	  $dirNames |
@@ -89,7 +89,7 @@ tags:
 	    }
 	  }
 	}
-	
+
 	function MoveTo-WithRenamming (
 	  [Parameter(Mandatory = $True)] [System.IO.FileSystemInfo]$item,
 	  [Parameter(Mandatory = $True)] [string]$targetDir)
@@ -108,7 +108,7 @@ tags:
 	    }
 	    return [System.IO.FileInfo]$Private:targetFilePath
 	  }
-	
+
 	  function Get-NextDirectoryPath ([string]$dir,[System.IO.DirectoryInfo]$directoryInfo)
 	  {
 	    $Private:targetDirectoryPath = Join-Path $dir $directoryInfo.Name
@@ -123,7 +123,7 @@ tags:
 	    }
 	    return [System.IO.DirectoryInfo]$Private:targetDirectoryPath
 	  }
-	
+
 	  Write-Output "正在移动 $item 至 $targetDir 目录"
 	  if ($item -is [System.IO.FileInfo])
 	  {
@@ -135,7 +135,7 @@ tags:
 	      # 目标文件已存在
 	      $targetFileInfo = [System.IO.FileInfo]$Private:targetFilePath
 	      $Private:targetFilePath = Get-NextFilePath $targetDir $item
-	      
+
 	      if ($item.LastWriteTime -eq $targetFileInfo.LastWriteTime -and $item.Length -eq $targetFileInfo.Length)
 	      {
 	        # 文件时间和大小相同
@@ -171,7 +171,7 @@ tags:
 	    Move-Item $item.FullName $Private:targetDirectoryPath | Out-Null
 	  }
 	}
-	
+
 	function Process-IsolatedItems
 	{
 	  Write-Output "正在将游离内容移至 [STUFF] 目录"
@@ -180,7 +180,7 @@ tags:
 	    MoveTo-WithRenamming $_ $stuffDir
 	  }
 	}
-	
+
 	function Process-TomorrowDir
 	{
 	  Write-Output "正在处理 [TOMORROW] 目录"
@@ -189,7 +189,7 @@ tags:
 	    MoveTo-WithRenamming $_ $todayDir
 	  }
 	}
-	
+
 	function Process-CalendarDir
 	{
 	  Write-Output "正在处理 [CALENDAR] 目录"
@@ -197,7 +197,7 @@ tags:
 	  % {
 	    MoveTo-WithRenamming $_ $stuffDir
 	  }
-	
+
 	  Get-ChildItem $calendarDir -Directory |
 	  % {
 	    $regex = [regex]'(?m)^(?<year>19|20\d{2})[-_.](?<month>\d{1,2})[-_.](?<day>\d{1,2})$'
@@ -233,11 +233,11 @@ tags:
 	    }
 	  }
 	}
-	
+
 	function Process-ArchiveDir
 	{
 	  Write-Output "正在检查 [ARCHIVE] 目录"
-	
+
 	  # 创建本月目录
 	  $nowString = "{0:yyyy.MM}" -f (Get-Date)
 	  $thisMonthDir = Join-Path $archiveDir $nowString
@@ -246,7 +246,7 @@ tags:
 	    Write-Output "正在创建本月目录"
 	    md $thisMonthDir
 	  }
-	
+
 	  # 移除除本月之外的空目录
 	  Get-ChildItem $archiveDir -Exclude $nowString -Recurse |
 	  Where { $_.PSIsContainer -and @( Get-ChildItem -LiteralPath $_.FullName -Recurse | Where { !$_.PSIsContainer }).Length -eq 0 } |
@@ -254,7 +254,7 @@ tags:
 	    Write-Output "正在删除空目录$($_.FullName)"
 	    Remove-Item -Recurse
 	  }
-	
+
 	  # 移动所有文件到 本月存档 目录
 	  Get-ChildItem $archiveDir -File |
 	  % {
@@ -263,7 +263,7 @@ tags:
 	    Write-Output "移动 [ARCHIVE] 目录下，$($_.Name) 游离文件至 $lastWriteDir 存档目录"
 	    MoveTo-WithRenamming $_ $lastWriteDir
 	  }
-	
+
 	  # 检查目录命名是否符合规范。
 	  Get-ChildItem $archiveDir -Directory |
 	  % {
@@ -300,20 +300,20 @@ tags:
 	    }
 	  }
 	}
-	
+
 	function Explore-Dirs
 	{
 	  if ((Get-ChildItem $stuffDir) -ne $null)
 	  {
 	    explorer $stuffDir
 	  }
-	
+
 	  if ((Get-ChildItem $todayDir) -ne $null)
 	  {
 	    explorer $todayDir
 	  }
 	}
-	
+
 	$STUFF = "1.STUFF"
 	$TODAY = "2.TODAY"
 	$TOMORROW = "3.TOMORROW"
@@ -321,11 +321,11 @@ tags:
 	$CALENDAR = "5.CALENDAR"
 	$SOMEDAY = "6.SOMEDAY"
 	$ARCHIVE = "7.ARCHIVE"
-	
+
 	$dirNames = $STUFF,$TODAY,$TOMORROW,$UPCOMING,$CALENDAR,$SOMEDAY,$ARCHIVE
 	$reservedDirs = ".git","_gsdata_"
 	$reservedFiles = ".gitignore","Get-ThingsDone.ps1","README*.md","gtd_logo.png","LICENSE.md","GTD.cmd","uninstall.cmd"
-	
+
 	$baseDir = Split-Path $MyInvocation.MyCommand.Path
 	$stuffDir = Join-Path $baseDir $STUFF
 	$todayDir = Join-Path $baseDir $TODAY
@@ -333,36 +333,36 @@ tags:
 	$calendarDir = Join-Path $baseDir $CALENDAR
 	$archiveDir = Join-Path $baseDir $ARCHIVE
 	$gtdCmd = Join-Path $baseDir "GTD.cmd"
-	
+
 	Get-Date | Write-Output
-	
+
 	Check-Enviroment
 	TryCreate-Directories
-	
+
 	Process-IsolatedItems
 	Process-TomorrowDir
 	Process-CalendarDir
 	Process-ArchiveDir
-	
+
 	Explore-Dirs
-	
+
 	######################### 开发临时用（在 ISE 中选中并按 F8 执行） #########################
 	return
-	
+
 	{
 	  return
 	  # 创建游离内容。
 	  $null | Set-Content (Join-Path $baseDir "to.del.file.txt")
 	  md (Join-Path $baseDir "to.del.dir") | Out-Null
 	}
-	
+
 	{
 	  return
 	  # 对代码排版。
 	  Import-Module D:\Dropbox\script\DTW.PS.PrettyPrinterV1\DTW.PS.PrettyPrinterV1.psd1
 	  Edit-DTWCleanScript D:\Dropbox\vichamp\GTD\Get-ThingsDone.ps1
 	}
-	
+
 	{
 	  return
 	  # 移除所有目录

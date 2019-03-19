@@ -23,15 +23,15 @@ tags:
       (
         [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [Object]
-        [AllowEmptyString()] 
+        [AllowEmptyString()]
         $Object
       )
-    
+
       begin
       {
         $bucket = New-Object System.Collections.ArrayList
       }
-    
+
       process
       {
         $null = $bucket.Add($Object)
@@ -51,8 +51,8 @@ tags:
     1
     2
     3
-    
-    
+
+
     PS C:\> 1..3 |  Collect-Data
     Received 3 objects.
     1

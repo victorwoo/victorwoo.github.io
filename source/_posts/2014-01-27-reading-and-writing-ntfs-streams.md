@@ -17,12 +17,12 @@ tags:
 以下是一个将 PowerShell 代码隐藏在 NTFS 流中的例子。当您运行这段代码时，它将在您的桌面上创建一个新的 PowerShell 脚本文件，然后在 ISE 编辑器中打开这个文件：
 
 	$path = "$home\Desktop\secret.ps1"
-	
+
 	$secretCode = {
 	  Write-Host -ForegroundColor Red 'This is a miracle!';
 	  [System.Console]::Beep(4000,1000)
 	}
-	
+
 	Set-Content -Path $path -Value '(Invoke-Expression ''[ScriptBlock]::Create((Get-Content ($MyInvocation.MyCommand.Definition) -Stream SecretStream))'').Invoke()'
 	Set-Content -Path $path -Stream SecretStream -Value $secretCode
 	ise $path

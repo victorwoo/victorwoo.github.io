@@ -15,17 +15,17 @@ tags:
 终于，在 PowerShell 5 中原生支持将结果发送到剪贴板中，以及从剪贴板中接收结果：
 
 ```powershell
-PS> Get-Command -Noun Clipboard 
+PS> Get-Command -Noun Clipboard
 
-CommandType Name          Version Source                         
------------ ----          ------- ------                         
+CommandType Name          Version Source
+----------- ----          ------- ------
 Cmdlet      Get-Clipboard 3.1.0.0 Microsoft.PowerShell.Management
 Cmdlet      Set-Clipboard 3.1.0.0 Microsoft.PowerShell.Management
-```     
+```
 
 例如，您可以打开一个包含一些数据的 Excel 表格，将一列复制到剪贴板中，然后在 PowerShell 中进一步处理数据，例如过滤它：
 
-```powershell     
+```powershell
 PS> $list = (Get-ClipBoard) -like '*err*'
 ```
 

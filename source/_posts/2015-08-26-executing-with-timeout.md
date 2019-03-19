@@ -15,11 +15,11 @@ tags:
 `Start-Process` 可以启动进程但是不支持超时。如果您需要在指定的超时时间后结束一个跑飞了的进程，您可以使用类似这样的方法：
 
     #requires -Version 2
-    
+
     $maximumRuntimeSeconds = 3
-    
+
     $process = Start-Process -FilePath powershell.exe -ArgumentList '-Command Start-Sleep -Seconds 4' -PassThru
-    
+
     try
     {
         $process | Wait-Process -Timeout $maximumRuntimeSeconds -ErrorAction Stop

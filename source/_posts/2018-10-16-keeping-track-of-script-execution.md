@@ -16,7 +16,7 @@ Here is a chunk of code that demonstrates how you can store private settings in 
 
     # store settings here
     $Path = "HKCU:\software\powertips\settings"
-    
+
     # check whether key exists
     $exists = Test-Path -Path $Path
     if ($exists -eq $false)
@@ -24,7 +24,7 @@ Here is a chunk of code that demonstrates how you can store private settings in 
         # if this is first run, initialize registry key
         $null = New-Item -Path $Path -Force
     }
-    
+
     # read existing value
     $currentValue = Get-ItemProperty -Path $path
     $lastRun = $currentValue.LastRun
@@ -41,18 +41,18 @@ Here is a chunk of code that demonstrates how you can store private settings in 
         $lastRunDate = Get-Date -Date $lastRun
         $today = Get-Date
         $timeSpan = $today - $lastRunDate
-    
+
         [PSCustomObject]@{
             FirstRun = $true
             LastRun = $lastRunDate
             Interval = $timeSpan
         }
     }
-    
+
     # write current date and time to registry
     $date = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
     $null = New-ItemProperty -Path $Path -Name LastRun -PropertyType String -Value $date -Force
-    
+
 
 Whenever you run this code, it returns an object telling you when this script was run the last time, and how much time has passed since.
 

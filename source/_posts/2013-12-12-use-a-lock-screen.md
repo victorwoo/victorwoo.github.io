@@ -22,7 +22,7 @@ tags:
 	    {
 	      $window = New-Object Windows.Window
 	      $label = New-Object Windows.Controls.Label
-	
+
 	      $label.Content = $Title
 	      $label.FontSize = 60
 	      $label.FontFamily = 'Consolas'
@@ -30,7 +30,7 @@ tags:
 	      $label.Foreground = 'Red'
 	      $label.HorizontalAlignment = 'Center'
 	      $label.VerticalAlignment = 'Center'
-	
+
 	      $Window.AllowsTransparency = $True
 	      $Window.Opacity = .7
 	      $window.WindowStyle = 'None'
@@ -38,18 +38,18 @@ tags:
 	      $window.Left = $window.Top = 0
 	      $window.WindowState = 'Maximized'
 	      $window.Topmost = $true
-	
+
 	      $null = $window.Show()
 	      Invoke-Command -ScriptBlock $Payload
 	    }
 	    finally { $window.Close() }
 	}
-	
+
 	$job =
 	{
 	  Get-ChildItem c:\windows -Recurse -ErrorAction SilentlyContinue
 	}
-	
+
 	Lock-Screen -Payload $job -Title 'I am busy, go away and grab a coffee...'
 
 您很快就会发现，锁屏确实可以防止鼠标点击，但是并不会屏蔽按键。这是一个有趣的技术，不是绝对安全的锁定。

@@ -29,7 +29,7 @@ else
 如果您的打印机不能用（或是暂时不能用），那么您可能使用的不是 Windows 10 或 Windows Server 2016，或者 PDF 打印功能尚未启用。请在管理员权限下运行 PowerShell 并执行这段命令来修复它：
 
 ```powershell
-PS> Enable-WindowsOptionalFeature -Online -FeatureName Printing-PrintToPDFServices-Features 
+PS> Enable-WindowsOptionalFeature -Online -FeatureName Printing-PrintToPDFServices-Features
 ```
 
 请确保使用管理员权限运行上述代码，您也可以试着使用以下代码：

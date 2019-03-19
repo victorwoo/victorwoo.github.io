@@ -27,7 +27,7 @@ Anything that applies to a specific host like the console only, or the PowerShel
 任何一个特定的 PowerShell 宿主，例如特指控制台或特指 PowerShell ISE 启动执行的脚本如下：
 
 ```shell
-PS C:\>  $profile.CurrentUserCurrentHost  
+PS C:\>  $profile.CurrentUserCurrentHost
 C:\Users\Tobias\Documents\WindowsPowerShell\XXXXXXXXXXXXXX_profile.ps1
 ```
 

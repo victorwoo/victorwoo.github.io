@@ -28,7 +28,7 @@ tags:
           Sort-Object -Property Content, Script -Unique |
           Out-GridView -Title 'Variables in use' -PassThru
         }
-        
+
     $psise.CurrentPowerShellTab.AddOnsMenu.Submenus.Add('List Variables', $code, 'ALT+V')
 
 当您运行这段代码后，您可以按下 `ALT`+`V` 打开一个网格窗口显示所有打开的脚本中用到的变量。

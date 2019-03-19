@@ -15,7 +15,7 @@ tags:
 在前一个技能中我们演示了如何用 `Select-String` 在纯文本中查找指定的词。费了一些功夫通过指定的 pattern 来提取实际的值：
 
 ```powershell
-PS C:\> $data = ipconfig | select-string 'IPv4' 
+PS C:\> $data = ipconfig | select-string 'IPv4'
 PS C:\> [regex]::Matches($data,"\b(?:\d{1,3}\.){3}\d{1,3}\b") | Select-Object -ExpandProperty Value
 
 192.168.2.112
@@ -25,37 +25,37 @@ PS C:\> [regex]::Matches($data,"\b(?:\d{1,3}\.){3}\d{1,3}\b") | Select-Object -E
 
 
 ```powershell
-PS C:\> ipconfig | 
-  Select-String '\b(?:\d{1,3}\.){3}\d{1,3}\b' | 
+PS C:\> ipconfig |
+  Select-String '\b(?:\d{1,3}\.){3}\d{1,3}\b' |
   Select-Object -Property *
 
 
-    
+
     IgnoreCase : True
     LineNumber : 16
     Line       :    IPv4 Address. . . . . . . . . . . : 192.168.2.112
     Filename   : InputStream
     Path       : InputStream
     Pattern    : \b(?:\d{1,3}\.){3}\d{1,3}\b
-    Context    : 
+    Context    :
     Matches    : {192.168.2.112}
-    
+
     IgnoreCase : True
     LineNumber : 17
     Line       :    Subnet Mask . . . . . . . . . . . : 255.255.255.0
     Filename   : InputStream
     Path       : InputStream
     Pattern    : \b(?:\d{1,3}\.){3}\d{1,3}\b
-    Context    : 
+    Context    :
     Matches    : {255.255.255.0}
-    
+
     IgnoreCase : True
     LineNumber : 19
     Line       :                                        192.168.2.1
     Filename   : InputStream
     Path       : InputStream
     Pattern    : \b(?:\d{1,3}\.){3}\d{1,3}\b
-    Context    : 
+    Context    :
     Matches    : {192.168.2.1}
 ```
 
@@ -63,11 +63,11 @@ PS C:\> ipconfig |
 
 
 ```powershell
-PS C:\> ipconfig | 
+PS C:\> ipconfig |
   # do raw prefiltering and get only lines containing this word
   Where-Object { $_ -like '*IPv4*' } |
   # do RegEx filtering using a pattern for IPv4 addresses
-  Select-String '\b(?:\d{1,3}\.){3}\d{1,3}\b' | 
+  Select-String '\b(?:\d{1,3}\.){3}\d{1,3}\b' |
   # get the matching values
   Select-Object -ExpandProperty Matches |
   # get the value for each match

@@ -20,25 +20,25 @@ _适用于 PowerShell 3.0 或以上版本_
       Name = 'Weltner'
       ID = 123
       Active = $true
-    } 
-    
+    }
+
 
 这将创建一个包含预设属性值的完整功能的 PowerShell 对象：
 
-    PS> $object 
-    
+    PS> $object
+
     Name                                                ID                    Active
     ----                                                --                    ------
     Weltner                                            123                     True
-    
-    
-    
+
+
+
     PS> $object.Name
     Weltner
-    
+
     PS> $object.Active
     True
-    
+
     PS>
 
 <!--本文国际来源：[Creating New Objects](http://community.idera.com/powershell/powertips/b/tips/posts/creating-newobjects)-->

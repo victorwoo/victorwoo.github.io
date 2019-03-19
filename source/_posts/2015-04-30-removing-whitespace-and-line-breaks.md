@@ -19,11 +19,11 @@ tags:
 
 一个鲜为人知的事实是，`Trim()` 也会删掉开头和结尾的换行：
 
-    $text = '   
-    
-     Hello     
-     
-     
+    $text = '
+
+     Hello
+
+
      '
     $text.Trim()
 
@@ -31,10 +31,10 @@ tags:
 
 这个例子删除空格、点号、减号和换行：
 
-    $text = '   
-    
-     ... Hello     
-     
+    $text = '
+
+     ... Hello
+
      ...---
      '
     $text.Trim(" .-`t`n`r")

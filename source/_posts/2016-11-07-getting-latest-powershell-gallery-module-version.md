@@ -51,7 +51,7 @@ Get-PublishedModuleVersion -Name ISESteroids
 
     Major  Minor  Build  Revision
     -----  -----  -----  --------
-    2      6      3      25      
+    2      6      3      25
 
 这个操作非常非常快，而且可以用来检测已安装的模块，看它们是否是最新版本。
 

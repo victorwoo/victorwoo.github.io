@@ -15,7 +15,7 @@ tags:
 假设您每天都要运行一个需要凭据的脚本。一个使用强壮凭据的安全方法是将它们保存到一个加密的文件中。这段代码提示输入凭据，然后将它们保存到您桌面上的 XML 文件中：
 
 ```powershell
-$credential = Get-Credential -UserName train\user02 -Message 'Please provide credentials' 
+$credential = Get-Credential -UserName train\user02 -Message 'Please provide credentials'
 $credential | Export-Clixml -Path "$home\desktop\myCredentials.xml"
 ```
 

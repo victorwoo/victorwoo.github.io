@@ -17,12 +17,12 @@ _适用于 PowerShell 所有版本_
 如果您想将一个 PowerShell 命令的结果保存到磁盘上，以便传到另一台机器上，以下是简单的实现方法：
 
     $Path = "$env:temp\mylist.xml"
-    
-    Get-Service | 
-      Add-Member -MemberType NoteProperty -Name ComputerName -Value $env:COMPUTERNAME -PassThru | 
+
+    Get-Service |
+      Add-Member -MemberType NoteProperty -Name ComputerName -Value $env:COMPUTERNAME -PassThru |
       Export-Clixml -Depth 1 -Path $Path
-    
-    explorer.exe "/select,$Path" 
+
+    explorer.exe "/select,$Path"
 
 这段代码用 `Get-Service` 获取所有的服务。结果添加了一个“ComputerName”字段，用于保存生成的数据所在的计算机名。
 
@@ -31,7 +31,7 @@ _适用于 PowerShell 所有版本_
 要将结果反序列化成真实的对象，使用以下代码：
 
     $Path = "$env:temp\mylist.xml"
-    
+
     Import-Clixml -Path $Path
 
 <!--本文国际来源：[Dumping Service State Information ](http://community.idera.com/powershell/powertips/b/tips/posts/dumping-service-state-information)-->

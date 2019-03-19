@@ -21,16 +21,16 @@ function Enable-VerboseLogging
 {
   <#
       .SYNOPSIS
-      Enables verbose script block logging. 
+      Enables verbose script block logging.
       Requires Administrator privileges.
 
       .DESCRIPTION
-      Turns script block logging on. Any code that is sent to 
+      Turns script block logging on. Any code that is sent to
       PowerShell will be logged.
 
       .EXAMPLE
       Enable-VerboseLogging
-      Enables script block logging. 
+      Enables script block logging.
       Administrator privileges required.
   #>
 
@@ -42,7 +42,7 @@ function Enable-VerboseLogging
 
   $ErrorActionPreference = 'Stop'
   if (!$exists) { $null = New-Item -Path $path -Force }
-  
+
   Set-ItemProperty -Path $path -Name EnableScriptBlockLogging -Type DWord -Value 1
   Set-ItemProperty -Path $path -Name EnableScriptBlockInvocationLogging -Type DWord -Value 1
 
@@ -61,7 +61,7 @@ function Get-LoggedCode
 {
   # read all raw events
   $logInfo = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-  Get-WinEvent -FilterHashtable $logInfo | 
+  Get-WinEvent -FilterHashtable $logInfo |
   # take each raw set of data...
   ForEach-Object {
     # create a new object and extract the interesting
@@ -76,7 +76,7 @@ function Get-LoggedCode
       # determine current and total part
       PartCurrent = $_.Properties[0].Value
       PartTotal = $_.Properties[1].Value
-                
+
       # if total part is 1, code is not fragmented
       IsMultiPart = $_.Properties[1].Value -ne 1
       # path of script file (this is empty for interactive
@@ -88,8 +88,8 @@ function Get-LoggedCode
       # user who executed the code (SID)
       User = $_.UserId
     }
-  } 
-} 
+  }
+}
 ```
 
 请注意只有改变日志设置需要管理员特权。而所有用户都可以读取记录的数据。
@@ -101,7 +101,7 @@ function Get-LoggedCode
 {
   # read all raw events
   $logInfo = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-  Get-WinEvent -FilterHashtable $logInfo | 
+  Get-WinEvent -FilterHashtable $logInfo |
   # take each raw set of data...
   ForEach-Object {
     # create a new object and extract the interesting
@@ -116,7 +116,7 @@ function Get-LoggedCode
       # determine current and total part
       PartCurrent = $_.Properties[0].Value
       PartTotal = $_.Properties[1].Value
-                
+
       # if total part is 1, code is not fragmented
       IsMultiPart = $_.Properties[1].Value -ne 1
       # path of script file (this is empty for interactive
@@ -128,8 +128,8 @@ function Get-LoggedCode
       # user who executed the code (SID)
       User = $_.UserId
     }
-  } 
-} 
+  }
+}
 ```
 
 请注意即便详细脚本日志被关闭，PowerShell 将仍会记录和安全相关的代码。

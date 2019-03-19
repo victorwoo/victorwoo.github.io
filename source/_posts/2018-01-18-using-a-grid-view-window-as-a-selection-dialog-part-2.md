@@ -19,7 +19,7 @@ tags:
 只需要使用 `Select-Object` 来选择希望在网格视图窗口中显示的属性，并且用它来作为哈希表的键。
 
 ```powershell
-# create a hash table where the key is the selected properties to display, 
+# create a hash table where the key is the selected properties to display,
 # and the value is the original object
 $hashTable = Get-WmiObject -Class Win32_NetworkAdapterConfiguration |
     # sort the objects by a property of your choice

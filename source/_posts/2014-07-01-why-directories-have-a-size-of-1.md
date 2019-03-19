@@ -21,19 +21,19 @@ tags:
 
     PS> $host.length
     1
-    
+
     PS> $host.Count
     1
-    
+
     PS> (Get-Date).Length
     1
-    
+
     PS> (Get-Date).Count
     1
-    
+
     PS> $ConfirmPreference.Length
     1
-    
+
     PS> $ConfirmPreference.Count
     1
 

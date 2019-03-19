@@ -16,22 +16,22 @@ tags:
 
 您可以使用 `Select-Object` 并且传入一个哈希表来将原始数据转换为您希望的格式。这个例子演示了如何将剩余空间转换为以 GB 为单位，并且计算剩余空间的百分比：
 
-    $Freespace = 
+    $Freespace =
     @{
       Expression = {[int]($_.Freespace/1GB)}
       Name = 'Free Space (GB)'
     }
-    
-    $PercentFree = 
+
+    $PercentFree =
     @{
       Expression = {[int]($_.Freespace*100/$_.Size)}
       Name = 'Free (%)'
     }
-    
-    Get-WmiObject -Class Win32_LogicalDisk | 
-      Select-Object -Property DeviceID, VolumeName, $Freespace, $PercentFree 
-    
-    
+
+    Get-WmiObject -Class Win32_LogicalDisk |
+      Select-Object -Property DeviceID, VolumeName, $Freespace, $PercentFree
+
+
 
 以下是不使用哈希表的结果：
 

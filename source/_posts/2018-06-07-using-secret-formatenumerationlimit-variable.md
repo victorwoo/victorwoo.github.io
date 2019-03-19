@@ -19,8 +19,8 @@ PS> Get-Process -Id $Pid | Format-List -Property Name, Modules
 
 
 Name    : powershell_ise
-Modules : {System.Diagnostics.ProcessModule (PowerShell_ISE.exe), 
-            System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule 
+Modules : {System.Diagnostics.ProcessModule (PowerShell_ISE.exe),
+            System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
             (MSCOREE.DLL), System.Diagnostics.ProcessModule (KERNEL32.dll)...}
 ```
 
@@ -37,7 +37,7 @@ PS> $FormatEnumerationLimit
 PS> $FormatEnumerationLimit = -1
 
 PS> $FormatEnumerationLimit
--1 
+-1
 ```
 
 如果您再次运行相同的命令，`Format-List` 将显示所有数组元素：
@@ -47,29 +47,29 @@ PS> Get-Process -Id $Pid | Format-List -Property Name, Modules
 
 
 Name    : powershell_ise
-Modules : {System.Diagnostics.ProcessModule (PowerShell_ISE.exe), 
-        System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule 
-        (MSCOREE.DLL), System.Diagnostics.ProcessModule (KERNEL32.dll), 
-        System.Diagnostics.ProcessModule (KERNELBASE.dll), System.Diagnostics.ProcessModule 
-        (ADVAPI32.dll), System.Diagnostics.ProcessModule (msvcrt.dll), 
-        System.Diagnostics.ProcessModule (sechost.dll), System.Diagnostics.ProcessModule 
-        (RPCRT4.dll), System.Diagnostics.ProcessModule (mscoreei.dll), 
-        System.Diagnostics.ProcessModule (SHLWAPI.dll), System.Diagnostics.ProcessModule 
-        (combase.dll), System.Diagnostics.ProcessModule (ucrtbase.dll), 
-        System.Diagnostics.ProcessModule (bcryptPrimitives.dll), 
-        System.Diagnostics.ProcessModule (GDI32.dll), System.Diagnostics.ProcessModule 
-        (gdi32full.dll), System.Diagnostics.ProcessModule (msvcp_win.dll), 
-        System.Diagnostics.ProcessModule (USER32.dll), System.Diagnostics.ProcessModule 
-        (win32u.dll), System.Diagnostics.ProcessModule (IMM32.DLL), 
-        System.Diagnostics.ProcessModule (kernel.appcore.dll), System.Diagnostics.ProcessModule 
-        (VERSION.dll), System.Diagnostics.ProcessModule (clr.dll), 
-        System.Diagnostics.ProcessModule (MSVCR120_CLR0400.dll), 
-        System.Diagnostics.ProcessModule (mscorlib.ni.dll), System.Diagnostics.ProcessModule 
-        (ole32.dll), System.Diagnostics.ProcessModule (uxtheme.dll), 
-        System.Diagnostics.ProcessModule (tiptsf.dll), System.Diagnostics.ProcessModule 
-        (OLEAUT32.dll), System.Diagnostics.ProcessModule (CRYPTSP.dll), 
-        System.Diagnostics.ProcessModule (rsaenh.dll), System.Diagnostics.ProcessModule 
-        (bcrypt.dll), System.Diagnostics.ProcessModule (CRYPTBASE.dll),  
+Modules : {System.Diagnostics.ProcessModule (PowerShell_ISE.exe),
+        System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+        (MSCOREE.DLL), System.Diagnostics.ProcessModule (KERNEL32.dll),
+        System.Diagnostics.ProcessModule (KERNELBASE.dll), System.Diagnostics.ProcessModule
+        (ADVAPI32.dll), System.Diagnostics.ProcessModule (msvcrt.dll),
+        System.Diagnostics.ProcessModule (sechost.dll), System.Diagnostics.ProcessModule
+        (RPCRT4.dll), System.Diagnostics.ProcessModule (mscoreei.dll),
+        System.Diagnostics.ProcessModule (SHLWAPI.dll), System.Diagnostics.ProcessModule
+        (combase.dll), System.Diagnostics.ProcessModule (ucrtbase.dll),
+        System.Diagnostics.ProcessModule (bcryptPrimitives.dll),
+        System.Diagnostics.ProcessModule (GDI32.dll), System.Diagnostics.ProcessModule
+        (gdi32full.dll), System.Diagnostics.ProcessModule (msvcp_win.dll),
+        System.Diagnostics.ProcessModule (USER32.dll), System.Diagnostics.ProcessModule
+        (win32u.dll), System.Diagnostics.ProcessModule (IMM32.DLL),
+        System.Diagnostics.ProcessModule (kernel.appcore.dll), System.Diagnostics.ProcessModule
+        (VERSION.dll), System.Diagnostics.ProcessModule (clr.dll),
+        System.Diagnostics.ProcessModule (MSVCR120_CLR0400.dll),
+        System.Diagnostics.ProcessModule (mscorlib.ni.dll), System.Diagnostics.ProcessModule
+        (ole32.dll), System.Diagnostics.ProcessModule (uxtheme.dll),
+        System.Diagnostics.ProcessModule (tiptsf.dll), System.Diagnostics.ProcessModule
+        (OLEAUT32.dll), System.Diagnostics.ProcessModule (CRYPTSP.dll),
+        System.Diagnostics.ProcessModule (rsaenh.dll), System.Diagnostics.ProcessModule
+        (bcrypt.dll), System.Diagnostics.ProcessModule (CRYPTBASE.dll),
 (...)
 ```
 

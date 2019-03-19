@@ -16,18 +16,18 @@ _适用于 PowerShell 所有版本_
 
 在 PowerShell 中获取网卡的 MAC 地址十分简单。以下是众多方法中的一个：
 
-    PS> getmac /FO CSV | ConvertFrom-Csv 
-    
-    Physical Address                        Transport Name                         
-    ----------------                        --------------                         
+    PS> getmac /FO CSV | ConvertFrom-Csv
+
+    Physical Address                        Transport Name
+    ----------------                        --------------
     5C-51-4F-62-F2-7D                       \Device\Tcpip_{FF034A81-CBFE-4B11-9D...
-    5C-51-4F-62-F2-81                       Media disconnected      
+    5C-51-4F-62-F2-81                       Media disconnected
 
 有挑战性的地方在于实际的列名是本地化的，不同语言文化的值差异很大。由于原始信息是来自于 _getmac.exe_ 生成的 CSV 数据，所以有一个简单的技巧：跳过首行（包含 CSV 头部），然后传入自定义的统一列名，以达到对列重命名的效果。
 
     getmac.exe /FO CSV |
-      Select-Object -Skip 1 | 
-      ConvertFrom-Csv -Header MAC, Transport 
+      Select-Object -Skip 1 |
+      ConvertFrom-Csv -Header MAC, Transport
 
 这将总是产生“_MAC_”和“_Transport_”的列。
 

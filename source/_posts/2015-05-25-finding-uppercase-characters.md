@@ -17,7 +17,7 @@ tags:
 以下是一段示例代码：它逐字符扫描一段文本，然后返回首个大写字符的位置：
 
     $text = 'here is some text with Uppercase letters'
-    
+
     $c = 0
     $position = foreach ($character in $text.ToCharArray())
     {
@@ -28,7 +28,7 @@ tags:
         break
       }
     }
-    
+
     if ($position -eq $null)
     {
       'No uppercase characters detected.'
@@ -41,9 +41,9 @@ tags:
 
 执行的结果类似这样：
 
-     
+
     PS C:\>
-    
+
     First uppercase character at position 24
     here is some text with U<<<ppercase letters
 

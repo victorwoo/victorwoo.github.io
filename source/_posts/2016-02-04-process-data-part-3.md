@@ -26,12 +26,12 @@ tags:
         [AllowEmptyString()]
         $Text
       )
-    
+
       begin
       {
         $sb = New-Object System.Text.StringBuilder
       }
-    
+
       process
       {
        foreach ($line in $Text)
@@ -50,13 +50,13 @@ tags:
 
     PS C:\> Collect-Text -Text 'Line 1', '', 'Line 2'
     Line 1
-    
+
     Line 2
-    
-    
+
+
     PS C:\> 'Line 1', '', 'Line 2' | Collect-Text
     Line 1
-    
+
     Line 2
 
 请注意参数：它使用了 `[AllowEmptyString()]` 属性。它确保可以接受空字符串参数。在 mandatory （必须）参数中，如果没有这个属性，是不允许空字符串的。

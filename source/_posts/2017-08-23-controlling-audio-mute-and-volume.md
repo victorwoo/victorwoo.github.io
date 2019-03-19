@@ -59,7 +59,7 @@ public class Audio {
     set { Marshal.ThrowExceptionForHR(Vol().SetMute(value, System.Guid.Empty)); }
   }
 }
-'@ 
+'@
 
 # turn audio off
 [Audio]::Mute = $true

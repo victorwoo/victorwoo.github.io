@@ -21,26 +21,26 @@ PowerShell 使我们拥有了一门非常强大的脚本语言。许多产品，
 
 出于演示的目的，我们假设已有以下简单的 C# 代码，作用是获取和设置 SharePoint 中的 Content Deployment 的 `RemoteTimeout` 值：
 
-	using Microsoft.SharePoint.Publishing.Administration; 
-	using System; 
-	
-	namespace StefanG.Tools 
-	{ 
-	    public static class CDRemoteTimeout  
-	    { 
-	        public static void Get() 
-	        { 
+	using Microsoft.SharePoint.Publishing.Administration;
+	using System;
+
+	namespace StefanG.Tools
+	{
+	    public static class CDRemoteTimeout
+	    {
+	        public static void Get()
+	        {
 	            ContentDeploymentConfiguration cdconfig = ContentDeploymentConfiguration.GetInstance();
-	            Console.WriteLine("Remote Timeout: "+cdconfig.RemoteTimeout); 
-	        } 
-	
-	        public static void Set(int seconds) 
-	        { 
-	            ContentDeploymentConfiguration cdconfig = ContentDeploymentConfiguration.GetInstance(); 
+	            Console.WriteLine("Remote Timeout: "+cdconfig.RemoteTimeout);
+	        }
+
+	        public static void Set(int seconds)
+	        {
+	            ContentDeploymentConfiguration cdconfig = ContentDeploymentConfiguration.GetInstance();
 	            cdconfig.RemoteTimeout = seconds;
 	            cdconfig.Update();
-	        } 
-	    } 
+	        }
+	    }
 	}
 
 除了引用 .NET 框架之外，这个工具还引用了两个 SharePoint DLL（*Microsoft.SharePoint.dll* 和 *Microsoft.SharePoint.Publishing.dll*），它们用来存取 SharePoint 的对象模型。为了确保 PowerShell 能正确地生成程序集，我们需要为 `Add-Type` Cmdlet 用 `-ReferencedAssemblies` 参数提供引用信息。
@@ -51,47 +51,47 @@ PowerShell 使我们拥有了一门非常强大的脚本语言。许多产品，
 
 	$Assem = (
 	...add referenced assemblies here...
-	    ) 
-	
-	$Source = @" 
+	    )
+
+	$Source = @"
 	...add C# source code here...
-	"@ 
-	
+	"@
+
 	Add-Type -ReferencedAssemblies $Assem -TypeDefinition $Source -Language CSharp
 
 对于上述的 C# 例子，对应的最终 PowerShell 脚本如下：
 
-	$Assem = ( 
-	    "Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" , 
+	$Assem = (
+	    "Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" ,
 	    "Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-	    ) 
-	
-	$Source = @" 
-	using Microsoft.SharePoint.Publishing.Administration; 
-	using System; 
-	
-	namespace StefanG.Tools 
-	{ 
-	    public static class CDRemoteTimeout  
-	    { 
-	        public static void Get() 
-	        { 
+	    )
+
+	$Source = @"
+	using Microsoft.SharePoint.Publishing.Administration;
+	using System;
+
+	namespace StefanG.Tools
+	{
+	    public static class CDRemoteTimeout
+	    {
+	        public static void Get()
+	        {
 	            ContentDeploymentConfiguration cdconfig = ContentDeploymentConfiguration.GetInstance();
-	            Console.WriteLine("Remote Timeout: "+cdconfig.RemoteTimeout); 
-	        } 
-	         
-	        public static void Set(int seconds) 
-	        { 
-	            ContentDeploymentConfiguration cdconfig = ContentDeploymentConfiguration.GetInstance(); 
+	            Console.WriteLine("Remote Timeout: "+cdconfig.RemoteTimeout);
+	        }
+
+	        public static void Set(int seconds)
+	        {
+	            ContentDeploymentConfiguration cdconfig = ContentDeploymentConfiguration.GetInstance();
 	            cdconfig.RemoteTimeout = seconds;
 	            cdconfig.Update();
-	        } 
-	    } 
-	} 
-	"@ 
-	
-	Add-Type -ReferencedAssemblies $Assem -TypeDefinition $Source -Language CSharp  
-	
+	        }
+	    }
+	}
+	"@
+
+	Add-Type -ReferencedAssemblies $Assem -TypeDefinition $Source -Language CSharp
+
 	[StefanG.Tools.CDRemoteTimeout]::Get()
 	[StefanG.Tools.CDRemoteTimeout]::Set(600)
 

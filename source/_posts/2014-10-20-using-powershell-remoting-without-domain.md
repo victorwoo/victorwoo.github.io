@@ -18,7 +18,7 @@ _适用于 PowerShell 3.0 及以上版本_
 
 要达到上述目的，您需要在启用远程操作的机器上做一些调整。在初始化连接的机器上以管理员权限运行 PowerShell 控制台，键入以下代码：
 
-    PS> Set-Item WSMan:\localhost\Client\TrustedHosts -Value * -Force 
+    PS> Set-Item WSMan:\localhost\Client\TrustedHosts -Value * -Force
 
 如果该路径不可用，您可能需要在该机器上（临时地）启用 PowerShell 远程操作（用 `Enable-PSRemoting –SkipNetworkProfileCheck –Force`）。
 

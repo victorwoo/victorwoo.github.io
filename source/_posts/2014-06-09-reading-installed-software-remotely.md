@@ -16,28 +16,28 @@ tags:
 
     # NOTE: RemoteRegistry Service needs to run on a target system!
     $Hive = 'LocalMachine'
-    
+
     # you can specify as many keys as you want as long as they are all in the same hive
     $Key = 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall', 'SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
-    
+
     # you can specify as many value names as you want
     $Value = 'DisplayName', 'DisplayVersion', 'UninstallString'
-    
+
     # you can specify a remote computer name as long as the RemoteRegistry service runs on the target machine,
     # you have admin permissions on the target, and the firewall does not block you. Default is the local machine:
     $ComputerName = $env:COMPUTERNAME
-    
+
     # add the value "RegPath" which will contain the actual Registry path the value came from (since you can specify more than one key)
     $Value = @($Value) + 'RegPath'
-        
+
     # now for each regkey you specified...
     $Key | ForEach-Object {
       # ...open the hive on the appropriate machine
       $RegHive = [Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey($Hive, $ComputerName)
-      
+
       # ...open the key in that hive...
       $RegKey = $RegHive.OpenSubKey($_)
-      
+
       # ...find names of all subkeys...
       $RegKey.GetSubKeyNames() | ForEach-Object {
         # ...open subkeys...
@@ -45,26 +45,26 @@ tags:
         # ...and read all the requested values from each subkey
         # ...to store them, use Select-Object to create a simple new object
         $returnValue = 1 | Select-Object -Property $Value
-        
+
         $Value | ForEach-Object {
           $returnValue.$_ = $subkey.GetValue($_)
         }
-    
+
         # ...add the current regkey path name
         $returnValue.RegPath = $SubKey.Name
-    
+
         # return the values:
         $returnValue
-    
+
         # close the subkey
         $SubKey.Close()
       }
-      
+
       # close the regkey
       $RegKey.Close()
       # close the hive
       $RegHive.Close()
-    
+
     } | Out-GridView
 
 <!--本文国际来源：[Reading Installed Software Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/reading-installed-software-remotely)-->

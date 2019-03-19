@@ -25,14 +25,14 @@ tags:
 我们假设您需要在您的用户文件夹之下的某个地方找一个名为“test.txt”的文件，并且假设只有一个这个名字的文件。而您只是不知道它放在哪个位置，那么您可以使用 `Get-ChildItem` 和 `-Recurse` 来递归查找所有的文件夹：
 
     Get-ChildItem -Path $home -Filter test.txt -Recurse -ErrorAction SilentlyContinue
-    
+
 当您执行这段代码时，`Get-ChildItem` 最终将找到您的文件——并且继续搜索您的文件夹树，也许要持续几分钟才能找完。因为它不知道是否有其它的文件。
 
 所以，您知道的，如果您事先确定结果的数量，那么试试以下的代码：
 
     Get-ChildItem -Path $home -Filter test.txt -Recurse -ErrorAction SilentlyContinue |
-      Select-Object -First 1 
-    
+      Select-Object -First 1
+
 这一次，`Get-ChildItem` 将会在找到一个文件后立即停止。
 
 <!--本文国际来源：[Save Time With Select-Object -First!](http://community.idera.com/powershell/powertips/b/tips/posts/save-time-with-select-object-first)-->

@@ -20,7 +20,7 @@ tags:
 #requires -Modules ActiveDirectory
 
 
-Search-ADAccount -AccountDisabled 
+Search-ADAccount -AccountDisabled
 Search-ADAccount -AccountExpired
 Search-ADAccount -AccountInactive
 ```

@@ -19,12 +19,12 @@ Google 也知道您在这么做，所以当您从 PowerShell 发送一个查询�
 这段脚本输入一个关键字并返回所有符合搜索关键字，并且大于 2 兆像素的所有图片的原始地址：
 
     $SearchItem = 'PowerShell'
-    
+
     $url = "https://www.google.com/search?q=$SearchItem&espv=210&es_sm=93&source=lnms&tbm=isch&sa=X&tbm=isch&tbs=isz:lt%2Cislt:2mp"
     $browserAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36'
     $page = Invoke-WebRequest -Uri $url -UserAgent $browserAgent
-    $page.Links | 
-      Where-Object { $_.href -like '*imgres*' } | 
-      ForEach-Object { ($_.href -split 'imgurl=')[-1].Split('&')[0]}  
+    $page.Links |
+      Where-Object { $_.href -like '*imgres*' } |
+      ForEach-Object { ($_.href -split 'imgurl=')[-1].Split('&')[0]}
 
 <!--本文国际来源：[Getting Picture URLs from Google Picture Search](http://community.idera.com/powershell/powertips/b/tips/posts/getting-picture-urls-from-google-picture-search)-->

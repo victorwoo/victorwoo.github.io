@@ -24,12 +24,12 @@ tags:
         [int]
         [Parameter(ParameterSetName='number', Position=0)]
         $id,
-    
+
         [string]
         [Parameter(ParameterSetName='text', Position=0)]
         $name
       )
-    
+
       $PSCmdlet.ParameterSetName
       $PSBoundParameters
     }

@@ -23,7 +23,7 @@ tags:
 
 	echo '本脚本用于屏蔽 QQ 对话窗口右上方的广告条。'
 	Read-Host '请关闭所有 QQ，按回车键继续' | Out-Null
-	
+
 	$usersDir = "$($env:AppData)\Tencent\Users\"
 	dir $usersDir -Directory | foreach {
 	    $qq = $_

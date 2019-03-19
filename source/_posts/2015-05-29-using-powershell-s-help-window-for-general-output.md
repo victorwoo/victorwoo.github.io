@@ -26,26 +26,26 @@ PowerShell 给我们带来了一个很棒的窗体，用来显示一小段或者
       (
         [String]
         $Title = 'PowerShell Output',
-    
+
         [String]
         $FindText = '',
-    
+
         [String]
         $ForegroundColor = 'Black',
-    
+
         [String]
         $BackgroundColor = 'White'
       )
-      
+
       # take all pipeline input:
       $allData = @($Input)
-      
+
       if ($allData.Count -gt 0)
       {
         # open window in new thread to keep PS responsive
         $code = {
           param($textToDisplay, $FindText, $Title, $ForegroundColor, $BackgroundColor)
-    
+
           $dialog = (New-Object –TypeName Microsoft.Management.UI.HelpWindow($textToDisplay))
           $dialog.Title = $Title
           $type = $dialog.GetType()
@@ -65,12 +65,12 @@ PowerShell 给我们带来了一个很棒的窗体，用来显示一小段或者
           $method.Invoke($dialog, @($true))
           $dialog.ShowDialog()
         }
-    
+
         $ps = [PowerShell]::Create()
         $newRunspace = [RunSpaceFactory]::CreateRunspace()
         $newRunspace.ApartmentState = 'STA'
         $newRunspace.Open()
-    
+
         $ps.Runspace = $newRunspace
         $null = $ps.AddScript($code).AddArgument(($allData | Format-Table -AutoSize -Wrap | Out-String -Width 100)).AddArgument($FindText).AddArgument($Title).AddArgument($ForegroundColor).AddArgument($BackgroundColor)
         $null = $ps.BeginInvoke()

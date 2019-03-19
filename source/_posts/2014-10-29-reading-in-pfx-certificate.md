@@ -20,11 +20,11 @@ _适用于 PowerShell 所有版本_
 
     $PathToPfxFile = 'C:\temp\test.pfx'
     $PFXPassword = 'test'
-    
+
     Add-Type -AssemblyName System.Security
     $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
     $cert.Import($PathToPfxFile, $PFXPassword, 'Exportable')
-    
+
     $cert
 
 <!--本文国际来源：[Reading In PFX-Certificate](http://community.idera.com/powershell/powertips/b/tips/posts/reading-in-pfx-certificate)-->

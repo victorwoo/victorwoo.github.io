@@ -31,7 +31,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 public class Win32API
     {
-        [DllImport("shell32.dll", EntryPoint="FindExecutable")] 
+        [DllImport("shell32.dll", EntryPoint="FindExecutable")]
 
         public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
 

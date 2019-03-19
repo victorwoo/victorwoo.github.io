@@ -27,7 +27,7 @@ tags:
 
     $list = Get-Process |
       Add-Member -MemberType NoteProperty -Name PC -Value $env:COMPUTERNAME -PassThru
-    
+
     $list | ForEach-Object { 'Process {0} on {1}' -f $_.Name, $_.PC }
 
 <!--本文国际来源：[Adding Additional Information to Objects](http://community.idera.com/powershell/powertips/b/tips/posts/adding-additional-information-to-objects)-->

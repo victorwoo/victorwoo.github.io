@@ -16,9 +16,9 @@ tags:
 	    param ( [string]$program = $(throw "Please specify a program" ),
 	            [string]$argumentString = "",
 	            [switch]$waitForExit )
-	
+
 	    $psi = new-object "Diagnostics.ProcessStartInfo"
-	    $psi.FileName = $program 
+	    $psi.FileName = $program
 	    $psi.Arguments = $argumentString
 	    $psi.Verb = "runas"
 	    $proc = [Diagnostics.Process]::Start($psi)

@@ -19,13 +19,13 @@ WPF (Windows Presentation Foundation) 是一种创建窗体和对话框的技术
     $xaml = @"
     <Window
      xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'>
-    
+
      <Border BorderThickness="20" BorderBrush="Yellow" CornerRadius="9" Background='Red'>
       <StackPanel>
        <Label FontSize="50" FontFamily='Stencil' Background='Red' Foreground='White' BorderThickness='0'>
         System will be rebooted in 15 minutes!
        </Label>
-    
+
        <Label HorizontalAlignment="Center" FontSize="15" FontFamily='Consolas' Background='Red' Foreground='White' BorderThickness='0'>
         Worried about losing data? Talk to your friendly help desk representative and freely share your concerns!
        </Label>
@@ -33,7 +33,7 @@ WPF (Windows Presentation Foundation) 是一种创建窗体和对话框的技术
      </Border>
     </Window>
     "@
-    
+
     $reader = [System.XML.XMLReader]::Create([System.IO.StringReader] $xaml)
     $window = [System.Windows.Markup.XAMLReader]::Load($reader)
     $Window.AllowsTransparency = $True

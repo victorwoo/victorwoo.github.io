@@ -19,7 +19,7 @@ tags:
 例如要以管理员身份创建一个新的文件共享，试试以下代码：
 
 ```powershell
-$share = [wmiclass]"Win32_Share" 
+$share = [wmiclass]"Win32_Share"
 $path = 'c:\logs'
 $name = 'LogShare'
 $maxallowed = 10

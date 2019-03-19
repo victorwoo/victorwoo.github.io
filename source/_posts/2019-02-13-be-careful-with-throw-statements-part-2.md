@@ -26,7 +26,7 @@ function Copy-Log
 }
 
 
-    
+
 PS> Copy-Log
 Doing prerequisites
 Testing whether target path exists
@@ -35,7 +35,7 @@ Target path does not exist
 In Zeile:8 Zeichen:3
 +   throw "Target path does not exist"
 +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Target path does not exist:String) [], RuntimeExceptio 
+    + CategoryInfo          : OperationStopped: (Target path does not exist:String) [], RuntimeExceptio
     n
     + FullyQualifiedErrorId : Target path does not exist
 
@@ -61,7 +61,7 @@ trap {}
 $ErrorActionPreference = "SilentlyContinue"
 Copy-Log
 $ErrorActionPreference = "Continue"
-Copy-Log 
+Copy-Log
 ```
 
 一旦添加了捕获语句，这段代码将会在 throw 语句处跳出，无论 `$ErrorActionPreference` 的设置为什么。您可以在 PowerShell 用户设置脚本中添加一个空白的捕获语句来防止这个 bug，或者重新考虑是否使用 throw 语句。
@@ -86,7 +86,7 @@ function Copy-Log
 
 由于 `return` 语句不受 `$ErrorActionPreference` 的影响，您的代码总是能够退出。让我们做个测试：
 
-```powershell     
+```powershell
 PS> Copy-Log
 Doing prerequisites
 Testing whether target path exists
@@ -96,7 +96,7 @@ In Zeile:1 Zeichen:1
 + Copy-Log
 + ~~~~~~~~
     + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
-    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Copy-Log  
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Copy-Log
 ```
 
 如果将 `$ErrorActionPreference` 设为 SilentlyContinue，错误信息和预期一致地被屏蔽了，但是代码确实退出了：

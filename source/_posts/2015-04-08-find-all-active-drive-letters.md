@@ -15,7 +15,7 @@ tags:
 要快速地获取所有驱动器号，请使用以下代码：
 
     #requires -Version 1
-    
+
     [Environment]::GetLogicalDrives()
 
 执行结果是所有活动的驱动器号：

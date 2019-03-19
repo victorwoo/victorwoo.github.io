@@ -21,16 +21,16 @@ _适用于 PowerShell 所有版本_
 如果您确实需要数据类新信息，那么需要做点额外的事情：
 
     $key = Get-Item -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-    
+
     $key.GetValueNames() |
       ForEach-Object {
         $ValueName = $_
-    
+
         $rv = 1 | Select-Object -Property Name, Type, Value
         $rv.Name = $ValueName
         $rv.Type = $key.GetValueKind($ValueName)
         $rv.Value = $key.GetValue($ValueName)
-        $rv 
+        $rv
       }
 
 <!--本文国际来源：[Reading Registry Values with Type](http://community.idera.com/powershell/powertips/b/tips/posts/reading-registry-values-with-type)-->

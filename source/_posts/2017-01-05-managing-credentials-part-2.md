@@ -17,7 +17,7 @@ tags:
 ```powershell
 $password = 'topsecret!' | ConvertTo-SecureString -AsPlainText -Force
 $username = 'myCompany\myUserName'
-$credential = New-Object -TypeName PSCredential($username, $password) 
+$credential = New-Object -TypeName PSCredential($username, $password)
 
 # use the credential with any cmdlet that exposes the –Credential parameter
 # to log in to remote systems

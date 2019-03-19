@@ -19,7 +19,7 @@ tags:
 ```powershell
 $Path = "$env:temp\export.csv"
 
-Get-Process | 
+Get-Process |
     Export-CSV -NoTypeInformation -UseCulture -Encoding UTF8 -Path $Path
 ```
 

@@ -14,49 +14,49 @@ tags:
 ---
 To find out the path your PowerShell is currently using, simply run Get-Location:
 要查看 PowerShell 的当前路径，只要用 `Get-Location` 命令即可：
-     
+
 ```powershell
     PS> Get-Location
-    
-    Path          
-    ----          
+
+    Path
+    ----
     C:\Users\tobwe
 ```
 
 然而，当前路径不一定指向一个文件系统位置。如果您将位置指向注册表，例如这样：
 
-```powershell     
-    PS> cd hkcu:\ 
-    
+```powershell
+    PS> cd hkcu:\
+
     PS> Get-Location
-    
-    Path  
-    ----  
+
+    Path
+    ----
     HKCU:\
 ```
 
 如果您想知道 PowerShell 当前使用的文件系统路径，而不管当前使用什么 provider，请使用以下代码：
 
-```powershell     
+```powershell
     PS> $ExecutionContext.SessionState.Path
-    
+
     CurrentLocation CurrentFileSystemLocation
     --------------- -------------------------
-    HKCU:\          C:\Users\tobwe           
-    
-    
-    
+    HKCU:\          C:\Users\tobwe
+
+
+
     PS> $ExecutionContext.SessionState.Path.CurrentFileSystemLocation
-    
-    Path          
-    ----          
-    C:\Users\tobwe 
-    
-    
-    PS> Get-Location 
-    
-    Path  
-    ----  
+
+    Path
+    ----
+    C:\Users\tobwe
+
+
+    PS> Get-Location
+
+    Path
+    ----
     HKCU:\
 ```
 

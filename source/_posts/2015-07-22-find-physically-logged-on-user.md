@@ -24,7 +24,7 @@ tags:
             $ComputerName,
             $Credential
         )
-    
+
         Get-WmiObject -Class Win32_ComputerSystem @PSBoundParameters |
         Select-Object -ExpandProperty UserName
     }

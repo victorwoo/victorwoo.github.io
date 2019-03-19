@@ -18,7 +18,7 @@ _适用于所有 PowerShell 版本_
 
     $ldap = '(&(objectClass=computer)(samAccountName=dc*))'
     $searcher = [adsisearcher]$ldap
-    
+
     $searcher.FindAll()
 
 这段代码将查找所有以“dc”开头的计算机账户。`$ldap` 可以是任何合法的 LDAP 查询语句。要查找用户，请将“computer”替换为“user”。

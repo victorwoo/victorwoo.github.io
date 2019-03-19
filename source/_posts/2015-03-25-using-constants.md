@@ -25,7 +25,7 @@ PowerShell 中的变量是不稳定的。您可以覆盖或是删除它们——
 您可以在您的主配置文件路径上定义常量，例如：
 
     PS> $profile.AllUsersAllHosts
-    C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1                                                 
+    C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1
 
 如果该文件存在，PowerShell 将会在任何实例启动之前先执行它。如果您在此定义了常量——例如您的公司名、重要的服务器列表等——该信息将在所有 PowerShell 宿主内有效，而且无法被覆盖。
 

@@ -22,7 +22,7 @@ tags:
         [String]
         $CmdletName
       )
-    
+
       process
       {
         $command = Get-Command -Name $CmdletName -CommandType Cmdlet
@@ -36,13 +36,13 @@ tags:
             $context = $field.GetValue($ExecutionContext)
             $property = [Management.Automation.Cmdlet].GetProperty('Context', $flags)
             $property.SetValue($cmdlet, $context, $null)
-    
+
             $cmdlet.GetDynamicParameters()
           }
         }
       }
     }
-    
+
     Get-CmdletDynamicParameter -CmdletName Get-ChildItem
 
 该函数使用一些黑客的办法来暴露动态参数，这种方法是受到 Dave Wyatt 的启发。请参见他的文章 [https://davewyatt.wordpress.com/2014/09/01/proxy-functions-for-cmdlets-with-dynamic-parameters/](https://davewyatt.wordpress.com/2014/09/01/proxy-functions-for-cmdlets-with-dynamic-parameters/)。

@@ -16,20 +16,20 @@ tags:
 
 ```powershell
 PS> & "$home\desktop\Rick.ps1"
-& : File C:\Users\tobwe\desktop\Rick.ps1 cannot be loaded. The file C:\Users\tobwe\desktop\Rick.ps1 is not digitally signed. You cannot run this script on the 
-current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at 
+& : File C:\Users\tobwe\desktop\Rick.ps1 cannot be loaded. The file C:\Users\tobwe\desktop\Rick.ps1 is not digitally signed. You cannot run this script on the
+current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at
 https:/go.microsoft.com/fwlink/?LinkID=135170.
 At line:1 char:3
 + & "$home\desktop\Rick.ps1"
 +   ~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : SecurityError: (:) [], PSSecurityException
-    + FullyQualifiedErrorId : UnauthorizedAccess 
+    + FullyQualifiedErrorId : UnauthorizedAccess
 ```
 
 通常，当执行策略没有设置，或者设成 "RemoteSigned" 的时候会出现这种情况。这是普通 PowerShell 用户推荐的设置。以下是启用设置的方法：
 
 ```powershell
-PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned  
+PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
 当启用以后，您可以运行任何本地脚本文件，或域之内的网络文件，但您不再能运行标记为“下载”的脚本，或从您域之外的网络位置下载的脚本。
@@ -43,7 +43,7 @@ PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 * 用不会标记下载文件的浏览器来下载，或用 `Invoke-WebRequest` 来下载：
 
 ```powershell
-PS> Invoke-WebRequest -Uri "http://bit.ly/e0Mw9w" -UseBasicParsing -OutFile  "$home\Desktop\Rick.ps1"  
+PS> Invoke-WebRequest -Uri "http://bit.ly/e0Mw9w" -UseBasicParsing -OutFile  "$home\Desktop\Rick.ps1"
 ```
 
 `Invoke-WebRequest` 不会对下载的文件做标记，而且允许通过执行策略，这是挺令人意外的行为。

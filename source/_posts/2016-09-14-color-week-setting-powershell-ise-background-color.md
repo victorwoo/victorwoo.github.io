@@ -23,14 +23,14 @@ PowerShell ISE 的控制台的背景色也可以用这种方法，不过会产�
 ```powershell
 PS C:\> $psise.Options.ConsolePaneForegroundColor =
 [System.Windows.Media.Colors]::LightGray
- 
+
 PS C:\> $psise.Options.ConsolePaneBackgroundColor =
 [System.Windows.Media.Colors]::DarkGreen
 
 PS C:\>
 PS C:\>"Hello"
 Hello
- 
+
 PS C:\>
 ```
 
@@ -40,7 +40,7 @@ PS C:\>
 ```powershell
 PS C:\>$psise.Options.ConsolePaneTextBackgroundColor =
 [System.Windows.Media.Colors]::DarkGreen
- 
+
 PS C:\> "Hello"
 Hello
 ```

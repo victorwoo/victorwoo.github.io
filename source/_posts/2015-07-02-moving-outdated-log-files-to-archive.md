@@ -19,23 +19,23 @@ tags:
     #requires -Version 1
     # how old (in days) would obsolete files be
     $Days = 14
-    
+
     # where to look for obsolete files
     $Path = $env:windir
     $Filter = '*.log'
-    
+
     # where to move obsolete files
     $DestinationPath = 'c:\archive'
-    
+
     # make sure destination folder exists
     $destinationExists = Test-Path -Path $DestinationPath
     if (!$destinationExists)
     {
         $null = New-Item -Path $DestinationPath -ItemType Directory
     }
-    
+
     $cutoffDate = (Get-Date).AddDays(-$Days)
-    
+
     Get-ChildItem -Path $Path -Filter $Filter -Recurse -ErrorAction SilentlyContinue |
     Where-Object -FilterScript {
         $_.LastWriteTime -lt $cutoffDate

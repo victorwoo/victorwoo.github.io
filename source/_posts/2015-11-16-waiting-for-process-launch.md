@@ -22,11 +22,11 @@ PowerShell 内置了等待一个进程或多个进程结束的功能：只需要
         param
         (
             $Name = 'notepad',
-    
+
             [Switch]
             $IgnoreAlreadyRunningProcesses
         )
-    
+
         if ($IgnoreAlreadyRunningProcesses)
         {
             $NumberOfProcesses = (Get-Process -Name $Name -ErrorAction SilentlyContinue).Count
@@ -35,15 +35,15 @@ PowerShell 内置了等待一个进程或多个进程结束的功能：只需要
         {
             $NumberOfProcesses = 0
         }
-    
-    
+
+
         Write-Host "Waiting for $Name" -NoNewline
         while ( (Get-Process -Name $Name -ErrorAction SilentlyContinue).Count -eq $NumberOfProcesses )
         {
             Write-Host '.' -NoNewline
             Start-Sleep -Milliseconds 400
         }
-    
+
         Write-Host ''
     }
 

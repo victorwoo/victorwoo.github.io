@@ -20,11 +20,11 @@ tags:
       (
         $CommandLine
       )
-      
+
       $result = 1 | Select-Object -Property Command, Argument
-    
-      if ($CommandLine.StartsWith('"')) 
-      { 
+
+      if ($CommandLine.StartsWith('"'))
+      {
         $index = $CommandLine.IndexOf('"', 1)
         if ($index -gt 0)
         {
@@ -44,9 +44,9 @@ tags:
         }
       }
     }
-    
-    
-    
+
+
+
     Get-Argument -CommandLine 'notepad c:\test'
     Get-Argument -CommandLine '"notepad.exe" c:\test'
 
@@ -60,7 +60,7 @@ tags:
       Where-Object { $_.CommandLine } |
       ForEach-Object {
         Get-Argument -CommandLine $_.CommandLine
-      }  
+      }
 
 以下是结果的样子：
 
@@ -75,6 +75,6 @@ tags:
       } |
       Group-Object -Property Command |
       Sort-Object -Property Count -Descending |
-      Out-GridView 
+      Out-GridView
 
 <!--本文国际来源：[Getting Arguments from Command Line](http://community.idera.com/powershell/powertips/b/tips/posts/getting-arguments-from-command-line)-->

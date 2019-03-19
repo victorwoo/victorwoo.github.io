@@ -20,8 +20,8 @@ _适用于 PowerShell 所有版本_
 
     $originalText = 'c:\windows\test\file.txt'
     $splitText = [RegEx]::Escape('\')
-    
-    $originalText -split $splitText 
+
+    $originalText -split $splitText
 
 结果类似如下，并且它是一个数组：
 
@@ -29,15 +29,15 @@ _适用于 PowerShell 所有版本_
     c:
     windows
     test
-    file.txt 
+    file.txt
 
 我们可以将它保存到一个变量中，然后存取单个的数组元素。
 
     PS> $parts = $originalText -split $splitText
-    
+
     PS> $parts[0]
     c:
-    
+
     PS> $parts[-1]
     file.txt
 

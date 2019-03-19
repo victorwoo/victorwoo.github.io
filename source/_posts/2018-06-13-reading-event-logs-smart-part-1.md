@@ -21,9 +21,9 @@ Get-EventLog -LogName Security -InstanceId 4624 |
 
 结果大概类似这样：
 
-    25.04.2018 07:48:41 An account was successfully logged on....                                     
-    25.04.2018 07:48:40 An account was successfully logged on....                                     
-    24.04.2018 18:18:17 An account was successfully logged on.... 
+    25.04.2018 07:48:41 An account was successfully logged on....
+    25.04.2018 07:48:40 An account was successfully logged on....
+    24.04.2018 18:18:17 An account was successfully logged on....
     ...
 
 这并不是很直观，因为 PowerShell 缩短了输出内容。在类似这样的情况下，您可能需要将结果用管道传给 `Format-List`：
@@ -46,21 +46,21 @@ PS> Get-EventLog -LogName Security -InstanceId 4624 |
 
 TimeGenerated : 25.05.2018 11:39:29
 Message       : An account was successfully logged on.
-                
+
                 Subject:
                     Security ID:		S-1-5-18
                     Account Name:		DESKTOP-7AAMJLF$
                     Account Domain:		WORKGROUP
                     Logon ID:		0x3e7
-                
+
                 Logon Information:
                     Logon Type:		5
                     Restricted Admin Mode:	-
                     Virtual Account:		%%1843
                     Elevated Token:		%%1842
-                
+
                 Impersonation Level:		%%1833
-                
+
                 New Logon:
                     Security ID:		S-1-5-18
                     Account Name:		SYSTEM
@@ -70,54 +70,54 @@ Message       : An account was successfully logged on.
                     Network Account Name:	-
                     Network Account Domain:	-
                     Logon GUID:		{00000000-0000-0000-0000-000000000000}
-                
+
                 Process Information:
                     Process ID:		0x328
                     Process Name:		C:\Windows\System32\services.exe
-                
+
                 Network Information:
                     Workstation Name:	-
                     Source Network Address:	-
                     Source Port:		-
-                
+
                 Detailed Authentication Information:
-                    Logon Process:		Advapi  
+                    Logon Process:		Advapi
                     Authentication Package:	Negotiate
                     Transited Services:	-
                     Package Name (NTLM only):	-
                     Key Length:		0
-                
-                This event is generated when a logon session is created. It is 
+
+                This event is generated when a logon session is created. It is
                 generated on the computer that was accessed.
-                
-                The subject fields indicate the account on the local system 
-                which requested the logon. This is most commonly a service 
-                such as the Server service, or a local process such as 
+
+                The subject fields indicate the account on the local system
+                which requested the logon. This is most commonly a service
+                such as the Server service, or a local process such as
                 Winlogon.exe or Services.exe.
-                
-                The logon type field indicates the kind of logon that 
-                occurred. The most common types are 2 (interactive) and 3 
+
+                The logon type field indicates the kind of logon that
+                occurred. The most common types are 2 (interactive) and 3
                 (network).
-                
-                The New Logon fields indicate the account for whom the new 
+
+                The New Logon fields indicate the account for whom the new
                 logon was created, i.e. the account that was logged on.
-                
-                The network fields indicate where a remote logon request 
-                originated. Workstation name is not always available and may 
+
+                The network fields indicate where a remote logon request
+                originated. Workstation name is not always available and may
                 be left blank in some cases.
-                
-                The impersonation level field indicates the extent to which a 
+
+                The impersonation level field indicates the extent to which a
                 process in the logon session can impersonate.
-                
-                The authentication information fields provide detailed 
+
+                The authentication information fields provide detailed
                 information about this specific logon request.
-                    - Logon GUID is a unique identifier that can be used to 
+                    - Logon GUID is a unique identifier that can be used to
                 correlate this event with a KDC event.
-                    - Transited services indicate which intermediate services 
+                    - Transited services indicate which intermediate services
                 have participated in this logon request.
-                    - Package name indicates which sub-protocol was used among 
+                    - Package name indicates which sub-protocol was used among
                 the NTLM protocols.
-                    - Key length indicates the length of the generated session 
+                    - Key length indicates the length of the generated session
                 key. This will be 0 if no session key was requested.
 ```
 
@@ -143,7 +143,7 @@ Get-EventLog -LogName Security -InstanceId 4624 |
 当您运行这一小段代码时，它返回只包含您需要的、美观的验证信息：
 
     12.05.2018 17:38:58 SYSTEM\NT-AUTORITÄT                     Negotiate C:\Windows\System32\services.exe
-    12.05.2018 17:38:58 tobweltner@zumsel.local\InternalAccount Negotiate C:\Windows\System32\svchost.exe 
+    12.05.2018 17:38:58 tobweltner@zumsel.local\InternalAccount Negotiate C:\Windows\System32\svchost.exe
     12.05.2018 17:38:58 SYSTEM\NT-AUTORITÄT                     Negotiate C:\Windows\System32\services.exe
     12.05.2018 17:38:58 SYSTEM\NT-AUTORITÄT                     Negotiate C:\Windows\System32\services.exe
     12.05.2018 17:38:53 SYSTEM\NT-AUTORITÄT                     Negotiate C:\Windows\System32\services.exe

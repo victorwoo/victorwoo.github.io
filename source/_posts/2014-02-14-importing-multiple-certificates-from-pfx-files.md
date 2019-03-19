@@ -18,7 +18,7 @@ tags:
 
 	$pfxpath = 'C:\PathToPfxFile\testcert.pfx'
 	$password = 'topsecret'
-	
+
 	Add-Type -AssemblyName System.Security
 	$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
 	$cert.Import($pfxpath, $password, 'Exportable')

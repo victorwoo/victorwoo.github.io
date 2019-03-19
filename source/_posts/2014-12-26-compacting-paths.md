@@ -18,44 +18,44 @@ _适用于 PowerShell 2.0 及以上版本_
 
 以下例子也演示了如何在 PowerShell 脚本中使用 C# 代码：
 
-    $newType = @' 
+    $newType = @'
     using System;
     using System.Text;
     using System.Runtime.InteropServices;
-    
+
     namespace WindowsAPILib
     {
         public class Helper
         {
             [DllImport("shlwapi.dll", CharSet = CharSet.Auto, SetLastError = true)]
             internal static extern bool PathCompactPathEx(System.Text.StringBuilder pszOut, string pszSrc, Int32 cchMax, Int32 dwFlags);
-    
+
             public static string CompactPath(string Path, int DesiredLength)
             {
                 StringBuilder sb = new StringBuilder(260);
                 if (PathCompactPathEx(sb, Path, DesiredLength + 1, 0))
                 { return sb.ToString(); }
-                else 
+                else
                 { return Path; }
             }
         }
     }
     '@
-    
-    Add-Type -TypeDefinition $newType 
+
+    Add-Type -TypeDefinition $newType
 
 当您执行了该代码，就创建了一个名为 `WindowsAPILib` 的新的 .NET 类型，从而得到一个新的名为 `CompactPath` 的新的静态方法。您现在可以这样的使用：
 
-     
-    PS> $pshome 
+
+    PS> $pshome
     C:\Windows\System32\WindowsPowerShell\v1.0
-    
+
     PS> [WindowsAPILib.Helper]::CompactPath($pshome, 12)
     C:\W...\v1.0
-    
+
     PS> [WindowsAPILib.Helper]::CompactPath($pshome, 18)
     C:\Windows...\v1.0
-    
+
     PS> [WindowsAPILib.Helper]::CompactPath($pshome, 22)
     C:\Windows\Sys...\v1.0
 

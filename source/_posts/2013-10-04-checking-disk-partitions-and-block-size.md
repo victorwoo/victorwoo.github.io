@@ -14,8 +14,8 @@ tags:
 ---
 WMI 是一个装满信息的宝库。以下这行代码将读取本地分区以及它们的数据块大小信息：
 
-	Get-WmiObject -Class Win32_Diskpartition  | 
-	  Select-Object -Property __Server, Caption, BlockSize 
+	Get-WmiObject -Class Win32_Diskpartition  |
+	  Select-Object -Property __Server, Caption, BlockSize
 
 使用 `Get-WmiObject` 的 `-ComputerName` 参数可以对一台或多台机器远程执行同样的操作。
 

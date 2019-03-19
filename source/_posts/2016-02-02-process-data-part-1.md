@@ -19,7 +19,7 @@ tags:
 ```powershell
 #requires -Version 2
 function Process-Data
-{  
+{
   param  (
     [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
     [Object[]]
@@ -28,7 +28,7 @@ function Process-Data
   process  {
     foreach ($element in $Object)
     {
-      "Processing received element $element..."    
+      "Processing received element $element..."
     }
   }
 }
@@ -44,7 +44,7 @@ PS C:\> Process-Data -Object 1,2,3,4
 Processing received element 1...
 Processing received element 2...
 Processing received element 3...
-Processing received element 4... 
+Processing received element 4...
 ```
 
 您也可以通过管道传送信息：
@@ -54,7 +54,7 @@ PS C:\> 1..4 | Process-Data
 Processing received element 1...
 Processing received element 2...
 Processing received element 3...
-Processing received element 4... 
+Processing received element 4...
 ```
 
 <!--本文国际来源：[Process Data (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/processing-data-part-1)-->

@@ -16,7 +16,7 @@ _适用于 PowerShell 所有版本_
 
 假设您的系统启用了 EFS (Encrypting File System)，并且您想将文件保存到一个 NTFS 盘中，那么以下是加密以及确保只有您可以读取该文件的方法：
 
-    (Get-Item -Path 'C:\path..to..some..file.txt').Encrypt() 
+    (Get-Item -Path 'C:\path..to..some..file.txt').Encrypt()
 
 如果加密成功，那么在 explorer.exe 中将会显示为绿色而不是平常的黑色。用 `Decrypt()` 代替 `Encrypt()` 来撤销加密。
 

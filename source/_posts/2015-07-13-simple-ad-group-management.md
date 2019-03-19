@@ -17,17 +17,17 @@ tags:
     #requires -Version 1 -Modules ActiveDirectory
     # create new AD group
     New-ADGroup -DisplayName PowerShellGurus -GroupScope DomainLocal -Name PSGurus
-    
+
     # get group
     Get-ADGroup -Identity PSGurus -Credential $cred -Server 172.16.14.53
-    
-    
+
+
     # select users by some criteria
     $newMembers = Get-ADUser -Filter 'Name -like "User*"'
-    
+
     # add them to new AD group
     Add-ADGroupMember -Identity 'PSGurus' -Members $newMembers
-    
+
     # list members of group
     Get-ADGroupMember -Identity PSGurus
 

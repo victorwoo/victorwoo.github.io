@@ -18,15 +18,15 @@ _适用于所有 PowerShell 版本_
 
 以下是一个有趣的例外情况，它在某些场景中较为适用。尽管返回多个信息就可以了，并且要确保将结果赋值给多个变量：
 
-    function Get-MultipleData 
+    function Get-MultipleData
     {
       Get-Date
       'Hello'
       1+4
     }
-    
+
     $date, $text, $result = Get-MultipleData
-    
+
     "The date is $date"
     "The text was $text"
     "The result is $result"

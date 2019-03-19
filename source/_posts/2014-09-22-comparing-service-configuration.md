@@ -18,15 +18,15 @@ _适用于 PowerShell 3.0 或更高版本_
 
     $Server1 = 'myServer1'
     $Server2 = 'someOtherServer'
-    
-    $services1 = Invoke-Command { Get-Service } -ComputerName $Server1 | 
+
+    $services1 = Invoke-Command { Get-Service } -ComputerName $Server1 |
       Sort-Object -Property Name, Status
-    
-    $services2 = Invoke-Command { Get-Service } -ComputerName $Server2 | 
+
+    $services2 = Invoke-Command { Get-Service } -ComputerName $Server2 |
       Sort-Object -Property Name, Status
-    
+
     Compare-Object -ReferenceObject $services1 -DifferenceObject $services2 -Property Name, Status -PassThru |
-      Sort-Object -Property Name 
+      Sort-Object -Property Name
 
 得到的结果是服务配置差异的清单。
 

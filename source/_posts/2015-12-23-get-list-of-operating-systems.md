@@ -15,14 +15,14 @@ tags:
 如果您的老板需要一份您 AD 中所有计算机的操作系统清单，这也许是个好办法：
 
     #requires -Version 1 -Modules ActiveDirectory
-    
+
     $max = 100
-    
+
     $os = Get-ADComputer -Filter * -Properties OperatingSystem -ResultPageSize $max |
     Group-Object -Property OperatingSystem -NoElement |
     Select-object -ExpandProperty Name |
     ForEach-Object { '"{0}"' -f $_ }
-    
+
     $list = $os -join ','
     $list
     # copy list to clipboard

@@ -18,7 +18,7 @@ PowerShell 提供很多种方式来连接到 SMB 文件共享。以下是三种�
 # adjust path to point to your file share
 $UNCPath = '\\server\share'
 
-net use * $UNCPath 
+net use * $UNCPath
 New-PSDrive -Name y -PSProvider FileSystem -Root $UNCPath -Persist
 New-SmbMapping -LocalPath 'x:' -RemotePath  $UNCPath
 ```

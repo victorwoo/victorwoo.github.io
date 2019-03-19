@@ -19,19 +19,19 @@ _适用于 PowerShell 2.0 及以上版本_
     # find first available WAV file in Windows folder
     $WAVPath = Get-ChildItem -Path $env:windir -Filter *.wav -Recurse -ErrorAction SilentlyContinue |
       Select-Object -First 1 -ExpandProperty FullName
-    
-    
+
+
     # load file and play it
-    
+
     $player = New-Object Media.SoundPlayer $WAVPath
     $player.PlayLooping()
-    
-    1..100 | ForEach-Object { 
+
+    1..100 | ForEach-Object {
       Write-Progress -Activity 'Doing Something. Hang in' -Status $_ -PercentComplete $_
       Start-Sleep -MilliSeconds (Get-Random -Minimum 300 -Maximum 1300)
       }
     $player.Stop()
-    
+
 
 这个脚本工作是正常的——除非您把它中断，例如按下 `CTRL+C`。如果按下这个组合键，脚本立即停止执行，并且 `$player.Stop()` 没有机会执行所以没有机会停止声音。
 
@@ -40,23 +40,23 @@ _适用于 PowerShell 2.0 及以上版本_
     # find first available WAV file in Windows folder
     $WAVPath = Get-ChildItem -Path $env:windir -Filter *.wav -Recurse -ErrorAction SilentlyContinue |
     Select-Object -First 1 -ExpandProperty FullName
-    
-    
+
+
     # load file and play it
-    
+
     $player = New-Object Media.SoundPlayer $WAVPath
-    
+
     try
     {
-    
+
       $player.PlayLooping()
-      
-      1..100 | ForEach-Object { 
+
+      1..100 | ForEach-Object {
         Write-Progress -Activity 'Doing Something' -Status $_ -PercentComplete $_
         Start-Sleep -MilliSeconds (Get-Random -Minimum 300 -Maximum 1300)
       }
     }
-    
+
     finally
     {
       $player.Stop()

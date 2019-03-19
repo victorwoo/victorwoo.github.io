@@ -15,11 +15,11 @@ tags:
 在前一个技能中我们演示了如何读取和改变 Lenovo 计算机的 BIOS 设置。例如，以下代码禁止 WakeOnLan：
 
 ```powershell
-#requires -RunAsAdministrator  
+#requires -RunAsAdministrator
 
 $currentSetting = Get-WmiObject -Class Lenovo_SetBiosSetting -Namespace root\wmi
 $currentSetting.SetBiosSetting('WakeOnLAN,Disable').return
-    
+
 $SaveSettings = Get-WmiObject -Class Lenovo_SaveBiosSettings -Namespace root\wmi
 $SaveSettings.SaveBiosSettings().return
 ```
@@ -29,10 +29,10 @@ $SaveSettings.SaveBiosSettings().return
 ```powershell
 #requires -RunAsAdministrator
 $BIOSPassword = "topSecret"
-    
+
 $currentSetting = Get-WmiObject -Class Lenovo_SetBiosSetting -Namespace root\wmi
 $currentSetting.SetBiosSetting("WakeOnLAN,Disable,$BIOSPassword,ascii,us").return
-    
+
 $SaveSettings = Get-WmiObject -Class Lenovo_SaveBiosSettings -Namespace root\wmi
 $SaveSettings.SaveBiosSettings("$BIOSPassword,ascii,us").return
 ```

@@ -18,7 +18,7 @@ PowerShell 提供了 `Get-TimeZone` 命令，能返回所有定义过的时区�
 $isSummer = (Get-Date).IsDaylightSavingTime()
 
 
-Get-TimeZone -ListAvailable | ForEach-Object { 
+Get-TimeZone -ListAvailable | ForEach-Object {
     $dateTime = [DateTime]::UtcNow + $_.BaseUtcOffset
     $cities = $_.DisplayName.Split(')')[-1].Trim()
     if ($isSummer -and $_.SupportsDaylightSavingTime)
@@ -30,7 +30,7 @@ Get-TimeZone -ListAvailable | ForEach-Object {
 ```
 
 结果类似如下：
-     
+
     Dateline Standard Time         : 18:41h ()
     UTC-11                         : 19:41h (Coordinated Universal Time-11)
     Aleutian Standard Time         : 21:41h (Aleutian Islands)

@@ -20,20 +20,20 @@ LDAP 查询条件越明确，查询速度就越快，占用的资源就越少，
 
 	# get all users with a SamAccountName that starts with "a"
 	$searcher = [ADSISearcher]"(&(objectClass=User)(sAMAccountName=a*))"
-	
+
 	# see how long this takes
 	$result = Measure-Command {
-	  $all = $searcher.FindAll() 
+	  $all = $searcher.FindAll()
 	  $found = $all.Count
 	}
-	
+
 	$seconds = $result.TotalSeconds
-	
+
 	"The search returned $found objects and took $sec seconds."
 
 然后使用这行来代替上面的代码：
 
-	$searcher = [ADSISearcher]"(&(sAMAccountType=$(0x30000000))(sAMAccountName=a*))" 
+	$searcher = [ADSISearcher]"(&(sAMAccountType=$(0x30000000))(sAMAccountName=a*))"
 
 当您换成这行代码以后，查询速度显著提升了。并且结果更清晰。这是因为普通用户账户和计算机账户的 SamAccountType 不同：
 

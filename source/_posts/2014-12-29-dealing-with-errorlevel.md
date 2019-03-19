@@ -20,13 +20,13 @@ _适用于 PowerShell 所有版本_
 
     ping 1.2.3.4 -n 1 -w 500
     $result1 = $LASTEXITCODE
-    
+
     ping 127.0.0.1 -n 1 -w 500
     $result2 = $LASTEXITCODE
-    
+
     $result1
     $result2
-    
+
     if ($result1 -eq 0 -and $result2 -eq 0)
     {
       exit 0
@@ -34,7 +34,7 @@ _适用于 PowerShell 所有版本_
     else
     {
       exit 1
-    } 
+    }
 
 在这个例子里，代码中 ping 了两个 IP 地址。第一个调用失败了，第二个调用成功了。该脚本将 `$LASTEXITCODE` 的返回值保存在两个变量里。
 

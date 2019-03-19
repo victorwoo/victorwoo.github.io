@@ -15,9 +15,9 @@ tags:
 要了解某个脚本占用内存的大约值，或是当您将结果存入变量时 PowerShell 写入多少内存，以下是一个辅助函数：
 
     #requires -Version 2
-    
+
     $script:last_memory_usage_byte = 0
-    
+
     function Get-MemoryUsage
     {
       $memusagebyte = [System.GC]::GetTotalMemory('forcefullcollection')
@@ -34,7 +34,7 @@ tags:
         $difftext = ", $sign$diffbytes"
       }
       Write-Host -Object ('Memory usage: {0:n1} MB ({1:n0} Bytes{2})' -f  $memusageMB, $memusagebyte, $difftext)
-    
+
       # save last value in script global variable
       $script:last_memory_usage_byte = $memusagebyte
     }

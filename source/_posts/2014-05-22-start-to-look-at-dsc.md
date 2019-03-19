@@ -30,9 +30,9 @@ tags:
         }
       }
     }
-    
+
     MyConfig -MachineName $env:computername -OutputPath c:\dsc
-    Start-DscConfiguration -Path c:\dsc -Wait 
+    Start-DscConfiguration -Path c:\dsc -Wait
 
 配置项“MyConfig”使用了“Registry”资源来确保指定的注册表项存在。您可以在 DSC 脚本中使用更多的资源，例如增加（或删除）本地用户或文件，解压一个 MSI 包或 ZIP 文件，或启动/停止一个服务等等。
 

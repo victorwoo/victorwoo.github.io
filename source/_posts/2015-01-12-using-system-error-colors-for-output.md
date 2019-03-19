@@ -18,7 +18,7 @@ _适用于 PowerShell 所有版本_
 
     PS> Write-Warning -Message 'This  is a warning'
     WARNING: This is a warning
-     
+
     PS> Write-Error -Message  'Something went wrong'
     Write-Error -Message 'Something went wrong'  : Something went wrong
         +  CategoryInfo          : NotSpecified: (:)  [Write-Error], WriteErrorException
@@ -31,17 +31,17 @@ _适用于 PowerShell 所有版本_
 
 警告和错误的颜色可以通过这种方式配置：
 
-      
+
     PS>  $host.UI.WriteErrorLine('Something went wrong...')
     Something went wrong...
-    
+
     PS> $host.PrivateData.ErrorBackgroundColor  = 'White'
-    
+
     PS>  $host.UI.WriteErrorLine('Something went wrong...')
     Something  went wrong...
-    
+
     PS> $host.PrivateData
-    
+
     (...)
     ErrorForegroundColor                      : #FFFF0000
     ErrorBackgroundColor                      : #FFFFFFFF

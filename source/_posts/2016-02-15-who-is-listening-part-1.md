@@ -18,7 +18,7 @@ tags:
 
 ```powershell
 #requires -Version 2
-NETSTAT.EXE -anop tcp| 
+NETSTAT.EXE -anop tcp|
 Select-Object -Skip  4|
 ForEach-Object -Process {
   [regex]::replace($_.trim(),'\s+',' ')
@@ -37,27 +37,27 @@ Format-List
 
     src     : 0.0.0.0:135
     state   : LISTEN
-    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 
+    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service,
               AdobeIPCBroker...}
-    
+
     src     : 0.0.0.0:445
     state   : LISTEN
-    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 
+    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service,
               AdobeIPCBroker...}
-    
+
     src     : 0.0.0.0:5985
     state   : LISTEN
-    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 
+    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service,
               AdobeIPCBroker...}
-    
+
     src     : 0.0.0.0:7680
     state   : LISTEN
-    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 
+    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service,
               AdobeIPCBroker...}
-    
+
     src     : 0.0.0.0:7779
     state   : LISTEN
-    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service, 
+    process : {Adobe CEF Helper, Adobe CEF Helper, Adobe Desktop Service,
               AdobeIPCBroker...}
 
 <!--本文国际来源：[Who Is Listening? (Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/who-is-listening-part-1)-->

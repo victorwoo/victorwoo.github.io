@@ -16,10 +16,10 @@ tags:
 
 这引出一个问题：当您使用嵌套的循环时，这些语句影响了哪层循环？缺省情况下，“`Continue`”针对的是内层的循环，但是通过使用标签，您可以使“`Continue`”和“`Break`”指向外层循环。
 
-    :outer 
+    :outer
     Foreach ($element in (1..10))
     {
-      for ($x = 1000; $x -lt 1500; $x += 100) 
+      for ($x = 1000; $x -lt 1500; $x += 100)
       {
         "Frequency $x Hz"
         [Console]::Beep($x, 500)

@@ -36,7 +36,7 @@ $yesterday
 ```
 PS C:\> [Timespan]::FromDays(1)
 
-​    
+​
 Days              : 1
 Hours             : 0
 Minutes           : 0

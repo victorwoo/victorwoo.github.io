@@ -15,13 +15,13 @@ tags:
 要通过当前的域验证凭据（用户名和密码），您可以使用这段代码：
 
     #requires -Version 1
-    
+
     $username = 'test\user'
     $password = 'topSecret'
-    
+
     $root = "LDAP://" + ([ADSI]"").distinguishedName
     $Domain = New-Object System.DirectoryServices.DirectoryEntry($root, $username, $password)
-    
+
     if ($Domain.Name -eq $null)
     {
       Write-Warning 'Credentials incorrect, or computer is not a domain member.'
@@ -30,7 +30,7 @@ tags:
     {
       Write-Host 'Credentials accepted.'
     }
-    
+
 
 总的来说，该脚本首先确认当前域名，然后用提供的凭据来获取根元素。
 

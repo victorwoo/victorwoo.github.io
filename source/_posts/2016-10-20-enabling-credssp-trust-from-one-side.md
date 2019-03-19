@@ -17,7 +17,7 @@ tags:
 这并不意味着您必须物理接触那台服务器。如果您想在您的计算机和任何一台服务器（假设那台服务器上启用了 PowerShell 远程连接）建立一个 CredSSP 信任关系，只需要做这些：
 
 ```powershell
-#requires -Version 2.0 -RunAsAdministrator  
+#requires -Version 2.0 -RunAsAdministrator
 
 # this is the server you want to communicate with using CredSSP
 # the server needs to have PowerShell remoting enabled already

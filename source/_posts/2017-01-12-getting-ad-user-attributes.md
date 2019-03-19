@@ -16,7 +16,7 @@ tags:
 
 要获取所有 AD 用户的列表，以及他们的备注和描述字段，请使用这段代码：
 
-    #requires -Modules ActiveDirectory 
+    #requires -Modules ActiveDirectory
     Get-ADUser -Filter * -Properties Description, Info
 
 如果你不知道所有可用属性的名字，请使用“*”代替，来获取所有可用的属性。

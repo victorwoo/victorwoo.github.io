@@ -23,7 +23,7 @@ _适用于 Windows 7/Server 2008 R2_
     else
     {
         '32-bit'
-    } 
+    }
 
 不过这并不会告诉您操作系统的类型。这是由于 PowerShell 脚本可以在 64 位机器中运行在 32 位进程里。
 
@@ -36,7 +36,7 @@ _适用于 Windows 7/Server 2008 R2_
     else
     {
         '32-bit'
-    } 
+    }
 
 而且，`Environment` 类也可以检查您的进程类型：
 

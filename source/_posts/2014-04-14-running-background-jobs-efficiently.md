@@ -19,34 +19,34 @@ tags:
 以下是一个用 PowerShell 线程功能，运行两个后台线程和一个前台线程的例子。为了使任务真正长时间运行，我们为每个任务在业务代码之外使用了 `Start-Sleep` 命令：
 
     $start = Get-Date
-    
+
     $task1 = { Start-Sleep -Seconds 4; Get-Service }
     $task2 = { Start-Sleep -Seconds 5; Get-Service }
     $task3 = { Start-Sleep -Seconds 3; Get-Service }
-    
+
     # run 2 in separate threads, 1 in the foreground
     $thread1 = [PowerShell]::Create()
     $job1 = $thread1.AddScript($task1).BeginInvoke()
-    
+
     $thread2 = [PowerShell]::Create()
     $job2 = $thread2.AddScript($task2).BeginInvoke()
-      
+
     $result3 = Invoke-Command -ScriptBlock $task3
-    
+
     do { Start-Sleep -Milliseconds 100 } until ($job1.IsCompleted -and $job2.IsCompleted)
-    
+
     $result1 = $thread1.EndInvoke($job1)
     $result2 = $thread2.EndInvoke($job2)
-    
+
     $thread1.Runspace.Close()
     $thread1.Dispose()
-    
+
     $thread2.Runspace.Close()
     $thread2.Dispose()
-    
+
     $end = Get-Date
     Write-Host -ForegroundColor Red ($end - $start).TotalSeconds
-    
+
 如果依次执行这三个任务，分别执行 `Start-Sleep` 语句将至少消耗 12 秒。事实上该脚本只消耗 5 秒多一点。处理结果分别为 `$result1`，`$result2` 和 `$result3`。相对后台任务而言，返回大量数据基本不会造成时间消耗。
 
 <!--本文国际来源：[Running Background Jobs Efficiently](http://community.idera.com/powershell/powertips/b/tips/posts/running-background-jobs-efficiently)-->

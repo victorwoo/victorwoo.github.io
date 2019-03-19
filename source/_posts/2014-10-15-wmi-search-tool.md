@@ -17,15 +17,15 @@ _适用于 PowerShell 所有版本_
 WMI 是一个很棒很强大的技术：只需要指定一个 WMI 类名，您就可以获取该类的所有实体。
 
     PS> Get-WmiObject -Class Win32_BIOS
-    
-    
+
+
     SMBIOSBIOSVersion : 76CN27WW
     Manufacturer      : LENOVO
     Name              : 76CN27WW
     SerialNumber      : 1006250300406
     Version           : LENOVO - 1
-         
-    
+
+
 
 那么如何知道有哪些 WMI 类呢？以下是一个搜索工具函数：
 
@@ -36,28 +36,28 @@ WMI 是一个很棒很强大的技术：只需要指定一个 WMI 类名，您�
           [Parameter(Mandatory=$true)]
           $SearchTerm = 'Resolution'
        )
-       
-       Get-WmiObject -Class * -List | 
+
+       Get-WmiObject -Class * -List |
        Where-Object { $_.Properties.Count -ge 3 } |
        Where-Object { $_.Name -notlike 'Win32_Perf*'  } |
        Where-Object {
           $ListOfNames = $_.Properties | Select-Object -ExpandProperty Name
           ($ListOfNames -like "*$SearchTerm*") -ne $null
        } |
-       Sort-Object -Property Name  
-    } 
+       Sort-Object -Property Name
+    }
 
 只需要指定一个搜索条件。该函数将会查找所有属性名中包含搜索条件的 WMI 类（可以用通配符来扩大搜索范围）。
 
 这段代码能搜索属性以“resolution”结尾的 WMI 类：
 
     PS> Find-WMIClass -SearchTerm *resolution
-    
-    
+
+
        NameSpace: ROOT\cimv2
-    
-    Name                                Methods              Properties               
-    ----                                -------              ----------               
+
+    Name                                Methods              Properties
+    ----                                -------              ----------
     CIM_CacheMemory                     {SetPowerState, R... {Access, AdditionalErr...
     CIM_CurrentSensor                   {SetPowerState, R... {Accuracy, Availabilit...
     CIM_FlatPanel                       {SetPowerState, R... {Availability, Caption...
@@ -87,7 +87,7 @@ WMI 是一个很棒很强大的技术：只需要指定一个 WMI 类名，您�
     Win32_TemperatureProbe              {SetPowerState, R... {Accuracy, Availabilit...
     Win32_VideoConfiguration            {}                   {ActualColorResolution...
     Win32_VideoController               {SetPowerState, R... {AcceleratorCapabiliti...
-    Win32_VoltageProbe                  {SetPowerState, R... {Accuracy, Availabilit... 
+    Win32_VoltageProbe                  {SetPowerState, R... {Accuracy, Availabilit...
 
 下一步，选择一个类名并观察它的实际数据：
 

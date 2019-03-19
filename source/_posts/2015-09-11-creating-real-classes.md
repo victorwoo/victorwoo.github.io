@@ -23,12 +23,12 @@ PowerShell 5.0 开始引入了类的概念，不过您也可以在 PowerShell �
             public bool Enabled { get; set; }
             public string Name { get; set; }
             public DateTime Time { get; set; }
-    
-    
+
+
         }
-    
+
     '
-    
+
     Add-Type -TypeDefinition $code
     $instance = New-Object -TypeName myClass
     $instance.Enabled = $true

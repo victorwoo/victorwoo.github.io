@@ -22,7 +22,7 @@ $first = Get-Date -Day 1 -Month $month -Year $year -Hour 0 -Minute 0 -Second 0
 $last = Get-Date -Day $last -Month $month -Year $year -Hour 23 -Minute 59 -Second 59
 
 
- 
+
 PS> $first
 3/1/2019 12:00:00 AM
 

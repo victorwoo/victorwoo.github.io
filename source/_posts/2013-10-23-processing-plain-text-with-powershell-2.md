@@ -30,7 +30,7 @@ tags:
 根据以上规律编写 PowerShell 代码：
 
 	$fileName = 'AllUsers.csv'
-	
+
 	$currentLine = ''
 	gc $fileName | % -process {
 	        if ($_ -cmatch '^[a-zA-Z0-9/+=]{1,76}$') {
@@ -43,7 +43,7 @@ tags:
 	        }
 	    } -end {
 	        $currentLine
-	    } | 
+	    } |
 	ConvertFrom-Csv
 
 完整的 .CSV 及 .PS1 文件请在[这里下载](/download/2013-10-23-processing-plain-text-with-powershell-2.zip)。

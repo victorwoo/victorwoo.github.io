@@ -19,8 +19,8 @@ _适用于 PowerShell 所有版本_
 您可以使用这段示例代码查找何处禁用了继承以及何处添加了权限项目：
 
     Get-ChildItem c:\Windows -Recurse -Directory -ErrorAction SilentlyContinue |
-      Where-Object { (Get-Acl -Path $_.FullName -ErrorAction SilentlyContinue).Access | 
-      Where-Object { $_.isInherited -eq $false } } 
+      Where-Object { (Get-Acl -Path $_.FullName -ErrorAction SilentlyContinue).Access |
+      Where-Object { $_.isInherited -eq $false } }
 
 在这个例子中，`Get-ChildItem` 在 Windows 文件夹中搜索所有子文件夹。您可以将“C:\Windows”改为您想测试的任意文件夹。
 

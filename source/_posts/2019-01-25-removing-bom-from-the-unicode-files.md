@@ -28,7 +28,7 @@ function Remove-BomFromFile ($OldPath, $NewPath)
 ```powershell
 $Path = "$env:temp\export.csv"
 $NewPath = "$env:temp\export_new.csv"
-Remove-BomFromFile -OldPath $Path -NewPath $NewPath 
+Remove-BomFromFile -OldPath $Path -NewPath $NewPath
 ```
 
 <!--本文国际来源：[Removing BOM from the Unicode Files](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/removing-bom-from-the-unicode-files)-->

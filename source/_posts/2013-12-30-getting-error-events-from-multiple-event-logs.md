@@ -16,7 +16,7 @@ tags:
 
 	$events = @(Get-EventLog -LogName System -EntryType Error)
 	$events += Get-EventLog -LogName Application -EntryType Error
-	
+
 	$events
 
 在这些例子中，使用 WMI 来查询可能会更简单一些——它可以一次性查询任意多个系统日志。

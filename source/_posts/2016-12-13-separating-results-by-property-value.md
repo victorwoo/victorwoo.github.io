@@ -22,16 +22,16 @@ tags:
 $pc1 = $env:computername
 $pc2 = '192.168.2.112'
 
-$code = 
+$code =
 {
   Get-Service | Where-Object Status -eq Running
 }
 
 # get all results
-$result = Invoke-Command -ScriptBlock $code -ComputerName $pc1, $pc2 
+$result = Invoke-Command -ScriptBlock $code -ComputerName $pc1, $pc2
 
 # separate per computer
-$groups = $result | Group-Object -Property PSComputerName -AsHashTable 
+$groups = $result | Group-Object -Property PSComputerName -AsHashTable
 $groups
 
 # access per computer results separately

@@ -22,11 +22,11 @@ Splatting 是向 cmdlet 传递多个参数的好方法。以下例子演示了�
             $Credential,
             $SomethingElse
         )
-    
+
         $null = $PSBoundParameters.Remove('SomethingElse')
-    
+
         Get-WmiObject -Class Win32_BIOS @PSBoundParameters
-    } 
+    }
 
 `Get-BIOSInfo` 通过 WMI 获取 BIOS 信息，并且它支持本地、远程以及通过证书的远程调用。这是因为用户向 `Get-BIOSInfo` 传递的实参实际上传递给了 `Get-WmiObject` 对应的参数。所以当一个用户没有传递 `-Credential` 参数，那么就不会向 `Get-WmiObject` 传递 `-Credential` 参数。
 

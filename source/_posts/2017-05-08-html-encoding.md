@@ -14,7 +14,7 @@ tags:
 ---
 有一个 .NET 的静态方法可以对一段文本进行 HTML 编码，例如如果您希望在 HTML 输出中正常显示一段文本：
 
-```powershell     
+```powershell
 PS>  [System.Web.HttpUtility]::HtmlEncode('Österreich heißt so.')
 &#214;sterreich hei&#223;t so.
 ```

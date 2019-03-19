@@ -24,14 +24,14 @@ tags:
         [ValidateSet('Deploy','Delete','Refresh')]
         $Action
       )
-    
+
       $codeAction = @{}
       $codeAction.Deploy = { 'Doing the Deployment' }
       $codeAction.Delete = { 'Doing the Deletion' }
       $codeAction.Refresh = { 'Doing the Refresh' }
-    
+
       & $codeAction.$Action
-    
+
     }
 
 当运行这段代码后，键入 `Invoke-SomeAction`，ISE 将会提供它所支持的“`Deployment`”、“`Deletion`”和“`Refresh`”操作。相对简单的 PowerShell 控制台至少会提供 action 参数的 tab 补全功能。

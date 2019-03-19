@@ -23,17 +23,17 @@ tags:
 您也可以在一个管道中使用它：
 
 	'AllUsersAllHosts','AllUsersCurrentHost','CurrentUserAllHosts','CurrentUserCurrentHost' |
-	ForEach-Object { $profile.$_ } 
+	ForEach-Object { $profile.$_ }
 
 通过这种方式，您可以检查和返回 PowerShell 当前使用的所有 profile：
 
 	'AllUsersAllHosts','AllUsersCurrentHost','CurrentUserAllHosts','CurrentUserCurrentHost' |
 	ForEach-Object { $profile.$_ } |
-	Where-Object { Test-Path $_ } 
+	Where-Object { Test-Path $_ }
 
 类似地，您可以首先使用 `Get-Member` 来获取一个指定对象包含的所有属性。以下代码可以返回 PowerShell 的“PrivateData”对象中所有名字包含“color”的属性：
 
-	$host.PrivateData | Get-Member -Name *color* | Select-Object -ExpandProperty Name 
+	$host.PrivateData | Get-Member -Name *color* | Select-Object -ExpandProperty Name
 
 接下来，您可以用一行代码获取所有的颜色设置：
 
@@ -44,5 +44,5 @@ tags:
 		"$PropertyName = $PropertyValue"
 	} |
 	Out-GridView
-  
+
 <!--本文国际来源：[Dynamic Parameters in PowerShell 4.0](http://community.idera.com/powershell/powertips/b/tips/posts/dynamic-parameters-in-powershell-4-0)-->

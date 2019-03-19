@@ -20,39 +20,39 @@ tags:
 
 
     $Source = @"
-    
+
     using System;
     using System.Text;
     using System.Runtime.InteropServices;
     public class Win32API
         {
-            [DllImport("shell32.dll", EntryPoint="FindExecutable")] 
-    
+            [DllImport("shell32.dll", EntryPoint="FindExecutable")]
+
             public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
-    
+
             public static string FindExecutable(string pv_strFilename)
             {
                 StringBuilder objResultBuffer = new StringBuilder(1024);
                 long lngResult = 0;
-    
+
                 lngResult = FindExecutableA(pv_strFilename, string.Empty, objResultBuffer);
-    
+
                 if(lngResult >= 32)
                 {
                     return objResultBuffer.ToString();
                 }
-    
+
                 return string.Format("Error: ({0})", lngResult);
             }
         }
-    
+
     "@
-    
+
     Add-Type -TypeDefinition $Source -ErrorAction SilentlyContinue
-    
+
     $FullName = 'c:\Windows\windowsupdate.log'
     $Executable = [Win32API]::FindExecutable($FullName)
-        
+
     "$FullName will be launched by $Executable"
 
 一个已知的限制是 `FindExecutable()` 的使用前提是该文件必须存在。您无法只通过文件扩展名来断定是否为一个可执行文件。

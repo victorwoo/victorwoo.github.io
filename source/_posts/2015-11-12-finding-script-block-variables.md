@@ -17,15 +17,15 @@ tags:
 脚本块有一系列高级功能，能够检测花括号内部的代码。其中的一个功能是直接访问抽象语法树 (AST)。AST 可以分分析代码内容。以下是一个读出脚本块中所有变量名的例子：
 
     #requires -Version 3
-    
-    
+
+
     $scriptblock = {
-    
+
        $test = 1
        $abc = 2
-    
+
     }
-    
+
     $scriptblock.Ast.FindAll( { $args[0] -is [System.Management.Automation.Language.VariableExpressionAst] }, $true ) |
       Select-Object -ExpandProperty VariablePath | Select-Object -ExpandProperty UserPath
 

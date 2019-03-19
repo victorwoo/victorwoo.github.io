@@ -24,7 +24,7 @@ function Out-Notepad
   (
     [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
     [String]
-    [AllowEmptyString()] 
+    [AllowEmptyString()]
     $Text
   )
 
@@ -62,7 +62,7 @@ function Out-Notepad
 
     PS C:\> Get-Content $env:windir\system32\drivers\etc\hosts | Out-Notepad
 
-    PS C:\> Get-Process | Out-String | Out-Notepad 
+    PS C:\> Get-Process | Out-String | Out-Notepad
 
 
 <!--本文国际来源：[Send Text to Notepad](http://community.idera.com/powershell/powertips/b/tips/posts/send-text-to-notepad)-->

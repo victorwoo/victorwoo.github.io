@@ -33,9 +33,9 @@ Enable-WSManCredSSP -Role Server
 ```powershell
 #requires -Version 3.0
 
-$code = 
+$code =
 {
-  Get-ChildItem -Path  \\fls01\#TRAIN1\PowerShell\Class  
+  Get-ChildItem -Path  \\fls01\#TRAIN1\PowerShell\Class
 }
 
 Invoke-Command -Authentication Credssp -ScriptBlock $code -ComputerName nameOfServer -Credential myCompany\myName

@@ -19,7 +19,7 @@ _适用于所有 PowerShell 版本_
     function ConvertTo-PrettyText($Text)
     {
       $hash = New-Object -TypeName HashTable
-    
+
       $hash.'ä' = 'ae'
       $hash.'ö' = 'oe'
       $hash.'ü' = 'ue'
@@ -27,7 +27,7 @@ _适用于所有 PowerShell 版本_
       $hash.'Ä' = 'Ae'
       $hash.'Ö' = 'Oe'
       $Hash.'Ü' = 'Ue'
-        
+
       Foreach ($key in $hash.Keys)
       {
         $Text = $text.Replace($key, $hash.$key)
@@ -39,13 +39,13 @@ _适用于所有 PowerShell 版本_
 
     PS> ConvertTo-PrettyText -Text 'Mr. Össterßlim'
     Mr. Oesstersslim
-    
-    PS>  
+
+    PS>
 
 如果您想要指定 ASCII 码，以下是一个用 ASCII 码作为键的变体：
 
-    function ConvertTo-PrettyText($Text)   
-    {  
+    function ConvertTo-PrettyText($Text)
+    {
       $hash = @{
         228 = 'ae'
         246 = 'oe'
@@ -53,9 +53,9 @@ _适用于所有 PowerShell 版本_
         223 = 'ss'
         196 = 'Ae'
         214 = 'Oe'
-        220 = 'Ue'   
+        220 = 'Ue'
       }
-      
+
       foreach($key in $hash.Keys)
       {
         $Text = $text.Replace([String][Char]$key, $hash.$key)

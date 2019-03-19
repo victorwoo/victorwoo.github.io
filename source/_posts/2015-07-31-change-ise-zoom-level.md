@@ -21,28 +21,28 @@ PowerShell ISE 的右下角有一个缩放滑竿，您也可以用 PowerShell �
 或者，可以写一些代码来戏弄您的同事：
 
     #requires -Version 2
-    
+
     $zoom = $psise.Options.Zoom
-    
+
     # slide in
     for ($i = 20; $i -lt 200; $i++)
     {
       $psise.Options.Zoom = $i
     }
-    
+
     # slide out
     for ($i = 199; $i -gt 20; $i--)
     {
       $psise.Options.Zoom = $i
     }
-    
+
     # random whacky
     1..10 |
     ForEach-Object {
       $psise.Options.Zoom = (Get-Random -Minimum 30 -Maximum 400)
       Start-Sleep -Milliseconds (Get-Random -Minimum 100 -Maximum 400)
     }
-    
+
     $psise.Options.Zoom = $zoom
 
 <!--本文国际来源：[Change ISE Zoom Level](http://community.idera.com/powershell/powertips/b/tips/posts/change-ise-zoom-level)-->

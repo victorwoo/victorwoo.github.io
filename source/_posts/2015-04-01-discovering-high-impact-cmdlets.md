@@ -20,12 +20,12 @@ cmdlet 可以定义它们的影响力有多大。通常，那些会对系统造�
 
 要查看 cmdlet 的“影响级别”为多高，可以用这段代码输出该信息：
 
-    Get-Command -CommandType Cmdlet | 
-      ForEach-Object { 
+    Get-Command -CommandType Cmdlet |
+      ForEach-Object {
         $type = $_.ImplementingType
         if ($type -ne $null)
         {
-          $type.GetCustomAttributes($true) | 
+          $type.GetCustomAttributes($true) |
           Where-Object { $_.VerbName -ne $null } |
           Select-Object @{Name='Name';
           Expression={'{0}-{1}' -f $_.VerbName, $_.NounName}}, ConfirmImpact
@@ -35,12 +35,12 @@ cmdlet 可以定义它们的影响力有多大。通常，那些会对系统造�
 
 要只查看影响级别为“高”的 cmdlet，只需要加一个过滤器：
 
-    Get-Command -CommandType Cmdlet | 
-      ForEach-Object { 
+    Get-Command -CommandType Cmdlet |
+      ForEach-Object {
         $type = $_.ImplementingType
         if ($type -ne $null)
         {
-          $type.GetCustomAttributes($true) | 
+          $type.GetCustomAttributes($true) |
           Where-Object { $_.VerbName -ne $null } |
           Select-Object @{Name='Name';
           Expression={'{0}-{1}' -f $_.VerbName, $_.NounName}}, ConfirmImpact

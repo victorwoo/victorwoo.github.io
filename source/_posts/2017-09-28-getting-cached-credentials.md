@@ -25,11 +25,11 @@ Currently stored credentials:
     Type: Domain Extended Credentials
     User: XXXXX.com
     Saved for this logon only
-    
+
     Target: MicrosoftAccount:target=SSO_POP_Device
     Type: Domain Extended Credentials
     User: 06jbdrfztrwsvsb
-    Saved for this logon only 
+    Saved for this logon only
 ...
 ```
 
@@ -38,7 +38,7 @@ Currently stored credentials:
 ```powershell
 cmdkey.exe /list | ForEach-Object {$found=$false} {
     $line = $_.Trim()
-    if ($line -eq '') 
+    if ($line -eq '')
     {
         if ($found) { $newobject }
         $found = $false
@@ -69,7 +69,7 @@ cmdkey.exe /list | ForEach-Object {$found=$false} {
 ```
 
 结果类似这样：
-     
+
     Type                        User                   Info                      Target
     ----                        ----                   ----                      ------
     Domain Extended Credentials tabcabcabc@hicsawr.com Saved for this logon only Mi

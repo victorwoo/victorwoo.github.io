@@ -19,7 +19,7 @@ tags:
 	{
 	    [CmdletBinding()]
 	    param()
-	} 
+	}
 
 下一步，添加 `Write-Verbose` 来输出文本信息。它们仅当用户指定了 `-Verbose` 参数时才有效：
 
@@ -27,11 +27,11 @@ tags:
 	{
 	    [CmdletBinding()]
 	    param()
-	
+
 	    Write-Verbose "Starting"
 	    "Doing Something"
 	    Write-Verbose "Shutting Down"
-	} 
+	}
 
 所以当您按以下方式运行它时，您会见到正常的输出信息：
 

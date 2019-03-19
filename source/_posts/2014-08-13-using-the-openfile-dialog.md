@@ -21,30 +21,30 @@ _适用于 PowerShell 3.0 及以上版本_
       param
       (
         $StartFolder = [Environment]::GetFolderPath('MyDocuments'),
-    
+
         $Title = 'Open what?',
-        
+
         $Filter = 'All|*.*|Scripts|*.ps1|Texts|*.txt|Logs|*.log'
       )
-      
-      
+
+
       Add-Type -AssemblyName PresentationFramework
-      
+
       $dialog = New-Object -TypeName Microsoft.Win32.OpenFileDialog
-      
-      
+
+
       $dialog.Title = $Title
       $dialog.InitialDirectory = $StartFolder
       $dialog.Filter = $Filter
-      
-      
+
+
       $resultat = $dialog.ShowDialog()
       if ($resultat -eq $true)
       {
         $dialog.FileName
       }
     }
-    
+
 
 这个函数将打开一个“打开文件”对话框。用户可以选择一个文件，并且选择的文件对象将返回给 PowerShell。所以下次您的脚本需要打开一个 CSV 文件时，您可能就能用上。
 

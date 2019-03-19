@@ -31,13 +31,13 @@ Description : OneDrive
 Name        : Bluetooth
 Location    : Common Startup
 User        : Public
-Command     : C:\PROGRA~1\WIDCOMM\BLUETO~1\BTTray.exe 
+Command     : C:\PROGRA~1\WIDCOMM\BLUETO~1\BTTray.exe
 Description : Bluetooth
 
 Name        : Snagit 12
 Location    : Common Startup
 User        : Public
-Command     : C:\PROGRA~2\TECHSM~1\SNAGIT~1\Snagit32.exe 
+Command     : C:\PROGRA~2\TECHSM~1\SNAGIT~1\Snagit32.exe
 Description : Snagit 12
 
 Name        : RTHDVCPL

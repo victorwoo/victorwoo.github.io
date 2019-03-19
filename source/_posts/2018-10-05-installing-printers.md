@@ -21,8 +21,8 @@ $DriverName = 'HP Designjet Z Series PS Class Driver'
 $portname = "${PrinterName}:"
 
 Add-PrinterDriver -Name $DriverName
-Add-PrinterPort -Name $portname 
-Add-Printer -Name $PrinterName -DriverName $DriverName -PortName $portname -ShareName $ShareName 
+Add-PrinterPort -Name $portname
+Add-Printer -Name $PrinterName -DriverName $DriverName -PortName $portname -ShareName $ShareName
 
 # requires Admin privileges
 # Set-Printer -Name $PrinterName -Shared $true
@@ -33,7 +33,7 @@ Add-Printer -Name $PrinterName -DriverName $DriverName -PortName $portname -Shar
 要探索 `PrintManagement` 模块中的其它 cmdlet，请使用这行代码：
 
 ```powershell
-PS> Get-Command -Module PrintManagement  
+PS> Get-Command -Module PrintManagement
 ```
 
 请注意 Windows 7 中没有包含该模块，而且无法在 Windows 7 中安装，因为 Windows 7 缺少运行该模块中 cmdlet 的某些依赖项。

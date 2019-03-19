@@ -25,7 +25,7 @@ _适用于 PowerShell 所有版本_
           $null = [System.Management.Automation.PSParser]::Tokenize($text, [ref] $err)
           if ($err) { $_ }
        }
-    } 
+    }
 
 通过使用这个过滤器，您可以快速地扫描文件夹，甚至整台计算机，列出所有包含语法错误的 PowerShell 文件。
 

@@ -17,12 +17,12 @@ tags:
     function abc
     {
       'Start'
-    
+
       exit 100
-    
+
       'Done'
     }
-    
+
     abc
 
 当您运行这个脚本时，`abc` 函数会被调用，然后退出。您会见到“Start”提示，但见不到“Done”提示，并且 `$LASTEXITCODE` 变量的值为 100。但这是实际情况吗？
@@ -36,15 +36,15 @@ tags:
     function abc
     {
       'Start'
-    
+
       exit 100
-    
+
       'Done'
     }
-    
+
     'Function starts'
     abc
-    'Function ends' 
+    'Function ends'
 
 如您所发现的，“exit”实际上并不是退出 `abc` 函数，而是退出整个脚本。所以您既见不到“Done”字样也见不到“Function ends”字样。
 

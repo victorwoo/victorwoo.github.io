@@ -17,8 +17,8 @@ tags:
 以下是转储所有可用设置名称的代码。请注意这些名字是大小写敏感的：
 
 ```powershell
-$currentSetting = Get-WmiObject -Class Lenovo_BiosSetting -Namespace root\wmi 
-$currentSetting.CurrentSetting | 
+$currentSetting = Get-WmiObject -Class Lenovo_BiosSetting -Namespace root\wmi
+$currentSetting.CurrentSetting |
     Where-Object { $_ } |
     ForEach-Object { $_.Split(',')[0] }
 ```
@@ -29,7 +29,7 @@ $currentSetting.CurrentSetting |
 $Settingname = "WakeOnLAN"
 
 $currentSetting = Get-WmiObject -Class Lenovo_BiosSetting -Namespace root\wmi -Filter "CurrentSetting LIKE '%$SettingName%'"
-$currentSetting.CurrentSetting  
+$currentSetting.CurrentSetting
 ```
 
 以下代码转储某个指定设置的所有合法值：

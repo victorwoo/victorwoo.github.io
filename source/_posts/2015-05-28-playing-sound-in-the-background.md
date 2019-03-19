@@ -17,21 +17,21 @@ tags:
     # find first available WAV file in Windows
     $WAVPath = Get-ChildItem -Path $env:windir -Filter *.wav -Recurse -ErrorAction SilentlyContinue |
     Select-Object -First 1 -ExpandProperty FullName
-    
+
     # load file and play it
     $player = New-Object Media.SoundPlayer $WAVPath
-    
+
     try
     {
       $player.PlayLooping()
       'Doing something...'
-    
-      1..100 | ForEach-Object { 
+
+      1..100 | ForEach-Object {
         Write-Progress -Activity 'Doing Something. Hang in' -Status $_ -PercentComplete $_
         Start-Sleep -MilliSeconds (Get-Random -Minimum 300 -Maximum 1300)
       }
     }
-    
+
     finally
     {
       $player.Stop()

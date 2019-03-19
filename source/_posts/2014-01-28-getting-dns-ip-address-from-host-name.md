@@ -26,7 +26,7 @@ tags:
 	    [String[]]
 	    $Name
 	  )
-	
+
 	  process
 	  { $Name | ForEach-Object { try { [System.Net.DNS]::GetHostByName($_) } catch { } }}
 	}

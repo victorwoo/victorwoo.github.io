@@ -15,13 +15,13 @@ tags:
 您也许了解了如何用脚本打开一个 MsgBox 对话框。今天，您将学习如何用一段代码打开一个 MsgBox，同时播放一段随机的音效，吸引用户的注意力并增加趣味性。当用户操作 MsgBox 的时候，音效立即停止：
 
     # find random WAV file in your Windows folder
-    $randomWAV = Get-ChildItem -Path C:\Windows\Media -Filter *.wav | 
+    $randomWAV = Get-ChildItem -Path C:\Windows\Media -Filter *.wav |
       Get-Random |
       Select-Object -ExpandProperty Fullname
-    
+
     # load Forms assembly to get a MsgBox dialog
     Add-Type -AssemblyName System.Windows.Forms
-    
+
     # play random sound until MsgBox is closed
     $player = New-Object Media.SoundPlayer $randomWAV
     $player.Load();

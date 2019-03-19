@@ -17,7 +17,7 @@ tags:
 	function Get-LoggedOnUser
 	{
 	  param([String[]]$ComputerName = $env:COMPUTERNAME)
-	
+
 	    $ComputerName | ForEach-Object {
 	      (quser /SERVER:$_) -replace '\s{2,}', ',' |
 	        ConvertFrom-CSV |

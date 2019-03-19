@@ -17,13 +17,13 @@ tags:
 如果您想发送一条消息，您可以使用 `Send-MailMessage` 并通过文本参数的方式提交细节信息。或者，您可以创建一个图形界面，并将它命名为 `Send-MailMessageUI`：
 
 ```powershell
-#requires -Version 3.0   
+#requires -Version 3.0
 
-function  Send-MailMessageUI   
-{   
-  Show-Command  -Name  Send-MailMessage   
-}   
-​    
+function  Send-MailMessageUI
+{
+  Show-Command  -Name  Send-MailMessage
+}
+​
 Send-MailMessageUI
 ```
 

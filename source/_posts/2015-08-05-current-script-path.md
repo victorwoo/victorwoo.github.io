@@ -15,11 +15,11 @@ tags:
 在 PowerShell 1.0 和 2.0 中，您需要一堆奇怪的代码来获得当前脚本的位置：
 
     # make sure the script is saved and NOT "Untitled"!
-     
+
     $invocation = (Get-Variable MyInvocation).Value
     $scriptPath = Split-Path $invocation.MyCommand.Path
     $scriptName = $invocation.MyCommand.Name
-    
+
     $scriptPath
     $scriptName
 
@@ -28,7 +28,7 @@ tags:
 从 PowerShell 3.0 开始，事情变得更简单了，并且这些特殊变量在您脚本的任意地方都可以用。
 
     # make sure the script is saved and NOT "Untitled"!
-    
+
     $ScriptName = Split-Path $PSCommandPath -Leaf
     $PSScriptRoot
     $PSCommandPath

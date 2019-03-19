@@ -22,25 +22,25 @@ tags:
 
 以下是一个简单的操作 Windows 计算器的例子：
 
-    Import-Module WASP 
-    
+    Import-Module WASP
+
     # launch Calculator
     $process = Start-Process -FilePath calc -PassThru
     $id = $process.Id
     Start-Sleep -Seconds 2
     $window = Select-Window | Where-Object { $_.ProcessID -eq $id }
-    
+
     # send keys
     $window | Send-Keys 123
     $window | Send-Keys '{+}'
     $window | Send-Keys 999
     $window | Send-Keys =
-    
+
     # send CTRL+c
     $window | Send-Keys '^c'
-    
+
     # Result is now available from clipboard
-    
+
 以下是附加说明：
 
 * 启动一个进程之后，要等待 1-2 秒，待窗体创建号以后才可以用 WASP 找到该窗口。

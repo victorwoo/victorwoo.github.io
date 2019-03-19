@@ -15,7 +15,7 @@ tags:
 如果一个 PowerShell 函数需要返回多于一类信息，请确保将这些信息集中到一个富对象中。最简单的实现方式是创建一个类似 `[PSCustomObject]@{}` 这样的自定义对象：
 
 ```powershell
-function Get-TestData 
+function Get-TestData
 {
     # if a function is to return more than one information kind,
     # wrap it in a custom object

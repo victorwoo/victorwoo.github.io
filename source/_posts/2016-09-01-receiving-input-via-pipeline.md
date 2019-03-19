@@ -29,9 +29,9 @@ function Convert-Umlaut
 
   $output = $Text.Replace('ö','oe').Replace('ä','ae').Replace('ü','ue').Replace('ß','ss').Replace('Ö','Oe').Replace('Ü','Ue').Replace('Ä','Ae')
   $isCapitalLetter = $Text -ceq $Text.toUpper()
-  if ($isCapitalLetter) 
-  { 
-    $output = $output.toUpper() 
+  if ($isCapitalLetter)
+  {
+    $output = $output.toUpper()
   }
   $output
 }
@@ -41,7 +41,7 @@ function Convert-Umlaut
 
 
 ```shell
-PS C:\> Convert-Umlaut -Text "Mößler, Christiansön" 
+PS C:\> Convert-Umlaut -Text "Mößler, Christiansön"
 Moessler, Christiansoen
 ```
 
@@ -73,9 +73,9 @@ function Convert-Umlaut
   {
     $output = $Text.Replace('ö','oe').Replace('ä','ae').Replace('ü','ue').Replace('ß','ss').Replace('Ö','Oe').Replace('Ü','Ue').Replace('Ä','Ae')
     $isCapitalLetter = $Text -ceq $Text.toUpper()
-    if ($isCapitalLetter) 
-    { 
-      $output = $output.toUpper() 
+    if ($isCapitalLetter)
+    {
+      $output = $output.toUpper()
     }
     $output
   }
@@ -85,7 +85,7 @@ function Convert-Umlaut
 现在，也可以通过管道传输数据了：
 
 ```shell
-    PS C:\> "Mößler, Christiansön" | Convert-Umlaut 
+    PS C:\> "Mößler, Christiansön" | Convert-Umlaut
     Moessler, Christiansoen
 ```
 

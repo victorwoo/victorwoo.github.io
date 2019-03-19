@@ -20,16 +20,16 @@ tags:
 
 	function Get-PSProfileStatus
 	{
-	    $profile | 
+	    $profile |
 	      Get-Member -MemberType NoteProperty |
-	      Select-Object -ExpandProperty Name | 
+	      Select-Object -ExpandProperty Name |
 	      ForEach-Object {
-	        $_, (Split-Path $profile.$_ -Leaf), (Split-Path $profile.$_), 
+	        $_, (Split-Path $profile.$_ -Leaf), (Split-Path $profile.$_),
 	                              (Test-Path -Path $profile.$_) -join ',' |
 	          ConvertFrom-Csv -Header Profile, FileName, FolderName, Present
 	        }
 	}
-	
+
 	Get-PSProfileStatus
 
 结果看起来类似这样：

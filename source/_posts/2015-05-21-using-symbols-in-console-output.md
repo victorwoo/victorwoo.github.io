@@ -17,8 +17,8 @@ tags:
 要显示特殊字体，请使用十进制或十六进制字符代码，例如：
 
     [Char]8730
-    
-    
+
+
     [Char]0x25BA
 
 或者执行内置的“CharacterMap”程序以您选择的控制台字体选择另一个特殊字符。
@@ -27,13 +27,13 @@ tags:
 
     function prompt
     {
-    
+
       $specialChar1 = [Char]0x25ba
-    
+
       Write-Host 'PS ' -NoNewline
       Write-Host $specialChar1 -ForegroundColor Green -NoNewline
       ' '
-    
+
       $host.UI.RawUI.WindowTitle = Get-Location
     }
 

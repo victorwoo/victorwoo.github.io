@@ -32,7 +32,7 @@ Copyright (C) Microsoft Corporation. All Rights Reserved.
 
 Script file "C:\Users\tobwe\slmgr.vbs" not found.
 
-PS> 
+PS>
 ```
 
 您可以将缺省的 VBS 宿主改为 `cscript.exe`，但是一个更好的不改变全局设置的做法是：找出这个 VBScript 的完整路径，然后用绝对路径执行它。以下是获得 VBScript 路径的办法：
@@ -42,12 +42,12 @@ PS> Get-Command slmgr.vbs | Select-Object -ExpandProperty Source
 C:\WINDOWS\system32\slmgr.vbs
 ```
 
-这段代码将读取该信息输出到 PowerShell 控制台： 
+这段代码将读取该信息输出到 PowerShell 控制台：
 
 ```powershell
 $Path = Get-Command slmgr.vbs | Select-Object -ExpandProperty Source
 $Data = cscript.exe //Nologo $Path /dlv
-$Data 
+$Data
 ```
 
 不过，`$Data` 包含了难以阅读的纯文本，而且是本地化的。用这种方法获取许可证和激活信息不太优雅。
@@ -55,7 +55,7 @@ $Data
 由于 `slmgr.exe` 可以做许多神奇的许可证任务，就如打开它的帮助时看到的那样，让我们在随后的技能中检查它的源码，并且跳过以前的 VBScript 直接获取信息。
 
 ```powershell
-PS> slmgr /?  
+PS> slmgr /?
 ```
 
 今日知识点：

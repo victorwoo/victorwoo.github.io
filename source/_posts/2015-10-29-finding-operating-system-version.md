@@ -15,9 +15,9 @@ tags:
 一个最简单的查看操作系统版本号的方法是这一行代码：
 
     PS> [Environment]::OSVersion
-    
-    Platform ServicePack        Version             VersionString         
-    -------- -----------        -------             -------------         
+
+    Platform ServicePack        Version             VersionString
+    -------- -----------        -------             -------------
      Win32NT Service Pack 1     6.1.7601.65536      Microsoft Windows N...
 
 “`Environment`”类型提供了您计算机很多方面的信息。例如，操作系统核心的个数：

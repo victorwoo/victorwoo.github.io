@@ -25,7 +25,7 @@ Invoke-RestMethod -Uri 'http://ipinfo.io'
 ```
 ip       : 80.187.113.144
 hostname : tmo-113-144.customers.d1-online.com
-region   : 
+region   :
 country  : DE
 loc      : 51.2993,9.4910
 org      : AS3320 Deutsche Telekom AG

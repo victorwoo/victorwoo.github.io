@@ -22,23 +22,23 @@ tags:
 
     $Path = 'C:\somefolder
     $Filter = 'S-1-5-*'
-    
+
     Get-ChildItem -Path C:\Obfuscated -Recurse -ErrorAction SilentlyContinue |
       ForEach-Object {
-    
-        $acl = Get-Acl -Path $Path 
+
+        $acl = Get-Acl -Path $Path
         $found = $false
-        foreach($acc in $acl.access ) 
-        { 
+        foreach($acc in $acl.access )
+        {
             if ($acc.IsInherited -eq $false)
             {
-                $value = $acc.IdentityReference.Value 
-                if($value -like $Filter) 
-                { 
+                $value = $acc.IdentityReference.Value
+                if($value -like $Filter)
+                {
                     Write-Host "Remove $Value from $Path " -ForegroundColor Red
-                    $null = $ACL.RemoveAccessRule($acc) 
+                    $null = $ACL.RemoveAccessRule($acc)
                     $found = $true
-                } 
+                }
                 else
                 {
                   Write-Host "Skipped $Value from $Path " -ForegroundColor Green
@@ -48,7 +48,7 @@ tags:
         if ($found)
         {
     # uncomment this to actually remove ACEs
-    #        Set-Acl -Path $Path -AclObject $acl -ErrorAction Stop      
+    #        Set-Acl -Path $Path -AclObject $acl -ErrorAction Stop
         }
     }
 

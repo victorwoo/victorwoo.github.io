@@ -21,13 +21,13 @@ _适用于 PowerShell 所有版本_
     function Test-BadBehavior($Path)
     {
       Invoke-Expression "Get-ChildItem -Path $Path"
-    } 
+    }
 
 这个函数用 `Invoke-Expression` 来运行一个命令并且加上一个参数值，用来返回输入参数代表的路径下的文件列表。
 
 由于 `Invoke-Expression` 接受任意的字符串参数，所以您将自己带入了类似“SQL 注入攻击”的环境中。请试着以这种方式运行脚本：
 
-    PS> Test-BadBehavior 'c:\;Get-Process'  
+    PS> Test-BadBehavior 'c:\;Get-Process'
 
 这样写第二个命令也会被执行，并会列出所有运行中的进程。`Invoke-Expression` 常常被攻击者用于从外部 URL 下载恶意的程序并轻松地执行。
 

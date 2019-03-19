@@ -24,37 +24,37 @@ tags:
 	    (
 	        [Parameter(Mandatory=$true)]
 	        $OriginalFilePath,
-	
+
 	        [Parameter(Mandatory=$true)]
 	        $MirroredFilePath
 	    )
-	
+
 	    $signature = '
 	            [DllImport("Kernel32.dll")]
 	            public static extern bool CreateHardLink(string lpFileName,string lpExistingFileName,IntPtr lpSecurityAttributes);
 	    '
-	    Add-Type -MemberDefinition $signature -Name Creator -Namespace Link 
-	
+	    Add-Type -MemberDefinition $signature -Name Creator -Namespace Link
+
 	    [Link.Creator]::CreateHardLink($MirroredFilePath,$OriginalFilePath,[IntPtr]::Zero)
-	
-	} 
+
+	}
 
 以下是它的使用方法：
 
 	$Original = "$env:temp\testfile.txt"
 	$Copy1 = "$env:userprofile\Desktop\mirrorfile1.txt"
 	$Copy2 = "$env:userprofile\Desktop\mirrorfile2.txt"
-	
+
 	# create original file:
 	Set-Content -Path $Original -Value 'Hello'
-	
+
 	# create hard link #1:
 	New-HardLink -OriginalFilePath $Original -MirroredFilePath $Copy1
-	
-	# create hard link #2:
-	New-HardLink -OriginalFilePath $Original -MirroredFilePath $Copy2 
 
-这段代码首先在临时文件夹中创建一个物理文件。然后在您的桌面上创建两个硬连接。它们看上去分别是*mirrorfile1.txt*和*mirrorfile2.txt*。虽然它们看上去像是独立的文件，而实际上他们都指向刚创建的临时文件。 
+	# create hard link #2:
+	New-HardLink -OriginalFilePath $Original -MirroredFilePath $Copy2
+
+这段代码首先在临时文件夹中创建一个物理文件。然后在您的桌面上创建两个硬连接。它们看上去分别是*mirrorfile1.txt*和*mirrorfile2.txt*。虽然它们看上去像是独立的文件，而实际上他们都指向刚创建的临时文件。
 
 您可以打开桌面上两个文件中的某一个，做一些修改，然后保存并关闭。当打开另一个文件时，您可以看到一模一样的修改后的内容。您还可以简单地删掉一个镜像文件来移除硬连接。
 

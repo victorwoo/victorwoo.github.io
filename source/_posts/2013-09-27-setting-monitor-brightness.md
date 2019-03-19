@@ -23,14 +23,14 @@ tags:
 	        [Parameter(Mandatory=$true)]
 	        [Int][ValidateRange(0,100)]
 	        $Value,
-	
-	        $ComputerName, 
+
+	        $ComputerName,
 	        $Credential
 	    )
-	
+
 	    $null = $PSBoundParameters.Remove('Value')
-	
-	    $helper = Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods @PSBoundParameters 
+
+	    $helper = Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods @PSBoundParameters
 	    $helper.WmiSetBrightness(1, $Value)
 	}
 
@@ -41,9 +41,9 @@ tags:
 这是“有趣”的部分：模拟一个古怪的显示效果：
 
 	for($x=0; $x -lt 20; $x++)
-	{    
-	    Set-MonitorBrightness -Value (Get-Random -Minimum 20 -Maximum 101)  
-	    Start-Sleep -Seconds 1    
+	{
+	    Set-MonitorBrightness -Value (Get-Random -Minimum 20 -Maximum 101)
+	    Start-Sleep -Seconds 1
 	}
 
 

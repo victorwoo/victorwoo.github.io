@@ -16,10 +16,10 @@ tags:
 
     Measure-Command {
       $ar = @()
-    
+
       for ($x=0; $x -lt 10000; $x++)
       {
-        $ar += $x  
+        $ar += $x
       }
     }
 
@@ -29,13 +29,13 @@ tags:
 
     Measure-Command {
       $ar = New-Object -TypeName System.Collections.ArrayList
-    
+
       for ($x=0; $x -lt 10000; $x++)
       {
         $ar.Add($x)
       }
     }
-    
+
 两段代码实现相同的效果，但第二段效率要高得多。
 
 <!--本文国际来源：[Speeding Up Arrays](http://community.idera.com/powershell/powertips/b/tips/posts/speeding-up-arrays)-->

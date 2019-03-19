@@ -28,7 +28,7 @@ _适用于 PowerShell 所有版本_
     catch
     {
        Write-Host ('Error occured: ' + $_.Exception.Message)
-    } 
+    }
 
 要捕获错误，您需要临时将 `$ErrorActionPreference` 设为“`Stop`”。另外，您需要用“`2>&1`”将错误信息重定向到输出控制台。
 

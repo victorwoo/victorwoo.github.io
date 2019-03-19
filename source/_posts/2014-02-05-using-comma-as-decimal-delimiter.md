@@ -30,13 +30,13 @@ tags:
 	      (
 	            [Parameter(Mandatory=$true)]
 	            $Number1,
-	
+
 	            $Number2 = 10
 	      )
-	
+
 	      [Double]$Number1 = ($Number1 -join '.')
 	      [Double]$Number2 = ($Number2 -join '.')
-	
+
 	      $Number1 * $Number2
 	}
 
@@ -44,7 +44,7 @@ tags:
 
 	PS> Multiply-LocalNumber 1.5 9.223
 	13,8345
-	
+
 	PS> Multiply-LocalNumber 1,5 9,223
 	13,8345
 

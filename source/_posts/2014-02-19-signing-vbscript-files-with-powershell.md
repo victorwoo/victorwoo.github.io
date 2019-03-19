@@ -21,12 +21,12 @@ tags:
     # change password to the password needed to read the PFX file:
     # (this password was set when you exported the certificate to a PFX file)
     $password = 'topsecret'
-    
+
     # load certificate
     Add-Type -AssemblyName System.Security
     $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
     $cert.Import($pfxpath, $password, 'Exportable')
-    
+
     # apply signature to all VBScript files
     # REMOVE -WHATIF TO ACTUALLY SIGN
     Get-ChildItem -Path $home -Filter *.vbs -Recurse -ErrorAction SilentlyContinue |

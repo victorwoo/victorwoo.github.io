@@ -31,8 +31,8 @@ Get-Command -Module $module
 
 
 ```powershell
-CommandType Name                    Version Source                            
------------ ----                    ------- ------                            
+CommandType Name                    Version Source
+----------- ----                    ------- ------
 Cmdlet      Add-LocalGroupMember    1.0.0.0 Microsoft.PowerShell.LocalAccounts
 Cmdlet      Disable-LocalUser       1.0.0.0 Microsoft.PowerShell.LocalAccounts
 Cmdlet      Enable-LocalUser        1.0.0.0 Microsoft.PowerShell.LocalAccounts

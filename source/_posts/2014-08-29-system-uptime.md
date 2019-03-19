@@ -23,7 +23,7 @@ Windows 每次启动的时候，都启动一个高精度计数器，这个计数
 
     $millisecondsUptime = [Environment]::TickCount
     "I am up for $millisecondsUptime milliseconds!"
-    
+
     $timespan = New-TimeSpan -Seconds ($millisecondsUptime/1000)
     $timespan
 
@@ -31,10 +31,10 @@ Windows 每次启动的时候，都启动一个高精度计数器，这个计数
 
     $millisecondsUptime = [Environment]::TickCount
     "I am up for $millisecondsUptime milliseconds!"
-    
+
     $timespan = New-TimeSpan -Seconds ($millisecondsUptime/1000)
     $hours = $timespan.TotalHours
-    
+
     "System is up for {0:n0} hours now." -f $hours
 
 由于 `New-TimeSpan` 无法直接处理毫秒，所以需要做一个特殊处理。该脚本直接将毫秒数除以 1000，会引入一个小误差。

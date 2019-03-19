@@ -19,12 +19,12 @@ PowerShell 5.1 终于发布了管理本地用户账户的 cmdlet。要获取本�
 PS C:\> Get-LocalUser | Select-Object -Property *
 
 
-AccountExpires         : 
+AccountExpires         :
 Description            : Predefined Account to manage computer or domain
 Enabled                : False
-FullName               : 
-PasswordChangeableDate : 
-PasswordExpires        : 
+FullName               :
+PasswordChangeableDate :
+PasswordExpires        :
 UserMayChangePassword  : True
 PasswordRequired       : True
 PasswordLastSet        : 7/10/2015 2:22:01 PM
@@ -34,31 +34,31 @@ SID                    : S-1-5-21-2012478179-265285931-690539891-500
 PrincipalSource        : Local
 ObjectClass            : User
 
-AccountExpires         : 
+AccountExpires         :
 Description            : User Account managed by system
 Enabled                : False
-FullName               : 
-PasswordChangeableDate : 
-PasswordExpires        : 
+FullName               :
+PasswordChangeableDate :
+PasswordExpires        :
 UserMayChangePassword  : True
 PasswordRequired       : False
-PasswordLastSet        : 
-LastLogon              : 
+PasswordLastSet        :
+LastLogon              :
 Name                   : DefaultAccount
 SID                    : S-1-5-21-2012478179-265285931-690539891-503
 PrincipalSource        : Local
 ObjectClass            : User
 
-AccountExpires         : 
+AccountExpires         :
 Description            : Predefined Account for Guest access
 Enabled                : False
-FullName               : 
-PasswordChangeableDate : 
-PasswordExpires        : 
+FullName               :
+PasswordChangeableDate :
+PasswordExpires        :
 UserMayChangePassword  : False
 PasswordRequired       : False
-PasswordLastSet        : 
-LastLogon              : 
+PasswordLastSet        :
+LastLogon              :
 Name                   : Guest
 SID                    : S-1-5-21-2012478179-265285931-690539891-501
 PrincipalSource        : Local

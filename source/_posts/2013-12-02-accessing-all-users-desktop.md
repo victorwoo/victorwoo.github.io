@@ -15,7 +15,7 @@ tags:
 `Resolve-Path` 是一个相当棒的查找相同深度路径用的 Cmdlet。例如，以下是一段很短小的代码，它在您机器的每个用户桌面上创建一个文本文件：
 
 	$root = Split-Path $env:USERPROFILE
-	
+
 	Resolve-Path $root\*\Desktop |
 	  ForEach-Object {
 	    $Path = Join-Path -Path $_ -ChildPath 'hello there.txt'

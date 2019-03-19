@@ -66,7 +66,7 @@ function Get-HardDriveSize
   }
 
   # get all hard drives
-  Get-CimInstance -ClassName Win32_LogicalDisk @PSBoundParameters -Filter "DriveType=3" | 
+  Get-CimInstance -ClassName Win32_LogicalDisk @PSBoundParameters -Filter "DriveType=3" |
   Select-Object -Property $prop1, $prop2, $prop3, $prop4
 }
 ```
