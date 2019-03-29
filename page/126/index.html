@@ -177,11 +177,11 @@ var _hmt = _hmt || [];
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                1378
+                1379
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                102
+                103
                 <span>标签</span>
             </div>
         </div>
@@ -230,7 +230,7 @@ var _hmt = _hmt || [];
 
             
             <section id="main">
-    <article id="post-get-most-used-alias-of-powershell-cmdlet" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-change-desktop-wallpaper" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -239,7 +239,7 @@ var _hmt = _hmt || [];
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2014/01/10/get-most-used-alias-of-powershell-cmdlet/">获取最常用的 PowerShell Cmdlet 别名</a>
+            <a class="article-title" href="/2014/01/10/change-desktop-wallpaper/">PowerShell 技能连载 - 更改桌面背景</a>
         </h1>
     
 
@@ -248,7 +248,7 @@ var _hmt = _hmt || [];
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2014/01/10/get-most-used-alias-of-powershell-cmdlet/">
+        <a href="/2014/01/10/change-desktop-wallpaper/">
             <time datetime="2014-01-09T16:00:00.000Z" itemprop="datePublished">2014-01-10</time>
         </a>
     </div>
@@ -257,13 +257,13 @@ var _hmt = _hmt || [];
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/powershell/">powershell</a>
+        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/powershell/">powershell</a>
+        <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/powertip/">powertip</a>, <a class="tag-link" href="/tags/series/">series</a>, <a class="tag-link" href="/tags/tip/">tip</a>
     </div>
 
                     </div>
@@ -273,49 +273,59 @@ var _hmt = _hmt || [];
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>我们可以对 Get-Alias 的结果进行分组和排序，看看常用的别名有哪些。</p>
-<pre><code>gal | group Definition | sort Count -Descending
-</code></pre><p>执行结果：</p>
-<pre><code>Count Name                      Group
------ ----                      -----
-    6 Remove-Item               {del, erase, rd, ri...}
-    3 Move-Item                 {mi, move, mv}
-    3 Invoke-WebRequest         {curl, iwr, wget}
-    3 Copy-Item                 {copy, cp, cpi}
-    3 Get-ChildItem             {dir, gci, ls}
-    3 Set-Location              {cd, chdir, sl}
-    3 Get-Content               {cat, gc, type}
-    3 Get-History               {ghy, h, history}
-    2 Start-Process             {saps, start}
-    2 ForEach-Object            { %, foreach}
-    2 Get-Location              {gl, pwd}
-    2 Invoke-History            {ihy, r}
-    2 Rename-Item               {ren, rni}
-    2 Get-Process               {gps, ps}
-    2 Write-Output              {echo, write}
-    2 Set-Variable              {set, sv}
-    2 Clear-Host                {clear, cls}
-    2 Stop-Process              {kill, spps}
-    2 New-PSDrive               {mount, ndr}
-    2 Compare-Object            {compare, diff}
-    2 Where-Object              {?, where}
-    1 Receive-Job               {rcjb}
-    1 Receive-PSSession         {rcsn}
-    1 Measure-Object            {measure}
-    1 Remove-PSBreakpoint       {rbp}
-    1 Remove-PSDrive            {rdr}
-    1 mkdir                     {md}
-...
-</code></pre><p>还可以用如下命令查看只有 1 个字母的别名（肯定最常用了）：</p>
-<pre><code>gal | where { $_.Name.Length -eq 1 }
+            <p>PowerShell 可以通过调用 Windows API，实现更改当前桌面背景并且立即生效。以下函数实现立刻更换桌面背景：</p>
+<pre><code>function Set-Wallpaper
+{
+    param(
+        [Parameter(Mandatory=$true)]
+        $Path,
 
-CommandType     Name                                               ModuleName
------------     ----                                               ----------
-Alias           % -&gt; ForEach-Object
-Alias           ? -&gt; Where-Object
-Alias           h -&gt; Get-History
-Alias           r -&gt; Invoke-History
-</code></pre>
+        [ValidateSet(&apos;Center&apos;, &apos;Stretch&apos;)]
+        $Style = &apos;Stretch&apos;
+    )
+
+    Add-Type @&quot;
+using System;
+using System.Runtime.InteropServices;
+using Microsoft.Win32;
+namespace Wallpaper
+{
+public enum Style : int
+{
+Center, Stretch
+}
+public class Setter {
+public const int SetDesktopWallpaper = 20;
+public const int UpdateIniFile = 0x01;
+public const int SendWinIniChange = 0x02;
+[DllImport(&quot;user32.dll&quot;, SetLastError = true, CharSet = CharSet.Auto)]
+private static extern int SystemParametersInfo (int uAction, int uParam, string lpvParam, int fuWinIni);
+public static void SetWallpaper ( string path, Wallpaper.Style style ) {
+SystemParametersInfo( SetDesktopWallpaper, 0, path, UpdateIniFile | SendWinIniChange );
+RegistryKey key = Registry.CurrentUser.OpenSubKey(&quot;Control Panel\\Desktop&quot;, true);
+switch( style )
+{
+case Style.Stretch :
+key.SetValue(@&quot;WallpaperStyle&quot;, &quot;2&quot;) ;
+key.SetValue(@&quot;TileWallpaper&quot;, &quot;0&quot;) ;
+break;
+case Style.Center :
+key.SetValue(@&quot;WallpaperStyle&quot;, &quot;1&quot;) ;
+key.SetValue(@&quot;TileWallpaper&quot;, &quot;0&quot;) ;
+break;
+}
+key.Close();
+}
+}
+}
+&quot;@
+
+    [Wallpaper.Setter]::SetWallpaper( $Path, $Style )
+}
+
+Set-Wallpaper -Path &apos;C:\Windows\Web\Wallpaper\Characters\img24.jpg&apos;
+</code></pre><!--本文国际来源：[Change Desktop Wallpaper](http://community.idera.com/powershell/powertips/b/tips/posts/change-desktop-wallpaper)-->
+
         
         </div>
         <footer class="article-footer">
@@ -378,7 +388,145 @@ Alias           r -&gt; Invoke-History
 
             
     
-        <a href="http://blog.vichamp.com/2014/01/10/get-most-used-alias-of-powershell-cmdlet/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2014/01/10/get-most-used-alias-of-powershell-cmdlet/">评论</a>
+        <a href="http://blog.vichamp.com/2014/01/10/change-desktop-wallpaper/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2014/01/10/change-desktop-wallpaper/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-block-ad-of-tencent-qq-with-powershell" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2014/01/10/block-ad-of-tencent-qq-with-powershell/">用 PowerShell 屏蔽腾讯 QQ 的广告</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2014/01/10/block-ad-of-tencent-qq-with-powershell/">
+            <time datetime="2014-01-09T16:00:00.000Z" itemprop="datePublished">2014-01-10</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/powershell/">powershell</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/ad/">ad</a>, <a class="tag-link" href="/tags/block/">block</a>, <a class="tag-link" href="/tags/geek/">geek</a>, <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/qq/">qq</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>非会员 QQ，在对话窗口的右上角会显示一个广告横幅，如图所示：</p>
+<p><img src="/img/2014-01-10-block-ad-of-tencent-qq-with-powershell-001.png" alt=""></p>
+<p>我们可以将 %appdata%\Tencent\Users\QQ号\QQ\Misc.db 文件删除并且替换成一个同名文件夹，就可以屏蔽该广告：</p>
+<p><img src="/img/2014-01-10-block-ad-of-tencent-qq-with-powershell-002.png" alt=""></p>
+<p>如果您有多个 QQ 号的话，我们可以用 PowerShell 来批量完成该任务：</p>
+<pre><code>echo &apos;本脚本用于屏蔽 QQ 对话窗口右上方的广告条。&apos;
+Read-Host &apos;请关闭所有 QQ，按回车键继续&apos; | Out-Null
+
+$usersDir = &quot;$($env:AppData)\Tencent\Users\&quot;
+dir $usersDir -Directory | foreach {
+    $qq = $_
+    $qqDir = Join-Path $_.FullName &apos;QQ&apos;
+    $miscDb = Join-Path $qqDir Misc.db
+    if (Test-Path -PathType Leaf $miscDb) {
+        echo &quot;正在禁用 $qq 的广告&quot;
+        del $miscDb
+        md $miscDb | Out-Null
+    }
+}
+exit
+echo &apos;处理完毕。&apos;
+</code></pre><p>您也可以从这里 <a href="/assets/download/Block-QQAd.ps1">下载</a> 写好的脚本，祝您使用愉快。<br>本方法在 QQ2013（SP6） 上验证通过。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+</div>
+
+            
+    
+        <a href="http://blog.vichamp.com/2014/01/10/block-ad-of-tencent-qq-with-powershell/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2014/01/10/block-ad-of-tencent-qq-with-powershell/">评论</a>
     
 
         </footer>
@@ -638,126 +786,6 @@ Alias           r -&gt; Invoke-History
 
 
 
-    <article id="post-starting-services-remotely" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2014/01/06/starting-services-remotely/">PowerShell 技能连载 - 远程启动服务</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2014/01/06/starting-services-remotely/">
-            <time datetime="2014-01-05T16:00:00.000Z" itemprop="datePublished">2014-01-06</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/powertip/">powertip</a>, <a class="tag-link" href="/tags/series/">series</a>, <a class="tag-link" href="/tags/tip/">tip</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>由于 <code>Start-Service</code> 命令没有 <code>-ComputerName</code> 参数，所以您无法简单地远程启动一个服务。然而您可以在一个 PowerShell 远程管理会话中运行 <code>Start-Service</code> 命令。在某些场景下，一个更简单的方法是使用 <code>Set-Service</code> 命令。以下代码可以在名为 Server12 的服务器上远程启动 Spooler 服务：</p>
-<pre><code>Set-Service -Name Spooler -Status Running -ComputerName Server12
-</code></pre><p>不幸的是，这个命令没有 <code>-Force</code> 开关。所以虽然您可以简单地启动服务，但您可能无法用这种方式停止它们。当一个服务依赖于另一个服务时，它必须使用“强制”的方式来停止。</p>
-<!--本文国际来源：[Starting Services Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/starting-services-remotely)-->
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-    
-        <a href="http://blog.vichamp.com/2014/01/06/starting-services-remotely/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2014/01/06/starting-services-remotely/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-getting-system-information" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -880,6 +908,126 @@ $result = systeminfo.exe /FO CSV |
             
     
         <a href="http://blog.vichamp.com/2014/01/06/getting-system-information/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2014/01/06/getting-system-information/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-starting-services-remotely" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2014/01/06/starting-services-remotely/">PowerShell 技能连载 - 远程启动服务</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2014/01/06/starting-services-remotely/">
+            <time datetime="2014-01-05T16:00:00.000Z" itemprop="datePublished">2014-01-06</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/powertip/">powertip</a>, <a class="tag-link" href="/tags/series/">series</a>, <a class="tag-link" href="/tags/tip/">tip</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>由于 <code>Start-Service</code> 命令没有 <code>-ComputerName</code> 参数，所以您无法简单地远程启动一个服务。然而您可以在一个 PowerShell 远程管理会话中运行 <code>Start-Service</code> 命令。在某些场景下，一个更简单的方法是使用 <code>Set-Service</code> 命令。以下代码可以在名为 Server12 的服务器上远程启动 Spooler 服务：</p>
+<pre><code>Set-Service -Name Spooler -Status Running -ComputerName Server12
+</code></pre><p>不幸的是，这个命令没有 <code>-Force</code> 开关。所以虽然您可以简单地启动服务，但您可能无法用这种方式停止它们。当一个服务依赖于另一个服务时，它必须使用“强制”的方式来停止。</p>
+<!--本文国际来源：[Starting Services Remotely](http://community.idera.com/powershell/powertips/b/tips/posts/starting-services-remotely)-->
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+</div>
+
+            
+    
+        <a href="http://blog.vichamp.com/2014/01/06/starting-services-remotely/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2014/01/06/starting-services-remotely/">评论</a>
     
 
         </footer>
@@ -1397,135 +1545,6 @@ New-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\HTTP\Parameters `-Name 
 
 
 
-    <article id="post-getting-error-events-from-multiple-event-logs" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2013/12/30/getting-error-events-from-multiple-event-logs/">PowerShell 技能连载 - 从多个事件日志中获取错误事件</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/12/30/getting-error-events-from-multiple-event-logs/">
-            <time datetime="2013-12-29T16:00:00.000Z" itemprop="datePublished">2013-12-30</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/powertip/">powertip</a>, <a class="tag-link" href="/tags/series/">series</a>, <a class="tag-link" href="/tags/tip/">tip</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p><code>Get-EventLog</code> 命令每次只能读取一个事件日志。然而如果您希望从多个事件日志中读取事件，您可以传入数组信息：</p>
-<pre><code>$events = @(Get-EventLog -LogName System -EntryType Error)
-$events += Get-EventLog -LogName Application -EntryType Error
-
-$events
-</code></pre><p>在这些例子中，使用 WMI 来查询可能会更简单一些——它可以一次性查询任意多个系统日志。</p>
-<p>以下代码将从应用程序和系统日志中获取前 100 条错误日志（指的是总计 100 条，所以如果前 100 条错误都是应用程序日志，则当然不会包括系统错误）：</p>
-<pre><code>Get-WmiObject -Class Win32_NTLogEvent -Filter &apos;Type=&quot;Error&quot; and (LogFile=&quot;System&quot; or LogFile=&quot;Application&quot;)&apos; |
-  Select-Object -First 100 -Property TimeGenerated, LogFile, EventCode, Message
-</code></pre><p>当您将 <code>Get-WmiObject</code> 换成 <code>Get-CimInstance</code>（PowerShell 3.0 新增的命令），那么诡异的 WMI 日期格式将会被自动转换为普通的日期和时间：</p>
-<pre><code>Get-CimInstance -Class Win32_NTLogEvent -Filter &apos;Type=&quot;Error&quot; and (LogFile=&quot;System&quot; or LogFile=&quot;Application&quot;)&apos; |
-  Select-Object -First 100 -Property TimeGenerated, LogFile, EventCode, Message
-</code></pre><!--本文国际来源：[Getting Error Events from Multiple Event Logs](http://community.idera.com/powershell/powertips/b/tips/posts/getting-error-events-from-multiple-event-logs)-->
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-    
-        <a href="http://blog.vichamp.com/2013/12/30/getting-error-events-from-multiple-event-logs/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/12/30/getting-error-events-from-multiple-event-logs/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <a class="extend prev" rel="prev" href="/page/125/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/124/">124</a><a class="page-number" href="/page/125/">125</a><span class="page-number current">126</span><a class="page-number" href="/page/127/">127</a><a class="page-number" href="/page/128/">128</a><span class="space">&hellip;</span><a class="page-number" href="/page/138/">138</a><a class="extend next" rel="next" href="/page/127/">下一页 &raquo;</a>
     </nav>
@@ -1556,6 +1575,25 @@ $events
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/03/29/largest-powershell-community-in-china-has-1716-members/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/03/29/largest-powershell-community-in-china-has-1716-members/" class="title">The Largest PowerShell Community in China has 1716 Members Now!</a></p>
+                            <p class="item-date"><time datetime="2019-03-29T03:00:21.000Z" itemprop="datePublished">2019-03-29</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -1633,25 +1671,6 @@ $events
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/03/25/splitting-large-files-in-smaller-parts-part-2-wub-mac/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a></p>
-                            <p class="item-title"><a href="/2019/03/25/splitting-large-files-in-smaller-parts-part-2-wub-mac/" class="title">PowerShell 技能连载 - Splitting Large Files in Smaller Parts (Part 2)</a></p>
-                            <p class="item-date"><time datetime="2019-03-24T16:00:00.000Z" itemprop="datePublished">2019-03-25</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1670,7 +1689,7 @@ $events
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">39</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">五月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">39</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">五月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1679,7 +1698,7 @@ $events
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/net/">.net</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/0day/">0day</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ad/">ad</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angularjs/">angularjs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/animation/">animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/appz/">appz</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asciiart/">asciiart</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/batch/">batch</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestpractice/">bestpractice</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/block/">block</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug/">bug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/">c#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/career/">career</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cdn/">cdn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheatsheet/">cheatsheet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmdlet/">cmdlet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/">command</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csharp/">csharp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/database/">database</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddns/">ddns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/delicious/">delicious</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/develop/">develop</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dos/">dos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">download</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/drone/">drone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ebook/">ebook</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ed2k/">ed2k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/embedded/">embedded</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/encoding/">encoding</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/extension/">extension</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/front-end/">front-end</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gallery/">gallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/geek/">geek</a><span class="tag-list-count">30</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gtd/">gtd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guide/">guide</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guideline/">guideline</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gvim/">gvim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/icon/">icon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ide/">ide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ip/">ip</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iso/">iso</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/language/">language</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lesson/">lesson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/link/">link</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/microsoft/">microsoft</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/module/">module</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monthly/">monthly</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mvp/">mvp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nosql/">nosql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oray/">oray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/picture/">picture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powershell/">powershell</a><span class="tag-list-count">1341</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powertip/">powertip</a><span class="tag-list-count">1278</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/productivity/">productivity</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/proxy/">proxy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qq/">qq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/regex/">regex</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/registry/">registry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/release/">release</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/repack/">repack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/resource/">resource</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scm/">scm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/script/">script</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/series/">series</a><span class="tag-list-count">1278</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/server/">server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/skill/">skill</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sp1/">sp1</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study/">study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip/">tip</a><span class="tag-list-count">1277</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip个/">tip个</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tool/">tool</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uac/">uac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/visualstudio/">visualstudio</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vmware/">vmware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/window/">window</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xampp/">xampp</a><span class="tag-list-count">2</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/net/">.net</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/0day/">0day</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ad/">ad</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angularjs/">angularjs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/animation/">animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/appz/">appz</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asciiart/">asciiart</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/batch/">batch</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestpractice/">bestpractice</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/block/">block</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug/">bug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/">c#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/career/">career</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cdn/">cdn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheatsheet/">cheatsheet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmdlet/">cmdlet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/">command</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/community/">community</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csharp/">csharp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/database/">database</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddns/">ddns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/delicious/">delicious</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/develop/">develop</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dos/">dos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">download</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/drone/">drone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ebook/">ebook</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ed2k/">ed2k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/embedded/">embedded</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/encoding/">encoding</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/extension/">extension</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/front-end/">front-end</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gallery/">gallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/geek/">geek</a><span class="tag-list-count">30</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gtd/">gtd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guide/">guide</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/guideline/">guideline</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gvim/">gvim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/icon/">icon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ide/">ide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ip/">ip</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iso/">iso</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/language/">language</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lesson/">lesson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/link/">link</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/microsoft/">microsoft</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/module/">module</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monthly/">monthly</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mvp/">mvp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nosql/">nosql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oray/">oray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/picture/">picture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powershell/">powershell</a><span class="tag-list-count">1342</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powertip/">powertip</a><span class="tag-list-count">1278</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/productivity/">productivity</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/proxy/">proxy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qq/">qq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/regex/">regex</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/registry/">registry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/release/">release</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/repack/">repack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/resource/">resource</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scm/">scm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/script/">script</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/series/">series</a><span class="tag-list-count">1278</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/server/">server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/skill/">skill</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sp1/">sp1</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study/">study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip/">tip</a><span class="tag-list-count">1277</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tip个/">tip个</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tool/">tool</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uac/">uac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/visualstudio/">visualstudio</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vmware/">vmware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/window/">window</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xampp/">xampp</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -1688,7 +1707,7 @@ $events
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/net/" style="font-size: 10.77px;">.net</a> <a href="/tags/0day/" style="font-size: 10px;">0day</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/ad/" style="font-size: 10.77px;">ad</a> <a href="/tags/angularjs/" style="font-size: 11.54px;">angularjs</a> <a href="/tags/animation/" style="font-size: 10px;">animation</a> <a href="/tags/apache/" style="font-size: 10px;">apache</a> <a href="/tags/appz/" style="font-size: 10px;">appz</a> <a href="/tags/asciiart/" style="font-size: 10px;">asciiart</a> <a href="/tags/batch/" style="font-size: 11.54px;">batch</a> <a href="/tags/bestpractice/" style="font-size: 10.77px;">bestpractice</a> <a href="/tags/block/" style="font-size: 10.77px;">block</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/c/" style="font-size: 10px;">c#</a> <a href="/tags/career/" style="font-size: 10px;">career</a> <a href="/tags/cdn/" style="font-size: 10px;">cdn</a> <a href="/tags/cheatsheet/" style="font-size: 10px;">cheatsheet</a> <a href="/tags/cmd/" style="font-size: 10px;">cmd</a> <a href="/tags/cmdlet/" style="font-size: 10px;">cmdlet</a> <a href="/tags/command/" style="font-size: 11.54px;">command</a> <a href="/tags/csharp/" style="font-size: 10px;">csharp</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/database/" style="font-size: 10.77px;">database</a> <a href="/tags/ddns/" style="font-size: 10px;">ddns</a> <a href="/tags/delicious/" style="font-size: 11.54px;">delicious</a> <a href="/tags/develop/" style="font-size: 10.77px;">develop</a> <a href="/tags/dos/" style="font-size: 10px;">dos</a> <a href="/tags/download/" style="font-size: 13.08px;">download</a> <a href="/tags/drone/" style="font-size: 10px;">drone</a> <a href="/tags/ebook/" style="font-size: 10.77px;">ebook</a> <a href="/tags/ed2k/" style="font-size: 10px;">ed2k</a> <a href="/tags/embedded/" style="font-size: 10px;">embedded</a> <a href="/tags/encoding/" style="font-size: 10px;">encoding</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/extension/" style="font-size: 10px;">extension</a> <a href="/tags/front-end/" style="font-size: 10px;">front-end</a> <a href="/tags/gallery/" style="font-size: 10px;">gallery</a> <a href="/tags/geek/" style="font-size: 17.69px;">geek</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gtd/" style="font-size: 10px;">gtd</a> <a href="/tags/guide/" style="font-size: 10.77px;">guide</a> <a href="/tags/guideline/" style="font-size: 16.15px;">guideline</a> <a href="/tags/gvim/" style="font-size: 10px;">gvim</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/icon/" style="font-size: 10px;">icon</a> <a href="/tags/ide/" style="font-size: 10px;">ide</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/ip/" style="font-size: 10px;">ip</a> <a href="/tags/iso/" style="font-size: 10.77px;">iso</a> <a href="/tags/javascript/" style="font-size: 14.62px;">javascript</a> <a href="/tags/language/" style="font-size: 10px;">language</a> <a href="/tags/learning/" style="font-size: 13.85px;">learning</a> <a href="/tags/lesson/" style="font-size: 10px;">lesson</a> <a href="/tags/link/" style="font-size: 13.85px;">link</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/microsoft/" style="font-size: 12.31px;">microsoft</a> <a href="/tags/module/" style="font-size: 10px;">module</a> <a href="/tags/mongodb/" style="font-size: 10.77px;">mongodb</a> <a href="/tags/mongoose/" style="font-size: 10px;">mongoose</a> <a href="/tags/monthly/" style="font-size: 10px;">monthly</a> <a href="/tags/mvp/" style="font-size: 10px;">mvp</a> <a href="/tags/node-js/" style="font-size: 10.77px;">node.js</a> <a href="/tags/nodejs/" style="font-size: 10.77px;">nodejs</a> <a href="/tags/nosql/" style="font-size: 10.77px;">nosql</a> <a href="/tags/oray/" style="font-size: 10px;">oray</a> <a href="/tags/picture/" style="font-size: 10px;">picture</a> <a href="/tags/powershell/" style="font-size: 20px;">powershell</a> <a href="/tags/powertip/" style="font-size: 19.23px;">powertip</a> <a href="/tags/productivity/" style="font-size: 10px;">productivity</a> <a href="/tags/proxy/" style="font-size: 10px;">proxy</a> <a href="/tags/qq/" style="font-size: 10.77px;">qq</a> <a href="/tags/regex/" style="font-size: 13.08px;">regex</a> <a href="/tags/registry/" style="font-size: 10px;">registry</a> <a href="/tags/release/" style="font-size: 10.77px;">release</a> <a href="/tags/repack/" style="font-size: 10px;">repack</a> <a href="/tags/resource/" style="font-size: 10px;">resource</a> <a href="/tags/scm/" style="font-size: 10px;">scm</a> <a href="/tags/script/" style="font-size: 16.92px;">script</a> <a href="/tags/series/" style="font-size: 19.23px;">series</a> <a href="/tags/server/" style="font-size: 10.77px;">server</a> <a href="/tags/skill/" style="font-size: 12.31px;">skill</a> <a href="/tags/software/" style="font-size: 10px;">software</a> <a href="/tags/sp1/" style="font-size: 10px;">sp1</a> <a href="/tags/study/" style="font-size: 10px;">study</a> <a href="/tags/style/" style="font-size: 10px;">style</a> <a href="/tags/text/" style="font-size: 15.38px;">text</a> <a href="/tags/tip/" style="font-size: 18.46px;">tip</a> <a href="/tags/tip个/" style="font-size: 10px;">tip个</a> <a href="/tags/tool/" style="font-size: 10px;">tool</a> <a href="/tags/uac/" style="font-size: 10px;">uac</a> <a href="/tags/update/" style="font-size: 10px;">update</a> <a href="/tags/video/" style="font-size: 10.77px;">video</a> <a href="/tags/vim/" style="font-size: 10.77px;">vim</a> <a href="/tags/visualstudio/" style="font-size: 11.54px;">visualstudio</a> <a href="/tags/vmware/" style="font-size: 10px;">vmware</a> <a href="/tags/web/" style="font-size: 13.08px;">web</a> <a href="/tags/window/" style="font-size: 10px;">window</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/xampp/" style="font-size: 10.77px;">xampp</a>
+            <a href="/tags/net/" style="font-size: 10.77px;">.net</a> <a href="/tags/0day/" style="font-size: 10px;">0day</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/ad/" style="font-size: 10.77px;">ad</a> <a href="/tags/angularjs/" style="font-size: 11.54px;">angularjs</a> <a href="/tags/animation/" style="font-size: 10px;">animation</a> <a href="/tags/apache/" style="font-size: 10px;">apache</a> <a href="/tags/appz/" style="font-size: 10px;">appz</a> <a href="/tags/asciiart/" style="font-size: 10px;">asciiart</a> <a href="/tags/batch/" style="font-size: 11.54px;">batch</a> <a href="/tags/bestpractice/" style="font-size: 10.77px;">bestpractice</a> <a href="/tags/block/" style="font-size: 10.77px;">block</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/c/" style="font-size: 10px;">c#</a> <a href="/tags/career/" style="font-size: 10px;">career</a> <a href="/tags/cdn/" style="font-size: 10px;">cdn</a> <a href="/tags/cheatsheet/" style="font-size: 10px;">cheatsheet</a> <a href="/tags/cmd/" style="font-size: 10px;">cmd</a> <a href="/tags/cmdlet/" style="font-size: 10px;">cmdlet</a> <a href="/tags/command/" style="font-size: 11.54px;">command</a> <a href="/tags/community/" style="font-size: 10px;">community</a> <a href="/tags/csharp/" style="font-size: 10px;">csharp</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/database/" style="font-size: 10.77px;">database</a> <a href="/tags/ddns/" style="font-size: 10px;">ddns</a> <a href="/tags/delicious/" style="font-size: 11.54px;">delicious</a> <a href="/tags/develop/" style="font-size: 10.77px;">develop</a> <a href="/tags/dos/" style="font-size: 10px;">dos</a> <a href="/tags/download/" style="font-size: 13.08px;">download</a> <a href="/tags/drone/" style="font-size: 10px;">drone</a> <a href="/tags/ebook/" style="font-size: 10.77px;">ebook</a> <a href="/tags/ed2k/" style="font-size: 10px;">ed2k</a> <a href="/tags/embedded/" style="font-size: 10px;">embedded</a> <a href="/tags/encoding/" style="font-size: 10px;">encoding</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/extension/" style="font-size: 10px;">extension</a> <a href="/tags/front-end/" style="font-size: 10px;">front-end</a> <a href="/tags/gallery/" style="font-size: 10px;">gallery</a> <a href="/tags/geek/" style="font-size: 17.69px;">geek</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gtd/" style="font-size: 10px;">gtd</a> <a href="/tags/guide/" style="font-size: 10.77px;">guide</a> <a href="/tags/guideline/" style="font-size: 16.15px;">guideline</a> <a href="/tags/gvim/" style="font-size: 10px;">gvim</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/icon/" style="font-size: 10px;">icon</a> <a href="/tags/ide/" style="font-size: 10px;">ide</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/ip/" style="font-size: 10px;">ip</a> <a href="/tags/iso/" style="font-size: 10.77px;">iso</a> <a href="/tags/javascript/" style="font-size: 14.62px;">javascript</a> <a href="/tags/language/" style="font-size: 10px;">language</a> <a href="/tags/learning/" style="font-size: 13.85px;">learning</a> <a href="/tags/lesson/" style="font-size: 10px;">lesson</a> <a href="/tags/link/" style="font-size: 13.85px;">link</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/microsoft/" style="font-size: 12.31px;">microsoft</a> <a href="/tags/module/" style="font-size: 10px;">module</a> <a href="/tags/mongodb/" style="font-size: 10.77px;">mongodb</a> <a href="/tags/mongoose/" style="font-size: 10px;">mongoose</a> <a href="/tags/monthly/" style="font-size: 10px;">monthly</a> <a href="/tags/mvp/" style="font-size: 10px;">mvp</a> <a href="/tags/node-js/" style="font-size: 10.77px;">node.js</a> <a href="/tags/nodejs/" style="font-size: 10.77px;">nodejs</a> <a href="/tags/nosql/" style="font-size: 10.77px;">nosql</a> <a href="/tags/oray/" style="font-size: 10px;">oray</a> <a href="/tags/picture/" style="font-size: 10px;">picture</a> <a href="/tags/powershell/" style="font-size: 20px;">powershell</a> <a href="/tags/powertip/" style="font-size: 19.23px;">powertip</a> <a href="/tags/productivity/" style="font-size: 10px;">productivity</a> <a href="/tags/proxy/" style="font-size: 10px;">proxy</a> <a href="/tags/qq/" style="font-size: 10.77px;">qq</a> <a href="/tags/regex/" style="font-size: 13.08px;">regex</a> <a href="/tags/registry/" style="font-size: 10px;">registry</a> <a href="/tags/release/" style="font-size: 10.77px;">release</a> <a href="/tags/repack/" style="font-size: 10px;">repack</a> <a href="/tags/resource/" style="font-size: 10px;">resource</a> <a href="/tags/scm/" style="font-size: 10px;">scm</a> <a href="/tags/script/" style="font-size: 16.92px;">script</a> <a href="/tags/series/" style="font-size: 19.23px;">series</a> <a href="/tags/server/" style="font-size: 10.77px;">server</a> <a href="/tags/skill/" style="font-size: 12.31px;">skill</a> <a href="/tags/software/" style="font-size: 10px;">software</a> <a href="/tags/sp1/" style="font-size: 10px;">sp1</a> <a href="/tags/study/" style="font-size: 10px;">study</a> <a href="/tags/style/" style="font-size: 10px;">style</a> <a href="/tags/text/" style="font-size: 15.38px;">text</a> <a href="/tags/tip/" style="font-size: 18.46px;">tip</a> <a href="/tags/tip个/" style="font-size: 10px;">tip个</a> <a href="/tags/tool/" style="font-size: 10px;">tool</a> <a href="/tags/uac/" style="font-size: 10px;">uac</a> <a href="/tags/update/" style="font-size: 10px;">update</a> <a href="/tags/video/" style="font-size: 10.77px;">video</a> <a href="/tags/vim/" style="font-size: 10.77px;">vim</a> <a href="/tags/visualstudio/" style="font-size: 11.54px;">visualstudio</a> <a href="/tags/vmware/" style="font-size: 10px;">vmware</a> <a href="/tags/web/" style="font-size: 13.08px;">web</a> <a href="/tags/window/" style="font-size: 10px;">window</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/xampp/" style="font-size: 10.77px;">xampp</a>
         </div>
     </div>
 
