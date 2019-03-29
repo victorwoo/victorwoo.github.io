@@ -92,7 +92,6 @@ param
 PS> Send-OutlookMail -Recipient frank@test.com -Subject 'Hi Frank!' -building 'Trying a new PS script. See attachment.' -FilePath 'c:\stuff\sample.zip' -Importance 0
 ```
 
-Provided you have Outlook installed and set up a profile, this line opens the composed email in a dialog window so you can double-check and add final touches, then click &ldquo;Send&rdquo; to send it.
 假设您安装了 Outlook 并且设置了用户配置文件，这行代码将在一个对话框窗口中打开写好的邮件，这样您可以再次确认并做最终修改，然后按下“发送”按钮将邮件发送出去。
 
 如果您指定了 `-SendImmediately` 开关参数，PowerShell 将会试图立即发送邮件。是否能够正确发送取决于您的 Outlook 关于自动操作的安全设置。自动发送邮件可能被禁用，或是会弹出一个对话框来征得您的同意。

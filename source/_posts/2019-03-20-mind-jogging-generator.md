@@ -19,9 +19,9 @@ function Convert-Text
 {
     param
     (
-      $Text = &#39;Early to bed and early to rise makes a man healthy, wealthy and wise.&#39;
+      $Text = 'Early to bed and early to rise makes a man healthy, wealthy and wise.'
     )
-    $words = $Text -split &#39; &#39;
+    $words = $Text -split ' '
 
     $newWords = foreach($word in $words)
     {
@@ -36,12 +36,12 @@ function Convert-Text
             $charLen = $word.Length -2
             $inbetween = $word[1..$charLen]
             $chars = $inbetween | Get-Random -Count $word.Length
-            $inbetweenScrambled = $chars -join &#39;&#39;
+            $inbetweenScrambled = $chars -join ''
             "$firstChar$inbetweenScrambled$lastChar"
         }
     }
 
-    $newWords -join &#39; &#39;
+    $newWords -join ' '
 }
 ```
 

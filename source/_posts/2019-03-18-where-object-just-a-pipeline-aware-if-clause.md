@@ -33,7 +33,7 @@ Get-Service | ForEach-Object {
 $services = Get-Service
 Foreach ($_ in $services)
 {
-  if ($_.Status -eq &#39;Running&#39;)
+  if ($_.Status -eq 'Running')
   {
     $_
   }

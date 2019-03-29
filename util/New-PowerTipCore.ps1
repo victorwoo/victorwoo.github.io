@@ -134,7 +134,8 @@ function Get-PostContent ([string]$url) {
     Write-Debug $url
     $resp = Invoke-WebRequest $url
     $htmlDoc = $resp | ConvertFrom-Html
-    return $htmlDoc.SelectSingleNode('//div[@class="content full text"]/div[@class="content"]').InnerHtml
+    $entitizedHtml = $htmlDoc.SelectSingleNode('//div[@class="content full text"]/div[@class="content"]').InnerHtml
+    return [System.Net.WebUtility]::HtmlDecode($entitizedHtml)
 }
 
 ###########

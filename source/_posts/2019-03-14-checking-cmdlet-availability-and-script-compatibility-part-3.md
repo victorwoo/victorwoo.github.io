@@ -57,7 +57,7 @@ $functionNames = Get-ContainedCommand $Path -ItemType FunctionDefinition |
       Sort-Object -Unique |
       ForEach-Object {
     $module = (Get-Command -name $_).Source
-    $builtIn = $module -like &#39;Microsoft.PowerShell.*&#39;
+    $builtIn = $module -like 'Microsoft.PowerShell.*';
 
     [PSCustomObject]@{
         Command = $_

@@ -67,6 +67,6 @@ $largeFiles.Count
 可见，当通过管道传入数据时，PowerShell 对每个传入的对象调用绑定的参数方法，这将显著地增加时间开销。由于 `ForEach-Object` 和 `Where-Object` 使用参数，所以会激活绑定。
 
 当您不使用内部包含 `process` 脚本块的匿名脚本块时，将忽略所有的参数绑定并显著加速 PowerShell 管道的执行速度。
-z
+
 <!--本文国际来源：[Speeding Up the PowerShell Pipeline](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/speeding-up-the-powershell-pipeline)-->
 

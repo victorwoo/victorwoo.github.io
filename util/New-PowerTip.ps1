@@ -19,6 +19,9 @@ function Get-Document($text) {
 # 对正文内容做一些微调。
 function Optimize-Content($text) {
     $text = $text.Replace('_All PowerShell Versions_', '_适用于 PowerShell 所有版本_')
+    $text = $text.Replace('&#39; ', "'")
+    $text = $text.Replace('_All PowerShell Versions_', '_适用于 PowerShell 所有版本_')
+
     $lines = $text -split "`n"
     $lines =  $lines | where {
         !$_.Contains('ReTweet this Tip!')
