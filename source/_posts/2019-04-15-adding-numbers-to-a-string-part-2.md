@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-In the previous tip we illustrated a number of ways how to safely add variables to string content. Adding variables to double-quoted text can expose yet another issue with automatic variable detection. Have a look:
 在前一个技能中我们演示了一系列安全地将变量加入到字符串中的方法。将变量变量添加到双引号包围的文本中会导致
 
     # this is the desired output:
