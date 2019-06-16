@@ -42,7 +42,8 @@ function Convert-HtmlToMarkdown ($html) {
 
     del $htmlFile
     del $markdownFile
-    $markdown = $markdown.Trim()
+    $markdown = $markdown.ToString().Trim()
+    if ($markdown -eq 'System.Object[]') { $markdown = '' }
     return $markdown
 }
 
