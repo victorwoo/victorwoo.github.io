@@ -14,7 +14,6 @@ tags:
 ---
 _适用于 PowerShell 所有版本_
 
-Here is a clever trick how to find out how many lines a string (not a string array!) contains:
 以下是一个获取字符串（而不是字符串数组！）行数的技巧：
 
     $text = @'

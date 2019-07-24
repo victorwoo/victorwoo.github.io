@@ -1,3 +1,6 @@
+# Install-Module -Name PowerHTML
+# brew install dos2unix
+
 # cd /Users/vichamp/temp/blog.vichamp.com/util
 $ErrorActionPreference = 'Stop'
 
