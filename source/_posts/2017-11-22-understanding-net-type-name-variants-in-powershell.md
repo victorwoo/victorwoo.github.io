@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-11-22 00:00:00
-title: "PowerShell 技能连载 - Understanding .NET Type Name Variants in PowerShell"
+title: "PowerShell 技能连载 - 理解 PowerShell 中 .NET 类型名称的变体"
 description: PowerTip of the Day - Understanding .NET Type Name Variants in PowerShell
 categories:
 - powershell

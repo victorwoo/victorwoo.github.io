@@ -22,7 +22,6 @@ _适用于 PowerShell 3.0 及以上版本_
 
 基本上，`Where-Object` 可以指定对象拥有的任意属性并且允许您定义需要的条件。
 
-If you planned to get a list of stoppable services, the above line would not work well. Some services may be running but cannot be stopped. By adjusting your filter slightly, you still get what you need. This produces a list of running services that are actually stoppable:
 如果您打算获得一个可停止的服务的列表，那么上述代码不能达到您所要的目的。一些服务可能正在运行但是不能被停止。稍微调整一下过滤条件，您就可以达到所要的目的了。这段代码列出所有运行中并且可以停止的服务：
 
     PS> Get-Service | Where-Object CanStop

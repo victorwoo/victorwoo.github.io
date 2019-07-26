@@ -39,7 +39,6 @@ PS> Get-EventLog -LogName System -EntryType Error -Newest 6 | Format-Table -Auto
 
 您现在可以方便地将结果输送到 `Out-File` 并创建有意义的文本报告。同时，设置其 `Width` 参数，以调整报告文件的宽度。
 
-And if you don’t know the exact name of a particular log, simply use “*” for -LogName:
 如果您不知道某个日志的确切名字，只需要将 `"*"` 赋给 `-LogName`：
 
 ```powershell
