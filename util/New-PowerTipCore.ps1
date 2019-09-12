@@ -8,8 +8,8 @@ $folder = '..\source\_posts'
 $downloadPath = '..\source\img'
 $relateUrl = '/img/'
 
-if (gmo Blog) { rmo Blog }
-ipmo ./Blog.psm1
+if (Get-Module Blog) { Remove-Module Blog }
+Import-Module ./Blog.psm1
 
 function Get-Document($text) {
     # TODO 内联
