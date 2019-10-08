@@ -4,7 +4,7 @@ pwsh -NoProfile -ExecutionPolicy Unrestricted ./Export-PSTipsIndex.ps1
 pwsh -NoProfile -ExecutionPolicy Unrestricted ./Get-ImagesCore.ps1
 pwsh -NoProfile -ExecutionPolicy Unrestricted ./Write-Comment.ps1
 
-dos2unix ..\source\_posts\*.md
+dos2unix ../source/_posts/*.md
 
 cd ..
 
