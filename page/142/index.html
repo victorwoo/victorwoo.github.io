@@ -372,387 +372,6 @@ $array -join &apos;&apos;
 
 
 
-    <article id="post-use-powershell-to-export-bookmarks-in-meiweisq" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/">用 PowerShell 脚本来导出美味书签</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/">
-            <time datetime="2013-10-31T16:00:00.000Z" itemprop="datePublished">2013-11-01</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/powershell/">powershell</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/delicious/">delicious</a>, <a class="tag-link" href="/tags/geek/">geek</a>, <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/script/">script</a>, <a class="tag-link" href="/tags/web/">web</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><a href="http://meiweisq.com" title="Delicious的中国版" target="_blank" rel="noopener">美味书签</a>是 <a href="http://delicious.com" title="Delicious官方网站" target="_blank" rel="noopener">Delicious</a> 在线书签服务的中国本地化版本。由于各方面原因，美味书签实现的功能有限，远远达不到 Delicious 的功能。所以我希望将美味书签中的使用记录迁移回 Delicious。</p>
-<p>经过一年使用，我在美味书签中已经积累了 5000+ 条书签记录。由于<a href="http://meiweisq.com" title="Delicious的中国版" target="_blank" rel="noopener">美味书签</a>不支持书签导出功能，所以将美味书签中的书签导出至 Delicious 是一件需要动手动脑的事。幸好我们有 PowerShell 脚本，可以助我们完成这项单调枯燥的事。</p>
-<p>这是一个系列文章，一共分为 3 部分：</p>
-<ol>
-<li><a href="/powershell/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq">用 PowerShell 脚本来导出美味书签</a></li>
-<li><a href="/powershell/2013/11/01/use-powershell-to-clear-all-bookmarks-in-your-delicious-account">用 PowerShell 脚本来清除 Delicious 账户下的所有书签</a></li>
-<li><a href="/powershell/2013/11/01/use-powershell-to-batch-import-bookmarks-into-delicious">用 PowerShell 脚本将书签批量导入 Delicious</a></li>
-</ol>
-<h1 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h1><h2 id="模拟美味书签的登录过程"><a href="#模拟美味书签的登录过程" class="headerlink" title="模拟美味书签的登录过程"></a>模拟美味书签的登录过程</h2><p>美味书签的登录页面地址为 <a href="http://meiweisq.com/login" title="登录美味书签" target="_blank" rel="noopener">http://meiweisq.com/login</a> 。我们可以使用 <code>Invoke-WebRequest</code> 获取登录页面，同时把会话信息记录到 <em>$rb</em> 变量中。</p>
-<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-001.png" alt=""></p>
-<p>相应的 PowerShell 代码如下：</p>
-<pre><code>$response = Invoke-WebRequest -Uri $homeUrl -Method Default -SessionVariable rb -ContentType application/html
-</code></pre><p>得到的响应中其中包含多个表单。通过查看网页源代码，我们可以确定 Action 为“/login”的那个表单是我们所要的：</p>
-<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-002.png" alt=""></p>
-<p>相应的 PowerShell 代码为：</p>
-<pre><code>$loginForm = ($response.Forms | where { $_.Action -eq &apos;/login&apos; })[0]
-</code></pre><p>我们在 Chrome 浏览器中登录一下，通过“开发者工具”的“Network”选项卡查看提交的数据：</p>
-<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-003.png" alt=""></p>
-<p>根据提交的数据，我们可以编写 PowerShell 代码来提交表单，模拟登录按钮的动作。注意传入会话变量 <em>$rb</em>，以在后续的过程中保持会话身份，否则下次提交又会提示需要登录：</p>
-<pre><code>$loginForm.Fields[&apos;email&apos;] = $email
-$loginForm.Fields[&apos;password&apos;] = $password
-$loginForm.Fields[&apos;type&apos;] = &apos;登录&apos;
-$loginForm.Fields[&apos;return-url&apos;] = &apos;/home&apos;
-$loginForm.Fields[&apos;remember&apos;] = &apos;off&apos;
-$response = Invoke-WebRequest -Uri $loginAction -WebSession $rb -Method POST -Body $loginForm
-</code></pre><h2 id="取得书签总数"><a href="#取得书签总数" class="headerlink" title="取得书签总数"></a>取得书签总数</h2><p>在登录后的页面底部有“<em>1 - 30 共 5126 个书签</em>”的字样，其中 <em>30</em> 和 <em>5126</em> 两个数字是我们关心的。我们用正则表达式 <code>1 - (\d+) 共 (\d+) 个书签</code> 从整个网页中提取书签的总数量。在 PowerShell 使用正则表达式：</p>
-<pre><code>$response.Content -cmatch &apos;1 - (\d+) 共 (\d+) 个书签&apos;
-$page1Count = $Matches[1]
-$totalCount = $Matches[2]
-echo &quot;1 - $page1Count 共 $totalCount 个书签&quot;
-</code></pre><p>根据 <em>$page1Count</em> 和 <em>$totalCount</em>，就可以计算总页数了：</p>
-<pre><code>$pageCount = [math]::Ceiling($totalCount / $bookmarksPerPage)
-</code></pre><h2 id="遍历每一页"><a href="#遍历每一页" class="headerlink" title="遍历每一页"></a>遍历每一页</h2><p>知道了总页数，自然想到用 for 循环来遍历它们。我们观察每一页的规律，发现页码是通过 URL 的 page 参数指定的。我们用 PowerShell 来拼接 URL 字符串：</p>
-<pre><code>$uri = &apos;http://meiweisq.com/home?page=&apos; + $page
-</code></pre><p>对于每一页，继续用 <code>Invoke-WebRequest</code> 来获取它的内容：</p>
-<pre><code>$response = Invoke-WebRequest -Uri $uri -Method Default -WebSession $rb
-</code></pre><h2 id="分析书签"><a href="#分析书签" class="headerlink" title="分析书签"></a>分析书签</h2><p>在每一页中，含有不超过 30 个书签，其中包含了书签的标题、URL、标签、时间等信息。</p>
-<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-004.png" alt=""></p>
-<p>接下来是一些 DOM 的分析，需要一点耐心。我们先把它输出为 .html 文件，以便分析：</p>
-<pre><code>$response.Content &gt; current_page.html
-</code></pre><p>从 Chrome 的开发者工具中，可以观察到 DOM 的结构。和我们有关系的是 class 为 links、link、tags、tag这些元素。我们用 jQuery 的语法来表达它们，整理成一个表格如下：</p>
-<table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>div.links</td>
-<td>本页所有书签的集合</td>
-</tr>
-<tr>
-<td>div.links &gt; div.link</td>
-<td>一个书签</td>
-</tr>
-<tr>
-<td>div.links &gt; div.link a.link-title</td>
-<td>书签标题、URL</td>
-</tr>
-<tr>
-<td>div.links &gt; div.link a.link-time</td>
-<td>时间</td>
-</tr>
-<tr>
-<td>div.links &gt; div.link ul.tags &gt; tag</td>
-<td>标签</td>
-</tr>
-</tbody>
-</table>
-<p>请注意一下，在 <code>Invoke-WebRequest</code> 的结果（COM 对象）中做 DOM 查询，是有点慢的，不像 WEB 中的 jQuery 那么高效。在我们需要做一定的优化，以缩短大量的查询的总时间。我的优化原则如下：</p>
-<ol>
-<li>能用 id 过滤的，不用 tag。</li>
-<li>如果需要查询一个节点的子节点，则把前者保存到临时变量中，不要每次都从根对象（document）开始查询。</li>
-</ol>
-<p>以下是 DOM 查询的相关代码：</p>
-<pre><code>$html = $response.ParsedHtml
-$linksDiv = ($html.getElementsByTagName(&apos;div&apos;) | where { $_.classname -eq &apos;links&apos; })[0]
-$linksDiv.getElementsByTagName(&apos;div&apos;) | where { $_.classname -cmatch &apos;\blink[\s,$]&apos; }
-
-$linkTitle = $div.getElementsByTagName(&apos;a&apos;) | where { $_.className -eq &apos;link-title&apos; }
-$title = $linkTitle | select -exp innerText
-$url = $linkTitle | select -exp href
-
-$linkTime = $div.getElementsByTagName(&apos;p&apos;) | where { $_.className -eq &apos;link-time&apos; } | select -exp innerText
-
-$ul = $div.getElementsByTagName(&apos;ul&apos;) | where { $_.className -cmatch &apos;\btags[\s,$]&apos; }
-$tags = $ul.getElementsByTagName(&apos;a&apos;) | where { $_.className -cmatch &apos;tag&apos; }
-$tagNames = $tags | foreach { $_.getAttribute(&apos;tag&apos;) }
-</code></pre><h2 id="Javascript-的时间转换"><a href="#Javascript-的时间转换" class="headerlink" title="Javascript 的时间转换"></a>Javascript 的时间转换</h2><p>美味书签的时间以 <code>yyyy/MM/dd</code> 的形式表达，而 Delicious 导入/导出文件的时间以 Javascript 格式表达。它们之间的转换方法是，前者减去1970年1月1日0时整的时间差，得到的总秒数，即得到其 Javascript 的格式表达。PowerShell 实现代码如下：</p>
-<pre><code>$jsTime = ([datetime]::ParseExact($_.LinkTime, &apos;yyyy/MM/dd&apos;, $null) - [datetime]&apos;1970-01-01&apos;).TotalSeconds
-</code></pre><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>经过上面的步骤，我们已将所有的书签以 PSObject 的形式存放在 $bookmarks 数组中。现在可以随心所欲地将 $bookmarks 输出为我们所希望的格式了：</p>
-<p>这是输出为 CSV 格式的代码：</p>
-<pre><code>$bookmarks | Export-Csv (&quot;meiweisq-export-{0:yyyyMMdd}.csv&quot; -f [datetime]::Now) -Encoding UTF8 -NoTypeInformation
-</code></pre><p>这是输出到 GUI 界面的代码：</p>
-<pre><code>$bookmarks | Out-GridView
-</code></pre><p>另外，我们可以导出为 <a href="http://delicious.com" title="Delicious官方网站" target="_blank" rel="noopener">Delicious</a> 的专用格式。由于格式比较简单，我们就不用 <code>ConvertTo-HTML</code> 之类的函数了。</p>
-<h1 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h1><pre><code>$email = &apos;victorwoo@gmail.com&apos;
-$password = &apos;xxx&apos;
-
-$homeUrl = &apos;http://meiweisq.com/home&apos;
-$loginAction = &apos;http://meiweisq.com/login&apos;
-
-$bookmarksPerPage = 30
-$countPerExport = 10
-
-function Get-DeliciousHtml($bookmarks) {
-    $pre = @&quot;
-&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;
-&lt;META HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html; charset=UTF-8&quot;&gt;
-&lt;!-- This is an automatically generated file.
-It will be read and overwritten.
-Do Not Edit! --&gt;
-&lt;TITLE&gt;Bookmarks&lt;/TITLE&gt;
-&lt;H1&gt;Bookmarks&lt;/H1&gt;
-&lt;DL&gt;&lt;p&gt;
-
-&quot;@
-
-    $post = @&quot;
-&lt;/DL&gt;&lt;p&gt;
-&quot;@
-
-    $bookmarkTemplate = @&quot;
-&lt;DT&gt;&lt;A HREF=&quot;{0}&quot; ADD_DATE=&quot;{1}&quot; PRIVATE=&quot;{2}&quot; TAGS=&quot;{3}&quot;&gt;{4}&lt;/A&gt;
-&lt;DD&gt;{5}
-
-&quot;@
-    $result = $pre
-    $bookmarks | foreach {
-        $jsTime = ([datetime]::ParseExact($_.LinkTime, &apos;yyyy/MM/dd&apos;, $null) - [datetime]&apos;1970-01-01&apos;).TotalSeconds
-        $tags = [string]::Join(&apos;,&apos;, $_.Tags -split &apos;, &apos;)
-        $bookmarkString = $bookmarkTemplate -f $_.Url, $jsTime, 0, $tags, $_.Title, &apos;&apos;
-        $result += $bookmarkString
-    }
-    $result += $post
-    return $result
-}
-
-$startTime = [datetime]::Now
-
-echo &apos;Requesting home&apos;
-$response = Invoke-WebRequest -Uri $homeUrl -Method Default -SessionVariable rb -ContentType application/html
-if ($response.StatusCode -ne 200) {
-    Write-Warning &quot;[$response.StatusCode] $homeUrl&quot;
-    return
-}
-$response.Content &gt; mwsq_login.html
-
-echo &apos;Logining&apos;
-$loginForm = ($response.Forms | where { $_.Action -eq &apos;/login&apos; })[0]
-$loginForm.Fields[&apos;email&apos;] = $email
-$loginForm.Fields[&apos;password&apos;] = $password
-$loginForm.Fields[&apos;type&apos;] = &apos;登录&apos;
-$loginForm.Fields[&apos;return-url&apos;] = &apos;/home&apos;
-$loginForm.Fields[&apos;remember&apos;] = &apos;off&apos;
-
-$response = Invoke-WebRequest -Uri $loginAction -WebSession $rb -Method POST -Body $loginForm
-if ($response.StatusCode -ne 200) {
-    Write-Warning &quot;[$response.StatusCode] $loginAction&quot;
-    return
-}
-$response.Content &gt; mwsq_home.html
-
-if ($response.Content -cnotmatch &apos;1 - (\d+) 共 (\d+) 个书签&apos;) {
-    Write-Warning &apos;找不到书签个数&apos;
-    return
-}
-
-$page1Count = $Matches[1]
-$totalCount = $Matches[2]
-echo &quot;1 - $page1Count 共 $totalCount 个书签&quot;
-$pageCount = [math]::Ceiling($totalCount / $bookmarksPerPage)
-echo &quot;共 $pageCount 页&quot;
-echo &apos;&apos;
-
-$bookmarks = @()
-for ($page = 1; $page -le $pageCount; $page++) {
-    $uri = &apos;http://meiweisq.com/home?page=&apos; + $page
-    echo &quot;Requesting $uri&quot;
-
-    $isSuccess = $false
-    while (!$isSuccess) {
-        try {
-            $response = Invoke-WebRequest -Uri $uri -Method Default -WebSession $rb
-            if ($response.StatusCode -ne 200) {
-                Write-Warning &quot;[$response.StatusCode] $loginAction&quot;
-                continue
-            }
-            $isSuccess = $true
-        } catch { }
-    }
-
-    $response.Content &gt; current_page.html
-    $html = $response.ParsedHtml
-    $linksDiv = ($html.getElementsByTagName(&apos;div&apos;) | where { $_.classname -eq &apos;links&apos; })[0]
-    $linksDiv.getElementsByTagName(&apos;div&apos;) | where { $_.classname -cmatch &apos;\blink[\s,$]&apos; } | foreach {
-        $message = &quot;Bookmark: {0} / {1}, Page: {2} / {3}, Elapsed: {4}&quot; -f @(
-            $($bookmarks.Length + 1),
-            $totalCount,
-            $page
-            $pageCount,
-            ([datetime]::Now - $startTime).ToString()
-        )
-        Write-Progress -Activity &apos;Getting bookmarks&apos; -PercentComplete (100 * ($bookmarks.Length + 1) / $totalCount) -CurrentOperation $message
-        echo &quot;$($bookmarks.Length + 1) of $totalCount&quot;
-        $div = $_
-        $linkTitle = $div.getElementsByTagName(&apos;a&apos;) | where { $_.className -eq &apos;link-title&apos; }
-
-        $title = $linkTitle | select -exp innerText
-        $title = $title.Trim()
-        echo $title
-
-        $url = $linkTitle | select -exp href
-        echo $url
-
-        $linkTime = $div.getElementsByTagName(&apos;p&apos;) | where { $_.className -eq &apos;link-time&apos; } | select -exp innerText
-        $linkTime = $linkTime.Trim()
-        echo $linkTime
-
-        $ul = $div.getElementsByTagName(&apos;ul&apos;) | where { $_.className -cmatch &apos;\btags[\s,$]&apos; }
-        $tags = $ul.getElementsByTagName(&apos;a&apos;) | where { $_.className -cmatch &apos;tag&apos; }
-        $tagNames = $tags | foreach { $_.getAttribute(&apos;tag&apos;) }
-        if ($tagNames -eq $null) {
-            $tagNames = @()
-        }
-
-
-        echo &quot;[$([string]::Join(&apos; | &apos;, $tagNames))]&quot;
-        echo &apos;&apos;
-
-        $bookmark = [PSObject]@{
-            Title = $title
-            Url = $url
-            LinkTime = $linkTime
-            Tags = [string]::Join(&apos;, &apos;, $tagNames)
-        }
-
-        $bookmarks += New-Object -TypeName PSObject -Property $bookmark
-    }
-}
-
-echo &apos;Exporting html thant you can import into del.icio.us&apos;
-$index = 0
-while ($index -lt $totalCount) {
-    $currentCountInExport = [math]::Min($countPerExport, $totalCount - $index)
-    $endIndex = $index + $currentCountInExport
-
-    $deliciousHtml = Get-DeliciousHtml ($bookmarks | select -Skip $index -First $currentCountInExport)
-    $deliciousHtml | sc -Encoding UTF8 (&quot;meiweisq-export-{0:yyyyMMdd}-{1}-{2}.html&quot; -f [datetime]::Now, $index, $endIndex)
-    $index += $currentCountInExport
-}
-
-$deliciousHtml = Get-DeliciousHtml $bookmarks
-$deliciousHtml | sc -Encoding UTF8 (&quot;meiweisq-export-{0:yyyyMMdd}-all.html&quot; -f [datetime]::Now)
-
-echo &apos;Exporting CSV.&apos;
-$bookmarks | Export-Csv (&quot;meiweisq-export-{0:yyyyMMdd}.csv&quot; -f [datetime]::Now) -Encoding UTF8 -NoTypeInformation
-
-echo &apos;Exporting GUI.&apos;
-$bookmarks | Out-GridView
-
-echo &apos;All done.&apos;
-</code></pre><p>您也可以<a href="/assets/download/Export-Meiweisq.ps1">点击这里下载</a>源代码。</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-    
-        <a href="http://blog.vichamp.com/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-use-powershell-to-batch-import-bookmarks-into-delicious" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1181,6 +800,387 @@ echo &apos;Done&apos;
             
     
         <a href="http://blog.vichamp.com/2013/11/01/use-powershell-to-clear-all-bookmarks-in-your-delicious-account/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/11/01/use-powershell-to-clear-all-bookmarks-in-your-delicious-account/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-use-powershell-to-export-bookmarks-in-meiweisq" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/">用 PowerShell 脚本来导出美味书签</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/">
+            <time datetime="2013-10-31T16:00:00.000Z" itemprop="datePublished">2013-11-01</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/powershell/">powershell</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/delicious/">delicious</a>, <a class="tag-link" href="/tags/geek/">geek</a>, <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/script/">script</a>, <a class="tag-link" href="/tags/web/">web</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><a href="http://meiweisq.com" title="Delicious的中国版" target="_blank" rel="noopener">美味书签</a>是 <a href="http://delicious.com" title="Delicious官方网站" target="_blank" rel="noopener">Delicious</a> 在线书签服务的中国本地化版本。由于各方面原因，美味书签实现的功能有限，远远达不到 Delicious 的功能。所以我希望将美味书签中的使用记录迁移回 Delicious。</p>
+<p>经过一年使用，我在美味书签中已经积累了 5000+ 条书签记录。由于<a href="http://meiweisq.com" title="Delicious的中国版" target="_blank" rel="noopener">美味书签</a>不支持书签导出功能，所以将美味书签中的书签导出至 Delicious 是一件需要动手动脑的事。幸好我们有 PowerShell 脚本，可以助我们完成这项单调枯燥的事。</p>
+<p>这是一个系列文章，一共分为 3 部分：</p>
+<ol>
+<li><a href="/powershell/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq">用 PowerShell 脚本来导出美味书签</a></li>
+<li><a href="/powershell/2013/11/01/use-powershell-to-clear-all-bookmarks-in-your-delicious-account">用 PowerShell 脚本来清除 Delicious 账户下的所有书签</a></li>
+<li><a href="/powershell/2013/11/01/use-powershell-to-batch-import-bookmarks-into-delicious">用 PowerShell 脚本将书签批量导入 Delicious</a></li>
+</ol>
+<h1 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h1><h2 id="模拟美味书签的登录过程"><a href="#模拟美味书签的登录过程" class="headerlink" title="模拟美味书签的登录过程"></a>模拟美味书签的登录过程</h2><p>美味书签的登录页面地址为 <a href="http://meiweisq.com/login" title="登录美味书签" target="_blank" rel="noopener">http://meiweisq.com/login</a> 。我们可以使用 <code>Invoke-WebRequest</code> 获取登录页面，同时把会话信息记录到 <em>$rb</em> 变量中。</p>
+<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-001.png" alt=""></p>
+<p>相应的 PowerShell 代码如下：</p>
+<pre><code>$response = Invoke-WebRequest -Uri $homeUrl -Method Default -SessionVariable rb -ContentType application/html
+</code></pre><p>得到的响应中其中包含多个表单。通过查看网页源代码，我们可以确定 Action 为“/login”的那个表单是我们所要的：</p>
+<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-002.png" alt=""></p>
+<p>相应的 PowerShell 代码为：</p>
+<pre><code>$loginForm = ($response.Forms | where { $_.Action -eq &apos;/login&apos; })[0]
+</code></pre><p>我们在 Chrome 浏览器中登录一下，通过“开发者工具”的“Network”选项卡查看提交的数据：</p>
+<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-003.png" alt=""></p>
+<p>根据提交的数据，我们可以编写 PowerShell 代码来提交表单，模拟登录按钮的动作。注意传入会话变量 <em>$rb</em>，以在后续的过程中保持会话身份，否则下次提交又会提示需要登录：</p>
+<pre><code>$loginForm.Fields[&apos;email&apos;] = $email
+$loginForm.Fields[&apos;password&apos;] = $password
+$loginForm.Fields[&apos;type&apos;] = &apos;登录&apos;
+$loginForm.Fields[&apos;return-url&apos;] = &apos;/home&apos;
+$loginForm.Fields[&apos;remember&apos;] = &apos;off&apos;
+$response = Invoke-WebRequest -Uri $loginAction -WebSession $rb -Method POST -Body $loginForm
+</code></pre><h2 id="取得书签总数"><a href="#取得书签总数" class="headerlink" title="取得书签总数"></a>取得书签总数</h2><p>在登录后的页面底部有“<em>1 - 30 共 5126 个书签</em>”的字样，其中 <em>30</em> 和 <em>5126</em> 两个数字是我们关心的。我们用正则表达式 <code>1 - (\d+) 共 (\d+) 个书签</code> 从整个网页中提取书签的总数量。在 PowerShell 使用正则表达式：</p>
+<pre><code>$response.Content -cmatch &apos;1 - (\d+) 共 (\d+) 个书签&apos;
+$page1Count = $Matches[1]
+$totalCount = $Matches[2]
+echo &quot;1 - $page1Count 共 $totalCount 个书签&quot;
+</code></pre><p>根据 <em>$page1Count</em> 和 <em>$totalCount</em>，就可以计算总页数了：</p>
+<pre><code>$pageCount = [math]::Ceiling($totalCount / $bookmarksPerPage)
+</code></pre><h2 id="遍历每一页"><a href="#遍历每一页" class="headerlink" title="遍历每一页"></a>遍历每一页</h2><p>知道了总页数，自然想到用 for 循环来遍历它们。我们观察每一页的规律，发现页码是通过 URL 的 page 参数指定的。我们用 PowerShell 来拼接 URL 字符串：</p>
+<pre><code>$uri = &apos;http://meiweisq.com/home?page=&apos; + $page
+</code></pre><p>对于每一页，继续用 <code>Invoke-WebRequest</code> 来获取它的内容：</p>
+<pre><code>$response = Invoke-WebRequest -Uri $uri -Method Default -WebSession $rb
+</code></pre><h2 id="分析书签"><a href="#分析书签" class="headerlink" title="分析书签"></a>分析书签</h2><p>在每一页中，含有不超过 30 个书签，其中包含了书签的标题、URL、标签、时间等信息。</p>
+<p><img src="/img/2013-11-01-use-powershell-to-export-bookmarks-in-meiweisq-004.png" alt=""></p>
+<p>接下来是一些 DOM 的分析，需要一点耐心。我们先把它输出为 .html 文件，以便分析：</p>
+<pre><code>$response.Content &gt; current_page.html
+</code></pre><p>从 Chrome 的开发者工具中，可以观察到 DOM 的结构。和我们有关系的是 class 为 links、link、tags、tag这些元素。我们用 jQuery 的语法来表达它们，整理成一个表格如下：</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>div.links</td>
+<td>本页所有书签的集合</td>
+</tr>
+<tr>
+<td>div.links &gt; div.link</td>
+<td>一个书签</td>
+</tr>
+<tr>
+<td>div.links &gt; div.link a.link-title</td>
+<td>书签标题、URL</td>
+</tr>
+<tr>
+<td>div.links &gt; div.link a.link-time</td>
+<td>时间</td>
+</tr>
+<tr>
+<td>div.links &gt; div.link ul.tags &gt; tag</td>
+<td>标签</td>
+</tr>
+</tbody>
+</table>
+<p>请注意一下，在 <code>Invoke-WebRequest</code> 的结果（COM 对象）中做 DOM 查询，是有点慢的，不像 WEB 中的 jQuery 那么高效。在我们需要做一定的优化，以缩短大量的查询的总时间。我的优化原则如下：</p>
+<ol>
+<li>能用 id 过滤的，不用 tag。</li>
+<li>如果需要查询一个节点的子节点，则把前者保存到临时变量中，不要每次都从根对象（document）开始查询。</li>
+</ol>
+<p>以下是 DOM 查询的相关代码：</p>
+<pre><code>$html = $response.ParsedHtml
+$linksDiv = ($html.getElementsByTagName(&apos;div&apos;) | where { $_.classname -eq &apos;links&apos; })[0]
+$linksDiv.getElementsByTagName(&apos;div&apos;) | where { $_.classname -cmatch &apos;\blink[\s,$]&apos; }
+
+$linkTitle = $div.getElementsByTagName(&apos;a&apos;) | where { $_.className -eq &apos;link-title&apos; }
+$title = $linkTitle | select -exp innerText
+$url = $linkTitle | select -exp href
+
+$linkTime = $div.getElementsByTagName(&apos;p&apos;) | where { $_.className -eq &apos;link-time&apos; } | select -exp innerText
+
+$ul = $div.getElementsByTagName(&apos;ul&apos;) | where { $_.className -cmatch &apos;\btags[\s,$]&apos; }
+$tags = $ul.getElementsByTagName(&apos;a&apos;) | where { $_.className -cmatch &apos;tag&apos; }
+$tagNames = $tags | foreach { $_.getAttribute(&apos;tag&apos;) }
+</code></pre><h2 id="Javascript-的时间转换"><a href="#Javascript-的时间转换" class="headerlink" title="Javascript 的时间转换"></a>Javascript 的时间转换</h2><p>美味书签的时间以 <code>yyyy/MM/dd</code> 的形式表达，而 Delicious 导入/导出文件的时间以 Javascript 格式表达。它们之间的转换方法是，前者减去1970年1月1日0时整的时间差，得到的总秒数，即得到其 Javascript 的格式表达。PowerShell 实现代码如下：</p>
+<pre><code>$jsTime = ([datetime]::ParseExact($_.LinkTime, &apos;yyyy/MM/dd&apos;, $null) - [datetime]&apos;1970-01-01&apos;).TotalSeconds
+</code></pre><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>经过上面的步骤，我们已将所有的书签以 PSObject 的形式存放在 $bookmarks 数组中。现在可以随心所欲地将 $bookmarks 输出为我们所希望的格式了：</p>
+<p>这是输出为 CSV 格式的代码：</p>
+<pre><code>$bookmarks | Export-Csv (&quot;meiweisq-export-{0:yyyyMMdd}.csv&quot; -f [datetime]::Now) -Encoding UTF8 -NoTypeInformation
+</code></pre><p>这是输出到 GUI 界面的代码：</p>
+<pre><code>$bookmarks | Out-GridView
+</code></pre><p>另外，我们可以导出为 <a href="http://delicious.com" title="Delicious官方网站" target="_blank" rel="noopener">Delicious</a> 的专用格式。由于格式比较简单，我们就不用 <code>ConvertTo-HTML</code> 之类的函数了。</p>
+<h1 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h1><pre><code>$email = &apos;victorwoo@gmail.com&apos;
+$password = &apos;xxx&apos;
+
+$homeUrl = &apos;http://meiweisq.com/home&apos;
+$loginAction = &apos;http://meiweisq.com/login&apos;
+
+$bookmarksPerPage = 30
+$countPerExport = 10
+
+function Get-DeliciousHtml($bookmarks) {
+    $pre = @&quot;
+&lt;!DOCTYPE NETSCAPE-Bookmark-file-1&gt;
+&lt;META HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;!-- This is an automatically generated file.
+It will be read and overwritten.
+Do Not Edit! --&gt;
+&lt;TITLE&gt;Bookmarks&lt;/TITLE&gt;
+&lt;H1&gt;Bookmarks&lt;/H1&gt;
+&lt;DL&gt;&lt;p&gt;
+
+&quot;@
+
+    $post = @&quot;
+&lt;/DL&gt;&lt;p&gt;
+&quot;@
+
+    $bookmarkTemplate = @&quot;
+&lt;DT&gt;&lt;A HREF=&quot;{0}&quot; ADD_DATE=&quot;{1}&quot; PRIVATE=&quot;{2}&quot; TAGS=&quot;{3}&quot;&gt;{4}&lt;/A&gt;
+&lt;DD&gt;{5}
+
+&quot;@
+    $result = $pre
+    $bookmarks | foreach {
+        $jsTime = ([datetime]::ParseExact($_.LinkTime, &apos;yyyy/MM/dd&apos;, $null) - [datetime]&apos;1970-01-01&apos;).TotalSeconds
+        $tags = [string]::Join(&apos;,&apos;, $_.Tags -split &apos;, &apos;)
+        $bookmarkString = $bookmarkTemplate -f $_.Url, $jsTime, 0, $tags, $_.Title, &apos;&apos;
+        $result += $bookmarkString
+    }
+    $result += $post
+    return $result
+}
+
+$startTime = [datetime]::Now
+
+echo &apos;Requesting home&apos;
+$response = Invoke-WebRequest -Uri $homeUrl -Method Default -SessionVariable rb -ContentType application/html
+if ($response.StatusCode -ne 200) {
+    Write-Warning &quot;[$response.StatusCode] $homeUrl&quot;
+    return
+}
+$response.Content &gt; mwsq_login.html
+
+echo &apos;Logining&apos;
+$loginForm = ($response.Forms | where { $_.Action -eq &apos;/login&apos; })[0]
+$loginForm.Fields[&apos;email&apos;] = $email
+$loginForm.Fields[&apos;password&apos;] = $password
+$loginForm.Fields[&apos;type&apos;] = &apos;登录&apos;
+$loginForm.Fields[&apos;return-url&apos;] = &apos;/home&apos;
+$loginForm.Fields[&apos;remember&apos;] = &apos;off&apos;
+
+$response = Invoke-WebRequest -Uri $loginAction -WebSession $rb -Method POST -Body $loginForm
+if ($response.StatusCode -ne 200) {
+    Write-Warning &quot;[$response.StatusCode] $loginAction&quot;
+    return
+}
+$response.Content &gt; mwsq_home.html
+
+if ($response.Content -cnotmatch &apos;1 - (\d+) 共 (\d+) 个书签&apos;) {
+    Write-Warning &apos;找不到书签个数&apos;
+    return
+}
+
+$page1Count = $Matches[1]
+$totalCount = $Matches[2]
+echo &quot;1 - $page1Count 共 $totalCount 个书签&quot;
+$pageCount = [math]::Ceiling($totalCount / $bookmarksPerPage)
+echo &quot;共 $pageCount 页&quot;
+echo &apos;&apos;
+
+$bookmarks = @()
+for ($page = 1; $page -le $pageCount; $page++) {
+    $uri = &apos;http://meiweisq.com/home?page=&apos; + $page
+    echo &quot;Requesting $uri&quot;
+
+    $isSuccess = $false
+    while (!$isSuccess) {
+        try {
+            $response = Invoke-WebRequest -Uri $uri -Method Default -WebSession $rb
+            if ($response.StatusCode -ne 200) {
+                Write-Warning &quot;[$response.StatusCode] $loginAction&quot;
+                continue
+            }
+            $isSuccess = $true
+        } catch { }
+    }
+
+    $response.Content &gt; current_page.html
+    $html = $response.ParsedHtml
+    $linksDiv = ($html.getElementsByTagName(&apos;div&apos;) | where { $_.classname -eq &apos;links&apos; })[0]
+    $linksDiv.getElementsByTagName(&apos;div&apos;) | where { $_.classname -cmatch &apos;\blink[\s,$]&apos; } | foreach {
+        $message = &quot;Bookmark: {0} / {1}, Page: {2} / {3}, Elapsed: {4}&quot; -f @(
+            $($bookmarks.Length + 1),
+            $totalCount,
+            $page
+            $pageCount,
+            ([datetime]::Now - $startTime).ToString()
+        )
+        Write-Progress -Activity &apos;Getting bookmarks&apos; -PercentComplete (100 * ($bookmarks.Length + 1) / $totalCount) -CurrentOperation $message
+        echo &quot;$($bookmarks.Length + 1) of $totalCount&quot;
+        $div = $_
+        $linkTitle = $div.getElementsByTagName(&apos;a&apos;) | where { $_.className -eq &apos;link-title&apos; }
+
+        $title = $linkTitle | select -exp innerText
+        $title = $title.Trim()
+        echo $title
+
+        $url = $linkTitle | select -exp href
+        echo $url
+
+        $linkTime = $div.getElementsByTagName(&apos;p&apos;) | where { $_.className -eq &apos;link-time&apos; } | select -exp innerText
+        $linkTime = $linkTime.Trim()
+        echo $linkTime
+
+        $ul = $div.getElementsByTagName(&apos;ul&apos;) | where { $_.className -cmatch &apos;\btags[\s,$]&apos; }
+        $tags = $ul.getElementsByTagName(&apos;a&apos;) | where { $_.className -cmatch &apos;tag&apos; }
+        $tagNames = $tags | foreach { $_.getAttribute(&apos;tag&apos;) }
+        if ($tagNames -eq $null) {
+            $tagNames = @()
+        }
+
+
+        echo &quot;[$([string]::Join(&apos; | &apos;, $tagNames))]&quot;
+        echo &apos;&apos;
+
+        $bookmark = [PSObject]@{
+            Title = $title
+            Url = $url
+            LinkTime = $linkTime
+            Tags = [string]::Join(&apos;, &apos;, $tagNames)
+        }
+
+        $bookmarks += New-Object -TypeName PSObject -Property $bookmark
+    }
+}
+
+echo &apos;Exporting html thant you can import into del.icio.us&apos;
+$index = 0
+while ($index -lt $totalCount) {
+    $currentCountInExport = [math]::Min($countPerExport, $totalCount - $index)
+    $endIndex = $index + $currentCountInExport
+
+    $deliciousHtml = Get-DeliciousHtml ($bookmarks | select -Skip $index -First $currentCountInExport)
+    $deliciousHtml | sc -Encoding UTF8 (&quot;meiweisq-export-{0:yyyyMMdd}-{1}-{2}.html&quot; -f [datetime]::Now, $index, $endIndex)
+    $index += $currentCountInExport
+}
+
+$deliciousHtml = Get-DeliciousHtml $bookmarks
+$deliciousHtml | sc -Encoding UTF8 (&quot;meiweisq-export-{0:yyyyMMdd}-all.html&quot; -f [datetime]::Now)
+
+echo &apos;Exporting CSV.&apos;
+$bookmarks | Export-Csv (&quot;meiweisq-export-{0:yyyyMMdd}.csv&quot; -f [datetime]::Now) -Encoding UTF8 -NoTypeInformation
+
+echo &apos;Exporting GUI.&apos;
+$bookmarks | Out-GridView
+
+echo &apos;All done.&apos;
+</code></pre><p>您也可以<a href="/assets/download/Export-Meiweisq.ps1">点击这里下载</a>源代码。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+</div>
+
+            
+    
+        <a href="http://blog.vichamp.com/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/11/01/use-powershell-to-export-bookmarks-in-meiweisq/">评论</a>
     
 
         </footer>
