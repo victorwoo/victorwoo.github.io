@@ -26,7 +26,7 @@ PS C:\> Get-Command -Name notepad | Select-Object -ExpandProperty Module
 
 下一步，让我们列出您系统中所有可用的模块：
 
-powershell
+```powershell
 PS> Get-Module -ListAvailable | Select-Object -Property Name, Path
 ```
 

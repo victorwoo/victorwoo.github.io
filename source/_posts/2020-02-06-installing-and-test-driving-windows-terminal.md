@@ -14,7 +14,6 @@ tags:
 ---
 Windows Terminal 是一个新的多选项卡的用于基于控制台的外壳程序。它可以通过 Microsoft Store 正式获得，当前需要 Windows 10 1903 或更高版本。
 
-To install it from the Microsoft Store, you need to register yourself which is frustrating. If you want to install Windows Terminal anonymously (and have installed Chocolatey in the previous tip), simply run this line from an elevated PowerShell:
 要从 Microsoft Store 安装它，您首先需要注册，这很令人沮丧。如果要匿名安装 Windows Terminal（并且已在上一个技巧中安装Chocolatey），只需从提升的 PowerShell 中运行以下代码：
 
 ```powershell

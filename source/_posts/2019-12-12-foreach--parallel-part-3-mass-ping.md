@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-In PowerShell 7, there is a new parallel ForEach-Object that can execute code in parallel and speed up things considerably. The same technique can be used in Windows PowerShell via modules like this one:
 在 PowerShell 7 中，带来了一个新的并行的 `Foreach-Object`，它可以并行执行代码并显著加快操作的速度。同样的技术可通过以下模块在 Windows PowerShell 中使用：
 
 ```powershell
@@ -102,8 +101,6 @@ Write-Warning "Execution Time $time ms"
 
 $result
 ```
-
-Instead of ForEach-Object, the code uses Invoke-Parallel, and since Invoke-Parallel does not support the “using:” prefix, all local variables must be included in the script block (in our example the variable $timeout).
 
 与 `ForEach-Object` 不同，代码使用的是 `Invoke-Parallel`，而且由于 `Invoke-Parallel` 不支持 "`use:`" 前缀，所以所有局部变量都必须包含在脚本块中（在我们的示例中，是变量`$timeout`）。
 

@@ -16,8 +16,6 @@ tags:
 
 在前面的部分中，您了解到两个 cmdlet 都返回相同的 WMI 类的基本信息，但是两个 cmdlet 添加的元数据属性有很大不同。现在让我们仔细看看它们返回的基本信息。
 
-We refine the test script to also take into account the datatype, so we are not just looking at property names but also the type of data returned by these properties. For this, we are looking at the property “TypeNameOfValue”.
-
 我们细化了测试脚本，也可以考虑数据类型，因此我们不仅查找属性名称，而且还考虑了这些属性返回的数据的类型。为此，我们检查属性“TypeNameOfValue”。
 
 由于这是一个字符串，类型名并不一定是一致的。它们可能显示为 "Bool" 与 "Boolean"，或者 "String" 与 "System.String"。要使结果可以用来对比，代码使用了一个位于 `$typeName` 的计算属性来忽略类型命名空间，并且在一个 switch 语句中人工做调整。如果您恰好发现另一个名字显示不正确，只需要扩展 switch 语句。

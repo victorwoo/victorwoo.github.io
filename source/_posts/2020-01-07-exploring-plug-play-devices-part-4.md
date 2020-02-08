@@ -38,7 +38,6 @@ Where-Object ManufacturerName -eq 'Synology' |
 Select-Object -ExpandProperty UniqueDeviceName
 ```
 
-UDNs are unique and differ per device, so this approach just makes sense if you need to access the same device over and over again. In my case, the UDN was uuid:7379AA6F-6473-6D00-0000-001132283f5e, and opening the web interface now worked much faster:
 UDN 是唯一的，并且因设备而异，因此，如果您需要多次访问同一设备，则此方法才有意义。在我的情况下，UDN 是 uuid:7379AA6F-6473-6D00-0000-001132283f5e，现在打开 Web 界面的速度要快得多：
 
 ```powershell
@@ -50,7 +49,6 @@ Foreach-Object { Start-Process -FilePath $_ }
 
 这引出了我的第二个使用场景：我正在使用 Philips Hue 系统管理家里的灯光。飞利浦提供了丰富的 REST API 来实现自动化。您所需要的是网桥的 IP 地址。
 
-This will find the IP addresses of any Philips Hue bridge in your local network:
 这段代码将列出本地网络中所有 Philips Hue 网桥的 IP 地址：
 
 ``powershell

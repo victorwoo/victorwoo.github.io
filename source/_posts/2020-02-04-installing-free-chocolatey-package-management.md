@@ -28,7 +28,6 @@ Invoke-Expression $code
 
 这步之后，您可以在 PowerShell 中使用新的“choco”命令。只需确保在提升权限的 Shell 中运行即可。
 
-A list of installable packages (like Acrobat Reader or Google Chrome) can be found here:
 可以在此处找到可安装软件包的列表（例如 Acrobat Reader 或 Google Chrome）：
 
 [https://chocolatey.org/packages](https://chocolatey.org/packages)

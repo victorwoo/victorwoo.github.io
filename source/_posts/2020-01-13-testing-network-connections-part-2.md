@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-If you’d like to test whether a specific computer or URL is online, for decades ping requests (ICMP) have been used. In recent times, many servers and firewalls turn off ICMP to reduce attack surfaces. Test-NetConnection by default uses ICMP, so it fails on computers that do not respond to ICMP:
 如果您想测试一台特定的计算机或 URL 是否在线，几十年来一直使用 ping 请求 (ICMP)。最近，许多服务器和防火墙关闭了 ICMP 以减少攻击面。默认情况下，`Test-NetConnection` 使用 ICMP，因此在不响应 ICMP 的计算机上会失败：
 
 ```powershell
