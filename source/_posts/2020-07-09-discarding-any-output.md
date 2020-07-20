@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-There are (a few) commands in PowerShell that output information to the console no matter what you do. Neither redirection of streams nor assigning to $null will silence such commands, for example:
 无论您做什么，PowerShell中都有（少量）命令可将信息输出到控制台。无论流重定向或赋值给 `$null` 都不能禁止这类命令输出，例如：
 
 ```powershell
