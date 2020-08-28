@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-08-10 00:00:00
-title: "PowerShell 技能连载 - 验证用户帐户密码（第 1 部分）"
+title: "PowerShell 技能连载 - 验证用户账户密码（第 1 部分）"
 description: PowerTip of the Day - Validating User Account Passwords (Part 1)
 categories:
 - powershell
