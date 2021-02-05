@@ -182,6 +182,10 @@ $lis | ForEach-Object {
         $markdown = Get-Markdown $htmlContent $title $url
         $content = Out-HexoBlog $yamlObj $markdown $date
 
+        $content = $content.Split("`n") | ForEach-Object { 
+            $_ -ireplace '^.*Twitter This Tip.*$', '' -ireplace '- - -', ''
+        }
+        
         Set-Content $targetFile $content -Encoding UTF8
         Get-Picture $targetFile
         # Start-Process "C:\Program Files\Typora\Typora.exe" $targetFile
