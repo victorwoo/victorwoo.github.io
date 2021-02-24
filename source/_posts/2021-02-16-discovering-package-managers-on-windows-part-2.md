@@ -2,7 +2,6 @@
 layout: post
 date: 2021-02-16 00:00:00
 title: "PowerShell 技能连载 - 探索 Windows 上的程序包管理器（第 2 部分）"
-标题：“ PowerShell技能连载-在Windows上发现程序包管理器（第2部分）”
 description: PowerTip of the Day - Discovering Package Managers on Windows (Part 2)
 categories:
 - powershell

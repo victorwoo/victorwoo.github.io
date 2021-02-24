@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-02-18 00:00:00
-title: "PowerShell 技能连载 - Cross-Platform Out-GridView"
+title: "PowerShell 技能连载 - 跨平台的 Out-GridView"
 description: PowerTip of the Day - Cross-Platform Out-GridView
 categories:
 - powershell
@@ -12,28 +12,27 @@ tags:
 - powertip
 - series
 ---
-Out-GridView is one of the most frequently used cmdlets and opens a general purpose selection dialog. Unfortunately, PowerShell can display graphical elements such as windows only on the Windows operating system. On Linux and macOS, graphical cmdlets such as Out-GridView are not available.
+`Out-GridView` 是最常用的 cmdlet 之一，它会打开一个通用选择对话框。不幸的是，PowerShell 只能在 Windows 操作系统上显示图形元素，例如窗口。在 Linux 和 macOS 上，图形 cmdlet（例如 `Out-GridView`）不可用。
 
 You may want to try the new text-based Out-ConsoleGridView instead. This cmdlet is available only for PowerShell 7 (it won’t work in Windows PowerShell). Install it like this:
+您可能想尝试使用新的基于文本的 `Out-ConsoleGridView`。此 cmdlet 仅适用于PowerShell 7（在Windows PowerShell中不起作用）。像这样安装它：
 
-    Install-Module -Name Microsoft.PowerShell.ConsoleGuiTools -Scope CurrentUser
+```powershell
+Install-Module -Name Microsoft.PowerShell.ConsoleGuiTools -Scope CurrentUser
+```
 
+安装完成后，在许多情况下，您现在可以轻松地将 `Out-GridView` 替换为 `Out-ConsoleGridView`，并享受类似于旧版 Norton Commander 的基于文本的选择对话框。这是旧版 Windows PowerShell 脚本，无法在 Linux 上使用：
 
-Once installed, in many cases you can now easily replace Out-GridView with Out-ConsoleGridView and enjoy a text-based selection dialog much similar to the good old Norton Commander. Here is a legacy Windows PowerShell script that wouldn’t work on Linux:
+```powershell
+Get-Process |
+Where-Object MainWindowHandle |
+Select-Object -Property Name, Id, Description |
+Sort-Object -Property Name |
+Out-GridView -Title 'Prozesse' -OutputMode Multiple |
+Stop-Process -WhatIf
+```
 
-    Get-Process |
-    Where-Object MainWindowHandle |
-    Select-Object -Property Name, Id, Description |
-    Sort-Object -Property Name |
-    Out-GridView -Title 'Prozesse' -OutputMode Multiple |
-    Stop-Process -WhatIf
-
-
-Simply replace Out-GridView with Out-ConsoleGridView, and you are all set.
-
-
-
-
+只需将 `Out-GridView` 替换为 `Out-ConsoleGridView`，便一切就绪。
 
 <!--本文国际来源：[Cross-Platform Out-GridView](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/cross-platform-out-gridview)-->
 
