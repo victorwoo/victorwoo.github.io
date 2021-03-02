@@ -14,7 +14,6 @@ tags:
 ---
 `Out-GridView` 是最常用的 cmdlet 之一，它会打开一个通用选择对话框。不幸的是，PowerShell 只能在 Windows 操作系统上显示图形元素，例如窗口。在 Linux 和 macOS 上，图形 cmdlet（例如 `Out-GridView`）不可用。
 
-You may want to try the new text-based Out-ConsoleGridView instead. This cmdlet is available only for PowerShell 7 (it won’t work in Windows PowerShell). Install it like this:
 您可能想尝试使用新的基于文本的 `Out-ConsoleGridView`。此 cmdlet 仅适用于PowerShell 7（在Windows PowerShell中不起作用）。像这样安装它：
 
 ```powershell
