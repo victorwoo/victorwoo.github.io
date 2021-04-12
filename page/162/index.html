@@ -1897,7 +1897,7 @@ function Set-PowAsDefault
 
 
 
-    <article id="post-searching-in-different-domains" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-processing-plain-text-with-powershell-2" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -1906,7 +1906,7 @@ function Set-PowAsDefault
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2013/10/23/searching-in-different-domains/">PowerShell 技能连载 - 在不同的 Domain 中查找</a>
+            <a class="article-title" href="/2013/10/23/processing-plain-text-with-powershell-2/">用 PowerShell 处理纯文本 - 2</a>
         </h1>
     
 
@@ -1915,7 +1915,7 @@ function Set-PowAsDefault
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2013/10/23/searching-in-different-domains/">
+        <a href="/2013/10/23/processing-plain-text-with-powershell-2/">
             <time datetime="2013-10-22T16:00:00.000Z" itemprop="datePublished">2013-10-23</time>
         </a>
     </div>
@@ -1924,13 +1924,13 @@ function Set-PowAsDefault
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/tip/">tip</a>
+        <a class="article-category-link" href="/categories/powershell/">powershell</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/powershell/text/">text</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/powertip/">powertip</a>, <a class="tag-link" href="/tags/series/">series</a>, <a class="tag-link" href="/tags/tip/">tip</a>
+        <a class="tag-link" href="/tags/learning/">learning</a>, <a class="tag-link" href="/tags/powershell/">powershell</a>, <a class="tag-link" href="/tags/script/">script</a>, <a class="tag-link" href="/tags/skill/">skill</a>
     </div>
 
                     </div>
@@ -1940,18 +1940,39 @@ function Set-PowAsDefault
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>当你那使用 ADSISearcher 类型加速器来查找 Active Directory 账户时，它缺省情况下在您当前登录的域中查找。如果您需要在一个不同的域中查找，请确保相应地定义了搜索的根路径。</p>
-<p>This example will find all accounts with a SamAccountName that starts with “tobias”, and it searches the domain “powershell.local” (adjust to a real domain name, of course):<br>这个例子将查找所有 SamAccountName 以 <em>“tobias”</em> 开头的账户，并且它在 <em>“powershell.local”</em> 域中搜索（当然，请根据实际情况调整名字）：</p>
-<pre><code># get all users with a SamAccountName that starts with &quot;tobias&quot;
-$searcher = [ADSISearcher]&quot;(&amp;(objectClass=User)(objectCategory=person)(sAMAccountName=tobias*))&quot;
+            <p>应朋友要求，帮忙解决一例 PowerShell 问题：</p>
+<blockquote>
+<p>有一个 CSV 文件，其中有一个 <em>Photo</em> 字段存的是 BASE64 编码的字符串，这个字符串包含换行符。在 <code>Import-Csv</code> 的时候，<em>Photo</em> 字段不会作为一个整体值，而是会变成每行一个。文件的内容是这样的：</p>
+</blockquote>
+<pre><code>StaffNum,LogonName,ObjName,Title,Office,Department,Photo
+03138,wangjunhao,王俊豪,流程优化主管,宜山路,运营平台中心/项目部,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
+...
+PyoooGSr0qRCdtFFMBy9qkFFFJCYo60w85oopgNzjoBTto9KKKQj/9k=
+</code></pre><p>为了解决这个 case，先归纳它的规律：</p>
+<ol>
+<li>BASE64 字符串的字符集为 0..9、a..z、A..Z，以及/和=。</li>
+<li>BASE64 字符串每一行不超过 76 个字符。</li>
+<li>如果某一行从第一个字符到最后一个字符，都符合上述 2 条规律，说明前一行并没有结束。应当把当前行拼接到前一行中。</li>
+</ol>
+<p>根据以上规律编写 PowerShell 代码：</p>
+<pre><code>$fileName = &apos;AllUsers.csv&apos;
 
-# use powershell.local for searching
-$domain = New-Object System.DirectoryServices.DirectoryEntry(&apos;DC=powershell,DC=local&apos;)
-$searcher.SearchRoot = $domain
-
-# execute the query
-$searcher.FindAll()
-</code></pre><!--本文国际来源：[Searching in Different Domains](http://community.idera.com/powershell/powertips/b/tips/posts/searching-in-different-domains)-->
+$currentLine = &apos;&apos;
+gc $fileName | % -process {
+        if ($_ -cmatch &apos;^[a-zA-Z0-9/+=]{1,76}$&apos;) {
+            # 如果符合 BASE64 特征，说明上一行未结束。
+            $currentLine += $_
+        } else {
+            # 如果不符合 BASE64 特征，说明上一行是完整的。
+            Write-Output $currentLine
+            $currentLine = $_
+        }
+    } -end {
+        $currentLine
+    } |
+ConvertFrom-Csv
+</code></pre><p>完整的 .CSV 及 .PS1 文件请在<a href="/download/2013-10-23-processing-plain-text-with-powershell-2.zip">这里下载</a>。</p>
 
         
         </div>
@@ -2015,7 +2036,7 @@ $searcher.FindAll()
 
             
     
-        <a href="http://blog.vichamp.com/2013/10/23/searching-in-different-domains/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/10/23/searching-in-different-domains/">评论</a>
+        <a href="http://blog.vichamp.com/2013/10/23/processing-plain-text-with-powershell-2/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.vichamp.com/2013/10/23/processing-plain-text-with-powershell-2/">评论</a>
     
 
         </footer>
