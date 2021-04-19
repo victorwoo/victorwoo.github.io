@@ -1869,7 +1869,5 @@ tags:
 -------------
 * [2021-04-01 查找上次登录的用户](/2021/04/01/finding-last-logged-on-user)
 * [2021-04-05 观看德国电视节目](/2021/04/05/watching-german-tv-shows)
-* [2021-04-07 使用 NTFS 流（第 1 部分）](/2021/04/07/working-with-ntfs-streams-part-1)
-* [2021-04-09 使用 NTFS 流（第 2 部分）](/2021/04/09/working-with-ntfs-streams-part-2)
-* [2021-04-13 使用 NTFS 流（第 3 部分）](/2021/04/13/working-with-ntfs-streams-part-3)
-* [2021-04-15 使用 NTFS 流（第 4 部分）](/2021/04/15/working-with-ntfs-streams-part-4)
+* [2021-04-07 使用NTFS流（第 1 部分）](/2021/04/07/working-with-ntfs-streams-part-1)
+* [2021-04-09 使用NTFS流（第 2 部分）](/2021/04/09/working-with-ntfs-streams-part-2)
