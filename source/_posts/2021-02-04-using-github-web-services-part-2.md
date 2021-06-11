@@ -14,7 +14,6 @@ tags:
 ---
 在上一个技能中，我们研究了组织的 GitHub Web 服务 API。现在，让我们看看如何使用单个 GitHub 帐户。
 
-Doug Finke has created a wonderful open-source PowerShell module called “ImportExcel” that makes working with Excel files a snap: [https://github.com/dfinke/ImportExcel](https://github.com/dfinke/ImportExcel). His public GitHub user name is dfinke.
 道格·芬克（Doug Finke）创建了一个名为 "ImportExcel" 的出色的开源 PowerShell 模块，该模块使处理 Excel 文件变得轻而易举：[https://github.com/dfinke/ImportExcel](https://github.com/dfinke/ImportExcel)。他的公共 GitHub 用户名是 dfinke。
 
 要查找他的作品的最新版本以及在何处下载，请尝试以下操作：

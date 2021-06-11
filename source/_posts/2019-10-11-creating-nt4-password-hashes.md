@@ -16,12 +16,11 @@ tags:
 
 幸运的是，没有可行的方法来解密这些散列并检索原始密码，您可以使用（已知）密码并将其转换为 NTLM 哈希。这是字典攻击的基本过程：他们获取到很长的“已知密码”列表，将它们转换为 NTLM 散列，当它们与实际的 AD 帐户散列匹配时，就算破解出了密码。
 
-This way, your security department could take password blacklist with insecure passwords such as “P@ssw0rd”, turn them into NTLM hashes, and compare them to the password hashes of your Active Directory to identify accounts that need a password change.
-
 这样，您的安全部门就可以将密码黑名单中的不安全密码(如“P@ssw0rd”)转换为NTLM散列，并将它们与Active Directory的密码散列进行比较，以识别需要更改密码的帐户。
 
-Here is PowerShell code to turn a plain text into an NTLM hash:
+这是将纯文本变为 NTLM HASH 的 PowerShell 代码：
 
+```powershell
     function ConvertTo-NTLMPasswordHash
     {
       #Work based on code found here: https://www.myotherpcisacloud.com/post/getmd4hash
@@ -149,11 +148,7 @@ Here is PowerShell code to turn a plain text into an NTLM hash:
       }
       Get-MD4Hash -DataToHash ([System.Text.Encoding]::Unicode.getBytes($password))
     }
-
-
-- - -
-
-[![Twitter This Tip!](/img/2019-10-11-creating-nt4-password-hashes-001.gif)](http://twitter.com/home/?status=RT+%40PowerTip+%20Creating%20NT4%20Password%20Hashes%20with%20%23PowerShell+http://bit.ly/2ngNHVF)[ReTweet this Tip!](http://twitter.com/home/?status=RT+%40%20Creating%20NT4%20Password%20Hashes%20with%20%23PowerShell+http://bit.ly/2ngNHVF)
+```
 
 <!--本文国际来源：[Creating NT4 Password Hashes](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/creating-nt4-password-hashes)-->
 

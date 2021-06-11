@@ -28,7 +28,6 @@ Get-ChildItem $parentFolder -Directory |
     Remove-Item -Recurse -Verbose
 ```
 
-If you have Administrator privileges and would like to remove cached Microsoft Teams data for all users, change $parentFolder like this:
 如果您具有管理员权限，并想为所有用户删除缓存的 Microsoft Teams 数据，请按如下所示更改 `$parentFolder`：
 
 ```powershell

@@ -108,7 +108,6 @@ Script     1.0.0.1    PowerShellGet                       {Install-Module, Find-
 
 `Update-Module` 要求该模块最初是通过 `Install-Module` 安装的。如果是这样，PowerShell 会知道原始源码库并自动更新该模块。
 
-If Update-Module fails, try and re-install the module using the -Force parameter. If that still fails, add the -SkipPublisherCheck parameter:
 如果 `Update-Module` 失败，请尝试使用 `-Force` 参数重新安装该模块。如果仍然失败，请添加 `-SkipPublisherCheck` 参数：
 
 ```powershell

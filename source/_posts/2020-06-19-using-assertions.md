@@ -51,8 +51,6 @@ filter Assert-FolderExists
 ($Path = 'c:\test3') | Assert-FolderExists
 ```
 
-Read more about this technique here: [https://powershell.one/code/10.html](https://powershell.one/code/10.html).
-
 在此处阅读有关此技术的更多信息：<https://powershell.one/code/10.html>。
 
 <!--本文国际来源：[Using Assertions](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/using-assertions)-->

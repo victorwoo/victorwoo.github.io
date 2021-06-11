@@ -31,7 +31,7 @@ If you own Administrator privileges, you can even change this setting. To turn o
 Set-CimInstance -Query 'Select * From Win32_ComputerSystem' -Property @{AutomaticResetBootOption=$false}
 ```
 
-有关 WMI 类 `Win32_ComputerSystem` 的更多信息，请访问[http://powershell.one/wmi/root/cimv2/win32_computersystem](http://powershell.one/wmi/root/cimv2/win32_computersystem）。
+有关 WMI 类 `Win32_ComputerSystem` 的更多信息，请访问[http://powershell.one/wmi/root/cimv2/win32_computersystem](http://powershell.one/wmi/root/cimv2/win32_computersystem)。
 
 <!--本文国际来源：[Managing Automatic Reset](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/managing-automatic-reset)-->
 

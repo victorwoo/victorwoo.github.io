@@ -67,7 +67,6 @@ PS> Test-Password -Password $password
 4880
 ```
 
-The password must be submitted as a SecureString. You can either run Test-Password without a password in which case you get safely prompted. Or you need to read the password as a SecureString.
 密码必须作为 `SecureString` 提交。您可以不带密码运行 `Test-Password`，在这种情况下，系统会提示您。或者您需要以 `SecureString` 形式读取密码。
 
 在该示例中，复杂密码 "P@$$w0rd" 在 4880 次攻击中被泄露，使用起来非常不安全。

@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-Via the secret “PSObject” property, you can get detailed information about object members. For example, if you’d like to know which object properties can actually be changed, try this:
 通过隐藏的 "`PSObject`" 属性，您可以获取对象成员的详细信息。例如，如果您希望知道哪个属性可以被改变，请试试这段代码：
 
 ```powershell

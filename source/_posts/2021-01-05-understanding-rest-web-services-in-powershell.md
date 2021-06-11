@@ -60,7 +60,6 @@ Invoke-RestMethod "https://4besday4.azurewebsites.net/api/AddMeal" -WebSession $
 
 如果您为向指定名字的厨师发送一个请求，则会从 Web 服务中获取一条通知，告知您正在准备食品。确保更改 Cook 和 Meal 的数据。
 
-As you see, Invoke-RestMethod is used twice. The first call gets the session state and cookies and stores this in the $cookie variable which was defined using the -SessionVariable parameter.
 如您所见，`Invoke-RestMethod` 使用了两次。第一次调用获取会话状态和 cookie，并将其存储在使用 `-SessionVariable` 参数定义的 `$cookie` 变量中。
 
 第二个调用通过 `-WebSession` 参数提交会话状态。这样，Web 服务可以保留每次调用之间的状态并清楚地标识您。

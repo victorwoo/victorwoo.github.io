@@ -14,8 +14,6 @@ tags:
 ---
 这是我们的加密解密系列的第二部分。在第一部分中您学到了如何在一台计算机中安全地加密文本。现在我们来关注解密部分。
 
-To successfully decrypt text, you must specify the same encoding that was used during encryption. Based on your encryption parameters, you must specify the same password, and based on the -Scope settings, decryption will work only for you and/or only on the same machine where you encrypted the text.
-
 要正确地解密文本，必须指定加密时使用的相同编码。基于您的加密参数，您必须指定相同的密码。并且基于 `-Scope` 设置，解密将只能针对您和/或仅在您加密文本的同一机器上工作。
 
 以下是 `Unprotect-Text` 函数。我们也从上一个技能中复制了 `Protect-Text` 函数，这样您可以方便地使用这两种功能：
