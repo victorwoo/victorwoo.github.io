@@ -51,7 +51,6 @@ c:\portablePowerShell\pwsh
 
 在 "versionName" 中，使用之前在 "PowerShell Default Version" 中指定的相同标签名称。
 
-Once you save the JSON file, restart VSCode. The editor now uses your portable PowerShell 7, and in many instances, this solves stalled PowerShell startup problems.
 保存 JSON 文件后，重新启动 VSCode。该编辑器现在使用您的 portable PowerShell 7，并且在许多情况下，这解决了 PowerShell 启动卡住的问题。
 
 如果您想手动将其他 PowerShell 版本添加到 VSCode，则上面的方法也很有用。当您单击 VSCode 状态栏中的绿色 PowerShell 版本时，任何手动添加的 PowerShell 将出现在选择对话框中（除非已被使用，在这种情况下，该菜单将显示 PowerShell 类型和版本，而不是您的标签名称）。

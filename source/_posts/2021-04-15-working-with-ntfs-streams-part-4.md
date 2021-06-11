@@ -14,7 +14,6 @@ tags:
 ---
 每当您从 Internet（或其他不受信任的来源）下载文件并将其存储在 NTFS 驱动器上时，Windows 就会使用区域标识符对这些文件进行静默标记。例如，这就是为什么 PowerShell 拒绝执行从域外部下载的脚本的原因。
 
-You can actually look at the Zone Identifier. Just make sure you download a file from the Internet and store it on a NTFS drive. Next, use this line to view the Zone Identifier:
 您实际上可以查看区域标识符。只要确保您从 Internet 下载文件并将其存储在 NTFS 驱动器上即可。接下来，使用此行查看区域标识符：
 
 ```powershell

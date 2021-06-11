@@ -97,7 +97,6 @@ Name   Date                Array
 Tobias 06.05.2021 11:30:58 1,2,3,4
 ```
 
-Convert-ArrayPropertyToString uses the secret PSObject property found on any PowerShell object to get the property names. Next, it checks all properties for array content. If found, it automatically converts the array to a comma-separated string.
 `Convert-ArrayPropertyToString` 使用在任何 PowerShell 对象都包含的 `PSObject` 隐藏属性来获取属性名称。接下来，它检查数组内容的所有属性。如果找到，它会自动将数组转换为逗号分隔的字符串。
 
 为了能够使用新的扁平字符串内容覆盖现有属性——即使属性被写保护——它使用 `Add-Member` 并使用 `-Force` 隐藏属性。新的扁平字符串内容并没有真正覆盖属性。相反，它们被添加并优先使用。实际上，任何对象——即使其属性被写保护——都可以调整。

@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-German public broadcasting companies maintain rich TV archives and let users view their shows through web interfaces. There is typically no way to download shows or easily find their download URLs.
 德国公共广播公司保留着丰富的电视档案，并允许用户通过 Web 界面观看其节目。通常无法下载节目或轻松找到其下载 URL。
 
 以下脚本下载了所有节目及其网络位置的非官方目录：
