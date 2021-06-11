@@ -14,12 +14,10 @@
 <meta property="og:site_name" content="叹为观止">
 <meta property="og:description" content="PowerTip of the Day - Creating NT4 Password Hashes">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://blog.vichamp.com/img/2019-10-11-creating-nt4-password-hashes-001.gif">
-<meta property="og:updated_time" content="2021-06-11T10:54:45.469Z">
+<meta property="og:updated_time" content="2021-06-11T11:21:26.031Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PowerShell 技能连载 - 创建 NT4 密码哈希">
 <meta name="twitter:description" content="PowerTip of the Day - Creating NT4 Password Hashes">
-<meta name="twitter:image" content="http://blog.vichamp.com/img/2019-10-11-creating-nt4-password-hashes-001.gif">
     
 
     
@@ -278,138 +276,9 @@ var _hmt = _hmt || [];
             
             <p>在内部，ActiveDirectory 将所有密码存储为所谓的 NTLM 哈希。有许多安全分析工具可以读取和转储这些哈希。</p>
 <p>幸运的是，没有可行的方法来解密这些散列并检索原始密码，您可以使用（已知）密码并将其转换为 NTLM 哈希。这是字典攻击的基本过程：他们获取到很长的“已知密码”列表，将它们转换为 NTLM 散列，当它们与实际的 AD 帐户散列匹配时，就算破解出了密码。</p>
-<p>This way, your security department could take password blacklist with insecure passwords such as “P@ssw0rd”, turn them into NTLM hashes, and compare them to the password hashes of your Active Directory to identify accounts that need a password change.</p>
 <p>这样，您的安全部门就可以将密码黑名单中的不安全密码(如“P@ssw0rd”)转换为NTLM散列，并将它们与Active Directory的密码散列进行比较，以识别需要更改密码的帐户。</p>
-<p>Here is PowerShell code to turn a plain text into an NTLM hash:</p>
-<pre><code>function ConvertTo-NTLMPasswordHash
-{
-  #Work based on code found here: https://www.myotherpcisacloud.com/post/getmd4hash
-  #Original Author: Ryan Ries, 2014
-  param(
-    [Parameter(Mandatory=$true)][string]$password
-  )
-
-  Function Get-MD4Hash
-  {
-    Param ([Parameter(Mandatory=$True, ValueFromPipeline=$False)]
-    [Byte[]]$DataToHash)
-
-      Set-StrictMode -Version Latest
-      Add-Type -TypeDefinition @&apos;
-        using System;
-        using System.Text;
-        using System.Runtime.InteropServices;
-        public class BCrypt
-        {
-            [DllImport(&quot;bcrypt.dll&quot;, CharSet = CharSet.Auto)]
-            public static extern NTStatus BCryptOpenAlgorithmProvider(
-                [Out] out IntPtr phAlgorithm,
-                [In] string pszAlgId,
-                [In, Optional] string pszImplementation,
-                [In] UInt32 dwFlags);
-
-            [DllImport(&quot;bcrypt.dll&quot;)]
-            public static extern NTStatus BCryptCloseAlgorithmProvider(
-                [In, Out] IntPtr hAlgorithm,
-                [In] UInt32 dwFlags);
-
-            [DllImport(&quot;bcrypt.dll&quot;, CharSet = CharSet.Auto)]
-            public static extern NTStatus BCryptCreateHash(
-                [In, Out] IntPtr hAlgorithm,
-                [Out] out IntPtr phHash,
-                [Out] IntPtr pbHashObject,
-                [In, Optional] UInt32 cbHashObject,
-                [In, Optional] IntPtr pbSecret,
-                [In] UInt32 cbSecret,
-                [In] UInt32 dwFlags);
-
-            [DllImport(&quot;bcrypt.dll&quot;)]
-            public static extern NTStatus BCryptDestroyHash(
-                [In, Out] IntPtr hHash);
-
-            [DllImport(&quot;bcrypt.dll&quot;)]
-            public static extern NTStatus BCryptHashData(
-                [In, Out] IntPtr hHash,
-                [In, MarshalAs(UnmanagedType.LPArray)] byte[] pbInput,
-                [In] int cbInput,
-                [In] UInt32 dwFlags);
-
-            [DllImport(&quot;bcrypt.dll&quot;)]
-            public static extern NTStatus BCryptFinishHash(
-                [In, Out] IntPtr hHash,
-                [Out, MarshalAs(UnmanagedType.LPArray)] byte[] pbInput,
-                [In] int cbInput,
-                [In] UInt32 dwFlags);
-
-            [Flags]
-            public enum AlgOpsFlags : uint
-            {
-                BCRYPT_PROV_DISPATCH = 0x00000001,
-                BCRYPT_ALG_HANDLE_HMAC_FLAG = 0x00000008,
-                BCRYPT_HASH_REUSABLE_FLAG = 0x00000020
-            }
-
-            // This is a gigantic enum and I don&apos;t want to copy all of it into this Powershell script.
-            // Basically anything other than zero means something went wrong.
-            public enum NTStatus : uint
-            {
-                STATUS_SUCCESS = 0x00000000
-            }
-        }
-&apos;@
-
-      [Byte[]]$HashBytes   = New-Object Byte[] 16
-      [IntPtr]$PHAlgorithm = [IntPtr]::Zero
-      [IntPtr]$PHHash      = [IntPtr]::Zero
-      $NTStatus = [BCrypt]::BCryptOpenAlgorithmProvider([Ref] $PHAlgorithm, &apos;MD4&apos;, $Null, 0)
-      If ($NTStatus -NE 0)
-      {
-        Write-Error &quot;BCryptOpenAlgorithmProvider failed with NTSTATUS $NTStatus&quot;
-        If ($PHAlgorithm -NE [IntPtr]::Zero)
-        {
-          $NTStatus = [BCrypt]::BCryptCloseAlgorithmProvider($PHAlgorithm, 0)
-        }
-        Return
-      }
-      $NTStatus = [BCrypt]::BCryptCreateHash($PHAlgorithm, [Ref] $PHHash, [IntPtr]::Zero, 0, [IntPtr]::Zero, 0, 0)
-      If ($NTStatus -ne 0)
-      {
-        Write-Error &quot;BCryptCreateHash failed with NTSTATUS $NTStatus&quot;
-        If ($PHHash -ne [IntPtr]::Zero)
-        {
-          $NTStatus = [BCrypt]::BCryptDestroyHash($PHHash)
-        }
-        If ($PHAlgorithm -ne [IntPtr]::Zero)
-        {
-          $NTStatus = [BCrypt]::BCryptCloseAlgorithmProvider($PHAlgorithm, 0)
-        }
-        Return
-      }
-
-      $NTStatus = [BCrypt]::BCryptHashData($PHHash, $DataToHash, $DataToHash.Length, 0)
-      $NTStatus = [BCrypt]::BCryptFinishHash($PHHash, $HashBytes, $HashBytes.Length, 0)
-
-      If ($PHHash -NE [IntPtr]::Zero)
-      {
-        $NTStatus = [BCrypt]::BCryptDestroyHash($PHHash)
-      }
-      If ($PHAlgorithm -NE [IntPtr]::Zero)
-      {
-        $NTStatus = [BCrypt]::BCryptCloseAlgorithmProvider($PHAlgorithm, 0)
-      }
-
-      $HashString = New-Object System.Text.StringBuilder
-      Foreach ($Byte In $HashBytes)
-      {
-        $null = $HashString.Append($Byte.ToString(&quot;x2&quot;))
-      }
-      $HashString.ToString()
-
-  }
-  Get-MD4Hash -DataToHash ([System.Text.Encoding]::Unicode.getBytes($password))
-}
-</code></pre><hr>
-<p><a href="http://twitter.com/home/?status=RT+%40PowerTip+%20Creating%20NT4%20Password%20Hashes%20with%20%23PowerShell+http://bit.ly/2ngNHVF" target="_blank" rel="noopener"><img src="/img/2019-10-11-creating-nt4-password-hashes-001.gif" alt="Twitter This Tip!"></a><a href="http://twitter.com/home/?status=RT+%40%20Creating%20NT4%20Password%20Hashes%20with%20%23PowerShell+http://bit.ly/2ngNHVF" target="_blank" rel="noopener">ReTweet this Tip!</a></p>
+<p>这是将纯文本变为 NTLM HASH 的 PowerShell 代码：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> ConvertTo-NTLMPasswordHash</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">#Work based on code found here: https://www.myotherpcisacloud.com/post/getmd4hash</span></span><br><span class="line">  <span class="comment">#Original Author: Ryan Ries, 2014</span></span><br><span class="line">  <span class="keyword">param</span>(</span><br><span class="line">    [Parameter(Mandatory=<span class="literal">$true</span>)][string]<span class="variable">$password</span></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  <span class="keyword">Function</span> Get-MD4Hash</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">Param</span> ([Parameter(Mandatory=<span class="literal">$True</span>, ValueFromPipeline=<span class="literal">$False</span>)]</span><br><span class="line">    [Byte[]]<span class="variable">$DataToHash</span>)</span><br><span class="line"></span><br><span class="line">      <span class="built_in">Set-StrictMode</span> -Version Latest</span><br><span class="line">      <span class="built_in">Add-Type</span> -TypeDefinition <span class="string">@'</span></span><br><span class="line"><span class="string">        using System;</span></span><br><span class="line"><span class="string">        using System.Text;</span></span><br><span class="line"><span class="string">        using System.Runtime.InteropServices;</span></span><br><span class="line"><span class="string">        public class BCrypt</span></span><br><span class="line"><span class="string">        &#123;</span></span><br><span class="line"><span class="string">            [DllImport("bcrypt.dll", CharSet = CharSet.Auto)]</span></span><br><span class="line"><span class="string">            public static extern NTStatus BCryptOpenAlgorithmProvider(</span></span><br><span class="line"><span class="string">                [Out] out IntPtr phAlgorithm,</span></span><br><span class="line"><span class="string">                [In] string pszAlgId,</span></span><br><span class="line"><span class="string">                [In, Optional] string pszImplementation,</span></span><br><span class="line"><span class="string">                [In] UInt32 dwFlags);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            [DllImport("bcrypt.dll")]</span></span><br><span class="line"><span class="string">            public static extern NTStatus BCryptCloseAlgorithmProvider(</span></span><br><span class="line"><span class="string">                [In, Out] IntPtr hAlgorithm,</span></span><br><span class="line"><span class="string">                [In] UInt32 dwFlags);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            [DllImport("bcrypt.dll", CharSet = CharSet.Auto)]</span></span><br><span class="line"><span class="string">            public static extern NTStatus BCryptCreateHash(</span></span><br><span class="line"><span class="string">                [In, Out] IntPtr hAlgorithm,</span></span><br><span class="line"><span class="string">                [Out] out IntPtr phHash,</span></span><br><span class="line"><span class="string">                [Out] IntPtr pbHashObject,</span></span><br><span class="line"><span class="string">                [In, Optional] UInt32 cbHashObject,</span></span><br><span class="line"><span class="string">                [In, Optional] IntPtr pbSecret,</span></span><br><span class="line"><span class="string">                [In] UInt32 cbSecret,</span></span><br><span class="line"><span class="string">                [In] UInt32 dwFlags);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            [DllImport("bcrypt.dll")]</span></span><br><span class="line"><span class="string">            public static extern NTStatus BCryptDestroyHash(</span></span><br><span class="line"><span class="string">                [In, Out] IntPtr hHash);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            [DllImport("bcrypt.dll")]</span></span><br><span class="line"><span class="string">            public static extern NTStatus BCryptHashData(</span></span><br><span class="line"><span class="string">                [In, Out] IntPtr hHash,</span></span><br><span class="line"><span class="string">                [In, MarshalAs(UnmanagedType.LPArray)] byte[] pbInput,</span></span><br><span class="line"><span class="string">                [In] int cbInput,</span></span><br><span class="line"><span class="string">                [In] UInt32 dwFlags);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            [DllImport("bcrypt.dll")]</span></span><br><span class="line"><span class="string">            public static extern NTStatus BCryptFinishHash(</span></span><br><span class="line"><span class="string">                [In, Out] IntPtr hHash,</span></span><br><span class="line"><span class="string">                [Out, MarshalAs(UnmanagedType.LPArray)] byte[] pbInput,</span></span><br><span class="line"><span class="string">                [In] int cbInput,</span></span><br><span class="line"><span class="string">                [In] UInt32 dwFlags);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            [Flags]</span></span><br><span class="line"><span class="string">            public enum AlgOpsFlags : uint</span></span><br><span class="line"><span class="string">            &#123;</span></span><br><span class="line"><span class="string">                BCRYPT_PROV_DISPATCH = 0x00000001,</span></span><br><span class="line"><span class="string">                BCRYPT_ALG_HANDLE_HMAC_FLAG = 0x00000008,</span></span><br><span class="line"><span class="string">                BCRYPT_HASH_REUSABLE_FLAG = 0x00000020</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            // This is a gigantic enum and I don't want to copy all of it into this Powershell script.</span></span><br><span class="line"><span class="string">            // Basically anything other than zero means something went wrong.</span></span><br><span class="line"><span class="string">            public enum NTStatus : uint</span></span><br><span class="line"><span class="string">            &#123;</span></span><br><span class="line"><span class="string">                STATUS_SUCCESS = 0x00000000</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">'@</span></span><br><span class="line"></span><br><span class="line">      [Byte[]]<span class="variable">$HashBytes</span>   = <span class="built_in">New-Object</span> Byte[] <span class="number">16</span></span><br><span class="line">      [IntPtr]<span class="variable">$PHAlgorithm</span> = [IntPtr]::Zero</span><br><span class="line">      [IntPtr]<span class="variable">$PHHash</span>      = [IntPtr]::Zero</span><br><span class="line">      <span class="variable">$NTStatus</span> = [BCrypt]::BCryptOpenAlgorithmProvider([Ref] <span class="variable">$PHAlgorithm</span>, <span class="string">'MD4'</span>, <span class="literal">$Null</span>, <span class="number">0</span>)</span><br><span class="line">      <span class="keyword">If</span> (<span class="variable">$NTStatus</span> <span class="nomarkup">-NE</span> <span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">Write-Error</span> <span class="string">"BCryptOpenAlgorithmProvider failed with NTSTATUS <span class="variable">$NTStatus</span>"</span></span><br><span class="line">        <span class="keyword">If</span> (<span class="variable">$PHAlgorithm</span> <span class="nomarkup">-NE</span> [IntPtr]::Zero)</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="variable">$NTStatus</span> = [BCrypt]::BCryptCloseAlgorithmProvider(<span class="variable">$PHAlgorithm</span>, <span class="number">0</span>)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">Return</span></span><br><span class="line">      &#125;</span><br><span class="line">      <span class="variable">$NTStatus</span> = [BCrypt]::BCryptCreateHash(<span class="variable">$PHAlgorithm</span>, [Ref] <span class="variable">$PHHash</span>, [IntPtr]::Zero, <span class="number">0</span>, [IntPtr]::Zero, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">      <span class="keyword">If</span> (<span class="variable">$NTStatus</span> <span class="nomarkup">-ne</span> <span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">Write-Error</span> <span class="string">"BCryptCreateHash failed with NTSTATUS <span class="variable">$NTStatus</span>"</span></span><br><span class="line">        <span class="keyword">If</span> (<span class="variable">$PHHash</span> <span class="nomarkup">-ne</span> [IntPtr]::Zero)</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="variable">$NTStatus</span> = [BCrypt]::BCryptDestroyHash(<span class="variable">$PHHash</span>)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">If</span> (<span class="variable">$PHAlgorithm</span> <span class="nomarkup">-ne</span> [IntPtr]::Zero)</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="variable">$NTStatus</span> = [BCrypt]::BCryptCloseAlgorithmProvider(<span class="variable">$PHAlgorithm</span>, <span class="number">0</span>)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">Return</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="variable">$NTStatus</span> = [BCrypt]::BCryptHashData(<span class="variable">$PHHash</span>, <span class="variable">$DataToHash</span>, <span class="variable">$DataToHash</span>.Length, <span class="number">0</span>)</span><br><span class="line">      <span class="variable">$NTStatus</span> = [BCrypt]::BCryptFinishHash(<span class="variable">$PHHash</span>, <span class="variable">$HashBytes</span>, <span class="variable">$HashBytes</span>.Length, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">      <span class="keyword">If</span> (<span class="variable">$PHHash</span> <span class="nomarkup">-NE</span> [IntPtr]::Zero)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="variable">$NTStatus</span> = [BCrypt]::BCryptDestroyHash(<span class="variable">$PHHash</span>)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">If</span> (<span class="variable">$PHAlgorithm</span> <span class="nomarkup">-NE</span> [IntPtr]::Zero)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="variable">$NTStatus</span> = [BCrypt]::BCryptCloseAlgorithmProvider(<span class="variable">$PHAlgorithm</span>, <span class="number">0</span>)</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="variable">$HashString</span> = <span class="built_in">New-Object</span> System.Text.StringBuilder</span><br><span class="line">      <span class="keyword">Foreach</span> (<span class="variable">$Byte</span> <span class="keyword">In</span> <span class="variable">$HashBytes</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="literal">$null</span> = <span class="variable">$HashString</span>.Append(<span class="variable">$Byte</span>.ToString(<span class="string">"x2"</span>))</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="variable">$HashString</span>.ToString()</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">  Get-MD4Hash -DataToHash ([System.Text.Encoding]::Unicode.getBytes(<span class="variable">$password</span>))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <!--本文国际来源：[Creating NT4 Password Hashes](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/creating-nt4-password-hashes)-->
 
         
