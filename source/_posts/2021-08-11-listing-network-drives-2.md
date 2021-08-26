@@ -12,7 +12,6 @@ tags:
 - powertip
 - series
 ---
-There are many ways to list mapped network drives. One of them uses PowerShell’s Get-PSDrive and checks to see whether the target root starts with “\\”, indicating a UNC network path:
 有很多方法可以列出映射的网络驱动器。其中之一使用 PowerShell 的 `Get-PSDrive` 并检查目标根目录是否以 "\\" 开头，表示 UNC 网络路径：
 
 ```powershell
