@@ -12,7 +12,7 @@ tags:
 - powertip
 - series
 ---
-使用 Web 服务，确定您的公共 IP 地址和有关您的 ISP 的信息是易如反掌的：
+使用 Web 服务，确定您的公共 IP 地址和有关您的 ISP 的信息几乎是举手之劳：
 
 ```powershell
 PS> Invoke-RestMethod -Uri https://ipinfo.io
