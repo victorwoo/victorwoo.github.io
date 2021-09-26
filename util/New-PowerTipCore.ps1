@@ -152,7 +152,7 @@ if (!$resp) {
     echo "[响应] 收到服务器响应"
 }
 $htmlDoc = $resp | ConvertFrom-Html
-$listNode = $htmlDoc.SelectSingleNode('//*[@id="pi874-paged-content"]/ul[@class="content-list list content margin-bottom"]')
+$listNode = $htmlDoc.SelectSingleNode('//*[@id="pifragment-874-paged-content"]/ul[@class="content-list list content margin-bottom"]')
 
 $lis = [Array]$listNode.SelectNodes('li[@class="content-item list"]')
 [Array]::Reverse($lis)
