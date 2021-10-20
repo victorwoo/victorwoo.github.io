@@ -163,7 +163,7 @@ $lis | ForEach-Object {
     $li = $PSItem
     $date = Get-Date $li.SelectSingleNode('.//span[@class="attribute-value"]').InnerText
     Write-Debug "Date: $date"
-    $a = $li.SelectSingleNode('.//h3[@class="name"]/a[2]')
+    $a = $li.SelectSingleNode('.//h2[@class="name"]/a[2]')
     $title = $a.InnerText
     Write-Debug "Title: $title"
     $url = $a.GetAttributeValue('href', '')
