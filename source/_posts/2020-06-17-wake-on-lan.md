@@ -62,7 +62,7 @@ function Invoke-WakeOnLan
 
         #endregion
 
-        # connect to port 400 on broadcast address
+        # connect to port 4000 on broadcast address
         $UDPclient.Connect(([System.Net.IPAddress]::Broadcast),4000)
 
         # send the magic packet to the broadcast address

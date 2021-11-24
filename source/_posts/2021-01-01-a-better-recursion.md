@@ -56,5 +56,11 @@ $queue.Enqueue('c:\')
     }
 ```
 
+以下是 UMU 提供的，不用递归实现本任务的方法：
+
+```powershell
+[IO.Directory]::EnumerateFiles('path', '*', 1)
+```
+
 <!--本文国际来源：[A Better Recursion](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/a-better-recursion)-->
 
