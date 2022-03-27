@@ -18,4 +18,4 @@ tags:
 
 或者用手机 QQ 扫描二维码：
 
-[QR](/img/qr-qq-group.png)
+![QR](/img/qr-qq-group.png)
