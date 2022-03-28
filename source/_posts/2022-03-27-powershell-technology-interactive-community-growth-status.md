@@ -10,7 +10,7 @@ tags:
 - QQ
 - community
 ---
-至 2022 年 3 月，“PowerShell 技术互动”社区人数已达到 1998 人，十分接近社区最大容量（2000 人），保持 PowerShell 最大中文社区的位置。根据腾讯社交平台的策略，社区人数的上限为 2000 人，而且管理员要支付 240 元年费才能维持该上限。我们会尽可能保留机会给活跃用户。
+至 2022 年 3 月，“PowerShell 技术互动”社区人数已达到 1998 人，十分接近社区最大容量（2000 人），保持 PowerShell 最大中文社区的位置。根据腾讯社交平台的策略，社区人数的上限为 2000 人，我们会尽可能保留机会给活跃用户。
 
 ![QQ Group](/img/2022-03-27-powershell-technology-interactive-community-growth-status.png)
 
