@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-09-28 00:00:00
-title: "PowerShell 技能连载 - Disabling Local “Guest” Account"
+title: "PowerShell 技能连载 - 禁用本地的 Guest 账户"
 description: "PowerTip of the Day - Disabling Local “Guest” Account"
 categories:
 - powershell
@@ -12,25 +12,19 @@ tags:
 - powertip
 - series
 ---
-Windows comes with the built-in account called “Guest”. Since this account is seldomly used, you may want to disable it. Else, its well-known name could serve as a vector for attackers.
+Windows 自带一个名为 "Guest" 的内置帐户。由于此帐户很少使用，最好将它禁用。否则，它的广为人知的名字可能会成为攻击者的目标。
 
-Since the account name is localized and can slightly vary from culture to culture, to identify the account use its SID:
+由于帐户名称是本地化的并且可能因文化而略有不同，因此要识别帐户，请使用其 SID：
 
+```powershell
+PS> Get-Localuser | Where-Object Sid -like 'S-1-5-*-501'
 
-    PS> Get-Localuser | Where-Object Sid -like 'S-1-5-*-501'
+Name  Enabled Description
+----  ------- -----------
+Guest False   Built-in account for guest access to the computer/domain
+```
 
-    Name  Enabled Description
-    ----  ------- -----------
-    Guest False   Built-in account for guest access to the computer/domain
-
-
-If the account isn’t already disabled (see “Enabled” property), use an elevated PowerShell and the Disable-LocalUser cmdlet to disable the account.
-
-
-
-
-
-ReTweet this Tip!
+如果该帐户尚未禁用（请查看 "`“Enabled”`" 属性），请使用提升权限的 PowerShell 和 `Disable-LocalUser` cmdlet 禁用该帐户。
 
 <!--本文国际来源：[Disabling Local “Guest” Account](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/disabling-local-guest-account)-->
 
