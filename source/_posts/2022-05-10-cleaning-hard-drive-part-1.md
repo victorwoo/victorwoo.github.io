@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-05-10 00:00:00
-title: "PowerShell 技能连载 - 清除硬盘（第 1 部分）"
+title: "PowerShell 技能连载 - 清理硬盘（第 1 部分）"
 description: PowerTip of the Day - Cleaning Hard Drive (Part 1)
 categories:
 - powershell

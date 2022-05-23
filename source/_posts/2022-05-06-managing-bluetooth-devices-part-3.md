@@ -49,7 +49,7 @@ PS> [int]"0x$hex"
 41213
 ```
 
-一旦知道要解除配对的蓝牙设备的硬件地址，接下来，您必须将其传给一个内部的 Windows API。内部方法 `Bluetoothremavyevice()` 将其删除。 下面的代码灵感来自 Keith A. Miller 在Microsoft论坛中提供的建议。
+一旦知道要解除配对的蓝牙设备的硬件地址，接下来，您必须将其传给一个内部的 Windows API。内部方法 `Bluetoothremavyevice()` 将其删除。 下面的代码灵感来自 Keith A. Miller 在 Microsoft 论坛中提供的建议。
 
 以下是一个包装内部 Windows API 签名的函数，它输入一个硬件地址，然后解绑设备：
 
