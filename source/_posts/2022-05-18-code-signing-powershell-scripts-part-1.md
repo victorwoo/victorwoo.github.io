@@ -30,7 +30,7 @@ PS> New-SelfSignedCertificate -Subject MyPowerShellCode -Type CodeSigningCert -C
 
 Thumbprint                                Subject
 ----------                                -------
-57402F9D82231CABA4586127C99819F055AA2AF2  CN=MyPowerShellCode  
+57402F9D82231CABA4586127C99819F055AA2AF2  CN=MyPowerShellCode
 ```
 
 要稍后在任何时候检索它，请记住它的指纹并像这样访问它（修改指纹以匹配您的其中一个证书）：
@@ -46,7 +46,7 @@ My Valid PowerShell Code
 
 PS> $cert.NotAfter
 
-Monday, May 1, 2023 17:47:43  
+Monday, May 1, 2023 17:47:43
 ```
 
 或者，如果您只记得主题或友好名称，则可以使用过滤器：
@@ -59,7 +59,7 @@ PS> Get-ChildItem -Path Cert:\CurrentUser\My -CodeSigningCert | Where-Object Sub
 
 Thumbprint                                Subject
 ----------                                -------
-57402F9D82231CABA4586127C99819F055AA2AF2  CN=MyPowerShellCode   
+57402F9D82231CABA4586127C99819F055AA2AF2  CN=MyPowerShellCode
 ```
 
 在下一个技能中，我们将开始使用此证书签署 PowerShell 脚本。

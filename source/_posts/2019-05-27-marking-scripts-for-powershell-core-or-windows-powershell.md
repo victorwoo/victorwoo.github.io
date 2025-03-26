@@ -12,7 +12,7 @@ tags:
 - powertip
 - series
 ---
-您可能知道，有两种类型的 PowerShell：随着 Windows 操作系统分发的 Windows PowerShell 是基于完整的 .NET Framework；而 PowerShell 6 以及更高版本是开源、跨平台，并且基于（有限的）.NET Core 和 Standard。
+您可能知道，有两种类型的 PowerShell：随着 Windows 操作系统分发的 Windows PowerShell 是基于完整的 .NET Framework而 PowerShell 6 以及更高版本是开源、跨平台，并且基于（有限的）.NET Core 和 Standard。
 
 如果您开发能够在两类系统上执行的脚本，那非常棒！不过如果如果知道您的代码是基于其中的一个系统，请确保在脚本的顶部添加合适的 `#requires` 语句。
 

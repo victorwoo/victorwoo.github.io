@@ -21,7 +21,7 @@ tags:
 这行代码列出了由 `Install-Module` 安装的所有模块，并让您选择要（永久）删除的模块。
 
 ```powershell
-  Get-InstalledModule | 
+  Get-InstalledModule |
     Out-GridView -Title 'Select module(s) to permanently delete' -PassThru |
     Out-GridView -Title 'Do you REALLY want to remove the modules below? CTRL+A and OK to confirm' -PassThru |
     Uninstall-Module

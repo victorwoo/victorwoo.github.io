@@ -23,7 +23,7 @@ tags:
 在下面，您可以找到 `cleanmgr` 可以执行的每项清理任务的关键。在上一个技能中，我们定义了这样的自定义清理任务（请记住，使用提升的管理员权限执行它）：
 
 ```powershell
-PS> cleanmgr.exe /sageset:5388   
+PS> cleanmgr.exe /sageset:5388
 ```
 
 这行命令打开一个对话框窗口，您可以在其中检查应绑定到已提交 ID 5388 的清理任务。
@@ -35,7 +35,7 @@ PS> cleanmgr.exe /sageset:5388
 $id = 5388
 
 # the name of the reg value that stores your choices:
-$flag = "StateFlags$id" 
+$flag = "StateFlags$id"
 
 # the location where user choices are stored:
 $path = "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\*"
@@ -52,13 +52,13 @@ Get-Item -Path $path |
     ----                           --------
     Active Setup Temp Folders      (default)      : {C0E13E61-0CC6-11d1-BBB6-0060978B2AE6}
                                    Autorun        : 1
-                                   Description    : These files should no longer be needed. They were originally 
+                                   Description    : These files should no longer be needed. They were originally
                                                     created by a setup program that is no longer running.
                                    FileList       : *.tmp
                                    Flags          : {124, 0, 0, 0}
                                    Folder         : C:\Windows\msdownld.tmp|?:\msdownld.tmp
                                    LastAccess     : {2, 0, 0, 0}
-                                   Priority       : 50   
+                                   Priority       : 50
                                    StateFlags0001 : 2
                                    StateFlags0003 : 2
                                    StateFlags0033 : 0
@@ -82,7 +82,7 @@ Get-Item -Path $path |
                                    Autorun        : 0
                                    Description    : @C:\WINDOWS\system32\domgmt.dll,-104
                                    Display        : @C:\WINDOWS\system32\domgmt.dll,-103
-                                   Flags          : 128  
+                                   Flags          : 128
                                    ReserveIDHint  : 2
                                    StateFlags0001 : 0
                                    StateFlags0003 : 0
@@ -100,11 +100,11 @@ Get-Item -Path $path |
                                    IconPath         : C:\WINDOWS\system32\utcutil.dll,0
                                    PreCleanupString : rundll32.exe utcutil.dll,DiskCleanupStart
                                    Priority         : 100
-                                   StateFlags0001   : 0  
-                                   StateFlags0003   : 0  
-                                   StateFlags0033   : 0  
-                                   StateFlags6254   : 0  
-                                   StateFlags5388   : 2  
+                                   StateFlags0001   : 0
+                                   StateFlags0003   : 0
+                                   StateFlags0033   : 0
+                                   StateFlags6254   : 0
+                                   StateFlags5388   : 2
     Downloaded Program Files       (default)          : {8369AB20-56C9-11D0-94E8-00AA0059CE02}
                                    AdvancedButtonText : @C:\Windows\System32\occache.dll,-1072
                                    Autorun            : 1
@@ -119,9 +119,9 @@ Get-Item -Path $path |
     Internet Cache Files           (default)          : {9B0EFD60-F7B0-11D0-BAEF-00C04FC308C9}
                                    AdvancedButtonText : &View Files
                                    Autorun            : 1
-                                   Description        : The Temporary Internet Files folder contains Web pages stored 
+                                   Description        : The Temporary Internet Files folder contains Web pages stored
                                                         on your hard disk for quick viewing.
-                                                        Your personalized settings for Web pages will be left intact. 
+                                                        Your personalized settings for Web pages will be left intact.
                                    Display            : Temporary Internet Files
                                    Priority           : 100
                                    StateFlags0001     : 2
@@ -143,7 +143,7 @@ Get-Item -Path $path |
                                    Folder         : ?:\FOUND.000|?:\FOUND.001|?:\FOUND.002|?:\FOUND.003|?:\FOUND.004|
                                                     ?:\FOUND.005|?:\FOUND.006|?:\FOUND.007|?:\FOUND.008|?:\FOUND.009
                                    IconPath       : C:\WINDOWS\System32\DATACLEN.DLL,3
-                                   Priority       : 50   
+                                   Priority       : 50
                                    PropertyBag    : {60F6E464-4DEF-11d2-B2D9-00C04F8EEC8C}
                                    StateFlags0001 : 2
                                    StateFlags0003 : 2
@@ -151,7 +151,7 @@ Get-Item -Path $path |
                                    StateFlags6254 : 2
                                    StateFlags5388 : 2
     Recycle Bin                    (default)      : {5ef4af3a-f726-11d0-b8a2-00c04fc309a4}
-                                   PluginType     : 2 
+                                   PluginType     : 2
                                    StateFlags0001 : 2
                                    StateFlags0003 : 0
                                    StateFlags0033 : 0

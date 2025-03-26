@@ -20,7 +20,7 @@ tags:
 # establish network session
 $credential = Get-Credential -Message 'Your logon details'
 $computername = '127.0.0.1'  # one or more comma-separated IP addresses or computer names
-                                # note that IP addresses only work with NTFS authentication. 
+                                # note that IP addresses only work with NTFS authentication.
                                 # using computer names in AD is more secure (Kerberos)
 
 $options = New-CimSessionOption -Protocol Wsman -UICulture en-us # optional
@@ -36,19 +36,19 @@ $session
     Name         : CimSession1
     InstanceId   : e7790bc5-6b0d-4920-a6b9-d7b9676aae74
     ComputerName : 127.0.0.1
-    Protocol     : WSMAN  
+    Protocol     : WSMAN
 
 当您在 Active Directory 之外使用 IP 地址或计算机时，请确保您已在客户端计算机（而不是服务器）上启用了 NTFS 身份验证。以下代码激活 NTFS 身份验证并需要本地管理员权限：
 
 ```powershell
-PS> Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value * -Force  
+PS> Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value * -Force
 ```
 
 设置网络会话后，可以将其用于多个 WMI 查询：
 
 ```powershell
 Get-CimInstance -ClassName Win32_BIOS -CimSession $session
-Get-CimInstance -ClassName Win32_StartupCommand -CimSession $session 
+Get-CimInstance -ClassName Win32_StartupCommand -CimSession $session
 ```
 
 完成后，永远不要忘记关闭网络会话，这样它就不会在服务器上驻留很长时间：

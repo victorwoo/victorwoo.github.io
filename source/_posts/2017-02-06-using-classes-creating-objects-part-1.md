@@ -73,6 +73,6 @@ DESKTOP-7AAMJLF DESKTOP-7AAMJLF 1/2/2017 2:02:39 PM
 PSCustomObject
 ```
 
-所以新创建的对象类型永远是 "`PSCustomObject`"；而在前一个例子中，对象的类型是通过类名定义的。
+所以新创建的对象类型永远是 "`PSCustomObject`"而在前一个例子中，对象的类型是通过类名定义的。
 
 <!--本文国际来源：[Using Classes (Creating Objects - Part 1)](http://community.idera.com/powershell/powertips/b/tips/posts/using-classes-creating-objects-part-1)-->

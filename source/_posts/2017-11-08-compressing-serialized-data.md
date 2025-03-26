@@ -12,7 +12,7 @@ tags:
 - powertip
 - series
 ---
-通过 `Export-CliXml` 命令可以很方便地将处理结果保存到文件；通过 `Import-CliXml` 命令，序列化的信息可以同样方便地恢复。然而，生成的 XML 文件可能非常大。
+通过 `Export-CliXml` 命令可以很方便地将处理结果保存到文件通过 `Import-CliXml` 命令，序列化的信息可以同样方便地恢复。然而，生成的 XML 文件可能非常大。
 
 幸运的是，在 PowerShell 5 中有一个新的命令名叫 `Compress-Archieve`。当您创建了 XML 文件之后，您可以自动地将它转为一个 ZIP 文件。
 

@@ -12,7 +12,7 @@ tags:
 - powertip
 - series
 ---
-这是从 PowerShell 1.0 开始就具有的一个特性：调用动词为 "get" 的 cmdlet 可以省略动词。所以调用 "`Get-Service`" 时您可以仅执行 "`Service`"；调用 "`Get-Date`" 时可以仅执行 "`Date`"。
+这是从 PowerShell 1.0 开始就具有的一个特性：调用动词为 "get" 的 cmdlet 可以省略动词。所以调用 "`Get-Service`" 时您可以仅执行 "`Service`"调用 "`Get-Date`" 时可以仅执行 "`Date`"。
 
 以下不是别名，甚至 PowerShell 引擎并不知道为什么它能工作。请试试这些代码：
 

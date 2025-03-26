@@ -35,7 +35,7 @@ tags:
     Add-Type -Assembly PresentationCore
     [Windows.Clipboard]::SetText('abc中文def')
 
-PowerShell 2.0 的控制台，缺省设置是 MTA；PowerShell 3.0 的控制台，缺省设置是 STA。
+PowerShell 2.0 的控制台，缺省设置是 MTAPowerShell 3.0 的控制台，缺省设置是 STA。
 
 关于 `-sta` 的知识，请参见[PowerShell中的 STA和MTA](http://www.pstips.net/powershell-sta-and-mta.html)。
 

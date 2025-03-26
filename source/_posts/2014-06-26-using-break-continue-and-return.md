@@ -16,6 +16,6 @@ tags:
 
 使用 `continue`，循环继续执行，但是跳过剩下的代码。当您执行 `break` 时，循环提前结束并返回所有的结果。
 
-另外，还有一个关键字 `return`。它将导致立即退出当前的作用域。所以当您在一个函数中执行 `return`，那么该函数将会退出；而如果您在一个脚本中执行 `return`，那么整个脚本将退出。
+另外，还有一个关键字 `return`。它将导致立即退出当前的作用域。所以当您在一个函数中执行 `return`，那么该函数将会退出而如果您在一个脚本中执行 `return`，那么整个脚本将退出。
 
 <!--本文国际来源：[Using break, continue, and return](http://community.idera.com/powershell/powertips/b/tips/posts/using-break-continue-and-return)-->

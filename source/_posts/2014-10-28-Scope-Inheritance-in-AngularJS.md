@@ -28,7 +28,7 @@ var HelloCtrl = function ($scope) {
 # 执行结果
 
 - 外层 H1 始终显示 World
-- 内层 H2 先显示 World；在 INPUT 中键入之后，H2 显示“Separate reality”。
+- 内层 H2 先显示 World在 INPUT 中键入之后，H2 显示“Separate reality”。
 
 # 原因
 

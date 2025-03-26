@@ -23,19 +23,19 @@ Get-CimClass | Select-Object -ExpandProperty CimClassName | Sort-Object
 ```powershell
 PS> Get-CimInstance -ClassName Win32_OperatingSystem
 
-SystemDirectory     Organization BuildNumber RegisteredUser SerialNumber            Version   
----------------     ------------ ----------- -------------- ------------            -------   
-C:\WINDOWS\system32 psconf.eu    19042       Zumsel         12345-12345-12345-AAOEM 10.0.19042   
+SystemDirectory     Organization BuildNumber RegisteredUser SerialNumber            Version
+---------------     ------------ ----------- -------------- ------------            -------
+C:\WINDOWS\system32 psconf.eu    19042       Zumsel         12345-12345-12345-AAOEM 10.0.19042
 ```
 
 一些 WMI 类名是显而易见的，但其他则不是。要查看在任何给定类名中找到的属性，请尝试以下操作：
 
 ```powershell
-Get-CimClass | 
+Get-CimClass |
     Select-Object -Property CimClassName, @{
     N='Properties'
     E={$_.CimClassProperties -join ','}
-    } | 
+    } |
     Out-GridView -PassThru
 ```
 

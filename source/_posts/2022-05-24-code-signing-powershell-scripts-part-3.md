@@ -24,26 +24,26 @@ $Status
 ```
 
 结果类似这样：
-     
+
     SignerCertificate      : [Subject]
                                CN=MyPowerShellCode
-                             
+
                              [Issuer]
                                CN=MyPowerShellCode
-                             
+
                              [Serial Number]
                                1B98E986A1D7BCB245034A0225381CA4
-                             
+
                              [Not Before]
                                01.05.2022 17:39:56
-                             
+
                              [Not After]
                                01.05.2027 17:49:56
-                             
+
                              [Thumbprint]
                                F4C1F9978D564E143D554F3679746B3A79E1FF87
-                             
-    TimeStamperCertificate : 
+
+    TimeStamperCertificate :
     Status                 : UnknownError
     StatusMessage          : A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider
     Path                   : C:\Users\tobia\AppData\Local\Temp\test.ps1

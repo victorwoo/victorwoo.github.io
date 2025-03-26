@@ -19,7 +19,7 @@ tags:
 这行代码可能是一种更好，更简单的方法：
 
 ```powershell
-PS> (Get-CimInstance -ClassName SoftwareLicensingService).OA3xOriginalProductKey  
+PS> (Get-CimInstance -ClassName SoftwareLicensingService).OA3xOriginalProductKey
 ```
 
 如果它返回 "nothing"，则机器中没有安装产品序列号。否则，它将原样返回。

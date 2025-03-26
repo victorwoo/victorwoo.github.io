@@ -121,14 +121,14 @@ While ($namespaces.Count -gt 0 -and ($current = $namespaces.Dequeue()))
     root\Microsoft\Windows\RemoteAccess\Client
     root\Microsoft\Windows\Storage\PT
     root\Microsoft\Windows\Storage\Providers_v2
-    root\Microsoft\Windows\Storage\PT\Alt  
+    root\Microsoft\Windows\Storage\PT\Alt
 
 一旦您知道了命名空间的名称，就可以使用这个迷你系列的前面部分来查询位于给定命名空间中的 WMI 类名。例如，下面的代码列出了命名空间 "root\Microsoft\Windows\WindowsUpdate" 中的所有 WMI 类：
 
 ```powershell
 $ns = 'root\Microsoft\Windows\WindowsUpdate'
-Get-CimClass -Namespace $ns | 
-    Select-Object -ExpandProperty CimClassName | 
+Get-CimClass -Namespace $ns |
+    Select-Object -ExpandProperty CimClassName |
     Sort-Object
 ```
 
@@ -201,7 +201,7 @@ Get-CimClass -Namespace $ns |
     MSFT_WmiError
     MSFT_WUOperations
     MSFT_WUSettings
-    MSFT_WUUpdate  
+    MSFT_WUUpdate
 
 要查询此命名空间中的 `MSFT_WUSettings` 类（如果存在于您的机器上），请运行以下命令：
 
@@ -222,8 +222,8 @@ Get-CimClass -Namespace $ns -ClassName 'MSFT_WUOperations' |
 
 结果显示了它的方法：
 
-    Name           ReturnType Parameters                              Qualifiers           
-    ----           ---------- ----------                              ----------           
+    Name           ReturnType Parameters                              Qualifiers
+    ----           ---------- ----------                              ----------
     ScanForUpdates     UInt32 {SearchCriteria, Updates}               {implemented, static}
     InstallUpdates     UInt32 {DownloadOnly, Updates, RebootRequired} {implemented, static}
 

@@ -26,7 +26,7 @@ dir c:\gibtsnichtabc
 
 
 # check errors at end:
-$error.Count 
+$error.Count
 $error | Out-GridView
 ```
 

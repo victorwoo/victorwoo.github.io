@@ -15,7 +15,7 @@ tags:
 如果您只是在 Windows 中寻找一种快速的方法来配对和接触配对蓝牙设备，请尝试以下命令：
 
 ```powershell
-PS> explorer.exe ms-settings-connectabledevices:devicediscovery   
+PS> explorer.exe ms-settings-connectabledevices:devicediscovery
 ```
 
 这将立即弹出一个对话框，显示所有蓝牙设备。只需在 PowerShell 中添加一个函数，因此您不必记住命令，只需要将其放入个人资料脚本中：
@@ -23,7 +23,7 @@ PS> explorer.exe ms-settings-connectabledevices:devicediscovery
 ```powershell
 PS> function Show-Bluetooth { explorer.exe ms-settings-connectabledevices:devicediscovery }
 
-PS> Show-Bluetooth    
+PS> Show-Bluetooth
 ```
 
 如果您想在桌面放一个蓝牙图标的快捷方式，请尝试以下操作：

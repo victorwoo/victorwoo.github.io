@@ -89,7 +89,7 @@ tags:
 
 注意有个坑：
 
-用 `%windir%\System32\inetsrv\iis.msc` 或通过“这台电脑 - 右键 - 计算机管理” 启动 IIS 管理器，可能看不到 ARR 组件；而通过 `%windir%\system32\inetsrv\InetMgr.exe` 则可以看到。
+用 `%windir%\System32\inetsrv\iis.msc` 或通过“这台电脑 - 右键 - 计算机管理” 启动 IIS 管理器，可能看不到 ARR 组件而通过 `%windir%\system32\inetsrv\InetMgr.exe` 则可以看到。
 
 # 鸣谢
 * XAMPP 方式，在网友 _坎坎_ 的指导下实现。

@@ -19,7 +19,7 @@ PowerShell 是面向对象的，因此与 Linux 和 grep 相比，文本过滤�
 假设您只对运行中的服务感兴趣。按 "running" 来过滤，结果一无所获：
 
 ```powershell
-PS> Get-Service | Select-String Running 
+PS> Get-Service | Select-String Running
 ```
 
 不过，这不是 `Select-String` 的错。`Select-String` 需要文本输入，而 cmdlet 通常返回强类型的对象，而不是文本。 通过将命令输出转换为字符串，就能正常工作了：
@@ -27,12 +27,12 @@ PS> Get-Service | Select-String Running
 ```powershell
 PS> Get-Service | Out-String -Stream | Select-String Running
 
-Running  AdobeARMservice    Adobe Acrobat Update Service          
-Running  AgentShellService  Spiceworks Agent Shell Service        
-Running  Appinfo            Application Information               
-Running  AppMgmt            Application Management                
-Running  AppXSvc            AppX Deployment Service (AppXSVC)  
-...   
+Running  AdobeARMservice    Adobe Acrobat Update Service
+Running  AgentShellService  Spiceworks Agent Shell Service
+Running  Appinfo            Application Information
+Running  AppMgmt            Application Management
+Running  AppXSvc            AppX Deployment Service (AppXSVC)
+...
 ```
 
 如果您不介意最终结果是纯文本，那就太好了。这基本上就是简单文本过滤的处理代价。
@@ -51,13 +51,13 @@ filter grep ([string]$Pattern)
 ```powershell
 PS> Get-Service | grep running
 
-Status   Name               DisplayName                           
-------   ----               -----------                           
-Running  AdobeARMservice    Adobe Acrobat Update Service          
-Running  AgentShellService  Spiceworks Agent Shell Service        
-Running  Appinfo            Application Information               
-Running  AppMgmt            Application Management 
-...   
+Status   Name               DisplayName
+------   ----               -----------
+Running  AdobeARMservice    Adobe Acrobat Update Service
+Running  AgentShellService  Spiceworks Agent Shell Service
+Running  Appinfo            Application Information
+Running  AppMgmt            Application Management
+...
 ```
 
 它的使用非常易于使用，最重要的是，输出强类型的对象，因此您仍然可以访问其属性
@@ -72,7 +72,7 @@ AgentShellService                           Automatic Running
 Appinfo                                        Manual Running
 AppMgmt                                        Manual Running
 AppXSvc                                        Manual Running
-AudioEndpointBuilder                        Automatic Running   
+AudioEndpointBuilder                        Automatic Running
 ```
 
 <!--本文国际来源：[Simple Text-Based Filtering a la grep (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/simple-text-based-filtering-a-la-grep-part-1)-->

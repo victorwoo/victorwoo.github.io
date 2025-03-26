@@ -26,13 +26,13 @@ tags:
 
 
 # find ALL modules with more than one version and/or location:
-$multiversion = Get-Module -ListAvailable | 
-  Group-Object -Property Name | 
+$multiversion = Get-Module -ListAvailable |
+  Group-Object -Property Name |
   Sort-Object -Property Name |
   Where-Object Count -gt 1
 
 # ask user WHICH of these modules to clean?
-$clean = $multiversion | 
+$clean = $multiversion |
     Select-Object -Property @{N='Versions';E={$_.Count}}, @{N='ModuleName';E={$_.Name}} |
     Out-GridView -Title 'Select module(s) to clean' -PassThru
 
@@ -44,7 +44,7 @@ $todo |
     $module = $_.Name
     # list all versions of a given module and let the user decide which versions
     # to keep and which to remove:
-    $_.Group | 
+    $_.Group |
         Select-Object -Property Version, ModuleBase, ReleaseNotes |
         Sort-Object -Property Version |
         Out-GridView -Title "Module $module : Select all versions that you want to remove" -PassThru |

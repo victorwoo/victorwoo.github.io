@@ -15,7 +15,7 @@ tags:
 当我们尝试为 PowerShell 创建一个 sudo 命令——来提升单个命令的权限——在第一部分中我们创建了 sudo 函数体：
 
 ```powershell
-function sudo 
+function sudo
 {
     param
     (
@@ -36,7 +36,7 @@ function sudo
 现在，让我们用实际的逻辑替换 `$PSBoundParameters`，以运行提升权限的命令。`Start-Process` 可以解决这个问题。例如，这段代码将在用户 "Tobias" 下启动提升权限的记事本：
 
 ```powershell
-PS> Start-Process -FilePath notepad -ArgumentList $env:windir\system32\drivers\etc\hosts -Verb runas  
+PS> Start-Process -FilePath notepad -ArgumentList $env:windir\system32\drivers\etc\hosts -Verb runas
 ```
 
 巧合的是，我们的 sudo 函数体的参数名称与 `Start-Process` 所需的参数名称匹配，因此实现很简单：使用 splatting，并且将用户在自动定义的 `$PSBoundParameters` 哈希表中传入的参数传递给 `Start-Process`——这就是所有步骤：
@@ -44,7 +44,7 @@ PS> Start-Process -FilePath notepad -ArgumentList $env:windir\system32\drivers\e
 并传递在自动定义的哈希表$ psboundparameters中找到的用户供给参数，以启动过程 -  全部：
 
 ```powershell
-function sudo 
+function sudo
 {
     param
     (

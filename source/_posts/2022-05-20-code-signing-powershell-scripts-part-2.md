@@ -37,12 +37,12 @@ Write-Warning "Certificate Path: $Path"
 
 运行此代码时，您将获得一个自签名的代码签名证书，并且该代码将返回生成证书的路径，即：
 
-    Cert:\CurrentUser\my\F4C1F9978D564E143D554F3679746B3A79E1FF87   
+    Cert:\CurrentUser\my\F4C1F9978D564E143D554F3679746B3A79E1FF87
 
 要使用您的证书，请像这样通过 `Get-Item` 读取它（确保修改匹配证书的路径 - 每个证书都有唯一的指纹）：
 
 ```powershell
-PS> $myCert = Get-Item -Path Cert:\CurrentUser\my\F4C1F9978D564E143D554F3679746B3A79E1FF87   
+PS> $myCert = Get-Item -Path Cert:\CurrentUser\my\F4C1F9978D564E143D554F3679746B3A79E1FF87
 ```
 
 要将数字签名添加到 PowerShell 脚本文件（或其他能够为此问题携带数字签名的文件），请使用 `Set-AuthenticodeSignature`。运行以下演示代码（根据需要调整文件和证书的路径）：
@@ -73,13 +73,13 @@ notepad $Path
 
 运行此代码时，在 `$Path` 中指定的脚本文件将打开并显示添加到脚本底部的数字签名：
 
-    Hello World!   
-    
-    # SIG # Begin signature block   
-    # MIIFcAYJKoZIhvcNAQcCoIIFYTCCBV0CAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB   
-    # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR   
-    # AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQU4QK+x7NLicgrIdzN+Nvxqbuq   
-    # Qv2gggMKMIIDBjCCAe6gAwIBAgIQG5jphqHXvLJFA0oCJTgcpDANBgkqhkiG9w0B   
+    Hello World!
+
+    # SIG # Begin signature block
+    # MIIFcAYJKoZIhvcNAQcCoIIFYTCCBV0CAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
+    # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
+    # AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQU4QK+x7NLicgrIdzN+Nvxqbuq
+    # Qv2gggMKMIIDBjCCAe6gAwIBAgIQG5jphqHXvLJFA0oCJTgcpDANBgkqhkiG9w0B
     ...
 
 恭喜，您刚刚已经对一个 PowerShell 脚本进行了数字签名！我们将在第三部分中探讨这种签名的好处。

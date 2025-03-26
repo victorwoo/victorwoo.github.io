@@ -19,7 +19,7 @@ tags:
 ```powershell
 $Address =     @{
     Name='Address'
-Expression={$_.HardwareID | 
+Expression={$_.HardwareID |
 ForEach-Object { [uInt64]('0x' + $_.Substring(12))}}
 }
 
@@ -38,7 +38,7 @@ Get-PnpDevice -Class Bluetooth |
     SMA001d SN: 2110109033 SN2110109033   550378395892
     MX Master 3                            20919489792
     MX Keys                              1089715743697
-    Bose QC35 II                        44056255752152   
+    Bose QC35 II                        44056255752152
 
 附带说明，该代码说明了一个简单的技巧，可以以编程方式将十六进制数字转换为十进制：
 
@@ -101,7 +101,7 @@ public static UInt32 Unpair(UInt64 BTAddress) {
 ```powershell
 $Address =     @{
     Name='Address'
-Expression={$_.HardwareID | 
+Expression={$_.HardwareID |
 ForEach-Object { [uInt64]('0x' + $_.Substring(12))}}
 }
 

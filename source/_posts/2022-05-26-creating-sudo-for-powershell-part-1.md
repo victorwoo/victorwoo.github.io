@@ -17,7 +17,7 @@ tags:
 让我们尝试将 sudo 命令添加到 PowerShell。 我们想要一个名为 "sudo" 的新命令，它至少需要一个命令名称，但随后还需要一个可变的空格分隔的参数。这是函数的定义：
 
 ```powershell
-function sudo 
+function sudo
 {
     param
     (
@@ -42,20 +42,20 @@ function sudo
 这是我测试的内容，它似乎按预期工作：
 
 ```powershell
-PS> sudo notepad c:\test 
+PS> sudo notepad c:\test
 
-Key          Value    
----          -----    
-FilePath     notepad  
+Key          Value
+---          -----
+FilePath     notepad
 ArgumentList {c:\test}
 
 
 
-PS> sudo ping 127.0.0.1 -n 1 
+PS> sudo ping 127.0.0.1 -n 1
 
-Key          Value             
----          -----             
-FilePath     ping              
+Key          Value
+---          -----
+FilePath     ping
 ArgumentList {127.0.0.1, -n, 1}
 ```
 

@@ -101,7 +101,7 @@ Update-UserType            Upgrade-SPOSite            Verify-SPOTenantOrgRel...
 Get-Help -Name Connect-SPOService -ShowWindow
 ```
 
-接下来，使用查找动词为 Get 的 cmdlet；这将安全地提供大量信息，但不会更改任何设置，也不会损坏任何东西：
+接下来，使用查找动词为 Get 的 cmdlet这将安全地提供大量信息，但不会更改任何设置，也不会损坏任何东西：
 
 ```powershell
 PS> Get-Command -Verb Get -Module Microsoft.Online.SharePoint.PowerShell | Format-Wide -Column 3

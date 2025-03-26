@@ -23,7 +23,7 @@ tags:
 
 	([RegEx]::Matches($DN, $pattern) | ForEach-Object { $_.Value }) -join ','
 
-这段代码用一个正则表达式来查找 DN 的所有 `DC=` 部分；然后将它们用逗号分隔符连接起来。
+这段代码用一个正则表达式来查找 DN 的所有 `DC=` 部分然后将它们用逗号分隔符连接起来。
 
 执行结果如下：
 

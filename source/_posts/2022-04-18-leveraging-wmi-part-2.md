@@ -17,8 +17,8 @@ tags:
 ```powershell
 PS> Get-CimInstance -ClassName Win32_LogicalDisk
 
-DeviceID DriveType ProviderName   VolumeName Size          FreeSpace   
--------- --------- ------------   ---------- ----          ---------   
+DeviceID DriveType ProviderName   VolumeName Size          FreeSpace
+-------- --------- ------------   ---------- ----          ---------
 C:       3                        OS         1007210721280 227106992128
 Z:       4         \\127.0.0.1\c$ OS         1007210721280 227106988032
 ```
@@ -29,30 +29,30 @@ Z:       4         \\127.0.0.1\c$ OS         1007210721280 227106988032
 PS> Get-CimInstance -ClassName Win32_LogicalDisk | Select-Object -Property *
 
 
-Status                       : 
-Availability                 : 
+Status                       :
+Availability                 :
 DeviceID                     : C:
-StatusInfo                   : 
+StatusInfo                   :
 Caption                      : C:
 Description                  : Local Fixed Disk
-InstallDate                  : 
+InstallDate                  :
 Name                         : C:
-ConfigManagerErrorCode       : 
-ConfigManagerUserConfig      : 
+ConfigManagerErrorCode       :
+ConfigManagerUserConfig      :
 CreationClassName            : Win32_LogicalDisk
-ErrorCleared                 : 
-ErrorDescription             : 
-LastErrorCode                : 
-PNPDeviceID                  : 
-PowerManagementCapabilities  : 
-PowerManagementSupported     : 
+ErrorCleared                 :
+ErrorDescription             :
+LastErrorCode                :
+PNPDeviceID                  :
+PowerManagementCapabilities  :
+PowerManagementSupported     :
 SystemCreationClassName      : Win32_ComputerSystem
 SystemName                   : DELL7390
 Access                       : 0
-BlockSize                    : 
-ErrorMethodology             : 
-NumberOfBlocks               : 
-Purpose                      : 
+BlockSize                    :
+ErrorMethodology             :
+NumberOfBlocks               :
+Purpose                      :
 FreeSpace                    : 227111596032
 Size                         : 1007210721280
 Compressed                   : False
@@ -60,44 +60,44 @@ DriveType                    : 3
 FileSystem                   : NTFS
 MaximumComponentLength       : 255
 MediaType                    : 12
-ProviderName                 : 
-QuotasDisabled               : 
-QuotasIncomplete             : 
-QuotasRebuilding             : 
+ProviderName                 :
+QuotasDisabled               :
+QuotasIncomplete             :
+QuotasRebuilding             :
 SupportsDiskQuotas           : False
 SupportsFileBasedCompression : True
-VolumeDirty                  : 
+VolumeDirty                  :
 VolumeName                   : OS
 VolumeSerialNumber           : DAD43A43
-PSComputerName               : 
+PSComputerName               :
 CimClass                     : root/cimv2:Win32_LogicalDisk
 CimInstanceProperties        : {Caption, Description, InstallDate, Name...}
 CimSystemProperties          : Microsoft.Management.Infrastructure.CimSystemProperties
 
-Status                       : 
-Availability                 : 
+Status                       :
+Availability                 :
 DeviceID                     : Z:
-StatusInfo                   : 
+StatusInfo                   :
 Caption                      : Z:
 Description                  : Network Connection
-InstallDate                  : 
+InstallDate                  :
 Name                         : Z:
-ConfigManagerErrorCode       : 
-ConfigManagerUserConfig      : 
+ConfigManagerErrorCode       :
+ConfigManagerUserConfig      :
 CreationClassName            : Win32_LogicalDisk
-ErrorCleared                 : 
-ErrorDescription             : 
-LastErrorCode                : 
-PNPDeviceID                  : 
-PowerManagementCapabilities  : 
-PowerManagementSupported     : 
+ErrorCleared                 :
+ErrorDescription             :
+LastErrorCode                :
+PNPDeviceID                  :
+PowerManagementCapabilities  :
+PowerManagementSupported     :
 SystemCreationClassName      : Win32_ComputerSystem
 SystemName                   : DELL7390
 Access                       : 0
-BlockSize                    : 
-ErrorMethodology             : 
-NumberOfBlocks               : 
-Purpose                      : 
+BlockSize                    :
+ErrorMethodology             :
+NumberOfBlocks               :
+Purpose                      :
 FreeSpace                    : 227111596032
 Size                         : 1007210721280
 Compressed                   : False
@@ -106,15 +106,15 @@ FileSystem                   : NTFS
 MaximumComponentLength       : 255
 MediaType                    : 0
 ProviderName                 : \\127.0.0.1\c$
-QuotasDisabled               : 
-QuotasIncomplete             : 
-QuotasRebuilding             : 
+QuotasDisabled               :
+QuotasIncomplete             :
+QuotasRebuilding             :
 SupportsDiskQuotas           : False
 SupportsFileBasedCompression : True
-VolumeDirty                  : 
+VolumeDirty                  :
 VolumeName                   : OS
 VolumeSerialNumber           : DAD43A43
-PSComputerName               : 
+PSComputerName               :
 CimClass                     : root/cimv2:Win32_LogicalDisk
 CimInstanceProperties        : {Caption, Description, InstallDate, Name...}
 CimSystemProperties          : Microsoft.Management.Infrastructure.CimSystemProperties
@@ -122,13 +122,13 @@ CimSystemProperties          : Microsoft.Management.Infrastructure.CimSystemProp
 
 现在您看到了所有属性，并且可以选择真正需要的项目：
 
-```powershell     
+```powershell
 PS> Get-CimInstance -ClassName Win32_LogicalDisk | Select-Object -Property DeviceId, Description, FreeSpace, FileSystem
 
 DeviceId Description           FreeSpace FileSystem
 -------- -----------           --------- ----------
-C:       Local Fixed Disk   227110989824 NTFS      
-Z:       Network Connection 227110989824 NTFS  
+C:       Local Fixed Disk   227110989824 NTFS
+Z:       Network Connection 227110989824 NTFS
 ```
 
 <!--本文国际来源：[Leveraging WMI (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/leveraging-wmi-part-2)-->

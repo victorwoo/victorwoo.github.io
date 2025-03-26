@@ -29,6 +29,6 @@ _适用于 PowerShell 3.0 及以上版本_
     $data = Get-ChildItem -Path $env:windir\system32 -Filter *.dll
     Foreach ($element in $data) { $element.VersionInfo }
 
-自动展开代码更直观，更容易书写；手写循环兼容性更好，更快输出结果。
+自动展开代码更直观，更容易书写手写循环兼容性更好，更快输出结果。
 
 <!--本文国际来源：[Automatic Unrolling and Memory Consumption](http://community.idera.com/powershell/powertips/b/tips/posts/automatic-unrolling-and-memory-consumption)-->

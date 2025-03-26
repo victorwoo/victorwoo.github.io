@@ -32,8 +32,8 @@ tags:
 
 ```powershell
 $h = [CultureInfo]::GetCultures([Globalization.CultureTypes]::SpecificCultures) |
-Where-Object {$_ -like '*-*' } | 
-Group-Object -Property Name -AsHashTable 
+Where-Object {$_ -like '*-*' } |
+Group-Object -Property Name -AsHashTable
 ```
 
 现在，我们可以获取可用语言 ID 的列表，我们也可以查找其显示名称：
@@ -43,9 +43,9 @@ Group-Object -Property Name -AsHashTable
 $h.Keys
 
 
-    
-PS C:\> $h['de-de'].DisplayName 
-German (Germany) 
+
+PS C:\> $h['de-de'].DisplayName
+German (Germany)
 ```
 
 要获取可能的 URL 的列表，只需遍历所有可用的语言 ID，然后将它们一个接一个地插入 URL 即可。
@@ -56,7 +56,7 @@ German (Germany)
 $URL = 'https://docs.microsoft.com/{0}/powershell/scripting/lang-spec/chapter-01'
 
 $list = $h.Keys |
-    ForEach-Object { $URL -f $_ } 
+    ForEach-Object { $URL -f $_ }
 
 $list
 ```

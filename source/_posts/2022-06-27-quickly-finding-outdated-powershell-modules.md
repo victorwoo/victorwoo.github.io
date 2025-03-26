@@ -15,7 +15,7 @@ tags:
 在最简单的情况下，您可以仅使用单行代码（删除 `-WhatIf` 以实际执行更新）检查所有已安装的模块以进行更新：
 
 ```powershell
-PS C:\> Get-InstalledModule | Update-Module -WhatIf  
+PS C:\> Get-InstalledModule | Update-Module -WhatIf
 ```
 
 `Get-InstalledModule` 列出了以“托管”方式安装的所有模块（使用 `Install-Module`），并包含有关该模块的安装位置的信息（即 PowerShell Gallery 网站）。这就是 `Update-Module` 用来检查新版本所需要的信息。
@@ -39,10 +39,10 @@ function Test-GalleryModuleUpdate
         $NeedUpdateOnly
 
     )
-    
+
     process
     {
-        $URL = "https://www.powershellgallery.com/packages/$Name" 
+        $URL = "https://www.powershellgallery.com/packages/$Name"
         $page = Invoke-WebRequest -Uri $URL -UseBasicParsing -Maximum 0 -ea Ignore
         [version]$latest  = Split-Path -Path $page.Headers.Location -Leaf
         $needsupdate = $Latest -gt $Version
@@ -59,7 +59,7 @@ function Test-GalleryModuleUpdate
     }
 }
 
-Get-InstalledModule | Where-Object Repository -eq PSGallery | 
+Get-InstalledModule | Where-Object Repository -eq PSGallery |
     Test-GalleryModuleUpdate #-NeedUpdateOnly
 ```
 
@@ -75,8 +75,8 @@ Get-InstalledModule | Where-Object Repository -eq PSGallery |
     Microsoft.... 16.0.21116.... 16.0.22413...        True
     MicrosoftT... 2.3.1          4.4.1                True
     PSReadLine    2.2.2          2.2.5                True
-    PSWriteHTML   0.0.172        0.0.174              True 
-    ...  
+    PSWriteHTML   0.0.172        0.0.174              True
+    ...
 
 <!--本文国际来源：[Quickly Finding Outdated PowerShell Modules](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/quickly-finding-outdated-powershell-modules)-->
 

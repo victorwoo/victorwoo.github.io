@@ -11,7 +11,7 @@ tags:
 ---
 [Tobias Weltner][Tobias Weltner] 博士每个工作日都在 [www.powershell.com][www.powershell.com] 发布一篇 PowerShell 技能。这个系列在 PowerShell 的技术社区里已是家喻户晓，成为关注 PowerShell 技术动态的一扇窗口。
 
-这个套技能连载在中国有两个版本的翻译。一套是由荔非苔创立的 [Powershell小技巧][Powershell小技巧]，现由荔非苔和 CodeCook 两人维护；另一套是本站的 [PowerShell 技能连载][PowerShell 技能连载]。
+这个套技能连载在中国有两个版本的翻译。一套是由荔非苔创立的 [Powershell小技巧][Powershell小技巧]，现由荔非苔和 CodeCook 两人维护另一套是本站的 [PowerShell 技能连载][PowerShell 技能连载]。
 
 本站是采用 [JekyllBootstrap][JekyllBootstrap] 系统搭建，使用 [markdown][markdown] 编辑文章，并使用 [git][git] 发布到 [GitHub Pages][GitHub Pages] 上。采用这些略带 geek 感的技术来做这个站点，是因为：
 

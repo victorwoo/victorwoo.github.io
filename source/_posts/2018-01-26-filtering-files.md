@@ -43,6 +43,6 @@ Count Name
   800 .ps1
 ```
 
-虽然您可以省略 `-Filter` 参数，但强烈建议保留着它。首先，`-Include` 只能和 `-Recurse` 配合使用；其次，`-Include` 速度很慢。先用一个粗略（但是快速）的 `-Filter` 过滤，然后用 `Include` 是最佳实践。
+虽然您可以省略 `-Filter` 参数，但强烈建议保留着它。首先，`-Include` 只能和 `-Recurse` 配合使用其次，`-Include` 速度很慢。先用一个粗略（但是快速）的 `-Filter` 过滤，然后用 `Include` 是最佳实践。
 
 <!--本文国际来源：[Filtering Files](http://community.idera.com/powershell/powertips/b/tips/posts/filtering-files)-->

@@ -24,7 +24,7 @@ PS> Install-Module -Name Carbon -Scope CurrentUser
 
 首次使用时，`Install-Module` 会请求下载许可并使用 "`nuget`" DLL，该 DLL 负责下载和安装过程。接下来，下载并解压缩请求的模块。由于 PowerShell 库是一个公共存储库，因此要求您同意将材料下载到计算机上。使用 `-Force` 参数可以跳过此部分。
 
-重要提示：PowerShell Gallery 提供的大多数 PowerShell 模块都是基于脚本的。您需要允许执行脚本；否则，您将无法使用基于脚本的模块。如果尚未允许脚本执行，则可以使用以下命令：
+重要提示：PowerShell Gallery 提供的大多数 PowerShell 模块都是基于脚本的。您需要允许执行脚本否则，您将无法使用基于脚本的模块。如果尚未允许脚本执行，则可以使用以下命令：
 
 ```powershell
 PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force

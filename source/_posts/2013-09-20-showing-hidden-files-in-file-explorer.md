@@ -30,6 +30,6 @@ PowerShell可以方便地读写注册表。注册表是Windows设置的中心仓
 	        ForEach-Object { $_.Refresh() }
 	}
 
-`Show-HiddenFile` 使得隐藏文件变得可见；而 `Show-HiddenFile -Off` 使得隐藏文件不可见。操作结果几乎在所有文件管理窗口中立即生效。如果您在没有打开文件管理窗口的情况下做出改变，则改变不会立即生效，因为没有可以调用 `Refresh()` 方法的窗口。
+`Show-HiddenFile` 使得隐藏文件变得可见而 `Show-HiddenFile -Off` 使得隐藏文件不可见。操作结果几乎在所有文件管理窗口中立即生效。如果您在没有打开文件管理窗口的情况下做出改变，则改变不会立即生效，因为没有可以调用 `Refresh()` 方法的窗口。
 
 <!--本文国际来源：[Showing Hidden Files in File Explorer](http://community.idera.com/powershell/powertips/b/tips/posts/showing-hidden-files-in-file-explorer)-->

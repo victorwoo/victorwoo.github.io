@@ -86,7 +86,7 @@ Compare-Object -ReferenceObject $aDetail -DifferenceObject $bDetail -Property Na
     Site                  Get-WmiObject   <=
     Container             Get-WmiObject   <=
 
-结果显示 metadata 中有显著的区别。`Get-WmiObject` 总是返回再起属性 "__Server"（两个下划线）中进行查询的计算机的名称；而 `Get-WmiObject` 则是在 CimSystemProperties 中列出此信息：
+结果显示 metadata 中有显著的区别。`Get-WmiObject` 总是返回再起属性 "__Server"（两个下划线）中进行查询的计算机的名称而 `Get-WmiObject` 则是在 CimSystemProperties 中列出此信息：
 
 ```powershell
 PS> $b.CimSystemProperties

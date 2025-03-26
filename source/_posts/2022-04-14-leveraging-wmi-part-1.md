@@ -21,7 +21,7 @@ SMBIOSBIOSVersion : 1.9.1
 Manufacturer      : Dell Inc.
 Name              : 1.9.1
 SerialNumber      : 4ZKM0Z2
-Version           : DELL   - 20170001  
+Version           : DELL   - 20170001
 ```
 
 切换到新的 `Get-CimInstance` cmdlet，它的工作原理非常相似：
@@ -33,13 +33,13 @@ SMBIOSBIOSVersion : 1.9.1
 Manufacturer      : Dell Inc.
 Name              : 1.9.1
 SerialNumber      : 4ZKM0Z2
-Version           : DELL   - 20170001  
+Version           : DELL   - 20170001
 ```
 
 `Get-CimInstance` 的众多优点之一是它的 IntelliSense 支持：要找出可用的类名，只需按 TAB 或（在 ISE 或 VSCode 等图形编辑器中）按 CTRL+空格：
 
 ```powershell
-PS> Get-CimInstance -ClassName Win32_\# <-press CTRL+SPACE with the cursor after "_" 
+PS> Get-CimInstance -ClassName Win32_\# <-press CTRL+SPACE with the cursor after "_"
 ```
 
 最开始可能需要重复按几次按键，因为生成 IntelliSense 列表可能需要几秒钟，因此在您第一次按键时，IntelliSense 可能会超时。

@@ -24,7 +24,7 @@ $URLRaw = 'http://go.microsoft.com/fwlink/?LinkID=135173'
 $page = Invoke-WebRequest -Uri $URLRaw -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
 $target = $page.Headers.Location
 
-"$URLRaw -> $target" 
+"$URLRaw -> $target"
 ```
 
 这是关于如何从静态链接解析产品版本的示例。最新版的 PowerShell 总是可以使用此静态 URL 获取：
@@ -39,7 +39,7 @@ $URLRaw = 'https://github.com/PowerShell/PowerShell/releases/latest'
 # returned by the webserver ourselves:
 $page = Invoke-WebRequest -Uri $URLRaw -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
 $realURL = $page.Headers.Location
-$version = Split-Path -Path $realURL -Leaf 
+$version = Split-Path -Path $realURL -Leaf
 
 "PowerShell 7 latest version: $version"
 ```

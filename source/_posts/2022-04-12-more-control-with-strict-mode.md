@@ -15,7 +15,7 @@ tags:
 有时，PowerShell 可能会出现意外行为。例如，当您输入一个不带引号的 IPv4 地址时，PowerShell 能够正常地接受它，但什么也不做。为什么？
 
 ```powershell
-PS> 1.2.3.4 
+PS> 1.2.3.4
 ```
 
 在这种情况下，激活“严格模式”可能会有好处，当出现问题时会发出更严格的异常：
@@ -23,9 +23,9 @@ PS> 1.2.3.4
 ```powershell
 PS> Set-StrictMode -Version Latest
 
-PS> 1.2.3.4 
+PS> 1.2.3.4
 The property '3.4' cannot be found on this object. Verify that the property exists.
-At line:1 char:1 
+At line:1 char:1
 ```
 
 启用严格模式后，PowerShell 会这样解释输入“1.2.3.4”：获取到浮点数 1.2，然后查询其中的 "3" 属性和其中的 "4" 属性。当然，这些属性是不存在的。禁用严格模式后，PowerShell 不会抱怨不存在的属性，只会返回“什么也没有”。这就是所发生的事情。
