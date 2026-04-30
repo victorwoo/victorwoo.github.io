@@ -128,6 +128,44 @@ tags:
 | 旧本地目录 `/Users/wubo/blog.vichamp.com` | 已确认与当前仓库内容一致，可不再关注 |
 | `blog.vichamp.com` GitHub 仓库 | **已淘汰**，缺少 2017-2025 年的文章 |
 
+### 内容去重
+
+写新文章时，先用 `grep` 快速扫描 `source/_posts/` 目录，避免与已有文章主题高度重复。如果不可避免有部分重叠，可以接受，但角度或示例应有所区别。
+
+### 进度可视化
+
+生成批量文章时，使用 TaskCreate 跟踪每篇文章的状态，每完成一篇立即标记 completed，让用户随时了解进度。
+
+## 批量生成工作流
+
+详细流程见 `util/WORKFLOW.md`，以下为核心规则：
+
+### 流程：生成 → 复核 → 修复 → 验证
+
+1. **生成**：后台 Agent 并行写文章，每阶段更新 `.claude/agent-meta/*.meta.json`
+2. **复核**：生成完成后运行 `python3 util/review-article.py <file>`，检查 lint、front matter、tags、行数、代码块安全等
+3. **修复**：复核 fail 的文章，将问题清单注入新 Agent 重新生成
+4. **验证**：全部 pass 后统一 `hexo generate`
+
+### 元数据
+
+- 路径：`.claude/agent-meta/<filename>.meta.json`（不放 source/_posts，避免影响 hexo）
+- 阶段：init → planning → writing_content → linting → verifying → reviewing → done
+- 每次切换阶段必须更新 meta.json，`start_time` 必须是实际时间
+- 复核结果写入 `review_result` 字段：`pass` / `pass_with_warnings` / `fail`
+
+### 监控
+
+```bash
+bash util/monitor-agents.sh    # 通过 Monitor 工具启动（persistent 模式）
+```
+
+### Agent 约束
+
+- **必须用 Write 工具**写文件，不要用 Bash heredoc（`@{}` 触发 zsh 安全检查）
+- 每批 4 个 Agent，避免 API 限流
+- Agent 完成后由主线程更新 TaskCreate 状态
+
 ## 工作流程
 
 1. 在 `source/_posts/` 编写或修改 Markdown 文章
