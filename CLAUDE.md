@@ -88,6 +88,7 @@ tags:
 - tip
 - powertip
 - series
+- <content-specific-tags>
 ---
 ```
 
@@ -95,6 +96,29 @@ tags:
 - 每个工作日一篇
 - 内容以 PowerShell 技术为主，适当结合当时互联网热点（AIGC、LLM、Browser Using、容器化、DevOps 等）
 - 代码块使用标准 Markdown 围栏语法
+
+### Tags 规范
+
+每篇文章必须包含基础 tags，再根据文章内容添加主题相关的 tags，使用 **kebab-case** 格式：
+
+- **基础 tags**（每篇必有）：`powershell`、`tip`、`powertip`、`series`
+- **内容 tags**（按文章主题添加），示例：
+  - AI 相关：`ai`、`llm`、`openai`、`ollama`、`local-llm`
+  - 浏览器相关：`browser-automation`、`selenium`、`playwright`
+  - 安全相关：`security`、`audit`、`baseline`
+  - 容器相关：`docker`、`container`、`devops`
+  - 配置相关：`json`、`yaml`、`config-management`
+  - 网络相关：`network`、`api`、`rest-api`
+
+### 文章内容规范
+
+每篇文章必须包含以下结构，不得只贴代码：
+
+1. **开头**：一行适用版本说明（如 `_适用于 PowerShell 7.0 及以上版本_`）
+2. **背景引入**：1-3 段文字，说明主题的背景和为什么需要这个技术
+3. **正文**：每个代码块前后都要有文字说明，解释代码做什么、为什么这样写
+4. **执行结果示例**：每个主要代码块后附上模拟的执行输出（用普通代码块，不加 `powershell` 标记），让读者知道运行结果长什么样
+5. **注意事项**：文末总结使用要点和坑点
 
 ## 数据源说明
 
