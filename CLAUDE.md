@@ -1,0 +1,113 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## 项目概述
+
+Hexo 静态博客，域名 blog.vichamp.com，通过 GitHub Pages 托管。
+线上网站：https://blog.vichamp.com/ — 这是需要确保正确无误的最终产出。
+
+## 部署架构
+
+```
+source/_posts/*.md  →  hexo generate  →  public/  →  hexo deploy  →  victorwoo.github.io (master)
+                                                                      ↓
+                                                              blog.vichamp.com (CNAME)
+```
+
+- **仓库**: `victorwoo/victorwoo.github.io`
+- **source 分支**: Hexo 源码（Markdown、主题、配置），开发工作在此分支
+- **master 分支**: `hexo deploy` 产出的静态网站，GitHub Pages 直接托管
+- **DNS**: `blog.vichamp.com` → CNAME → `victorwoo.github.io`
+
+## 常用命令
+
+```bash
+npm install            # 安装依赖
+npx hexo server        # 本地预览 http://localhost:4000
+npx hexo generate      # 生成静态文件到 public/
+npx hexo deploy        # 部署到 master 分支
+npx hexo clean         # 清除缓存和生成文件
+npx hexo new post "标题"  # 新建文章
+
+markdownlint source/_posts/YYYY-MM-DD-*.md  # Lint 单篇文章
+```
+
+## 关键配置
+
+- **主题**: icarus (`hexo-theme-icarus`)
+- **语言**: zh-CN
+- **文章命名**: `_config.yml` 中 `new_post_name: ':year-:month-:day-:title.md'`
+- **永久链接格式**: `:year/:month/:day/:title/`
+- **部署目标**: `git@github.com:victorwoo/victorwoo.github.io.git` → master 分支
+
+## 目录结构要点
+
+```
+source/_posts/     ← 博客文章 Markdown 文件（约 2184 篇）
+source/_drafts/    ← 草稿
+scaffolds/         ← 文章模板
+themes/            ← Hexo 主题
+util/              ← PowerShell/Bash 工具脚本
+_config.yml        ← Hexo 主配置
+```
+
+## 写作规范（必须遵循）
+
+### Markdown Lint
+
+每篇文章必须通过 `markdownlint` 检查。项目根目录有 `.markdownlint.json` 配置文件。
+
+### Hexo 编译验证
+
+每完成一批文章（约 5-10 篇）后，必须运行以下命令验证生成无错误：
+
+```bash
+npx hexo clean && npx hexo generate
+```
+
+注意：主题本身会产生大量 ERROR（sidebar widget 问题），这是已知问题，非新文章引起。验证时关注是否有新增的 ERROR 类型。
+
+### 代码块安全
+
+Markdown 代码块内的 PowerShell here-string（`@"..."@`）中**不得**嵌入三反引号（` ``` `），否则会被 Markdown 解析器误认为代码围栏结束，导致渲染断裂。应改用数组拼接等方式。
+
+### 文章格式
+
+```yaml
+---
+layout: post
+date: YYYY-MM-DD 08:00:00
+title: "PowerShell 技能连载 - 中文标题"
+description: PowerTip of the Day - English Title
+categories:
+- powershell
+- tip
+tags:
+- powershell
+- tip
+- powertip
+- series
+---
+```
+
+- 文件名格式：`YYYY-MM-DD-english-slug.md`
+- 每个工作日一篇
+- 内容以 PowerShell 技术为主，适当结合当时互联网热点（AIGC、LLM、Browser Using、容器化、DevOps 等）
+- 代码块使用标准 Markdown 围栏语法
+
+## 数据源说明
+
+| 数据源 | 状态 |
+|--------|------|
+| **victorwoo.github.io** (当前仓库) | **权威来源**，source 分支有完整 2184 篇文章 |
+| 旧本地目录 `/Users/wubo/blog.vichamp.com` | 已确认与当前仓库内容一致，可不再关注 |
+| `blog.vichamp.com` GitHub 仓库 | **已淘汰**，缺少 2017-2025 年的文章 |
+
+## 工作流程
+
+1. 在 `source/_posts/` 编写或修改 Markdown 文章
+2. `markdownlint` 检查格式
+3. `hexo generate` 验证生成（每批 5-10 篇验证一次）
+4. `hexo server` 本地预览
+5. `hexo deploy` 推送到 master → GitHub Pages
