@@ -41,6 +41,37 @@ markdownlint source/_posts/YYYY-MM-DD-*.md  # Lint 单篇文章
 - **永久链接格式**: `:year/:month/:day/:title/`
 - **部署目标**: `git@github.com:victorwoo/victorwoo.github.io.git` → master 分支
 
+## 主题定制（patch-package）
+
+icarus 主题通过 npm 安装，自定义修改存放在 `node_modules/` 中，使用 `patch-package` 管理。`npm install` 后会自动执行 `postinstall` 脚本应用补丁。
+
+### 当前补丁
+
+| 补丁文件 | 修改内容 |
+|----------|----------|
+| `patches/hexo-theme-icarus+6.1.1.patch` | 新增 `qq-group` widget，在侧边栏展示 QQ 群二维码 |
+
+### QQ 群 widget 配置
+
+在 `_config.icarus.yml` 的 `widgets` 中添加：
+
+```yaml
+- position: left
+  type: qq-group
+  img_url: /img/qr-qq-group.png
+  link_url: https://qm.qq.com/q/BMzkmLNUD6
+  title: PowerShell 技术 QQ 群
+```
+
+### 主题升级流程
+
+1. 修改 `package.json` 中 `hexo-theme-icarus` 的版本号
+2. 运行 `npm install`
+3. 检查 `patches/` 下的补丁是否仍然适用：
+   - 如果 patch 应用成功 → 无需操作
+   - 如果 patch 冲突 → 删除旧 patch，手动将自定义修改重新应用到新版 `node_modules`，然后运行 `npx patch-package hexo-theme-icarus` 重新生成 patch
+4. 运行 `hexo generate` 验证渲染正常
+
 ## 目录结构要点
 
 ```

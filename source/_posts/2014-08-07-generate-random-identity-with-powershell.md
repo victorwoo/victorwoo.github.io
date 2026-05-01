@@ -12,7 +12,7 @@ tags:
 
 ![](/img/2014-08-07-generate-random-identity-with-powershell-001.png)
 
-根据 [*PowerShell 技术交流](http://url.cn/Jq5bta) QQ 群今天的讨论，以及 _shrekz_ 的 [powershell 生成随机用户信息](http://blog.csdn.net/shrekz/article/details/38415877)，我做了一些改进。增加了生日、性别、身份证号等。设计要点如下：
+根据 [*PowerShell 技术交流](https://qm.qq.com/q/BMzkmLNUD6) QQ 群今天的讨论，以及 _shrekz_ 的 [powershell 生成随机用户信息](http://blog.csdn.net/shrekz/article/details/38415877)，我做了一些改进。增加了生日、性别、身份证号等。设计要点如下：
 
 * QQ 号和邮箱须对应。
 身份证号的第 1-6 位是地区号码，应符合 *G​B​T​2​2​6​0​—​1​9​9​9* 规范。

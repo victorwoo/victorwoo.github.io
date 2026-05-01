@@ -44,4 +44,4 @@ PowerShell 2.0 的控制台，缺省设置是 MTAPowerShell 3.0 的控制台，�
 - [Powershell能否将文件列表写入剪切板](http://bathome.net/thread-30850-1-1.html)
 - [PowerShell中的 STA和MTA](http://www.pstips.net/powershell-sta-and-mta.html)
 - [PowerShell.exe Command-Line Help](http://technet.microsoft.com/zh-cn/library/hh847736.aspx)
-- QQ 群 [*PowerShell技术交流（271143343）](http://url.cn/Jq5bta) 2014-07-01 的讨论
+- QQ 群 [*PowerShell技术交流（271143343）](https://qm.qq.com/q/BMzkmLNUD6) 2014-07-01 的讨论

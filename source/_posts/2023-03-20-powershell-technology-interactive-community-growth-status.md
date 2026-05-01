@@ -14,7 +14,7 @@ tags:
 
 ![QQ Group](/img/2023-03-20-powershell-technology-interactive-community-growth-status.png)
 
-如您遇到 PowerShell 方面的技术问题，或有好的资源希望分享，请加入我们。QQ 群号：[271143343](http://url.cn/Jq5bta)。
+如您遇到 PowerShell 方面的技术问题，或有好的资源希望分享，请加入我们。QQ 群号：[271143343](https://qm.qq.com/q/BMzkmLNUD6)。
 
 或者用手机 QQ 扫描二维码：
 

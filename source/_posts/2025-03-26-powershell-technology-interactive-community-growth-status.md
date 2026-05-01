@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "PowerShell Technology Interactive Community Growth Status (March 2024)"
+title: "PowerShell Technology Interactive Community Growth Status (March 2025)"
 date: 2025-03-26 00:00:00
-description: PowerShell Technology Interactive Community Growth Status (March 2024)
+description: PowerShell Technology Interactive Community Growth Status (March 2025)
 categories:
 - powershell
 tags:
@@ -16,8 +16,8 @@ By March 2025, the number of "PowerShell Technology interaction" community has r
 
 ![QQ Group](/img/2025-03-26-powershell-technology-interactive-community-growth-status.png)
 
-If you encounter technical problems with PowerShell, or have good resources to share, please join us. QQ group number: [271143343](http://url.cn/Jq5bta).
-如您遇到 PowerShell 方面的技术问题，或有好的资源希望分享，请加入我们。QQ 群号：[271143343](http://url.cn/Jq5bta)。
+If you encounter technical problems with PowerShell, or have good resources to share, please join us. QQ group number: [271143343](https://qm.qq.com/q/BMzkmLNUD6).
+如您遇到 PowerShell 方面的技术问题，或有好的资源希望分享，请加入我们。QQ 群号：[271143343](https://qm.qq.com/q/BMzkmLNUD6)。
 
 Or scan the QR code with your mobile phone QQ:
 或者用手机 QQ 扫描二维码：

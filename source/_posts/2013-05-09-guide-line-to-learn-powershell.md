@@ -63,6 +63,6 @@ tags:
 补充说明
 --------
 
-- 文中提到的所有 pdf、chm 电子书，都可以在**[*PowerShell 技术交流](http://url.cn/Jq5bta)（QQ 群号：[271143343](http://url.cn/Jq5bta)）**的群共享中找到。
+- 文中提到的所有 pdf、chm 电子书，都可以在**[*PowerShell 技术交流](https://qm.qq.com/q/BMzkmLNUD6)（QQ 群号：[271143343](https://qm.qq.com/q/BMzkmLNUD6)）**的群共享中找到。
 - `pstips.chm` 实际上是 [PowerShell 在线教程](http://www.pstips.net/powershell-online-tutorials) 的离线版。
 - [PowerShell 在线教程](http://www.pstips.net/powershell-online-tutorials) 实际上又是 [Master-PowerShell](http://powershell.com/cs/blogs/ebookv2/default.aspx) 的中文翻译，感谢荔非苔的劳动。
