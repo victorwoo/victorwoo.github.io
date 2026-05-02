@@ -26,6 +26,8 @@ PowerShell SecretManagement 模块的出现改变了这一局面。它提供了�
 
 本文将从基础安装配置讲起，逐步展示如何构建多保管库策略，以及在 CI/CD 和自动化场景中安全使用密钥的最佳实践。
 
+<!-- more -->
+
 ## SecretManagement 基础：注册保管库与存取密钥
 
 SecretManagement 模块采用"核心模块 + 扩展库"的架构设计。核心模块 `Microsoft.PowerShell.SecretManagement` 提供统一的读写接口，而具体的存储后端由扩展库实现。我们首先安装核心模块和一个常用的本地扩展库。

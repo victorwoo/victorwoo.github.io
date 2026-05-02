@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 的反馈机制、进度条设计，以及如何构建用户友好的自动化脚本。
 
+<!-- more -->
+
 ## Write-Progress 进度条
 
 ```powershell

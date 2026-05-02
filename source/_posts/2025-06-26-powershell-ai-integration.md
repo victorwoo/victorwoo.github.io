@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本，调用 AI API 需要网络访问和 
 
 本文将讲解如何在 PowerShell 中调用 AI 服务、处理响应流，以及构建实用的 AI 驱动运维工具。
 
+<!-- more -->
+
 ## 调用 OpenAI API
 
 ```powershell

@@ -26,6 +26,8 @@ Windows 平台长期以来缺少类似的标准化方案。开发者通常需要
 
 本文将介绍如何使用 PowerShell 结合 winget 构建一套完整的"Windows Dotfiles"方案：自动安装常用开发工具链、管理系统配置与偏好设置，以及通过 Git 仓库实现多机同步和一键恢复。
 
+<!-- more -->
+
 ## 开发工具链安装脚本
 
 第一步是将日常开发所需的工具清单化。通过 winget 的命令行接口，我们可以用 PowerShell 脚本批量安装 VS Code、Git、Node.js、Python 等常用工具，并自动处理依赖关系。

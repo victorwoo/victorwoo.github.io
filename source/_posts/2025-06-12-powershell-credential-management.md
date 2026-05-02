@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本，SecretManagement 模块需要 PowerS
 
 本文将讲解凭据的安全创建、存储、使用，以及 Microsoft.PowerShell.SecretManagement 模块的使用。
 
+<!-- more -->
+
 ## PSCredential 基础
 
 `PSCredential` 是 PowerShell 中表示用户名+密码的标准方式：

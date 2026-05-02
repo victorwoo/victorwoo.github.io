@@ -24,6 +24,8 @@ Microsoft Graph 是 Microsoft 365 平台的统一 API 网关——它整合了 A
 
 本文将讲解 Microsoft Graph PowerShell 的连接、用户管理、组操作和常用自动化场景。
 
+<!-- more -->
+
 ## 连接与认证
 
 ```powershell

@@ -23,6 +23,8 @@ Desired State Configuration（DSC）是 PowerShell 的声明式配置管理框�
 
 本文将讲解 DSC 的核心概念、配置编写，以及实用的服务器配置场景。
 
+<!-- more -->
+
 ## DSC 配置基础
 
 ```powershell

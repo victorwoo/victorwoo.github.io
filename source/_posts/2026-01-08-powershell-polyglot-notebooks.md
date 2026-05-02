@@ -26,6 +26,8 @@ Polyglot Notebooks（前身 .NET Interactive）是微软推出的一款交互式
 
 本文将从三个方面介绍 Polyglot Notebooks 的实战用法：首先搭建环境并掌握基础的 Magic Commands，然后演示多语言协作与变量共享的技巧，最后通过一个数据分析实战案例展示完整的工作流。
 
+<!-- more -->
+
 ## Notebook 基础操作
 
 要在 Polyglot Notebooks 中使用 PowerShell，需要先安装 .NET SDK 和 Polyglot Notebooks 扩展。整个过程非常简洁，下面这个脚本会自动检查环境并完成初始化配置。

@@ -25,6 +25,8 @@ Windows Server 自带的 DnsServer 模块提供了一整套 PowerShell cmdlet，
 
 本文将介绍如何使用 DnsServer 模块完成 DNS 记录的查询、创建、修改和删除操作，并提供批量管理的实用脚本模板。
 
+<!-- more -->
+
 ## 查询 DNS 记录
 
 查询是最基础的操作。使用 `Get-DnsServerResourceRecord` 可以列出指定区域中的所有记录，也可以按名称和类型精确筛选。下面演示了几种常见的查询方式。

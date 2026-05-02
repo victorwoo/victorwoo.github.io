@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中日期时间的高级操作和常见陷阱。
 
+<!-- more -->
+
 ## 格式化与解析
 
 ```powershell

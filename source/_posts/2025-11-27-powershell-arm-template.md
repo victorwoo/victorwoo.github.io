@@ -26,6 +26,8 @@ Azure Resource Manager（ARM）模板是微软 Azure 平台原生的基础设施
 
 本文将从零开始演示如何用 PowerShell 编写、参数化和部署 ARM 模板，涵盖模板验证、增量部署以及多环境参数管理等常见场景。
 
+<!-- more -->
+
 ## 基础：部署一个简单的 ARM 模板
 
 我们先从最简单的存储账户部署开始。ARM 模板是一个 JSON 文件，包含 `$schema`、`contentVersion`、`resources` 等固定节。下面是一个最小化的存储账户模板和对应的参数文件。

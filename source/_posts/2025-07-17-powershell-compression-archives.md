@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的压缩与归档操作，涵盖日常备份和高级场景。
 
+<!-- more -->
+
 ## ZIP 基础操作
 
 ```powershell

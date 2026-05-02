@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 PowerShell Remoting 基于 WinRM（Windows Remote Management）协议，本质上是对 WS-Management 标准的实现。它不仅支持交互式会话，还支持一对多的批量命令执行，甚至可以跨越信任边界的双跳认证（CredSSP）。本文将从基础配置讲起，逐步深入到高级远程管理场景。
 
+<!-- more -->
+
 ## 启用远程管理
 
 在使用 PowerShell Remoting 之前，需要先在目标机器上启用 WinRM 服务。

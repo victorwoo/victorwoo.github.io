@@ -26,6 +26,8 @@ PowerShell 配合 Microsoft Graph API，为 Intune 管理提供了强大的自�
 
 本文将介绍如何使用 PowerShell 连接 Intune，查询设备信息、管理合规策略，以及批量执行设备操作，帮助你构建属于自己的 Intune 自动化管理工作流。
 
+<!-- more -->
+
 ## 连接 Intune 环境
 
 Intune 的管理接口已经统一到 Microsoft Graph API。首先需要安装 Microsoft Graph PowerShell SDK，然后使用具有 DeviceManagementManagedDevices.ReadWrite.All 权限的账户进行连接。

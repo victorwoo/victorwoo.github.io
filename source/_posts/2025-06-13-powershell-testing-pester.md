@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本，建议安装 Pester 5.x_
 
 本文将讲解 Pester 的核心语法、常用模式，以及如何构建运维合规测试。
 
+<!-- more -->
+
 ## 安装与基础语法
 
 ```powershell

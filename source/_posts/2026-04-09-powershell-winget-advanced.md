@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本，Windows 10/11 内置 WinGet_
 
+<!-- more -->
+
 ## 从安装工具到企业级管理平台
 
 随着 Windows Package Manager（WinGet）的持续迭代，它已经从一个简单的命令行安装工具成长为 Windows 平台软件生命周期管理的核心组件。微软在 2025 年为 WinGet 引入了 `winget configure` 和 `winget export` 等新能力，使其在配置即代码（Configuration as Code）方向上迈出了关键一步。对于运维团队而言，WinGet 不再只是"装软件的工具"，而是可以纳入 CI/CD 流水线的基础设施自动化组件。

@@ -26,6 +26,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将围绕四个高级主题展开：参数化测试（Data-Driven Tests）、Mock 与 Assert-VerifiableMock、自定义 Should 断言运算符，以及 Code Coverage 集成。每个主题都配有可直接运行的完整示例。
 
+<!-- more -->
+
 ## 参数化测试：用 TestCases 消除重复
 
 当你需要对同一个函数的多组输入进行验证时，逐一编写 `It` 块会导致大量重复代码。Pester 提供了 `TestCases` 参数，可以将测试数据与测试逻辑分离，一个 `It` 块即可覆盖所有场景。

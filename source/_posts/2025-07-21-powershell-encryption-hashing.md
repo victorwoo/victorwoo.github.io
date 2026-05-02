@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的加密与哈希操作，以及实用的安全工具。
 
+<!-- more -->
+
 ## 哈希计算
 
 ```powershell

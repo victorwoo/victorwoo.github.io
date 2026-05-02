@@ -26,6 +26,8 @@ PowerShell 提供了完整的 Azure Dashboard JSON 模板操控能力，结合 A
 
 本文将围绕三个核心场景展开：动态构建仪表板 JSON 模板、配置指标告警与自动通知、以及跨订阅批量部署标准化仪表板，帮助你建立一套完整的 Azure Monitor 仪表板自动化工作流。
 
+<!-- more -->
+
 ## 仪表板 JSON 模板构建
 
 Azure Dashboard 的底层是一个 JSON 文档，定义了每个磁贴（tile）的类型、位置、大小和数据源。我们可以用 PowerShell 哈希表和 `ConvertTo-Json` 动态生成这个结构，实现参数化的仪表板模板。

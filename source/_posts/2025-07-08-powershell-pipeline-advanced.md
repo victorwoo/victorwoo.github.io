@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将深入讲解 PowerShell 管道的高级技巧和性能优化。
 
+<!-- more -->
+
 ## 管道绑定参数
 
 ```powershell

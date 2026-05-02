@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将深入讲解 PowerShell 中的正则表达式应用，包括常用模式、高级特性和性能优化。
 
+<!-- more -->
+
 ## 基础模式匹配
 
 PowerShell 中使用正则的主要方式有：`-match` 运算符、`-replace` 运算符和 `Select-String` 命令：

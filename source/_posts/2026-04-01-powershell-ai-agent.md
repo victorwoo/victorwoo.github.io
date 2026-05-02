@@ -27,6 +27,8 @@ PowerShell 作为 Windows/Linux/macOS 通用的脚本语言，天生具备丰富
 
 本文将分三个部分逐步构建一个轻量级 AI Agent 框架：首先实现与 LLM API 的对话集成，然后定义工具调用机制，最后实现 ReAct（Reasoning + Acting）循环，使 Agent 具备多步推理和自主执行的能力。
 
+<!-- more -->
+
 ## LLM API 集成
 
 Agent 的核心是语言模型。我们首先封装一个通用的 LLM 调用函数，支持 OpenAI 兼容的 API（包括 OpenAI 官方、Azure OpenAI、以及 Ollama 等本地部署的模型）。该函数负责构建对话上下文、发送请求并解析响应。

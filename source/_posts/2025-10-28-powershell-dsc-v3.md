@@ -26,6 +26,8 @@ DSC v3 的核心变化在于它不再绑定 PowerShell 作为运行时。新的 
 
 对于 PowerShell 用户而言，DSC v3 带来的好消息是你仍然可以用 PowerShell 编写自定义 DSC 资源，同时享受新版引擎带来的性能提升和更好的错误报告。下面我们通过几个实际示例来体验 DSC v3 的核心用法。
 
+<!-- more -->
+
 ## 安装 DSC v3
 
 DSC v3 是独立发布的工具，不随 PowerShell 自带。你可以通过多种方式安装。

@@ -26,6 +26,8 @@ PowerShell 7 的跨平台特性使其成为与 Kubernetes API 交互的理想选
 
 本文将介绍如何安装和配置 Kubernetes .NET 客户端，并通过三个实用场景——集群状态查询、资源批量操作和事件监控——展示 PowerShell 作为 Kubernetes 客户端的强大能力。
 
+<!-- more -->
+
 ## 安装 Kubernetes 客户端模块
 
 首先，我们需要安装 `KubernetesClient` NuGet 包并创建与集群的连接。该客户端会自动读取 `~/.kube/config` 中的上下文信息，无需手动配置认证参数。

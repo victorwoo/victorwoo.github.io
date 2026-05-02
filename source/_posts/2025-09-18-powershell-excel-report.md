@@ -25,6 +25,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 本文将从安装 EPPlus 开始，逐步演示如何用 PowerShell 生成一份包含表头样式、数据填充、条件格式和自动筛选的专业级 Excel 报表。
 
+<!-- more -->
+
 ## 安装 EPPlus 库
 
 EPPlus 从 5.0 版本开始采用 Polyform Noncommercial 许可证，对于个人学习和内部运维使用完全免费。我们可以通过 NuGet 包管理器下载 DLL，也可以直接从 GitHub Release 页面获取。下面演示一种最简单的安装方式：利用 `Install-Package` 命令将 EPPlus 安装到本地目录。

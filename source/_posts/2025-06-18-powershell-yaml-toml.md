@@ -21,6 +21,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 YAML 和 TOML 是现代配置文件的两大主流格式。YAML 以其可读性和丰富的数据类型支持，被 Kubernetes、Docker Compose、GitHub Actions 等广泛采用；TOML 则以简洁明了著称，是 Rust、Python 项目的首选配置格式。PowerShell 原生支持 JSON 和 XML，但处理 YAML 和 TOML 需要借助第三方模块。本文将讲解如何在 PowerShell 中高效处理这两种配置格式。
 
+<!-- more -->
+
 ## YAML 处理
 
 ```powershell

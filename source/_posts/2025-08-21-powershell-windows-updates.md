@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 PowerShell 通过 `Microsoft.Update.Session` COM 对象和 `PSWindowsUpdate` 模块提供了完整的 Windows 更新编程接口。本文将介绍如何使用 PowerShell 实现 Windows 更新的查询、安装、回滚和自动化管理。
 
+<!-- more -->
+
 ## 查询可用的 Windows 更新
 
 在安装更新之前，先了解有哪些可用更新及其分类。

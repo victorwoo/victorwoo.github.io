@@ -26,6 +26,8 @@ JSON Schema（RFC 8927）是一套标准化的 JSON 结构描述规范，可以�
 
 本文将介绍如何在 PowerShell 中利用 .NET 生态的 JsonSchema.NET 库，实现标准 JSON Schema 验证、高级条件约束以及批量配置文件的验证与报告生成。
 
+<!-- more -->
+
 ## 定义 Schema 并验证配置文件
 
 首先安装 JsonSchema.NET 库，然后用它来加载标准的 JSON Schema 定义，对配置文件进行结构验证。JsonSchema.NET 是一个纯 .NET 实现的 JSON Schema 验证器，支持 Draft 6、Draft 7 和 Draft 2020-12 版本。

@@ -26,6 +26,8 @@ PowerShell 通过 `Invoke-WebRequest` 和内置的 HTML 解析能力，可以快
 
 本文将从基础的 HTML 解析入手，逐步介绍表单提交与认证采集，最后实现批量并发采集与数据清洗的完整方案，帮助你构建可靠的数据采集管道。
 
+<!-- more -->
+
 ## HTML 解析与数据提取
 
 `Invoke-WebRequest` 返回的对象中包含一个 `ParsedHtml` 属性，但跨平台场景下更推荐使用正则表达式或 HTML Agility Pack 来解析。下面演示如何从一个示例页面中提取表格数据。

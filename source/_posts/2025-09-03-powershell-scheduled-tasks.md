@@ -23,6 +23,8 @@ Windows 计划任务（Task Scheduler）是自动化运维的基石，系统维�
 
 本文将介绍计划任务的创建、管理和监控自动化。
 
+<!-- more -->
+
 ## 任务创建与配置
 
 ```powershell

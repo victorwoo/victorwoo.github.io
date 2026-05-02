@@ -26,6 +26,8 @@ PowerShell 提供了完善的凭据安全管理机制。从传统的 `PSCredenti
 
 本文将从三个维度展开：使用 `PSCredential` 和安全字符串进行本地凭据保护；通过 `SecretManagement` 模块实现跨平台密钥管理；以及构建凭据轮换与审计机制，形成完整的凭据安全闭环。
 
+<!-- more -->
+
 ## PSCredential 与安全字符串
 
 `PSCredential` 是 PowerShell 中封装用户名和密码的标准对象，密码在内部以 `SecureString` 形式存储，不会以明文暴露在内存中。结合 Windows 的 DPAPI（数据保护 API），可以将凭据安全地序列化到文件，供后续脚本复用。

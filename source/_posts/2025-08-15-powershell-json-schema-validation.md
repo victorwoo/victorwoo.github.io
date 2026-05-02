@@ -23,6 +23,8 @@ JSON 已经成为配置文件和 API 数据交换的事实标准，但 JSON 本�
 
 本文将讲解如何在 PowerShell 中实现 JSON Schema 验证和实用的数据校验工具。
 
+<!-- more -->
+
 ## 手动验证
 
 ```powershell

@@ -24,6 +24,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 对于 PowerShell 运维人员来说，Azure Functions 打开了全新的可能性。传统的计划任务、Windows 服务、甚至本地脚本，都可以迁移到云端，获得天然的高可用性和按需付费的优势。2025 年，Azure Functions 已全面支持 PowerShell 7.4 运行时，并且与 Azure Managed Identity、Key Vault 等安全组件深度集成，让云端自动化脚本既安全又易维护。本文将从实战角度出发，带你完成 Azure Functions 的项目创建、本地调试和云端部署全流程。
 
+<!-- more -->
+
 ## 场景一：使用 PowerShell 创建 Azure Functions 项目
 
 Azure Functions Core Tools 提供了完整的命令行开发体验。下面的脚本会自动初始化一个 PowerShell Azure Functions 项目，并创建两个常用触发器函数——HTTP 触发器和定时触发器，让你快速搭建起自动化骨架。

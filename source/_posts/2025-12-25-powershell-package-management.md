@@ -26,6 +26,8 @@ PowerShell 7 引入了 **PSResourceGet**（Microsoft.PowerShell.PSResourceGet）
 
 本文将从基础操作入手，逐步介绍模块搜索与安装、版本锁定与依赖分析，以及私有仓库的搭建方法，帮助你在不同规模的自动化环境中实现可靠的包管理与依赖控制。
 
+<!-- more -->
+
 ## PSResourceGet 基础操作
 
 PSResourceGet 的核心操作围绕"仓库（Repository）"展开。仓库是模块的存储和分发端点，默认连接到 PowerShell Gallery。下面的代码展示了从注册仓库到搜索、安装、更新模块的完整流程。

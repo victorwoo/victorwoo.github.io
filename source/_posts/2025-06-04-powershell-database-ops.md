@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows），需安装 SqlServer 模
 
 本文将讲解 SQL Server 的 PowerShell 管理技巧，包括备份恢复、性能监控、索引维护和数据迁移。
 
+<!-- more -->
+
 ## 连接与查询
 
 ```powershell

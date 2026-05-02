@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将系统讲解 PowerShell 中哈希表和相关字典类型的用法与最佳实践。
 
+<!-- more -->
+
 ## 基础操作与技巧
 
 ```powershell

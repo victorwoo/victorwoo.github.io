@@ -19,6 +19,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本_
 
+<!-- more -->
+
 ## 背景
 
 PowerShell 7 是 PowerShell 团队基于 .NET Core 重新构建的重大版本，标志着 PowerShell 从 Windows 专属工具蜕变为跨平台自动化引擎。无论你管理的服务器运行的是 Windows、Linux 还是 macOS，同一套 PowerShell 脚本都能直接运行。对于仍在使用 Windows PowerShell 5.1 的管理员来说，升级到 PowerShell 7 不仅是版本号的变更，更是开发效率的质变。

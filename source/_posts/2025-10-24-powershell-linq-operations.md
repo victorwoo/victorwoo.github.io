@@ -26,6 +26,8 @@ LINQ（Language Integrated Query）是 .NET 框架内置的一套强大的数据
 
 本文将系统介绍如何在 PowerShell 中使用 LINQ 进行高效的数据过滤、排序、聚合和分组操作，并通过基准测试对比原生管道与 LINQ 的性能差异。
 
+<!-- more -->
+
 ## LINQ 过滤与条件筛选
 
 最常见的数据操作是条件筛选。PowerShell 中习惯使用 `Where-Object`，但 LINQ 的 `Where` 方法在大数据集上有明显的性能优势。下面的示例创建一个包含 10 万条记录的测试数据集，然后对比两种方式的筛选速度。

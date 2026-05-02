@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 本文将讲解 PowerShell 中的事件驱动模式及其在运维自动化中的应用。
 
+<!-- more -->
+
 ## WMI 事件订阅
 
 ```powershell

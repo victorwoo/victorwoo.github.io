@@ -25,6 +25,8 @@ Windows Terminal 自 2019 年发布以来，已经迅速成为 Windows 平台上
 
 本文将围绕 Windows Terminal 的配置读取与修改、多标签分屏自动化启动、以及主题配色自定义三个方面，展示如何用 PowerShell 打造一套"开箱即用"的终端工作流。
 
+<!-- more -->
+
 ## 读取和修改 Windows Terminal 配置
 
 Windows Terminal 的所有配置存储在 `settings.json` 文件中。通过 PowerShell 可以方便地读取、解析和修改这些配置，实现配置的版本化管理或批量部署。

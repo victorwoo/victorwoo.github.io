@@ -23,6 +23,8 @@ Windows Management Instrumentation（WMI）是 Windows 操作系统内置的管�
 
 本文将系统讲解 WMI/CIM 的核心概念、查询语法、常用场景，以及如何构建高效的信息采集脚本。
 
+<!-- more -->
+
 ## WMI 与 CIM 的关系
 
 WMI 是微软对 WBEM（Web-Based Enterprise Management）标准的实现，而 CIM 是 WMI 底层的数据模型。PowerShell 提供了两套 cmdlet 来访问 WMI 数据：

@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的配置管理模式，从简单的配置文件到多层配置合并。
 
+<!-- more -->
+
 ## 配置文件格式
 
 ```powershell

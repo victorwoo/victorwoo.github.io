@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本，需要 kubectl 和 helm CLI_
 
+<!-- more -->
+
 ## 背景
 
 Helm 是 Kubernetes 生态中最主流的包管理工具，被誉为 "Kubernetes 的 apt/yum"。它通过 Chart 模板将复杂的应用部署抽象为一组可版本化、可复用的配置文件，极大降低了 Kubernetes 应用的分发和运维门槛。在实际的 DevOps 工作流中，团队往往需要同时管理数十个 Chart 仓库、多套环境配置以及频繁的版本升级与回滚。

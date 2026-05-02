@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本，需安装 Az PowerShell 模块_
 
 本文将讲解 Az 模块的基础使用、虚拟机管理、存储操作，以及常见自动化场景。
 
+<!-- more -->
+
 ## 安装与连接
 
 ```powershell

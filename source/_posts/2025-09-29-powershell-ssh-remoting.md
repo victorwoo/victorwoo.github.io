@@ -26,6 +26,8 @@ _适用于 PowerShell 7.0 及以上版本（跨平台）_
 
 本文将介绍如何配置 SSH 远程管理环境，以及如何使用 PowerShell 通过 SSH 执行远程命令、管理多台服务器。
 
+<!-- more -->
+
 ## 环境准备
 
 在使用 SSH 远程管理之前，需要确保本地和远程主机都已正确配置。首先，远程主机上需要安装并运行 SSH 服务（`sshd`），同时需要安装 PowerShell 7。在 Windows 上，可以通过安装 OpenSSH 可选功能来实现；在 Linux 上则通常使用系统自带的 `openssh-server` 包。

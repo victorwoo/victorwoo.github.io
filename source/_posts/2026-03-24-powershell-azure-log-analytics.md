@@ -26,6 +26,8 @@ Kusto Query Language（KQL）是 Log Analytics 的查询语言，语法简洁但
 
 本文将从三个方面展开实战：先搭建 Log Analytics 查询的基础函数，处理认证和结果解析；然后深入运维分析场景，包括性能趋势、错误统计和安全事件检索；最后构建定时查询与告警机制，实现日志监控的全自动化闭环。
 
+<!-- more -->
+
 ## Log Analytics 查询基础
 
 执行 KQL 查询的第一步是获取工作区信息并调用 Azure Monitor Query API。下面的脚本封装了一个通用查询函数，支持连接指定工作区、执行 KQL 查询，并将返回的 JSON 结果转换为结构化的 PowerShell 对象，方便后续处理。

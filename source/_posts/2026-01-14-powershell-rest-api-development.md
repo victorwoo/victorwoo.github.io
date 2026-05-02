@@ -24,6 +24,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 这种能力在内部工具场景中尤为实用。比如 CI/CD 流水线需要一个状态查询端点、监控系统需要一个数据聚合接口、第三方 Webhook 需要一个接收器——这些都不需要引入一整套 ASP.NET 或 Node.js 项目，几十行 PowerShell 脚本就能搞定。本文将从底层到高层，逐步演示三种方案。
 
+<!-- more -->
+
 ## 使用 HttpListener 创建基础 REST API
 
 `System.Net.HttpListener` 是 .NET 内置的 HTTP 服务器类，无需安装任何额外模块即可使用。下面这段代码创建了一个支持 GET 和 POST 路由的简易 API，返回 JSON 格式的数据。

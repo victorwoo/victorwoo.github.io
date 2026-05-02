@@ -24,6 +24,8 @@ PowerShell Gallery（www.powershellgallery.com）是微软官方维护的 PowerS
 
 本文将从模块准备、API Key 管理、发布流程以及版本更新四个环节，完整介绍如何将一个自定义 PowerShell 模块发布到 PowerShell Gallery。无论你是开源项目维护者还是企业内部工具开发者，掌握这一流程都能让你的 PowerShell 代码分发更加规范和专业。
 
+<!-- more -->
+
 ## 准备模块清单文件
 
 PowerShell Gallery 要求发布的模块必须包含模块清单文件（`.psd1`）。清单文件中定义了模块的元数据，包括版本号、作者、描述、依赖项等信息。其中一些字段是 Gallery 发布的必填项，缺少这些字段会导致发布失败。

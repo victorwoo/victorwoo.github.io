@@ -26,6 +26,8 @@ Azure Bastion 是微软在 Azure 平台上提供的全托管 PaaS 服务，它�
 
 本文将介绍如何通过 PowerShell 和 Azure CLI 管理 Azure Bastion 资源，包括部署 Bastion 主机、建立远程会话、查看连接会话日志以及批量审计 Bastion 配置。每个场景都提供可执行的代码示例和输出演示。
 
+<!-- more -->
+
 ## 部署 Azure Bastion 主机
 
 Azure Bastion 需要部署在专门的子网（`AzureBastionSubnet`）中，并且要求关联一个 Standard SKU 的公共 IP 地址。以下代码演示了如何通过 PowerShell 在现有虚拟网络中部署 Bastion 主机，包括前置条件的检查和资源创建的完整流程。

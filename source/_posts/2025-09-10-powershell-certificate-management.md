@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 PowerShell 提供了强大的证书管理能力。通过 `Cert:` PSDrive，我们可以像操作文件系统一样浏览和管理 Windows 证书存储区。结合 .NET 的 `System.Security.Cryptography.X509Certificates` 命名空间，PowerShell 能够覆盖几乎所有的证书管理场景。本文将从查看、搜索、导出、续签检查等几个常见场景出发，介绍如何用 PowerShell 高效管理证书。
 
+<!-- more -->
+
 ## 浏览和查询证书
 
 Windows 证书存储区采用分层结构：按存储位置（CurrentUser / LocalMachine）和存储名称（My / Root / CA 等）组织。PowerShell 的 `Cert:` 驱动器让我们可以像浏览文件夹一样查看这些证书。

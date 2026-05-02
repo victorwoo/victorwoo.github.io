@@ -23,6 +23,8 @@ PowerShell 7 的跨平台能力是一个里程碑式的变化——同一套脚�
 
 本文将讲解跨平台 PowerShell 脚本的最佳实践，包括平台检测、路径处理、包管理适配和实用案例。
 
+<!-- more -->
+
 ## 安装 PowerShell 7
 
 在 Linux 上安装 PowerShell 7 比较简单，各主流发行版都有官方包：

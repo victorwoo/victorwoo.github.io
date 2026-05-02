@@ -23,6 +23,8 @@ Windows 防火墙是服务器和终端安全的第一道防线。无论是部署
 
 PowerShell 内置的 `NetSecurity` 模块提供了完整的防火墙管理能力，支持查看、创建、修改和删除规则，所有操作都可以脚本化、可重复执行。对于运维工程师来说，掌握这套命令不仅能提高日常工作效率，更是实现基础设施即代码（IaC）的重要基础。
 
+<!-- more -->
+
 ## 查看防火墙规则
 
 日常运维中最常见的操作就是查看当前生效的防火墙规则。`Get-NetFirewallRule` 是核心命令，结合 `Get-NetFirewallPortFilter` 和 `Get-NetFirewallAddressFilter` 可以获取完整的规则详情。

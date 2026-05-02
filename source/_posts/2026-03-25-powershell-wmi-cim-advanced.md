@@ -26,6 +26,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将从 WQL 查询优化、硬件资产清单采集、CIM 事件订阅与远程管理三个维度，带你深入挖掘 CIM/WMI 的高级用法。
 
+<!-- more -->
+
 ## WQL 查询与性能优化
 
 WQL（WMI Query Language）是专用于 WMI/CIM 的查询语言，语法类似 SQL，支持 SELECT、FROM、WHERE 等子句。很多用户习惯先获取全部实例再用 PowerShell 过滤，这在大规模查询时会产生大量不必要的数据传输。正确的做法是把过滤条件交给 WQL，让 WMI 服务端只返回符合条件的记录。

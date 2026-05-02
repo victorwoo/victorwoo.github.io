@@ -21,6 +21,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 在前面的文章中，我们介绍了 SSH 远程管理的基础用法。本文将深入 PowerShell 远程管理的进阶技巧，包括 WinRM 配置优化、会话管理、 constrained endpoints（受限端点）、远程调试，以及大规模并行远程操作的策略。
 
+<!-- more -->
+
 ## WinRM 配置优化
 
 WinRM 是 PowerShell 远程管理的默认传输协议。了解其配置项对排查连接问题和优化性能至关重要：

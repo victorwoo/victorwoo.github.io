@@ -26,6 +26,8 @@ Azure Monitor 是微软 Azure 平台的核心可观测性服务，提供指标�
 
 在开始之前，请确保已安装 Az PowerShell 模块并完成 Azure 身份认证。所有示例基于 Azure 资源管理器（ARM）REST API，需要拥有目标资源组或订阅级别的 Monitoring Contributor 权限。
 
+<!-- more -->
+
 ## 连接 Azure 并获取监控资源
 
 第一步是连接 Azure 账户并获取目标资源的信息。告警规则需要绑定到具体的 Azure 资源（如虚拟机、App Service、SQL 数据库等），因此我们先确认订阅上下文并查询需要监控的资源列表。

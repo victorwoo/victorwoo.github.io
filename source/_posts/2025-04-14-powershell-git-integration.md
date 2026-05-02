@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本，需要安装 git_
 
 虽然 Git 自带命令行工具，但直接在 PowerShell 中调用 git 命令有时不太方便——输出格式不友好、错误处理不够优雅、与其他 PowerShell 对象的互操作性差。本文将展示如何在 PowerShell 中优雅地调用 Git、封装常用操作、构建自动化工作流。
 
+<!-- more -->
+
 ## PowerShell 中调用 Git
 
 在 PowerShell 中可以直接调用 git 命令，就像在终端中一样。但我们可以通过函数封装让它更符合 PowerShell 的使用习惯。

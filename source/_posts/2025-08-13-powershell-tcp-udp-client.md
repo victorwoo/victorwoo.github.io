@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的 TCP/UDP 客户端编程和实用的网络工具。
 
+<!-- more -->
+
 ## TCP 客户端
 
 ```powershell

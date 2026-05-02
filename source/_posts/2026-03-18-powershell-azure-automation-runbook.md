@@ -26,6 +26,8 @@ Azure Automation 的核心概念是 **Runbook**——一段托管在云端的 Po
 
 本文将围绕三个核心场景展开：创建和管理 Runbook、配置定时计划与 Webhook 触发、以及监控作业状态与日志输出。通过这些实践，你可以构建一个完整的无人值守运维体系。
 
+<!-- more -->
+
 ## 创建 Automation Account 与发布 Runbook
 
 首先需要创建 Automation Account，然后在其中编写和发布 Runbook。以下脚本演示了完整的创建流程，包括模块导入、Runbook 编写、参数配置和发布。

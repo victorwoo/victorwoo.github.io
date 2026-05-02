@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 5.1 及以上版本_
 
+<!-- more -->
+
 ## 背景
 
 PowerShell 的扩展类型系统（Extended Type System，简称 ETS）是它区别于传统 .NET 宿主的核心特性之一。当你对一个 `FileInfo` 对象调用 `.Length` 并看到它以 KB、MB 的友好格式输出时，或者当你对 `DateTime` 对象调用 `.DayOfWeek` 得到中文星期名时，背后都是 ETS 在起作用。ETS 允许你在不修改原始 .NET 类型定义的前提下，为任何对象动态添加属性和方法，甚至自定义它的显示格式。

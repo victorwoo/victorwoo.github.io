@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的位运算技巧和实际应用场景。
 
+<!-- more -->
+
 ## 位运算基础
 
 ```powershell

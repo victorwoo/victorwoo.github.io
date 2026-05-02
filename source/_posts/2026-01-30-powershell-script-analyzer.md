@@ -26,6 +26,8 @@ PSScriptAnalyzer 是 PowerShell 官方提供的静态代码分析工具，基于
 
 本文将从 PSScriptAnalyzer 的基础使用入手，讲解如何开发自定义规则以满足团队编码规范，最后演示如何将它集成到 CI/CD 流水线中实现自动化的代码质量门控。
 
+<!-- more -->
+
 ## PSScriptAnalyzer 基础：安装与规则扫描
 
 PSScriptAnalyzer 作为 PowerShell Gallery 上的模块发布，安装和更新都很便捷。安装完成后，核心命令 `Invoke-ScriptAnalyzer` 可以对单个文件或整个目录执行规则扫描，并支持按严重级别、规则名称进行过滤。

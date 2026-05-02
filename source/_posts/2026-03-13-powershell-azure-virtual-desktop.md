@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本，需要 Az.DesktopVirtualization 模块_
 
+<!-- more -->
+
 ## 背景
 
 Azure Virtual Desktop（AVD）是微软在 Azure 上托管的桌面和应用虚拟化服务，为企业提供了集中管理、弹性扩展的远程办公解决方案。随着混合办公模式的普及，越来越多的企业选择 AVD 来统一管理员工桌面环境，降低终端设备运维成本，同时满足数据安全与合规要求。

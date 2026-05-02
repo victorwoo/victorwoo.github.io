@@ -25,6 +25,8 @@ Windows 平台原生提供了 MSMQ（Microsoft Message Queuing）服务，PowerS
 
 本文将从 MSMQ 原生队列操作入手，逐步扩展到基于文件系统的轻量队列实现，最后演示如何在 PowerShell 中构建一个完整的生产者-消费者模型，帮助你掌握异步通信的核心技巧。
 
+<!-- more -->
+
 ## 使用 MSMQ 创建和操作消息队列
 
 MSMQ 是 Windows 内置的消息队列服务，适合在 Windows 环境下构建可靠的异步通信管道。以下代码展示如何检测 MSMQ 服务状态、创建队列，以及发送和接收消息。

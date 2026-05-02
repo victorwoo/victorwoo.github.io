@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 安全编码的核心实践，帮助构建安全可靠的自动化脚本。
 
+<!-- more -->
+
 ## 凭据安全管理
 
 ```powershell

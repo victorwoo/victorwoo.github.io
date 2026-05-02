@@ -26,6 +26,8 @@ SQL Server 是企业级关系型数据库的常青树，广泛应用于金融、
 
 本文将从连接实例、查询元数据、执行 T-SQL、监控数据库空间四个典型场景入手，演示如何用 PowerShell 高效管理 SQL Server，帮助你建立一套实用的数据库自动化运维脚本库。
 
+<!-- more -->
+
 ## 连接 SQL Server 实例并获取基本信息
 
 管理 SQL Server 的第一步是建立连接。`SqlServer` 模块提供了 `Connect-SqlInstance` 命令，返回一个 SMO `Server` 对象，通过它可以访问实例级别和数据库级别的几乎所有属性。

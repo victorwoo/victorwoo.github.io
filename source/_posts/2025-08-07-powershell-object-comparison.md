@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的对象比较技巧和实用的差异检测方案。
 
+<!-- more -->
+
 ## Compare-Object 基础
 
 ```powershell

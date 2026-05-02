@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 网络诊断的系统化方法，以及如何构建一键式排障脚本。
 
+<!-- more -->
+
 ## 基础连通性测试
 
 ```powershell

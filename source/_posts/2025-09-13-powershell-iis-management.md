@@ -23,6 +23,8 @@ IIS（Internet Information Services）是 Windows Server 上的 Web 服务器角
 
 本文将介绍 IIS 的常用管理操作和批量自动化方案。
 
+<!-- more -->
+
 ## 站点与应用池管理
 
 ```powershell

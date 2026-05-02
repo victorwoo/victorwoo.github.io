@@ -25,6 +25,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 会话录制的多种方式，以及如何构建满足安全合规要求的审计系统。
 
+<!-- more -->
+
 ## Start-Transcript 基础录制
 
 ```powershell

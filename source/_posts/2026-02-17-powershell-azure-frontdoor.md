@@ -26,6 +26,8 @@ Azure Front Door 是微软 Azure 平台上的云原生应用交付控制器（AD
 
 通过 PowerShell 的 `Az.FrontDoor` 模块，我们可以将 Front Door 的完整配置脚本化，实现基础设施即代码（IaC）的管理方式。本文将围绕三个核心场景展开：Front Door 配置管理、WAF 安全策略配置，以及缓存与性能优化，帮助你用 PowerShell 系统化地管理全球流量入口。
 
+<!-- more -->
+
 ## Front Door 配置管理
 
 下面的脚本演示了如何创建 Front Door 配置文件，包括后端池定义、健康探测设置和路由规则的完整流程。每个步骤都通过 PowerShell 参数化，方便在不同环境间复用。

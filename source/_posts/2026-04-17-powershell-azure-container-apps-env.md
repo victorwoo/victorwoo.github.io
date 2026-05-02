@@ -26,6 +26,8 @@ Azure Container Apps 的"环境"（Managed Environment）是整个平台的核�
 
 本文将围绕 Container Apps 环境管理的三个核心场景展开：环境与网络配置、微服务部署与流量管理、以及 Dapr 集成与服务网格。
 
+<!-- more -->
+
 ## Container Apps 环境与联网
 
 每个 Container Apps 环境都需要一个虚拟网络来承载内部流量。下面的脚本创建了一个带有自定义子网的 Managed Environment，并配置了内部负载均衡器模式，确保所有入站流量仅通过环境内部 IP 可达，不暴露公网端点。这种"内部环境"模式特别适合企业内部 API 网关和微服务后端。

@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将系统讲解 PowerShell 的错误处理机制、常见设计模式，以及如何构建可靠的自动化脚本。
 
+<!-- more -->
+
 ## 错误类型与控制
 
 PowerShell 有两类错误：终止错误（Terminating Error，会停止执行）和非终止错误（Non-Terminating Error，默认只记录继续执行）：

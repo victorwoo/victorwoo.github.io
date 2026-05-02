@@ -23,6 +23,8 @@ XML 是 Windows 生态中最常见的配置格式——从 web.config、app.conf
 
 本文将讲解 XML 的读取、查询、修改和创建，以及常见的配置文件管理场景。
 
+<!-- more -->
+
 ## XML 文档读取
 
 ```powershell

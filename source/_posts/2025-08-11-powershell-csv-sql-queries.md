@@ -26,6 +26,8 @@ SQL 作为数据查询的标准语言，其表达力远超管道命令。借助 
 
 本文将介绍三种在 PowerShell 中对 CSV 执行 SQL 查询的方式：OLE DB Provider、ADO.NET 内存表，以及第三方模块。
 
+<!-- more -->
+
 ## 方式一：使用 OLE DB Provider 查询 CSV
 
 Windows 系统内置的 Microsoft.ACE.OLEDB 提供程序可以直接将 CSV 文件当作数据库表来查询。这种方式性能优秀，适合处理大量数据。

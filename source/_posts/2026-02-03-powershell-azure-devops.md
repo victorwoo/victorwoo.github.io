@@ -26,6 +26,8 @@ PowerShell 凭借对 REST API 的原生支持和强大的对象处理能力，�
 
 本文将从实际运维场景出发，介绍如何使用 PowerShell 实现 Azure DevOps 的三大类自动化操作：项目与仓库的批量管理、CI/CD 流水线的触发与监控、工作项的查询与报告生成。每个场景都提供可直接运行的完整脚本和执行结果演示。
 
+<!-- more -->
+
 ## Azure DevOps API 连接与项目管理
 
 所有 Azure DevOps 自动化的基础是与 REST API 建立可靠的连接。以下代码封装了一个通用的 API 调用函数，并在此基础上实现项目的批量查询和仓库操作。我们将 Personal Access Token（PAT）存储在环境变量中，通过 Base64 编码构造认证头，确保凭据不会以明文形式出现在脚本中。

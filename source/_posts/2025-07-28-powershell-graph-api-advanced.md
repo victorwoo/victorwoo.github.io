@@ -24,6 +24,8 @@ Microsoft Graph API 是微软云服务的统一入口——Azure AD（Entra ID�
 
 本文将讲解 Microsoft Graph PowerShell SDK 的高级用法和实用的管理场景。
 
+<!-- more -->
+
 ## 连接与认证
 
 ```powershell

@@ -26,6 +26,8 @@ Argument Completer（参数补全器）正是解决这一问题的利器。通�
 
 本文将从基础的 `[ArgumentCompleter]` 属性入手，逐步介绍 `Register-ArgumentCompleter` 注册全局补全、结合动态数据源构建高级补全器，帮助你为团队工具库打造专业级的参数提示体验。
 
+<!-- more -->
+
 ## 使用 ArgumentCompleter 属性
 
 最简单的方式是为参数直接添加 `[ArgumentCompleter]` 属性。该属性接受一个脚本块，脚本块的返回值就是 Tab 补全时显示的候选列表。下面这个例子为 `-LogLevel` 参数提供四个固定的日志级别选项。

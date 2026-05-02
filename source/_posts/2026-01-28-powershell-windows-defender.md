@@ -26,6 +26,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将从三个维度介绍如何通过 PowerShell 管理 Windows Defender：基础配置与扫描管理、排除规则与高级策略、威胁响应与合规报告。每个部分都包含可直接用于生产环境的脚本示例。
 
+<!-- more -->
+
 ## Defender 配置与扫描管理
 
 通过 `Set-MpPreference` 和 `Get-MpPreference` 可以查看和修改 Defender 的核心配置。以下脚本展示了如何读取当前偏好设置、应用安全基线配置，以及触发不同类型的扫描。

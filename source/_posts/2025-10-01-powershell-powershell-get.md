@@ -19,6 +19,8 @@ tags:
 
 _适用于 PowerShell 5.1 及以上版本_
 
+<!-- more -->
+
 ## 背景
 
 在现代运维和开发工作中，模块化管理代码已成为主流趋势。Python 有 pip，Node.js 有 npm，而 PowerShell 的官方包管理工具就是 PowerShellGet。它提供了一组标准 cmdlet，让用户可以从 PowerShell Gallery 或私有 NuGet 源搜索、安装、更新和发布模块及脚本。自 PowerShell 5.0 起，PowerShellGet 已内置于系统中，开箱即用。

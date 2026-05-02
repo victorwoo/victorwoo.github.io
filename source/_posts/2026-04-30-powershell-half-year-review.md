@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本_
 
+<!-- more -->
+
 ## 2026 上半年：PowerShell 生态的加速演进
 
 2026 年上半年，PowerShell 生态迎来了多项重要变化。PowerShell 7.5 的正式发布带来了原生 AI 集成模块、改进的跨平台兼容性和更强大的并行处理能力。微软在 Build 2026 大会上明确宣布将 PowerShell 定位为"AI 运维的第一语言"，并推出了 `Microsoft.PowerShell.AI` 官方模块，让运维人员可以直接在脚本中调用大语言模型完成日志分析、故障诊断和配置优化。

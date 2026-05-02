@@ -23,6 +23,8 @@ Windows Subsystem for Linux (WSL) 让 Windows 和 Linux 无缝协作——在 Wi
 
 本文将讲解 PowerShell 与 WSL 的集成操作技巧。
 
+<!-- more -->
+
 ## WSL 基本管理
 
 ```powershell

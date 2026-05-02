@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 本文将讲解如何用 PowerShell 高效管理 Docker 容器、镜像、网络和数据卷。
 
+<!-- more -->
+
 ## Docker 状态查询
 
 通过 PowerShell 包装 Docker CLI 命令，可以获得更好的输出格式和过滤能力：

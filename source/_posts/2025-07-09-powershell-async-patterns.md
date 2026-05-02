@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本，并行功能需要 PowerShell 7_
 
 本文将讲解 PowerShell 中的异步编程模式及其适用场景。
 
+<!-- more -->
+
 ## 后台作业（Jobs）
 
 ```powershell

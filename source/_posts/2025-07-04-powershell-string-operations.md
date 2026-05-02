@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 字符串操作的高级技巧和实用场景。
 
+<!-- more -->
+
 ## 字符串格式化
 
 ```powershell

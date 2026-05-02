@@ -23,6 +23,8 @@ Internet Information Services（IIS）是 Windows 上最流行的 Web 服务器�
 
 本文将讲解 IIS 的 PowerShell 管理技巧，涵盖日常运维的各个场景。
 
+<!-- more -->
+
 ## IIS 管理环境准备
 
 ```powershell

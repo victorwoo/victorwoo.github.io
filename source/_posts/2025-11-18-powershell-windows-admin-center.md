@@ -26,6 +26,8 @@ Windows Admin Center（简称 WAC）是微软推出的基于浏览器的服务�
 
 本文将介绍如何通过 PowerShell 与 Windows Admin Center 交互，涵盖连接管理、节点状态查询、批量操作以及通过 REST API 实现高级自动化场景，帮助你构建基于 WAC 的自动化运维工作流。
 
+<!-- more -->
+
 ## 安装和连接 Windows Admin Center
 
 在开始自动化操作之前，需要确保 WAC 的 PowerShell 模块已正确安装。WAC 本身以网关服务的形式运行在 Windows Server 上，客户端通过 HTTPS 访问。以下是安装模块和建立连接的基本操作。

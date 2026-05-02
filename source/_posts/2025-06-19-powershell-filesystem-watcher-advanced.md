@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows），FileSystemWatcher 需�
 
 本文将讲解 FileSystemWatcher 的高级用法、事件处理模式，以及实用的自动化场景。
 
+<!-- more -->
+
 ## 基础文件监控
 
 ```powershell

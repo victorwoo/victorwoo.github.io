@@ -24,6 +24,8 @@ PowerShell 不仅能调用 API，还能**创建** API。`Polaris`、`Pode` 等�
 
 本文将讲解如何使用 PowerShell 构建轻量级 REST API 服务。
 
+<!-- more -->
+
 ## 使用 Pode 搭建 API
 
 ```powershell

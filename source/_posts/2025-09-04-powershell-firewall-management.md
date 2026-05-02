@@ -25,6 +25,8 @@ PowerShell 提供了 `NetSecurity` 模块，其中包含一系列以 `NetFirewal
 
 本文将从实际场景出发，演示如何用 PowerShell 查询现有防火墙规则、批量创建入站规则，以及导出规则审计报告。
 
+<!-- more -->
+
 ## 查询防火墙规则
 
 使用 `Get-NetFirewallRule` 可以列出系统中所有防火墙规则。配合 `Get-NetFirewallAddressFilter`、`Get-NetFirewallPortFilter` 等关联 cmdlet，可以获取规则的详细信息。

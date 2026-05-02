@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 PowerShell 提供了 `SmbShare` 和 `SmbAccess` 系列模块，以及 `System.IO` 和 ACL（Access Control List）管理 API，能够全面管理网络共享的方方面面。本文将介绍如何使用 PowerShell 实现共享的创建、权限配置、连接监控和访问审计。
 
+<!-- more -->
+
 ## 查询现有网络共享
 
 了解服务器上当前存在哪些共享以及它们的配置。

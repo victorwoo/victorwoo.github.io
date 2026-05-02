@@ -24,6 +24,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 PowerShell 7 内置的 `Invoke-RestMethod` 对 JSON 的原生支持，使其非常适合与 Prometheus 的 RESTful API 和文本暴露格式（text-based exposition format）打交道。无需安装额外的 SDK，只需几行脚本就能完成指标采集、推送和查询。本文将从三个场景出发：采集本地系统指标并写入 Prometheus 格式文件、推送自定义指标到 Pushgateway、以及从 Prometheus Server 执行 PromQL 查询并分析结果。
 
+<!-- more -->
+
 ## 场景一：采集本地系统指标并输出 Prometheus 格式
 
 Prometheus 的文本暴露格式是一种人类可读的纯文本协议。每条指标以 `# TYPE` 声明类型，紧随其后的行是具体的指标值。下面的脚本通过 .NET 的 `System.Diagnostics.Process` 和 `PerformanceCounter` 类采集 CPU、内存和磁盘指标，然后输出符合 Prometheus 标准的文本格式。

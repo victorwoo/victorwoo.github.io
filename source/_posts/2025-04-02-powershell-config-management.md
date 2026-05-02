@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 本文将从实际场景出发，逐步介绍如何用 PowerShell 完成 JSON 配置读取与修改、YAML 解析、Schema 验证、模板渲染以及环境配置切换。
 
+<!-- more -->
+
 ## 读取 JSON 配置
 
 日常运维中，我们经常需要从 JSON 文件中提取特定的配置项。PowerShell 的 `ConvertFrom-Json` 可以将 JSON 文本转换为对象，然后用属性访问语法直接取值。下面封装了一个通用函数，支持按层级路径读取指定区段。

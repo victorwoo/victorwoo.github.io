@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 会话录制的技术和实用方案。
 
+<!-- more -->
+
 ## 基础会话录制
 
 ```powershell

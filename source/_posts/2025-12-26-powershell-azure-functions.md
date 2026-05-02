@@ -26,6 +26,8 @@ Azure Functions 是微软 Azure 提供的无服务器（Serverless）计算平�
 
 本文将从三个实战场景出发：搭建 Azure Functions PowerShell 项目并编写 HTTP 触发器函数、使用定时触发器和队列触发器处理周期性与事件驱动任务，以及部署、监控与错误处理的最佳实践。
 
+<!-- more -->
+
 ## 项目结构与 HTTP 触发器函数
 
 Azure Functions PowerShell 项目有固定的目录结构。`function.json` 定义触发器绑定，`run.ps1` 是入口脚本。以下示例展示如何使用命令行工具初始化项目，并编写一个接收 HTTP 请求、查询 Azure 资源状态的 HTTP 触发器函数。

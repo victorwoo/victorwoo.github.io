@@ -27,6 +27,8 @@ Windows 自 OpenSSH 客户端内置以来（Windows 10 1809+、Windows Server 20
 
 本文将讲解 PowerShell 中 SSH 隧道的创建、管理和自动化实践。
 
+<!-- more -->
+
 ## 基础本地端口转发
 
 ```powershell

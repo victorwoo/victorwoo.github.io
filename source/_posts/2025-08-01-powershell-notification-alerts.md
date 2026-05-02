@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的各种通知方式和统一的告警系统设计。
 
+<!-- more -->
+
 ## 邮件通知
 
 ```powershell

@@ -26,6 +26,8 @@ Windows Terminal 已经成为 Windows 平台上最受欢迎的终端模拟器之
 
 本文将从实际场景出发，逐步展示如何用 PowerShell 脚本完成 Windows Terminal 的深度定制。每一段代码都可以直接复制到你的环境中运行，让你在几分钟内拥有一个令人印象深刻的终端工作区。
 
+<!-- more -->
+
 ## 安装和初始化 Oh My Posh
 
 Oh My Posh 是一个跨平台的提示符主题引擎，可以为 PowerShell 提供丰富的上下文信息，包括 Git 分支状态、Python 虚拟环境、执行耗时等。首先我们需要安装它并配置到 Profile 中。

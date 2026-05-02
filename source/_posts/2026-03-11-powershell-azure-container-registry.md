@@ -26,6 +26,8 @@ Azure Container Registry（ACR）是微软 Azure 平台提供的托管私有 Doc
 
 本文将通过三个部分介绍如何用 PowerShell 自动化管理 ACR：首先是基础操作，包括注册表的创建、镜像的推送拉取和标签管理；其次是镜像清理与安全扫描，自动化识别并移除未使用的镜像层；最后是访问控制与复制策略，通过 RBAC 和 Webhook 将 ACR 深度集成到 CI/CD 流水线中。
 
+<!-- more -->
+
 ## ACR 基础管理与镜像操作
 
 ACR 的日常操作包括注册表的创建、登录凭据获取、镜像推送和标签管理。下面的脚本展示了从零开始创建一个 ACR 实例，并通过 Docker CLI 完成镜像的推送和标签操作。注意 `az acr` 命令虽然功能强大，但很多操作可以直接用 `Az` PowerShell 模块完成，无需依赖 Azure CLI。

@@ -26,6 +26,8 @@ Microsoft Sentinel 是微软云原生的 SIEM（安全信息与事件管理）�
 
 在开始之前，需要确保已安装 Az PowerShell 模块并完成身份认证。以下示例基于 Azure 资源管理器 REST API，适用于已部署 Microsoft Sentinel 工作区的环境。
 
+<!-- more -->
+
 ## 连接 Sentinel 并获取工作区信息
 
 第一步是连接 Azure 账户并获取 Sentinel 工作区的基本信息。我们需要订阅 ID、资源组名称和工作区名称三个关键参数，它们构成了所有 Sentinel API 调用的基础路径。

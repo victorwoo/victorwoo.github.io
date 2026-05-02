@@ -23,6 +23,8 @@ PowerShell 的强大很大程度上归功于其丰富的模块生态。PowerShel
 
 本文将讲解 PowerShell Gallery 的使用技巧、模块的安装与更新策略、私有仓库搭建，以及如何发布自己的模块。
 
+<!-- more -->
+
 ## 查找与安装模块
 
 PowerShell Gallery 是最大的公共模块仓库，通过 `Find-Module` 和 `Install-Module` 命令即可搜索和安装模块：

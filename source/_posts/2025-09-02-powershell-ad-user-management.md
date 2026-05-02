@@ -23,6 +23,8 @@ Active Directory 是企业 Windows 网络的身份基础，用户账号的创建
 
 本文将介绍 AD 用户管理的常用操作和批量自动化方案。
 
+<!-- more -->
+
 ## 用户查询与报告
 
 ```powershell

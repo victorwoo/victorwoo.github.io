@@ -23,6 +23,8 @@ Kubernetes 已成为容器编排的事实标准，无论是自建集群还是使
 
 本文将讲解如何使用 PowerShell 封装 kubectl 命令，实现高效的 Kubernetes 运维管理。
 
+<!-- more -->
+
 ## kubectl 环境准备
 
 ```powershell

@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 5.1 及以上版本_
 
+<!-- more -->
+
 ## WinRM 为什么总是连不上？
 
 WinRM（Windows Remote Management）是 PowerShell Remoting 的底层协议，基于 WS-Management 标准。它允许管理员在远程计算机上执行命令、传输文件和管理配置。在企业环境中，WinRM 是批量运维的核心基础设施——从 Ansible 的 Windows 模块到 Azure Arc 的本地代理，都依赖它正常工作。

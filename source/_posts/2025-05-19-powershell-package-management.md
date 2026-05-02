@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 本文将讲解 winget 和 Chocolatey 的 PowerShell 集成，以及如何构建标准化的软件清单。
 
+<!-- more -->
+
 ## WinGet 基础操作
 
 WinGet 是微软官方的 Windows 包管理器，内置在 Windows 11 和 Windows 10 1809+ 中：

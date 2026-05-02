@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 本文将介绍如何使用 PowerShell 生成柱状图、折线图、饼图，以及如何将图表嵌入自动化报告。
 
+<!-- more -->
+
 ## 使用 .NET Chart 控件生成图表
 
 Windows 上的 PowerShell 可以直接调用 .NET 的 Chart 控件生成图片。这个控件功能丰富，支持柱状图、折线图、饼图、散点图等多种图表类型。

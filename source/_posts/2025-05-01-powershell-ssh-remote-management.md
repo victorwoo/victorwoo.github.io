@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本（跨平台）_
 
 本文将从安装配置 OpenSSH 开始，逐步讲解如何通过 SSH 建立 PowerShell 远程会话、传输文件、执行远程命令，以及在生产环境中配置密钥认证和跳板机。
 
+<!-- more -->
+
 ## 安装与配置 OpenSSH
 
 在 Windows 上使用 SSH 远程管理，首先需要确保 OpenSSH 服务器已安装并运行。Windows 10 1809 及以上版本和 Windows Server 2019 均内置了 OpenSSH，但默认未启用。

@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 PowerShell 中的模板引擎技术和代码生成实践。
 
+<!-- more -->
+
 ## 基础模板渲染
 
 ```powershell

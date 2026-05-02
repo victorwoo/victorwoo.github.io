@@ -26,6 +26,8 @@ AST 是 PSScriptAnalyzer、PowerShell Editor Services（VS Code 的 PowerShell �
 
 本文将从 AST 的基础解析入手，逐步展示代码分析实战，最后实现一个自动重构工具，帮助你把 AST 技术应用到日常开发和运维中。
 
+<!-- more -->
+
 ## AST 基础解析
 
 PowerShell 提供了 `[System.Management.Automation.Language.Parser]` 类来将脚本文本解析为 AST。解析后的对象可以通过 `.Find()`、`.FindAll()` 等方法遍历，轻松提取函数定义、变量引用、命令调用等语法元素。

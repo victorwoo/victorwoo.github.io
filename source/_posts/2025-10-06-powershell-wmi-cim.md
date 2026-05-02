@@ -26,6 +26,8 @@ Windows 管理规范（WMI）是 Windows 平台上用于管理和查询系统信
 
 本文将对比 WMI 和 CIM 两套 cmdlet 的使用方式，并通过实际场景演示如何用 CIM 查询硬件信息、远程管理服务器，以及构建高效的系统清单脚本。
 
+<!-- more -->
+
 ## WMI 与 CIM 的基本对比
 
 我们先来看两套 cmdlet 在查询本地系统信息时的差异。以下代码分别使用 `Get-WmiObject` 和 `Get-CimInstance` 获取操作系统基本信息。

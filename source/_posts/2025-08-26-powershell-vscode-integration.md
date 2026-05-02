@@ -23,6 +23,8 @@ VS Code 是 PowerShell 开发者最常用的编辑器，但很多人不知道 Po
 
 本文将讲解如何通过 PowerShell 自动化 VS Code 的工作区和配置管理。
 
+<!-- more -->
+
 ## VS Code 命令行操作
 
 ```powershell

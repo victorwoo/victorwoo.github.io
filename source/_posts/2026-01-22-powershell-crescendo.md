@@ -26,6 +26,8 @@ PowerShell Crescendo 是微软推出的命令包装框架，它的核心理念�
 
 Cresceno 特别适合那些需要在团队中标准化 CLI 工具调用方式的场景。包装后的模块可以发布到 PowerShell Gallery，团队成员只需 `Install-Module` 即可获得一致的 PowerShell 体验。本文将从配置基础、输出处理到完整模块发布三个阶段，带你掌握 Crescendo 的核心用法。
 
+<!-- more -->
+
 ## Crescendo 配置基础
 
 Crescendo 的起点是一份 JSON 配置文件，它定义了目标 CLI 工具的路径、参数映射以及输出处理规则。从 PowerShell 7.4 开始，Crescendo 使用 `.crescendo.json` 扩展名，并遵循标准的 JSON Schema。

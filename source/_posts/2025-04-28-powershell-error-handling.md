@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 PowerShell 提供了丰富的错误处理机制，从基础的 `$ErrorActionPreference` 到完善的 `try/catch/finally` 结构，再到自定义错误记录和结构化日志输出。本文将系统性地介绍这些机制，并给出带重试逻辑的健壮脚本模板，帮助你在生产环境中写出更可靠的自动化代码。
 
+<!-- more -->
+
 ## 终止错误与非终止错误的区别
 
 PowerShell 将错误分为两类：**终止错误（Terminating Error）**和**非终止错误（Non-Terminating Error）**。理解这两者的区别是正确使用错误处理机制的前提。

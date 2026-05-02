@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将从基础 HTTP 请求讲起，逐步深入到认证、JSON 处理、分页请求和错误重试等进阶话题。
 
+<!-- more -->
+
 ## 基础 HTTP 请求
 
 PowerShell 提供两个主要的 HTTP 命令：`Invoke-RestMethod`（自动解析响应）和 `Invoke-WebRequest`（返回原始响应对象）：

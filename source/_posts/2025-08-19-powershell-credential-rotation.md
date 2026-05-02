@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 自动化凭据轮换可以确保密码按策略定期更换，并将新密码安全地同步到所有需要的地方。PowerShell 结合 Windows 凭据管理 API 和 Azure Key Vault 等服务，能够构建端到端的凭据轮换工作流。本文将介绍如何用 PowerShell 实现凭据的安全存储、自动生成和轮换管理。
 
+<!-- more -->
+
 ## 安全生成随机密码
 
 凭据轮换的第一步是生成足够强度的随机密码。.NET 的 `System.Security.Cryptography.RNGCryptoServiceProvider` 提供了密码学安全的随机数生成。

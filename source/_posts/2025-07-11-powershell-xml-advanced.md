@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 XML 文档的创建、查询（XPath）、修改，以及与常见 XML 格式的交互。
 
+<!-- more -->
+
 ## XML 解析与导航
 
 ```powershell

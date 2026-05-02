@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 随着 DevOps 和基础设施即代码（IaC）理念的普及，将软件安装纳入版本控制的自动化流程已成为标准实践。本文将介绍如何使用 PowerShell 调用 `msiexec.exe` 完成 MSI 包的自动化安装、卸载和状态检测。
 
+<!-- more -->
+
 ## 基础：使用 msiexec 进行静默安装
 
 ```powershell

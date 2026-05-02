@@ -25,6 +25,8 @@ PowerShell 提供了丰富的元数据机制——从基于注释的帮助（Com
 
 本文将介绍三种实用的自动化文档生成方案：基于注释帮助的函数文档提取、基于 AST 的代码结构分析，以及基于 JSON Schema 的配置文档自动生成。每种方案都附带可直接运行的示例代码和输出效果。
 
+<!-- more -->
+
 ## 方案一：提取基于注释的帮助生成 Markdown
 
 PowerShell 函数中的注释帮助块包含了 `.SYNOPSIS`、`.DESCRIPTION`、`.PARAMETER` 等结构化信息。我们可以用 `Get-Help` cmdlet 提取这些信息，再按照模板拼装成 Markdown 文档。

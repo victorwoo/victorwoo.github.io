@@ -26,6 +26,8 @@ Webhook 是现代系统中实现事件驱动通知的主流方式。无论是 CI
 
 本文将从基础概念出发，逐步介绍如何使用 PowerShell 发送 Webhook 请求，包括消息格式化、错误处理、重试机制，以及如何构建一个通用的 Webhook 通知模块，适配多个目标平台。
 
+<!-- more -->
+
 ## 发送简单的 Webhook 请求
 
 最基础的 Webhook 调用就是向指定 URL 发送一个 HTTP POST 请求。大多数平台的 Incoming Webhook 端点都接受 JSON 格式的消息体。以下示例展示了如何向 Microsoft Teams 的 Webhook 地址发送一条简单的文本通知。

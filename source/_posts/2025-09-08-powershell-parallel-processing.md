@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本（部分示例兼容 5.1）_
 
 本文将对比不同的并行方案，并给出实用的并行处理模式。
 
+<!-- more -->
+
 ## ForEach-Object -Parallel
 
 ```powershell

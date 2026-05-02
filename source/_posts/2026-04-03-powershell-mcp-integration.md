@@ -27,6 +27,8 @@ MCP（Model Context Protocol）是 Anthropic 于 2024 年底发布的开放协�
 
 本文将通过三个实际示例，展示如何用 PowerShell 7 搭建 MCP 服务端、编写 MCP 客户端，以及打包一套实用的系统管理工具集，帮助读者快速上手 MCP 与 PowerShell 的结合使用。
 
+<!-- more -->
+
 ## 搭建 MCP 服务端
 
 MCP 服务端的核心职责是：监听客户端请求、注册可用的工具（tools）和资源（resources）、处理工具调用并返回结果。以下代码用 PowerShell 实现了一个基于 stdio 传输的最小化 MCP 服务端，支持协议握手、工具列举和工具调用三个核心能力。

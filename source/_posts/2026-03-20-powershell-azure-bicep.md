@@ -26,6 +26,8 @@ Bicep 的核心优势在于：语法简洁（去掉了 JSON 的大量样板代�
 
 本文将从 Bicep 模板编写、PowerShell 部署脚本以及模块化与重用三个层面，介绍如何通过 PowerShell + Bicep 构建 Azure 基础设施的自动化部署方案。
 
+<!-- more -->
+
 ## Bicep 模板编写
 
 Bicep 模板以 `.bicep` 为扩展名，采用声明式语法定义 Azure 资源。以下是一个完整的 Bicep 模板，包含参数定义、变量计算、资源声明和输出值。

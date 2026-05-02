@@ -24,6 +24,8 @@ _适用于 PowerShell 7.0 及以上版本，需要安装 Ollama_
 
 本文将讲解如何使用 PowerShell 构建基于本地大模型的运维自动化工具。
 
+<!-- more -->
+
 ## Ollama 环境准备
 
 ```powershell

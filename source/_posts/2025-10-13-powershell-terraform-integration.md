@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本（跨平台）_
 
+<!-- more -->
+
 ## 为什么要用 PowerShell 桥接 Terraform
 
 Terraform 是目前最主流的基础设施即代码（IaC）工具，它通过声明式的 HCL 语言定义云资源，并用 `terraform plan` 和 `terraform apply` 实现可重复、可审计的部署流程。但 Terraform 本身是一个命令行工具，它不擅长处理动态逻辑、条件判断和外部系统集成。当部署流程涉及读取配置中心、调用审批 API、解析 CSV 数据源或发送通知等操作时，纯 HCL 的实现会变得笨重且难以维护。

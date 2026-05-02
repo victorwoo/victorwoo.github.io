@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本，需安装 Git_
 
 本文将讲解 PowerShell 调用 Git 命令的技巧、常用操作的封装，以及 Git 自动化工作流的构建。
 
+<!-- more -->
+
 ## Git 状态查询
 
 通过 PowerShell 封装 Git 命令，可以获得更好的输出格式：

@@ -23,6 +23,8 @@ SQLite 是世界上最广泛部署的数据库引擎——每个 Android 手机�
 
 本文将介绍 SQLite 在 PowerShell 中的完整操作流程。
 
+<!-- more -->
+
 ## 数据库初始化与基本操作
 
 ```powershell

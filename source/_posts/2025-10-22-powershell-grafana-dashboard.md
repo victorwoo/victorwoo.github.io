@@ -26,6 +26,8 @@ Grafana 提供了功能完善的 HTTP API，PowerShell 天然擅长与 REST API 
 
 本文将介绍如何使用 PowerShell 调用 Grafana HTTP API，实现仪表板的查询、创建、导出备份和批量管理操作。
 
+<!-- more -->
+
 ## 连接 Grafana 并获取仪表板列表
 
 Grafana 的 HTTP API 使用基本认证或 API Token 进行身份验证。以下代码展示了如何封装连接参数，并列出所有仪表板的基本信息。

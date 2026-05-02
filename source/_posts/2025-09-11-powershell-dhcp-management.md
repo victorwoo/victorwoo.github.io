@@ -25,6 +25,8 @@ _适用于 PowerShell 5.1（Windows），需要 DhcpServer 模块及管理员权
 
 所有示例都基于 Windows Server 内置的 `DhcpServer` 模块，需要在已加入域的环境中以管理员权限运行。如果你的管理工作站没有安装该模块，可以通过 `Install-WindowsFeature RSAT-DHCP` 来添加。
 
+<!-- more -->
+
 ## 查询 DHCP 服务器基本信息
 
 首先，我们需要连接到 DHCP 服务器并获取基本的状态信息。以下代码展示了如何查询服务器级别的作用域概览，并以表格形式输出各作用域的地址池范围、已使用地址数和使用率。

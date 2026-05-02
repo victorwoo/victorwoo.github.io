@@ -24,6 +24,8 @@ _适用于 PowerShell 5.1 及以上版本，需要 Pester 模块_
 
 本文将讲解 Pester 的高级用法，包括 Mock、参数过滤、代码覆盖率，以及测试驱动的开发实践。
 
+<!-- more -->
+
 ## 基础测试结构
 
 ```powershell

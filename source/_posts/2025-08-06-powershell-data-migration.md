@@ -25,6 +25,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 PowerShell 内置了 `ConvertTo-Csv`、`ConvertFrom-Json`、`ConvertTo-Xml` 等丰富的转换 cmdlet，配合管道操作可以快速构建 ETL（Extract-Transform-Load）流程。本文将从实际场景出发，讲解数据迁移和转换中的常用技巧。
 
+<!-- more -->
+
 ## CSV 数据读取与清洗
 
 ```powershell

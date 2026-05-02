@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows）_
 
 理解 PowerShell 与 Ansible 的集成方式，不仅可以帮助运维团队构建跨平台的自动化流水线，还能在现有 PowerShell 脚本资产的基础上无缝接入 Ansible 生态。本文将从连接配置、自定义模块编写和脚本集成三个层面，展示如何在 PowerShell 环境中高效使用 Ansible。
 
+<!-- more -->
+
 ## 配置 WinRM 连接
 
 Ansible 通过 WinRM 与 Windows 通信。在开始之前，需要确保目标 Windows 主机的 WinRM 服务已正确配置。微软提供了专门的配置脚本，但生产环境中往往需要更精细的控制。

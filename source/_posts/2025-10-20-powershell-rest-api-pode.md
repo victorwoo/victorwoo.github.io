@@ -24,6 +24,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 Pode 的典型使用场景包括：为运维脚本提供 HTTP 调用入口、搭建内部微服务接口、接收 Webhook 回调、构建简单的管理仪表盘后端等。本文将从零开始，逐步演示如何用 Pode 搭建一个具备完整 CRUD 功能的任务管理 API。
 
+<!-- more -->
+
 ## 基础 API 服务搭建
 
 首先安装 Pode 模块并创建一个最基础的服务器，包含健康检查接口和路由组织结构。Pode 使用 `Start-PodeServer` 作为入口，通过 `Add-PodeRoute` 注册路由处理逻辑，整体风格类似于 Express.js 或 Flask。

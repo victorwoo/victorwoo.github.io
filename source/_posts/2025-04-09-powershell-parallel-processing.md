@@ -23,6 +23,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 PowerShell 7 引入了 `ForEach-Object -Parallel` 参数，让并行处理变得前所未有的简单。对于更高级的场景，还可以通过 Runspace 直接操控底层并发机制。本文将系统介绍 PowerShell 中的并行处理方法，帮助你在合适的场景下大幅提升脚本执行效率。
 
+<!-- more -->
+
 ## ForEach-Object -Parallel 基础
 
 `ForEach-Object -Parallel` 是 PowerShell 7 新增的功能，它为管道中的每个元素创建一个独立的运行空间来并行执行脚本块。

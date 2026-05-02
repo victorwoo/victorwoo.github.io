@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本（Windows），需要管理员权限_
 
 本文将讲解如何使用 PowerShell 配置和管理 Windows 事件转发。
 
+<!-- more -->
+
 ## 事件日志查询
 
 ```powershell

@@ -26,6 +26,8 @@ _适用于 PowerShell 7.0 及以上版本_
 
 本文将从 GitHub Actions 集成、Azure DevOps 流水线配置和通用流水线工具三个角度，展示如何用 PowerShell 构建健壮的 CI/CD 流水线。
 
+<!-- more -->
+
 ## GitHub Actions 中的 PowerShell
 
 GitHub Actions 是目前最流行的 CI/CD 平台之一，它在 Windows、Linux 和 macOS runner 上都原生支持 PowerShell（`pwsh`）。以下代码展示了如何编写一个完整的 GitHub Actions workflow，包含 Pester 测试、代码质量检查和构建产物发布。

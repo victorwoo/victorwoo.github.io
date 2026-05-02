@@ -23,6 +23,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 本文将讲解 HTTP 请求、HTML 解析、表单提交、会话管理，以及浏览器自动化技术。
 
+<!-- more -->
+
 ## HTTP 请求基础
 
 ```powershell

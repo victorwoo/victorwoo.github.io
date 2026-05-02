@@ -26,6 +26,8 @@ Private Endpoint 在虚拟网络中分配一个私有 IP 地址，将 PaaS 服�
 
 本文将从三个层面展开实战：首先是 Private Endpoint 的创建与 DNS 配置自动化；然后是 Private Link Service 的构建，将内部服务安全地暴露给合作伙伴网络；最后是网络隔离合规验证，通过脚本自动检测配置漂移并生成合规报告。
 
+<!-- more -->
+
 ## Private Endpoint 创建与 DNS 配置
 
 创建 Private Endpoint 需要同时处理网络接口和 DNS 解析两个层面。下面的脚本封装了完整的端点创建流程，包括自动关联 Private DNS Zone、配置 A 记录以及验证 DNS 解析结果。

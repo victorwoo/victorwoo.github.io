@@ -20,6 +20,8 @@ tags:
 
 _适用于 Windows 10/11，PowerShell 7.0 及以上版本_
 
+<!-- more -->
+
 ## WinGet：Windows 包管理的新时代
 
 在 Linux 世界中，`apt`、`yum`、`pacman` 等包管理器早已是系统管理的标配工具。而在 Windows 平台上，长期以来我们只能依赖图形界面的安装向导，或者各自为政的第三方管理工具（如 Chocolatey、Scoop）。2020 年微软推出 WinGet（Windows Package Manager）后，这一局面终于开始改变。

@@ -20,6 +20,8 @@ tags:
 
 _适用于 PowerShell 7.0 及以上版本（跨平台）_
 
+<!-- more -->
+
 ## 背景
 
 Obsidian 是近年来最受欢迎的本地知识管理工具之一，所有笔记以 Markdown 格式存储在本地文件夹中。这种"文件即数据库"的设计理念使得 Obsidian 天然适合与脚本工具集成。而 PowerShell 作为跨平台的自动化利器，正好可以在 Obsidian 的 vault 目录中高效地批量创建、检索和管理笔记。

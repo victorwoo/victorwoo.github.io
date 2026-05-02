@@ -24,6 +24,8 @@ Windows Defender（现称 Microsoft Defender for Endpoint）是 Windows 内置�
 
 本文将讲解 Defender 的配置管理、扫描自动化、威胁响应和攻击面减少（ASR）规则配置。
 
+<!-- more -->
+
 ## Defender 状态查询
 
 ```powershell

@@ -26,6 +26,8 @@ Azure DevOps 是微软提供的一站式 DevOps 平台，涵盖了 Boards（工�
 
 本文将介绍如何使用 PowerShell 调用 Azure DevOps REST API，涵盖身份认证与连接管理、工作项（Work Item）的批量操作、Pipeline 的触发与状态监控，以及代码仓库的分支策略管理。每个场景都配有可直接运行的代码示例和执行结果演示。
 
+<!-- more -->
+
 ## 准备工作：身份认证与连接封装
 
 Azure DevOps REST API 支持多种身份认证方式，其中最常用的是 Personal Access Token（PAT）。为了在脚本中安全地使用 PAT，我们需要将认证逻辑封装成可复用的函数，避免在代码中硬编码凭据。以下代码演示了如何创建一个通用的 Azure DevOps API 调用函数。

@@ -26,6 +26,8 @@ _适用于 PowerShell 5.1 及以上版本_
 
 PowerShell 提供了 `Test-NetConnection`、`Resolve-DnsName`、`Test-Connection` 等原生网络 cmdlet，配合 .NET 的 `System.Net.Sockets` 和 `System.Net.Security` 类，完全可以构建一套功能完备的网络诊断工具集。本文将从连接性测试、DNS 诊断、综合诊断报告三个层面，展示如何用 PowerShell 打造一键式网络故障排查方案。
 
+<!-- more -->
+
 ## 连接性测试：TCP 端口扫描与延迟测量
 
 排查网络故障的第一步是确认目标主机各端口的可达性。下面的脚本封装了 TCP 连接测试、HTTP/HTTPS 探测和延迟测量功能，支持批量检测多个目标的多个端口，并以结构化对象返回结果。

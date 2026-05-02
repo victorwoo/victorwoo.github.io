@@ -26,6 +26,8 @@ PowerShell 与 Microsoft Graph API 的结合为条件访问策略的管理提供
 
 本文将介绍如何使用 PowerShell 通过 Microsoft Graph API 查询、创建、更新和报告条件访问策略，帮助你在日常运维和安全运营中提升效率。
 
+<!-- more -->
+
 ## 连接 Microsoft Graph 并获取现有策略
 
 操作条件访问策略需要 `Policy.Read.All` 和 `Policy.ReadWrite.ConditionalAccess` 等权限。以下代码展示了如何连接 Graph 并列出所有现有策略的关键信息。

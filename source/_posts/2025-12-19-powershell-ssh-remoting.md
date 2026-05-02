@@ -26,6 +26,8 @@ PowerShell 7 引入了基于 SSH 的远程会话支持，彻底改变了这一�
 
 SSH Remoting 不仅能与现有的 SSH 基础设施无缝集成，还支持密钥认证、跳板机（ProxyJump）、多主机并行执行等高级场景。本文将介绍如何配置和使用 PowerShell SSH Remoting，以及在混合环境中的实战技巧。
 
+<!-- more -->
+
 ## SSH 远程会话配置与基础操作
 
 在使用 SSH Remoting 之前，需要确保目标主机已安装并运行 SSH 服务。PowerShell 7 在连接时会使用系统自带的 SSH 客户端，因此无需额外安装 WinRM。
