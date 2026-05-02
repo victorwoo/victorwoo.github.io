@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-18 11:00:00
+updated: 2014-09-18 11:00:00
 title: "PowerShell 技能连载 - 等待按键"
 description: PowerTip of the Day - Waiting for a Keystroke
 categories:

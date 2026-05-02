@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-07-16 04:00:00
+updated: 2014-07-16 04:00:00
 title: "PowerShell 技能连载 - 快速查找 AD 账户"
 description: PowerTip of the Day - Finding AD Accounts Easily
 categories:

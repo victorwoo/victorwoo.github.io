@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-17 08:00:00
+updated: 2024-10-17 08:00:00
 title: "PowerShell 技能连载 - OpenAI 集成"
 description: PowerTip of the Day - PowerShell OpenAI Integration
 categories:

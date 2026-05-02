@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-30 00:00:00
+updated: 2018-05-30 00:00:00
 title: "PowerShell 技能连载 - 批量重命名图片"
 description: PowerTip of the Day - Bulk-Renaming Pictures
 categories:

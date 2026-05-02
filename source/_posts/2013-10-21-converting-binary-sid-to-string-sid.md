@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 将二进制 SID 转换为 SID 字符串"
 date: 2013-10-21 00:00:00
+updated: 2013-10-21 00:00:00
 description: PowerTip of the Day - Converting Binary SID to String SID
 categories:
 - powershell

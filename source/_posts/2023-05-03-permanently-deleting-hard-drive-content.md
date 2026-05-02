@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-03 00:00:00
+updated: 2023-05-03 00:00:00
 title: "PowerShell 技能连载 - 彻底删除硬盘数据"
 description: PowerTip of the Day - Permanently Deleting Hard Drive Content
 categories:

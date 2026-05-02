@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-22 00:00:00
+updated: 2017-12-22 00:00:00
 title: "PowerShell 技能连载 - 通过 PowerShell 远程处理操作远程机器"
 description: PowerTip of the Day - Accessing Remote Machines via PowerShell Remoting
 categories:

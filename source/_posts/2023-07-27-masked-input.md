@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-27 08:00:40
+updated: 2023-07-27 08:00:40
 title: "PowerShell 技能连载 - 带有掩码的输入"
 description: PowerTip of the Day - Masked Input
 categories:

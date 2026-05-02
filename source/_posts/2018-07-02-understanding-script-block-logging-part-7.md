@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-02 00:00:00
+updated: 2018-07-02 00:00:00
 title: "PowerShell 技能连载 - 理解脚本块日志（第 7 部分）"
 description: PowerTip of the Day - Understanding Script Block Logging (Part 7)
 categories:

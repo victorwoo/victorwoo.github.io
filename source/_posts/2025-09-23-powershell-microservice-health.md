@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-23 08:00:00
+updated: 2025-09-23 08:00:00
 title: "PowerShell 技能连载 - 微服务健康检查"
 description: PowerTip of the Day - Microservice Health Checks in PowerShell
 categories:

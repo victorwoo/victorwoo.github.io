@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-21 00:00:00
+updated: 2022-03-21 00:00:00
 title: "PowerShell 技能连载 - Defender: 清空威胁列表和相关设置"
 description: 'PowerTip of the Day - Defender: Purge Threat List and related Settings'
 categories:

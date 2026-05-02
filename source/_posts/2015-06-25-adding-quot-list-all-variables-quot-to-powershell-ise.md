@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-06-25 11:00:00
+updated: 2015-06-25 11:00:00
 title: "PowerShell 技能连载 - 将“列出所有变量”功能加入 PowerShell"
 description: PowerTip of the Day - Adding "List All Variables" to PowerShell ISE
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-17 00:00:00
+updated: 2017-07-17 00:00:00
 title: "PowerShell 技能连载 - Windows PowerShell 和 PowerShell Core"
 description: PowerTip of the Day - Windows PowerShell and PowerShell Core
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-07-24 11:00:00
+updated: 2014-07-24 11:00:00
 title: "PowerShell 技能连载 - 以底层的方式管理打印机"
 description: PowerTip of the Day - Managing Printers Low-Level
 categories:

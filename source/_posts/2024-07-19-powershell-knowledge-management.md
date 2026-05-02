@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-19 08:00:00
+updated: 2024-07-19 08:00:00
 title: "PowerShell 技能连载 - 知识管理"
 description: PowerTip of the Day - PowerShell Knowledge Management
 categories:

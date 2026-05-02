@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-03 00:00:00
+updated: 2018-05-03 00:00:00
 title: "PowerShell 技能连载 - WMI 快速入门（第 1 部分）"
 description: PowerTip of the Day - WMI Quick Primer (Part 1)
 categories:

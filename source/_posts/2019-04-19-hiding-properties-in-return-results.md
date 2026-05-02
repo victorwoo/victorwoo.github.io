@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-19 00:00:00
+updated: 2019-04-19 00:00:00
 title: "PowerShell 技能连载 - 隐藏返回结果的属性"
 description: PowerTip of the Day - Hiding Properties in Return Results
 categories:

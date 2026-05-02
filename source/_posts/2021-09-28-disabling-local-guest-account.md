@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-28 00:00:00
+updated: 2021-09-28 00:00:00
 title: "PowerShell 技能连载 - 禁用本地的 Guest 账户"
 description: "PowerTip of the Day - Disabling Local “Guest” Account"
 categories:

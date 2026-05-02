@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-12 00:00:00
+updated: 2019-08-12 00:00:00
 title: "PowerShell 技能连载 - 验证 Active Directory 凭据"
 description: PowerTip of the Day - Validating Active Directory Credentials
 categories:

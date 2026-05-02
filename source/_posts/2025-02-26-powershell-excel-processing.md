@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-26 08:00:00
+updated: 2025-02-26 08:00:00
 title: "PowerShell 技能连载 - Excel 处理技巧"
 description: PowerTip of the Day - PowerShell Excel Processing Tips
 categories:

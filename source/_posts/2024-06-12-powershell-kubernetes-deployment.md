@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-12 08:00:00
+updated: 2024-06-12 08:00:00
 title: "PowerShell 技能连载 - 自动化部署Kubernetes集群"
 description: "使用PowerShell实现Kubernetes集群的一键化部署"
 categories:

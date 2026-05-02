@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-24 08:00:00
+updated: 2025-03-24 08:00:00
 title: "PowerShell管道过滤机制实战解析"
 description: "掌握数据流处理的核心方法与性能优化"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-04 00:00:00
+updated: 2019-06-04 00:00:00
 title: "PowerShell 技能连载 - 同步使用 FileSystemWatcher "
 description: PowerTip of the Day - Using FileSystemWatcher Synchronously
 categories:

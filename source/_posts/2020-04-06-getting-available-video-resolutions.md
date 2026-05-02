@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-06 00:00:00
+updated: 2020-04-06 00:00:00
 title: "PowerShell 技能连载 - 获取可用的显示分辨率"
 description: PowerTip of the Day - Getting Available Video Resolutions
 categories:

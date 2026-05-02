@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-19 00:00:00
+updated: 2018-12-19 00:00:00
 title: "PowerShell 技能连载 - 在打印机上打印测试页"
 description: PowerTip of the Day - Printing Test Pages on Printers
 categories:

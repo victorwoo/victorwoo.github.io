@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-27 00:00:00
+updated: 2018-11-27 00:00:00
 title: "PowerShell 技能连载 - 将安全字符串转换为明文"
 description: PowerTip of the Day - Converting SecureString to Clear Text
 categories:

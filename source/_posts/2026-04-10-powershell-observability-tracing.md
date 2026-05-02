@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-10 08:00:00
+updated: 2026-04-10 08:00:00
 title: "PowerShell 技能连载 - 可观测性与分布式追踪"
 description: PowerTip of the Day - Observability and Distributed Tracing in PowerShell
 categories:

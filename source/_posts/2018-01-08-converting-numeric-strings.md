@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-08 00:00:00
+updated: 2018-01-08 00:00:00
 title: "PowerShell 技能连载 - 转换数字字符串"
 description: PowerTip of the Day - Converting Numeric Strings
 categories:

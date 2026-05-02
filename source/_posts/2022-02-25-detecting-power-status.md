@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-25 00:00:00
+updated: 2022-02-25 00:00:00
 title: "PowerShell 技能连载 - 检测电源状态"
 description: PowerTip of the Day - Detecting Power Status
 categories:

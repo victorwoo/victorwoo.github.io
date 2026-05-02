@@ -2,6 +2,7 @@
 layout: post
 title: Excel 列号和数字互相转换
 date: 2014-08-05 17:08:51
+updated: 2014-08-05 17:08:51
 description: Conversion between number and excel column
 categories:
 - powershell

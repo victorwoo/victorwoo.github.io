@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-15 08:00:00
+updated: 2025-12-15 08:00:00
 title: "PowerShell 技能连载 - 类型扩展与格式化"
 description: PowerTip of the Day - Type Extension and Formatting in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-09 08:00:00
+updated: 2025-06-09 08:00:00
 title: "PowerShell 技能连载 - XML 处理与配置管理"
 description: PowerTip of the Day - XML Processing and Configuration Management in PowerShell
 categories:

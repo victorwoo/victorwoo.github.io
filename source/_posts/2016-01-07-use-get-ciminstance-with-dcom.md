@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-01-07 12:00:00
+updated: 2016-01-07 12:00:00
 title: "PowerShell 技能连载 - 使用 DCOM 协议运行 Get-CimInstance"
 description: PowerTip of the Day - Use Get-CimInstance with DCOM
 categories:

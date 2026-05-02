@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-28 00:00:00
+updated: 2017-07-28 00:00:00
 title: "PowerShell 技能连载 - 简单解析设置文件（第三部分）"
 description: PowerTip of the Day - Easy Parsing of Setting Files (Part 3)
 categories:

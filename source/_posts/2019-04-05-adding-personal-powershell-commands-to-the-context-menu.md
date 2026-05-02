@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-05 00:00:00
+updated: 2019-04-05 00:00:00
 title: "PowerShell 技能连载 - 向上下文菜单添加个人 PowerShell 命令"
 description: PowerTip of the Day - Adding Personal PowerShell Commands to the Context Menu
 categories:

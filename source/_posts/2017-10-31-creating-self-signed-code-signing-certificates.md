@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-31 00:00:00
+updated: 2017-10-31 00:00:00
 title: "PowerShell 技能连载 - 创建自签名的代码签名证书"
 description: PowerTip of the Day - Creating Self-Signed Code Signing Certificates
 categories:

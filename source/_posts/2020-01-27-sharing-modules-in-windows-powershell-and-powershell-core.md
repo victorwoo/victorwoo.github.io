@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-27 00:00:00
+updated: 2020-01-27 00:00:00
 title: "PowerShell 技能连载 - 在 Windows PowerShell 和 PowerShell Core 中共享模块"
 description: PowerTip of the Day - Sharing Modules in Windows PowerShell and PowerShell Core
 categories:

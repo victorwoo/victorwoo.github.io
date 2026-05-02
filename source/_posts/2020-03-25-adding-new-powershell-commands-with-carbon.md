@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-03-25 00:00:00
+updated: 2020-03-25 00:00:00
 title: "PowerShell 技能连载 - 用 Carbon 添加新的 PowerShell 命令"
 description: PowerTip of the Day - Adding New PowerShell Commands with Carbon
 categories:

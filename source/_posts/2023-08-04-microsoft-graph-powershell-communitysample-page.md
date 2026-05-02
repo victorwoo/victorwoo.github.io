@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-04 08:00:56
+updated: 2023-08-04 08:00:56
 title: "PowerShell 技能连载 - Microsoft Graph PowerShell 社区示例页面"
 description: PowerTip of the Day - Microsoft Graph PowerShell Community Sample Page
 categories:

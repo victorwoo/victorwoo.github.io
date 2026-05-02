@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-09 00:00:00
+updated: 2019-01-09 00:00:00
 title: "PowerShell 技能连载 - 重制控制台颜色"
 description: PowerTip of the Day - Resetting Console Colors
 categories:

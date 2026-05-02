@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-04-25 00:00:40
+updated: 2023-04-25 00:00:40
 title: "PowerShell 技能连载 - 重命名属性（简单方法）"
 description: PowerTip of the Day - Renaming Properties (Simple)
 categories:

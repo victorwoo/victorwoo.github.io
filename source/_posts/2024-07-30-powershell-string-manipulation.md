@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-30 08:00:00
+updated: 2024-07-30 08:00:00
 title: "PowerShell字符串操作完全指南"
 description: "掌握文本处理与格式化的核心方法"
 categories:

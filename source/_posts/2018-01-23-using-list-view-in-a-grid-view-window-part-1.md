@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-23 00:00:00
+updated: 2018-01-23 00:00:00
 title: "PowerShell 技能连载 - 用网格视图窗口显示列表视图（第 1 部分）"
 description: PowerTip of the Day - Using List View in a Grid View Window (Part 1)
 categories:

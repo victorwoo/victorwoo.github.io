@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-02 00:00:00
+updated: 2019-04-02 00:00:00
 title: "PowerShell 技能连载 - 向编码的命令传递参数"
 description: PowerTip of the Day - Passing Arguments to Encoded Commands
 categories:

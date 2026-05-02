@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 按 F1 跳转到 PowerShell 帮助主题"
 date: 2013-11-14 00:00:00
+updated: 2013-11-14 00:00:00
 description: PowerTip of the Day - Press F1 to Navigate PowerShell Help Topics
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-10 00:00:00
+updated: 2018-09-10 00:00:00
 title: "PowerShell 技能连载 - PowerShell 控制台的键盘快捷方式"
 description: PowerTip of the Day - Keyboard Shortcuts for PowerShell Console
 categories:

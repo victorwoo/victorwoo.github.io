@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-06-10 00:00:00
+updated: 2021-06-10 00:00:00
 title: "PowerShell 技能连载 - 原版 Windows 10 产品密钥"
 description: PowerTip of the Day - Original Windows 10 Product Key
 categories:

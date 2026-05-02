@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-28 00:00:00
+updated: 2017-04-28 00:00:00
 title: "PowerShell 技能连载 - 克隆文件夹结构（含 NTFS 权限） – 第二部分"
 description: "PowerTip of the Day - Cloning Folder Structures (with NTFS Permissions) – Part 2"
 categories:

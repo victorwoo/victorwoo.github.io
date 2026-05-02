@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-28 08:00:00
+updated: 2026-01-28 08:00:00
 title: "PowerShell 技能连载 - Windows Defender 管理"
 description: PowerTip of the Day - Windows Defender Management in PowerShell
 categories:

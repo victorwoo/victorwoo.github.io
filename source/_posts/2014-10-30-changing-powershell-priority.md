@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-10-30 11:00:00
+updated: 2014-10-30 11:00:00
 title: "PowerShell 技能连载 - 改变 PowerShell 的优先级"
 description: PowerTip of the Day - Changing PowerShell Priority
 categories:

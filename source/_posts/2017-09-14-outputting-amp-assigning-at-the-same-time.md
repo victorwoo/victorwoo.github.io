@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-14 00:00:00
+updated: 2017-09-14 00:00:00
 title: "PowerShell 技能连载 - 同时输出和赋值"
 description: PowerTip of the Day - Outputting and Assigning at the same time
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "AngularJS 中 $scope 的原型继承问题"
 date: 2014-10-28 10:33:30
+updated: 2014-10-28 10:33:30
 description: Scope Inheritance in AngularJS
 categories: angularjs
 tags: angularjs

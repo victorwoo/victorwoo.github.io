@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-02 00:00:00
+updated: 2018-10-02 00:00:00
 title: "PowerShell 技能连载 - 通过 Azure 认知服务使用人工智能"
 description: PowerTip of the Day - Using Artificial Intelligence with Azure Cognitive Services
 categories:

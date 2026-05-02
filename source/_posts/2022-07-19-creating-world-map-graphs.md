@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-19 00:00:00
+updated: 2022-07-19 00:00:00
 title: "PowerShell 技能连载 - 创建世界地图图像"
 description: PowerTip of the Day - Creating World Map Graphs
 categories:

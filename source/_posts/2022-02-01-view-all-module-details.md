@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-01 00:00:00
+updated: 2022-02-01 00:00:00
 title: "PowerShell 技能连载 - 查看所有模块的细节"
 description: PowerTip of the Day - View All Module Details
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-02-06 06:00:18
+updated: 2023-02-06 06:00:18
 title: "PowerShell 技能连载 - 使用枚举来解析序号"
 description: PowerTip of the Day - Using Enums to Decipher Code IDs
 categories:

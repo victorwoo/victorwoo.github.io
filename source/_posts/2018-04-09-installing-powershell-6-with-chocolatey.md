@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-09 00:00:00
+updated: 2018-04-09 00:00:00
 title: "PowerShell 技能连载 - 用 Chocolatey 安装 PowerShell 6"
 description: PowerTip of the Day - Installing PowerShell 6 with Chocolatey
 categories:

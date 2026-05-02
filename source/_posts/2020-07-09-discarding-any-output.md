@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-09 00:00:00
+updated: 2020-07-09 00:00:00
 title: "PowerShell 技能连载 - 忽略（任何）输出"
 description: PowerTip of the Day - Discarding (Any) Output
 categories:

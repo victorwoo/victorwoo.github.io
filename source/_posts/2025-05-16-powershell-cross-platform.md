@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-16 08:00:00
+updated: 2025-05-16 08:00:00
 title: "PowerShell 技能连载 - 跨平台 PowerShell 实践"
 description: PowerTip of the Day - Cross-Platform PowerShell Practices
 categories:

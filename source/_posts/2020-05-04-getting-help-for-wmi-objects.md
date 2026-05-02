@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-04 00:00:00
+updated: 2020-05-04 00:00:00
 title: "PowerShell 技能连载 - 获取 WMI 对象的帮助"
 description: PowerTip of the Day - Getting Help for WMI Objects
 categories:

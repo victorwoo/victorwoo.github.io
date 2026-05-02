@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-01-20 12:00:00
+updated: 2015-01-20 12:00:00
 title: "PowerShell 技能连载 - 列出所有打印任务"
 description: PowerTip of the Day - Listing All Print Jobs
 categories:

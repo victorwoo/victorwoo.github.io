@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-21 00:00:00
+updated: 2022-02-21 00:00:00
 title: "PowerShell 技能连载 - 奇怪的 Cmdlet：New-TemporaryFile"
 description: 'PowerTip of the Day - Strange Cmdlet: New-TemporaryFile'
 categories:

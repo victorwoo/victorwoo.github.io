@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-01-31 05:30:19
+updated: 2023-01-31 05:30:19
 title: "PowerShell 技能连载 - 将 PowerShell 脚本作为命令（第 2 部分）"
 description: PowerTip of the Day - Using PowerShell Scripts as Commands (Part 2)
 categories:

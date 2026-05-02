@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-01 00:00:00
+updated: 2017-06-01 00:00:00
 title: "PowerShell 技能连载 - 安全地删除数据"
 description: PowerTip of the Day - Safely Deleting Data
 categories:

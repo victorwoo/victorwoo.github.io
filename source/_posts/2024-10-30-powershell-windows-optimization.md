@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-30 08:00:00
+updated: 2024-10-30 08:00:00
 title: "PowerShell 技能连载 - Windows系统自动化优化"
 description: "使用PowerShell实现系统服务的智能管理与性能调优"
 categories:

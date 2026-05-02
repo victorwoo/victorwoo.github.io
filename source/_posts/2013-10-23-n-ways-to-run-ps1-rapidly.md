@@ -2,6 +2,7 @@
 layout: post
 title: "快速运行 .ps1 脚本的 N 种方法"
 date: 2013-10-23 00:00:00
+updated: 2013-10-23 00:00:00
 description: N Ways to Run .ps1 Rapidly
 categories: powershell
 tags:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 快速创建新的本地管理员账户"
 date: 2014-01-24 00:00:00
+updated: 2014-01-24 00:00:00
 description: PowerTip of the Day - Create New Local Admin Account on the Fly
 categories:
 - powershell

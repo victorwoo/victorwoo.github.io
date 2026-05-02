@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-14 00:00:00
+updated: 2019-05-14 00:00:00
 title: "PowerShell 技能连载 - 美化 Out-GridView 对话框"
 description: PowerTip of the Day - Pretty Out-GridView Dialog Boxes
 categories:

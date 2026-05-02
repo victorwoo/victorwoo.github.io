@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-09 00:00:00
+updated: 2017-10-09 00:00:00
 title: "PowerShell 技能连载 - 来自 Microsoft 的免费电子书"
 description: PowerTip of the Day - Free Ebooks from Microsoft
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-15 00:00:00
+updated: 2024-04-15 00:00:00
 title: "PowerShell 技能连载 - 针对Windows服务器的4种强大的PowerShell安全技术"
 description: "4 Powerful PowerShell Security Techniques for Windows Servers"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-17 08:00:00
+updated: 2025-06-17 08:00:00
 title: "PowerShell 技能连载 - Microsoft Graph API 集成"
 description: PowerTip of the Day - Microsoft Graph API Integration in PowerShell
 categories:

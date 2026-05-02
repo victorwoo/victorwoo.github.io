@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 用 PowerShell 导入导出凭据"
 date: 2014-03-28 00:00:00
+updated: 2014-03-28 00:00:00
 description: PowerTip of the Day - Exporting and Importing Credentials in PowerShell
 categories:
 - powershell

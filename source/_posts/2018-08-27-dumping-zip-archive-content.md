@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-27 00:00:00
+updated: 2018-08-27 00:00:00
 title: "PowerShell 技能连载 - 提取 ZIP 压缩包信息"
 description: PowerTip of the Day - Dumping ZIP Archive Content
 categories:

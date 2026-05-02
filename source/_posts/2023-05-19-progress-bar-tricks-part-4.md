@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-19 00:00:31
+updated: 2023-05-19 00:00:31
 title: "PowerShell 技能连载 - 进度条技巧（第 4 部分）"
 description: PowerTip of the Day - Progress Bar Tricks (Part 4)
 categories:

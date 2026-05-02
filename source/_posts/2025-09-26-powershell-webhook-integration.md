@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-26 08:00:00
+updated: 2025-09-26 08:00:00
 title: "PowerShell 技能连载 - Webhook 集成"
 description: PowerTip of the Day - Webhook Integration in PowerShell
 categories:

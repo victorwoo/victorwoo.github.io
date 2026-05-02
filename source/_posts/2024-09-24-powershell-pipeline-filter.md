@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-24 08:00:00
+updated: 2024-09-24 08:00:00
 title: "PowerShell管道过滤器实战指南"
 description: "掌握数据流处理的核心机制"
 categories:

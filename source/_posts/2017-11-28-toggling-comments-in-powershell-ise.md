@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-28 00:00:00
+updated: 2017-11-28 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中切换注释"
 description: PowerTip of the Day - Toggling Comments in PowerShell ISE
 categories:

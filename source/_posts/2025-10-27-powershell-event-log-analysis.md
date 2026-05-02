@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-27 08:00:00
+updated: 2025-10-27 08:00:00
 title: "PowerShell 技能连载 - 事件日志深度分析"
 description: PowerTip of the Day - Deep Event Log Analysis in PowerShell
 categories:

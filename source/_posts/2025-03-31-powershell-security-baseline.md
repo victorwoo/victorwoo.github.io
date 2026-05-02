@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-31 08:00:00
+updated: 2025-03-31 08:00:00
 title: "PowerShell 技能连载 - Windows 安全基线审计"
 description: PowerTip of the Day - Windows Security Baseline Auditing with PowerShell
 categories:

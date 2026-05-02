@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-19 00:00:00
+updated: 2017-12-19 00:00:00
 title: "PowerShell 技能连载 - 将机器加入域"
 description: PowerTip of the Day - Joining Computers to a Domain
 categories:

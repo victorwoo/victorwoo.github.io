@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-14 00:00:00
+updated: 2018-09-14 00:00:00
 title: "PowerShell 技能连载 - 查找禁用的 GPO"
 description: PowerTip of the Day - Finding Disabled GPOs
 categories:

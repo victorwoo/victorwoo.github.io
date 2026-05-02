@@ -2,6 +2,7 @@
 layout: post
 title: JavaScript 编码规范
 date: 2015-01-20 14:08:22
+updated: 2015-01-20 14:08:22
 description: JavaScript Style Guide
 categories:
 - javascript

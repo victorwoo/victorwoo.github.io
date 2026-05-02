@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-17 00:00:00
+updated: 2019-01-17 00:00:00
 title: "PowerShell 技能连载 - 打印 PDF 文件（第 2 部分）"
 description: PowerTip of the Day - Printing PDF Files (Part 2)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-04 08:00:00
+updated: 2025-08-04 08:00:00
 title: "PowerShell 技能连载 - 位运算与标志管理"
 description: PowerTip of the Day - Bitwise Operations and Flag Management in PowerShell
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "在 PowerShell 脚本中使用 C# 代码"
 date: 2013-11-08 00:00:00
+updated: 2013-11-08 00:00:00
 description: Using CSharp (C#) code in Powershell scripts
 categories: powershell
 tags:

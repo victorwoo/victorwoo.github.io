@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-19 00:00:00
+updated: 2018-10-19 00:00:00
 title: "PowerShell 技能连载 - 性能（第 3 部分）：更快的管道函数"
 description: 'PowerTip of the Day - Performance (Part 3): Faster Pipeline Functions'
 categories:

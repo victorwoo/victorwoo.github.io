@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-30 08:00:00
+updated: 2025-01-30 08:00:00
 title: "PowerShell模块开发入门指南"
 description: "从零开始构建标准化PowerShell模块"
 categories:

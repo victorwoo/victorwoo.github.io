@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-11 00:00:00
+updated: 2022-03-11 00:00:00
 title: "PowerShell 技能连载 - 为文件夹快速打开 PowerShell"
 description: PowerTip of the Day - Quickly Open PowerShell for Folder
 categories:

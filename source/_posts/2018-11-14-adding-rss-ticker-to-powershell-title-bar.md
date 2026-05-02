@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-14 00:00:00
+updated: 2018-11-14 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 标题栏显示 RSS 标题"
 description: PowerTip of the Day - Adding RSS Ticker to PowerShell Title Bar
 categories:

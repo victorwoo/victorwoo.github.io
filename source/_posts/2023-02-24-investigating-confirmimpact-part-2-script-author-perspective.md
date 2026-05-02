@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-02-24 00:00:28
+updated: 2023-02-24 00:00:28
 title: "PowerShell 技能连载 - 研究 ConfirmImpact（第 2 部分：脚本作者视角）"
 description: 'PowerTip of the Day - Investigating ConfirmImpact (Part 2: Script Author Perspective)'
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - PowerShell函数的详细输出"
 date: 2013-09-19 00:00:00
+updated: 2013-09-19 00:00:00
 description: PowerTip of the Day - Verbose Output for PowerShell Functions
 categories:
 - powershell

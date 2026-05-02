@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-12 00:00:00
+updated: 2017-12-12 00:00:00
 title: "PowerShell 技能连载 - 在 Grid View 窗口中垂直显示数据"
 description: PowerTip of the Day - Displaying Data in a Grid View Window Vertically
 categories:

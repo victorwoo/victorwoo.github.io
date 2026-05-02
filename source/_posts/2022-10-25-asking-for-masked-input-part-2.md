@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-10-25 00:00:00
+updated: 2022-10-25 00:00:00
 title: "PowerShell 技能连载 - 遮罩输入框（第 2 部分）"
 description: PowerTip of the Day - Asking for Masked Input (Part 2)
 categories:

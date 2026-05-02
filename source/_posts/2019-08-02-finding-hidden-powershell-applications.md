@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-02 00:00:00
+updated: 2019-08-02 00:00:00
 title: "PowerShell 技能连载 - 查找隐藏的 PowerShell 应用"
 description: PowerTip of the Day - Finding Hidden PowerShell Applications
 categories:

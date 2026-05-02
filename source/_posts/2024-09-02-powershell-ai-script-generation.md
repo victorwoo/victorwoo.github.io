@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-02 08:00:00
+updated: 2024-09-02 08:00:00
 title: "PowerShell 技能连载 - AI 智能脚本生成引擎优化"
 description: "集成OpenAI实现自然语言到PowerShell代码的智能转换"
 categories:

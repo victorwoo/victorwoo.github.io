@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-24 00:00:00
+updated: 2017-10-24 00:00:00
 title: "PowerShell 技能连载 - 创建 MD5 文件哈希"
 description: PowerTip of the Day - Creating MD5 File Hashes
 categories:

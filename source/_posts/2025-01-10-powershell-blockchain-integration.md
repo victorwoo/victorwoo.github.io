@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-10 08:00:00
+updated: 2025-01-10 08:00:00
 title: "PowerShell 技能连载 - 区块链智能合约自动化管理"
 description: "实现以太坊智能合约部署与交互的自动化流程"
 categories:

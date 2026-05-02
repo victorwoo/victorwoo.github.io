@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-08 08:00:00
+updated: 2025-05-08 08:00:00
 title: "PowerShell 技能连载 - 并行处理与 Runspace"
 description: PowerTip of the Day - Parallel Processing and Runspaces in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-02 00:00:00
+updated: 2021-09-02 00:00:00
 title: "PowerShell 技能连载 - 使用 FTP：下载二进制文件（第 3 部分）"
 description: 'PowerTip of the Day - Using FTP: Downloading Binary File (Part 3)'
 categories:

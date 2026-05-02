@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-14 00:00:00
+updated: 2019-02-14 00:00:00
 title: "PowerShell 技能连载 - 转换 IEEE754 (Float)（第 1 部分）"
 description: PowerTip of the Day - Converting IEEE754 (Float) (Part 1)
 categories:

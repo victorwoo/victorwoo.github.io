@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-21 08:00:00
+updated: 2026-01-21 08:00:00
 title: "PowerShell 技能连载 - Excel 自动化报表"
 description: PowerTip of the Day - Excel Automation Reports in PowerShell
 categories:

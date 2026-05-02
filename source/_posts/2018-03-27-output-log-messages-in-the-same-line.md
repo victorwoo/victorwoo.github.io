@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-27 00:00:00
+updated: 2018-03-27 00:00:00
 title: "PowerShell 技能连载 - 在同一行输出日志信息"
 description: PowerTip of the Day - Output Log Messages in the Same Line
 categories:

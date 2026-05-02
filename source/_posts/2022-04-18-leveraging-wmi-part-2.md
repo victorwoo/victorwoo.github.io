@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-04-18 00:00:00
+updated: 2022-04-18 00:00:00
 title: "PowerShell 技能连载 - 利用 WMI（第 2 部分）"
 description: PowerTip of the Day - Leveraging WMI (Part 2)
 categories:

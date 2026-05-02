@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-16 00:00:00
+updated: 2018-07-16 00:00:00
 title: "PowerShell 技能连载 - 自动生成文档和报告（第 3 部分）"
 description: PowerTip of the Day - Automatic Document & Report Generation (Part 3)
 categories:

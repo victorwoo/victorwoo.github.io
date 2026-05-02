@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-25 08:00:00
+updated: 2026-02-25 08:00:00
 title: "PowerShell 技能连载 - Azure Event Grid 事件驱动自动化"
 description: PowerTip of the Day - Azure Event Grid Event-Driven Automation
 categories:

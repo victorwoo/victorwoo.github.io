@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-15 08:00:00
+updated: 2024-05-15 08:00:00
 title: "PowerShell 技能连载 - 软件供应链安全自动化审计"
 description: "实现第三方组件签名验证与依赖包漏洞扫描"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-23 08:00:00
+updated: 2026-02-23 08:00:00
 title: "PowerShell 技能连载 - 数据转换工具集"
 description: PowerTip of the Day - Data Transformation Toolkit in PowerShell
 categories:

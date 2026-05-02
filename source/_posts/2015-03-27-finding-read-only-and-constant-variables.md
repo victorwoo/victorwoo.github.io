@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-03-27 11:00:00
+updated: 2015-03-27 11:00:00
 title: "PowerShell 技能连载 - 查找只读型和常量型变量"
 description: PowerTip of the Day - Finding Read-Only and Constant Variables
 categories:

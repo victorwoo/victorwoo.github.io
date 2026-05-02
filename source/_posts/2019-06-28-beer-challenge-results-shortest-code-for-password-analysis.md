@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-28 00:00:00
+updated: 2019-06-28 00:00:00
 title: "PowerShell 技能连载 - 啤酒挑战结果：最短的密码分析代码"
 description: 'PowerTip of the Day - Beer Challenge Results: Shortest Code for Password Analysis'
 categories:

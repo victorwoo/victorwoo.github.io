@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-16 08:00:00
+updated: 2024-10-16 08:00:00
 title: "PowerShell 技能连载 - 零信任架构下的设备健康检查"
 description: "实现自动化设备安全状态验证与合规报告生成"
 categories:

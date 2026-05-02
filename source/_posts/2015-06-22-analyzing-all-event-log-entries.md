@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-06-22 11:00:00
+updated: 2015-06-22 11:00:00
 title: "PowerShell 技能连载 - 分析（所有）事件日志源"
 description: PowerTip of the Day - Analyzing (All) Event Log Entries
 categories:

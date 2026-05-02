@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-29 00:00:00
+updated: 2018-05-29 00:00:00
 title: "PowerShell 技能连载 - PowerShell 陈列架 dba 工具 – 数据库专家 PowerShell 扩展"
 description: "PowerTip of the Day - PowerShell Gallery dbatools – PowerShell Extension for Database Professionals"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-16 00:00:00
+updated: 2018-05-16 00:00:00
 title: "PowerShell 技能连载 - 创建 PowerShell 命令速查表（第 4 部分）"
 description: PowerTip of the Day - Creating PowerShell Command Cheat Sheets (Part 4)
 categories:

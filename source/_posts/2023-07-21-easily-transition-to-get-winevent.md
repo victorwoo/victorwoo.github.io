@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-21 08:00:16
+updated: 2023-07-21 08:00:16
 title: "PowerShell 技能连载 - 轻松过渡至 Get-WinEvent"
 description: PowerTip of the Day - Easily Transition to Get-WinEvent
 categories:

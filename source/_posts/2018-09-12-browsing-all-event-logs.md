@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-12 00:00:00
+updated: 2018-09-12 00:00:00
 title: "PowerShell 技能连载 - 浏览所有的事件日志"
 description: PowerTip of the Day - Browsing All Event Logs
 categories:

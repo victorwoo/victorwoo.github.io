@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-26 00:00:00
+updated: 2018-09-26 00:00:00
 title: "PowerShell 技能连载 - 启用脚本块日志"
 description: PowerTip of the Day - Enabling Script Block Logging
 categories:

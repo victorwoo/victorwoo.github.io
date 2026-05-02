@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-07 00:00:00
+updated: 2019-02-07 00:00:00
 title: "PowerShell 技能连载 - 移除空的数组元素（第 2 部分）"
 description: PowerTip of the Day - Removing Empty Array Elements (Part 2)
 categories:

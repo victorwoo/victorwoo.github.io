@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-23 08:00:00
+updated: 2024-08-23 08:00:00
 title: "PowerShell 技能连载 - 红队渗透测试自动化框架"
 description: "实现权限提升检测与横向移动路径自动化分析"
 categories:

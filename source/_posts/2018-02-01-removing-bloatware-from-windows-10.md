@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-01 00:00:00
+updated: 2018-02-01 00:00:00
 title: "PowerShell 技能连载 - 从 Windows 10 中移除臃肿的软件"
 description: PowerTip of the Day - Removing Bloatware from Windows 10
 categories:

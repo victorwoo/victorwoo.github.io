@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-04 08:00:00
+updated: 2025-02-04 08:00:00
 title: "PowerShell 技能连载 - 零售行业集成"
 description: PowerTip of the Day - PowerShell Retail Integration
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-22 08:00:00
+updated: 2025-05-22 08:00:00
 title: "PowerShell 技能连载 - 加密与证书管理"
 description: PowerTip of the Day - Encryption and Certificate Management in PowerShell
 categories:

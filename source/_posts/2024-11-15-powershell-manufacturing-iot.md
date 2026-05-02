@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-15 08:00:00
+updated: 2024-11-15 08:00:00
 title: "PowerShell 技能连载 - 制造业物联网管理"
 description: PowerTip of the Day - PowerShell Manufacturing IoT Management
 categories:

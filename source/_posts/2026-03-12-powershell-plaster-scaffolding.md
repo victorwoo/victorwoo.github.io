@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-12 08:00:00
+updated: 2026-03-12 08:00:00
 title: "PowerShell 技能连载 - Plaster 项目脚手架"
 description: PowerTip of the Day - Plaster Project Scaffolding in PowerShell
 categories:

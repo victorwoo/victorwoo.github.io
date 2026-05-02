@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 获取免费的速查表"
 date: 2014-05-23 00:00:00
+updated: 2014-05-23 00:00:00
 description: PowerTip of the Day - Getting Free Cheat Sheets
 categories:
 - powershell

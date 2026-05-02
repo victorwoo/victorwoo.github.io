@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-11 00:00:00
+updated: 2019-01-11 00:00:00
 title: "PowerShell 技能连载 - 当前用户的 SID"
 description: PowerTip of the Day - SID of Current User
 categories:

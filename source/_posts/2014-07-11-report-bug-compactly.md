@@ -2,6 +2,7 @@
 layout: post
 title: "如何简洁地汇报 bug"
 date: 2014-07-11 00:00:00
+updated: 2014-07-11 00:00:00
 description: Report Bug Compactly
 categories: software-engineering
 tags:

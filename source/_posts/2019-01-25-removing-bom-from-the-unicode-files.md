@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-25 00:00:00
+updated: 2019-01-25 00:00:00
 title: "PowerShell 技能连载 - 从 Unicode 文件中移除 BOM"
 description: PowerTip of the Day - Removing BOM from the Unicode Files
 categories:

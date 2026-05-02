@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 带对话框的必选参数"
 date: 2014-02-06 00:00:00
+updated: 2014-02-06 00:00:00
 description: PowerTip of the Day - Mandatory Parameter with a Dialog
 categories:
 - powershell

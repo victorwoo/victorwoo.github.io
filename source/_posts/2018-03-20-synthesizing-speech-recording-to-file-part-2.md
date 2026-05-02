@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-20 00:00:00
+updated: 2018-03-20 00:00:00
 title: "PowerShell 技能连载 - 合成语音（第 2 部分）"
 description: "PowerTip of the Day - Synthesizing Speech – Recording to File (Part 2)"
 categories:

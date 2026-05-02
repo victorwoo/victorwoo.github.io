@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-30 08:00:00
+updated: 2024-09-30 08:00:00
 title: "PowerShell 技能连载 - 多云成本优化自动化系统"
 description: "实现跨云平台资源使用分析与智能费用优化建议"
 categories:

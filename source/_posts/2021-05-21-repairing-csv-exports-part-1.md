@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-05-21 00:00:00
+updated: 2021-05-21 00:00:00
 title: "PowerShell 技能连载 - 修复 CSV 导出（第 1 部分）"
 description: PowerTip of the Day - Repairing CSV Exports (Part 1)
 categories:

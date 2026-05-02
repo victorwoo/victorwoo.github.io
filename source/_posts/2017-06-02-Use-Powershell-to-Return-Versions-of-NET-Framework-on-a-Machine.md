@@ -3,6 +3,7 @@ layout: post
 title: 用 PowerShell 查看安装的 .NET 框架
 description: Use Powershell to Return Versions of .NET Framework on a Machine
 date: 2017-06-02 09:24:09
+updated: 2017-06-02 09:24:09
 categories:
 - powershell
 tags:

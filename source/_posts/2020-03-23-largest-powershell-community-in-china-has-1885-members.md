@@ -2,6 +2,7 @@
 layout: post
 title: The Largest PowerShell Community in China has 1885 Members Now!
 date: 2020-03-23 17:58:00
+updated: 2020-03-23 17:58:00
 tags:
 - powershell
 - community

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-29 00:00:00
+updated: 2020-01-29 00:00:00
 title: "PowerShell 技能连载 - 下载 PowerShell 语言参考（或任意文件）"
 description: PowerTip of the Day - Downloading PowerShell Language Reference (or any file)
 categories:

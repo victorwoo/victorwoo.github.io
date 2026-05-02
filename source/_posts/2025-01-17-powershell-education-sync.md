@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-17 08:00:00
+updated: 2025-01-17 08:00:00
 title: "PowerShell 技能连载 - 教育设备同步管理"
 description: PowerTip of the Day - PowerShell Education Device Synchronization Management
 categories:

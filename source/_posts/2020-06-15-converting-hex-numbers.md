@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-15 00:00:00
+updated: 2020-06-15 00:00:00
 title: "PowerShell 技能连载 - 转换十六进制数据"
 description: PowerTip of the Day - Converting Hex Numbers
 categories:

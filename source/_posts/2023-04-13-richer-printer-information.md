@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-04-13 00:40:07
+updated: 2023-04-13 00:40:07
 title: "PowerShell 技能连载 - 更丰富的打印机信息"
 description: PowerTip of the Day - Richer Printer Information
 categories:

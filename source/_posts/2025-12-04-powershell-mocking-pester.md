@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-04 08:00:00
+updated: 2025-12-04 08:00:00
 title: "PowerShell 技能连载 - Pester 单元测试与 Mock"
 description: PowerTip of the Day - Pester Unit Testing and Mocking in PowerShell
 categories:

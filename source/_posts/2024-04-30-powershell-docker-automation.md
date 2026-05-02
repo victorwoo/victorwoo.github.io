@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-30 08:00:00
+updated: 2024-04-30 08:00:00
 title: "PowerShell 技能连载 - Docker容器生命周期管理"
 description: "使用PowerShell实现容器化应用的自动化部署与监控"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-14 00:00:00
+updated: 2019-03-14 00:00:00
 title: "PowerShell 技能连载 - 检查 Cmdlet 可用性和脚本兼容性（第 3 部分）"
 description: PowerTip of the Day - Checking Cmdlet Availability and Script Compatibility (Part 3)
 categories:

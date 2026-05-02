@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-24 00:00:00
+updated: 2019-04-24 00:00:00
 title: "PowerShell 技能连载 - 查找服务特权"
 description: PowerTip of the Day - Finding Service Privileges
 categories:

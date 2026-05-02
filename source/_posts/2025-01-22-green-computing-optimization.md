@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell实现数据中心能耗优化"
 date: 2025-01-22 00:00:00
+updated: 2025-01-22 00:00:00
 description: 使用PowerShell监控和优化数据中心能源消耗
 categories:
 - powershell

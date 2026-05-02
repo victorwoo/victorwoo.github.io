@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-29 00:00:00
+updated: 2019-05-29 00:00:00
 title: "PowerShell 技能连载 - 通过 Index Search 搜索文件"
 description: PowerTip of the Day - Searching Files Using Index Search
 categories:

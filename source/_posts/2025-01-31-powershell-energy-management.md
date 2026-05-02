@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-31 08:00:00
+updated: 2025-01-31 08:00:00
 title: "PowerShell 技能连载 - 能源管理系统"
 description: PowerTip of the Day - PowerShell Energy Management System
 categories:

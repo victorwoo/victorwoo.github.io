@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-18 08:00:00
+updated: 2024-04-18 08:00:00
 title: "PowerShell 技能连载 - 元宇宙虚拟资产自动化管理系统"
 description: "实现虚拟现实环境资源分配与数字资产全生命周期管理"
 categories:

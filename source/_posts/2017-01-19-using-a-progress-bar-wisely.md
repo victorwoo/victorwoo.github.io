@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-01-19 00:00:00
+updated: 2017-01-19 00:00:00
 title: "PowerShell 技能连载 - 明智地使用进度条"
 description: PowerTip of the Day - Using a Progress Bar Wisely
 categories:

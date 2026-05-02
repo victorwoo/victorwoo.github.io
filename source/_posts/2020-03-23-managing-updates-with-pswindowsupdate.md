@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-03-23 00:00:00
+updated: 2020-03-23 00:00:00
 title: "PowerShell 技能连载 - 使用 PSWindowsUpdate 管理更新"
 description: PowerTip of the Day - Managing Updates with PSWindowsUpdate
 categories:

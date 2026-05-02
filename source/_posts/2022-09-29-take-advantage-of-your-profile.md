@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-09-29 00:00:00
+updated: 2022-09-29 00:00:00
 title: "PowerShell 技能连载 - 利用用户配置文件的优势"
 description: PowerTip of the Day - Take Advantage of Your Profile
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-10-28 11:00:00
+updated: 2014-10-28 11:00:00
 title: "PowerShell 技能连载 - 存取 SQLServer 数据库"
 description: PowerTip of the Day - Accessing SQLServer Database
 categories:

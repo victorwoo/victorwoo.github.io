@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-01 00:00:00
+updated: 2022-03-01 00:00:00
 title: "PowerShell 技能连载 - 通过 PowerShell 休眠或待机"
 description: PowerTip of the Day - Hibernate or Standby via PowerShell
 categories:

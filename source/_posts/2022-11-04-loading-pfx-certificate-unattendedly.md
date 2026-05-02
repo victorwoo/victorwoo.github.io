@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-11-04 00:00:00
+updated: 2022-11-04 00:00:00
 title: "PowerShell 技能连载 - 无人值守读取 PFX 证书"
 description: PowerTip of the Day - Loading PFX Certificate Unattendedly
 categories:

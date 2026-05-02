@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-07 00:00:00
+updated: 2018-03-07 00:00:00
 title: "PowerShell 技能连载 - 查找注册过的事件日志数据源名"
 description: PowerTip of the Day - Finding Registered Event Log Source Names
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-01-23 12:00:00
+updated: 2015-01-23 12:00:00
 title: "PowerShell 技能连载 - 读取多行文本"
 description: PowerTip of the Day - Reading Multiline Text
 categories:

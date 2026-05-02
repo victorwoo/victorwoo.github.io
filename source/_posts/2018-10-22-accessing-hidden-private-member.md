@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-22 00:00:00
+updated: 2018-10-22 00:00:00
 title: "PowerShell 技能连载 - 存取隐藏（私有）成员"
 description: PowerTip of the Day - Accessing Hidden (Private) Member
 categories:

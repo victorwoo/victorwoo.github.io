@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-07 08:00:00
+updated: 2024-08-07 08:00:00
 title: "PowerShell 变量作用域深度解析"
 description: "掌握脚本块中的变量生命周期管理"
 categories:

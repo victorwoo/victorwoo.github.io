@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 从 DN 中获得 Domain"
 date: 2013-10-22 00:00:00
+updated: 2013-10-22 00:00:00
 description: PowerTip of the Day - Getting Domain from DN
 categories:
 - powershell

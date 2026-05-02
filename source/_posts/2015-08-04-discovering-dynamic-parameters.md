@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-08-04 11:00:00
+updated: 2015-08-04 11:00:00
 title: "PowerShell 技能连载 - 发现动态参数"
 description: PowerTip of the Day - Discovering Dynamic Parameters
 categories:

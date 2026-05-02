@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-30 00:00:00
+updated: 2020-11-30 00:00:00
 title: "PowerShell 技能连载 - 恒定函数"
 description: PowerTip of the Day - Constant Functions
 categories:

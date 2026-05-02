@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-03 00:00:00
+updated: 2017-05-03 00:00:00
 title: "PowerShell 技能连载 - 翻译错误记录"
 description: PowerTip of the Day - Translating Error Records
 categories:

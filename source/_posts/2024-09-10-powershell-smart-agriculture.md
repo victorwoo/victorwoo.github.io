@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-10 08:00:00
+updated: 2024-09-10 08:00:00
 title: "PowerShell 技能连载 - 智能农业管理系统"
 description: PowerTip of the Day - PowerShell Smart Agriculture Management System
 categories:

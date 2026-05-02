@@ -2,6 +2,7 @@
 layout: post
 title: "获取最常用的 PowerShell Cmdlet 别名"
 date: 2014-01-10 00:00:00
+updated: 2014-01-10 00:00:00
 description: Get Most Used Alias of PowerShell Cmdlet
 categories: powershell
 tags: powershell

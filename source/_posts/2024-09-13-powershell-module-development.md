@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-13 08:00:00
+updated: 2024-09-13 08:00:00
 title: "PowerShell模块化开发实践指南"
 description: "掌握脚本模块创建与管理的核心方法"
 categories:

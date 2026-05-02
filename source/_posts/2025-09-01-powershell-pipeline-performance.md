@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-01 08:00:00
+updated: 2025-09-01 08:00:00
 title: "PowerShell 技能连载 - 管道性能优化"
 description: PowerTip of the Day - Pipeline Performance Optimization in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-13 08:00:00
+updated: 2024-06-13 08:00:00
 title: "PowerShell 技能连载 - Microsoft Graph API 集成自动化"
 description: "实现Office 365用户与团队资源全生命周期管理"
 categories:

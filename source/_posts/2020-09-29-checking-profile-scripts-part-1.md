@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-29 00:00:00
+updated: 2020-09-29 00:00:00
 title: "PowerShell 技能连载 - PowerShell技能连载-检查配置文件脚本（第 1 部分）"
 description: PowerTip of the Day - Checking Profile Scripts (Part 1)
 categories:

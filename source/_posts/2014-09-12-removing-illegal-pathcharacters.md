@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-12 11:00:00
+updated: 2014-09-12 11:00:00
 title: "PowerShell 技能连载 - 移除非法的路径字符"
 description: PowerTip of the Day - Removing Illegal Path Characters
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-12 00:00:00
+updated: 2017-07-12 00:00:00
 title: "PowerShell 技能连载 - 查找 PowerShell 缺省变量（第三部分）"
 description: PowerTip of the Day - Finding PowerShell Default Variables (Part 3)
 categories:

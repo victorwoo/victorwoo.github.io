@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-24 08:00:00
+updated: 2025-02-24 08:00:00
 title: "PowerShell 技能连载 - 智能日志分析与模式识别"
 description: "集成机器学习模型实现日志数据自动化分析"
 categories:

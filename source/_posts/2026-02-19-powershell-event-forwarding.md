@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-19 08:00:00
+updated: 2026-02-19 08:00:00
 title: "PowerShell 技能连载 - Windows 事件转发"
 description: PowerTip of the Day - Windows Event Forwarding in PowerShell
 categories:

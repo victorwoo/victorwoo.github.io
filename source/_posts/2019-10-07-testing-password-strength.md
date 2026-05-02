@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-07 00:00:00
+updated: 2019-10-07 00:00:00
 title: "PowerShell 技能连载 - 测试"
 description: PowerTip of the Day - Testing Password Strength
 categories:

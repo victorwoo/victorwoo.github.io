@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-12 00:00:00
+updated: 2020-11-12 00:00:00
 title: "PowerShell 技能连载 - 创建图标"
 description: PowerTip of the Day - Creating Icons
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-08 00:00:00
+updated: 2017-11-08 00:00:00
 title: "PowerShell 技能连载 - 压缩序列化的数据"
 description: PowerTip of the Day - Compressing Serialized Data
 categories:

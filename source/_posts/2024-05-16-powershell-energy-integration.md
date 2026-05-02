@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-16 08:00:00
+updated: 2024-05-16 08:00:00
 title: "PowerShell 技能连载 - 能源行业集成"
 description: PowerTip of the Day - PowerShell Energy Integration
 categories:

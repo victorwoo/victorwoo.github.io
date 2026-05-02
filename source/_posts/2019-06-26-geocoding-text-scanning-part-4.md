@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-26 00:00:00
+updated: 2019-06-26 00:00:00
 title: "PowerShell 技能连载 - 使用 GeoCoding：文本扫描（第 4 部分）"
 description: 'PowerTip of the Day - Geocoding: Text Scanning (Part 4)'
 categories:

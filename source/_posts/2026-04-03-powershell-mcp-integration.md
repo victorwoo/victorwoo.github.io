@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-03 08:00:00
+updated: 2026-04-03 08:00:00
 title: "PowerShell 技能连载 - MCP 协议集成"
 description: PowerTip of the Day - MCP Protocol Integration in PowerShell
 categories:

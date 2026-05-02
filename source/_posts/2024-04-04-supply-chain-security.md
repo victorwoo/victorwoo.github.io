@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell实现供应链安全自动化扫描"
 date: 2024-04-04 00:00:00
+updated: 2024-04-04 00:00:00
 description: 使用PowerShell自动化检测第三方模块安全漏洞
 categories:
 - powershell

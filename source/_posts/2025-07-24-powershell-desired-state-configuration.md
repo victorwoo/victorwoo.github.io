@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-24 08:00:00
+updated: 2025-07-24 08:00:00
 title: "PowerShell 技能连载 - Desired State Configuration 实战"
 description: PowerTip of the Day - DSC (Desired State Configuration) in Practice
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-08 08:00:00
+updated: 2025-01-08 08:00:00
 title: "PowerShell 技能连载 - 高级错误处理技术"
 description: PowerTip of the Day - PowerShell Advanced Error Handling Techniques
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-10-29 00:00:00
+updated: 2020-10-29 00:00:00
 title: "PowerShell 技能连载 - 以可点击图标的方式部署 PowerShell（第 2 部分）"
 description: PowerTip of the Day - Deploy PowerShell as Clickable Icons (Part 2)
 categories:

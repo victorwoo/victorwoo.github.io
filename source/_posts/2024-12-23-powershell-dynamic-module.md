@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-23 08:00:00
+updated: 2024-12-23 08:00:00
 title: "PowerShell动态模块加载技术"
 description: "解锁运行时模块操作与混合编程能力"
 categories:

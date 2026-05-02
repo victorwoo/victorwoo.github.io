@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-28 00:00:00
+updated: 2017-09-28 00:00:00
 title: "PowerShell 技能连载 - 获取缓存的凭据"
 description: PowerTip of the Day - Getting Cached Credentials
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-02 00:00:00
+updated: 2018-04-02 00:00:00
 title: "PowerShell 技能连载 - 下载脚本文件的最佳方式"
 description: PowerTip of the Day - The Best Ways to Download Script Files
 categories:

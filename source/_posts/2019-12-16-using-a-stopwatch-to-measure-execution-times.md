@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-16 00:00:00
+updated: 2019-12-16 00:00:00
 title: "PowerShell 技能连载 - 使用一个计时器来测量执行时间"
 description: PowerTip of the Day - Using a StopWatch to Measure Execution Times
 categories:

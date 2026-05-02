@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-08-13 11:00:00
+updated: 2014-08-13 11:00:00
 title: "PowerShell 技能连载 - 使用“打开文件”对话框"
 description: PowerTip of the Day - Using the OpenFile Dialog
 categories:

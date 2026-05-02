@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-16 08:00:00
+updated: 2024-07-16 08:00:00
 title: "PowerShell 技能连载 - 基于OpenAI的智能脚本生成"
 description: "使用PowerShell集成GPT-4实现自然语言转运维脚本"
 categories:

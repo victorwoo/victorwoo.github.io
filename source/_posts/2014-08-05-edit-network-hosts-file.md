@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-08-05 11:00:00
+updated: 2014-08-05 11:00:00
 title: "PowerShell 技能连载 - 编辑“hosts”文件"
 description: "PowerTip of the Day - Edit Network “hosts” File"
 categories:

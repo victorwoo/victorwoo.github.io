@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-25 00:00:00
+updated: 2017-08-25 00:00:00
 title: "PowerShell 技能连载 - 创建一个清单式的摘要对象"
 description: PowerTip of the Day - Create Summary Objects for Inventory
 categories:

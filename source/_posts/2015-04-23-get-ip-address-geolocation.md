@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-04-23 11:00:00
+updated: 2015-04-23 11:00:00
 title: "PowerShell 技能连载 - 获取 IP 地址的地理信息"
 description: PowerTip of the Day - Get IP Address Geolocation
 categories:

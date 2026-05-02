@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-11-01 00:00:00
+updated: 2023-11-01 00:00:00
 title: "PowerShell 技能连载 - 轻松掌握PowerShell中的ErrorAction"
 description: "Mastering ErrorAction in PowerShell Easily"
 categories:

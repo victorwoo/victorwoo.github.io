@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-04-06 11:00:00
+updated: 2015-04-06 11:00:00
 title: "PowerShell 技能连载 - 用 Windows 加密信息"
 description: PowerTip of the Day - Encrypting Information with Windows ProductID
 categories:

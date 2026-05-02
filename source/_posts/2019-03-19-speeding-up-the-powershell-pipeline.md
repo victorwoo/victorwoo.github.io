@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-19 00:00:00
+updated: 2019-03-19 00:00:00
 title: "PowerShell 技能连载 - 提升 PowerShell 管道的速度"
 description: PowerTip of the Day - Speeding Up the PowerShell Pipeline
 categories:

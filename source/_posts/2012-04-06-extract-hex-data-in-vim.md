@@ -2,6 +2,7 @@
 layout: post
 title: "在vim里转换HEX数据的显示"
 date: 2012-04-06 00:00:00
+updated: 2012-04-06 00:00:00
 description: extract hex data in vim
 categories: vim
 tags:

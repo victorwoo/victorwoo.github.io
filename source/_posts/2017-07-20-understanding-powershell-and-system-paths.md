@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-20 00:00:00
+updated: 2017-07-20 00:00:00
 title: "PowerShell 技能连载 - 理解 PowerShell 和文件系统"
 description: PowerTip of the Day - Understanding PowerShell and System Paths
 categories:

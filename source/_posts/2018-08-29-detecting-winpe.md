@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-29 00:00:00
+updated: 2018-08-29 00:00:00
 title: "PowerShell 技能连载 - 检测 WinPE"
 description: PowerTip of the Day - Detecting WinPE
 categories:

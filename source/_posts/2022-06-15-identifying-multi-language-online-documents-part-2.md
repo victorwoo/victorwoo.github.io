@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-06-15 00:00:00
+updated: 2022-06-15 00:00:00
 title: "PowerShell 技能连载 - 检测多语言在线文档（第 2 部分）"
 description: PowerTip of the Day - Identifying Multi-Language Online Documents (Part 2)
 categories:

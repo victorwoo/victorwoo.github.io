@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-25 00:00:00
+updated: 2018-09-25 00:00:00
 title: "PowerShell 技能连载 - 查找内存中的密码"
 description: PowerTip of the Day - Finding Secret Passwords in Memory
 categories:

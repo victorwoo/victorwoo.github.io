@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-21 00:00:00
+updated: 2019-01-21 00:00:00
 title: "PowerShell 技能连载 - 通过鼠标滚轮控制 PowerShell 的透明度"
 description: PowerTip of the Day - Controlling PowerShell Transparency with Mouse Wheel
 categories:

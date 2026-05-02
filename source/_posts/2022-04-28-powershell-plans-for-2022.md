@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-04-28 00:00:00
+updated: 2022-04-28 00:00:00
 title: "PowerShell 技能连载 - 2022 年的 PowerShell 计划"
 description: PowerTip of the Day - PowerShell Plans for 2022
 categories:

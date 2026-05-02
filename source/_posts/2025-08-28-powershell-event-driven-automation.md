@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-28 08:00:00
+updated: 2025-08-28 08:00:00
 title: "PowerShell 技能连载 - 事件驱动自动化"
 description: PowerTip of the Day - Event-Driven Automation in PowerShell
 categories:

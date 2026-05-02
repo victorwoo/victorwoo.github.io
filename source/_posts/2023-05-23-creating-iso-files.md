@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-23 00:00:48
+updated: 2023-05-23 00:00:48
 title: "PowerShell 技能连载 - 创建 ISO 文件"
 description: PowerTip of the Day - Creating ISO Files
 categories:

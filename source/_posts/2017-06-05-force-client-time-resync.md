@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-05 00:00:00
+updated: 2017-06-05 00:00:00
 title: "PowerShell 技能连载 - 强制刷新客户端时间"
 description: PowerTip of the Day - Force Client Time Resync
 categories:

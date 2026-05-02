@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-03 00:00:00
+updated: 2019-04-03 00:00:00
 title: "PowerShell 技能连载 - 禁止用户输入"
 description: PowerTip of the Day - Blocking User Input
 categories:

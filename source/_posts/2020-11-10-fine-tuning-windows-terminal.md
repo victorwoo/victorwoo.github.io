@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-10 00:00:00
+updated: 2020-11-10 00:00:00
 title: "PowerShell 技能连载 - 调优 Windows Terminal"
 description: PowerTip of the Day - Fine-Tuning Windows Terminal
 categories:

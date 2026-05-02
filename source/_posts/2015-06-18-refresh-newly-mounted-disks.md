@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-06-18 11:00:00
+updated: 2015-06-18 11:00:00
 title: "PowerShell 技能连载 - 刷新新挂载的磁盘"
 description: PowerTip of the Day - Refresh Newly Mounted Disks
 categories:

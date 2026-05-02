@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-13 00:00:00
+updated: 2017-11-13 00:00:00
 title: "PowerShell 技能连载 - 多语言语音输出"
 description: PowerTip of the Day - Multi-Language Voice Output
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-02-23 12:00:00
+updated: 2015-02-23 12:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell ISE 调试器"
 description: PowerTip of the Day - Using the PowerShell ISE Debugger
 categories:

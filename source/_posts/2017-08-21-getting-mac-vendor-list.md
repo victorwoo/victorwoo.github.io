@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-21 00:00:00
+updated: 2017-08-21 00:00:00
 title: "PowerShell 技能连载 - 获取 MAC 制造商列表"
 description: PowerTip of the Day - Getting MAC Vendor List
 categories:

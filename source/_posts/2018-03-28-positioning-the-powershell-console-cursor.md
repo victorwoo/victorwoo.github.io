@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-28 00:00:00
+updated: 2018-03-28 00:00:00
 title: "PowerShell 技能连载 - PowerShell 控制台光标定位"
 description: PowerTip of the Day - Positioning the PowerShell Console Cursor
 categories:

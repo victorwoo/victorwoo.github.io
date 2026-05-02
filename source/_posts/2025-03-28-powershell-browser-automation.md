@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-28 08:00:00
+updated: 2025-03-28 08:00:00
 title: "PowerShell 技能连载 - 浏览器自动化实战"
 description: PowerTip of the Day - Browser Automation with PowerShell
 categories:

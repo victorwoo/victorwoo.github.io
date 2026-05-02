@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-29 00:00:00
+updated: 2018-10-29 00:00:00
 title: "PowerShell 技能连载 - 接受不同的参数类型"
 description: PowerTip of the Day - Accepting Different Parameter Types
 categories:

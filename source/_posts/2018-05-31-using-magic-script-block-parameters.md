@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-31 00:00:00
+updated: 2018-05-31 00:00:00
 title: "PowerShell 技能连载 - 使用神奇的脚本块参数"
 description: PowerTip of the Day - Using Magic Script Block Parameters
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-30 08:00:00
+updated: 2025-09-30 08:00:00
 title: "PowerShell 技能连载 - 配置即代码"
 description: PowerTip of the Day - Configuration as Code in PowerShell
 categories:

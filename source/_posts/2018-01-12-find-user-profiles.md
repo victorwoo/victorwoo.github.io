@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-12 00:00:00
+updated: 2018-01-12 00:00:00
 title: "PowerShell 技能连载 - 查找用户配置文件"
 description: PowerTip of the Day - Find User Profiles
 categories:

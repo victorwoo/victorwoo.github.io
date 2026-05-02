@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-11 08:00:00
+updated: 2024-09-11 08:00:00
 title: "PowerShell 技能连载 - IoT边缘设备监控"
 description: PowerTip of the Day - IoT Edge Device Monitoring
 categories:

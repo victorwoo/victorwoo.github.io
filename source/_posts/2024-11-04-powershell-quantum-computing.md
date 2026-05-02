@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-04 08:00:00
+updated: 2024-11-04 08:00:00
 title: "PowerShell 技能连载 - 量子计算环境管理"
 description: PowerTip of the Day - PowerShell Quantum Computing Environment Management
 categories:

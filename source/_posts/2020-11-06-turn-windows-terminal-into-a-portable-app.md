@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-06 00:00:00
+updated: 2020-11-06 00:00:00
 title: "PowerShell 技能连载 - 将 Windows Terminal 变成便携式应用程序"
 description: PowerTip of the Day - Turn Windows Terminal into a Portable App
 categories:

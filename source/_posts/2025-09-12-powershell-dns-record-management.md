@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-12 08:00:00
+updated: 2025-09-12 08:00:00
 title: "PowerShell 技能连载 - DNS 记录管理"
 description: PowerTip of the Day - DNS Record Management in PowerShell
 categories:

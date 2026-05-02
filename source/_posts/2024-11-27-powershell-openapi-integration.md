@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-27 08:00:00
+updated: 2024-11-27 08:00:00
 title: "PowerShell 技能连载 - OpenAPI 集成技巧"
 description: PowerTip of the Day - PowerShell OpenAPI Integration Tips
 categories:

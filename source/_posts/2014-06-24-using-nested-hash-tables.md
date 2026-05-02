@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 使用嵌套的哈希表"
 date: 2014-06-24 00:00:00
+updated: 2014-06-24 00:00:00
 description: PowerTip of the Day - Using Nested Hash Tables
 categories:
 - powershell

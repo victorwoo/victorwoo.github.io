@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-18 08:00:00
+updated: 2025-06-18 08:00:00
 title: "PowerShell 技能连载 - YAML 与 TOML 配置处理"
 description: PowerTip of the Day - YAML and TOML Configuration Processing in PowerShell
 categories:

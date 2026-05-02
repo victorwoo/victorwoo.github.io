@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 过滤命令输出的文本"
 date: 2014-02-24 00:00:00
+updated: 2014-02-24 00:00:00
 description: PowerTip of the Day - Filtering Text-Based Command Output
 categories:
 - powershell

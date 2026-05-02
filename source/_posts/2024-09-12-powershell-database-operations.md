@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-12 08:00:00
+updated: 2024-09-12 08:00:00
 title: "PowerShell 技能连载 - 数据库操作技巧"
 description: PowerTip of the Day - PowerShell Database Operations Tips
 categories:

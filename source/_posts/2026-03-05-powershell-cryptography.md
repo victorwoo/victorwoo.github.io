@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-05 08:00:00
+updated: 2026-03-05 08:00:00
 title: "PowerShell 技能连载 - 加密与数据保护"
 description: PowerTip of the Day - Cryptography and Data Protection in PowerShell
 categories:

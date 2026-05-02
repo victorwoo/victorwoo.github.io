@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-22 08:00:00
+updated: 2025-10-22 08:00:00
 title: "PowerShell 技能连载 - Grafana 仪表板集成"
 description: PowerTip of the Day - Grafana Dashboard Integration in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-17 00:00:00
+updated: 2021-08-17 00:00:00
 title: "PowerShell 技能连载 - 处理控制台命令的错误"
 description: PowerTip of the Day - Error Handling for Console Commands
 categories:

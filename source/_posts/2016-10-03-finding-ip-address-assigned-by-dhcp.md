@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-10-03 00:00:00
+updated: 2016-10-03 00:00:00
 title: "PowerShell 技能连载 - 查找由 DHCP 分配的 IP 地址"
 description: PowerTip of the Day - Finding IP Address Assigned by DHCP
 categories:

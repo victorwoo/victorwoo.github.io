@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-21 00:00:00
+updated: 2019-10-21 00:00:00
 title: "PowerShell 技能连载 - 对象的魔法（第 1 部分）"
 description: PowerTip of the Day - Object Magic (Part 1)
 categories:

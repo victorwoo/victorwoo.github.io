@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 通过 SID 查找 Active Directory 账户"
 date: 2013-10-24 00:00:00
+updated: 2013-10-24 00:00:00
 description: PowerTip of the Day - Finding Active Directory Accounts by SID
 categories:
 - powershell

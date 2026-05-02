@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-06-06 00:00:07
+updated: 2023-06-06 00:00:07
 title: "PowerShell 技能连载 - SpeculationControl：使用 PowerShell 检查风险"
 description: 'PowerTip of the Day - SpeculationControl: Use PowerShell to Check for Risks'
 categories:

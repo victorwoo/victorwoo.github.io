@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-21 00:00:00
+updated: 2019-02-21 00:00:00
 title: "PowerShell 技能连载 - 验证本地用户账户密码"
 description: PowerTip of the Day - Verifying Local User Account Passwords
 categories:

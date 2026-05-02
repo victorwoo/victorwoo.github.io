@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-18 00:00:00
+updated: 2019-12-18 00:00:00
 title: "PowerShell 技能连载 - 退出 PowerShell 管道（第 1 部分：Select-Object）"
 description: 'PowerTip of the Day - Aborting the PowerShell Pipeline (Part 1: Select-Object)'
 categories:

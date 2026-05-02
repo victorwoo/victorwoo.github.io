@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-07 08:00:00
+updated: 2026-04-07 08:00:00
 title: "PowerShell 技能连载 - Azure Monitor 仪表板自动化"
 description: PowerTip of the Day - Azure Monitor Dashboard Automation in PowerShell
 categories:

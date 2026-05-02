@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-02 08:00:00
+updated: 2025-09-02 08:00:00
 title: "PowerShell 技能连载 - Active Directory 用户管理"
 description: PowerTip of the Day - Active Directory User Management in PowerShell
 categories:

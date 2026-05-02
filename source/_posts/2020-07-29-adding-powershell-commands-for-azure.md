@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-29 00:00:00
+updated: 2020-07-29 00:00:00
 title: "PowerShell 技能连载 - 添加 Azure 的 PowerShell 命令"
 description: PowerTip of the Day - Adding PowerShell commands for Azure
 categories:

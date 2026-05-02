@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-16 00:00:00
+updated: 2018-11-16 00:00:00
 title: "PowerShell 技能连载 - 删除所有指定层级下的子文件夹"
 description: PowerTip of the Day - Deleting All Subfolders Below A Given Level
 categories:

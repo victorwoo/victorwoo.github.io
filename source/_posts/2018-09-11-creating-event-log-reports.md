@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-11 00:00:00
+updated: 2018-09-11 00:00:00
 title: "PowerShell 技能连载 - 创建事件日志报告"
 description: PowerTip of the Day - Creating Event Log Reports
 categories:

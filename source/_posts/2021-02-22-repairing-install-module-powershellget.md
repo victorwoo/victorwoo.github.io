@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-02-22 00:00:00
+updated: 2021-02-22 00:00:00
 title: "PowerShell 技能连载 - 修复 Install-Module (PowerShellGet)"
 description: PowerTip of the Day - Repairing Install-Module (PowerShellGet)
 categories:

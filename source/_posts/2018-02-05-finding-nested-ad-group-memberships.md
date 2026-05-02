@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-05 00:00:00
+updated: 2018-02-05 00:00:00
 title: "PowerShell 技能连载 - 查找嵌套的 AD 组成员"
 description: PowerTip of the Day - Finding Nested AD Group Memberships
 categories:

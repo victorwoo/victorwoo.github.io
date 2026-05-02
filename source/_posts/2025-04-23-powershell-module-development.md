@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-23 08:00:00
+updated: 2025-04-23 08:00:00
 title: "PowerShell 技能连载 - 自定义模块开发与发布"
 description: PowerTip of the Day - Custom PowerShell Module Development and Publishing
 categories:

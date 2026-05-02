@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-09 00:00:00
+updated: 2019-04-09 00:00:00
 title: "PowerShell 技能连载 - 超级简单的密码生成器"
 description: PowerTip of the Day - Super Simple Random Password Generator
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-26 00:00:00
+updated: 2019-12-26 00:00:00
 title: "PowerShell 技能连载 - 列出已安装的更新（第 2 部分）"
 description: PowerTip of the Day - Listing Installed Updates (Part 2)
 categories:

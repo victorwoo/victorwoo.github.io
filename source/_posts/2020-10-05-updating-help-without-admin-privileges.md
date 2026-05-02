@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-10-05 00:00:00
+updated: 2020-10-05 00:00:00
 title: "PowerShell 技能连载 - 在没有管理员特权的情况下更新帮助"
 description: PowerTip of the Day - Updating Help without Admin Privileges
 categories:

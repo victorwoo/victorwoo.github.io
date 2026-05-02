@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-31 00:00:00
+updated: 2019-05-31 00:00:00
 title: "PowerShell 技能连载 - PowerShell 7"
 description: PowerTip of the Day - PowerShell 7
 categories:

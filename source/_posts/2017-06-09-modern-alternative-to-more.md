@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-09 00:00:00
+updated: 2017-06-09 00:00:00
 title: "PowerShell 技能连载 - More 命令的现代版替代品"
 description: PowerTip of the Day - Modern Alternative to More
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-26 08:00:00
+updated: 2025-05-26 08:00:00
 title: "PowerShell 技能连载 - 定时任务与计划任务"
 description: PowerTip of the Day - Scheduled Tasks in PowerShell
 categories:

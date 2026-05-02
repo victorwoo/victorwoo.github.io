@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-09 08:00:00
+updated: 2024-07-09 08:00:00
 title: "PowerShell错误处理核心技巧"
 description: "掌握脚本异常捕获与调试方法"
 categories:

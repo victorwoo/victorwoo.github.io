@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-01-05 00:00:00
+updated: 2021-01-05 00:00:00
 title: "PowerShell 技能连载 - 了解 PowerShell 中的 REST Web 服务"
 description: PowerTip of the Day - Understanding REST Web Services in PowerShell
 categories:

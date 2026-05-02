@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-06 00:00:00
+updated: 2018-08-06 00:00:00
 title: "PowerShell 技能连载 - 使用 PSGraph"
 description: PowerTip of the Day - Using PSGraph
 categories:

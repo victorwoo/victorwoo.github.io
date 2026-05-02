@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-02 08:00:00
+updated: 2025-12-02 08:00:00
 title: "PowerShell 技能连载 - 流式输出与进度显示"
 description: PowerTip of the Day - Streaming Output and Progress Display in PowerShell
 categories:

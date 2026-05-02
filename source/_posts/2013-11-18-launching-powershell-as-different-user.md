@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 以不同用户运行 PowerShell"
 date: 2013-11-18 00:00:00
+updated: 2013-11-18 00:00:00
 description: PowerTip of the Day - Launching PowerShell as Different User
 categories:
 - powershell

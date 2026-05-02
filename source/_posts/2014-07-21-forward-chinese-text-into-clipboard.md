@@ -2,6 +2,7 @@
 title: 用 PowerShell 输出中文到剪贴板
 description: Forward Chinese Text into Clipboard with PowerShell
 date: 2014-07-21 18:30:27
+updated: 2014-07-21 18:30:27
 categories:
 - powershell
 - text

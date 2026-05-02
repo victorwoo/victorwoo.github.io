@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-10-26 00:00:00
+updated: 2021-10-26 00:00:00
 title: "PowerShell 技能连载 - 读取文本文件（快速）"
 description: PowerTip of the Day - Loading Text Files (Fast)
 categories:

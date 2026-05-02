@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-17 08:00:00
+updated: 2025-04-17 08:00:00
 title: "PowerShell 技能连载 - PowerShell 7 新特性深度实践"
 description: PowerTip of the Day - Deep Dive into PowerShell 7 New Features
 categories:

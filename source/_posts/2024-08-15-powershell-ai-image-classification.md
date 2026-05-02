@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-15 08:00:00
+updated: 2024-08-15 08:00:00
 title: "PowerShell 技能连载 - 智能图像分类系统"
 description: "集成AI服务实现自动化图像识别与分类"
 categories:

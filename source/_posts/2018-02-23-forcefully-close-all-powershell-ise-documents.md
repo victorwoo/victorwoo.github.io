@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-23 00:00:00
+updated: 2018-02-23 00:00:00
 title: "PowerShell 技能连载 - 强制关闭所有 PowerShell ISE 文档"
 description: PowerTip of the Day - Forcefully Close All PowerShell ISE Documents
 categories:

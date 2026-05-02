@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-29 00:00:00
+updated: 2022-07-29 00:00:00
 title: "PowerShell 技能连载 - 将语言 ID 转为语言名称"
 description: PowerTip of the Day - Converting Language IDs in Language Names
 categories:

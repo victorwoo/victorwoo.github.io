@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-14 08:00:00
+updated: 2026-01-14 08:00:00
 title: "PowerShell 技能连载 - REST API 开发"
 description: "PowerTip of the Day - REST API Development in PowerShell"
 categories:

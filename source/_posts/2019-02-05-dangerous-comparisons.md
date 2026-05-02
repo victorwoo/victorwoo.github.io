@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-05 00:00:00
+updated: 2019-02-05 00:00:00
 title: "PowerShell 技能连载 - “危险的”比较"
 description: "PowerTip of the Day - “Dangerous” Comparisons"
 categories:

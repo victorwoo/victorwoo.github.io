@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-09 00:00:00
+updated: 2018-07-09 00:00:00
 title: "PowerShell 技能连载 - 从函数中返回富对象（第 1 部分）"
 description: PowerTip of the Day - Returning Rich Objects from Functions (Part 1)
 categories:

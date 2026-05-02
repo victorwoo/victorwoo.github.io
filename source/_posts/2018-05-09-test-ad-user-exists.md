@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-09 00:00:00
+updated: 2018-05-09 00:00:00
 title: "PowerShell 技能连载 - 测试 AD 用户是否存在"
 description: PowerTip of the Day - Test AD User Exists
 categories:

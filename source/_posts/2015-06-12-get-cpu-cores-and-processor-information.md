@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-06-12 11:00:00
+updated: 2015-06-12 11:00:00
 title: "PowerShell 技能连载 - 获取 CPU 核心和处理器信息"
 description: PowerTip of the Day - Get CPU Cores and Processor Information
 categories:

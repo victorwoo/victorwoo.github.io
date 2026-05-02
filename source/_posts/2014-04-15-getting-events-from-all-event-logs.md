@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 从所有事件日志中获取全部事件"
 date: 2014-04-15 00:00:00
+updated: 2014-04-15 00:00:00
 description: PowerTip of the Day - Getting Events From All Event Logs
 categories:
 - powershell

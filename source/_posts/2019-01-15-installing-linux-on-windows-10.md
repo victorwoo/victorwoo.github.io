@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-15 00:00:00
+updated: 2019-01-15 00:00:00
 title: "PowerShell 技能连载 - 在 Windows 10 中安装 Linux"
 description: PowerTip of the Day - Installing Linux on Windows 10
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-18 00:00:00
+updated: 2019-06-18 00:00:00
 title: "PowerShell 技能连载 - 订阅锁定和解锁事件"
 description: PowerTip of the Day - Subscribe to Lock and Unlock Events
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-20 00:00:00
+updated: 2024-06-20 00:00:00
 title: "PowerShell 技能连载 - PowerCLI：管理VMware的简便方法"
 description: "PowerCLI: The Easy Way To Manage VMware"
 categories:

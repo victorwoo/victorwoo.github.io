@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-22 00:00:00
+updated: 2019-01-22 00:00:00
 title: "PowerShell 技能连载 - 获取文本文件编码"
 description: PowerTip of the Day - Get Text File Encoding
 categories:

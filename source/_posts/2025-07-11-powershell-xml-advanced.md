@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-11 08:00:00
+updated: 2025-07-11 08:00:00
 title: "PowerShell 技能连载 - XML 高级处理"
 description: PowerTip of the Day - Advanced XML Processing in PowerShell
 categories:

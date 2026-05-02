@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-01 00:00:00
+updated: 2018-11-01 00:00:00
 title: "PowerShell 技能连载 - 探索 PowerShell 属性值"
 description: PowerTip of the Day - Exploring PowerShell Attribute Values
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "定时休眠的命令"
 date: 2013-08-16 00:00:00
+updated: 2013-08-16 00:00:00
 description: scheduling hibernate
 categories: powershell
 tags:

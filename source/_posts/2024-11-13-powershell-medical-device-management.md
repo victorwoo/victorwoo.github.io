@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-13 08:00:00
+updated: 2024-11-13 08:00:00
 title: "PowerShell 技能连载 - 医疗设备管理系统"
 description: PowerTip of the Day - PowerShell Medical Device Management
 categories:

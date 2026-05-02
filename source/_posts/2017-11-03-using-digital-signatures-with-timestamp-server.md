@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-03 00:00:00
+updated: 2017-11-03 00:00:00
 title: "PowerShell 技能连载 - 结合时间戳服务器使用数字签名"
 description: PowerTip of the Day - Using Digital Signatures with Timestamp Server
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-25 08:00:00
+updated: 2024-12-25 08:00:00
 title: "PowerShell 技能连载 - 事件管理"
 description: PowerTip of the Day - PowerShell Event Management
 categories:

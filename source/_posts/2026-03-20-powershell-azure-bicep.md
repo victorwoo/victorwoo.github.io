@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-20 08:00:00
+updated: 2026-03-20 08:00:00
 title: "PowerShell 技能连载 - Bicep 基础设施即代码"
 description: PowerTip of the Day - Bicep Infrastructure as Code in PowerShell
 categories:

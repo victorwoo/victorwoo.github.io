@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-03-14 00:00:00
+updated: 2017-03-14 00:00:00
 title: "PowerShell 技能连载 - 快速创建对象数组"
 description: PowerTip of the Day - Creating Object Arrays on the Fly
 categories:

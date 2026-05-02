@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-07-18 11:00:00
+updated: 2014-07-18 11:00:00
 title: "PowerShell 技能连载 - 测试不带别名的脚本"
 description: PowerTip of the Day - Test-Driving Scripts without Aliases
 categories:

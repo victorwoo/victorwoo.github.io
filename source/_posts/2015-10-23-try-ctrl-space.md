@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-10-23 11:00:00
+updated: 2015-10-23 11:00:00
 title: "PowerShell 技能连载 - 试试 CTRL+SPACE！"
 description: PowerTip of the Day - Try CTRL+SPACE!
 categories:

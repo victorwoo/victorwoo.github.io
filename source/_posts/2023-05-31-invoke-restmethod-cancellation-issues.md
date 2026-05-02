@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-31 00:00:32
+updated: 2023-05-31 00:00:32
 title: "PowerShell 技能连载 - Invoke-RestMethod 退出错误"
 description: PowerTip of the Day - Invoke-RestMethod Cancellation Issues
 categories:

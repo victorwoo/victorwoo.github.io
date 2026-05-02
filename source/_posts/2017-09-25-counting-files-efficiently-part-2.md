@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-25 00:00:00
+updated: 2017-09-25 00:00:00
 title: "PowerShell 技能连载 - 高效统计文件数量（第二部分）"
 description: PowerTip of the Day - Counting Files Efficiently (Part 2)
 categories:

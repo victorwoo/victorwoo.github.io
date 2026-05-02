@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-24 08:00:00
+updated: 2024-04-24 08:00:00
 title: "PowerShell 技能连载 - 云存储自动化备份方案"
 description: "使用PowerShell实现混合云环境的数据保护自动化"
 categories:

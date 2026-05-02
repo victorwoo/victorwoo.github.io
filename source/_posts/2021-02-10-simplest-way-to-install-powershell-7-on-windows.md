@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-02-10 00:00:00
+updated: 2021-02-10 00:00:00
 title: "PowerShell 技能连载 - 在 Windows 上安装 PowerShell 7 的最简单方法"
 description: PowerTip of the Day - Simplest Way to Install PowerShell 7 on Windows
 categories:

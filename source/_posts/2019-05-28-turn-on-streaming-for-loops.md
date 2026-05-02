@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-28 00:00:00
+updated: 2019-05-28 00:00:00
 title: "PowerShell 技能连载 - 对循环启用流操作"
 description: PowerTip of the Day - Turn on Streaming for Loops
 categories:

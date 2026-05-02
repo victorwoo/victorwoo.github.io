@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-27 08:00:00
+updated: 2024-05-27 08:00:00
 title: "PowerShell 技能连载 - 问题管理"
 description: PowerTip of the Day - PowerShell Problem Management
 categories:

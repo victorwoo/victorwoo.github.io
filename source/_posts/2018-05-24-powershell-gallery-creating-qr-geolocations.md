@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-24 00:00:00
+updated: 2018-05-24 00:00:00
 title: "PowerShell 技能连载 - PowerShell 陈列架：创建地理位置二维码"
 description: 'PowerTip of the Day - PowerShell Gallery: Creating QR GeoLocations'
 categories:

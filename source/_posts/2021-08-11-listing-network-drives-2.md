@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-11 00:00:00
+updated: 2021-08-11 00:00:00
 title: "PowerShell 技能连载 - 列出网络驱动器"
 description: PowerTip of the Day - Listing Network Drives
 categories:

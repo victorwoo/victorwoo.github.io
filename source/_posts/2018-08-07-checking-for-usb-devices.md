@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-07 00:00:00
+updated: 2018-08-07 00:00:00
 title: "PowerShell 技能连载 - 检查 USB 设备"
 description: PowerTip of the Day - Checking for USB Devices
 categories:

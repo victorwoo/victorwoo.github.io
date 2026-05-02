@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-11 00:00:00
+updated: 2018-07-11 00:00:00
 title: "PowerShell 技能连载 - 交换变量值"
 description: PowerTip of the Day - Exchanging Variable Values
 categories:

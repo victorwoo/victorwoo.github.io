@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-12 00:00:00
+updated: 2019-02-12 00:00:00
 title: "PowerShell 技能连载 - 小心“Throw”语句（第 1 部分）"
 description: "PowerTip of the Day - Be Careful With “Throw” Statements (Part 1)"
 categories:

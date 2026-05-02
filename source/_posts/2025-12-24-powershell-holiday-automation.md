@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-24 08:00:00
+updated: 2025-12-24 08:00:00
 title: "PowerShell 技能连载 - 节日自动化与年度总结"
 description: PowerTip of the Day - Holiday Automation and Year-End Summary in PowerShell
 categories:

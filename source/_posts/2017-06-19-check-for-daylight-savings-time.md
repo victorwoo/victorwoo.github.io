@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-19 00:00:00
+updated: 2017-06-19 00:00:00
 title: "PowerShell 技能连载 - 检查夏时制"
 description: PowerTip of the Day - Check for Daylight Savings Time
 categories:

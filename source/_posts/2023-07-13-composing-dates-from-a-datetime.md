@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-13 08:00:04
+updated: 2023-07-13 08:00:04
 title: "PowerShell 技能连载 - 从 DateTime 中生成日期"
 description: PowerTip of the Day - Composing Dates from a DateTime
 categories:

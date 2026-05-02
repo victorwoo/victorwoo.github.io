@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-06 08:00:00
+updated: 2025-03-06 08:00:00
 title: "PowerShell函数定义最佳实践"
 description: "掌握模块化脚本开发的核心技巧"
 categories:

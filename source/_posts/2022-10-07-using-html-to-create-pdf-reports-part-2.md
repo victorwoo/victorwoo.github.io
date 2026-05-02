@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-10-07 00:00:00
+updated: 2022-10-07 00:00:00
 title: "PowerShell 技能连载 - 使用 HTML 来创建 PDF 报告（第 2 部分）"
 description: PowerTip of the Day - Using HTML to create PDF Reports (Part 2)
 categories:

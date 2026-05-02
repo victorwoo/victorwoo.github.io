@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-12-22 00:00:00
+updated: 2020-12-22 00:00:00
 title: "PowerShell 技能连载 - 读取已安装的软件（第 2 部分）"
 description: PowerTip of the Day - Reading Installed Software (Part 2)
 categories:

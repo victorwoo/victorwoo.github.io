@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-17 08:00:00
+updated: 2024-04-17 08:00:00
 title: "PowerShell 技能连载 - XML 数据处理技巧"
 description: PowerTip of the Day - PowerShell XML Data Handling Tips
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-03 00:00:00
+updated: 2020-06-03 00:00:00
 title: "PowerShell 技能连载 - 解析 Windows 产品密钥（第 2 部分）"
 description: PowerTip of the Day - Decoding Windows Product Key (Part 2)
 categories:

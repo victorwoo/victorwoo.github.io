@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-05 08:00:00
+updated: 2024-04-05 08:00:00
 title: "PowerShell字符串操作实用指南"
 description: "掌握文本处理的核心方法与效率优化"
 categories:

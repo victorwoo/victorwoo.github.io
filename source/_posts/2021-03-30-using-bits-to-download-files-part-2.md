@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-03-30 00:00:00
+updated: 2021-03-30 00:00:00
 title: "PowerShell 技能连载 - 使用 BITS 来下载文件（第 2 部分）"
 description: PowerTip of the Day - Using BITS to Download Files (Part 2)
 categories:

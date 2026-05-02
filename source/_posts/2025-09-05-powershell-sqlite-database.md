@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-05 08:00:00
+updated: 2025-09-05 08:00:00
 title: "PowerShell 技能连载 - SQLite 数据库操作"
 description: PowerTip of the Day - SQLite Database Operations in PowerShell
 categories:

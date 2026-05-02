@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-07 00:00:00
+updated: 2020-07-07 00:00:00
 title: "PowerShell 技能连载 - 识别操作系统详细信息"
 description: PowerTip of the Day - Identifying Operating System Details
 categories:

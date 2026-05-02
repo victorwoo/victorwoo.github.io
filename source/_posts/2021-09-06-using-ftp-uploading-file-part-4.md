@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-06 00:00:00
+updated: 2021-09-06 00:00:00
 title: "PowerShell 技能连载 - 使用 FTP：上传文件（第 4 部分）"
 description: 'PowerTip of the Day - Using FTP: Uploading File (Part 4)'
 categories:

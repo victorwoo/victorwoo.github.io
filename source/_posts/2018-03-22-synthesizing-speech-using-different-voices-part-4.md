@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-22 00:00:00
+updated: 2018-03-22 00:00:00
 title: "PowerShell 技能连载 - 语音合成 – 使用不同的语音（第 4 部分）"
 description: "PowerTip of the Day - Synthesizing Speech – Using Different Voices (Part 4)"
 categories:

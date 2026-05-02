@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-20 00:00:00
+updated: 2018-11-20 00:00:00
 title: "PowerShell 技能连载 - 在输出中显示数组成员"
 description: PowerTip of the Day - Displaying Array Members in Output
 categories:

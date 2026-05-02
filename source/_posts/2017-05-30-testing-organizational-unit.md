@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-30 00:00:00
+updated: 2017-05-30 00:00:00
 title: "PowerShell 技能连载 - 测试 OU"
 description: PowerTip of the Day - Testing Organizational Unit
 categories:

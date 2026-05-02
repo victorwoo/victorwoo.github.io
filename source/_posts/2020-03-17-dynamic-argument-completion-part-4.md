@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-03-17 00:00:00
+updated: 2020-03-17 00:00:00
 title: "PowerShell 技能连载 - 动态参数完成（第 4 部分）"
 description: PowerTip of the Day - Dynamic Argument Completion (Part 4)
 categories:

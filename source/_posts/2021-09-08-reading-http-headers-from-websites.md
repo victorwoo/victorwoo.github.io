@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-08 00:00:00
+updated: 2021-09-08 00:00:00
 title: "PowerShell 技能连载 - 从网站读取 HTTP 消息头"
 description: PowerTip of the Day - Reading HTTP Headers from Websites
 categories:

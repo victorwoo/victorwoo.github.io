@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-25 00:00:00
+updated: 2019-09-25 00:00:00
 title: "PowerShell 技能连载 - 使用最新版的 PowerShell Core"
 description: PowerTip of the Day - Playing with Latest PowerShell Core Version
 categories:

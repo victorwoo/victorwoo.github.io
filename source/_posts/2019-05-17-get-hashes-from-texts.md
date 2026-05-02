@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-17 00:00:00
+updated: 2019-05-17 00:00:00
 title: "PowerShell 技能连载 - 获取文本的哈希值"
 description: PowerTip of the Day - Get Hashes from Texts
 categories:

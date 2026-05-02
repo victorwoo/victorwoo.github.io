@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-03-05 12:00:00
+updated: 2015-03-05 12:00:00
 title: "PowerShell 技能连载 - 播放 WAV 文件"
 description: PowerTip of the Day - Playing WAV Files
 categories:

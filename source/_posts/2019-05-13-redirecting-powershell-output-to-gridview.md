@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-13 00:00:00
+updated: 2019-05-13 00:00:00
 title: "PowerShell 技能连载 - 将 PowerShell 输出重定向到 GridView"
 description: PowerTip of the Day - Redirecting PowerShell Output to GridView
 categories:

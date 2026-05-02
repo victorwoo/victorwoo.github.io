@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-12-28 00:00:00
+updated: 2020-12-28 00:00:00
 title: "PowerShell 技能连载 - 管理本地组成员（第 1 部分）"
 description: PowerTip of the Day - Managing Local Group Members (Part 1)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-27 08:00:00
+updated: 2025-01-27 08:00:00
 title: "PowerShell 技能连载 - 元宇宙环境管理"
 description: PowerTip of the Day - PowerShell Metaverse Environment Management
 categories:

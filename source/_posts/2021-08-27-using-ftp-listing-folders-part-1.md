@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-27 00:00:00
+updated: 2021-08-27 00:00:00
 title: "PowerShell 技能连载 - 使用 FTP：列出文件夹（第 1 部分）"
 description: 'PowerTip of the Day - Using FTP: Listing Folders (Part 1)'
 categories:

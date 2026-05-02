@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-17 00:00:00
+updated: 2019-10-17 00:00:00
 title: "PowerShell 技能连载 - 加密文本（第 2 部分）"
 description: PowerTip of the Day - Encrypting Text (Part 2)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-11-29 07:21:07
+updated: 2022-11-29 07:21:07
 title: "PowerShell 技能连载 - Determining Language Packs (Part 3)"
 description: PowerTip of the Day - Determining Language Packs (Part 3)
 categories:

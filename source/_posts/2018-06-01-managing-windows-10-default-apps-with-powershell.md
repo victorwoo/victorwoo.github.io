@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-01 00:00:00
+updated: 2018-06-01 00:00:00
 title: "PowerShell 技能连载 - 用 PowerShell 管理 Windows 10 的缺省 APP"
 description: PowerTip of the Day - Managing Windows 10 Default Apps with PowerShell
 categories:

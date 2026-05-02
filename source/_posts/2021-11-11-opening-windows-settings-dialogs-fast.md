@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-11-11 00:00:00
+updated: 2021-11-11 00:00:00
 title: "PowerShell 技能连载 - 打开 Windows 设置对话框（快速）（第 1 部分）"
 description: PowerTip of the Day - Opening Windows Settings Dialogs (Fast) (Part 1)
 categories:

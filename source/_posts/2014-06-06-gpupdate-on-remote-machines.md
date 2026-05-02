@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 远程执行 gpupdate"
 date: 2014-06-06 00:00:00
+updated: 2014-06-06 00:00:00
 description: PowerTip of the Day - gpupdate on Remote Machines
 categories:
 - powershell

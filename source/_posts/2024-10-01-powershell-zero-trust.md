@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-01 08:00:00
+updated: 2024-10-01 08:00:00
 title: "PowerShell 技能连载 - 零信任架构下的设备健康检查"
 description: PowerTip of the Day - Zero Trust Device Health Validation
 categories:

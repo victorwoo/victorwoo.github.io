@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-08 08:00:00
+updated: 2025-12-08 08:00:00
 title: "PowerShell 技能连载 - WinGet 包管理自动化"
 description: PowerTip of the Day - WinGet Package Management Automation
 categories:

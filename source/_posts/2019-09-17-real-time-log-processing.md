@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-17 00:00:00
+updated: 2019-09-17 00:00:00
 title: "PowerShell 技能连载 - 实时日志处理"
 description: PowerTip of the Day - Real-Time Log Processing
 categories:

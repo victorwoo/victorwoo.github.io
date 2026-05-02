@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-04 00:00:00
+updated: 2019-04-04 00:00:00
 title: "PowerShell 技能连载 - 用 PowerShell 锁定屏幕"
 description: PowerTip of the Day - Locking the Screen with PowerShell
 categories:

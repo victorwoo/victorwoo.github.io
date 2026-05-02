@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-17 00:00:00
+updated: 2017-05-17 00:00:00
 title: "PowerShell 技能连载 - 创建随机的 MAC 地址"
 description: PowerTip of the Day - Creating Random MAC Addresses
 categories:

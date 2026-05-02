@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-18 00:00:00
+updated: 2019-01-18 00:00:00
 title: "PowerShell 技能连载 - Retrieving Windows Product Key"
 description: PowerTip of the Day - Retrieving Windows Product Key
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-09 00:00:00
+updated: 2021-08-09 00:00:00
 title: "PowerShell 技能连载 - 读取打印机属性（第 3 部分）"
 description: PowerTip of the Day - Reading Printer Properties (Part 3)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-24 08:00:00
+updated: 2026-02-24 08:00:00
 title: "PowerShell 技能连载 - 组策略自动化管理"
 description: PowerTip of the Day - Group Policy Automation Management in PowerShell
 categories:

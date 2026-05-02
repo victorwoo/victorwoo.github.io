@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-30 00:00:00
+updated: 2018-07-30 00:00:00
 title: "PowerShell 技能连载 - 创建临时文件名"
 description: PowerTip of the Day - Creating Temp File Names
 categories:

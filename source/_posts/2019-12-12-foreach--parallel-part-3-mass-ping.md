@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-12 00:00:00
+updated: 2019-12-12 00:00:00
 title: "PowerShell 技能连载 - Foreach -parallel (第 3 部分：批量 Ping)"
 description: 'PowerTip of the Day - Foreach -parallel (Part 3: Mass Ping)'
 categories:

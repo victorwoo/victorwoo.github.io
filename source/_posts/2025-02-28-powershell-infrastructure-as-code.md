@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-28 08:00:00
+updated: 2025-02-28 08:00:00
 title: "PowerShell 技能连载 - 基础设施即代码实践"
 description: PowerTip of the Day - PowerShell Infrastructure as Code Practices
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-26 00:00:00
+updated: 2020-02-26 00:00:00
 title: "PowerShell 技能连载 - 带颜色的控制台硬拷贝"
 description: PowerTip of the Day - Creating Colorful Console Hardcopies
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-29 00:00:00
+updated: 2019-01-29 00:00:00
 title: "PowerShell 技能连载 - 将 Windows 服务器转变为工作站"
 description: PowerTip of the Day - Turn a Windows Server into a Workstation
 categories:

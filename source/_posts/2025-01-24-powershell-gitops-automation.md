@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-24 08:00:00
+updated: 2025-01-24 08:00:00
 title: "PowerShell 技能连载 - GitOps自动化部署"
 description: PowerTip of the Day - GitOps Automation Deployment
 categories:

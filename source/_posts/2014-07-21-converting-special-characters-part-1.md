@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-07-21 11:00:00
+updated: 2014-07-21 11:00:00
 title: "PowerShell 技能连载 - 转换特殊字符（第一部分）"
 description: PowerTip of the Day - Converting Special Characters, Part 1
 categories:

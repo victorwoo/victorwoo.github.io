@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-06 00:00:00
+updated: 2017-04-06 00:00:00
 title: "PowerShell 技能连载 - 检测字符代码 0"
 description: PowerTip of the Day - Detecting Character Code 0
 categories:

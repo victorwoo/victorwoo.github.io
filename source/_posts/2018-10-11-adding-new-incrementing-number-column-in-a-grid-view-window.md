@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-11 00:00:00
+updated: 2018-10-11 00:00:00
 title: "PowerShell 技能连载 - Adding New Incrementing Number Column in a Grid View Window"
 description: PowerTip of the Day - Adding New Incrementing Number Column in a Grid View Window
 categories:

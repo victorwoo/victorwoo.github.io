@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-20 00:00:00
+updated: 2017-11-20 00:00:00
 title: "PowerShell 技能连载 - 临时禁用 PSReadLine 模块"
 description: PowerTip of the Day - Temporarily Disabling PSReadLine Module
 categories:

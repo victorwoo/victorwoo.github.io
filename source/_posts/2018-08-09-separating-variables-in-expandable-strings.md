@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-09 00:00:00
+updated: 2018-08-09 00:00:00
 title: "PowerShell 技能连载 - 在可扩展字符串中分隔变量"
 description: PowerTip of the Day - Separating Variables in Expandable Strings
 categories:

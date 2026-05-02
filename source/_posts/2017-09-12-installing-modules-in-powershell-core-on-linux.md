@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-12 00:00:00
+updated: 2017-09-12 00:00:00
 title: "PowerShell 技能连载 - 在 Linux 的 PowerShell Core 中安装模块"
 description: PowerTip of the Day - Installing Modules in PowerShell Core on Linux
 categories:

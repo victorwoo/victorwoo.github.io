@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-06 00:00:00
+updated: 2018-04-06 00:00:00
 title: "PowerShell 技能连载 - 用 PowerShell 操作 Chocolatey"
 description: PowerTip of the Day - Using Chocolatey with PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-19 00:00:00
+updated: 2018-07-19 00:00:00
 title: "PowerShell 技能连载 - 进度条定时器"
 description: PowerTip of the Day - Progress Bar Timer
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-08-20 00:00:00
+updated: 2020-08-20 00:00:00
 title: "PowerShell 技能连载 - 加速 PowerShell 远程操作"
 description: PowerTip of the Day - Speeding Up PowerShell Remoting
 categories:

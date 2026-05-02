@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-24 18:00:06
+updated: 2023-08-24 18:00:06
 title: "PowerShell 技能连载 - 获取法国假期"
 description: PowerTip of the Day - Get French Holidays
 categories:

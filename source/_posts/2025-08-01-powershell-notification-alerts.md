@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-01 08:00:00
+updated: 2025-08-01 08:00:00
 title: "PowerShell 技能连载 - 通知与告警系统"
 description: PowerTip of the Day - Notification and Alerting Systems in PowerShell
 categories:

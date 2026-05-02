@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-12 08:00:00
+updated: 2024-04-12 08:00:00
 title: "PowerShell 技能连载 - 日志管理"
 description: PowerTip of the Day - PowerShell Log Management
 categories:

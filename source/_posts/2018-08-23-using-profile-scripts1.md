@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-23 00:00:00
+updated: 2018-08-23 00:00:00
 title: "PowerShell 技能连载 - 使用 profile 脚本"
 description: PowerTip of the Day - Using Profile Scripts
 categories:

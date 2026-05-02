@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 使用 ICACLS 提高文件夹安全性"
 date: 2014-01-03 00:00:00
+updated: 2014-01-03 00:00:00
 description: PowerTip of the Day - Using ICACLS to Secure Folders
 categories:
 - powershell

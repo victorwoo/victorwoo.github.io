@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-24 08:00:00
+updated: 2025-10-24 08:00:00
 title: "PowerShell 技能连载 - LINQ 数据操作"
 description: PowerTip of the Day - LINQ Data Operations in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-22 00:00:00
+updated: 2018-05-22 00:00:00
 title: "PowerShell 技能连载 - PowerShell 陈列架：创建 QR 码"
 description: 'PowerTip of the Day - PowerShell Gallery: Creating QR Codes'
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 导出和导入 PowerShell 历史"
 date: 2013-11-08 00:00:00
+updated: 2013-11-08 00:00:00
 description: PowerTip of the Day - Exporting and Importing PowerShell History
 categories:
 - powershell

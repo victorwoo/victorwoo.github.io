@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-07 00:00:00
+updated: 2022-03-07 00:00:00
 title: "PowerShell 技能连载 - 在 Windows 中用 PowerShell 来管理文件共享（第 1 部分）"
 description: PowerTip of the Day - Managing File Shares on Windows with PowerShell (Part 1)
 categories:

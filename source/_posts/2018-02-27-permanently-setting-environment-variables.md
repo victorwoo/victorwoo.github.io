@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-27 00:00:00
+updated: 2018-02-27 00:00:00
 title: "PowerShell 技能连载 - 永久性设置环境变量"
 description: PowerTip of the Day - Permanently Setting Environment Variables
 categories:

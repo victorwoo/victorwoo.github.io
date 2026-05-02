@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-16 00:00:00
+updated: 2017-10-16 00:00:00
 title: "PowerShell 技能连载 - 用管道将信息输出到 Excel"
 description: PowerTip of the Day - Pipe Information to Excel
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-13 08:00:00
+updated: 2025-11-13 08:00:00
 title: "PowerShell 技能连载 - Entra ID 应用注册"
 description: PowerTip of the Day - Entra ID App Registration in PowerShell
 categories:

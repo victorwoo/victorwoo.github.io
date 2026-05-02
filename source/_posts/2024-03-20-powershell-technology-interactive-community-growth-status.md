@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技术互动社区发展状况（2023 年 3 月）"
 date: 2024-03-20 00:00:00
+updated: 2024-03-20 00:00:00
 description: PowerShell Technology Interactive Community Growth Status (March 2023)
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-13 00:00:00
+updated: 2018-12-13 00:00:00
 title: "PowerShell 技能连载 - 响应新的事件日志条目（第 1 部分）"
 description: PowerTip of the Day - Responding to New Event Log Entries (Part 1)
 categories:

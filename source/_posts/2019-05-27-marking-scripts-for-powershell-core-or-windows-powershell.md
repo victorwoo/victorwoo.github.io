@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-27 00:00:00
+updated: 2019-05-27 00:00:00
 title: "PowerShell 技能连载 - 开发 PowerShell Core 还是 Windows PowerShell 脚本"
 description: PowerTip of the Day - Marking Scripts for PowerShell Core or Windows PowerShell
 categories:

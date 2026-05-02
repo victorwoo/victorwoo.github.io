@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-08-18 00:00:00
+updated: 2020-08-18 00:00:00
 title: "PowerShell 技能连载 - 动态创建 PowerShell 函数"
 description: PowerTip of the Day - Creating PowerShell Functions Dynamically
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-13 08:00:00
+updated: 2024-08-13 08:00:00
 title: "PowerShell 技能连载 - 硬件监控技巧"
 description: PowerTip of the Day - PowerShell Hardware Monitoring Tips
 categories:

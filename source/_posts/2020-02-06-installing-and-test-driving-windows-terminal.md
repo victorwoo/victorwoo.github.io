@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-06 00:00:00
+updated: 2020-02-06 00:00:00
 title: "PowerShell 技能连载 - 安装并试运行 Windows Terminal"
 description: PowerTip of the Day - Installing and Test-Driving Windows Terminal
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-22 00:00:00
+updated: 2018-02-22 00:00:00
 title: "PowerShell 技能连载 - 创建快速的 Ping（第六部分）"
 description: PowerTip of the Day - Creating Highspeed Ping (Part 6)
 categories:

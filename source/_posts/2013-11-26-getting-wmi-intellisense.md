@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 获取 WMI 智能感知信息"
 date: 2013-11-26 00:00:00
+updated: 2013-11-26 00:00:00
 description: PowerTip of the Day - Getting WMI IntelliSense
 categories:
 - powershell

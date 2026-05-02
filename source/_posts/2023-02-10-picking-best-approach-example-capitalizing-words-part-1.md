@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-02-10 00:00:47
+updated: 2023-02-10 00:00:47
 title: "PowerShell 技能连载 - 选择最佳方法：单词转大写（第 1 部分）"
 description: 'PowerTip of the Day - Picking Best Approach: Example Capitalizing Words (Part 1)'
 categories:

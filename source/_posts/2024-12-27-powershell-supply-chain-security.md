@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-27 08:00:00
+updated: 2024-12-27 08:00:00
 title: "PowerShell 技能连载 - 供应链安全漏洞扫描"
 description: PowerTip of the Day - Supply Chain Security Scanning with Trivy
 categories:

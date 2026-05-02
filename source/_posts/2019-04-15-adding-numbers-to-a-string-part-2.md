@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-15 00:00:00
+updated: 2019-04-15 00:00:00
 title: "PowerShell 技能连载 - 向字符串添加数字（第 2 部分）"
 description: PowerTip of the Day - Adding Numbers to a String (Part 2)
 categories:

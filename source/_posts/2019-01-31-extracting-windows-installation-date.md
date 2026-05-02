@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-31 00:00:00
+updated: 2019-01-31 00:00:00
 title: "PowerShell 技能连载 - 解析 Windows 安装日期"
 description: PowerTip of the Day - Extracting Windows Installation Date
 categories:

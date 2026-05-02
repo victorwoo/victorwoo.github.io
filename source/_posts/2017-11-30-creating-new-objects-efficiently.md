@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-30 00:00:00
+updated: 2017-11-30 00:00:00
 title: "PowerShell 技能连载 - 高效创建新的对象"
 description: PowerTip of the Day - Creating New Objects Efficiently
 categories:

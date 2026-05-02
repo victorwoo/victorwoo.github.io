@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-15 00:00:00
+updated: 2017-08-15 00:00:00
 title: "PowerShell 技能连载 - 创建 HTML 报表（第五部分 - 应用样式和设计）"
 description: "PowerTip of the Day - Creating HTML Reports (Part 5 – Applying Style and Design)"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-09-28 00:00:00
+updated: 2016-09-28 00:00:00
 title: "PowerShell 技能连载 - Enum 之周: 理解枚举值"
 description: 'PowerTip of the Day - Enum Week: Understanding Enumeration Values'
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-04-12 00:00:00
+updated: 2022-04-12 00:00:00
 title: "PowerShell 技能连载 - More Control with Strict Mode"
 description: PowerTip of the Day - More Control with Strict Mode
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-04 08:00:00
+updated: 2024-09-04 08:00:00
 title: "PowerShell 技能连载 - XML数据处理实战"
 description: "掌握PowerShell中XML解析与生成的核心技巧"
 categories:

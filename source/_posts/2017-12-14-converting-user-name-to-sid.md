@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-14 00:00:00
+updated: 2017-12-14 00:00:00
 title: "PowerShell 技能连载 - 将用户名转换为 SID"
 description: PowerTip of the Day - Converting User Name to SID
 categories:

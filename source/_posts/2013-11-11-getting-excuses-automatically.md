@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 自动找借口的脚本"
 date: 2013-11-11 00:00:00
+updated: 2013-11-11 00:00:00
 description: PowerTip of the Day - Getting Excuses Automatically
 categories:
 - powershell

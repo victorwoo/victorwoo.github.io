@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-07-08 00:00:00
+updated: 2021-07-08 00:00:00
 title: "PowerShell 技能连载 - 生日派对的琐事"
 description: PowerTip of the Day - Trivia Facts for Birthday Parties
 categories:

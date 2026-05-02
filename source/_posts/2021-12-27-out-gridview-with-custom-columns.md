@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-12-27 00:00:00
+updated: 2021-12-27 00:00:00
 title: "PowerShell 技能连载 - Out-GridView 自定义列"
 description: PowerTip of the Day - Out-GridView with Custom Columns
 categories:

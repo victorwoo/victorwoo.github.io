@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-03 00:00:00
+updated: 2019-06-03 00:00:00
 title: "PowerShell 技能连载 - 使用代理服务器的缺省凭据"
 description: PowerTip of the Day - Using Default Credentials for Proxy
 categories:

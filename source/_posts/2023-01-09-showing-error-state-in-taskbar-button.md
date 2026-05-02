@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-01-09 00:00:25
+updated: 2023-01-09 00:00:25
 title: "PowerShell 技能连载 - 在任务栏按钮显示错误状态"
 description: PowerTip of the Day - Showing Error State in Taskbar Button
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-17 11:00:00
+updated: 2014-09-17 11:00:00
 title: "PowerShell 技能连载 - 查找脚本中的错误"
 description: PowerTip of the Day - Finding Errors in Scripts
 categories:

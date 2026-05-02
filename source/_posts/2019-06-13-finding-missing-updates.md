@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-13 00:00:00
+updated: 2019-06-13 00:00:00
 title: "PowerShell 技能连载 - 寻找丢失的更新"
 description: PowerTip of the Day - Finding Missing Updates
 categories:

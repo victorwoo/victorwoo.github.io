@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-11-19 00:00:00
+updated: 2021-11-19 00:00:00
 title: "PowerShell 技能连载 - 四个 PowerShell 关键先决条件"
 description: PowerTip of the Day - Four PowerShell Critical Prerequisites
 categories:

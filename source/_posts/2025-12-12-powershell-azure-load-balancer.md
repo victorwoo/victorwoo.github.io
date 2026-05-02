@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-12 08:00:00
+updated: 2025-12-12 08:00:00
 title: "PowerShell 技能连载 - Azure 负载均衡器管理"
 description: PowerTip of the Day - Azure Load Balancer Management in PowerShell
 categories:

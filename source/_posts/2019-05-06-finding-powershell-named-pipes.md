@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-06 00:00:00
+updated: 2019-05-06 00:00:00
 title: "PowerShell 技能连载 - 查找 PowerShell 命名管道"
 description: PowerTip of the Day - Finding PowerShell Named Pipes
 categories:

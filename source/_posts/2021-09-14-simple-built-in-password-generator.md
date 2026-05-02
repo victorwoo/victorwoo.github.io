@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-14 00:00:00
+updated: 2021-09-14 00:00:00
 title: "PowerShell 技能连载 - 简单的内置密码生成器"
 description: PowerTip of the Day - Simple Built-In Password Generator
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-20 00:00:00
+updated: 2018-12-20 00:00:00
 title: "PowerShell 技能连载 - 将 PowerShell 结果发送到 PDF（第 1 部分）"
 description: PowerTip of the Day - Sending PowerShell Results to PDF (Part 1)
 categories:

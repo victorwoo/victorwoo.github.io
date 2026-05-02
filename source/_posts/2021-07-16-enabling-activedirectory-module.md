@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-07-16 00:00:00
+updated: 2021-07-16 00:00:00
 title: "PowerShell 技能连载 - 启用 ActiveDirectory 模块"
 description: PowerTip of the Day - Enabling ActiveDirectory Module
 categories:

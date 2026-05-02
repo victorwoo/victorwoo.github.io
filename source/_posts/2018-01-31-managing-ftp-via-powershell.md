@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-31 00:00:00
+updated: 2018-01-31 00:00:00
 title: "PowerShell 技能连载 - 通过 PowerShell 管理 FTP"
 description: PowerTip of the Day - Managing FTP via PowerShell
 categories:

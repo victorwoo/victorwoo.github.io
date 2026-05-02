@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-21 08:00:00
+updated: 2025-04-21 08:00:00
 title: "PowerShell 技能连载 - CI/CD 流水线中的 PowerShell 实践"
 description: PowerTip of the Day - PowerShell in CI/CD Pipelines
 categories:

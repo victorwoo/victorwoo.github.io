@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-06-03 00:00:00
+updated: 2022-06-03 00:00:00
 title: "PowerShell 技能连载 - 简单的类似 grep 的文本过滤器（第 1 部分）"
 description: PowerTip of the Day - Simple Text-Based Filtering a la grep (Part 1)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-03 00:00:00
+updated: 2022-02-03 00:00:00
 title: "PowerShell 技能连载 - 打开关闭 Windows 的对话框"
 description: PowerTip of the Day - Open Windows Shutdown Dialog
 categories:

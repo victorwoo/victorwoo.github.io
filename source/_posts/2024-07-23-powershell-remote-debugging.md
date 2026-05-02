@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-23 08:00:00
+updated: 2024-07-23 08:00:00
 title: "PowerShell远程调试核心技术"
 description: "掌握跨会话脚本诊断与异常捕获方案"
 categories:

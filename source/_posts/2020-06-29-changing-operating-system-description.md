@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-29 00:00:00
+updated: 2020-06-29 00:00:00
 title: "PowerShell 技能连载 - 改变操作系统描述"
 description: PowerTip of the Day - Changing Operating System Description
 categories:

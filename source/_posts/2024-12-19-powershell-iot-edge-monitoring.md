@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-19 08:00:00
+updated: 2024-12-19 08:00:00
 title: "PowerShell 技能连载 - 边缘计算环境中的IoT设备监控"
 description: "实现工业物联网设备的自动化状态采集与异常预警"
 categories:

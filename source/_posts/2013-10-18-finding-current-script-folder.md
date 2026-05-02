@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找当前的脚本文件夹"
 date: 2013-10-18 00:00:00
+updated: 2013-10-18 00:00:00
 description: PowerTip of the Day - Finding Current Script Folder
 categories:
 - powershell

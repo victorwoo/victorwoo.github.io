@@ -2,6 +2,7 @@
 layout: post
 title: "在PowerShell中操作Word - 生成文档"
 date: 2013-09-28 00:00:00
+updated: 2013-09-28 00:00:00
 description: 'Integrating Microsoft Word with PowerShell: Generate a Document'
 categories:
 - powershell

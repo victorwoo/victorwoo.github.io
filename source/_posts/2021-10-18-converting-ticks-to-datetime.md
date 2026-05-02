@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-10-18 00:00:00
+updated: 2021-10-18 00:00:00
 title: "PowerShell 技能连载 - 将 Ticks 转换为 DateTime"
 description: PowerTip of the Day - Converting Ticks to DateTime
 categories:

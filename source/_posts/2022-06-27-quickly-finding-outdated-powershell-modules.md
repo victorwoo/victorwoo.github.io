@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-06-27 00:00:00
+updated: 2022-06-27 00:00:00
 title: "PowerShell 技能连载 - 快速查找过期的 PowerShell 模块"
 description: PowerTip of the Day - Quickly Finding Outdated PowerShell Modules
 categories:

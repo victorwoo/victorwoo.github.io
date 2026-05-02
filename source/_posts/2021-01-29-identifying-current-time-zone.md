@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-01-29 00:00:00
+updated: 2021-01-29 00:00:00
 title: "PowerShell 技能连载 - 识别当前时区"
 description: PowerTip of the Day - Identifying Current Time Zone
 categories:

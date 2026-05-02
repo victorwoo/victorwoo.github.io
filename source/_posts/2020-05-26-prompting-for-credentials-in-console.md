@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-26 00:00:00
+updated: 2020-05-26 00:00:00
 title: "PowerShell 技能连载 - 在控制台中提示输入凭据"
 description: PowerTip of the Day - Prompting for Credentials in Console
 categories:

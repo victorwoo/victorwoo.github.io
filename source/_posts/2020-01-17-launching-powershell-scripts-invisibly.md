@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-17 00:00:00
+updated: 2020-01-17 00:00:00
 title: "PowerShell 技能连载 - 隐藏启动 PowerShell 脚本"
 description: PowerTip of the Day - Launching PowerShell Scripts Invisibly
 categories:

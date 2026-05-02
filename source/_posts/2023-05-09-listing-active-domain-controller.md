@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-09 00:00:37
+updated: 2023-05-09 00:00:37
 title: "PowerShell 技能连载 - 列出活动的域控制器"
 description: PowerTip of the Day - Listing Active Domain Controller
 categories:

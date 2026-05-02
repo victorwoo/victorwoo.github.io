@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-10-03 00:00:00
+updated: 2022-10-03 00:00:00
 title: "PowerShell 技能连载 - 更新帮助"
 description: PowerTip of the Day - Update Help
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-29 00:00:00
+updated: 2018-01-29 00:00:00
 title: "PowerShell 技能连载 - 格式化数字（第 1 部分）"
 description: PowerTip of the Day - Formatting Numbers (Part 1)
 categories:

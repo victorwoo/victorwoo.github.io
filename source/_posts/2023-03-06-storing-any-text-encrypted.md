@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-03-06 00:00:15
+updated: 2023-03-06 00:00:15
 title: "PowerShell 技能连载 - 存储任何加密的文本"
 description: PowerTip of the Day - Storing Any Text Encrypted
 categories:

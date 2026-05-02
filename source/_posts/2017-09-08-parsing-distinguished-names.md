@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-08 00:00:00
+updated: 2017-09-08 00:00:00
 title: "PowerShell 技能连载 - 解析完全限定名"
 description: PowerTip of the Day - Parsing Distinguished Names
 categories:

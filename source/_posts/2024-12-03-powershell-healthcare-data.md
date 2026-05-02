@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-03 08:00:00
+updated: 2024-12-03 08:00:00
 title: "PowerShell 技能连载 - 医疗健康数据管理"
 description: PowerTip of the Day - PowerShell Healthcare Data Management
 categories:

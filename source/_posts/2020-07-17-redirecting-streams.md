@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-17 00:00:00
+updated: 2020-07-17 00:00:00
 title: "PowerShell 技能连载 - 重定向流"
 description: PowerTip of the Day - Redirecting Streams
 categories:

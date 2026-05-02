@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-24 08:00:00
+updated: 2026-04-24 08:00:00
 title: "PowerShell 技能连载 - Azure App Service 部署槽管理"
 description: PowerTip of the Day - Azure App Service Deployment Slot Management in PowerShell
 categories:

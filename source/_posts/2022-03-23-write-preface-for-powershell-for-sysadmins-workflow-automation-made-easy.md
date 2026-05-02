@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-23 00:00:00
+updated: 2022-03-23 00:00:00
 title: "为《PowerShell 实战》撰序"
 description: "Write preface for PowerShell for Sysadmins: Workflow Automation Made Easy"
 categories:

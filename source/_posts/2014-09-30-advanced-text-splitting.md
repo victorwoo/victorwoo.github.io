@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-30 11:00:00
+updated: 2014-09-30 11:00:00
 title: "PowerShell 技能连载 - 高级文本分隔"
 description: PowerTip of the Day - Advanced Text Splitting
 categories:

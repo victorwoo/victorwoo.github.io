@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-08-24 11:00:00
+updated: 2015-08-24 11:00:00
 title: "PowerShell 技能连载 - 查找驱动器号"
 description: PowerTip of the Day - Finding Drive Letters
 categories:

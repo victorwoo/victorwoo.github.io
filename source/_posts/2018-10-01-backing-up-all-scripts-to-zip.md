@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-01 00:00:00
+updated: 2018-10-01 00:00:00
 title: "PowerShell 技能连载 - 将所有脚本备份到 ZIP 中"
 description: PowerTip of the Day - Backing Up All Scripts to ZIP
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-27 00:00:00
+updated: 2018-12-27 00:00:00
 title: "PowerShell 技能连载 - 格式化日期和时间（包含区域性）"
 description: PowerTip of the Day - Formatting Date and Time (with Culture)
 categories:

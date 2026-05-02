@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-17 00:00:00
+updated: 2020-09-17 00:00:00
 title: "PowerShell 技能连载 - 设置和清除信任的主机"
 description: PowerTip of the Day - Setting and Clearing Trusted Hosts
 categories:

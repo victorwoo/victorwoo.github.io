@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-22 00:00:00
+updated: 2020-05-22 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell Gallery 搜索新模块"
 description: PowerTip of the Day - Searching PowerShell Gallery for New Modules
 categories:

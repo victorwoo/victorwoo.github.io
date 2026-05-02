@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-25 08:00:00
+updated: 2024-04-25 08:00:00
 title: "PowerShell 技能连载 - 绿色计算与能耗优化"
 description: PowerTip of the Day - PowerShell Green Computing and Energy Optimization
 categories:

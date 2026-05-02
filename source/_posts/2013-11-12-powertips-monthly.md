@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能月刊"
 date: 2013-11-12 00:00:00
+updated: 2013-11-12 00:00:00
 description: Index of PowerTips Monthly
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-06-08 00:00:51
+updated: 2023-06-08 00:00:51
 title: "PowerShell 技能连载 - 测试驱动 PowerShellGet 版本 3"
 description: PowerTip of the Day - Test-Driving PowerShellGet Version 3
 categories:

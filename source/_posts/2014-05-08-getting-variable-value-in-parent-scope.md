@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 获取父作用域中的变量值"
 date: 2014-05-08 00:00:00
+updated: 2014-05-08 00:00:00
 description: PowerTip of the Day - Getting Variable Value in Parent Scope
 categories:
 - powershell

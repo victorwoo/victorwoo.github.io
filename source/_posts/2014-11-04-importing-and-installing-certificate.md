@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-11-04 12:00:00
+updated: 2014-11-04 12:00:00
 title: "PowerShell 技能连载 - 导入及安装证书"
 description: PowerTip of the Day - Importing and Installing Certificate
 categories:

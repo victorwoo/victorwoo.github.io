@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-09 00:00:00
+updated: 2019-05-09 00:00:00
 title: "PowerShell 技能连载 - 导出和导入代码签名证书"
 description: PowerTip of the Day - Exporting and Importing Code-Signing Certificates
 categories:

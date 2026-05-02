@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-20 08:00:00
+updated: 2025-06-20 08:00:00
 title: "PowerShell 技能连载 - HTML 报告生成"
 description: PowerTip of the Day - HTML Report Generation in PowerShell
 categories:

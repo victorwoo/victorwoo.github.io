@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-23 00:00:00
+updated: 2020-01-23 00:00:00
 title: "PowerShell 技能连载 - 安装 ActiveDirectory 模块"
 description: PowerTip of the Day - Installing ActiveDirectory Module
 categories:

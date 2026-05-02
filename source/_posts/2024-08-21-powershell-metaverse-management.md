@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-21 08:00:00
+updated: 2024-08-21 08:00:00
 title: "PowerShell 技能连载 - 元宇宙虚拟环境自动化管理"
 description: "实现分布式虚拟环境的资源编排与状态监控"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-30 00:00:00
+updated: 2019-12-30 00:00:00
 title: "PowerShell 技能连载 - 探索即插即用设备（第 1 部分）"
 description: PowerTip of the Day - Exploring Plug&amp;Play Devices (Part 1)
 categories:

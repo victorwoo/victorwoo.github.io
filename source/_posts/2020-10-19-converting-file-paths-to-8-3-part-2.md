@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-10-19 00:00:00
+updated: 2020-10-19 00:00:00
 title: "PowerShell 技能连载 - 将文件路径转为 8.3 格式（第 2 部分）"
 description: PowerTip of the Day - Converting File Paths to 8.3 (Part 2)
 categories:

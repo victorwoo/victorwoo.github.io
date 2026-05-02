@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-11 08:00:00
+updated: 2025-08-11 08:00:00
 title: "PowerShell 技能连载 - 对 CSV 执行 SQL 风格查询"
 description: PowerTip of the Day - SQL-Style Queries Against CSV Files in PowerShell
 categories:

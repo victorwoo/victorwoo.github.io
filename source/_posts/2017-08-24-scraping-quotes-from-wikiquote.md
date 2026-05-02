@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-24 00:00:00
+updated: 2017-08-24 00:00:00
 title: "PowerShell 技能连载 - 从 WikiQuote 搜集引用"
 description: PowerTip of the Day - Scraping Quotes from WikiQuote
 categories:

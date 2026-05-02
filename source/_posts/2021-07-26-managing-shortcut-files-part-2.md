@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-07-26 00:00:00
+updated: 2021-07-26 00:00:00
 title: "PowerShell 技能连载 - 管理快捷方式文件（第 2 部分）"
 description: PowerTip of the Day - Managing Shortcut Files (Part 2)
 categories:

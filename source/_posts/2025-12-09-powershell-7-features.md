@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-09 08:00:00
+updated: 2025-12-09 08:00:00
 title: "PowerShell 技能连载 - PowerShell 7 新特性实战"
 description: PowerTip of the Day - PowerShell 7 New Features in Practice
 categories:

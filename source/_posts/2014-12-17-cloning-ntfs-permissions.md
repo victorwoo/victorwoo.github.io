@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-12-17 12:00:00
+updated: 2014-12-17 12:00:00
 title: "PowerShell 技能连载 - 克隆 NTFS 权限"
 description: 'PowerTip of the Day - Cloning NTFS Permissions '
 categories:

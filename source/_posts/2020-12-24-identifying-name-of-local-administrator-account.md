@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-12-24 00:00:00
+updated: 2020-12-24 00:00:00
 title: "PowerShell 技能连载 - 标识本地管理员帐户的名称"
 description: PowerTip of the Day - Identifying Name of Local Administrator Account
 categories:

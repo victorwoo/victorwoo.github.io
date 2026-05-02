@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-12 08:00:00
+updated: 2025-06-12 08:00:00
 title: "PowerShell 技能连载 - 凭据管理与安全存储"
 description: PowerTip of the Day - Credential Management and Secure Storage in PowerShell
 categories:

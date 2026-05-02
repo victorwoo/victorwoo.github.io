@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-23 00:00:00
+updated: 2020-06-23 00:00:00
 title: "PowerShell 技能连载 - 移除空白的属性"
 description: PowerTip of the Day - Removing Empty Properties
 categories:

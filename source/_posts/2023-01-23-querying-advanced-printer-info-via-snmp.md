@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-01-23 06:00:14
+updated: 2023-01-23 06:00:14
 title: "PowerShell 技能连载 - 通过 SNMP 查询高级的打印机"
 description: PowerTip of the Day - Querying Advanced Printer Info via SNMP
 categories:

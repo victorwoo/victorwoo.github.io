@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-21 08:00:00
+updated: 2025-11-21 08:00:00
 title: "PowerShell 技能连载 - 参数补全器"
 description: PowerTip of the Day - Argument Completers in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-18 00:00:00
+updated: 2017-10-18 00:00:00
 title: "PowerShell 技能连载 - 远程确定启动时间点和启动以来的时间"
 description: PowerTip of the Day - Determine Boot Time and Uptime Remotely
 categories:

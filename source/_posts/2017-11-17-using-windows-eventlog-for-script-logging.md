@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-17 00:00:00
+updated: 2017-11-17 00:00:00
 title: "PowerShell 技能连载 -用 Windows 事件日志记录脚本日志"
 description: PowerTip of the Day - Using Windows EventLog for Script Logging
 categories:

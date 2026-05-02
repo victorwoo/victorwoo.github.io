@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-16 00:00:00
+updated: 2021-09-16 00:00:00
 title: "PowerShell 技能连载 - 识别连上的 Domain"
 description: PowerTip of the Day - Identifying Connected Domain
 categories:

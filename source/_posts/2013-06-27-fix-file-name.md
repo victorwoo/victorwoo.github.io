@@ -2,6 +2,7 @@
 layout: post
 title: "修正文件名/目录名的PowerShell脚本"
 date: 2013-06-27 00:00:00
+updated: 2013-06-27 00:00:00
 categories: powershell
 tags:
 - powershell

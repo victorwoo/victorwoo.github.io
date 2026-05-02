@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-11 08:00:00
+updated: 2024-07-11 08:00:00
 title: "PowerShell模块系统深度解析"
 description: "掌握模块化编程与代码复用的核心机制"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-02-26 00:00:00
+updated: 2021-02-26 00:00:00
 title: "PowerShell 技能连载 - 修复 VSCode PowerShell 问题（第 1 部分）"
 description: PowerTip of the Day - Fixing VSCode PowerShell Issues (Part 1)
 categories:

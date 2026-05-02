@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-04 08:00:00
+updated: 2024-06-04 08:00:00
 title: "PowerShell反射机制深度解析"
 description: "探索类型系统的动态操作与运行时元编程"
 categories:

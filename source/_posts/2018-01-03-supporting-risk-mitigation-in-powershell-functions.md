@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-03 00:00:00
+updated: 2018-01-03 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 函数中支持风险缓解"
 description: PowerTip of the Day - Supporting Risk Mitigation in PowerShell Functions
 categories:

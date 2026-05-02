@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-23 00:00:00
+updated: 2022-02-23 00:00:00
 title: "PowerShell 技能连载 - 检测计划外的关机"
 description: PowerTip of the Day - Detecting Unplanned Shutdown
 categories:

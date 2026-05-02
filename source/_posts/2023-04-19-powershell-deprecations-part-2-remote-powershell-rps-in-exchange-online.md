@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-04-19 00:00:32
+updated: 2023-04-19 00:00:32
 title: "PowerShell 技能连载 - PowerShell 废弃功能（第 2 部分：Exchange Online 中的远程 PowerShell (RPS)）"
 description: 'PowerTip of the Day - PowerShell Deprecations (Part 2: Remote PowerShell (RPS) in Exchange Online)'
 categories:

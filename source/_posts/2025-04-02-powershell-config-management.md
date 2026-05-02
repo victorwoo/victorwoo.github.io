@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-02 08:00:00
+updated: 2025-04-02 08:00:00
 title: "PowerShell 技能连载 - JSON 与 YAML 配置管理"
 description: PowerTip of the Day - JSON and YAML Configuration Management in PowerShell
 categories:

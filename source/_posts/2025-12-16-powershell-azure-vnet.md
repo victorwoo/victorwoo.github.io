@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-16 08:00:00
+updated: 2025-12-16 08:00:00
 title: "PowerShell 技能连载 - Azure 虚拟网络管理"
 description: PowerTip of the Day - Azure Virtual Network Management in PowerShell
 categories:

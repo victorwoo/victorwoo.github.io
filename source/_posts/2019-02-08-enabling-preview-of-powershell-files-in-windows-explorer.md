@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-08 00:00:00
+updated: 2019-02-08 00:00:00
 title: "PowerShell 技能连载 - 在资源管理器中启用预览 PowerShell 文件"
 description: PowerTip of the Day - Enabling Preview of PowerShell Files in Windows Explorer
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-11 08:00:00
+updated: 2025-09-11 08:00:00
 title: "PowerShell 技能连载 - DHCP 管理自动化"
 description: PowerTip of the Day - DHCP Management Automation in PowerShell
 categories:

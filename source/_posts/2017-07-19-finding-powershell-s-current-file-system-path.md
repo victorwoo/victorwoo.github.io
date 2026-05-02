@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-19 00:00:00
+updated: 2017-07-19 00:00:00
 title: "PowerShell 技能连载 - 查看 PowerShell 当前的文件系统路径"
 description: "PowerTip of the Day - Finding PowerShell’s Current File System Path"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-29 00:00:00
+updated: 2019-04-29 00:00:00
 title: "PowerShell 技能连载 - 将 SecureString 转换为字符串"
 description: PowerTip of the Day - Converting SecureString to String
 categories:

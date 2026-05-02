@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-13 00:00:00
+updated: 2018-08-13 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 中运行 CMD 命令"
 description: PowerTip of the Day - Running CMD commands in PowerShell
 categories:

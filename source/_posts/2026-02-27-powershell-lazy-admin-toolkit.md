@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-27 08:00:00
+updated: 2026-02-27 08:00:00
 title: "PowerShell 技能连载 - 懒人运维工具集"
 description: PowerTip of the Day - Lazy Admin Toolkit in PowerShell
 categories:

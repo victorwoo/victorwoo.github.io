@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-09 08:00:00
+updated: 2026-03-09 08:00:00
 title: "PowerShell 技能连载 - WinRM 高级配置与排错"
 description: PowerTip of the Day - WinRM Advanced Configuration and Troubleshooting in PowerShell
 categories:

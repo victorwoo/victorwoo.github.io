@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-21 00:00:00
+updated: 2020-09-21 00:00:00
 title: "PowerShell 技能连载 - 摆脱 Get-EventLog"
 description: PowerTip of the Day - Get Rid of Get-EventLog
 categories:

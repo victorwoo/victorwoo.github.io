@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-09 00:00:00
+updated: 2018-11-09 00:00:00
 title: "PowerShell 技能连载 - 隐藏进度条"
 description: PowerTip of the Day - Hiding Progress Bars
 categories:

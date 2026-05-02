@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-08 00:00:00
+updated: 2018-06-08 00:00:00
 title: "PowerShell 技能连载 - Out-Notepad: Send Information to Notepad"
 description: 'PowerTip of the Day - Out-Notepad: Send Information to Notepad'
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-21 00:00:00
+updated: 2018-11-21 00:00:00
 title: "PowerShell 技能连载 - $FormatEnumerationLimit 作用域问题"
 description: PowerTip of the Day - $FormatEnumerationLimit Scoping Issues
 categories:

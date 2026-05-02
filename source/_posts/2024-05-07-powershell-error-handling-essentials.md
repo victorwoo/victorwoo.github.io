@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-07 08:00:00
+updated: 2024-05-07 08:00:00
 title: "PowerShell错误处理核心机制"
 description: "全面解析try/catch与错误变量应用场景"
 categories:

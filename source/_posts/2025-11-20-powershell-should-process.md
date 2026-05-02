@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-20 08:00:00
+updated: 2025-11-20 08:00:00
 title: "PowerShell 技能连载 - ShouldProcess 确认机制"
 description: PowerTip of the Day - ShouldProcess Confirmation in PowerShell
 categories:

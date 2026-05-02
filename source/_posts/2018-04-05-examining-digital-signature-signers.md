@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-05 00:00:00
+updated: 2018-04-05 00:00:00
 title: "PowerShell 技能连载 - 检查数字签名"
 description: PowerTip of the Day - Examining Digital Signature Signers
 categories:

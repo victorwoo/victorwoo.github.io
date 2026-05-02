@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-29 08:00:00
+updated: 2025-05-29 08:00:00
 title: "PowerShell 技能连载 - AWS 自动化管理"
 description: PowerTip of the Day - AWS Automation Management in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-06 00:00:00
+updated: 2018-03-06 00:00:00
 title: "PowerShell 技能连载 - 使用事件日志方便地记录日志"
 description: PowerTip of the Day - Easy Logging by Using Event Logs
 categories:

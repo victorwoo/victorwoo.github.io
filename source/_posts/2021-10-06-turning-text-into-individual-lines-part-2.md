@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-10-06 00:00:00
+updated: 2021-10-06 00:00:00
 title: "PowerShell 技能连载 - 分割文本行（第 2 部分）"
 description: PowerTip of the Day - Turning Text into Individual Lines (Part 2)
 categories:

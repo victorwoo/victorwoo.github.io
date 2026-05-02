@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 在 ISE 中重设 PowerShell 宿主"
 date: 2013-10-15 00:00:00
+updated: 2013-10-15 00:00:00
 description: PowerTip of the Day - Resetting PowerShell Host in ISE
 categories:
 - powershell

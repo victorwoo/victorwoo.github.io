@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-17 08:00:41
+updated: 2023-07-17 08:00:41
 title: "PowerShell 技能连载 - 星座计算器（又称“Sternzeichen”）"
 description: "PowerTip of the Day - Zodiac Calculator (aka “Sternzeichen”)"
 categories:

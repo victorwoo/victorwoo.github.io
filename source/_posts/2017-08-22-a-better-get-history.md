@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-22 00:00:00
+updated: 2017-08-22 00:00:00
 title: "PowerShell 技能连载 - 增强版 Get-History 命令"
 description: PowerTip of the Day - A better Get-History
 categories:

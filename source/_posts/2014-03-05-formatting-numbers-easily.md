@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 轻松地格式化数字"
 date: 2014-03-05 00:00:00
+updated: 2014-03-05 00:00:00
 description: PowerTip of the Day - Formatting Numbers Easily
 categories:
 - powershell

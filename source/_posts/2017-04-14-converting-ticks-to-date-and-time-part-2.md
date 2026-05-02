@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-14 00:00:00
+updated: 2017-04-14 00:00:00
 title: "PowerShell 技能连载 - 将时钟周期转换为日期和时间（第二部分）"
 description: PowerTip of the Day - Converting Ticks to Date and Time (Part 2)
 categories:

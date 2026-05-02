@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-03-08 00:00:24
+updated: 2023-03-08 00:00:24
 title: "PowerShell 技能连载 - 将波长转换为 RGB"
 description: PowerTip of the Day - Converting Wavelength to RGB
 categories:

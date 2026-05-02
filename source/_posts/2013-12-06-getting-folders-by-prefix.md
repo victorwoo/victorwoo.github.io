@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 通过前缀对文件夹分组"
 date: 2013-12-06 00:00:00
+updated: 2013-12-06 00:00:00
 description: PowerTip of the Day - Getting Folders by Prefix
 categories:
 - powershell

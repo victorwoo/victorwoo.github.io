@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 将结果复制到剪贴板"
 date: 2013-09-18 00:00:00
+updated: 2013-09-18 00:00:00
 description: PowerTip of the Day - Copying Results to Clipboard
 categories:
 - powershell

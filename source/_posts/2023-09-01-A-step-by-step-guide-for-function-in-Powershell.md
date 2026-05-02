@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-03-05 00:00:00
+updated: 2024-03-05 00:00:00
 title: "PowerShell 技能连载 - PowerShell函数的手把手指南"
 description: "A step-by-step guide for function in Powershell"
 categories:

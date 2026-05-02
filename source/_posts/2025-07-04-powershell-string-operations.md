@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-04 08:00:00
+updated: 2025-07-04 08:00:00
 title: "PowerShell 技能连载 - 字符串操作进阶"
 description: PowerTip of the Day - Advanced String Operations in PowerShell
 categories:

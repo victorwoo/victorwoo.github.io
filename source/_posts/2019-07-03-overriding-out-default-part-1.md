@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-03 00:00:00
+updated: 2019-07-03 00:00:00
 title: "PowerShell 技能连载 - 覆盖 Out-Default（第 1 部分）"
 description: PowerTip of the Day - Overriding Out-Default (Part 1)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-08 08:00:00
+updated: 2024-11-08 08:00:00
 title: "PowerShell 技能连载 - 智能运维自动化管理"
 description: PowerTip of the Day - PowerShell AI Operations Automation Management
 categories:

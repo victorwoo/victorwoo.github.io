@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-05 00:00:00
+updated: 2020-06-05 00:00:00
 title: "PowerShell 技能连载 - 添加参数自动完成（第 1 部分）"
 description: PowerTip of the Day - Adding Argument Completion (Part 1)
 categories:

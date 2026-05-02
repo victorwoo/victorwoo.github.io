@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-14 08:00:00
+updated: 2025-02-14 08:00:00
 title: "PowerShell 技能连载 - AI 集成技巧"
 description: PowerTip of the Day - PowerShell AI Integration Tips
 categories:

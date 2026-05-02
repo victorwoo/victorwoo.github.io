@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-08 00:00:00
+updated: 2017-08-08 00:00:00
 title: "PowerShell 技能连载 - 在 Windows 10 中控制控制台的透明度"
 description: PowerTip of the Day - Control Console Transparency on Windows 10
 categories:

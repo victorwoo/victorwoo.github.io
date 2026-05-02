@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-16 08:00:00
+updated: 2026-03-16 08:00:00
 title: "PowerShell 技能连载 - 系统诊断脚本集"
 description: PowerTip of the Day - System Diagnostic Scripts in PowerShell
 categories:

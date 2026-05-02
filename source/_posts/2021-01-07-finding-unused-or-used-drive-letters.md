@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-01-07 00:00:00
+updated: 2021-01-07 00:00:00
 title: "PowerShell 技能连载 - 查找未使用（或使用过的）驱动器号"
 description: PowerTip of the Day - Finding Unused (or Used) Drive Letters
 categories:

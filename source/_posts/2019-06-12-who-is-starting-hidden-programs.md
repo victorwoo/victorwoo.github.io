@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-12 00:00:00
+updated: 2019-06-12 00:00:00
 title: "PowerShell 技能连载 - 谁执行了隐藏的程序？"
 description: PowerTip of the Day - Who is Starting Hidden Programs?
 categories:

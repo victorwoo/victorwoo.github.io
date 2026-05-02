@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-01 08:00:00
+updated: 2025-01-01 08:00:00
 title: "PowerShell 技能连载 - 视频处理技巧"
 description: PowerTip of the Day - PowerShell Video Processing Tips
 categories:

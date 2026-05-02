@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-28 08:00:00
+updated: 2025-01-28 08:00:00
 title: "PowerShell 异常处理完全指南"
 description: "掌握try/catch块与错误类型过滤技巧"
 categories:

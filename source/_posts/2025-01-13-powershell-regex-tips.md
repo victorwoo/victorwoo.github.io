@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-13 08:00:00
+updated: 2025-01-13 08:00:00
 title: "PowerShell 技能连载 - 正则表达式处理技巧"
 description: PowerTip of the Day - PowerShell Regular Expression Tips
 categories:

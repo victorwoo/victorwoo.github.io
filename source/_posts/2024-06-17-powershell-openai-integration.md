@@ -2,6 +2,7 @@
 layout: post
 title: "使用 PowerShell 和 OpenAI 实现智能脚本生成"
 date: 2024-06-17 00:00:00
+updated: 2024-06-17 00:00:00
 description: 通过 OpenAI API 自动生成 PowerShell 脚本的技术实践
 categories:
 - powershell

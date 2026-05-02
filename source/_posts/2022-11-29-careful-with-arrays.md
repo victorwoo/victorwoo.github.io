@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-11-29 13:38:40
+updated: 2022-11-29 13:38:40
 title: "PowerShell 技能连载 - 小心使用数组"
 description: PowerTip of the Day - Careful with Arrays
 categories:

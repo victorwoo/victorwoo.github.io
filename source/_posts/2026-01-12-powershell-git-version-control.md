@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-12 08:00:00
+updated: 2026-01-12 08:00:00
 title: "PowerShell 技能连载 - 脚本版本控制与 Git"
 description: PowerTip of the Day - Script Version Control with Git in PowerShell
 categories:

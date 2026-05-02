@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-08-06 00:00:00
+updated: 2020-08-06 00:00:00
 title: "PowerShell 技能连载 - 读取 4K 哈希"
 description: PowerTip of the Day - Reading 4K-Hash
 categories:

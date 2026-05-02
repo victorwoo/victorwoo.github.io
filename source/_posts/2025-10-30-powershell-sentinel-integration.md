@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-30 08:00:00
+updated: 2025-10-30 08:00:00
 title: "PowerShell 技能连载 - Microsoft Sentinel 集成"
 description: PowerTip of the Day - Microsoft Sentinel Integration in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-25 00:00:00
+updated: 2017-07-25 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 标题栏中添加实时时钟（第二部分）"
 description: PowerTip of the Day - Adding Live Clock to PowerShell Title Bar (Part 2)
 categories:

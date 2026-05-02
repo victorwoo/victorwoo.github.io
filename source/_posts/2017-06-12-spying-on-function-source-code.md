@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-12 00:00:00
+updated: 2017-06-12 00:00:00
 title: "PowerShell 技能连载 - 查看函数源码"
 description: PowerTip of the Day - Spying on Function Source Code
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-13 00:00:00
+updated: 2020-01-13 00:00:00
 title: "PowerShell 技能连载 - 测试网络连接（第 2 部分）"
 description: PowerTip of the Day - Testing Network Connections (Part 2)
 categories:

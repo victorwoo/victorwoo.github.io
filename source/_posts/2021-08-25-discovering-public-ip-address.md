@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-25 00:00:00
+updated: 2021-08-25 00:00:00
 title: "PowerShell 技能连载 - 发现公共 IP 地址"
 description: PowerTip of the Day - Discovering Public IP Address
 categories:

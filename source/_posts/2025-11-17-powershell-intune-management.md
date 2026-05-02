@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-17 08:00:00
+updated: 2025-11-17 08:00:00
 title: "PowerShell 技能连载 - Intune 设备管理"
 description: PowerTip of the Day - Intune Device Management in PowerShell
 categories:

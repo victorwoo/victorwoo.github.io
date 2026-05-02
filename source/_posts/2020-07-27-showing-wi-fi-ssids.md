@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-27 00:00:00
+updated: 2020-07-27 00:00:00
 title: "PowerShell 技能连载 - 显示 Wi-Fi 的 SSID"
 description: PowerTip of the Day - Showing Wi-Fi SSIDs
 categories:

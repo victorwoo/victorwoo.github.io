@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-05 08:00:00
+updated: 2026-01-05 08:00:00
 title: "PowerShell 技能连载 - 类定义与面向对象编程"
 description: PowerTip of the Day - Class Definition and Object-Oriented Programming in PowerShell
 categories:

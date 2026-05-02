@@ -2,6 +2,7 @@
 title: PowerShell ISE 4.0 完整快捷键清单
 description: The Complete List of PowerShell ISE 4.0 Keyboard Shortcuts
 date: 2017-06-03 13:34:54
+updated: 2017-06-03 13:34:54
 tags: [powershell]
 categories: [powershell]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-11-08 00:00:00
+updated: 2022-11-08 00:00:00
 title: "PowerShell 技能连载 - 获取系统正常运行时间"
 description: PowerTip of the Day - Discover System Uptime
 categories:

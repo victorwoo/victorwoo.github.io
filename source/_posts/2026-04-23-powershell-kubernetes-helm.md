@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-23 08:00:00
+updated: 2026-04-23 08:00:00
 title: "PowerShell 技能连载 - Kubernetes Helm 包管理"
 description: PowerTip of the Day - Kubernetes Helm Package Management in PowerShell
 categories:

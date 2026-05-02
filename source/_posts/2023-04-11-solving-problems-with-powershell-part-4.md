@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-04-11 00:00:09
+updated: 2023-04-11 00:00:09
 title: "PowerShell 技能连载 - 使用 PowerShell 解决问题（第 4 部分）"
 description: PowerTip of the Day - Solving Problems with PowerShell (Part 4)
 categories:

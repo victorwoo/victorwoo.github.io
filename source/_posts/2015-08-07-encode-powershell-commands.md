@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-08-07 11:00:00
+updated: 2015-08-07 11:00:00
 title: "PowerShell 技能连载 - 解码 PowerShell 命令"
 description: PowerTip of the Day - Encode PowerShell Commands
 categories:

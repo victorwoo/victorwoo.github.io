@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-10 08:00:00
+updated: 2025-12-10 08:00:00
 title: "PowerShell 技能连载 - 事件注册与处理"
 description: PowerTip of the Day - Event Registration and Handling in PowerShell
 categories:

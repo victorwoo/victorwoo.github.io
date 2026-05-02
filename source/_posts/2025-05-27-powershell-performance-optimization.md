@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-27 08:00:00
+updated: 2025-05-27 08:00:00
 title: "PowerShell 技能连载 - 性能优化与内存管理"
 description: PowerTip of the Day - Performance Optimization and Memory Management in PowerShell
 categories:

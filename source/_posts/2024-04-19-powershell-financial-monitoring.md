@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-19 08:00:00
+updated: 2024-04-19 08:00:00
 title: "PowerShell 技能连载 - 金融交易监控管理"
 description: PowerTip of the Day - PowerShell Financial Transaction Monitoring Management
 categories:

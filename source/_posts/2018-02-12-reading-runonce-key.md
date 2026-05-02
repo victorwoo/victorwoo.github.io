@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-12 00:00:00
+updated: 2018-02-12 00:00:00
 title: "PowerShell 技能连载 - 读取 RunOnce 注册表键"
 description: PowerTip of the Day - Reading RunOnce Key
 categories:

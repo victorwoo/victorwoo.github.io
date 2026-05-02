@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-02 00:00:00
+updated: 2017-10-02 00:00:00
 title: "PowerShell 技能连载 - 准备磁盘驱动器"
 description: PowerTip of the Day - Repairing Disk Drives
 categories:

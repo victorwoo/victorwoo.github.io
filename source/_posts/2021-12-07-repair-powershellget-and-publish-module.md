@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-12-07 00:00:00
+updated: 2021-12-07 00:00:00
 title: "PowerShell 技能连载 - 修复 PowerShellGet 和 Publish-Module"
 description: PowerTip of the Day - Repair PowerShellGet and Publish-Module
 categories:

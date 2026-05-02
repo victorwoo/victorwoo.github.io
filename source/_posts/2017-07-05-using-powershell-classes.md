@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-05 00:00:00
+updated: 2017-07-05 00:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 类（一）"
 description: PowerTip of the Day - Using PowerShell Classes
 categories:

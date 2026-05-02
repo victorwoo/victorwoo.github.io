@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-23 00:00:00
+updated: 2018-11-23 00:00:00
 title: "PowerShell 技能连载 - 增强错误记录的可读性"
 description: PowerTip of the Day - Making Error Records More Readable
 categories:

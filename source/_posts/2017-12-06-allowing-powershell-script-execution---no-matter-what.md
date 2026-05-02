@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-06 00:00:00
+updated: 2017-12-06 00:00:00
 title: "PowerShell 技能连载 - 强制允许 PowerShell 脚本执行"
 description: PowerTip of the Day - Allowing PowerShell Script Execution - No Matter What
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-07-25 11:00:00
+updated: 2014-07-25 11:00:00
 title: "PowerShell 技能连载 - 指定递归深度"
 description: PowerTip of the Day - Recursing a Given Depth
 categories:

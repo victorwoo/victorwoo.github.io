@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-10-17 00:00:00
+updated: 2022-10-17 00:00:00
 title: "PowerShell 技能连载 - 查找 MSI 产品代码（第 1 部分）"
 description: PowerTip of the Day - Finding MSI Product Codes (Part 1)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-25 08:00:00
+updated: 2025-08-25 08:00:00
 title: "PowerShell 技能连载 - 本地大模型运维助手"
 description: PowerTip of the Day - Local LLM Operations Assistant in PowerShell
 categories:

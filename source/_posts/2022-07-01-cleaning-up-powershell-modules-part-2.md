@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-01 00:00:00
+updated: 2022-07-01 00:00:00
 title: "PowerShell 技能连载 - 清理 PowerShell 模块（第 2 部分）"
 description: PowerTip of the Day - Cleaning Up PowerShell Modules (Part 2)
 categories:

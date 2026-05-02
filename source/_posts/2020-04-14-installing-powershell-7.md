@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-14 00:00:00
+updated: 2020-04-14 00:00:00
 title: "PowerShell 技能连载 - 安装 PowerShell 7"
 description: PowerTip of the Day - Installing PowerShell 7
 categories:

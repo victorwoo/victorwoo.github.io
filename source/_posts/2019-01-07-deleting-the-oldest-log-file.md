@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-07 00:00:00
+updated: 2019-01-07 00:00:00
 title: "PowerShell 技能连载 - 删除日期最早的日志文件"
 description: PowerTip of the Day - Deleting the Oldest Log File
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-05 00:00:00
+updated: 2017-10-05 00:00:00
 title: "PowerShell 技能连载 - 移除 Windows 10 APP"
 description: PowerTip of the Day - Removing Windows 10 Apps
 categories:

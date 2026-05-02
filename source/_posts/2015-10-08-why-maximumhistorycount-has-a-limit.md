@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-10-08 11:00:00
+updated: 2015-10-08 11:00:00
 title: "PowerShell 技能连载 - 为什么 $MaximumHistoryCount 容量有限"
 description: PowerTip of the Day - Why $MaximumHistoryCount has a Limit
 categories:

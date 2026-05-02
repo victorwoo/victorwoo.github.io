@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-25 08:00:00
+updated: 2024-04-25 08:00:00
 title: "PowerShell 技能连载 - 容器安全扫描"
 description: PowerTip of the Day - Container Security Scanning
 categories:

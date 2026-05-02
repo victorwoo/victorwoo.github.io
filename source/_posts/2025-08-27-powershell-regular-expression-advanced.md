@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-27 08:00:00
+updated: 2025-08-27 08:00:00
 title: "PowerShell 技能连载 - 正则表达式高级技巧"
 description: PowerTip of the Day - Advanced Regular Expression Techniques in PowerShell
 categories:

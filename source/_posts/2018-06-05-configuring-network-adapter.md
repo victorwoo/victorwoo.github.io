@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-05 00:00:00
+updated: 2018-06-05 00:00:00
 title: "PowerShell 技能连载 - 配置网络适配器"
 description: PowerTip of the Day - Configuring Network Adapter
 categories:

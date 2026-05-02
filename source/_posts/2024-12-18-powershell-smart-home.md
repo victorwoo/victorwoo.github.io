@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-18 08:00:00
+updated: 2024-12-18 08:00:00
 title: "PowerShell 技能连载 - 智能家居设备管理"
 description: PowerTip of the Day - PowerShell Smart Home Device Management
 categories:

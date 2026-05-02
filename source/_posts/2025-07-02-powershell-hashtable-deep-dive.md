@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-02 08:00:00
+updated: 2025-07-02 08:00:00
 title: "PowerShell 技能连载 - 哈希表与字典深入"
 description: PowerTip of the Day - Hashtable and Dictionary Deep Dive in PowerShell
 categories:

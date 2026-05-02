@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-02-04 00:00:00
+updated: 2021-02-04 00:00:00
 title: "PowerShell 技能连载 - 使用 GitHub Web Service（第 2 部分）"
 description: PowerTip of the Day - Using GitHub Web Services (Part 2)
 categories:

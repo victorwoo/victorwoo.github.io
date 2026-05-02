@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-10-02 11:00:00
+updated: 2015-10-02 11:00:00
 title: "PowerShell 技能连载 - 复制对象"
 description: PowerTip of the Day - Cloning Objects
 categories:

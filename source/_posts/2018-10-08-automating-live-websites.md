@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-08 00:00:00
+updated: 2018-10-08 00:00:00
 title: "PowerShell 技能连载 - 自动化操作网站"
 description: "PowerTip of the Day - Automating “Live” Websites"
 categories:

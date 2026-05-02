@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-24 08:00:00
+updated: 2025-06-24 08:00:00
 title: "PowerShell 技能连载 - 进度反馈与用户体验"
 description: PowerTip of the Day - Progress Feedback and User Experience in PowerShell
 categories:

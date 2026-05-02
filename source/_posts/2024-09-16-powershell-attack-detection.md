@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-16 08:00:00
+updated: 2024-09-16 08:00:00
 title: "PowerShell 技能连载 - 基于ATT&CK框架的进程行为分析"
 description: "实现可疑进程的自动化威胁检测"
 categories:

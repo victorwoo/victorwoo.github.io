@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-06 08:00:00
+updated: 2024-05-06 08:00:00
 title: "PowerShell 技能连载 - CIM/WMI 管理技巧"
 description: PowerTip of the Day - PowerShell CIM/WMI Management Tips
 categories:

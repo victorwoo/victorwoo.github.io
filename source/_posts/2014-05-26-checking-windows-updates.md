@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 检查 Windows 更新"
 date: 2014-05-26 00:00:00
+updated: 2014-05-26 00:00:00
 description: PowerTip of the Day - Checking Windows Updates
 categories:
 - powershell

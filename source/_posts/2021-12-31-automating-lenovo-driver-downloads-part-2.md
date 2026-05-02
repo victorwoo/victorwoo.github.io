@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-12-31 00:00:00
+updated: 2021-12-31 00:00:00
 title: "PowerShell 技能连载 -  自动化下载联想驱动程序（第 2 部分）"
 description: PowerTip of the Day - Automating Lenovo Driver Downloads (Part 2)
 categories:

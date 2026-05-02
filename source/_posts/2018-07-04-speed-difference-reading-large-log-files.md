@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-04 00:00:00
+updated: 2018-07-04 00:00:00
 title: "PowerShell 技能连载 - 速度差别：读取大型日志文件"
 description: 'PowerTip of the Day - Speed Difference: Reading Large Log Files'
 categories:

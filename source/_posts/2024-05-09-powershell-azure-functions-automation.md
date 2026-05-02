@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-09 08:00:00
+updated: 2024-05-09 08:00:00
 title: "PowerShell 技能连载 - Azure Functions自动化管理"
 description: "使用PowerShell实现云端函数服务全生命周期管理"
 categories:

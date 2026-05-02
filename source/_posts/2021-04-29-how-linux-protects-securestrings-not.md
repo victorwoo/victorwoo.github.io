@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-04-29 00:00:00
+updated: 2021-04-29 00:00:00
 title: "PowerShell 技能连载 - Linux 如何保护安全字符串（实际未保护）"
 description: PowerTip of the Day - How Linux protects SecureStrings (Not)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-05 00:00:34
+updated: 2023-05-05 00:00:34
 title: "PowerShell 技能连载 - 列出所有域控制器"
 description: PowerTip of the Day - Listing All Domain Controllers
 categories:

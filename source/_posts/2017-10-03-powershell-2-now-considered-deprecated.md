@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-03 00:00:00
+updated: 2017-10-03 00:00:00
 title: "PowerShell 技能连载 - PowerShell 2 接近过期"
 description: PowerTip of the Day - PowerShell 2 Now Considered Deprecated
 categories:

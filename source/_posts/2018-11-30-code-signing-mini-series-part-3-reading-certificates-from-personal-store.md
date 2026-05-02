@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-30 00:00:00
+updated: 2018-11-30 00:00:00
 title: "PowerShell 技能连载 - 代码签名迷你系列（第 3 部分：从个人存储中读取证书）"
 description: 'PowerTip of the Day - Code-Signing Mini-Series (Part 3: Reading Certificates from Personal Store)'
 categories:

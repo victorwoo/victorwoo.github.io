@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-29 00:00:00
+updated: 2022-03-29 00:00:00
 title: "PowerShell 技能连载 - Update PowerShell’s PSReadLine"
 description: "PowerTip of the Day - Update PowerShell’s PSReadLine"
 categories:

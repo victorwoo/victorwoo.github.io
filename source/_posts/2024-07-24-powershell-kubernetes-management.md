@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-24 08:00:00
+updated: 2024-07-24 08:00:00
 title: "PowerShell 技能连载 - Kubernetes 集群管理"
 description: "使用PowerShell实现跨云Kubernetes资源全生命周期管理"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-07-22 11:00:00
+updated: 2015-07-22 11:00:00
 title: "PowerShell 技能连载 - 查找物理登录的用户"
 description: PowerTip of the Day - Find Physically Logged On User
 categories:

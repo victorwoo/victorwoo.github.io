@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-21 00:00:00
+updated: 2017-12-21 00:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 远程处理"
 description: PowerTip of the Day - Playing with PowerShell Remoting
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 移除选定的 NTFS 权限"
 date: 2014-05-28 00:00:00
+updated: 2014-05-28 00:00:00
 description: PowerTip of the Day - Removing Selected NTFS Permissions
 categories:
 - powershell

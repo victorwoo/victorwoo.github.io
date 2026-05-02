@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-10 08:00:00
+updated: 2025-03-10 08:00:00
 title: "PowerShell 技能连载 - Kubernetes 节点智能编排"
 description: "使用PowerShell实现Kubernetes节点自动化管理"
 categories:

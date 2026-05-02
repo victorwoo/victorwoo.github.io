@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-09 08:00:00
+updated: 2025-05-09 08:00:00
 title: "PowerShell 技能连载 - 网络编程与 REST API"
 description: PowerTip of the Day - Network Programming and REST API in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-11 00:00:00
+updated: 2019-02-11 00:00:00
 title: "PowerShell 技能连载 - 读取新闻订阅"
 description: PowerTip of the Day - Reading News Feeds
 categories:

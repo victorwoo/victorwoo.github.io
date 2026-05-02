@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-06 08:00:00
+updated: 2026-04-06 08:00:00
 title: "PowerShell 技能连载 - 容器编排自动化"
 description: PowerTip of the Day - Container Orchestration Automation in PowerShell
 categories:

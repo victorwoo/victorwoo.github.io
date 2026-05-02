@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-13 00:00:00
+updated: 2021-08-13 00:00:00
 title: "PowerShell 技能连载 - 移除网络驱动器"
 description: PowerTip of the Day - Removing Network Drives
 categories:

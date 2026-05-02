@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-20 00:00:00
+updated: 2019-12-20 00:00:00
 title: "PowerShell 技能连载 - 退出 PowerShell 管道（第 2 部分：手动退出）"
 description: 'PowerTip of the Day - Aborting the PowerShell Pipeline (Part 2: Manual Abort)'
 categories:

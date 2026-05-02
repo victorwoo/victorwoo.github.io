@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-20 00:00:00
+updated: 2018-06-20 00:00:00
 title: "PowerShell 技能连载 - 显示消息框"
 description: PowerTip of the Day - Displaying Message Box
 categories:

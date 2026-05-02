@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-11-17 00:00:00
+updated: 2021-11-17 00:00:00
 title: "PowerShell 技能连载 - 改进 PowerShell ISE 的帮助"
 description: PowerTip of the Day - Better Help in PowerShell ISE
 categories:

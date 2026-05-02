@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-11 00:00:00
+updated: 2020-09-11 00:00:00
 title: "PowerShell 技能连载 - 使用 $Is* 变量"
 description: PowerTip of the Day - Using $Is* Variables
 categories:

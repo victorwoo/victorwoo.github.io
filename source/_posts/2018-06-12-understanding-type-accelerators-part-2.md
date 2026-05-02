@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-12 00:00:00
+updated: 2018-06-12 00:00:00
 title: "PowerShell 技能连载 - 理解类型加速器（第 2 部分）"
 description: PowerTip of the Day - Understanding Type Accelerators (Part 2)
 categories:

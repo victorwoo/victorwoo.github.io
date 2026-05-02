@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-14 08:00:53
+updated: 2023-08-14 08:00:53
 title: "PowerShell 技能连载 - Windows 系统的温度控制"
 description: PowerTip of the Day - Temperature Control for Windows Systems
 categories:

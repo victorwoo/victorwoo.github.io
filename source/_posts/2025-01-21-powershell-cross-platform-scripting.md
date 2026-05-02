@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-21 08:00:00
+updated: 2025-01-21 08:00:00
 title: "PowerShell 技能连载 - 跨平台脚本编写技巧"
 description: PowerTip of the Day - PowerShell Cross-Platform Scripting Tips
 categories:

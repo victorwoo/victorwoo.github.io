@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-08 00:00:00
+updated: 2020-05-08 00:00:00
 title: "PowerShell 技能连载 - 使 PowerShell 模块保持最新"
 description: PowerTip of the Day - Keep PowerShell Modules Up-To-Date
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-26 08:00:00
+updated: 2025-12-26 08:00:00
 title: "PowerShell 技能连载 - Azure Functions 无服务器自动化"
 description: PowerTip of the Day - Azure Functions Serverless Automation in PowerShell
 categories:

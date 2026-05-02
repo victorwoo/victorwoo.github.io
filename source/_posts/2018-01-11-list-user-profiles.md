@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-11 00:00:00
+updated: 2018-01-11 00:00:00
 title: "PowerShell 技能连载 - 列出用户配置文件"
 description: PowerTip of the Day - List User Profiles
 categories:

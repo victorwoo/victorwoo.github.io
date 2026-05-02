@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-19 08:00:00
+updated: 2025-06-19 08:00:00
 title: "PowerShell 技能连载 - 文件系统监控进阶"
 description: PowerTip of the Day - Advanced File System Monitoring in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-28 00:00:00
+updated: 2018-09-28 00:00:00
 title: "PowerShell 技能连载 - 以其他用户身份运行 PowerShell 代码"
 description: PowerTip of the Day - Running PowerShell Code as Someone Else
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-30 00:00:00
+updated: 2019-01-30 00:00:00
 title: "PowerShell 技能连载 - 在文件管理器中隐藏 OneDrive"
 description: PowerTip of the Day - Hide OneDrive from File Explorer
 categories:

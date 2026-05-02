@@ -2,6 +2,7 @@
 layout: post
 title: 如何用 PowerShell 撰写心灵鸡汤
 date: 2015-02-08 22:10:11
+updated: 2015-02-08 22:10:11
 description: "How to Encourage"
 categories: [powershell]
 tags:

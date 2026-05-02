@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-15 00:00:00
+updated: 2018-10-15 00:00:00
 title: "PowerShell 技能连载 - Retrieving Outlook Calendar Entries"
 description: PowerTip of the Day - Retrieving Outlook Calendar Entries
 categories:

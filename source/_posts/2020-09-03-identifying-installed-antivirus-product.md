@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-03 00:00:00
+updated: 2020-09-03 00:00:00
 title: "PowerShell 技能连载 - 检测已安装的防病毒产品"
 description: PowerTip of the Day - Identifying Installed Antivirus Product
 categories:

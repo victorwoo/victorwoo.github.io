@@ -2,6 +2,7 @@
 layout: post
 title: "手动控制 VMware 服务"
 date: 2013-12-13 00:00:00
+updated: 2013-12-13 00:00:00
 description: Manually Control VMware Service
 categories: powershell
 tags:

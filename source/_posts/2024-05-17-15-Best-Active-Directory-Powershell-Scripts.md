@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-17 00:00:00
+updated: 2024-05-17 00:00:00
 title: "PowerShell 技能连载 - 15个最佳的Active Directory Powershell脚本"
 description: "15+ Best Active Directory Powershell Scripts"
 categories:

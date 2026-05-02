@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-08 00:00:00
+updated: 2018-03-08 00:00:00
 title: "PowerShell 技能连载 - 将 Windows 错误 ID 转换为友好的文字"
 description: PowerTip of the Day - Converting a Windows Error ID into Friendly Text
 categories:

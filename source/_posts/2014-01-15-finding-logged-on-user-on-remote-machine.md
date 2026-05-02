@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找远程计算机上已登录的用户"
 date: 2014-01-15 00:00:00
+updated: 2014-01-15 00:00:00
 description: PowerTip of the Day - Finding Logged-On User on Remote Machine
 categories:
 - powershell

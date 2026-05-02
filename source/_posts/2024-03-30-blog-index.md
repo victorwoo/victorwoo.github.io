@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell blog post collection (2023-04 ~ 2024-03)"
 date: 2024-03-30 00:00:00
+updated: 2024-03-30 00:00:00
 description: PowerShell blog post collection (2023-04 ~ 2024-03)
 categories:
 - powershell

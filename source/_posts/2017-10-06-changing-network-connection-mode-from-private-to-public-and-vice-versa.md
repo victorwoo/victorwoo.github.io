@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-06 00:00:00
+updated: 2017-10-06 00:00:00
 title: "PowerShell 技能连载 - 将网络连接模式从私有网络切到公有网络（反之亦然）"
 description: PowerTip of the Day - Changing Network Connection Mode from Private to Public (and vice versa)
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 将 Windows 8.1 中的 CMD.EXE 替换为 POWERSHELL.EXE"
 date: 2013-12-19 00:00:00
+updated: 2013-12-19 00:00:00
 description: PowerTip of the Day - Exchanging CMD.EXE with POWERSHELL.EXE in Windows 8.1
 categories:
 - powershell

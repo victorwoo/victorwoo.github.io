@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-26 08:00:00
+updated: 2025-08-26 08:00:00
 title: "PowerShell 技能连载 - VS Code 工作区自动化"
 description: PowerTip of the Day - VS Code Workspace Automation in PowerShell
 categories:

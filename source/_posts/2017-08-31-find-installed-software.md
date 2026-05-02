@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-31 00:00:00
+updated: 2017-08-31 00:00:00
 title: "PowerShell 技能连载 - 查找安装的软件"
 description: PowerTip of the Day - Find Installed Software
 categories:

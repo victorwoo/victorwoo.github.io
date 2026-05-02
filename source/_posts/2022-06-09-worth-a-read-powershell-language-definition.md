@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-06-09 00:00:00
+updated: 2022-06-09 00:00:00
 title: "PowerShell 技能连载 - 值得一读：PowerShell 语言规范"
 description: 'PowerTip of the Day - Worth a Read: PowerShell Language Definition'
 categories:

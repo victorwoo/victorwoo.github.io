@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-04 00:00:00
+updated: 2019-02-04 00:00:00
 title: "PowerShell 技能连载 - 计算一个月的第一天和最后一天"
 description: PowerTip of the Day - Calculating First and Last Day of Month
 categories:

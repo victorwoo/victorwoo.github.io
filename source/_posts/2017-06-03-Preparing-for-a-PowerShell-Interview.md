@@ -2,6 +2,7 @@
 title: 准备一场 PowerShell 技术面试
 description: Preparing for a PowerShell Interview
 date: 2017-06-03 13:39:25
+updated: 2017-06-03 13:39:25
 tags: [powershell]
 categories: [powershell]
 ---

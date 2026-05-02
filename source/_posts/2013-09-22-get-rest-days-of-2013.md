@@ -2,6 +2,7 @@
 layout: post
 title: "获取2013年剩余天数"
 date: 2013-09-22 00:00:00
+updated: 2013-09-22 00:00:00
 description: Get rest days of 2013
 categories: powershell
 tags:

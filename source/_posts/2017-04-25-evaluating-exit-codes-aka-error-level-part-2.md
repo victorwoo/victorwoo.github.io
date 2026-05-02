@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-25 00:00:00
+updated: 2017-04-25 00:00:00
 title: "PowerShell 技能连载 - 评估 Exit Code（也叫做 Error Level – 第二部分）"
 description: "PowerTip of the Day - Evaluating Exit Codes (aka Error Level – Part 2)"
 categories:

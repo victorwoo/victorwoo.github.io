@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-05 00:00:00
+updated: 2017-05-05 00:00:00
 title: "PowerShell 技能连载 - 批量打印 Word 文档"
 description: PowerTip of the Day - Bulk Printing Word Documents
 categories:

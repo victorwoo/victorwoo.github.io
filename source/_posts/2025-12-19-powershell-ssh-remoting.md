@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-19 08:00:00
+updated: 2025-12-19 08:00:00
 title: "PowerShell 技能连载 - SSH 远程管理"
 description: "PowerTip of the Day - SSH Remoting in PowerShell"
 categories:

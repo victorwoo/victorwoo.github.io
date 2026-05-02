@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-03 00:00:00
+updated: 2020-07-03 00:00:00
 title: "PowerShell 技能连载 - 识别 Windows 类型"
 description: PowerTip of the Day - Identifying Windows Type
 categories:

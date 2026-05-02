@@ -2,6 +2,7 @@
 layout: post
 title: "AngularJS 最佳实践"
 date: 2015-01-21 09:44:06
+updated: 2015-01-21 09:44:06
 description: "AngularJS Best Practices"
 categories:
 - angularjs

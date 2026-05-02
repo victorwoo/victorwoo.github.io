@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-26 00:00:00
+updated: 2020-11-26 00:00:00
 title: "PowerShell 技能连载 - 禁止错误提示"
 description: PowerTip of the Day - Suppressing Errors
 categories:

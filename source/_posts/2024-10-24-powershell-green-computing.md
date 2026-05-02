@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-24 08:00:00
+updated: 2024-10-24 08:00:00
 title: "PowerShell 技能连载 - 绿色计算环境管理"
 description: PowerTip of the Day - PowerShell Green Computing Environment Management
 categories:

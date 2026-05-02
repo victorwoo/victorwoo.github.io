@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-03-24 00:00:00
+updated: 2021-03-24 00:00:00
 title: "PowerShell 技能连载 - 研究 PowerShell 控制台输出"
 description: PowerTip of the Day - Investigating PowerShell Console Output
 categories:

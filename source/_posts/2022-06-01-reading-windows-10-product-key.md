@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-06-01 00:00:00
+updated: 2022-06-01 00:00:00
 title: "PowerShell 技能连载 - 读取 Windows 10 产品序列号"
 description: PowerTip of the Day - Reading Windows 10 Product Key
 categories:

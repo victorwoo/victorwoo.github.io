@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-22 00:00:00
+updated: 2018-01-22 00:00:00
 title: "PowerShell 技能连载 - 快速创建逗号分隔的字符串（第 2 部分）"
 description: PowerTip of the Day - Efficiently Produce Comma-Separated Strings (Part 2)
 categories:

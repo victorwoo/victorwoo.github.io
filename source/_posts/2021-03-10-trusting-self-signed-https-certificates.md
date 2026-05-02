@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-03-10 00:00:00
+updated: 2021-03-10 00:00:00
 title: "PowerShell 技能连载 - 信任自签名的 HTTPS 证书"
 description: PowerTip of the Day - Trusting Self-Signed HTTPS Certificates
 categories:

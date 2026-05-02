@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-10-23 00:00:00
+updated: 2020-10-23 00:00:00
 title: "PowerShell 技能连载 - 试用新的 SSH 远程操作"
 description: PowerTip of the Day - Test-Driving New SSH Remoting
 categories:

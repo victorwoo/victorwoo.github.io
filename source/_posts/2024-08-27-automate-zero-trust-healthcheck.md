@@ -2,6 +2,7 @@
 layout: post
 title: "自动化零信任设备健康检查"
 date: 2024-08-27 00:00:00
+updated: 2024-08-27 00:00:00
 description: 使用PowerShell实现零信任架构下的终端设备合规性验证
 categories:
 - powershell

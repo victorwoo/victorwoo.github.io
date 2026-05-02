@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-17 00:00:00
+updated: 2018-05-17 00:00:00
 title: "PowerShell 技能连载 - PowerShell 中打印表格（使用 WPF）"
 description: PowerTip of the Day - Printing Tables from PowerShell (using WPF)
 categories:

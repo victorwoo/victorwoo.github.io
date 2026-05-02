@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-06 00:00:00
+updated: 2018-12-06 00:00:00
 title: "PowerShell 技能连载 - 为代码执行添加超时（第 2 部分）"
 description: PowerTip of the Day - Executing Code with a Timeout (Part 2)
 categories:

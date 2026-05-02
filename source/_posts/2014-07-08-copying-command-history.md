@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 复制命令行历史记录"
 date: 2014-07-08 00:00:00
+updated: 2014-07-08 00:00:00
 description: PowerTip of the Day - Copying Command History
 categories:
 - powershell

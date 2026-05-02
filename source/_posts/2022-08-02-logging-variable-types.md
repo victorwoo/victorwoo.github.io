@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-08-02 00:00:00
+updated: 2022-08-02 00:00:00
 title: "PowerShell 技能连载 - 记录变量类型"
 description: PowerTip of the Day - Logging Variable Types
 categories:

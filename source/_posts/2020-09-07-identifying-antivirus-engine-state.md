@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-07 00:00:00
+updated: 2020-09-07 00:00:00
 title: "PowerShell 技能连载 - 检测防病毒引擎状态"
 description: PowerTip of the Day - Identifying Antivirus Engine State
 categories:

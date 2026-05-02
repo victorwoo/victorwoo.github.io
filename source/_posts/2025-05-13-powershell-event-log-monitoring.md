@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-13 08:00:00
+updated: 2025-05-13 08:00:00
 title: "PowerShell 技能连载 - 事件日志与系统监控"
 description: PowerTip of the Day - Event Logs and System Monitoring in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-18 08:00:00
+updated: 2025-04-18 08:00:00
 title: "PowerShell 技能连载 - 哈希表与 PSCustomObject 深度解析"
 description: PowerTip of the Day - Deep Dive into Hashtable and PSCustomObject
 categories:

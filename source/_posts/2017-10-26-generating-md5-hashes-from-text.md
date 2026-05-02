@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-26 00:00:00
+updated: 2017-10-26 00:00:00
 title: "PowerShell 技能连载 - 从文本生成 MD5 哈希"
 description: PowerTip of the Day - Generating MD5 Hashes from Text
 categories:

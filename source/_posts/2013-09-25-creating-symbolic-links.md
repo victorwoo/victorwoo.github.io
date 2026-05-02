@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 创建符号链接"
 date: 2013-09-25 00:00:00
+updated: 2013-09-25 00:00:00
 description: PowerTip of the Day - Creating Symbolic Links
 categories:
 - powershell

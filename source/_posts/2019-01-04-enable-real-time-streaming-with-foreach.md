@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-04 00:00:00
+updated: 2019-01-04 00:00:00
 title: "PowerShell 技能连载 - 用 ForEach 实现实时流"
 description: PowerTip of the Day - Enable Real-Time Streaming with Foreach
 categories:

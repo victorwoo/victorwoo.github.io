@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-10 00:00:00
+updated: 2018-01-10 00:00:00
 title: "PowerShell 技能连载 - 理解和避免双跃点问题"
 description: PowerTip of the Day - Understanding and Avoiding Double-Hop
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-25 08:00:00
+updated: 2025-06-25 08:00:00
 title: "PowerShell 技能连载 - 剪贴板与 GUI 互操作"
 description: PowerTip of the Day - Clipboard and GUI Interop in PowerShell
 categories:

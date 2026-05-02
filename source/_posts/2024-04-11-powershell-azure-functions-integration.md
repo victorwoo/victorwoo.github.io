@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-11 08:00:00
+updated: 2024-04-11 08:00:00
 title: "PowerShell 技能连载 - Azure Functions 集成"
 description: PowerTip of the Day - PowerShell Azure Functions Integration
 categories:

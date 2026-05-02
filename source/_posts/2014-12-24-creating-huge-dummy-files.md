@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-12-24 12:00:00
+updated: 2014-12-24 12:00:00
 title: "PowerShell 技能连载 - 创建一大堆测试文件"
 description: PowerTip of the Day - Creating Huge Dummy Files
 categories:

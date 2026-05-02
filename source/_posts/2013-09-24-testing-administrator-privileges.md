@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 检查管理员权限"
 date: 2013-09-24 00:00:00
+updated: 2013-09-24 00:00:00
 description: PowerTip of the Day - Testing Administrator Privileges
 categories:
 - powershell

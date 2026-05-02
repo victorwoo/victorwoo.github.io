@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-22 00:00:00
+updated: 2018-11-22 00:00:00
 title: "PowerShell 技能连载 - 创建写保护的函数"
 description: PowerTip of the Day - Creating Write-Protected Functions
 categories:

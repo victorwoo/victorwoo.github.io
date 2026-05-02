@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-09 00:00:00
+updated: 2024-09-09 00:00:00
 title: "PowerShell 技能连载 - PowerShell 过滤器：使用 Where-Object 和 Select-Object"
 description: "Powershell filter: Using where-object and select-object"
 categories:

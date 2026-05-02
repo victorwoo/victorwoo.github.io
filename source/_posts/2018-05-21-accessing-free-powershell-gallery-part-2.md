@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-21 00:00:00
+updated: 2018-05-21 00:00:00
 title: "PowerShell 技能连载 - 使用免费的 PowerShell 陈列架（第 2 部分）"
 description: PowerTip of the Day - Accessing Free PowerShell Gallery (Part 2)
 categories:

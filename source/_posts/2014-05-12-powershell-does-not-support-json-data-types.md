@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - PowerShell 不支持 JSON 数据类型"
 date: 2014-05-12 00:00:00
+updated: 2014-05-12 00:00:00
 description: PowerTip of the Day - PowerShell does not support JSON Data Types
 categories:
 - powershell

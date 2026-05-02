@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-10-13 00:00:00
+updated: 2020-10-13 00:00:00
 title: "PowerShell 技能连载 - 识别 PowerShell 宿主和路径"
 description: PowerTip of the Day - Identifying PowerShell Host and Path
 categories:

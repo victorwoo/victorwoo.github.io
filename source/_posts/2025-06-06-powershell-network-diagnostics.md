@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-06 08:00:00
+updated: 2025-06-06 08:00:00
 title: "PowerShell 技能连载 - 网络诊断与排查"
 description: PowerTip of the Day - Network Diagnostics and Troubleshooting in PowerShell
 categories:

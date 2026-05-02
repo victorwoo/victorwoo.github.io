@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-10 08:00:00
+updated: 2025-01-10 08:00:00
 title: "PowerShell 技能连载 - 容器化脚本自动化管理"
 description: "实现Docker镜像构建与部署的全流程自动化"
 categories:

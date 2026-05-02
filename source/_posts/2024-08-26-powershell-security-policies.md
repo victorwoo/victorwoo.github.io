@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-26 08:00:00
+updated: 2024-08-26 08:00:00
 title: "PowerShell 技能连载 - 安全策略配置指南"
 description: "掌握PowerShell执行策略与安全防护的核心配置"
 categories:

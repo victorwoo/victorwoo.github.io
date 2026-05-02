@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-27 08:00:00
+updated: 2026-04-27 08:00:00
 title: "PowerShell 技能连载 - Microsoft Graph API 高级操作"
 description: PowerTip of the Day - Advanced Microsoft Graph API Operations in PowerShell
 categories:

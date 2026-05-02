@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-18 08:00:00
+updated: 2024-11-18 08:00:00
 title: "PowerShell 技能连载 - AWS EC2 集成"
 description: PowerTip of the Day - PowerShell AWS EC2 Integration
 categories:

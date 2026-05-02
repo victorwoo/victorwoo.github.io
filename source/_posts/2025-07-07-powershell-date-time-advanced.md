@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-07 08:00:00
+updated: 2025-07-07 08:00:00
 title: "PowerShell 技能连载 - 日期时间高级操作"
 description: PowerTip of the Day - Advanced Date and Time Operations in PowerShell
 categories:

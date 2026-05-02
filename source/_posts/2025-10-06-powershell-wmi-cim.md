@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-06 08:00:00
+updated: 2025-10-06 08:00:00
 title: "PowerShell 技能连载 - WMI 与 CIM 查询"
 description: PowerTip of the Day - WMI and CIM Queries in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-25 08:00:00
+updated: 2024-07-25 08:00:00
 title: "PowerShell错误处理核心机制"
 description: "掌握异常捕获与调试的核心技巧"
 categories:

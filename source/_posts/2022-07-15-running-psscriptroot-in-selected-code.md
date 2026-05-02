@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-15 00:00:00
+updated: 2022-07-15 00:00:00
 title: "PowerShell 技能连载 - 在选中的代码中运行 $PSScriptRoot"
 description: PowerTip of the Day - Running $PSScriptRoot in Selected Code
 categories:

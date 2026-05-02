@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-11 08:00:00
+updated: 2025-04-11 08:00:00
 title: "PowerShell 技能连载 - 远程管理"
 description: PowerTip of the Day - PowerShell Remoting
 categories:

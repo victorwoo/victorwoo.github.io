@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-18 00:00:00
+updated: 2019-05-18 00:00:00
 title: "PowerShell 技能连载 - 以固定宽度分割文本"
 description: PowerTip of the Day - Splitting Texts by Fixed Width
 categories:

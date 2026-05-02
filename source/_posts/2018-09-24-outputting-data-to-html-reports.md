@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-24 00:00:00
+updated: 2018-09-24 00:00:00
 title: "PowerShell 技能连载 - 将数据输出为 HTML 报告"
 description: PowerTip of the Day - Outputting Data to HTML Reports
 categories:

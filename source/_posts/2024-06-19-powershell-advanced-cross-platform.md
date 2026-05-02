@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-19 08:00:00
+updated: 2024-06-19 08:00:00
 title: "PowerShell 技能连载 - 高级跨平台功能实现"
 description: PowerTip of the Day - PowerShell Advanced Cross-Platform Features
 categories:

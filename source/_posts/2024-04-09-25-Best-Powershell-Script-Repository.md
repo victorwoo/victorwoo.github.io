@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-09 00:00:00
+updated: 2024-04-09 00:00:00
 title: "PowerShell 技能连载 - 25个最佳的Powershell脚本仓库"
 description: "25+ Best Powershell Script Repository"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-21 00:00:00
+updated: 2018-06-21 00:00:00
 title: "PowerShell 技能连载 - 添加前导零"
 description: PowerTip of the Day - Adding Leading Zeroes
 categories:

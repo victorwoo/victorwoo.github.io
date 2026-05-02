@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 快速查找 Active Directory 用户账户"
 date: 2013-10-25 00:00:00
+updated: 2013-10-25 00:00:00
 description: PowerTip of the Day - Finding Active Directory User Accounts Fast
 categories:
 - powershell

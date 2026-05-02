@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-05-30 00:00:00
+updated: 2022-05-30 00:00:00
 title: "PowerShell 技能连载 - 为 PowerShell 创建 sudo（第 2 部分）"
 description: PowerTip of the Day - Creating sudo for PowerShell (Part 2)
 categories:

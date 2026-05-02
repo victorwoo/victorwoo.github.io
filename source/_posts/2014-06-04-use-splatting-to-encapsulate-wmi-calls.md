@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 用 Splatting 技术封装 WMI 调用"
 date: 2014-06-04 00:00:00
+updated: 2014-06-04 00:00:00
 description: PowerTip of the Day - Use Splatting to Encapsulate WMI Calls
 categories:
 - powershell

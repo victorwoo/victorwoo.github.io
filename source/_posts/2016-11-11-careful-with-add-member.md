@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-11-11 00:00:00
+updated: 2016-11-11 00:00:00
 title: "PowerShell 技能连载 - 使用 Add-Member 时请注意！"
 description: PowerTip of the Day - Careful with Add-Member!
 categories:

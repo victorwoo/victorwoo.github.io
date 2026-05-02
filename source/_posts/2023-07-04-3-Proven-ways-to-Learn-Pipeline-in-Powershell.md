@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-04 00:00:00
+updated: 2023-07-04 00:00:00
 title: "PowerShell 技能连载 - 学习在Powershell中使用管道的3种有效方法"
 description: "3 Proven ways to Learn Pipeline in Powershell"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-25 00:00:00
+updated: 2017-05-25 00:00:00
 title: "PowerShell 技能连载 - 搜索 AD 用户"
 description: PowerTip of the Day - Searching for ADUsers
 categories:

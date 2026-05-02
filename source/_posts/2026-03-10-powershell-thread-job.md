@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-10 08:00:00
+updated: 2026-03-10 08:00:00
 title: "PowerShell 技能连载 - 后台任务与并发执行"
 description: PowerTip of the Day - Background Jobs and Concurrent Execution in PowerShell
 categories:

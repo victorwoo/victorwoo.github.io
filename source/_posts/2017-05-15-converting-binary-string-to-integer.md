@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-15 00:00:00
+updated: 2017-05-15 00:00:00
 title: "PowerShell 技能连载 - 将二进制字符串转为整形"
 description: PowerTip of the Day - Converting Binary String to Integer
 categories:

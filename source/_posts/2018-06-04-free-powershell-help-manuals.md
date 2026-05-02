@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-04 00:00:00
+updated: 2018-06-04 00:00:00
 title: "PowerShell 技能连载 - 免费的 PowerShell 帮助手册"
 description: PowerTip of the Day - Free PowerShell Help Manuals
 categories:

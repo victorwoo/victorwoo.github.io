@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-31 00:00:00
+updated: 2019-07-31 00:00:00
 title: "PowerShell 技能连载 - 控制处理器关联性"
 description: PowerTip of the Day - Controlling Processor Affinity
 categories:

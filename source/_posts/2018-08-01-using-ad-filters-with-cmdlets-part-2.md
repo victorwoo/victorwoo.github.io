@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-01 00:00:00
+updated: 2018-08-01 00:00:00
 title: "PowerShell 技能连载 - 使用 AD 过滤器配合 cmdlet（第 2 部分）"
 description: PowerTip of the Day - Using AD Filters with Cmdlets (Part 2)
 categories:

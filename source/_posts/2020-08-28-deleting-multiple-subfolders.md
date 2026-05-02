@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-08-28 00:00:00
+updated: 2020-08-28 00:00:00
 title: "PowerShell 技能连载 - 删除多个子文件夹"
 description: PowerTip of the Day - Deleting Multiple Subfolders
 categories:

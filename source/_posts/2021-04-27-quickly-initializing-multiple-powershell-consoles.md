@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-04-27 00:00:00
+updated: 2021-04-27 00:00:00
 title: "PowerShell 技能连载 - 快速初始化多个PowerShell控制台"
 description: PowerTip of the Day - Quickly Initializing Multiple PowerShell Consoles
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-10-01 11:00:00
+updated: 2014-10-01 11:00:00
 title: "PowerShell 技能连载 - 获取 MAC 地址"
 description: PowerTip of the Day - Getting MAC Addresses
 categories:

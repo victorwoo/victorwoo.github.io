@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-12 00:00:00
+updated: 2017-04-12 00:00:00
 title: "PowerShell 技能连载 - 直接导入证书（第二部分）"
 description: PowerTip of the Day - Directly Importing Certificates (Part 2)
 categories:

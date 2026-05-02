@@ -2,6 +2,7 @@
 layout: post
 title: "git 学习路线"
 date: 2015-03-25 15:54:00
+updated: 2015-03-25 15:54:00
 description: "Guideline to Learn git"
 categories: git
 tags:

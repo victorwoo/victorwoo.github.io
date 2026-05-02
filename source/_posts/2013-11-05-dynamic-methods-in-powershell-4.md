@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - PowerShell 4.0 中的动态方法"
 date: 2013-11-05 00:00:00
+updated: 2013-11-05 00:00:00
 description: PowerTip of the Day - Dynamic Methods in PowerShell 4
 categories:
 - powershell

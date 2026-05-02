@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-06 00:00:00
+updated: 2018-02-06 00:00:00
 title: "PowerShell 技能连载 - 简易的 WMI 浏览器"
 description: PowerTip of the Day - Simple WMI Browser
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-06 00:00:00
+updated: 2019-08-06 00:00:00
 title: "PowerShell 技能连载 - 接受屏蔽的密码"
 description: PowerTip of the Day - Accepting Masked Passwords
 categories:

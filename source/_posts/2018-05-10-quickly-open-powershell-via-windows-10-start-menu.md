@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-10 00:00:00
+updated: 2018-05-10 00:00:00
 title: "PowerShell 技能连载 - 通过 Windows 10 开始菜单快速打开 PowerShell"
 description: PowerTip of the Day - Quickly Open PowerShell via Windows 10 Start Menu
 categories:

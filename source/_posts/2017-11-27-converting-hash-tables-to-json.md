@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-27 00:00:00
+updated: 2017-11-27 00:00:00
 title: "PowerShell 技能连载 - 将哈希表转换为 JSON"
 description: PowerTip of the Day - Converting Hash Tables to JSON
 categories:

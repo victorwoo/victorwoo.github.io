@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-25 08:00:18
+updated: 2023-07-25 08:00:18
 title: "PowerShell 技能连载 - 自动化控制面板"
 description: PowerTip of the Day - Automating Control Panels
 categories:

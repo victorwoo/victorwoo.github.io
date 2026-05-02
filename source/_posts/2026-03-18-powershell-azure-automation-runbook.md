@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-18 08:00:00
+updated: 2026-03-18 08:00:00
 title: "PowerShell 技能连载 - Azure Automation Runbook"
 description: PowerTip of the Day - Azure Automation Runbook in PowerShell
 categories:

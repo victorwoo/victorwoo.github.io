@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-10 00:00:00
+updated: 2017-11-10 00:00:00
 title: "PowerShell 技能连载 - 从字符串中移除文本"
 description: PowerTip of the Day - Removing Text from Strings
 categories:

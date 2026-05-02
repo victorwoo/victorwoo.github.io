@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-07 00:00:00
+updated: 2018-02-07 00:00:00
 title: "PowerShell 技能连载 - 用管道传递文件和文件夹"
 description: PowerTip of the Day - Piping Files and Folders
 categories:

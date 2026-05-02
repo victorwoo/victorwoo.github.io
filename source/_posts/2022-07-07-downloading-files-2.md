@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-07 00:00:00
+updated: 2022-07-07 00:00:00
 title: "PowerShell 技能连载 - 下载文件"
 description: PowerTip of the Day - Downloading Files
 categories:

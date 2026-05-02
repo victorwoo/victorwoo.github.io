@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 处理文件系统路径(第2部分)"
 date: 2013-09-05 00:00:00
+updated: 2013-09-05 00:00:00
 description: PowerTip of the Day - Manipulating File System Paths (Part 2)
 categories:
 - powershell

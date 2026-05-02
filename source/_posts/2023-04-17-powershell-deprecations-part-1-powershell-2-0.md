@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-04-17 00:00:16
+updated: 2023-04-17 00:00:16
 title: "PowerShell 技能连载 - PowerShell 废弃功能 (第 1 部分：PowerShell 2.0)"
 description: 'PowerTip of the Day - PowerShell Deprecations (Part 1: PowerShell 2.0)'
 categories:

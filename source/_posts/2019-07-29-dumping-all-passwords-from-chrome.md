@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-29 00:00:00
+updated: 2019-07-29 00:00:00
 title: "PowerShell 技能连载 - 转储 Chrome 的所有密码"
 description: PowerTip of the Day - Dumping All Passwords from Chrome
 categories:

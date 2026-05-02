@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-10 00:00:00
+updated: 2023-08-10 00:00:00
 title: "PowerShell 技能连载 - 10个每个人都应该知道的有用PowerShell命令"
 description: "10 Useful Powershell commands that everyone should know"
 categories:

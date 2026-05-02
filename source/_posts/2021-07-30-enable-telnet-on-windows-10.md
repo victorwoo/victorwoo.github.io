@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-07-30 00:00:00
+updated: 2021-07-30 00:00:00
 title: "PowerShell 技能连载 - 在 Windows 10 上启用 Telnet"
 description: PowerTip of the Day - Enable Telnet on Windows 10
 categories:

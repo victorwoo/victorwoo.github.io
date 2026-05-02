@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-13 08:00:00
+updated: 2025-02-13 08:00:00
 title: "PowerShell 技能连载 - Azure多云成本优化实践"
 description: "自动化分析跨订阅资源消耗与优化建议"
 categories:

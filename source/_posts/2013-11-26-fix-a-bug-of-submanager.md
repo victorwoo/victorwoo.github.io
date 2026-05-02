@@ -2,6 +2,7 @@
 layout: post
 title: "修正 SubManager 的一个 bug"
 date: 2013-11-26 00:00:00
+updated: 2013-11-26 00:00:00
 description: Fix A Bug of SubManager
 categories: powershell
 tags: .net

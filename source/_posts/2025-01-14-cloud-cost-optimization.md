@@ -2,6 +2,7 @@
 layout: post
 title: "多云环境成本优化自动化实践"
 date: 2025-01-14 00:00:00
+updated: 2025-01-14 00:00:00
 description: 使用PowerShell实现Azure和AWS云资源成本监控与优化
 categories:
 - powershell

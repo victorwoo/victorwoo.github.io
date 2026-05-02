@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-27 08:00:00
+updated: 2025-11-27 08:00:00
 title: "PowerShell 技能连载 - ARM 模板部署"
 description: PowerTip of the Day - ARM Template Deployment in PowerShell
 categories:

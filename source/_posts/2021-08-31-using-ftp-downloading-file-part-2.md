@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-08-31 00:00:00
+updated: 2021-08-31 00:00:00
 title: "PowerShell 技能连载 - 使用 FTP：下载文件（第 2 部分）"
 description: 'PowerTip of the Day - Using FTP: Downloading File (Part 2)'
 categories:

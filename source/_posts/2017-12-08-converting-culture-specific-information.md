@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-08 00:00:00
+updated: 2017-12-08 00:00:00
 title: "PowerShell 技能连载 - 转换区域性特定的信息"
 description: PowerTip of the Day - Converting Culture-Specific Information
 categories:

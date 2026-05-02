@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-28 08:00:00
+updated: 2026-04-28 08:00:00
 title: "PowerShell 技能连载 - 配置即代码实践"
 description: PowerTip of the Day - Configuration as Code Practices in PowerShell
 categories:

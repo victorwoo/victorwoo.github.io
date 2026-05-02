@@ -2,6 +2,7 @@
 layout: post
 title: "快速生成树形结构的纯文本"
 date: 2013-11-14 00:00:00
+updated: 2013-11-14 00:00:00
 description: Generate Plain Text Tree Structure
 categories: text
 tags:

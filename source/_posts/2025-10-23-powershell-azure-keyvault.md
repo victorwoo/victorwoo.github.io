@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-23 08:00:00
+updated: 2025-10-23 08:00:00
 title: "PowerShell 技能连载 - Azure Key Vault 密钥管理"
 description: PowerTip of the Day - Azure Key Vault Secret Management in PowerShell
 categories:

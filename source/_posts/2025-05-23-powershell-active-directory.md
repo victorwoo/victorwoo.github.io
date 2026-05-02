@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-23 08:00:00
+updated: 2025-05-23 08:00:00
 title: "PowerShell 技能连载 - Active Directory 管理"
 description: PowerTip of the Day - Active Directory Management in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-26 00:00:00
+updated: 2018-02-26 00:00:00
 title: "PowerShell 技能连载 - Select-Object 和 -ExcludeProperty"
 description: PowerTip of the Day - Select-Object and -ExcludeProperty
 categories:

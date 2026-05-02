@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-13 00:00:00
+updated: 2022-07-13 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 中粘贴多行"
 description: PowerTip of the Day - Pasting Multiple Lines in PowerShell
 categories:

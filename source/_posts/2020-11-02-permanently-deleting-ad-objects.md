@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-02 00:00:00
+updated: 2020-11-02 00:00:00
 title: "PowerShell 技能连载 - 彻底删除 AD 对象"
 description: PowerTip of the Day - Permanently Deleting AD Objects
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-29 00:00:00
+updated: 2019-03-29 00:00:00
 title: "PowerShell 技能连载 - 修复 PowerShell 上下文菜单"
 description: PowerTip of the Day - Repairing PowerShell Context Menus
 categories:

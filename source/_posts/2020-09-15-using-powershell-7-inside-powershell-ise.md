@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-15 00:00:00
+updated: 2020-09-15 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell ISE 中使用 PowerShell 7"
 description: PowerTip of the Day - Using PowerShell 7 inside PowerShell ISE
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-14 00:00:00
+updated: 2018-08-14 00:00:00
 title: "PowerShell 技能连载 - 管理 Windows 功能（第 1 部分）"
 description: PowerTip of the Day - Managing Windows Features (Part 1)
 categories:

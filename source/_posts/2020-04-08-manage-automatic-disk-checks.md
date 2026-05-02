@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-08 00:00:00
+updated: 2020-04-08 00:00:00
 title: "PowerShell 技能连载 - 管理自动磁盘检测"
 description: PowerTip of the Day - Manage Automatic Disk Checks
 categories:

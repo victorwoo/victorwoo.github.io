@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-06 08:00:00
+updated: 2024-08-06 08:00:00
 title: "PowerShell 技能连载 - 混合云基础设施即代码实践"
 description: "集成DSC与Terraform实现跨云平台配置管理"
 categories:

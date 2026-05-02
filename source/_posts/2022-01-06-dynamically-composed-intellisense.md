@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-01-06 00:00:00
+updated: 2022-01-06 00:00:00
 title: "PowerShell 技能连载 - 动态生成 IntelliSense."
 description: PowerTip of the Day - Dynamically Composed IntelliSense
 categories:

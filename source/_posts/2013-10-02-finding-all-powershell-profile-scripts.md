@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找所有用户脚本"
 date: 2013-10-02 00:00:00
+updated: 2013-10-02 00:00:00
 description: PowerTip of the Day - Finding All PowerShell Profile Scripts
 categories:
 - powershell

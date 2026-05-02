@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-02 08:00:00
+updated: 2026-01-02 08:00:00
 title: "PowerShell 技能连载 - 新年自动化脚本"
 description: PowerTip of the Day - New Year Automation Scripts in PowerShell
 categories:

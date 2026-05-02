@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-09-08 00:00:00
+updated: 2016-09-08 00:00:00
 title: "PowerShell 技能连载 - 查看 ASCII 码"
 description: PowerTip of the Day - Finding ASCII Codes
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-29 08:00:00
+updated: 2025-07-29 08:00:00
 title: "PowerShell 技能连载 - 模板引擎与代码生成"
 description: PowerTip of the Day - Template Engine and Code Generation in PowerShell
 categories:

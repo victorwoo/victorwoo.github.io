@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-05-27 00:00:00
+updated: 2021-05-27 00:00:00
 title: "PowerShell 技能连载 - 解析原始数据和日志文件（第 1 部分）"
 description: PowerTip of the Day - Parsing Raw Data and Log Files (Part 1)
 categories:

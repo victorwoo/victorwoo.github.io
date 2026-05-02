@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-07 00:00:00
+updated: 2019-05-07 00:00:00
 title: "PowerShell 技能连载 - 使用目录文件来维护文件夹完整性"
 description: PowerTip of the Day - Using Catalog Files to Maintain Folder Integrity
 categories:

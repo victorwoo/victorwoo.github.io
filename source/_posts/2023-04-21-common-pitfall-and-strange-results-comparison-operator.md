@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-04-21 00:00:12
+updated: 2023-04-21 00:00:12
 title: "PowerShell 技能连载 - 常见陷阱和奇怪结果：比较运算符"
 description: 'PowerTip of the Day - Common Pitfall and Strange Results: Comparison Operator'
 categories:

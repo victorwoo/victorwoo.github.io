@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-22 08:00:00
+updated: 2026-01-22 08:00:00
 title: "PowerShell 技能连载 - Crescendo 命令包装框架"
 description: PowerTip of the Day - Crescendo Command Wrapping Framework in PowerShell
 categories:

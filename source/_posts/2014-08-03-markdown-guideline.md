@@ -2,6 +2,7 @@
 layout: post
 title: markdown 学习路线
 date: 2014-08-03 16:14:02
+updated: 2014-08-03 16:14:02
 description: markdown guideline
 categories: markdown
 tags:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 启用 PowerShell 远程管理"
 date: 2014-04-01 00:00:00
+updated: 2014-04-01 00:00:00
 description: PowerTip of the Day - Enabling PowerShell Remoting
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-13 00:00:00
+updated: 2018-06-13 00:00:00
 title: "PowerShell 技能连载 - 巧妙地读取事件日志（第 1 部分）"
 description: PowerTip of the Day - Reading Event Logs Smart (Part 1)
 categories:

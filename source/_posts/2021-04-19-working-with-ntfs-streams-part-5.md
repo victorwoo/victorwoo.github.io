@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-04-19 00:00:00
+updated: 2021-04-19 00:00:00
 title: "PowerShell 技能连载 - 使用 NTFS 流（第 5 部分）"
 description: PowerTip of the Day - Working with NTFS Streams (Part 5)
 categories:

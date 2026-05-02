@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-12-12 12:00:00
+updated: 2014-12-12 12:00:00
 title: "PowerShell 技能连载 - 获取系统启动时间"
 description: PowerTip of the Day - Getting System Uptime
 categories:

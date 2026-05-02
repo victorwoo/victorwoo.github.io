@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-21 08:00:00
+updated: 2025-05-21 08:00:00
 title: "PowerShell 技能连载 - 日志分析与解析"
 description: PowerTip of the Day - Log Analysis and Parsing in PowerShell
 categories:

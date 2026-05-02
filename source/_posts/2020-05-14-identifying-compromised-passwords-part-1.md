@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-14 00:00:00
+updated: 2020-05-14 00:00:00
 title: "PowerShell 技能连载 - 检测泄露的密码（第 1 部分）"
 description: PowerTip of the Day - Identifying Compromised Passwords (Part 1)
 categories:

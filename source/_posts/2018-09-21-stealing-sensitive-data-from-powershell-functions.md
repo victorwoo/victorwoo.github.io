@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-21 00:00:00
+updated: 2018-09-21 00:00:00
 title: "PowerShell 技能连载 - 从 PowerShell 函数中窃取敏感数据"
 description: PowerTip of the Day - Stealing Sensitive Data from PowerShell Functions
 categories:

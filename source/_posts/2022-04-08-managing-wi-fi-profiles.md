@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-04-08 00:00:00
+updated: 2022-04-08 00:00:00
 title: "PowerShell 技能连载 - 管理 Wi-Fi 配置文件"
 description: PowerTip of the Day - Managing Wi-Fi Profiles
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-30 08:00:00
+updated: 2025-06-30 08:00:00
 title: "PowerShell 技能连载 - 安全编码实践"
 description: PowerTip of the Day - Secure Coding Practices in PowerShell
 categories:

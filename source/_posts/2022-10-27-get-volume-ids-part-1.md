@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-10-27 00:00:00
+updated: 2022-10-27 00:00:00
 title: "PowerShell 技能连载 - 获取卷 ID（第 1 部分）"
 description: PowerTip of the Day - Get Volume IDs (Part 1)
 categories:

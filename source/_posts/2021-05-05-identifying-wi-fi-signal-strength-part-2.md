@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-05-05 00:00:00
+updated: 2021-05-05 00:00:00
 title: "PowerShell 技能连载 - 检测 Wi-Fi 信号强度（第 2 部分）"
 description: PowerTip of the Day - Identifying Wi-Fi Signal Strength (Part 2)
 categories:

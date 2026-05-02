@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-23 00:00:00
+updated: 2017-06-23 00:00:00
 title: "PowerShell 技能连载 - 显示文件夹树"
 description: PowerTip of the Day - Displaying Folder Tree
 categories:

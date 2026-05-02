@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-27 00:00:00
+updated: 2018-04-27 00:00:00
 title: "PowerShell 技能连载 - 允许远程处理"
 description: PowerTip of the Day - Enabling Remoting
 categories:

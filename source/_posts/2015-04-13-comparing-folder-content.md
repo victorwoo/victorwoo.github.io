@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-04-13 11:00:00
+updated: 2015-04-13 11:00:00
 title: "PowerShell 技能连载 - 比较文件夹内容"
 description: PowerTip of the Day - Comparing Folder Content
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-08-28 08:00:00
+updated: 2024-08-28 08:00:00
 title: "PowerShell 技能连载 - 无服务器环境下的零信任检测"
 description: "使用Azure Functions实现自动化安全基线核查"
 categories:

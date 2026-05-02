@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-12-26 12:00:00
+updated: 2014-12-26 12:00:00
 title: "PowerShell 技能连载 - 压缩路径"
 description: PowerTip of the Day - Compacting Paths
 categories:

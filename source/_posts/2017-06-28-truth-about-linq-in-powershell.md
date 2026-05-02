@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-28 00:00:00
+updated: 2017-06-28 00:00:00
 title: "PowerShell 技能连载 - PowerShell 中 LINQ 的真实情况"
 description: PowerTip of the Day - Truth about LINQ in PowerShell
 categories:

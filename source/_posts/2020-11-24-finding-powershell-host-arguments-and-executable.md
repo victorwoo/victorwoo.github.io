@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-24 00:00:00
+updated: 2020-11-24 00:00:00
 title: "PowerShell 技能连载 - 查找 PowerShell 宿主参数和可执行文件"
 description: PowerTip of the Day - Finding PowerShell Host Arguments and Executable
 categories:

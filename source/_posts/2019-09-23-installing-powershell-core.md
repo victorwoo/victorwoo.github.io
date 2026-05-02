@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-23 00:00:00
+updated: 2019-09-23 00:00:00
 title: "PowerShell 技能连载 - 安装 PowerShell Core"
 description: PowerTip of the Day - Installing PowerShell Core
 categories:

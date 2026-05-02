@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-13 00:00:00
+updated: 2017-07-13 00:00:00
 title: "PowerShell 技能连载 - 清除所有用户变量"
 description: PowerTip of the Day - Clearing All User Variables
 categories:

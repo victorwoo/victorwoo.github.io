@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-10 08:00:00
+updated: 2024-10-10 08:00:00
 title: "PowerShell变量作用域深度解析"
 description: "掌握脚本中变量的可见性控制机制"
 categories:

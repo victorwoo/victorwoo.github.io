@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-24 08:00:00
+updated: 2025-04-24 08:00:00
 title: "PowerShell 技能连载 - 文件系统变更监控"
 description: PowerTip of the Day - File System Change Monitoring with PowerShell
 categories:

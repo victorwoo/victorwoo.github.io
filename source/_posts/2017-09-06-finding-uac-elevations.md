@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-06 00:00:00
+updated: 2017-09-06 00:00:00
 title: "PowerShell 技能连载 - 查找所有 UAC 提权记录"
 description: PowerTip of the Day - Finding UAC Elevations
 categories:

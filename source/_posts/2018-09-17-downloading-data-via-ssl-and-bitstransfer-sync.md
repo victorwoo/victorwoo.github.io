@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-17 00:00:00
+updated: 2018-09-17 00:00:00
 title: "PowerShell 技能连载 - 通过 SSL 和 BitsTransfer"
 description: PowerTip of the Day - Downloading Data via SSL and BitsTransfer (Sync)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-15 00:00:00
+updated: 2018-01-15 00:00:00
 title: "PowerShell 技能连载 - 通过对话框移除用户配置文件"
 description: PowerTip of the Day - Remove User Profiles Via Dialog
 categories:

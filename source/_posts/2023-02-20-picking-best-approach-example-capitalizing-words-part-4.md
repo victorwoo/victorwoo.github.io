@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-02-20 00:00:47
+updated: 2023-02-20 00:00:47
 title: "PowerShell 技能连载 - Picking Best Approach Example Capitalizing Words (Part 4)"
 description: PowerTip of the Day - Picking Best Approach Example Capitalizing Words (Part 4)
 categories:

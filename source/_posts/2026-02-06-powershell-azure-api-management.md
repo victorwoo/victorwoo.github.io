@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-06 08:00:00
+updated: 2026-02-06 08:00:00
 title: "PowerShell 技能连载 - Azure API Management 管理"
 description: PowerTip of the Day - Azure API Management Administration in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-03-12 11:00:00
+updated: 2015-03-12 11:00:00
 title: "PowerShell 技能连载 - 展开对象数据结构"
 description: PowerTip of the Day - Unfolding Object Data Structure
 categories:

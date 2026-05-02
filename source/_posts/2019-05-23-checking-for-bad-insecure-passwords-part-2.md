@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-23 00:00:00
+updated: 2019-05-23 00:00:00
 title: "PowerShell 技能连载 - 检查坏（不安全的）密码（第 2 部分）"
 description: PowerTip of the Day - Checking for Bad (Insecure) Passwords (Part 2)
 categories:

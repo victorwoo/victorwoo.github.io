@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-11-04 00:00:00
+updated: 2019-11-04 00:00:00
 title: "PowerShell 技能连载 - WMI 浏览器"
 description: PowerTip of the Day - WMI Explorer
 categories:

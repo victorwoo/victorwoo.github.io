@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-25 00:00:00
+updated: 2020-06-25 00:00:00
 title: "PowerShell 技能连载 - 在网格视图窗口中将对象数据显示为表格"
 description: PowerTip of the Day - Showing Object Data as Table in a Grid View Window
 categories:

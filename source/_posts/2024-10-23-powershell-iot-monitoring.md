@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-23 08:00:00
+updated: 2024-10-23 08:00:00
 title: "PowerShell 技能连载 - 物联网设备状态监控实战"
 description: "通过MQTT协议实现边缘计算设备自动化管理"
 categories:

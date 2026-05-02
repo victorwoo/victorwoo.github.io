@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 在 ISE 中快速选中结果"
 date: 2013-11-29 00:00:00
+updated: 2013-11-29 00:00:00
 description: PowerTip of the Day - Quickly Selecting Results in ISE
 categories:
 - powershell

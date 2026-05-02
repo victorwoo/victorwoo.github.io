@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-04 08:00:00
+updated: 2025-11-04 08:00:00
 title: "PowerShell 技能连载 - 性能分析器"
 description: PowerTip of the Day - Performance Profiler in PowerShell
 categories:

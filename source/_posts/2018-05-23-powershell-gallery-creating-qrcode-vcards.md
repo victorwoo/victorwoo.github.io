@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-23 00:00:00
+updated: 2018-05-23 00:00:00
 title: "PowerShell 技能连载 - PowerShell 陈列架：创建二维码 vCard"
 description: 'PowerTip of the Day - PowerShell Gallery: Creating QRCode vCards'
 categories:

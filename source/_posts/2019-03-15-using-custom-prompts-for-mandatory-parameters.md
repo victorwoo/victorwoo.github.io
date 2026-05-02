@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-15 00:00:00
+updated: 2019-03-15 00:00:00
 title: "PowerShell 技能连载 - 对必选参数使用自定义提示"
 description: PowerTip of the Day - Using Custom Prompts for Mandatory Parameters
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-01 00:00:00
+updated: 2019-01-01 00:00:00
 title: "PowerShell 技能连载 - 首字母大写"
 description: PowerTip of the Day - Title-Casing Strings (Capital Letter Starts Each Word)
 categories:

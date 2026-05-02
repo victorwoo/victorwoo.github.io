@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-13 08:00:00
+updated: 2025-08-13 08:00:00
 title: "PowerShell 技能连载 - TCP/UDP 网络客户端"
 description: PowerTip of the Day - TCP/UDP Network Client Programming in PowerShell
 categories:

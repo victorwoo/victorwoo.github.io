@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-09 00:00:00
+updated: 2019-10-09 00:00:00
 title: "PowerShell 技能连载 - 简易的 PowerShell 聊天室"
 description: PowerTip of the Day - Simple PowerShell Chat
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-12-01 00:00:00
+updated: 2021-12-01 00:00:00
 title: "PowerShell 技能连载 - 禁用摄像头"
 description: PowerTip of the Day - Disabling Webcams
 categories:

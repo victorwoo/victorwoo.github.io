@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-30 00:00:00
+updated: 2019-05-30 00:00:00
 title: "PowerShell 技能连载 - 内置的 RSAT 工具"
 description: PowerTip of the Day - RSAT Tools Built-In
 categories:

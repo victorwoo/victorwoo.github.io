@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-14 08:00:00
+updated: 2025-03-14 08:00:00
 title: "PowerShell REST API高级集成技术"
 description: "掌握OAuth认证与分页数据处理实战"
 categories:

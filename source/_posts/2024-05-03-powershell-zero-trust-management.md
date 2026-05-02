@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-03 08:00:00
+updated: 2024-05-03 08:00:00
 title: "PowerShell 技能连载 - 零信任架构管理"
 description: PowerTip of the Day - PowerShell Zero Trust Architecture Management
 categories:

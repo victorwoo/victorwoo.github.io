@@ -2,6 +2,7 @@
 layout: post
 title: "随机抽奖中的粘连现象"
 date: 2015-02-14 11:22:56
+updated: 2015-02-14 11:22:56
 description: "Concatenation in Random"
 categories: [C#]
 tags: [C#]

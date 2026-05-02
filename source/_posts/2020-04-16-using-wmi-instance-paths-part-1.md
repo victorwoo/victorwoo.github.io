@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-16 00:00:00
+updated: 2020-04-16 00:00:00
 title: "PowerShell 技能连载 - 使用 WMI 实例路径（第 1 部分）"
 description: PowerTip of the Day - Using WMI Instance Paths (Part 1)
 categories:

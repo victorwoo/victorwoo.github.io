@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-05 08:00:00
+updated: 2024-06-05 08:00:00
 title: "PowerShell 技能连载 - 管道机制解析"
 description: PowerTip of the Day - PowerShell Pipeline Mechanism
 categories:

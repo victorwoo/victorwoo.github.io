@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找磁盘分区详细信息"
 date: 2013-12-16 00:00:00
+updated: 2013-12-16 00:00:00
 description: PowerTip of the Day - Finding Disk Partition Details
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-06-16 11:00:00
+updated: 2015-06-16 11:00:00
 title: "PowerShell 技能连载 - 加载 PowerShell 模块"
 description: PowerTip of the Day - Loading PowerShell Modules
 categories:

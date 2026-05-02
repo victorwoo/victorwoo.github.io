@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-26 08:00:00
+updated: 2024-11-26 08:00:00
 title: "PowerShell 技能连载 - 正则表达式实战技巧"
 description: "掌握PowerShell中正则表达式的高效应用方法"
 categories:

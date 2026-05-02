@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-10 08:00:00
+updated: 2025-01-10 08:00:00
 title: "PowerShell 技能连载 - 工业能源优化智能分析系统"
 description: "实现工业控制系统能耗数据采集与智能预测模型集成"
 categories:

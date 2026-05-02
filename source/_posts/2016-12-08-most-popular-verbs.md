@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-12-08 00:00:00
+updated: 2016-12-08 00:00:00
 title: "PowerShell 技能连载 - 最常用的动词"
 description: PowerTip of the Day - Most Popular Verbs
 categories:

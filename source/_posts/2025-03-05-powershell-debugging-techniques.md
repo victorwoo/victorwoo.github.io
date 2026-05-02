@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-05 08:00:00
+updated: 2025-03-05 08:00:00
 title: "PowerShell脚本调试全攻略"
 description: "掌握断点设置与变量追踪的核心技巧"
 categories:

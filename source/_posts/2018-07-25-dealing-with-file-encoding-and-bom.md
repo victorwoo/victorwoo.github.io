@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-25 00:00:00
+updated: 2018-07-25 00:00:00
 title: "PowerShell 技能连载 - 处理文件编码和 BOM"
 description: PowerTip of the Day - Dealing with File Encoding and BOM
 categories:

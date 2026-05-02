@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-06 08:00:00
+updated: 2024-09-06 08:00:00
 title: "PowerShell 技能连载 - OpenAI 智能运维自动化"
 description: "使用PowerShell集成OpenAI实现自然语言驱动的运维自动化"
 categories:

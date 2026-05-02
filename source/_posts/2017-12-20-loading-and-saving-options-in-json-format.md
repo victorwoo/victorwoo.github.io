@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-20 00:00:00
+updated: 2017-12-20 00:00:00
 title: "PowerShell 技能连载 - 以 JSON 格式读取和保存选项"
 description: PowerTip of the Day - Loading and Saving Options in JSON Format
 categories:

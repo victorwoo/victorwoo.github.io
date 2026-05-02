@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-20 08:00:00
+updated: 2024-12-20 08:00:00
 title: "PowerShell 技能连载 - 智能运维中的自然语言脚本生成"
 description: PowerTip of the Day - Natural Language Script Generation with OpenAI
 categories:

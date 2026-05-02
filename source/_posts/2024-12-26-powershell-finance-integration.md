@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-26 08:00:00
+updated: 2024-12-26 08:00:00
 title: "PowerShell 技能连载 - 金融行业集成"
 description: PowerTip of the Day - PowerShell Finance Integration
 categories:

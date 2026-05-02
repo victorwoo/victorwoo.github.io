@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-05-06 00:00:00
+updated: 2022-05-06 00:00:00
 title: "PowerShell 技能连载 - 管理蓝牙设备（第 2 部分）"
 description: PowerTip of the Day - Managing Bluetooth Devices (Part 3)
 categories:

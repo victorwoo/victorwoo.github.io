@@ -2,6 +2,7 @@
 layout: post
 title: Hexo 博客学习路线
 date: 2014-08-04 20:20:37
+updated: 2014-08-04 20:20:37
 description: Hexo guideline
 categories: network
 tags:

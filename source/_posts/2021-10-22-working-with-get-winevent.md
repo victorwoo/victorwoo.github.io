@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-10-22 00:00:00
+updated: 2021-10-22 00:00:00
 title: "PowerShell 技能连载 - Working with Get-WinEvent"
 description: PowerTip of the Day - Working with Get-WinEvent
 categories:

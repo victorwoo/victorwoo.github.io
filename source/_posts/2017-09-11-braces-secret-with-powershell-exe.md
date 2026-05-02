@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-11 00:00:00
+updated: 2017-09-11 00:00:00
 title: "PowerShell 技能连载 - PowerShell.exe 的“大括号秘密”"
 description: "PowerTip of the Day - “Braces Secret” with PowerShell.exe"
 categories:

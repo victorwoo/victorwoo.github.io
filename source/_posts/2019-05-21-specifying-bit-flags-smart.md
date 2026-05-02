@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-21 00:00:00
+updated: 2019-05-21 00:00:00
 title: "PowerShell 技能连载 - 用聪明的方法指定位标志"
 description: PowerTip of the Day - Specifying Bit Flags Smart
 categories:

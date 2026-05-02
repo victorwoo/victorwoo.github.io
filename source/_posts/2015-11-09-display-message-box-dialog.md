@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-11-09 12:00:00
+updated: 2015-11-09 12:00:00
 title: "PowerShell 技能连载 - 显示消息对话框"
 description: PowerTip of the Day - Display Message Box Dialog
 categories:

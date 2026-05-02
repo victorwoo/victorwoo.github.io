@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-01 00:00:00
+updated: 2019-03-01 00:00:00
 title: "PowerShell 技能连载 - 计算机名、DNS 名称，和 IP 地址"
 description: PowerTip of the Day - Computer Name, DNS Name, and IP Address
 categories:

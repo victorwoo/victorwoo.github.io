@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-06 08:00:00
+updated: 2024-06-06 08:00:00
 title: "PowerShell参数传递机制详解"
 description: "掌握位置参数与命名参数的核心差异"
 categories:

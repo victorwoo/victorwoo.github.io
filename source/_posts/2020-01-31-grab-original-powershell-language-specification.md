@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-31 00:00:00
+updated: 2020-01-31 00:00:00
 title: "PowerShell 技能连载 - 获取原始的 PowerShell 语言说明书"
 description: PowerTip of the Day - Grab Original PowerShell Language Specification
 categories:

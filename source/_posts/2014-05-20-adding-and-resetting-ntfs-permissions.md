@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 添加或重置 NTFS 权限"
 date: 2014-05-20 00:00:00
+updated: 2014-05-20 00:00:00
 description: PowerTip of the Day - Adding and Resetting NTFS Permissions
 categories:
 - powershell

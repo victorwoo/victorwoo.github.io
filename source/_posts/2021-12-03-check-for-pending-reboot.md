@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-12-03 00:00:00
+updated: 2021-12-03 00:00:00
 title: "PowerShell 技能连载 - 检测挂起的重启"
 description: PowerTip of the Day - Check for Pending Reboot
 categories:

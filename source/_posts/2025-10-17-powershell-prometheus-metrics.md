@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-17 08:00:00
+updated: 2025-10-17 08:00:00
 title: "PowerShell 技能连载 - Prometheus 指标采集"
 description: PowerTip of the Day - Prometheus Metrics Collection in PowerShell
 categories:

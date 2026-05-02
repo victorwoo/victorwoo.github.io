@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 显示 WPF 消息提示"
 date: 2014-05-05 00:00:00
+updated: 2014-05-05 00:00:00
 description: PowerTip of the Day - Showing WPF Info Message
 categories:
 - powershell

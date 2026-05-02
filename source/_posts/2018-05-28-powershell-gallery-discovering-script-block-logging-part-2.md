@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-28 00:00:00
+updated: 2018-05-28 00:00:00
 title: "PowerShell 技能连载 - PowerShell 陈列架：探索脚本块日志（第 2 部分）"
 description: 'PowerTip of the Day - PowerShell Gallery: Discovering Script Block Logging (Part 2)'
 categories:

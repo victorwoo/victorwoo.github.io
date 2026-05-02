@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-10-27 11:00:00
+updated: 2015-10-27 11:00:00
 title: "PowerShell 技能连载 - 在命令提示符中显示路径"
 description: PowerTip of the Day - Using Paths in Prompts
 categories:

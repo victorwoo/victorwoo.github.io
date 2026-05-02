@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-02 08:00:42
+updated: 2023-08-02 08:00:42
 title: "PowerShell 技能连载 - 识别未正确加密的 AD 账户"
 description: PowerTip of the Day - Identifying AD Accounts without Proper Encryption Type
 categories:

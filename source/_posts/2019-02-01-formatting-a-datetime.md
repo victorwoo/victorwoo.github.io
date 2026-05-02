@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-01 00:00:00
+updated: 2019-02-01 00:00:00
 title: "PowerShell 技能连载 - 格式化 DateTime"
 description: PowerTip of the Day - Formatting a DateTime
 categories:

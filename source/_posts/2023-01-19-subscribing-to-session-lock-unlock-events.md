@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-01-19 06:00:21
+updated: 2023-01-19 06:00:21
 title: "PowerShell 技能连载 - 订阅锁定和解锁事件"
 description: PowerTip of the Day - Subscribing to Session Lock/Unlock Events
 categories:

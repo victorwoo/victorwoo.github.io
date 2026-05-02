@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-18 08:00:00
+updated: 2025-02-18 08:00:00
 title: "PowerShell调试技术深度剖析"
 description: "掌握条件断点与变量追踪的专家级应用"
 categories:

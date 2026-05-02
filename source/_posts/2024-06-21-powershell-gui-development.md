@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-21 08:00:00
+updated: 2024-06-21 08:00:00
 title: "PowerShell 技能连载 - GUI 开发技巧"
 description: PowerTip of the Day - PowerShell GUI Development Tips
 categories:

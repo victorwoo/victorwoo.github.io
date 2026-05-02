@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-01 00:00:00
+updated: 2019-04-01 00:00:00
 title: "PowerShell 技能连载 - 删除无法删除的注册表键"
 description: "PowerTip of the Day - Deleting Registry Keys that can’t be Deleted"
 categories:

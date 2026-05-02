@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 远程读取已安装的软件"
 date: 2014-06-09 00:00:00
+updated: 2014-06-09 00:00:00
 description: PowerTip of the Day - Reading Installed Software Remotely
 categories:
 - powershell

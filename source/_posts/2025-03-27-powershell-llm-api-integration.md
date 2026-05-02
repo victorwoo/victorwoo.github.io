@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-27 08:00:00
+updated: 2025-03-27 08:00:00
 title: "PowerShell 技能连载 - 调用大语言模型 API"
 description: PowerTip of the Day - Calling LLM APIs from PowerShell
 categories:

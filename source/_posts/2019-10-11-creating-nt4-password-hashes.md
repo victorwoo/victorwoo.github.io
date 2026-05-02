@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-11 00:00:00
+updated: 2019-10-11 00:00:00
 title: "PowerShell 技能连载 - 创建 NT4 密码哈希"
 description: PowerTip of the Day - Creating NT4 Password Hashes
 categories:

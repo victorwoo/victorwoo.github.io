@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-02 08:00:00
+updated: 2025-10-02 08:00:00
 title: "PowerShell 技能连载 - 错误处理模式"
 description: PowerTip of the Day - Error Handling Patterns in PowerShell
 categories:

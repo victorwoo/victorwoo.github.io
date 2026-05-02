@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找类型加速器"
 date: 2013-09-10 00:00:00
+updated: 2013-09-10 00:00:00
 description: PowerTip of the Day - Finding Type Accelerators
 categories:
 - powershell

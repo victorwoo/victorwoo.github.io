@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-23 08:00:00
+updated: 2024-04-23 08:00:00
 title: "PowerShell 技能连载 - 容器编排管理"
 description: PowerTip of the Day - PowerShell Container Orchestration Management
 categories:

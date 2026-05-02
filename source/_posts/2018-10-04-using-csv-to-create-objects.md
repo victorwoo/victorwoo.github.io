@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-04 00:00:00
+updated: 2018-10-04 00:00:00
 title: "PowerShell 技能连载 - 通过 CSV 创建对象"
 description: PowerTip of the Day - Using CSV to Create Objects
 categories:

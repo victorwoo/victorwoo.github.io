@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-10-21 00:00:00
+updated: 2023-10-21 00:00:00
 title: "PowerShell 技能连载 - 理解 PowerShell 执行策略：初学者指南"
 description: "Understanding PowerShell Execution Policy: A Guide for Beginners"
 categories:

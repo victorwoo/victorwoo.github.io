@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-18 00:00:00
+updated: 2018-09-18 00:00:00
 title: "PowerShell 技能连载 - 用 BitsTransfer 在后台下载数据"
 description: PowerTip of the Day - Downloading Data with BitsTransfer in the Background
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-04-09 11:00:00
+updated: 2015-04-09 11:00:00
 title: "PowerShell 技能连载 - 对密码加密"
 description: PowerTip of the Day - Encoded Passwords
 categories:

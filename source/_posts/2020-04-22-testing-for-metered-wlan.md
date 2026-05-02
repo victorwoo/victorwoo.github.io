@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-22 00:00:00
+updated: 2020-04-22 00:00:00
 title: "PowerShell 技能连载 - 检测是否连接到计费的 WLAN"
 description: PowerTip of the Day - Testing for Metered WLAN
 categories:

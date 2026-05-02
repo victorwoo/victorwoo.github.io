@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-25 00:00:00
+updated: 2019-07-25 00:00:00
 title: "PowerShell 技能连载 - 从 Windows 中转储个人密码"
 description: PowerTip of the Day - Dumping Personal Passwords from Windows
 categories:

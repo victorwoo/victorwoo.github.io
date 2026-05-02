@@ -2,6 +2,7 @@
 title: 掌握 PowerShell 的 XML 日常操作
 description: Mastering Everyday XML Tasks in PowerShell
 date: 2017-06-03 13:40:50
+updated: 2017-06-03 13:40:50
 tags: [powershell]
 categories: [powershell]
 ---

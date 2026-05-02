@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-27 00:00:00
+updated: 2017-06-27 00:00:00
 title: "PowerShell 技能连载 - 神秘的 Windows 10 透明模式"
 description: PowerTip of the Day - Secret Windows 10 Transparency Mode
 categories:

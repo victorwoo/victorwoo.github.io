@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-12 08:00:00
+updated: 2025-11-12 08:00:00
 title: "PowerShell 技能连载 - VS Code 扩展开发"
 description: PowerTip of the Day - VS Code Extension Development in PowerShell
 categories:

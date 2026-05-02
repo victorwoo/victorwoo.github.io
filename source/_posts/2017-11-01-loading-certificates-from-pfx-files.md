@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-01 00:00:00
+updated: 2017-11-01 00:00:00
 title: "PowerShell 技能连载 - 从 PFX 文件加载证书"
 description: PowerTip of the Day - Loading Certificates from PFX Files
 categories:

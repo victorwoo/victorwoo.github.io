@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-17 00:00:00
+updated: 2018-10-17 00:00:00
 title: "PowerShell 技能连载 - 性能（第 1 部分）：从 6 分钟到 2 秒钟"
 description: 'PowerTip of the Day - Performance (Part 1): From 6 min to 2 sec'
 categories:

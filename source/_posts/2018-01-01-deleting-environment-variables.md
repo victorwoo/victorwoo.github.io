@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-01 00:00:00
+updated: 2018-01-01 00:00:00
 title: "PowerShell 技能连载 - 删除环境变量"
 description: PowerTip of the Day - Deleting Environment Variables
 categories:

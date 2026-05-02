@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-10-13 00:00:00
+updated: 2022-10-13 00:00:00
 title: "PowerShell 技能连载 - 存取 Windows 凭据管理器"
 description: PowerTip of the Day - Accessing Windows Credential Manager
 categories:

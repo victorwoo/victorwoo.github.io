@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-20 00:00:00
+updated: 2018-09-20 00:00:00
 title: "PowerShell 技能连载 - 用参数的方式解决凭据"
 description: PowerTip of the Day - Handling Credentials as Parameters
 categories:

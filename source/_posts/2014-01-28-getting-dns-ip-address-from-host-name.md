@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 根据主机名获取 DNS IP 地址"
 date: 2014-01-28 00:00:00
+updated: 2014-01-28 00:00:00
 description: PowerTip of the Day - Getting DNS IP Address from Host Name
 categories:
 - powershell

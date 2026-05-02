@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-24 00:00:00
+updated: 2021-09-24 00:00:00
 title: "PowerShell 技能连载 - 重命名本地管理员账户"
 description: PowerTip of the Day - Renaming Local Administrator Account
 categories:

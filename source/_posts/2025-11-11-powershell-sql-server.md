@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-11 08:00:00
+updated: 2025-11-11 08:00:00
 title: "PowerShell 技能连载 - SQL Server 管理"
 description: PowerTip of the Day - SQL Server Management in PowerShell
 categories:

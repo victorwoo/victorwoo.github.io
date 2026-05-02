@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-03-16 00:00:50
+updated: 2023-03-16 00:00:50
 title: "PowerShell 技能连载 - 翻译数据"
 description: PowerTip of the Day - Translating Data
 categories:

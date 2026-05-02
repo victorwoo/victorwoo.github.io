@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-09 00:00:00
+updated: 2022-02-09 00:00:00
 title: "PowerShell 技能连载 - 计算第几周（第 1 部分）"
 description: PowerTip of the Day - Calculate Calendar Week (Part 1)
 categories:

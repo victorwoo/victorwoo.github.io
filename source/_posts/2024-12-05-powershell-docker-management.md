@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-05 08:00:00
+updated: 2024-12-05 08:00:00
 title: "PowerShell 技能连载 - Docker容器管理技巧"
 description: PowerTip of the Day - PowerShell Docker Container Management
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-28 00:00:00
+updated: 2019-03-28 00:00:00
 title: "PowerShell 技能连载 - 让新手运行 PowerShell 脚本"
 description: PowerTip of the Day - Launching PowerShell Scripts for Dummies
 categories:

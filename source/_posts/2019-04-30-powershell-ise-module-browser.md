@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-30 00:00:00
+updated: 2019-04-30 00:00:00
 title: "PowerShell 技能连载 - PowerShell ISE 模块浏览器"
 description: PowerTip of the Day - PowerShell ISE Module Browser
 categories:

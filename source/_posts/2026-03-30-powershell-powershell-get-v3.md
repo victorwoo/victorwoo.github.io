@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-30 08:00:00
+updated: 2026-03-30 08:00:00
 title: "PowerShell 技能连载 - PowerShellGet v3 与模块生态"
 description: PowerTip of the Day - PowerShellGet v3 and Module Ecosystem in PowerShell
 categories:

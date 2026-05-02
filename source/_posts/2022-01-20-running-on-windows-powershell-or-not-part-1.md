@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-01-20 00:00:00
+updated: 2022-01-20 00:00:00
 title: "PowerShell 技能连载 - 是否在 Windows PowerShell 中运行（第 1 部分）"
 description: "PowerTip of the Day - Running on Windows PowerShell – Or Not? (Part 1)"
 categories:

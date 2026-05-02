@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-31 00:00:00
+updated: 2018-10-31 00:00:00
 title: "PowerShell 技能连载 - 使用动态参数"
 description: PowerTip of the Day - Using Dynamic Parameters
 categories:

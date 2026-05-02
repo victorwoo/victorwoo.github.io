@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-07 00:00:00
+updated: 2017-11-07 00:00:00
 title: "PowerShell 技能连载 - Multipass: 安全存储多个凭据"
 description: 'PowerTip of the Day - Multipass: Securely Storing Multiple Credentials'
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-12 00:00:00
+updated: 2017-10-12 00:00:00
 title: "PowerShell 技能连载 - 转换奇怪的数据格式"
 description: PowerTip of the Day - Converting Weird Data Formats
 categories:

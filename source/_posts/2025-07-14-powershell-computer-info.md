@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-14 08:00:00
+updated: 2025-07-14 08:00:00
 title: "PowerShell 技能连载 - 系统信息采集"
 description: PowerTip of the Day - System Information Collection in PowerShell
 categories:

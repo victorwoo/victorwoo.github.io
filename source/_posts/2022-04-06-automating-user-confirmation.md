@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-04-06 00:00:00
+updated: 2022-04-06 00:00:00
 title: "PowerShell 技能连载 - Automating User Confirmation"
 description: PowerTip of the Day - Automating User Confirmation
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-01-25 06:00:51
+updated: 2023-01-25 06:00:51
 title: "PowerShell 技能连载 - 研究 PowerShell 命令结果"
 description: PowerTip of the Day - Investigating PowerShell Command Results
 categories:

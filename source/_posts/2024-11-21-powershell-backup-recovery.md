@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-21 08:00:00
+updated: 2024-11-21 08:00:00
 title: "PowerShell 技能连载 - 数据备份恢复管理"
 description: PowerTip of the Day - PowerShell Backup and Recovery Management
 categories:

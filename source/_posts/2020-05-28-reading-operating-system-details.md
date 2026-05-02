@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-28 00:00:00
+updated: 2020-05-28 00:00:00
 title: "PowerShell 技能连载 - 读取操作系统详情"
 description: PowerTip of the Day - Reading Operating System Details
 categories:

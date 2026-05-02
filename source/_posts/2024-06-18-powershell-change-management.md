@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-18 08:00:00
+updated: 2024-06-18 08:00:00
 title: "PowerShell 技能连载 - 变更管理"
 description: PowerTip of the Day - PowerShell Change Management
 categories:

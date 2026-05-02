@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-01 08:00:00
+updated: 2025-07-01 08:00:00
 title: "PowerShell 技能连载 - 语义版本管理"
 description: PowerTip of the Day - Semantic Versioning Management in PowerShell
 categories:

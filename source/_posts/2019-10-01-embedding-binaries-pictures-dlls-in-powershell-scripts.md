@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-01 00:00:00
+updated: 2019-10-01 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 脚本中嵌入二进制文件（图片、DLL）"
 description: PowerTip of the Day - Embedding Binaries (Pictures, DLLs) in PowerShell Scripts
 categories:

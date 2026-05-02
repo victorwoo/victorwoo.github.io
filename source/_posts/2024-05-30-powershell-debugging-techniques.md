@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-30 08:00:00
+updated: 2024-05-30 08:00:00
 title: "PowerShell 技能连载 - 调试技巧解析"
 description: PowerTip of the Day - PowerShell Debugging Techniques
 categories:

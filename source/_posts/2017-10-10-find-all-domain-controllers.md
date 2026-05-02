@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-10 00:00:00
+updated: 2017-10-10 00:00:00
 title: "PowerShell 技能连载 - 查找所有域控制器"
 description: PowerTip of the Day - Find All Domain Controllers
 categories:

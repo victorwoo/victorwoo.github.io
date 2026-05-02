@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-11 08:00:00
+updated: 2024-06-11 08:00:00
 title: "PowerShell 技能连载 - 绿色计算能效优化智能系统"
 description: "实现数据中心能耗智能分析与动态调优"
 categories:

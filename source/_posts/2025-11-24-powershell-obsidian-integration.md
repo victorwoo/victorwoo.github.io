@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-24 08:00:00
+updated: 2025-11-24 08:00:00
 title: "PowerShell 技能连载 - Obsidian 笔记自动化"
 description: PowerTip of the Day - Obsidian Note Automation in PowerShell
 categories:
@@ -87,6 +88,7 @@ MOC - 编程.md          1205 2025-11-22 14:30:00
 $DailyTemplate = @'
 ---
 date: {DATE}
+updated: {DATE}
 tags:
   - daily-note
   - journal

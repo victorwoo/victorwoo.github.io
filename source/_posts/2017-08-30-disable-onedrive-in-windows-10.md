@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-30 00:00:00
+updated: 2017-08-30 00:00:00
 title: "PowerShell 技能连载 - 禁止 Windows 10 中的 OneDrive"
 description: PowerTip of the Day - Disable OneDrive in Windows 10
 categories:

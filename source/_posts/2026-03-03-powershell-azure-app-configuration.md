@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-03 08:00:00
+updated: 2026-03-03 08:00:00
 title: "PowerShell 技能连载 - Azure App Configuration 集中配置"
 description: PowerTip of the Day - Azure App Configuration Centralized Settings
 categories:

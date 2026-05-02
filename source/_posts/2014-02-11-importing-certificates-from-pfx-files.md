@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 从 PFX 文件中导入证书"
 date: 2014-02-11 00:00:00
+updated: 2014-02-11 00:00:00
 description: PowerTip of the Day - Importing Certificates from PFX Files
 categories:
 - powershell

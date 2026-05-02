@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-06 08:00:00
+updated: 2025-02-06 08:00:00
 title: "PowerShell 技能连载 - 对象属性操作"
 description: PowerTip of the Day - PowerShell Object Properties
 categories:

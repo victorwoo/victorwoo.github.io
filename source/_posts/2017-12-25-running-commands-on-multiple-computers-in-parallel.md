@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-25 00:00:00
+updated: 2017-12-25 00:00:00
 title: "PowerShell 技能连载 - 在多台计算机中并行运行命令"
 description: PowerTip of the Day - Running Commands on Multiple Computers in Parallel
 categories:

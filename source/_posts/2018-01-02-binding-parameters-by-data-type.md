@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-02 00:00:00
+updated: 2018-01-02 00:00:00
 title: "PowerShell 技能连载 - 按数据类型绑定参数"
 description: PowerTip of the Day - Binding Parameters by Data Type
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-30 00:00:00
+updated: 2017-10-30 00:00:00
 title: "PowerShell 技能连载 - 在 Active Directory 中使用 LDAP 过滤器"
 description: PowerTip of the Day - Using LDAP Filters in Active Directory
 categories:

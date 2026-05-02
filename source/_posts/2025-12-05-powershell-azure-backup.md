@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-05 08:00:00
+updated: 2025-12-05 08:00:00
 title: "PowerShell 技能连载 - Azure 备份与恢复"
 description: PowerTip of the Day - Azure Backup and Recovery in PowerShell
 categories:

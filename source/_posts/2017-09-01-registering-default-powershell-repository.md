@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-01 00:00:00
+updated: 2017-09-01 00:00:00
 title: "PowerShell 技能连载 - 注册缺省的 PowerShell 源"
 description: PowerTip of the Day - Registering Default PowerShell Repository
 categories:

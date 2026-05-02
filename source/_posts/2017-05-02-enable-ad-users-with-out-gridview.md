@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-02 00:00:00
+updated: 2017-05-02 00:00:00
 title: "PowerShell 技能连载 - 用 Out-GridView 启用 AD 用户"
 description: PowerTip of the Day - Enable AD Users with Out-GridView
 categories:

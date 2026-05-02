@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-05-07 11:00:00
+updated: 2015-05-07 11:00:00
 title: "PowerShell 技能连载 - 向管道传递一个数组"
 description: PowerTip of the Day - Passing Arrays to Pipeline
 categories:

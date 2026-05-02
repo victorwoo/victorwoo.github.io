@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-10 00:00:00
+updated: 2018-12-10 00:00:00
 title: "PowerShell 技能连载 - 使用 $MyInvocation 的固定替代方式"
 description: PowerTip of the Day - Using Solid Alternatives for $MyInvocation
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-19 08:00:00
+updated: 2026-03-19 08:00:00
 title: "PowerShell 技能连载 - 提示符与界面定制"
 description: PowerTip of the Day - Prompt and Interface Customization in PowerShell
 categories:

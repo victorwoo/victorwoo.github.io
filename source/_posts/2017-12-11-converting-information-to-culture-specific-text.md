@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-11 00:00:00
+updated: 2017-12-11 00:00:00
 title: "PowerShell 技能连载 - 将信息转换为区域性特定的文本"
 description: PowerTip of the Day - Converting Information to Culture-Specific Text
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-31 08:00:00
+updated: 2026-03-31 08:00:00
 title: "PowerShell 技能连载 - Q1 技术回顾与展望"
 description: PowerTip of the Day - Q1 Technology Review and Outlook in PowerShell
 categories:

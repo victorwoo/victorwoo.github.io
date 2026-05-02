@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-10 08:00:39
+updated: 2023-08-10 08:00:39
 title: "PowerShell 技能连载 - 获取德国节日"
 description: PowerTip of the Day - Get German Holidays
 categories:

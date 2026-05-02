@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-20 00:00:00
+updated: 2019-06-20 00:00:00
 title: "PowerShell 技能连载 - 在 Web Request 中使用会话变量"
 description: PowerTip of the Day - Using Session Variables in Web Requests
 categories:

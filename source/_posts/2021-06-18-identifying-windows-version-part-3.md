@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-06-18 00:00:00
+updated: 2021-06-18 00:00:00
 title: "PowerShell 技能连载 - 检测 Windows 版本（第 3 部分）"
 description: PowerTip of the Day - Identifying Windows Version (Part 3)
 categories:

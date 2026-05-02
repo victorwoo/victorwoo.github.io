@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-06 08:00:00
+updated: 2026-03-06 08:00:00
 title: "PowerShell 技能连载 - Azure 成本管理与优化"
 description: PowerTip of the Day - Azure Cost Management and Optimization in PowerShell
 categories:

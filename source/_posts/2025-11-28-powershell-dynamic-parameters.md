@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-28 08:00:00
+updated: 2025-11-28 08:00:00
 title: "PowerShell 技能连载 - 动态参数"
 description: PowerTip of the Day - Dynamic Parameters in PowerShell
 categories:

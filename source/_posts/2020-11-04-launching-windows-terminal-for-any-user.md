@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-04 00:00:00
+updated: 2020-11-04 00:00:00
 title: "PowerShell 技能连载 - 为任何用户启动 Windows 终端"
 description: PowerTip of the Day - Launching Windows Terminal for Any User
 categories:

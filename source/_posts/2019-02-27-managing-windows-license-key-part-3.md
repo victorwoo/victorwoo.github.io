@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-27 00:00:00
+updated: 2019-02-27 00:00:00
 title: "PowerShell 技能连载 - 管理 Windows 授权密钥（第 3 部分）"
 description: PowerTip of the Day - Managing Windows License Key (Part 3)
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: JavaScript 学习路线
 date: 2014-08-12 19:57:59
+updated: 2014-08-12 19:57:59
 description: JavaScript guideline
 categories: javascript
 tags:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-16 00:00:00
+updated: 2017-06-16 00:00:00
 title: "PowerShell 技能连载 - 设置时区"
 description: PowerTip of the Day - Setting Time Zone
 categories:

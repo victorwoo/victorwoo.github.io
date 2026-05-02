@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-10-21 00:00:00
+updated: 2020-10-21 00:00:00
 title: "PowerShell 技能连载 - 测试应用程序是否存在"
 description: PowerTip of the Day - Test Whether Applications Exist
 categories:

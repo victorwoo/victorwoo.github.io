@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-08 00:00:00
+updated: 2018-08-08 00:00:00
 title: "PowerShell 技能连载 - 查看 Windows 生成号"
 description: PowerTip of the Day - Finding Windows Build Numbers
 categories:

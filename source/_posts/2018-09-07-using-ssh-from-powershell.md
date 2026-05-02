@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-07 00:00:00
+updated: 2018-09-07 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 中使用 SSH"
 description: PowerTip of the Day - Using SSH from PowerShell
 categories:

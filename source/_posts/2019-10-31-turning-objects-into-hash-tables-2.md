@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-10-31 00:00:00
+updated: 2019-10-31 00:00:00
 title: "PowerShell 技能连载 - 将对象转换为哈希表"
 description: PowerTip of the Day - Turning Objects into Hash Tables
 categories:

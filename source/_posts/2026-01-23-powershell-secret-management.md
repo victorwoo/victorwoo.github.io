@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-23 08:00:00
+updated: 2026-01-23 08:00:00
 title: "PowerShell 技能连载 - 密钥管理与安全存储"
 description: PowerTip of the Day - Secret Management and Secure Storage in PowerShell
 categories:

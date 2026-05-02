@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-15 08:00:00
+updated: 2026-04-15 08:00:00
 title: "PowerShell 技能连载 - Windows 开发环境配置即代码"
 description: PowerTip of the Day - Windows Dev Environment Configuration as Code in PowerShell
 categories:

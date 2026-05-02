@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-26 08:00:00
+updated: 2026-03-26 08:00:00
 title: "PowerShell 技能连载 - Azure Private Endpoint 网络隔离"
 description: PowerTip of the Day - Azure Private Endpoint Network Isolation in PowerShell
 categories:

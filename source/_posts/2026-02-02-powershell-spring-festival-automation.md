@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-02 08:00:00
+updated: 2026-02-02 08:00:00
 title: "PowerShell 技能连载 - 春节假期自动化值守"
 description: PowerTip of the Day - Spring Festival Holiday Automation Watch in PowerShell
 categories:

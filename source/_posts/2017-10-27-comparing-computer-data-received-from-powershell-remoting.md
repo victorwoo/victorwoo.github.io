@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-27 00:00:00
+updated: 2017-10-27 00:00:00
 title: "PowerShell 技能连载 - 对比从 PowerShell 远程处理中受到的计算机数据"
 description: PowerTip of the Day - Comparing Computer Data Received from PowerShell Remoting
 categories:

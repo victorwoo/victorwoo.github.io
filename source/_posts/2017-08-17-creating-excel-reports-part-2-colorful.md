@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-17 00:00:00
+updated: 2017-08-17 00:00:00
 title: "PowerShell 技能连载 - 创建 Excel 报表（第二部分——彩色）"
 description: "PowerTip of the Day - Creating Excel Reports (Part 2 – Colorful)"
 categories:

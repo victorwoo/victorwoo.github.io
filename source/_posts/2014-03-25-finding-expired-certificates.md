@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找过期的证书"
 date: 2014-03-25 00:00:00
+updated: 2014-03-25 00:00:00
 description: PowerTip of the Day - Finding Expired Certificates
 categories:
 - powershell

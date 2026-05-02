@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-11 00:00:00
+updated: 2019-07-11 00:00:00
 title: "PowerShell 技能连载 - 检测按键"
 description: PowerTip of the Day - Detecting Key Presses
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-17 08:00:00
+updated: 2026-02-17 08:00:00
 title: "PowerShell 技能连载 - Azure Front Door 与 CDN 管理"
 description: PowerTip of the Day - Azure Front Door and CDN Management in PowerShell
 categories:

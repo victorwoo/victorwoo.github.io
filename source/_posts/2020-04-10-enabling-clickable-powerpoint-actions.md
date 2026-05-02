@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-10 00:00:00
+updated: 2020-04-10 00:00:00
 title: "PowerShell 技能连载 - 允许 PowerPoint 中的点击操作"
 description: PowerTip of the Day - Enabling Clickable PowerPoint Actions
 categories:

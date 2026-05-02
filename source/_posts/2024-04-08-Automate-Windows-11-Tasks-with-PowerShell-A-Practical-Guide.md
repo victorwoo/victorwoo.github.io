@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-08 00:00:00
+updated: 2024-04-08 00:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 自动化 Windows 11 任务：实用指南"
 description: "Automate Windows 11 Tasks with PowerShell: A Practical Guide"
 categories:

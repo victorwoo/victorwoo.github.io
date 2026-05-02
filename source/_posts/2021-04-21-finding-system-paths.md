@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-04-21 00:00:00
+updated: 2021-04-21 00:00:00
 title: "PowerShell 技能连载 - 查找系统路径"
 description: PowerTip of the Day - Finding System Paths
 categories:

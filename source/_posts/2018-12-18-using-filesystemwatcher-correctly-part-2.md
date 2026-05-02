@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-18 00:00:00
+updated: 2018-12-18 00:00:00
 title: "PowerShell 技能连载 - 正确使用 FileSystemWatcher（第 2 部分）"
 description: PowerTip of the Day - Using FileSystemWatcher Correctly (Part 2)
 categories:

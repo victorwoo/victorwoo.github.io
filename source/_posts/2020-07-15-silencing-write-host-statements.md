@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-15 00:00:00
+updated: 2020-07-15 00:00:00
 title: "PowerShell 技能连载 - 禁止 Write-Host 语句输出"
 description: PowerTip of the Day - Silencing Write-Host Statements
 categories:

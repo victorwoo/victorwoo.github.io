@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-01 00:00:00
+updated: 2017-08-01 00:00:00
 title: "PowerShell 技能连载 - 自动记录命令输出"
 description: PowerTip of the Day - Auto-Logging Command Output
 categories:

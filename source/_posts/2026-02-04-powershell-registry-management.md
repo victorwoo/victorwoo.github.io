@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-04 08:00:00
+updated: 2026-02-04 08:00:00
 title: "PowerShell 技能连载 - 注册表管理与安全审计"
 description: PowerTip of the Day - Registry Management and Security Audit in PowerShell
 categories:

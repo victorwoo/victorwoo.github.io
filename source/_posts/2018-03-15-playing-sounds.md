@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-15 00:00:00
+updated: 2018-03-15 00:00:00
 title: "PowerShell 技能连载 - 播放声音"
 description: PowerTip of the Day - Playing Sounds
 categories:

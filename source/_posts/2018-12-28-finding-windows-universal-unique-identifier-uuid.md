@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-28 00:00:00
+updated: 2018-12-28 00:00:00
 title: "PowerShell 技能连载 - 查看 Windows 通用唯一识别码 (UUID)"
 description: PowerTip of the Day - Finding Windows Universal Unique Identifier (UUID)
 categories:

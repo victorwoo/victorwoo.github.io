@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-09 08:00:00
+updated: 2026-02-09 08:00:00
 title: "PowerShell 技能连载 - AST 抽象语法树解析"
 description: PowerTip of the Day - AST Abstract Syntax Tree Parsing in PowerShell
 categories:

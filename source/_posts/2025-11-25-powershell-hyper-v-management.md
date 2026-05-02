@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-25 08:00:00
+updated: 2025-11-25 08:00:00
 title: "PowerShell 技能连载 - Hyper-V 虚拟机管理"
 description: PowerTip of the Day - Hyper-V Virtual Machine Management in PowerShell
 categories:

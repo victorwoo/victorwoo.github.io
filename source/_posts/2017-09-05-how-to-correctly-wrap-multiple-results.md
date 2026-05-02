@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-05 00:00:00
+updated: 2017-09-05 00:00:00
 title: "PowerShell 技能连载 - 如何正确地封装多个结果"
 description: PowerTip of the Day - How to Correctly Wrap Multiple Results
 categories:

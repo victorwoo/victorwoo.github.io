@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-08-20 00:00:00
+updated: 2023-08-20 00:00:00
 title: "PowerShell 技能连载 - 理解PowerShell中的错误处理"
 description: "Understanding Error handling in Powershell"
 categories:

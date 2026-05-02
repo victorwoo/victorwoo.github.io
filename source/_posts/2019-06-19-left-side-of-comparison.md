@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-19 00:00:00
+updated: 2019-06-19 00:00:00
 title: "PowerShell 技能连载 - Left Side of Comparison"
 description: PowerTip of the Day - Left Side of Comparison
 categories:

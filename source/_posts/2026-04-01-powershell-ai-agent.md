@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-01 08:00:00
+updated: 2026-04-01 08:00:00
 title: "PowerShell 技能连载 - AI Agent 自动化框架"
 description: PowerTip of the Day - AI Agent Automation Framework in PowerShell
 categories:

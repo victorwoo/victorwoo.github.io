@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-26 08:00:00
+updated: 2026-01-26 08:00:00
 title: "PowerShell 技能连载 - 日志分析与取证"
 description: PowerTip of the Day - Log Analytics and Forensics in PowerShell
 categories:

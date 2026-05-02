@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-09-05 00:00:00
+updated: 2016-09-05 00:00:00
 title: "PowerShell 技能连载 - 查找自启动项"
 description: PowerTip of the Day - Finding Auto Starts
 categories:

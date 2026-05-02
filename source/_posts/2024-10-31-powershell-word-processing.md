@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-31 08:00:00
+updated: 2024-10-31 08:00:00
 title: "PowerShell 技能连载 - Word 处理技巧"
 description: PowerTip of the Day - PowerShell Word Processing Tips
 categories:

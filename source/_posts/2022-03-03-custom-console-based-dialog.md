@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-03-03 00:00:00
+updated: 2022-03-03 00:00:00
 title: "PowerShell 技能连载 - 自定义基于控制台的对话框"
 description: PowerTip of the Day - Custom Console-Based Dialog
 categories:

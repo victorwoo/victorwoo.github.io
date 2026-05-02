@@ -2,6 +2,7 @@
 layout: post
 title: "用 PowerShell 脚本获取天气实况"
 date: 2013-11-12 00:00:00
+updated: 2013-11-12 00:00:00
 description: Get Real Time Weather Report by PowerShell
 categories: powershell
 tags:

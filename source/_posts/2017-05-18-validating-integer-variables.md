@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-18 00:00:00
+updated: 2017-05-18 00:00:00
 title: "PowerShell 技能连载 - 验证整形变量"
 description: PowerTip of the Day - Validating Integer Variables
 categories:

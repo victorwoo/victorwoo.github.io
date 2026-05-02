@@ -2,6 +2,7 @@
 layout: post
 title: "JavaScript 中的坑"
 date: 2015-01-20 14:38:34
+updated: 2015-01-20 14:38:34
 description: "Gochas in JavaScript"
 categories:
 - javascript

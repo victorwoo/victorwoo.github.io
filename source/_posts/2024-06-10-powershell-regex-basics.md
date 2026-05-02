@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-10 08:00:00
+updated: 2024-06-10 08:00:00
 title: "PowerShell正则表达式核心指南"
 description: "掌握模式匹配与文本解析的核心技巧"
 categories:

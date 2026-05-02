@@ -2,6 +2,7 @@
 layout: post
 title: "用 PowerShell 脚本将书签批量导入 Delicious"
 date: 2013-11-01 00:00:00
+updated: 2013-11-01 00:00:00
 description: Use PowerShell to Batch Import Bookmarks into Delicious
 categories: powershell
 tags:

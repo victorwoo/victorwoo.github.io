@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-31 08:00:00
+updated: 2025-12-31 08:00:00
 title: "PowerShell 技能连载 - 2025 年度回顾与 2026 展望"
 description: PowerTip of the Day - 2025 Year in Review and 2026 Outlook
 categories:

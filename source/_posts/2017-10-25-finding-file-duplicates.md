@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-25 00:00:00
+updated: 2017-10-25 00:00:00
 title: "PowerShell 技能连载 - 查找重复的文件"
 description: PowerTip of the Day - Finding File Duplicates
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-04 00:00:00
+updated: 2017-10-04 00:00:00
 title: "PowerShell 技能连载 - Launching Daily Tools via Alias"
 description: PowerTip of the Day - Launching Daily Tools via Alias
 categories:

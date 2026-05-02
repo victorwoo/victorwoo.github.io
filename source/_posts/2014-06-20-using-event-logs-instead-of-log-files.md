@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 用事件日志代替日志文件"
 date: 2014-06-20 00:00:00
+updated: 2014-06-20 00:00:00
 description: PowerTip of the Day - Using Event Logs Instead of Log Files
 categories:
 - powershell

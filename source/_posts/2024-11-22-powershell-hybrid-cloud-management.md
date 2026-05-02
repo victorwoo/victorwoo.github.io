@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-22 08:00:00
+updated: 2024-11-22 08:00:00
 title: "PowerShell 技能连载 - 混合云管理"
 description: PowerTip of the Day - PowerShell Hybrid Cloud Management
 categories:

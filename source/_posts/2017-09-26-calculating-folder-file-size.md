@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-26 00:00:00
+updated: 2017-09-26 00:00:00
 title: "PowerShell 技能连载 - 计算文件夹大小"
 description: PowerTip of the Day - Calculating Folder File Size
 categories:

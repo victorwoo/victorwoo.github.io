@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-03-05 00:00:00
+updated: 2020-03-05 00:00:00
 title: "PowerShell 技能连载 - 列出安装的应用程序（第 2 部分）"
 description: PowerTip of the Day - Listing Installed Applications (Part 2)
 categories:

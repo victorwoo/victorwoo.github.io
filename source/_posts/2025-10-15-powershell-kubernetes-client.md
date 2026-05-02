@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-15 08:00:00
+updated: 2025-10-15 08:00:00
 title: "PowerShell 技能连载 - Kubernetes 客户端操作"
 description: PowerTip of the Day - Kubernetes Client Operations in PowerShell
 categories:

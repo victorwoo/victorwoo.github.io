@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell与Terraform实现基础设施即代码"
 date: 2024-08-02 00:00:00
+updated: 2024-08-02 00:00:00
 description: 使用PowerShell自动化Terraform部署多云基础设施
 categories:
 - powershell

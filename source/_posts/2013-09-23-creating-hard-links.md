@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 创建硬连接"
 date: 2013-09-23 00:00:00
+updated: 2013-09-23 00:00:00
 description: PowerTip of the Day - Creating Hard Links
 categories:
 - powershell

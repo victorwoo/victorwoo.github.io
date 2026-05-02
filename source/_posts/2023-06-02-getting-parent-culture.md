@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-06-02 00:00:12
+updated: 2023-06-02 00:00:12
 title: "PowerShell 技能连载 - 获取父级文化"
 description: PowerTip of the Day - Getting Parent Culture
 categories:

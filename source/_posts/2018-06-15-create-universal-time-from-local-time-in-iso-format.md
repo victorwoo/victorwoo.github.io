@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-15 00:00:00
+updated: 2018-06-15 00:00:00
 title: "PowerShell 技能连载 - 从本地时间以 ISO 格式创建 UTC 时间"
 description: PowerTip of the Day - Create Universal Time from Local Time in ISO Format
 categories:

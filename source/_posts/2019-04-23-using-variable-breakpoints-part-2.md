@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-23 00:00:00
+updated: 2019-04-23 00:00:00
 title: "PowerShell 技能连载 - 使用变量断点（第 2 部分）"
 description: PowerTip of the Day - Using Variable Breakpoints (Part 2)
 categories:

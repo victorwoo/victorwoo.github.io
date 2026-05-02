@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 设置注册表权限"
 date: 2014-05-30 00:00:00
+updated: 2014-05-30 00:00:00
 description: PowerTip of the Day - Setting Registry Permissions
 categories:
 - powershell

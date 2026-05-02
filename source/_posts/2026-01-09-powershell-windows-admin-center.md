@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-09 08:00:00
+updated: 2026-01-09 08:00:00
 title: "PowerShell 技能连载 - Windows Admin Center 自动化"
 description: PowerTip of the Day - Windows Admin Center Automation in PowerShell
 categories:

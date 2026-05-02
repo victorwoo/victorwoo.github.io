@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-22 08:00:00
+updated: 2025-12-22 08:00:00
 title: "PowerShell 技能连载 - Windows Terminal 自动化"
 description: PowerTip of the Day - Windows Terminal Automation in PowerShell
 categories:

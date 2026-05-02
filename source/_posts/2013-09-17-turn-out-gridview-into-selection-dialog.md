@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 将Out-GridView改造为选择对话框"
 date: 2013-09-17 00:00:00
+updated: 2013-09-17 00:00:00
 description: PowerTip of the Day - Turn Out-GridView into Selection Dialog
 categories:
 - powershell

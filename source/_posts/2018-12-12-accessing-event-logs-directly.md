@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-12 00:00:00
+updated: 2018-12-12 00:00:00
 title: "PowerShell 技能连载 - 直接存取事件日志"
 description: PowerTip of the Day - Accessing Event Logs Directly
 categories:

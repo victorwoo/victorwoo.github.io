@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-02 00:00:00
+updated: 2019-12-02 00:00:00
 title: "PowerShell 技能连载 - PowerShell 7 中的三元操作符"
 description: PowerTip of the Day - PowerShell 7 Ternary Operator
 categories:

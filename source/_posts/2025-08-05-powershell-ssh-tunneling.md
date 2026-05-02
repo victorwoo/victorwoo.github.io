@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-05 08:00:00
+updated: 2025-08-05 08:00:00
 title: "PowerShell 技能连载 - SSH 隧道与端口转发"
 description: PowerTip of the Day - SSH Tunneling and Port Forwarding in PowerShell
 categories:

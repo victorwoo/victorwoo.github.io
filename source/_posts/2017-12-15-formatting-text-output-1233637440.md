@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-15 00:00:00
+updated: 2017-12-15 00:00:00
 title: "PowerShell 技能连载 - 格式化文本输出"
 description: PowerTip of the Day - Formatting Text Output
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-07 00:00:00
+updated: 2019-06-07 00:00:00
 title: "PowerShell 技能连载 - 查看下载文件的大小"
 description: PowerTip of the Day - Finding Size of Download
 categories:

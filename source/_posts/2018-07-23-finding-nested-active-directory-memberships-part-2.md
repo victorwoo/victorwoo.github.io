@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-23 00:00:00
+updated: 2018-07-23 00:00:00
 title: "PowerShell 技能连载 - 查找嵌套的 Active Directory 成员（第 2 部分）"
 description: PowerTip of the Day - Finding Nested Active Directory Memberships (Part 2)
 categories:

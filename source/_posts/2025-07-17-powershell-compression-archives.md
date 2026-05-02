@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-17 08:00:00
+updated: 2025-07-17 08:00:00
 title: "PowerShell 技能连载 - 压缩与归档操作"
 description: PowerTip of the Day - Compression and Archive Operations in PowerShell
 categories:

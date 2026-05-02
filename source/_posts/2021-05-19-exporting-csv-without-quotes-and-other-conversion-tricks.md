@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-05-19 00:00:00
+updated: 2021-05-19 00:00:00
 title: "PowerShell 技能连载 - 导出不带引号的CSV（和其他转换技巧）"
 description: PowerTip of the Day - Exporting CSV without Quotes (and Other Conversion Tricks)
 categories:

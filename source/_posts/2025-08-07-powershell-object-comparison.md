@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-07 08:00:00
+updated: 2025-08-07 08:00:00
 title: "PowerShell 技能连载 - 对象比较与差异检测"
 description: PowerTip of the Day - Object Comparison and Difference Detection in PowerShell
 categories:

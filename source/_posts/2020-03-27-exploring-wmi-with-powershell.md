@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-03-27 00:00:00
+updated: 2020-03-27 00:00:00
 title: "PowerShell 技能连载 - 使用 PowerShell 探索 WMI"
 description: PowerTip of the Day - Exploring WMI with PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-12-16 00:00:00
+updated: 2020-12-16 00:00:00
 title: "PowerShell 技能连载 - 保持 Windows 和 PowerShell 持续运行"
 description: PowerTip of the Day - Keeping Windows (and PowerShell) Running
 categories:

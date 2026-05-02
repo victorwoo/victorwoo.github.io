@@ -2,6 +2,7 @@
 layout: post
 title: "获取所有支持管道的 Cmdlet"
 date: 2014-10-21 15:05:44
+updated: 2014-10-21 15:05:44
 description: List Cmdlets Support Pipeline
 categories: powershell
 tags: powershell

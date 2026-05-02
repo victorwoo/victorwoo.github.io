@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-20 00:00:00
+updated: 2017-06-20 00:00:00
 title: "PowerShell 技能连载 - 世界时钟"
 description: PowerTip of the Day - World Time Clock
 categories:

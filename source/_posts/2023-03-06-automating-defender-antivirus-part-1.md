@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-03-06 12:09:05
+updated: 2023-03-06 12:09:05
 title: "PowerShell 技能连载 - 自动化操作 Defender 杀毒软件（第 1 部分）"
 description: PowerTip of the Day - Automating Defender Antivirus (Part 1)
 categories:

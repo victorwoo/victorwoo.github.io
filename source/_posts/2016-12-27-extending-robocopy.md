@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-12-27 00:00:00
+updated: 2016-12-27 00:00:00
 title: "PowerShell 技能连载 - 扩展 Robocopy"
 description: PowerTip of the Day - Extending Robocopy
 categories:

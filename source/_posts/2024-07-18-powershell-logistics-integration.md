@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-18 08:00:00
+updated: 2024-07-18 08:00:00
 title: "PowerShell 技能连载 - 物流行业集成"
 description: PowerTip of the Day - PowerShell Logistics Integration
 categories:

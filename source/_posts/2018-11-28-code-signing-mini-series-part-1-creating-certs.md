@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-28 00:00:00
+updated: 2018-11-28 00:00:00
 title: "PowerShell 技能连载 - 代码签名迷你系列（第 1 部分：创建证书）"
 description: 'PowerTip of the Day - Code-Signing Mini-Series (Part 1: Creating Certs)'
 categories:

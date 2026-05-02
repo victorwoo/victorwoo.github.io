@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 使用加密文件系统（EFS）来保护密码"
 date: 2014-04-03 00:00:00
+updated: 2014-04-03 00:00:00
 description: PowerTip of the Day - Using Encrypting File System (EFS) to Protect Passwords
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-03 08:00:00
+updated: 2025-12-03 08:00:00
 title: "PowerShell 技能连载 - Azure Bastion 远程连接"
 description: PowerTip of the Day - Azure Bastion Remote Connections in PowerShell
 categories:

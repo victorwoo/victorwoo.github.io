@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-08 00:00:00
+updated: 2019-04-08 00:00:00
 title: "PowerShell 技能连载 - 优先使用 WLAN 连接"
 description: PowerTip of the Day - Preferring WLAN Connections
 categories:

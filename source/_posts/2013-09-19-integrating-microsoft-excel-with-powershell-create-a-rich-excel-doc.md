@@ -2,6 +2,7 @@
 layout: post
 title: "在PowerShell中操作Excel - 创建一个富Excel文档"
 date: 2013-09-19 00:00:00
+updated: 2013-09-19 00:00:00
 description: 'Integrating Microsoft Excel with PowerShell: Create a Rich Excel Doc'
 categories:
 - powershell

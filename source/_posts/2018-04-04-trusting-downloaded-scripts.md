@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-04 00:00:00
+updated: 2018-04-04 00:00:00
 title: "PowerShell 技能连载 - 信任下载的文件"
 description: PowerTip of the Day - Trusting Downloaded Scripts
 categories:

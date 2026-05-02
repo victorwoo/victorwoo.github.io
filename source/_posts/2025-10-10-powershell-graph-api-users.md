@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-10 08:00:00
+updated: 2025-10-10 08:00:00
 title: "PowerShell 技能连载 - Microsoft Graph 用户管理"
 description: PowerTip of the Day - Microsoft Graph User Management in PowerShell
 categories:

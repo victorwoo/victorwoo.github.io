@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-24 00:00:00
+updated: 2019-06-24 00:00:00
 title: "PowerShell 技能连载 - 使用 GeoCoding：将地址转换为经纬度（第 2 部分）"
 description: 'PowerTip of the Day - Geocoding: Converting Addresses to Lat/Long (Part 2)'
 categories:

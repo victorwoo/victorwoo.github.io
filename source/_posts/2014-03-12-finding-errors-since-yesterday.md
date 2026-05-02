@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找昨天以来的错误"
 date: 2014-03-12 00:00:00
+updated: 2014-03-12 00:00:00
 description: PowerTip of the Day - Finding Errors since Yesterday
 categories:
 - powershell

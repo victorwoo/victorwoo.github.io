@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-09 08:00:00
+updated: 2026-04-09 08:00:00
 title: "PowerShell 技能连载 - WinGet 高级包管理"
 description: PowerTip of the Day - Advanced WinGet Package Management in PowerShell
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "用 PowerShell 处理纯文本 - 1"
 date: 2013-09-23 00:00:00
+updated: 2013-09-23 00:00:00
 description: Processing Plain Text with PowerShell - 1
 categories:
 - powershell

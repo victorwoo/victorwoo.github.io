@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-01 00:00:00
+updated: 2017-12-01 00:00:00
 title: "PowerShell 技能连载 - 为对象高效添加标记"
 description: PowerTip of the Day - Tagging Objects Efficiently
 categories:

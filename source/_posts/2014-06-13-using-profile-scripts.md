@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 使用配置脚本"
 date: 2014-06-13 00:00:00
+updated: 2014-06-13 00:00:00
 description: PowerTip of the Day - Using Profile Scripts
 categories:
 - powershell

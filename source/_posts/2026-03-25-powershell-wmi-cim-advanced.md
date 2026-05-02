@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-25 08:00:00
+updated: 2026-03-25 08:00:00
 title: "PowerShell 技能连载 - CIM/WMI 高级查询"
 description: PowerTip of the Day - Advanced CIM/WMI Queries in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-09 00:00:00
+updated: 2017-08-09 00:00:00
 title: "PowerShell 技能连载 - 创建 HTML 报表（第一部分 - 创建 HTML）"
 description: "PowerTip of the Day - Creating HTML Reports (Part 1 – Creating HTML)"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-17 08:00:00
+updated: 2026-03-17 08:00:00
 title: "PowerShell 技能连载 - Azure Policy 合规治理"
 description: PowerTip of the Day - Azure Policy Compliance Governance in PowerShell
 categories:

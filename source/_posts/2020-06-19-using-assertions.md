@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-19 00:00:00
+updated: 2020-06-19 00:00:00
 title: "PowerShell 技能连载 - 使用断言"
 description: PowerTip of the Day - Using Assertions
 categories:

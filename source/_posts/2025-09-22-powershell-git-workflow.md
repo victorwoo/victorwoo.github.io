@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-22 08:00:00
+updated: 2025-09-22 08:00:00
 title: "PowerShell 技能连载 - Git 工作流自动化"
 description: PowerTip of the Day - Git Workflow Automation in PowerShell
 categories:

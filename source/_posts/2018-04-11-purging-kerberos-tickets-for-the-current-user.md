@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-11 00:00:00
+updated: 2018-04-11 00:00:00
 title: "PowerShell 技能连载 - 清除当前用户的 Kerberos 票证"
 description: PowerTip of the Day - Purging Kerberos Tickets for the Current User
 categories:

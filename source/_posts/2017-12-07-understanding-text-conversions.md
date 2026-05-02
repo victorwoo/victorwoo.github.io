@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-07 00:00:00
+updated: 2017-12-07 00:00:00
 title: "PowerShell 技能连载 - 理解文本转换"
 description: PowerTip of the Day - Understanding Text Conversions
 categories:

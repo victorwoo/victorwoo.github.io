@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-23 08:00:00
+updated: 2025-07-23 08:00:00
 title: "PowerShell 技能连载 - REST API 设计与实现"
 description: PowerTip of the Day - REST API Design and Implementation in PowerShell
 categories:

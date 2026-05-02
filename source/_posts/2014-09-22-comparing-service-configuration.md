@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-22 11:00:00
+updated: 2014-09-22 11:00:00
 title: "PowerShell 技能连载 - 比较服务配置"
 description: 'PowerTip of the Day - Comparing Service Configuration '
 categories:

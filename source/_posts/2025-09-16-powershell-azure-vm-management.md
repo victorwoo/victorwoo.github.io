@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-16 08:00:00
+updated: 2025-09-16 08:00:00
 title: "PowerShell 技能连载 - Azure 虚拟机管理"
 description: PowerTip of the Day - Azure Virtual Machine Management in PowerShell
 categories:

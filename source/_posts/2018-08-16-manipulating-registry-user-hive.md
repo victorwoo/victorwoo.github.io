@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-16 00:00:00
+updated: 2018-08-16 00:00:00
 title: "PowerShell 技能连载 - 使用注册表用户配置单元"
 description: PowerTip of the Day - Manipulating Registry User Hive
 categories:

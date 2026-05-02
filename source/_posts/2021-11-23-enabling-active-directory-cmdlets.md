@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-11-23 00:00:00
+updated: 2021-11-23 00:00:00
 title: "PowerShell 技能连载 - 启用 Active Directory cmdlet"
 description: PowerTip of the Day - Enabling Active Directory Cmdlets
 categories:

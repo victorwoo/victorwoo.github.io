@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-16 08:00:00
+updated: 2025-07-16 08:00:00
 title: "PowerShell 技能连载 - 注册表管理"
 description: PowerTip of the Day - Registry Management in PowerShell
 categories:

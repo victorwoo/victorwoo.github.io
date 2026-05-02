@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-29 08:00:00
+updated: 2025-10-29 08:00:00
 title: "PowerShell 技能连载 - Windows Terminal 定制"
 description: PowerTip of the Day - Windows Terminal Customization in PowerShell
 categories:

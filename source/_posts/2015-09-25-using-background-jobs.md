@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-09-25 11:00:00
+updated: 2015-09-25 11:00:00
 title: "PowerShell 技能连载 - 使用后台任务"
 description: PowerTip of the Day - Using Background Jobs
 categories:

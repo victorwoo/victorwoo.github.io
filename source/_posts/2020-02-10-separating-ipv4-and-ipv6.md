@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-10 00:00:00
+updated: 2020-02-10 00:00:00
 title: "PowerShell 技能连载 - 区分 IPv4 和 IPv6"
 description: PowerTip of the Day - Separating IPv4 and IPv6
 categories:

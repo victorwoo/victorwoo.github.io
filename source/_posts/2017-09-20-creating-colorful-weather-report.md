@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-20 00:00:00
+updated: 2017-09-20 00:00:00
 title: "PowerShell 技能连载 - 创建彩色的天气报告"
 description: PowerTip of the Day - Creating Colorful Weather Report
 categories:

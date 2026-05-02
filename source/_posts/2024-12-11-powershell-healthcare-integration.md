@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-11 08:00:00
+updated: 2024-12-11 08:00:00
 title: "PowerShell 技能连载 - 医疗行业集成"
 description: PowerTip of the Day - PowerShell Healthcare Integration
 categories:

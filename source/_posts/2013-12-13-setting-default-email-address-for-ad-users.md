@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 为 AD 用户设置缺省的 Email 地址"
 date: 2013-12-13 00:00:00
+updated: 2013-12-13 00:00:00
 description: PowerTip of the Day - Setting Default Email Address for AD Users
 categories:
 - powershell

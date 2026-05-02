@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-09-05 00:00:00
+updated: 2018-09-05 00:00:00
 title: "PowerShell 技能连载 - 管理 Lenovo BIOS 设置（第 3 部分）"
 description: PowerTip of the Day - Managing Lenovo BIOS Settings (Part 3)
 categories:

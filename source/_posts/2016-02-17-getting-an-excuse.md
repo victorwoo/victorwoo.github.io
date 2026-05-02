@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-02-17 12:00:00
+updated: 2016-02-17 12:00:00
 title: "PowerShell 技能连载 - 得到一个借口"
 description: PowerTip of the Day - Getting an Excuse
 categories:

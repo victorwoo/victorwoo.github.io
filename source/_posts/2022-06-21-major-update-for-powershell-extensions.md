@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-06-21 00:00:00
+updated: 2022-06-21 00:00:00
 title: "PowerShell 技能连载 - PowerShell 扩展的重要更新"
 description: PowerTip of the Day - Major Update for PowerShell Extensions
 categories:

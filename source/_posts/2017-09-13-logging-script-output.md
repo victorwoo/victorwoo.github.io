@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-13 00:00:00
+updated: 2017-09-13 00:00:00
 title: "PowerShell 技能连载 - 记录脚本输出"
 description: PowerTip of the Day - Logging Script Output
 categories:

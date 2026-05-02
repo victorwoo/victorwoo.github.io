@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-04-08 11:00:00
+updated: 2015-04-08 11:00:00
 title: "PowerShell 技能连载 - 查找所有活动的驱动器号"
 description: 'PowerTip of the Day - Find All Active Drive Letters '
 categories:

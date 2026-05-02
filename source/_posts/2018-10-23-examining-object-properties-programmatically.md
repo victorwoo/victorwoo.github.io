@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-23 00:00:00
+updated: 2018-10-23 00:00:00
 title: "PowerShell 技能连载 - 编程检查对象属性"
 description: PowerTip of the Day - Examining Object Properties Programmatically
 categories:

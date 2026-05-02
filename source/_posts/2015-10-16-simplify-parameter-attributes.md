@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-10-16 11:00:00
+updated: 2015-10-16 11:00:00
 title: "PowerShell 技能连载 - 简化参数属性"
 description: PowerTip of the Day - Simplify Parameter Attributes
 categories:

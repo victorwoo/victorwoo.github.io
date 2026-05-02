@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-07 08:00:00
+updated: 2025-09-07 08:00:00
 title: "PowerShell 技能连载 - 模块开发实战"
 description: PowerTip of the Day - Practical Module Development in PowerShell
 categories:

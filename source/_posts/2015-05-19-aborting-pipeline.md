@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-05-19 11:00:00
+updated: 2015-05-19 11:00:00
 title: "PowerShell 技能连载 - 跳出管道"
 description: PowerTip of the Day - Aborting Pipeline
 categories:

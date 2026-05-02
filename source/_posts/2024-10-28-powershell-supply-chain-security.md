@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-28 08:00:00
+updated: 2024-10-28 08:00:00
 title: "PowerShell 技能连载 - 供应链安全管理"
 description: PowerTip of the Day - PowerShell Supply Chain Security Management
 categories:

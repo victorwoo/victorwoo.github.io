@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-10-28 08:00:00
+updated: 2025-10-28 08:00:00
 title: "PowerShell 技能连载 - DSC v3 配置管理"
 description: PowerTip of the Day - DSC v3 Configuration Management in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-06 00:00:00
+updated: 2019-03-06 00:00:00
 title: "PowerShell 技能连载 - 计算最高和最低有效字节"
 description: PowerTip of the Day - Calculating Most and Least Significant Byte
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-02 08:00:00
+updated: 2024-12-02 08:00:00
 title: "PowerShell函数与模块化开发"
 description: "掌握代码复用与组织的基本方法"
 categories:

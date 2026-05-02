@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-20 08:00:00
+updated: 2024-11-20 08:00:00
 title: "PowerShell 技能连载 - 微服务治理管理"
 description: PowerTip of the Day - PowerShell Microservice Governance Management
 categories:

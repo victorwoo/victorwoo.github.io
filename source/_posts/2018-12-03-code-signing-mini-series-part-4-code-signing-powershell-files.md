@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-03 00:00:00
+updated: 2018-12-03 00:00:00
 title: "PowerShell 技能连载 - 代码签名迷你系列（第 4 部分：签名 PowerShell 文件）"
 description: 'PowerTip of the Day - Code-Signing Mini-Series (Part 4: Code-Signing PowerShell Files)'
 categories:

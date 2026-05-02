@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-02-17 00:00:00
+updated: 2022-02-17 00:00:00
 title: "PowerShell 技能连载 - 本地化日期和时间标签（第 2 部分）"
 description: PowerTip of the Day - Localizing Date and Time Labels (Part 2)
 categories:

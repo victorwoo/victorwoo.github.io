@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-11-02 00:00:00
+updated: 2022-11-02 00:00:00
 title: "PowerShell 技能连载 - 创建新的代码签名测试证书"
 description: PowerTip of the Day - Creating New Code Signing Test Certificates
 categories:

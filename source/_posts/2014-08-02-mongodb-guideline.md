@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-08-02 17:51:38
+updated: 2014-08-02 17:51:38
 title: mongodb 学习路线
 description: mongoose guideline
 categories: mongoose

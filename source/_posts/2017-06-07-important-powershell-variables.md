@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-07 00:00:00
+updated: 2017-06-07 00:00:00
 title: "PowerShell 技能连载 - 重要的 PowerShell 变量"
 description: PowerTip of the Day - Important PowerShell Variables
 categories:

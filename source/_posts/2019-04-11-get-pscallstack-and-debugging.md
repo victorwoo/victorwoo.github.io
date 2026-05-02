@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-11 00:00:00
+updated: 2019-04-11 00:00:00
 title: "PowerShell 技能连载 - Get-PSCallStack 和调试"
 description: PowerTip of the Day - Get-PSCallStack and Debugging
 categories:

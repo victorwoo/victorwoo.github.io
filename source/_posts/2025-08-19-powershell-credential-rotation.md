@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-19 08:00:00
+updated: 2025-08-19 08:00:00
 title: "PowerShell 技能连载 - 凭据自动轮换"
 description: PowerTip of the Day - Automated Credential Rotation in PowerShell
 categories:

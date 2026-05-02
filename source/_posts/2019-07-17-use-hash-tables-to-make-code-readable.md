@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-17 00:00:00
+updated: 2019-07-17 00:00:00
 title: "PowerShell 技能连载 - 用哈希表提高代码可读性"
 description: PowerTip of the Day - Use Hash Tables to Make Code Readable
 categories:

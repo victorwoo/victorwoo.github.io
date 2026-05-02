@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-04 00:00:00
+updated: 2017-07-04 00:00:00
 title: "PowerShell 技能连载 - 读取注册表键值（临时解决办法）"
 description: PowerTip of the Day - Reading Registry Values (Workaround)
 categories:

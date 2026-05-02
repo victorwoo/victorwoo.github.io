@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-01 00:00:00
+updated: 2019-07-01 00:00:00
 title: "PowerShell 技能连载 - 用 Out-GridView 做为输出窗口"
 description: PowerTip of the Day - Use Out-GridView as Output Window
 categories:

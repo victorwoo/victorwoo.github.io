@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-21 00:00:00
+updated: 2019-06-21 00:00:00
 title: "PowerShell 技能连载 - 使用 GeoCoding（第 1 部分）"
 description: PowerTip of the Day - Working with GeoCoding (Part 1)
 categories:

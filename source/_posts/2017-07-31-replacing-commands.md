@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-07-31 00:00:00
+updated: 2017-07-31 00:00:00
 title: "PowerShell 技能连载 - 替换命令"
 description: PowerTip of the Day - Replacing Commands
 categories:

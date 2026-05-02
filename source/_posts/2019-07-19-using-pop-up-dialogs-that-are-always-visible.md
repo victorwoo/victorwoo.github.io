@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-19 00:00:00
+updated: 2019-07-19 00:00:00
 title: "PowerShell 技能连载 - 使用始终可见的弹出对话框"
 description: PowerTip of the Day - Using Pop-up Dialogs that Are Always Visible
 categories:

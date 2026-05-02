@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-08 08:00:00
+updated: 2025-04-08 08:00:00
 title: "PowerShell 技能连载 - Windows 事件日志分析"
 description: PowerTip of the Day - Windows Event Log Analysis
 categories:

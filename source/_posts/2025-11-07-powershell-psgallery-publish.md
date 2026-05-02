@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-07 08:00:00
+updated: 2025-11-07 08:00:00
 title: "PowerShell 技能连载 - PowerShell Gallery 发布"
 description: PowerTip of the Day - Publishing to PowerShell Gallery
 categories:

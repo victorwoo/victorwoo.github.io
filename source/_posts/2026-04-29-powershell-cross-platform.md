@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-29 08:00:00
+updated: 2026-04-29 08:00:00
 title: "PowerShell 技能连载 - 跨平台脚本开发"
 description: PowerTip of the Day - Cross-Platform Script Development in PowerShell
 categories:

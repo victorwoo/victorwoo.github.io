@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-08 00:00:00
+updated: 2019-05-08 00:00:00
 title: "PowerShell 技能连载 - 创建代码签名证书"
 description: PowerTip of the Day - Creating Code-Signing Certificates
 categories:

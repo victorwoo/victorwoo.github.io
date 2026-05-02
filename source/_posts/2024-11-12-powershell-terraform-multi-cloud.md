@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-12 08:00:00
+updated: 2024-11-12 08:00:00
 title: "PowerShell 技能连载 - Terraform 多云环境集成与自动化"
 description: "实现跨云平台资源编排与配置管理自动化"
 categories:

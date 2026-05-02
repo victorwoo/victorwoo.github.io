@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-08 08:00:00
+updated: 2024-05-08 08:00:00
 title: "PowerShell函数高级应用指南"
 description: "掌握参数校验与管道集成的核心技巧"
 categories:

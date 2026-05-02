@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-27 08:00:00
+updated: 2024-09-27 08:00:00
 title: "PowerShell参数传递机制详解"
 description: "掌握位置参数、命名参数与管道输入的三种传递方式"
 categories:

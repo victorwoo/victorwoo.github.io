@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 微软虚拟学院课程"
 date: 2014-02-14 00:00:00
+updated: 2014-02-14 00:00:00
 description: PowerShell MVA Lessons
 categories: powershell
 tags:

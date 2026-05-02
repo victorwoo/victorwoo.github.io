@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-15 00:00:00
+updated: 2018-11-15 00:00:00
 title: "PowerShell 技能连载 - 从目录结构中删除所有文件"
 description: PowerTip of the Day - Deleting All Files from a Folder Structure
 categories:

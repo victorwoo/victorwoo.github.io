@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-08 00:00:00
+updated: 2019-03-08 00:00:00
 title: "PowerShell 技能连载 - 通过校验位测试原始数据——实际案例"
 description: "PowerTip of the Day - Testing Raw Data with Checksums – A Real-World Example"
 categories:

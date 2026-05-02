@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-12 00:00:00
+updated: 2018-03-12 00:00:00
 title: "PowerShell 技能连载 - 终极快速的 Ping 命令"
 description: PowerTip of the Day - Final Super-Fast Ping Command
 categories:

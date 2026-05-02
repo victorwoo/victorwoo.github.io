@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-09 00:00:00
+updated: 2018-01-09 00:00:00
 title: "PowerShell 技能连载 - 用 Group-Object 区分远程处理结果"
 description: PowerTip of the Day - Using Group-Object to Separate Remoting Results
 categories:

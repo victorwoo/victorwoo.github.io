@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-18 00:00:00
+updated: 2017-12-18 00:00:00
 title: "PowerShell 技能连载 - 覆盖 Execution Policy 设置"
 description: PowerTip of the Day - Execution Policy Override
 categories:

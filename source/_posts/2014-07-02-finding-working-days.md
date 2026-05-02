@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 列出工作日"
 date: 2014-07-02 00:00:00
+updated: 2014-07-02 00:00:00
 description: PowerTip of the Day - Finding Working Days
 categories:
 - powershell

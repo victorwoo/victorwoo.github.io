@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-16 00:00:00
+updated: 2020-11-16 00:00:00
 title: "PowerShell 技能连载 - 修复 PowerShell Gallery 的访问"
 description: PowerTip of the Day - Repairing PowerShell Gallery Access
 categories:

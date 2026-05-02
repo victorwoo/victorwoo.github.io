@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-11 00:00:00
+updated: 2019-03-11 00:00:00
 title: "PowerShell 技能连载 - 从图片中创建彩色 ASCII 艺术"
 description: PowerTip of the Day - Colorful ASCII-Art from Images
 categories:

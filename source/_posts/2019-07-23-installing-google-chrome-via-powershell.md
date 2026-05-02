@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-23 00:00:00
+updated: 2019-07-23 00:00:00
 title: "PowerShell 技能连载 - 通过 PowerShell 安装 Google Chrome"
 description: PowerTip of the Day - Installing Google Chrome via PowerShell
 categories:

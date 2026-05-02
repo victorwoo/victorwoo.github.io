@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-21 00:00:00
+updated: 2018-08-21 00:00:00
 title: "PowerShell 技能连载 - 远程读取配置表（第 2 部分）"
 description: PowerTip of the Day - Reading Registry Remotely (Part 2)
 categories:

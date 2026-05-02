@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-03 08:00:00
+updated: 2024-10-03 08:00:00
 title: "PowerShell 技能连载 - 供应链安全漏洞扫描工具"
 description: "使用PowerShell实现软件供应链安全自动化审计"
 categories:

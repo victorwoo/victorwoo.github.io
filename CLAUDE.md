@@ -99,6 +99,8 @@ npx hexo clean && npx hexo generate
 
 注意：主题本身会产生大量 ERROR（sidebar widget 问题），这是已知问题，非新文章引起。验证时关注是否有新增的 ERROR 类型。
 
+**验证原则**：Hexo 全量生成耗时较长（约 2-5 分钟），验证时应尽量局部验证（单篇文章 `markdownlint`、检查生成后的单个 HTML 文件），降低迭代成本。待局部验证无误后再全量 `hexo generate`。
+
 ### 代码块安全
 
 Markdown 代码块内的 PowerShell here-string（`@"..."@`）中**不得**嵌入三反引号（` ``` `），否则会被 Markdown 解析器误认为代码围栏结束，导致渲染断裂。应改用数组拼接等方式。
@@ -109,6 +111,7 @@ Markdown 代码块内的 PowerShell here-string（`@"..."@`）中**不得**嵌�
 ---
 layout: post
 date: YYYY-MM-DD 08:00:00
+updated: YYYY-MM-DD 08:00:00
 title: "PowerShell 技能连载 - 中文标题"
 description: PowerTip of the Day - English Title
 categories:

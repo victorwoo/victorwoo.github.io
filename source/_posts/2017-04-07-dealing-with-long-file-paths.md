@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-07 00:00:00
+updated: 2017-04-07 00:00:00
 title: "PowerShell 技能连载 - 处理长文件路径"
 description: PowerTip of the Day - Dealing with Long File Paths
 categories:

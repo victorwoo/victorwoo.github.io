@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-04 08:00:00
+updated: 2025-03-04 08:00:00
 title: "PowerShell 技能连载 - 系统优化技巧"
 description: PowerTip of the Day - PowerShell System Optimization Tips
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-25 00:00:00
+updated: 2018-04-25 00:00:00
 title: "PowerShell 技能连载 - 转换错误记录"
 description: PowerTip of the Day - Converting Error Records
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-01-28 00:00:00
+updated: 2022-01-28 00:00:00
 title: "PowerShell 技能连载 - 识别主 PowerShell 模块位置"
 description: PowerTip of the Day - Identifying Primary PowerShell Module Location
 categories:

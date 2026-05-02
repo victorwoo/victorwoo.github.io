@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-12 08:00:00
+updated: 2025-03-12 08:00:00
 title: "PowerShell 技能连载 - Exchange 管理技巧"
 description: PowerTip of the Day - PowerShell Exchange Management Tips
 categories:

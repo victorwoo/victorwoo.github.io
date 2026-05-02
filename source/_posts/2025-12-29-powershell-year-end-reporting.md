@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-29 08:00:00
+updated: 2025-12-29 08:00:00
 title: "PowerShell 技能连载 - 年终报告自动生成"
 description: PowerTip of the Day - Year-End Report Auto Generation in PowerShell
 categories:

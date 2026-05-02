@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-12 08:00:00
+updated: 2026-02-12 08:00:00
 title: "PowerShell 技能连载 - 流式处理与管道优化"
 description: PowerTip of the Day - Streaming Processing and Pipeline Optimization in PowerShell
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 从照片中读取拍摄日期"
 date: 2014-06-10 00:00:00
+updated: 2014-06-10 00:00:00
 description: PowerTip of the Day - Getting DateTaken Info from Pictures
 categories:
 - powershell

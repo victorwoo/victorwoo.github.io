@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-30 08:00:00
+updated: 2025-05-30 08:00:00
 title: "PowerShell 技能连载 - Kubernetes 运维管理"
 description: PowerTip of the Day - Kubernetes Operations Management in PowerShell
 categories:

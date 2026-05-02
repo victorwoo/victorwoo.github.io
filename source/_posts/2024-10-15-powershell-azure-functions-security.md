@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-10-15 08:00:00
+updated: 2024-10-15 08:00:00
 title: "PowerShell 技能连载 - 基于Azure Functions的无服务器安全检测"
 description: "使用PowerShell在无服务器架构中实现实时安全事件响应"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-02-09 00:00:00
+updated: 2018-02-09 00:00:00
 title: "PowerShell 技能连载 - 创建随机的密码"
 description: PowerTip of the Day - Creating Random Passwords
 categories:

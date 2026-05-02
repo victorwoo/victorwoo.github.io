@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-24 00:00:00
+updated: 2017-11-24 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 5+ 中读取 .PSD1 文件"
 description: PowerTip of the Day - Reading Data from .PSD1 Files in PowerShell 5+
 categories:

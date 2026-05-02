@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-05-26 11:00:00
+updated: 2015-05-26 11:00:00
 title: "PowerShell 技能连载 - 根据大写字符分割文本"
 description: PowerTip of the Day - Splitting Text at Uppercase Letters
 categories:

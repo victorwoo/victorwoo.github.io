@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-29 00:00:00
+updated: 2017-06-29 00:00:00
 title: "PowerShell 技能连载 - 每日问候"
 description: PowerTip of the Day - Greetings of the Day
 categories:

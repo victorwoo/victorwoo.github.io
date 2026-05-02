@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-03 00:00:00
+updated: 2018-04-03 00:00:00
 title: "PowerShell 技能连载 - 执行策略和下载的脚本文件"
 description: PowerTip of the Day - Execution Policy and Downloaded Script Files
 categories:

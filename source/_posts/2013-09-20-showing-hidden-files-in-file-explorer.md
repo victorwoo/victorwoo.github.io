@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 在文件管理器中显示隐藏文件"
 date: 2013-09-20 00:00:00
+updated: 2013-09-20 00:00:00
 description: PowerTip of the Day - Showing Hidden Files in File Explorer
 categories:
 - powershell

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-04-22 08:00:00
+updated: 2026-04-22 08:00:00
 title: "PowerShell 技能连载 - Prompt Engineering 实践"
 description: PowerTip of the Day - Prompt Engineering Practices in PowerShell
 categories:

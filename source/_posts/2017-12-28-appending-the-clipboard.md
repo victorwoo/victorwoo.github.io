@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-28 00:00:00
+updated: 2017-12-28 00:00:00
 title: "PowerShell 技能连载 - 在剪贴板中附加内容"
 description: PowerTip of the Day - Appending the Clipboard
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-16 00:00:00
+updated: 2017-11-16 00:00:00
 title: "PowerShell 技能连载 - Getting File Extension"
 description: PowerTip of the Day - Getting File Extension
 categories:

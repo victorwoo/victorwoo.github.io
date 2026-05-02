@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-21 08:00:00
+updated: 2025-08-21 08:00:00
 title: "PowerShell 技能连载 - Windows 更新自动化管理"
 description: PowerTip of the Day - Windows Update Automation in PowerShell
 categories:

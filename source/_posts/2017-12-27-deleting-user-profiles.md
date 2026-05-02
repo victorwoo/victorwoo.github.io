@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-27 00:00:00
+updated: 2017-12-27 00:00:00
 title: "PowerShell 技能连载 - 删除用户配置文件"
 description: PowerTip of the Day - Deleting User Profiles
 categories:

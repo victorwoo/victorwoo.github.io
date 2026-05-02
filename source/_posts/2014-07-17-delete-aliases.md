@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-07-17 11:00:00
+updated: 2014-07-17 11:00:00
 title: "PowerShell 技能连载 - 删除别名"
 description: PowerTip of the Day - Delete Aliases
 categories:

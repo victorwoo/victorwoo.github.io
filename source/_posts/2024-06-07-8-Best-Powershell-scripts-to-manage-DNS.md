@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-07 00:00:00
+updated: 2024-06-07 00:00:00
 title: "PowerShell 技能连载 - 管理 DNS 的 8 个最佳 Powershell 脚本"
 description: "8 Best Powershell scripts to manage DNS"
 categories:

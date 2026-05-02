@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-03 00:00:00
+updated: 2019-05-03 00:00:00
 title: "PowerShell 技能连载 - 查找最新的 PowerShell 6 下载地址"
 description: PowerTip of the Day - Finding the Latest PowerShell 6 Download URL
 categories:

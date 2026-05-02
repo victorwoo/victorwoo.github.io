@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-31 00:00:00
+updated: 2018-08-31 00:00:00
 title: "PowerShell 技能连载 - 探索 PowerShell 模块"
 description: PowerTip of the Day - Exploring PowerShell Modules
 categories:

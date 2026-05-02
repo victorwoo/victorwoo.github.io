@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 设置显示器亮度"
 date: 2013-09-27 00:00:00
+updated: 2013-09-27 00:00:00
 description: PowerTip of the Day - Check Monitor Brightness
 categories:
 - powershell

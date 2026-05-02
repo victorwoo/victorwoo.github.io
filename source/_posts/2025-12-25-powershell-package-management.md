@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-25 08:00:00
+updated: 2025-12-25 08:00:00
 title: "PowerShell 技能连载 - 包管理与依赖控制"
 description: PowerTip of the Day - Package Management and Dependency Control in PowerShell
 categories:

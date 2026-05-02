@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-06 00:00:00
+updated: 2018-07-06 00:00:00
 title: "PowerShell 技能连载 - 在函数内使用持久变量"
 description: PowerTip of the Day - Using persisting variables inside functions
 categories:

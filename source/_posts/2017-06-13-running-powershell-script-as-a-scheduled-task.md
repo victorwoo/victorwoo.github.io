@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-13 00:00:00
+updated: 2017-06-13 00:00:00
 title: "PowerShell 技能连载 - 在计划任务中运行 PowerShell 脚本"
 description: PowerTip of the Day - Running PowerShell Script as a Scheduled Task
 categories:

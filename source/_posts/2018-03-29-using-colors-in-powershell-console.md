@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-29 00:00:00
+updated: 2018-03-29 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 控制台中使用颜色"
 description: PowerTip of the Day - Using Colors in PowerShell Console
 categories:

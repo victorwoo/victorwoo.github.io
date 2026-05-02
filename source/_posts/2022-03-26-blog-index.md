@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 博客文章汇总 (2021-04 ~ 2022-03)"
 date: 2022-03-26 00:00:00
+updated: 2022-03-26 00:00:00
 description: PowerShell blog post collection (2021-04 ~ 2022-03)
 categories:
 - powershell

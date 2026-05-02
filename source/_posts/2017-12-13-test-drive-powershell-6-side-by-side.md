@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-12-13 00:00:00
+updated: 2017-12-13 00:00:00
 title: "PowerShell 技能连载 - 测试运行 PowerShell 6 - 并行运行"
 description: "PowerTip of the Day - Test-Drive PowerShell 6 – Side by Side"
 categories:

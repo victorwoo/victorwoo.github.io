@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-10-28 00:00:00
+updated: 2021-10-28 00:00:00
 title: "PowerShell 技能连载 - 速度很重要"
 description: PowerTip of the Day - When Speed Matters
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-02-12 00:00:00
+updated: 2021-02-12 00:00:00
 title: "PowerShell 技能连载 - 探索 Windows 上的程序包管理器（第 1 部分）"
 description: PowerTip of the Day - Discovering Package Managers on Windows (Part 1)
 categories:

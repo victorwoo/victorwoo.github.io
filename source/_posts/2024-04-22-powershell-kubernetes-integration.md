@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-22 08:00:00
+updated: 2024-04-22 08:00:00
 title: "PowerShell 技能连载 - Kubernetes 集成"
 description: PowerTip of the Day - PowerShell Kubernetes Integration
 categories:

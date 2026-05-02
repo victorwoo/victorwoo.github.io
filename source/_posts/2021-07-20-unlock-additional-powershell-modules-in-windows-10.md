@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-07-20 00:00:00
+updated: 2021-07-20 00:00:00
 title: "PowerShell 技能连载 - 在 Windows 10 中解锁额外的 PowerShell 模块"
 description: PowerTip of the Day - Unlock Additional PowerShell Modules in Windows 10
 categories:

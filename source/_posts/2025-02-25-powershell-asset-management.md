@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-25 08:00:00
+updated: 2025-02-25 08:00:00
 title: "PowerShell 技能连载 - 资产管理"
 description: PowerTip of the Day - PowerShell Asset Management
 categories:

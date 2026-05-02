@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-11-25 08:00:00
+updated: 2024-11-25 08:00:00
 title: "PowerShell 技能连载 - 物联网设备管理实践"
 description: PowerTip of the Day - PowerShell IoT Device Management
 categories:

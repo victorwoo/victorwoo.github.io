@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 发生了什么？"
 date: 2013-10-09 00:00:00
+updated: 2013-10-09 00:00:00
 description: PowerTip of the Day - What Is Going On Here?
 categories:
 - powershell

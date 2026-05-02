@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-04-21 00:00:00
+updated: 2017-04-21 00:00:00
 title: "PowerShell 技能连载 - 弹出 CD 驱动器"
 description: PowerTip of the Day - Ejecting CD Drive
 categories:

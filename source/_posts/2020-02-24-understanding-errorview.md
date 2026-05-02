@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-24 00:00:00
+updated: 2020-02-24 00:00:00
 title: "PowerShell 技能连载 - 理解 $ErrorView"
 description: PowerTip of the Day - Understanding $ErrorView
 categories:

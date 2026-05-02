@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-28 00:00:00
+updated: 2019-01-28 00:00:00
 title: "PowerShell 技能连载 - 自动打印到 XPS 文件"
 description: PowerTip of the Day - Automatically Printing to XPS Files
 categories:

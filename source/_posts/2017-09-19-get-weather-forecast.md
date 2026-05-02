@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-19 00:00:00
+updated: 2017-09-19 00:00:00
 title: "PowerShell 技能连载 -获取天气预报"
 description: PowerTip of the Day - Get Weather Forecast
 categories:

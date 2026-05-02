@@ -2,6 +2,7 @@
 layout: post
 title: 从命令行运行 PowerShell
 date: 2014-08-03 21:31:42
+updated: 2014-08-03 21:31:42
 description: Run PowerShell from command line
 categories: powershell
 tags:

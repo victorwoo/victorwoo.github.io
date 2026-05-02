@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-06-14 00:00:00
+updated: 2024-06-14 00:00:00
 title: "PowerShell 技能连载 - 7 个用于管理 DHCP 的最佳 PowerShell 脚本"
 description: "7 Best Powershell scripts to manage DHCP"
 categories:

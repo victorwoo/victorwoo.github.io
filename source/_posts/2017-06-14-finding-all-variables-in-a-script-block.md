@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-06-14 00:00:00
+updated: 2017-06-14 00:00:00
 title: "PowerShell 技能连载 - 查找一个脚本块中的所有变量"
 description: PowerTip of the Day - Finding All Variables in a Script Block
 categories:

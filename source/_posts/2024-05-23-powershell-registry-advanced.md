@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-23 08:00:00
+updated: 2024-05-23 08:00:00
 title: "PowerShell注册表高级操作技术"
 description: "掌握注册表项事务处理与安全权限控制"
 categories:

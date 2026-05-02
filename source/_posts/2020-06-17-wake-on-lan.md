@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-06-17 00:00:00
+updated: 2020-06-17 00:00:00
 title: "PowerShell 技能连载 - 局域网唤醒"
 description: PowerTip of the Day - Wake On LAN
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-21 00:00:00
+updated: 2020-01-21 00:00:00
 title: "PowerShell 技能连载 - 测试等待重启"
 description: PowerTip of the Day - Testing for Pending Reboots
 categories:

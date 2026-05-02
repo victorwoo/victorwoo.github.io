@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-10-19 00:00:00
+updated: 2017-10-19 00:00:00
 title: "PowerShell 技能连载 - 揭开错误处理的秘密"
 description: PowerTip of the Day - Demystifying Error Handling
 categories:

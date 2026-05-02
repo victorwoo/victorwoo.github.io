@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-11-20 00:00:00
+updated: 2020-11-20 00:00:00
 title: "PowerShell 技能连载 - 管理已安装的模块（第 2 部分）"
 description: PowerTip of the Day - Managing Installed Modules (Part 2)
 categories:

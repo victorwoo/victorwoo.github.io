@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-17 08:00:00
+updated: 2024-12-17 08:00:00
 title: "PowerShell跨平台开发实战"
 description: "掌握Linux/Windows双环境脚本适配技巧"
 categories:

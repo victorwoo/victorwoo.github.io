@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-26 00:00:00
+updated: 2018-04-26 00:00:00
 title: "PowerShell 技能连载 - 在 try/catch 中使用 ConvertFrom-ErrorRecord"
 description: PowerTip of the Day - Using ConvertFrom-ErrorRecord in try/catch
 categories:

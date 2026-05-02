@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-17 08:00:00
+updated: 2024-09-17 08:00:00
 title: "PowerShell 技能连载 - Pester 测试技巧"
 description: PowerTip of the Day - PowerShell Pester Testing Tips
 categories:

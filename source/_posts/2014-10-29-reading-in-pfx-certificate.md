@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-10-29 11:00:00
+updated: 2014-10-29 11:00:00
 title: "PowerShell 技能连载 - 读取 PFX 证书"
 description: PowerTip of the Day - Reading In PFX-Certificate
 categories:

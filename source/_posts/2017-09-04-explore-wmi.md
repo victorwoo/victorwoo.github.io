@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-09-04 00:00:00
+updated: 2017-09-04 00:00:00
 title: "PowerShell 技能连载 - 探索 WMI"
 description: PowerTip of the Day - Explore WMI
 categories:

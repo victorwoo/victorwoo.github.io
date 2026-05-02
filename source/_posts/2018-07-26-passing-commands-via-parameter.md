@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-26 00:00:00
+updated: 2018-07-26 00:00:00
 title: "PowerShell 技能连载 - 通过参数传递命令"
 description: PowerTip of the Day - Passing Commands via Parameter
 categories:

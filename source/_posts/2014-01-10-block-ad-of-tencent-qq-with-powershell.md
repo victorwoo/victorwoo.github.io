@@ -2,6 +2,7 @@
 layout: post
 title: "用 PowerShell 屏蔽腾讯 QQ 的广告"
 date: 2014-01-10 00:00:00
+updated: 2014-01-10 00:00:00
 description: Block AD of Tencent QQ with PowerShell
 categories: powershell
 tags:

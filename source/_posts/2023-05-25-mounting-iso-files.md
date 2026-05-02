@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-25 00:00:17
+updated: 2023-05-25 00:00:17
 title: "PowerShell 技能连载 - 挂载 ISO 文件"
 description: PowerTip of the Day - Mounting ISO Files
 categories:

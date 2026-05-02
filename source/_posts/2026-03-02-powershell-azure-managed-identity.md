@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-02 08:00:00
+updated: 2026-03-02 08:00:00
 title: "PowerShell 技能连载 - Azure 托管标识与无密码认证"
 description: PowerTip of the Day - Azure Managed Identity and Passwordless Authentication in PowerShell
 categories:

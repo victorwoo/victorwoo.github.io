@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-08 00:00:00
+updated: 2019-01-08 00:00:00
 title: "PowerShell 技能连载 - 解决 SSL 连接问题"
 description: PowerTip of the Day - Solving SSL Connection Problems
 categories:

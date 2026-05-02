@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-01-17 00:00:00
+updated: 2018-01-17 00:00:00
 title: "PowerShell 技能连载 - 用网格视图窗口作为选择对话框（第一部分）"
 description: PowerTip of the Day - Using a Grid View Window as a Selection Dialog (Part 1)
 categories:

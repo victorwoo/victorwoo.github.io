@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-02-07 08:00:00
+updated: 2025-02-07 08:00:00
 title: "PowerShell 技能连载 - JSON 处理技巧"
 description: PowerTip of the Day - PowerShell JSON Processing Tips
 categories:

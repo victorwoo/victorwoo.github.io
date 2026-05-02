@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-11-25 00:00:00
+updated: 2021-11-25 00:00:00
 title: "PowerShell 技能连载 - 通过 PowerShell 调用 COVID 服务"
 description: PowerTip of the Day - COVID Webservice with PowerShell
 categories:

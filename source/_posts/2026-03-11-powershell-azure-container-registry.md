@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-11 08:00:00
+updated: 2026-03-11 08:00:00
 title: "PowerShell 技能连载 - Azure 容器注册表管理"
 description: PowerTip of the Day - Azure Container Registry Management in PowerShell
 categories:

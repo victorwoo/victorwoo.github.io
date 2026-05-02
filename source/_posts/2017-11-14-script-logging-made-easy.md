@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-11-14 00:00:00
+updated: 2017-11-14 00:00:00
 title: "PowerShell 技能连载 - 轻松记录脚本日志"
 description: PowerTip of the Day - Script Logging Made Easy
 categories:

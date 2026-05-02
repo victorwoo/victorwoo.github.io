@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-07-04 20:55:31
+updated: 2015-07-04 20:55:31
 title: "常见的乱码"
 description: Common Messy Code
 categories:

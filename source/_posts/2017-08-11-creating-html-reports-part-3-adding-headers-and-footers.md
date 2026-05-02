@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-11 00:00:00
+updated: 2017-08-11 00:00:00
 title: "PowerShell 技能连载 - 创建 HTML 报表（第三部分 - 增加头部和尾部）"
 description: "PowerTip of the Day - Creating HTML Reports (Part 3 – Adding Headers and Footers)"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-09-27 12:19:20
+updated: 2022-09-27 12:19:20
 title: "PowerShell 技能连载 - 请担心 -match 运算符"
 description: PowerTip of the Day - Beware of -match
 categories:

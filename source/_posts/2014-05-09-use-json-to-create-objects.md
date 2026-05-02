@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 用 JSON 来创建对象"
 date: 2014-05-09 00:00:00
+updated: 2014-05-09 00:00:00
 description: PowerTip of the Day - Use JSON to Create Objects
 categories:
 - powershell

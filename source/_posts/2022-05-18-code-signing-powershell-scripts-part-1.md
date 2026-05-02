@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-05-18 00:00:00
+updated: 2022-05-18 00:00:00
 title: "PowerShell 技能连载 - 签名 PowerShell 脚本（第 1 部分）"
 description: PowerTip of the Day - Code-Signing PowerShell Scripts (Part 1)
 categories:

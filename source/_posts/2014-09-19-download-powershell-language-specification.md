@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-19 11:00:00
+updated: 2014-09-19 11:00:00
 title: "PowerShell 技能连载 - 下载 PowerShell 语言规范"
 description: PowerTip of the Day - Download PowerShell Language Specification
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-11-28 00:00:00
+updated: 2019-11-28 00:00:00
 title: "PowerShell 技能连载 - Get-ComputerInfo 和 systeminfo.exe 的对比（第 2 部分）"
 description: PowerTip of the Day - Get-ComputerInfo vs. systeminfo.exe (Part 2)
 categories:

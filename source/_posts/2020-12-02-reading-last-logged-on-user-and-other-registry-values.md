@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-12-02 00:00:00
+updated: 2020-12-02 00:00:00
 title: "PowerShell 技能连载 - 读取上次登录的用户和其他注册表值"
 description: PowerTip of the Day - Reading Last Logged-On User and Other Registry Values
 categories:

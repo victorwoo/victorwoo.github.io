@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-08-17 00:00:00
+updated: 2018-08-17 00:00:00
 title: "PowerShell 技能连载 - 强化 PowerShell 脚本块的日志"
 description: PowerTip of the Day - Hardening PowerShell Script Block Logging Log
 categories:

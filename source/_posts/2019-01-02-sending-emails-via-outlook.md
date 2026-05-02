@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-02 00:00:00
+updated: 2019-01-02 00:00:00
 title: "PowerShell 技能连载 - 通过 Outlook 发送邮件"
 description: PowerTip of the Day - Sending Emails via Outlook
 categories:

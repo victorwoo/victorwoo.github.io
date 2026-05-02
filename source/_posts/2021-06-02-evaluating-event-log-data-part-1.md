@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-06-02 00:00:00
+updated: 2021-06-02 00:00:00
 title: "PowerShell 技能连载 - 评估事件日志数据（第 1 部分）"
 description: PowerTip of the Day - Evaluating Event Log Data (Part 1)
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-01-11 00:00:00
+updated: 2021-01-11 00:00:00
 title: "PowerShell 技能连载 - 获取开机以来经历的时间"
 description: PowerTip of the Day - Controlling Uptime
 categories:

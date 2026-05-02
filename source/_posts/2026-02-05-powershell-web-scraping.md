@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-05 08:00:00
+updated: 2026-02-05 08:00:00
 title: "PowerShell 技能连载 - Web 数据采集"
 description: PowerTip of the Day - Web Data Scraping in PowerShell
 categories:

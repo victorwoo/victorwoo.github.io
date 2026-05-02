@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-24 00:00:00
+updated: 2018-10-24 00:00:00
 title: "PowerShell 技能连载 - 编程列出所有 Cmdlet 或函数参数的列表"
 description: PowerTip of the Day - Programmatically listing any Cmdlet or Function Parameters
 categories:

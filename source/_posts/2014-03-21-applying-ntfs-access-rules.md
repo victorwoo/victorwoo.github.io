@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 应用 NTFS 存取权限"
 date: 2014-03-21 00:00:00
+updated: 2014-03-21 00:00:00
 description: PowerTip of the Day - Applying NTFS Access Rules
 categories:
 - powershell

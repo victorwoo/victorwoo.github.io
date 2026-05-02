@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-07-03 00:00:00
+updated: 2018-07-03 00:00:00
 title: "PowerShell 技能连载 - 查看文件对应的可执行程序"
 description: PowerTip of the Day - Finding Executable for File
 categories:

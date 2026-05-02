@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-04 08:00:00
+updated: 2024-07-04 08:00:00
 title: "PowerShell 技能连载 - 边缘计算环境管理"
 description: PowerTip of the Day - PowerShell Edge Computing Environment Management
 categories:

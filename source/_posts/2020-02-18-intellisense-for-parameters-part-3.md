@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-18 00:00:00
+updated: 2020-02-18 00:00:00
 title: "PowerShell 技能连载 - 参数的智能感知（第 3 部分）"
 description: PowerTip of the Day - IntelliSense for Parameters (Part 3)
 categories:

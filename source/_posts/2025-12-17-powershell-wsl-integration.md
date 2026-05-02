@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-12-17 08:00:00
+updated: 2025-12-17 08:00:00
 title: "PowerShell 技能连载 - WSL 集成与互操作"
 description: PowerTip of the Day - WSL Integration and Interop in PowerShell
 categories:

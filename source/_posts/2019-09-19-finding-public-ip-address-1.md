@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-19 00:00:00
+updated: 2019-09-19 00:00:00
 title: "PowerShell 技能连载 - 查找公网 IP 地址"
 description: PowerTip of the Day - Finding Public IP Address
 categories:

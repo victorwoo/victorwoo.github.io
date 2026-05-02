@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-08-11 04:00:00
+updated: 2014-08-11 04:00:00
 title: "PowerShell 技能连载 - 用 PowerShell 来励志"
 description: PowerTip of the Day - Have PowerShell Cheer You Up!
 categories:

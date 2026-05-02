@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-12-09 08:00:00
+updated: 2024-12-09 08:00:00
 title: "PowerShell 技能连载 - 类型转换机制"
 description: PowerTip of the Day - PowerShell Type Conversion
 categories:

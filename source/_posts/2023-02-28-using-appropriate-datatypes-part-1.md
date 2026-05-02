@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-02-28 00:00:39
+updated: 2023-02-28 00:00:39
 title: "PowerShell 技能连载 - 使用合适的数据类型（第 1 部分）"
 description: PowerTip of the Day - Using Appropriate DataTypes (Part 1)
 categories:

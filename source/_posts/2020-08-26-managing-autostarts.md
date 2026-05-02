@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-08-26 00:00:00
+updated: 2020-08-26 00:00:00
 title: "PowerShell 技能连载 - 管理自启动项"
 description: PowerTip of the Day - Managing Autostarts
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-23 08:00:00
+updated: 2026-03-23 08:00:00
 title: "PowerShell 技能连载 - 剪贴板与系统交互"
 description: PowerTip of the Day - Clipboard and System Interaction in PowerShell
 categories:

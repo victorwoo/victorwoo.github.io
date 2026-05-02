@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-19 00:00:00
+updated: 2019-02-19 00:00:00
 title: "PowerShell 技能连载 - 等待服务状态变化"
 description: PowerTip of the Day - Waiting for a Service Status Change
 categories:

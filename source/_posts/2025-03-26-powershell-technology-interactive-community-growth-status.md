@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell Technology Interactive Community Growth Status (March 2025)"
 date: 2025-03-26 00:00:00
+updated: 2025-03-26 00:00:00
 description: PowerShell Technology Interactive Community Growth Status (March 2025)
 categories:
 - powershell

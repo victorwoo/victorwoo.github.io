@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-05-25 11:00:00
+updated: 2015-05-25 11:00:00
 title: "PowerShell 技能连载 - 查找大写字符"
 description: PowerTip of the Day - Finding Uppercase Characters
 categories:

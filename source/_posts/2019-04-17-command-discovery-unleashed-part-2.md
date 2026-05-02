@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-04-17 00:00:00
+updated: 2019-04-17 00:00:00
 title: "PowerShell 技能连载 - 命令发现机制揭秘（第 2 部分）"
 description: PowerTip of the Day - Command Discovery Unleashed (Part 2)
 categories:

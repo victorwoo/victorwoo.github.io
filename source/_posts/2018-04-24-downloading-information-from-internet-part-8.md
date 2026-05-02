@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-04-24 00:00:00
+updated: 2018-04-24 00:00:00
 title: "PowerShell 技能连载 - 从 Internet 下载信息（第 8 部分）"
 description: PowerTip of the Day - Downloading Information from Internet (Part 8)
 categories:

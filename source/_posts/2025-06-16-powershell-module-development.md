@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-06-16 08:00:00
+updated: 2025-06-16 08:00:00
 title: "PowerShell 技能连载 - 模块开发与打包"
 description: PowerTip of the Day - PowerShell Module Development and Packaging
 categories:

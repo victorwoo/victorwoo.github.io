@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-16 00:00:00
+updated: 2018-10-16 00:00:00
 title: "PowerShell 技能连载 - 持续监视脚本的运行"
 description: PowerTip of the Day - Keeping Track of Script Execution
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "Visual Studio的PowerShell扩展工具"
 date: 2013-09-28 00:00:00
+updated: 2013-09-28 00:00:00
 description: PowerShell Tools for Visual Studio - PowerShell integration for Visual Studio
 categories: powershell
 tags:

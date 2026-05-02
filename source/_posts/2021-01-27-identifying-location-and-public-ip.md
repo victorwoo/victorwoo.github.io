@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-01-27 00:00:00
+updated: 2021-01-27 00:00:00
 title: "PowerShell 技能连载 - 识别位置和公共 IP"
 description: PowerTip of the Day - Identifying Location and Public IP
 categories:

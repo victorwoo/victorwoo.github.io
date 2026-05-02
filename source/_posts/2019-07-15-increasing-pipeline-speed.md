@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-07-15 00:00:00
+updated: 2019-07-15 00:00:00
 title: "PowerShell 技能连载 - 提高管道速度"
 description: PowerTip of the Day - Increasing Pipeline Speed
 categories:

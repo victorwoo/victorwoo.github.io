@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-11-08 00:00:00
+updated: 2019-11-08 00:00:00
 title: "PowerShell 技能连载 - 将 Word 文档从 .doc 格式转为 .docx 格式（第 1 部分）"
 description: PowerTip of the Day - Converting Word Documents from .doc to .docx (Part 1)
 categories:

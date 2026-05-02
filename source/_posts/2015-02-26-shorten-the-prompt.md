@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2015-02-26 12:00:00
+updated: 2015-02-26 12:00:00
 title: "PowerShell 技能连载 - 简化命令提示符"
 description: PowerTip of the Day - Shorten the Prompt
 categories:

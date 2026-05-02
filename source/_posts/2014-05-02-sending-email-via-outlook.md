@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 通过 Outlook 发送电子邮件"
 date: 2014-05-02 00:00:00
+updated: 2014-05-02 00:00:00
 description: PowerTip of the Day - Sending Email via Outlook
 categories:
 - powershell

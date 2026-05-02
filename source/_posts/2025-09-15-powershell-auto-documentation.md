@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-09-15 08:00:00
+updated: 2025-09-15 08:00:00
 title: "PowerShell 技能连载 - 自动化文档生成"
 description: "PowerTip of the Day - Automated Documentation Generation in PowerShell"
 categories:

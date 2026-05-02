@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-07-19 08:00:26
+updated: 2023-07-19 08:00:26
 title: "PowerShell 技能连载 - 避免使用 Get-EventLog"
 description: PowerTip of the Day - Avoid Get-EventLog
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-03-27 00:00:00
+updated: 2019-03-27 00:00:00
 title: "PowerShell 技能连载 - 修复 PowerShellGet 发布"
 description: PowerTip of the Day - Repairing PowerShellGet Publishing
 categories:

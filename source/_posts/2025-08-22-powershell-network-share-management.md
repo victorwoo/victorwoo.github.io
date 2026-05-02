@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-22 08:00:00
+updated: 2025-08-22 08:00:00
 title: "PowerShell 技能连载 - 网络共享管理"
 description: PowerTip of the Day - Network Share Management in PowerShell
 categories:

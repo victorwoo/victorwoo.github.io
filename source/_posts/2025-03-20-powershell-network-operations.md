@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-03-20 08:00:00
+updated: 2025-03-20 08:00:00
 title: "PowerShell 技能连载 - 网络操作技巧"
 description: PowerTip of the Day - PowerShell Network Operations Tips
 categories:

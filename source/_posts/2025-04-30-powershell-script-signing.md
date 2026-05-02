@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-04-30 08:00:00
+updated: 2025-04-30 08:00:00
 title: "PowerShell 技能连载 - 脚本签名与执行策略"
 description: PowerTip of the Day - Script Signing and Execution Policy in PowerShell
 categories:

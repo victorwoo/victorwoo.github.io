@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-04-05 00:00:00
+updated: 2021-04-05 00:00:00
 title: "PowerShell 技能连载 - 观看德国电视节目"
 description: PowerTip of the Day - Watching German TV Shows
 categories:

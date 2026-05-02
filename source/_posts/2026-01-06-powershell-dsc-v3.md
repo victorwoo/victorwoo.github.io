@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-01-06 08:00:00
+updated: 2026-01-06 08:00:00
 title: "PowerShell 技能连载 - DSC v3 配置即代码"
 description: PowerTip of the Day - DSC v3 Configuration as Code in PowerShell
 categories:

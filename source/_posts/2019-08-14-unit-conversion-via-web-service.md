@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-14 00:00:00
+updated: 2019-08-14 00:00:00
 title: "PowerShell 技能连载 - 通过 Web Service 做单位转换"
 description: PowerTip of the Day - Unit Conversion via Web Service
 categories:

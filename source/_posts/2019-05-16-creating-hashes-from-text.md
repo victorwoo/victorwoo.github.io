@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-16 00:00:00
+updated: 2019-05-16 00:00:00
 title: "PowerShell 技能连载 - 从文本创建哈希"
 description: PowerTip of the Day - Creating Hashes from Text
 categories:

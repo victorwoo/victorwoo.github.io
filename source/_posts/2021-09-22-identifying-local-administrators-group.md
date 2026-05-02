@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-22 00:00:00
+updated: 2021-09-22 00:00:00
 title: "PowerShell 技能连载 - 识别本地管理员组"
 description: PowerTip of the Day - Identifying Local Administrators Group
 categories:

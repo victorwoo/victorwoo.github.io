@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-20 00:00:00
+updated: 2020-05-20 00:00:00
 title: "PowerShell 技能连载 - 管理 SharePoint Online"
 description: PowerTip of the Day - Managing SharePoint Online
 categories:

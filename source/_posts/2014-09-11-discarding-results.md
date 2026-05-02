@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2014-09-11 11:00:00
+updated: 2014-09-11 11:00:00
 title: "PowerShell 技能连载 - 忽略输出结果"
 description: PowerTip of the Day - Discarding Results
 categories:

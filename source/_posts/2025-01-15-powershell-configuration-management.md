@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-01-15 08:00:00
+updated: 2025-01-15 08:00:00
 title: "PowerShell 技能连载 - 配置管理"
 description: PowerTip of the Day - PowerShell Configuration Management
 categories:

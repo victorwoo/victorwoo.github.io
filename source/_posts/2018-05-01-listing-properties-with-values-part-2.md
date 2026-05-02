@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-05-01 00:00:00
+updated: 2018-05-01 00:00:00
 title: "PowerShell 技能连载 - 列出属性和值（第 2 部分）"
 description: PowerTip of the Day - Listing Properties with Values (Part 2)
 categories:

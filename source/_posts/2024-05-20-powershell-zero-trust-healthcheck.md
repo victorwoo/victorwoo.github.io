@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-20 08:00:00
+updated: 2024-05-20 08:00:00
 title: "PowerShell 技能连载 - 零信任架构设备健康检查"
 description: "基于零信任原则的PowerShell设备健康验证系统"
 categories:

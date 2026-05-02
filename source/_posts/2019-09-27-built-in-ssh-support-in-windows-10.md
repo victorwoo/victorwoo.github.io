@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-27 00:00:00
+updated: 2019-09-27 00:00:00
 title: "PowerShell 技能连载 - 使用 Windows 10 内置的 SSH 支持"
 description: PowerTip of the Day - Built-In SSH support in Windows 10
 categories:

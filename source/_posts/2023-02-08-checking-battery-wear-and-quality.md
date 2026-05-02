@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-02-08 06:00:34
+updated: 2023-02-08 06:00:34
 title: "PowerShell 技能连载 - 检测电池健康与质量"
 description: PowerTip of the Day - Checking Battery Wear and Quality
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-26 08:00:00
+updated: 2026-02-26 08:00:00
 title: "PowerShell 技能连载 - 模块开发与测试"
 description: PowerTip of the Day - Module Development and Testing in PowerShell
 categories:

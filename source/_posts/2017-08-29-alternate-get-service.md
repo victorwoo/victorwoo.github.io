@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-08-29 00:00:00
+updated: 2017-08-29 00:00:00
 title: "PowerShell 技能连载 - Get-Service 的替代"
 description: PowerTip of the Day - Alternate Get-Service
 categories:

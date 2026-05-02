@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-08-29 08:00:00
+updated: 2025-08-29 08:00:00
 title: "PowerShell 技能连载 - 会话录制与回放"
 description: PowerTip of the Day - Session Recording and Replay in PowerShell
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-04 00:00:00
+updated: 2020-02-04 00:00:00
 title: "PowerShell 技能连载 - 安装免费的 Chocolatey 包管理器"
 description: PowerTip of the Day - Installing Free Chocolatey Package Management
 categories:

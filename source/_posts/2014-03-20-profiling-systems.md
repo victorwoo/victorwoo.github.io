@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 获取系统信息"
 date: 2014-03-20 00:00:00
+updated: 2014-03-20 00:00:00
 description: PowerTip of the Day - Profiling Systems
 categories:
 - powershell

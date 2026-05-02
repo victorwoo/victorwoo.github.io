@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-22 00:00:00
+updated: 2019-08-22 00:00:00
 title: "PowerShell 技能连载 - 自动创建 HTTP 响应码清单"
 description: PowerTip of the Day - Auto-Creating a List of HTTP Response Codes
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-08-04 00:00:00
+updated: 2020-08-04 00:00:00
 title: "PowerShell 技能连载 - 详细的电池报告"
 description: PowerTip of the Day - Sophisticated Battery Report
 categories:

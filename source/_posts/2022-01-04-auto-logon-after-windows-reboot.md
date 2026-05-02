@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-01-04 00:00:00
+updated: 2022-01-04 00:00:00
 title: "PowerShell 技能连载 - Windows 重启后自动登录"
 description: PowerTip of the Day - Auto-Logon After Windows-Reboot
 categories:

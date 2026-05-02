@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-06-06 00:00:00
+updated: 2018-06-06 00:00:00
 title: "PowerShell 技能连载 - 立刻关闭显示器"
 description: PowerTip of the Day - Turning Display Off Immediately
 categories:

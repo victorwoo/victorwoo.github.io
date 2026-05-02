@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-09-26 08:00:00
+updated: 2024-09-26 08:00:00
 title: "PowerShell集合类型操作指南"
 description: "掌握数组与哈希表的核心操作方法"
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-24 08:00:00
+updated: 2024-05-24 08:00:00
 title: "PowerShell 技能连载 - 零信任身份验证与访问控制"
 description: PowerTip of the Day - PowerShell Zero Trust Authentication and Access Control
 categories:

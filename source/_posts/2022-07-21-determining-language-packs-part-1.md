@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2022-07-21 00:00:00
+updated: 2022-07-21 00:00:00
 title: "PowerShell 技能连载 - 确定语言包（第 1 部分）"
 description: PowerTip of the Day - Determining Language Packs (Part 1)
 categories:

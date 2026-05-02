@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-05-19 08:00:00
+updated: 2025-05-19 08:00:00
 title: "PowerShell 技能连载 - Windows 包管理自动化"
 description: PowerTip of the Day - Windows Package Management Automation
 categories:

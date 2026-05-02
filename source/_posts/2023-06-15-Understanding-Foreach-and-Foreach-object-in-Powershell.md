@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-06-15 00:00:00
+updated: 2023-06-15 00:00:00
 title: "PowerShell 技能连载 - 7个用于管理DHCP的最佳PowerShell脚本"
 description: "Understanding Foreach and Foreach-object in Powershell"
 categories:

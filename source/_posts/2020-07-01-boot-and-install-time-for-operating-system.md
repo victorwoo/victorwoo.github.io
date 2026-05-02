@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-01 00:00:00
+updated: 2020-07-01 00:00:00
 title: "PowerShell 技能连载 - 操作系统的启动和安装时间"
 description: PowerTip of the Day - Boot and Install Time for Operating System
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-12-08 00:00:00
+updated: 2020-12-08 00:00:00
 title: "PowerShell 技能连载 - 读取事件日志（第 2 部分）"
 description: PowerTip of the Day - Reading Event Logs (Part 2)
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: 打包 node 应用程序为单一文件可执行程序
 date: 2014-08-04 20:58:00
+updated: 2014-08-04 20:58:00
 description: Guideline to packet node app into single executable application
 categories: nodejs
 tags:

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-02 08:00:00
+updated: 2024-05-02 08:00:00
 title: "PowerShell变量作用域深度解析"
 description: "掌握局部、全局与脚本作用域的应用场景"
 categories:

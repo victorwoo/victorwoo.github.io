@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-06-27 00:00:00
+updated: 2019-06-27 00:00:00
 title: "PowerShell 技能连载 - 使用 GeoCoding：情感分析（第 5 部分）"
 description: 'PowerTip of the Day - Geocoding: Sentiment Analysis (Part 5)'
 categories:

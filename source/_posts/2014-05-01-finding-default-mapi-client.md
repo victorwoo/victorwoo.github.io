@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 查找缺省的 MAPI 客户端"
 date: 2014-05-01 00:00:00
+updated: 2014-05-01 00:00:00
 description: PowerTip of the Day - Finding Default MAPI Client
 categories:
 - powershell

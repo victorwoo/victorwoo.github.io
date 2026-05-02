@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 获取昨天午夜的日期值"
 date: 2013-12-26 00:00:00
+updated: 2013-12-26 00:00:00
 description: "PowerTip of the Day - Getting Yesterday’s Date - at Midnight!"
 categories:
 - powershell

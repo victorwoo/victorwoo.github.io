@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-05 00:00:00
+updated: 2018-10-05 00:00:00
 title: "PowerShell 技能连载 - 安装打印机"
 description: PowerTip of the Day - Installing Printers
 categories:

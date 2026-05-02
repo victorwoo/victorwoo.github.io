@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-04-10 08:00:00
+updated: 2024-04-10 08:00:00
 title: "PowerShell 技能连载 - 零信任设备合规检查"
 description: PowerTip of the Day - Zero-Trust Device Compliance Check
 categories:

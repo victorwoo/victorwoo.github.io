@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-05-29 08:00:00
+updated: 2024-05-29 08:00:00
 title: "PowerShell 技能连载 - 日志自动化分析系统"
 description: "使用PowerShell构建智能日志分析管道实现异常检测"
 categories:

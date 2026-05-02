@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2021-09-30 00:00:00
+updated: 2021-09-30 00:00:00
 title: "PowerShell 技能连载 - 截屏"
 description: PowerTip of the Day - Taking Screenshot
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: "PowerShell 技能连载 - 获取时间服务器（以及读取所有注册表键值）"
 date: 2014-03-26 00:00:00
+updated: 2014-03-26 00:00:00
 description: PowerTip of the Day - Finding Time Servers (And Reading All RegKey Values)
 categories:
 - powershell

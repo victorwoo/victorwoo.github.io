@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-11-20 00:00:00
+updated: 2019-11-20 00:00:00
 title: "PowerShell 技能连载 - 在 PowerShell 中安全地使用 WMI（第 3 部分）"
 description: PowerTip of the Day - Safely Using WMI in PowerShell (Part 3)
 categories:

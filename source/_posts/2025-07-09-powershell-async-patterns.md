@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-07-09 08:00:00
+updated: 2025-07-09 08:00:00
 title: "PowerShell 技能连载 - 异步编程模式"
 description: PowerTip of the Day - Asynchronous Programming Patterns in PowerShell
 categories:

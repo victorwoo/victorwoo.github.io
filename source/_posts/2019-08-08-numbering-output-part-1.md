@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-08 00:00:00
+updated: 2019-08-08 00:00:00
 title: "PowerShell 技能连载 - 为输出编号（第 1 部分）"
 description: PowerTip of the Day - Numbering Output (Part 1)
 categories:

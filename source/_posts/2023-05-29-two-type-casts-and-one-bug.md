@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-29 00:00:38
+updated: 2023-05-29 00:00:38
 title: "PowerShell 技能连载 - 两种类型转换（和一个 bug）"
 description: PowerTip of the Day - Two Type Casts (and one bug)
 categories:

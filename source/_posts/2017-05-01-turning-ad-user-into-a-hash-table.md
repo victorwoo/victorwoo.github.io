@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2017-05-01 00:00:00
+updated: 2017-05-01 00:00:00
 title: "PowerShell 技能连载 - 将 AD 用户转为哈希表"
 description: PowerTip of the Day - Turning AD User into a Hash Table
 categories:

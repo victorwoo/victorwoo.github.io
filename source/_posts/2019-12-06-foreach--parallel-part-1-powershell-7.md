@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-12-06 00:00:00
+updated: 2019-12-06 00:00:00
 title: "PowerShell 技能连载 - Foreach -parallel（第 1 部分：PowerShell 7）"
 description: 'PowerTip of the Day - Foreach -parallel (Part 1: PowerShell 7)'
 categories:

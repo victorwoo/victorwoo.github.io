@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-03-02 00:00:00
+updated: 2018-03-02 00:00:00
 title: "PowerShell 技能连载 - 自动壁纸下载器"
 description: PowerTip of the Day - Automatic Wallpaper Downloader
 categories:
