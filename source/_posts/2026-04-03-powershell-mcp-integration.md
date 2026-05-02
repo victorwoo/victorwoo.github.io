@@ -13,10 +13,8 @@ tags:
 - powertip
 - series
 - ai
-- mcp
-- llm
-- protocol
-- tool-use
+- network
+- tooling
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

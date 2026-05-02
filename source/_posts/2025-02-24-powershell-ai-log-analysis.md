@@ -8,8 +8,8 @@ categories:
 - powershell
 - ai
 tags:
-- machine-learning
-- log-analysis
+- ai
+- monitoring
 - automation
 ---
 

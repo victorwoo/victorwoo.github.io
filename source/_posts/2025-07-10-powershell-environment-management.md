@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- environment
-- env
-- configuration
+- system-management
+- config-management
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

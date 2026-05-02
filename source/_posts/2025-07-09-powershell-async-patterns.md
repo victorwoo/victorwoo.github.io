@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- async
-- runspace
-- jobs
-- parallel
+- scripting
 ---
 
 _适用于 PowerShell 5.1 及以上版本，并行功能需要 PowerShell 7_

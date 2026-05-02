@@ -7,10 +7,8 @@ description: "guide line to learn powershell 新手 学习 起步"
 categories: powershell
 tags:
 - powershell
-- ebook
+- best-practices
 - script
-- learning
-- guideline
 ---
 以下是我个人的PowerShell学习路线，也许可以节省您一些走弯路的时间，供参考。
 

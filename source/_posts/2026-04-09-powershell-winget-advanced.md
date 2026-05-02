@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- winget
 - package-management
 - windows
-- software-deployment
+- devops
 ---
 
 _适用于 PowerShell 7.0 及以上版本，Windows 10/11 内置 WinGet_

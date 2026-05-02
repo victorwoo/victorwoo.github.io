@@ -7,7 +7,7 @@ description: "How to Encourage"
 categories: [powershell]
 tags:
 - powershell
-- text
+- text-processing
 ---
 关于励志段子
 ------------

@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- sqlite
 - database
-- data-storage
+- data-processing
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

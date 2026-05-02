@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- system-info
-- hardware
+- system-management
 - inventory
 ---
 

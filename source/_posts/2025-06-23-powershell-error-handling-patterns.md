@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- error-handling
-- try-catch
+- scripting
 - patterns
 ---
 

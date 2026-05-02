@@ -9,7 +9,7 @@ categories:
 - security
 tags:
 - powershell
-- azuread
+- azure
 - automation
 ---
 

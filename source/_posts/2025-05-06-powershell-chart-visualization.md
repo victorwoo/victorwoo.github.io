@@ -12,8 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- data-visualization
-- charting
+- data-processing
+- tooling
 - reporting
 ---
 

@@ -8,9 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- variables
-- scope
-- functions
+- scripting
 ---
 
 ### 作用域层级体系

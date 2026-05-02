@@ -9,9 +9,8 @@ categories:
 - ai
 - automation
 tags:
-- metaverse
-- virtual-environment
-- resource-orchestration
+- best-practices
+- virtualization
 ---
 
 ```powershell

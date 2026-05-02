@@ -6,8 +6,8 @@ updated: 2014-08-12 19:57:59
 description: JavaScript guideline
 categories: javascript
 tags:
-- javascript
-- guideline
+- web
+- best-practices
 ---
 # 入门
 * [JavaScript 教程](http://www.w3school.com.cn/js/index.asp) - w3school

@@ -13,8 +13,8 @@ tags:
 - powertip
 - series
 - reporting
-- html
-- charts
+- data-format
+- tooling
 - automation
 ---
 

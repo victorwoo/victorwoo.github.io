@@ -8,8 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- error-handling
-- debugging
+- scripting
 ---
 
 ### 结构化异常捕获

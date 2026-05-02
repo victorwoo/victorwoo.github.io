@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- dsc
+- azure
 - desired-state
-- configuration
+- config-management
 - devops
 ---
 

@@ -13,8 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- event-grid
-- event-driven
+- monitoring
 - automation
 ---
 

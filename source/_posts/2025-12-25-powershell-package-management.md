@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - package-management
-- nuget
-- psresourceget
-- modules
+- module
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

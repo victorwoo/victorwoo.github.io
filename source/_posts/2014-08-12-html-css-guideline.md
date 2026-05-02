@@ -6,11 +6,10 @@ updated: 2014-08-12 19:32:26
 description: html-css-guideline
 categories: web
 tags:
-- html
-- css
+- data-format
 - web
-- guideline
-- link
+- best-practices
+- script
 ---
 # 入门网站
 * [w3school 在线教程](http://www.w3school.com.cn/)

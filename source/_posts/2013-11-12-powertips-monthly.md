@@ -12,7 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- download
+- script
 - monthly
 ---
 | 编号   | 发布时间   | 标题              | PDF        |

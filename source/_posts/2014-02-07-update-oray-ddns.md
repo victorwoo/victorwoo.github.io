@@ -8,9 +8,7 @@ categories: powershell
 tags:
 - powershell
 - geek
-- ddns
-- ip
-- oray
+- network
 ---
 [花生壳][花生壳]是 [oray][oray] 公司提供的 [DDNS][DDNS] 客户端。官方的客户端庞大臃肿：
 

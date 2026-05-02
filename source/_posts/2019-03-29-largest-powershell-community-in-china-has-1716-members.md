@@ -5,7 +5,7 @@ date: 2019-03-29 11:00:21
 updated: 2019-03-29 11:00:21
 tags:
 - powershell
-- community
+- qq
 ---
 The largest PowerShell community "PowerShell Tech Interact" in China has **1716 members** up to March 29, 2019!
 

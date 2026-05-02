@@ -12,8 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- windows-update
-- patching
+- windows
+- system-management
 - automation
 - security
 ---

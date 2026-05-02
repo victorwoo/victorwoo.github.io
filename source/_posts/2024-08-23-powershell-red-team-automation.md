@@ -8,9 +8,7 @@ categories:
 - powershell
 - security
 tags:
-- red-team
-- privilege-escalation
-- lateral-movement
+- security
 ---
 
 ```powershell

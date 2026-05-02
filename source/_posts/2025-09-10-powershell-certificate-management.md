@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- certificate
-- pki
-- x509
+- security
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

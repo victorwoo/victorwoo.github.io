@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- message-queue
-- msmq
-- async
+- network
+- scripting
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

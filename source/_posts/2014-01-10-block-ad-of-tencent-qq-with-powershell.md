@@ -9,8 +9,8 @@ tags:
 - powershell
 - geek
 - qq
-- ad
-- block
+- identity
+- best-practices
 ---
 非会员 QQ，在对话窗口的右上角会显示一个广告横幅，如图所示：
 

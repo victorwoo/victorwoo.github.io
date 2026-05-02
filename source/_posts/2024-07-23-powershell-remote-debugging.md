@@ -9,7 +9,7 @@ categories:
 - remote-scripting
 tags:
 - remoting
-- debugging
+- scripting
 ---
 
 ## 远程会话调试配置

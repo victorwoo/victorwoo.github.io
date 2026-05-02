@@ -8,8 +8,8 @@ categories:
 - powershell
 - development
 tags:
-- module
-- packaging
+- scripting
+- package-management
 ---
 
 ## 模块基础结构

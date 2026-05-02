@@ -8,7 +8,7 @@ categories:
 - powershell
 tags:
 - powershell
-- text
+- text-processing
 - geek
 ---
 从看过的电影、美剧里学英语是一件很棒的事。因为你曾经被带入过那个场景，曾经和主角一同喜怒哀乐。如果能将电影里的中英文对白整理出来，对做笔记和搜索回顾将大有帮助。

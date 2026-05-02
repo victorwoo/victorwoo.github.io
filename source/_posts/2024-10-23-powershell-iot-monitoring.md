@@ -9,9 +9,9 @@ categories:
 - iot
 - automation
 tags:
-- edge-computing
-- mqtt
-- device-management
+- cloud
+- network
+- identity
 ---
 
 ```powershell

@@ -13,9 +13,6 @@ tags:
 - powertip
 - series
 - ai
-- prompt-engineering
-- llm
-- copilot
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

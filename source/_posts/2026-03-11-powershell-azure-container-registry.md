@@ -13,8 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- container-registry
-- docker
+- container
 - images
 ---
 

@@ -9,10 +9,9 @@ categories:
 - text
 tags:
 - powershell
-- learning
-- skill
+- best-practices
 - script
-- regex
+- scripting
 ---
 原始文本："data1":111,"data2":22,"data3":3,"data4":4444444,"data5":589
 要求：转换成对象

@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- event-log
-- wef
-- centralized-logging
+- monitoring
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），需要管理员权限_

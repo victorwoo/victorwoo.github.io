@@ -8,8 +8,8 @@ categories:
 - powershell
 - cloud
 tags:
-- cost-optimization
-- multi-cloud
+- azure
+- cloud
 - automation
 ---
 

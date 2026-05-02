@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- aws
 - cloud
-- aws-tools
 ---
 
 _适用于 PowerShell 5.1 及以上版本，需安装 AWS Tools for PowerShell_

@@ -9,8 +9,7 @@ categories:
 - security
 tags:
 - powershell
-- devsecops
-- supply-chain
+- security
 ---
 
 ```powershell

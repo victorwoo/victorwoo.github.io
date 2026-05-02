@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- memory
+- system-management
 - performance
-- diagnostics
+- monitoring
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

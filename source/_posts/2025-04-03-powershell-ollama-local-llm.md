@@ -13,9 +13,6 @@ tags:
 - powertip
 - series
 - ai
-- llm
-- ollama
-- local-llm
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要安装 Ollama_

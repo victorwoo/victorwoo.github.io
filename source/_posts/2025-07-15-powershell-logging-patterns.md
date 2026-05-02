@@ -12,8 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- logging
-- structured-logging
 - monitoring
 ---
 

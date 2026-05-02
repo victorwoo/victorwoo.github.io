@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- windows-admin-center
-- wac
-- server-management
+- windows
+- system-management
 - automation
 ---
 

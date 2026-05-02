@@ -12,11 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- transcript
-- audit
+- monitoring
 - security
-- logging
-- session-recording
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

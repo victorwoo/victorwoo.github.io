@@ -14,7 +14,6 @@ tags:
 - series
 - azure
 - storage
-- blob
 - cloud
 ---
 

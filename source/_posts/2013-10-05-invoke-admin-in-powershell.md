@@ -8,8 +8,8 @@ categories: powershell
 tags:
 - powershell
 - script
-- uac
-- cmdlet
+- security
+- scripting
 ---
 对于已知的需要以管理员身份运行的命令，我们可以通过这个 `Invoke-Admin` 函数运行。这个函数确保以管理员身份运行一个程序。如果不是以管理员身份运行，则将弹出 UAC 对话框。
 

@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- entra-id
-- app-registration
-- azure-ad
-- service-principal
+- azure
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

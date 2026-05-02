@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- xml
-- xpath
-- data-processing
+- data-format
+- text-processing
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

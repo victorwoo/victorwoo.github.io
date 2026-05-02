@@ -9,7 +9,7 @@ categories:
 - text
 tags:
 - powershell
-- text
+- text-processing
 - geek
 ---
 纯文本文件有诸多的好处：

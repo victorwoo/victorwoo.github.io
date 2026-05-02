@@ -12,11 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- data-transformation
-- etl
-- json
-- xml
-- csv
+- text-processing
+- database
+- data-format
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

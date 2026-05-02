@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- bicep
-- iac
+- devops
 - azure
-- infrastructure
+- system-management
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

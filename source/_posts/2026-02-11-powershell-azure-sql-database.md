@@ -13,7 +13,6 @@ tags:
 - powertip
 - series
 - azure
-- sql-database
 - database
 - cloud
 ---

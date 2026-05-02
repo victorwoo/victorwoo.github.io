@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- windows-terminal
-- customization
-- oh-my-posh
+- windows
+- best-practices
+- tooling
 - profile
 ---
 

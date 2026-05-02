@@ -12,8 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- winget
-- chocolatey
 - package-management
 ---
 

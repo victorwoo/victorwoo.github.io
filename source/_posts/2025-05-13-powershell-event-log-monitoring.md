@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- event-log
 - monitoring
-- system-administration
+- system-management
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- file-sync
-- robocopy
-- rsync
+- system-management
 ---
 
 _适用于 PowerShell 7.0 及以上版本（跨平台）_

@@ -8,8 +8,7 @@ categories:
 - powershell
 - module-system
 tags:
-- dynamic-loading
-- unmanaged-code
+- scripting
 ---
 
 ## 运行时DLL加载

@@ -13,9 +13,8 @@ tags:
 - powertip
 - series
 - automation
-- holiday
+- best-practices
 - monitoring
-- alerting
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

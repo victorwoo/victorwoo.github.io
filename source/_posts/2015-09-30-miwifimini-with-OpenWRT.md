@@ -7,7 +7,7 @@ description: miwifi-mini and OpenWRT
 categories:
 - embedded
 tags:
-- embedded
+- best-practices
 - linux
 ---
 今天拿到小米路由器 mini ，准备对它刷入 OpenWRT 固件。这类操作通常都有些坑，所以将过程记录如下：

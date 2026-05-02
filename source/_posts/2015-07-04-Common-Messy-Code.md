@@ -7,7 +7,7 @@ description: Common Messy Code
 categories:
 - program
 tags:
-- encoding
+- text-processing
 ---
 这是一个程序员段子，实际上是几种常见的乱码：
 

@@ -12,10 +12,10 @@ tags:
 - tip
 - powertip
 - series
-- dev-environment
-- winget
-- dotfiles
-- configuration
+- best-practices
+- package-management
+- tooling
+- config-management
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

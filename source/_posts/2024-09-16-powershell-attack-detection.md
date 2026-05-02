@@ -8,9 +8,8 @@ categories:
 - powershell
 - security
 tags:
-- att&ck
-- threat-hunting
-- process-analysis
+- security
+- monitoring
 ---
 
 ```powershell

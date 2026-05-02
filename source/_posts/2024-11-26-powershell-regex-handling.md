@@ -9,7 +9,7 @@ categories:
 - scripting
 tags:
 - powershell
-- regex
+- scripting
 - text-processing
 ---
 

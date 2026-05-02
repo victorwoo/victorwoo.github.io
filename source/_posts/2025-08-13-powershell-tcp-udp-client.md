@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- tcp
-- udp
 - network
-- socket
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

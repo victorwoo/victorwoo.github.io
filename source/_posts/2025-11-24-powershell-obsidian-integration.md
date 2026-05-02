@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- obsidian
-- notes
-- markdown
-- productivity
+- tooling
+- data-format
+- automation
 ---
 
 _适用于 PowerShell 7.0 及以上版本（跨平台）_

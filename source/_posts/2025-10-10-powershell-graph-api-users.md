@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- microsoft-graph
-- entra-id
-- user-management
-- office365
+- azure
+- identity
+- office
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

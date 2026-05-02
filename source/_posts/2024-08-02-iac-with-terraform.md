@@ -9,7 +9,6 @@ categories:
 tags:
 - powershell
 - devops
-- terraform
 ---
 
 ```powershell

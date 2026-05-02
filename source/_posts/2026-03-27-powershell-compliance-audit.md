@@ -12,8 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- compliance
-- audit
 - security
 - reporting
 ---

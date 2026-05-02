@@ -8,8 +8,8 @@ categories:
 - powershell
 tags:
 - powershell
-- green-computing
-- optimization
+- best-practices
+- performance
 ---
 
 ```powershell

@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - automation
-- new-year
-- productivity
-- planning
+- best-practices
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

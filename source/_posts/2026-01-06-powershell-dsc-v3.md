@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- dsc
-- configuration-as-code
-- infrastructure
+- azure
+- config-management
+- system-management
 - automation
 ---
 

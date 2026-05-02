@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- scheduled-tasks
-- task-scheduler
+- system-management
 - automation
 ---
 

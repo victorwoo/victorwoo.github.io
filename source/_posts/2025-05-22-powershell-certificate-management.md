@@ -12,9 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- encryption
-- certificate
-- tls
 - security
 ---
 

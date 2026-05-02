@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- parallel
-- runspace
+- scripting
 - performance
 ---
 

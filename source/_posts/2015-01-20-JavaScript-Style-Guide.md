@@ -7,9 +7,8 @@ description: JavaScript Style Guide
 categories:
 - javascript
 tags:
-- javascript
-- style
-- guide
+- web
+- best-practices
 ---
 
 1.  [Google's JavaScript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)

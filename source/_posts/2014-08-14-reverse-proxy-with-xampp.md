@@ -6,11 +6,10 @@ updated: 2014-08-14 11:05:05
 description: Reverse proxy with xampp
 categories: server
 tags:
-- server
+- system-management
 - geek
-- xampp
-- apache
-- proxy
+- web
+- network
 ---
 公网 IP 地址 + 80 端口是稀缺资源。在开发、测试阶段，我们常常需要在一个公网 IP 的 80 端口上，绑定多个 WEB 服务，这些服务可能部署在内网的多台异构服务器上（不同操作系统、不同服务器软件）。
 

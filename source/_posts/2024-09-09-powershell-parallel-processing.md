@@ -8,7 +8,7 @@ categories:
 - powershell
 - performance
 tags:
-- multithreading
+- scripting
 - runspacepool
 ---
 

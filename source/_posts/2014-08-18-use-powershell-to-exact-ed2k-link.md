@@ -7,9 +7,9 @@ description: Use PowerShell to extract eD2k link
 categories: powershell
 tags:
 - powershell
-- regex
-- text
-- ed2k
+- scripting
+- text-processing
+- script
 ---
 ![](/img/2014-08-18-use-powershell-to-exact-ed2k-link.png)
 

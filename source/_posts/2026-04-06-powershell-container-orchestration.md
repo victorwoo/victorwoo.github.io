@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- docker
 - container
 - devops
-- orchestration
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Docker Desktop 或 Podman_

@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- git
-- version-control
 - devops
-- collaboration
+- best-practices
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

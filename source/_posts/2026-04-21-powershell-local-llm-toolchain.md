@@ -13,10 +13,7 @@ tags:
 - powertip
 - series
 - ai
-- llm
-- ollama
-- local-llm
-- toolchain
+- tooling
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Ollama 或 LM Studio_

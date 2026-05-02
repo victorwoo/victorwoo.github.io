@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- avd
-- virtual-desktop
-- remote-desktop
+- remoting
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Az.DesktopVirtualization 模块_

@@ -12,8 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- error-handling
-- logging
+- scripting
+- monitoring
 - best-practices
 ---
 

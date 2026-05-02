@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- sql-server
 - database
-- smo
-- dba
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

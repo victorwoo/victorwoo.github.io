@@ -13,9 +13,6 @@ tags:
 - powertip
 - series
 - testing
-- pester
-- mocking
-- unit-test
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

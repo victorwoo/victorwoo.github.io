@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- excel
-- report
-- epplus
+- office
+- reporting
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

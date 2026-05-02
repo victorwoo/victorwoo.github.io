@@ -8,8 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- variable
-- scope
+- scripting
 ---
 
 ## 基础作用域类型

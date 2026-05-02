@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- wsl
-- linux
 - cross-platform
-- interop
+- linux
+- scripting
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

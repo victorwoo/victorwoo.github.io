@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- module
+- scripting
 - testing
-- pester
-- quality
+- best-practices
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

@@ -13,7 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- containers
+- container
 - aci
 - cloud
 ---

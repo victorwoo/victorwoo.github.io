@@ -9,7 +9,7 @@ tags:
 - powershell
 - command
 - cmd
-- registry
+- system-management
 - script
 - geek
 ---

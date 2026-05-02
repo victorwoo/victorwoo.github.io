@@ -13,9 +13,8 @@ tags:
 - powertip
 - series
 - azure
-- api-management
 - gateway
-- microservices
+- container
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

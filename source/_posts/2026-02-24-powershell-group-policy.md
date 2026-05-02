@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- group-policy
-- gpo
-- active-directory
+- identity
 - windows
 ---
 

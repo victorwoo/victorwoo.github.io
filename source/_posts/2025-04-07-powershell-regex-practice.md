@@ -12,7 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- regex
+- scripting
 - text-processing
 ---
 

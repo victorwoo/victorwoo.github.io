@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- registry
+- system-management
 - windows
-- configuration
+- config-management
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

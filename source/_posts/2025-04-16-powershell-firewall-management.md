@@ -12,7 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- firewall
 - security
 - network
 - windows

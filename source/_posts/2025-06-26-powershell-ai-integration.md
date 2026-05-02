@@ -13,9 +13,6 @@ tags:
 - powertip
 - series
 - ai
-- llm
-- openai
-- ollama
 ---
 
 _适用于 PowerShell 5.1 及以上版本，调用 AI API 需要网络访问和 API 密钥_

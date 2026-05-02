@@ -7,8 +7,8 @@ description: CDN resources
 categories: web
 tags:
 - web
-- develop
-- cdn
+- best-practices
+- network
 ---
 # 常用 CDN 列表
 

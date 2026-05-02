@@ -10,7 +10,7 @@ categories:
 tags:
 - powershell
 - security
-- policies
+- best-practices
 ---
 
 PowerShell执行策略是脚本安全的第一道防线，通过灵活配置平衡功能与安全。

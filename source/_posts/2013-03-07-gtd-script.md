@@ -10,7 +10,7 @@ tags:
 - gtd
 - powershell
 - script
-- regex
+- scripting
 ---
 这是花了一个晚上写的PowerShell脚本，可以把你的目录以GTD的思想整理得井井有条。
 但是GTD功能已经完整并通过测试。github地址：[victorwoo/Get-ThingsDone](https://github.com/victorwoo/Get-ThingsDone "victorwoo/Get-ThingsDone")。

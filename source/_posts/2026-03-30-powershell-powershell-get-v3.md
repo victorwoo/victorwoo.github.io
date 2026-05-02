@@ -12,10 +12,10 @@ tags:
 - tip
 - powertip
 - series
-- psresourceget
-- modules
-- gallery
-- ecosystem
+- package-management
+- module
+- tooling
+- best-practices
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

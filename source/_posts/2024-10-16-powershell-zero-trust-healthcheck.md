@@ -9,9 +9,8 @@ categories:
 - security
 - automation
 tags:
-- zero-trust
-- device-health
-- compliance
+- security
+- monitoring
 ---
 
 ```powershell

@@ -9,7 +9,7 @@ categories:
 - ai
 tags:
 - powershell
-- computervision
+- ai
 - automation
 ---
 

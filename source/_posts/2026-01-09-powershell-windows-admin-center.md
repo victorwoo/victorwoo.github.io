@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- windows-admin-center
-- gui
-- management
+- windows
+- tooling
+- system-management
 - automation
 ---
 

@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- windows-terminal
-- productivity
+- windows
 - automation
 ---
 

@@ -13,7 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- virtual-machine
+- virtualization
 - cloud
 ---
 

@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- productivity
-- toolkit
 - automation
-- tips
+- tooling
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

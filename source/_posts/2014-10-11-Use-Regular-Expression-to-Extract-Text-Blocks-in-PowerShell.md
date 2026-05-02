@@ -9,8 +9,8 @@ categories:
 - text
 tags:
 - powershell
-- regex
-- text
+- scripting
+- text-processing
 ---
 # 需求
 给定一段文本，如：

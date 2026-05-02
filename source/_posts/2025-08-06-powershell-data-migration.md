@@ -12,11 +12,10 @@ tags:
 - tip
 - powertip
 - series
-- data-migration
-- etl
-- csv
-- json
-- conversion
+- data-processing
+- database
+- data-format
+- text-processing
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

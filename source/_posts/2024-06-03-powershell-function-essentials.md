@@ -8,8 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- function
-- parameters
+- scripting
 ---
 
 ## 基础函数结构

@@ -6,10 +6,10 @@ title: "PowerShell 技能连载 - Windows系统自动化优化"
 description: "使用PowerShell实现系统服务的智能管理与性能调优"
 categories:
 - powershell
-- system
+- system-administration
 tags:
 - powershell
-- optimization
+- performance
 - automation
 ---
 

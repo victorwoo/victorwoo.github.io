@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- filesystem
-- watcher
-- event-handling
+- system-management
+- tooling
+- scripting
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），FileSystemWatcher 需要 .NET Framework/Core_

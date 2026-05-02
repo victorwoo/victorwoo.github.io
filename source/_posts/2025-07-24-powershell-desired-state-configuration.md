@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- dsc
-- configuration
-- infrastructure-as-code
+- azure
+- config-management
+- devops
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），DSC 需要 Windows 管理框架_

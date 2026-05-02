@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- logging
-- log-analysis
-- text-parsing
+- monitoring
+- text-processing
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

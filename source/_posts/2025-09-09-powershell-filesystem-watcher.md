@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- filesystem
-- filesystemwatcher
+- system-management
 - monitoring
 ---
 

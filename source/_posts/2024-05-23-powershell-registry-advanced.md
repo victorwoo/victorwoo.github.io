@@ -8,8 +8,8 @@ categories:
 - powershell
 - system-administration
 tags:
-- registry
-- acl
+- system-management
+- identity
 ---
 
 ## 动态注册表项管理

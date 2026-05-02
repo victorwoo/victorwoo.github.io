@@ -12,7 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- event-log
 - monitoring
 - security
 ---

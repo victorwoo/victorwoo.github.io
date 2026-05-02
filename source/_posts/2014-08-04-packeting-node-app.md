@@ -6,7 +6,7 @@ updated: 2014-08-04 20:58:00
 description: Guideline to packet node app into single executable application
 categories: nodejs
 tags:
-- nodejs
+- web
 ---
 # 解决方案
 * [crcn/nexe](https://github.com/crcn/nexe) - create a single executable out of your node.js apps。支持多个平台，似乎靠谱。

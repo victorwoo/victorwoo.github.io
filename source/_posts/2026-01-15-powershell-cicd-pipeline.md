@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- cicd
 - devops
-- pipeline
-- github-actions
+- scripting
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

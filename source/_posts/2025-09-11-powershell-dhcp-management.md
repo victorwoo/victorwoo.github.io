@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- dhcp
-- ip-address
-- network-management
+- network
 ---
 
 _适用于 PowerShell 5.1（Windows），需要 DhcpServer 模块及管理员权限_

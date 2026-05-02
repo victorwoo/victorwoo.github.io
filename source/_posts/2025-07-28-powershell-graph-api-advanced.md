@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- microsoft-graph
-- graph-api
-- azure-ad
-- entra-id
+- azure
 ---
 
 _适用于 PowerShell 5.1 及以上版本，需要 Microsoft Graph PowerShell SDK 或 Azure AD 租户_

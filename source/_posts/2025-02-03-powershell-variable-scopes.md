@@ -8,8 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- variables
-- scope
+- scripting
 ---
 
 ### 作用域修饰符实战

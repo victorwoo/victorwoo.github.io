@@ -13,9 +13,6 @@ tags:
 - powertip
 - series
 - security
-- defender
-- antivirus
-- malware
 ---
 
 _适用于 Windows 10/11 和 Windows Server 2016 及以上版本_

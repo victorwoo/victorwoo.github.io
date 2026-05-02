@@ -12,8 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- dsc
-- configuration-management
+- azure
+- config-management
 - devops
 ---
 

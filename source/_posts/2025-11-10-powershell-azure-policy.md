@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- azure-policy
-- compliance
-- governance
+- azure
+- security
+- best-practices
 - cloud
 ---
 

@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- rest-api
-- http
-- web-request
+- network
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

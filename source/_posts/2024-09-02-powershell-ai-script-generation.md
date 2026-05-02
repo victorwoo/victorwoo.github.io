@@ -8,8 +8,8 @@ categories:
 - powershell
 - ai
 tags:
-- openai
-- code-generation
+- ai
+- tooling
 - automation
 ---
 

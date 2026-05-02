@@ -6,7 +6,7 @@ updated: 2012-04-06 00:00:00
 description: extract hex data in vim
 categories: vim
 tags:
-- vim
+- tooling
 - geek
 ---
 在做嵌入式设备开发和调试工作中，可能常常遇到以下场景，需要把：

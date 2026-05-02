@@ -8,8 +8,7 @@ categories:
 - powershell
 tags:
 - powershell
-- QQ
-- community
+- qq
 ---
 至 2022 年 3 月，“PowerShell 技术互动”社区人数已达到 1998 人，十分接近社区最大容量（2000 人），保持 PowerShell 最大中文社区的位置。根据腾讯社交平台的策略，社区人数的上限为 2000 人，我们会尽可能保留机会给活跃用户。
 

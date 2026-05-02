@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- json
-- yaml
+- data-format
 - config-management
 - devops
 ---

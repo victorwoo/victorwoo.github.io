@@ -6,11 +6,9 @@ updated: 2014-08-04 20:20:37
 description: Hexo guideline
 categories: network
 tags:
-- hexo
-- blog
-- nodejs
-- guideline
-- link
+- best-practices
+- web
+- script
 ---
 [Hexo](http://hexo.io/) 是一个快速、便捷、强大的博客框架，通过 Node.js 技术构建。
 

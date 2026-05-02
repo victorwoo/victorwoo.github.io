@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - security
-- incident-response
 - automation
-- forensics
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

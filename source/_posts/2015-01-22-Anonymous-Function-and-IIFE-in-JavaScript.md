@@ -7,7 +7,7 @@ description: "Anonymous Function and IIFE in JavaScript"
 categories:
 - javascript
 tags:
-- javascript
+- web
 ---
 命名函数
 --------

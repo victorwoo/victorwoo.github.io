@@ -9,8 +9,7 @@ categories:
 - ai
 - automation
 tags:
-- openai
-- natural-language-processing
+- ai
 - devops
 ---
 

@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- frontdoor
-- cdn
-- networking
+- network
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

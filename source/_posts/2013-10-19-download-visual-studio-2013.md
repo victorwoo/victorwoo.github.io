@@ -6,11 +6,11 @@ updated: 2013-10-19 00:00:00
 description: Download Visual Studio 2013
 categories: visualstudio
 tags:
-- visualstudio
+- tooling
 - microsoft
-- iso
-- download
-- release
+- best-practices
+- script
+- devops
 ---
 下载信息
 =======

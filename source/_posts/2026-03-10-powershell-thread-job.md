@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- jobs
-- concurrency
-- threading
+- scripting
 - performance
 ---
 

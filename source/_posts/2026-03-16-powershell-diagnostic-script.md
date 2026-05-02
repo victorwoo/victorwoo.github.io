@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- diagnostics
-- health-check
+- monitoring
 - troubleshooting
 - automation
 ---

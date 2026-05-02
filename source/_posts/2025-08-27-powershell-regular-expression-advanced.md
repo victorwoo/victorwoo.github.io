@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- regex
-- regular-expression
-- pattern-matching
+- scripting
+- text-processing
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

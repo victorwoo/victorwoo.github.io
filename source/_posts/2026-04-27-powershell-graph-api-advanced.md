@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- microsoft-graph
-- graph-api
-- entra-id
-- office-365
+- azure
+- office
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Microsoft.Graph 模块_

@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- ci-cd
-- pipeline
 - devops
+- scripting
 - automation
 ---
 

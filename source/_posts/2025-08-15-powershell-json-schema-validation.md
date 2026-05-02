@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- json
-- schema
-- validation
+- data-format
+- testing
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

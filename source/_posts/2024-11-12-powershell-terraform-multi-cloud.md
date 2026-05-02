@@ -8,9 +8,8 @@ categories:
 - powershell
 - cloud
 tags:
-- terraform
-- multi-cloud
-- iac
+- devops
+- cloud
 ---
 
 ```powershell

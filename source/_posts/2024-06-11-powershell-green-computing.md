@@ -8,8 +8,8 @@ categories:
 - powershell
 - energy
 tags:
-- green-computing
-- ai-optimization
+- best-practices
+- ai
 - datacenter
 ---
 

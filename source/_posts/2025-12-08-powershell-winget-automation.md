@@ -12,7 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- winget
 - package-management
 - windows
 ---

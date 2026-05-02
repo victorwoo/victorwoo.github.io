@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- wsl
-- linux
 - cross-platform
+- linux
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），需要安装 WSL_

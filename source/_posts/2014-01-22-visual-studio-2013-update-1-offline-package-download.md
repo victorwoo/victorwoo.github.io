@@ -6,13 +6,12 @@ updated: 2014-01-22 00:00:00
 description: Microsoft Visual Studio 2013 Update 1 Offline Package Download
 categories: visualstudio
 tags:
-- visualstudio
+- tooling
 - microsoft
-- iso
-- download
-- release
+- best-practices
+- script
+- devops
 - sp1
-- update
 ---
 下载信息
 --------

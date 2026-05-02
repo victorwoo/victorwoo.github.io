@@ -8,8 +8,7 @@ categories:
 - powershell
 - advanced-scripting
 tags:
-- reflection
-- metaprogramming
+- scripting
 ---
 
 ## 动态类型检查技术

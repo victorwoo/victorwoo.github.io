@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- ssh
-- tunneling
-- port-forwarding
+- remoting
 - network
 - security
 ---

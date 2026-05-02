@@ -12,7 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- docker
 - container
 - devops
 ---

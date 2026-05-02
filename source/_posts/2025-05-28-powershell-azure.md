@@ -14,7 +14,6 @@ tags:
 - series
 - azure
 - cloud
-- az-module
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需安装 Az PowerShell 模块_

@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- app-service
-- deployment
-- blue-green
+- devops
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Az.Websites 模块_

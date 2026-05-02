@@ -13,8 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- keyvault
-- secrets
+- identity
 - security
 ---
 

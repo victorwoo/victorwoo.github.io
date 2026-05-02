@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- vscode
-- extension
-- development
-- editor
+- tooling
+- best-practices
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- clipboard
-- gui
-- interop
+- tooling
+- scripting
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），剪贴板功能需要 Windows 环境_

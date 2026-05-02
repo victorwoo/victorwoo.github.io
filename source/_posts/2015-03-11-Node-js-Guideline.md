@@ -6,8 +6,8 @@ updated: 2015-03-11 11:30:33
 description: Node.js Guideline
 categories: [node.js]
 tags:
-- node.js
-- guideline
+- web
+- best-practices
 ---
 Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台，
 

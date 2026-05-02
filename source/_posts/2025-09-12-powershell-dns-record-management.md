@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- dns
-- dns-records
-- name-resolution
+- network
 ---
 
 _适用于 PowerShell 5.1（Windows），需要 DnsServer 模块及管理员权限_

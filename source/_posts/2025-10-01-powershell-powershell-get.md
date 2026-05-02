@@ -12,8 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- powershellget
-- nuget
 - package-management
 ---
 

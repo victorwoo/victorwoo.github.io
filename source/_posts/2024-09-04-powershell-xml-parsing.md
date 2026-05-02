@@ -9,7 +9,7 @@ categories:
 - data-processing
 tags:
 - powershell
-- xml
+- data-format
 - automation
 ---
 

@@ -8,8 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- flow-control
-- switch
+- scripting
 ---
 
 ### 通配符模式匹配

@@ -14,8 +14,7 @@ tags:
 - series
 - azure
 - monitoring
-- dashboard
-- observability
+- reporting
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Az.Monitor 模块_

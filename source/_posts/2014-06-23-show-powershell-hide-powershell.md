@@ -8,7 +8,7 @@ categories: powershell
 tags:
 - powershell
 - window
-- module
+- scripting
 ---
 在 WPF 之周中，有个朋友希望有个最小化 PowerShell 窗口的例子。
 

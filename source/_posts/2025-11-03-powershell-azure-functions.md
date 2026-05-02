@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- azure-functions
-- serverless
+- azure
 - cloud
 - automation
 ---

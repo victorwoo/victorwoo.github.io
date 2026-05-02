@@ -6,12 +6,9 @@ title: mongoose 学习路线
 description: mongoose guideline
 categories: mongoose
 tags:
-- mongoose
-- mongodb
-- guideline
-- link
-- nosql
 - database
+- best-practices
+- script
 ---
 [mongoose](http://mongoosejs.com/) 是 mongodb 的一个对象模型工具，可以工作于异步环境下。
 

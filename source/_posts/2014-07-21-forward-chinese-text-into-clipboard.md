@@ -8,7 +8,7 @@ categories:
 - text
 tags:
 - powershell
-- text
+- text-processing
 ---
 # 方法一 通过 clip.exe
 

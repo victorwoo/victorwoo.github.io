@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- arm-template
+- devops
 - azure
-- infrastructure-as-code
-- deployment
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

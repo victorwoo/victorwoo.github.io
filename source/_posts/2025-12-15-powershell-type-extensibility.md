@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- types
-- format-data
-- extended-type-system
-- customization
+- scripting
+- tooling
+- best-practices
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

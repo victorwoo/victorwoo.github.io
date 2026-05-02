@@ -9,7 +9,7 @@ categories:
 - scripting
 tags:
 - powershell
-- functions
+- scripting
 - automation
 ---
 

@@ -8,8 +8,7 @@ categories:
 - powershell
 - security
 tags:
-- jea
-- role-capability
+- security
 ---
 
 ## JEA端点配置

@@ -12,7 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- ssh
 - remoting
 - linux
 - cross-platform

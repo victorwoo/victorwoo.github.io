@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- events
+- monitoring
 - register-engineevent
-- event-handling
+- scripting
 - reactive
 ---
 

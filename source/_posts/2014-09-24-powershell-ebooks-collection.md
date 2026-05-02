@@ -7,7 +7,7 @@ description: PowerShell Ebooks Collection
 categories: powershell
 tags:
 - powershell
-- ebook
+- best-practices
 ---
 搜集到的所有 PowerShell 电子书 [共享链接](https://link.getsync.com/#f=PowerShell&sz=0&t=2&s=QIRLDLFZIBPR6DHOJ4K6LGNMB2KDWXZUW5D4SATAGPIW4AY43IFA&i=CFAGNWFWQXY5KE2A5I3PIDSQCQOC6PCIS&v=2.0)
 将来一旦有更新，就会自动同步、自动更新，再也不用为资料发愁了。如果您也有好料想一起分享，请在群里发个消息，我把读写权限给您。

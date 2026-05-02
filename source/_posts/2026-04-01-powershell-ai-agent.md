@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - ai
-- llm
 - agent
-- openai
 - automation
 ---
 

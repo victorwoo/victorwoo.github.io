@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- managed-identity
 - security
-- authentication
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

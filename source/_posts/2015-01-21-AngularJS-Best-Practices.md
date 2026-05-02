@@ -7,10 +7,8 @@ description: "AngularJS Best Practices"
 categories:
 - angularjs
 tags:
-- angularjs
-- javascript
-- bestpractice
-- guide
+- web
+- best-practices
 ---
 ![](/img/2015-01-21-AngularJS-Best-Practices-001.png)
 

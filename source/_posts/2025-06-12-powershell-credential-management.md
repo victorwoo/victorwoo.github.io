@@ -13,9 +13,7 @@ tags:
 - powertip
 - series
 - security
-- credential
-- secret-management
-- vault
+- identity
 ---
 
 _适用于 PowerShell 5.1 及以上版本，SecretManagement 模块需要 PowerShell 7_

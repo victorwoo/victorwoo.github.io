@@ -6,11 +6,10 @@ title: "PowerShell 技能连载 - Microsoft Graph API 集成自动化"
 description: "实现Office 365用户与团队资源全生命周期管理"
 categories:
 - powershell
-- office365
+- office
 tags:
-- microsoft-graph
+- azure
 - automation
-- azure-ad
 ---
 
 ```powershell

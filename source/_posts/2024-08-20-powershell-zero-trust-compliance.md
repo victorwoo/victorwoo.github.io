@@ -8,8 +8,7 @@ categories:
 - powershell
 - security
 tags:
-- zero-trust
-- device-compliance
+- security
 - automation
 ---
 

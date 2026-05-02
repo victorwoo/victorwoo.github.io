@@ -13,9 +13,8 @@ tags:
 - powertip
 - series
 - azure
-- container-apps
-- microservices
-- serverless
+- container
+- cloud
 ---
 
 _适用于 PowerShell 7.0 及以上版本，需要 Az.ContainerApp 模块_

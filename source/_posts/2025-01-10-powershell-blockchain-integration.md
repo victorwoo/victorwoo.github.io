@@ -9,9 +9,7 @@ categories:
 - blockchain
 - automation
 tags:
-- ethereum
-- smart-contract
-- web3
+- best-practices
 ---
 
 ```powershell

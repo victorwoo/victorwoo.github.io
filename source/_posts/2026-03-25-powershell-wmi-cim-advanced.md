@@ -14,7 +14,7 @@ tags:
 - series
 - cim
 - wmi
-- hardware
+- system-management
 - inventory
 ---
 

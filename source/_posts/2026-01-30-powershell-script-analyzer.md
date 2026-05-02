@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- psscriptanalyzer
-- code-quality
-- linting
+- testing
 - best-practices
 ---
 

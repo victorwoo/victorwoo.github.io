@@ -10,9 +10,8 @@ categories:
 - ai
 tags:
 - powershell
-- openai
+- ai
 - automation
-- nlp
 ---
 
 ```powershell

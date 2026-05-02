@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- azure-devops
 - devops
-- pipeline
+- scripting
 - boards
 ---
 

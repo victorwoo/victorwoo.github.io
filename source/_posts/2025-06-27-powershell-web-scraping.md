@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- web-scraping
-- html-parsing
-- browser-automation
+- web
+- data-format
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

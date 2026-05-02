@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- logging
-- analytics
-- forensics
+- monitoring
+- data-processing
 - security
 ---
 

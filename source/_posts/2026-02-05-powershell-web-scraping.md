@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- web-scraping
-- html
-- data-collection
+- web
+- data-format
+- data-processing
 - automation
 ---
 

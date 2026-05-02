@@ -8,9 +8,8 @@ categories: powershell
 tags:
 - powershell
 - microsoft
-- lesson
+- best-practices
 - video
-- study
 ---
 * [快速入门 PowerShell 3.0](http://pan.baidu.com/s/1hqKK1vA) - 入门篇。密码 `sja7`
 

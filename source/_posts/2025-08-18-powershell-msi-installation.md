@@ -12,10 +12,10 @@ tags:
 - tip
 - powertip
 - series
-- msi
-- deployment
+- package-management
+- devops
 - automation
-- windows-installer
+- windows
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

@@ -9,8 +9,8 @@ categories:
 - azure
 - devops
 tags:
-- cost-optimization
-- multicloud
+- azure
+- cloud
 - automation
 ---
 

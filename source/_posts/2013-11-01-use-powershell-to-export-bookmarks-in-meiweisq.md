@@ -9,7 +9,6 @@ tags:
 - powershell
 - script
 - geek
-- delicious
 - web
 ---
 前言

@@ -13,8 +13,7 @@ tags:
 - powertip
 - series
 - testing
-- infrastructure
-- pester
+- system-management
 - devops
 ---
 

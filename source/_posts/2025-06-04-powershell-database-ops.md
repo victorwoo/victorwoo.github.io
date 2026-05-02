@@ -13,8 +13,6 @@ tags:
 - powertip
 - series
 - database
-- sql-server
-- dba
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），需安装 SqlServer 模块_

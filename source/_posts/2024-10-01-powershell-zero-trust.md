@@ -9,8 +9,7 @@ categories:
 - security
 tags:
 - powershell
-- zero-trust
-- compliance
+- security
 ---
 
 ```powershell

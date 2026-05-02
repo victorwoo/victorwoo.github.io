@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- grafana
-- dashboard
 - monitoring
-- visualization
+- reporting
+- tooling
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

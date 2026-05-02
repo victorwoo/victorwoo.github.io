@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- network-share
-- file-server
-- smb
-- acl
+- network
+- system-management
+- identity
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

@@ -8,8 +8,7 @@ categories:
 - powershell
 tags:
 - powershell
-- book
-- preface
+- best-practices
 ---
 受人民邮电出版社图灵公司委托，为图灵即将在五月出版的《PowerShell 实战》（英文原版为 PowerShell for Sysadmins: Workflow Automation Made Easy）撰写序言。这是微软 MVP Adam Bertram 的大作，亚马逊评分 4.7 分。
 

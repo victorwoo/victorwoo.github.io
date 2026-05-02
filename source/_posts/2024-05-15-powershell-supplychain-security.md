@@ -9,9 +9,7 @@ categories:
 - security
 - devops
 tags:
-- supplychain
-- vulnerability
-- compliance
+- security
 ---
 
 ```powershell

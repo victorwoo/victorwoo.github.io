@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- azure-devops
-- cicd
-- pipeline
+- devops
+- scripting
 - automation
 ---
 

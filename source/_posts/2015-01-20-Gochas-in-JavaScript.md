@@ -7,6 +7,6 @@ description: "Gochas in JavaScript"
 categories:
 - javascript
 tags:
-- javascript
+- web
 ---
 [AngularJS移动开发中的坑汇总](http://blog.csdn.net/offbye/article/details/38490821)

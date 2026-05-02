@@ -6,8 +6,8 @@ updated: 2015-02-02 15:01:00
 description: "Personal Management"
 categories: [career]
 tags:
-- career
-- productivity
+- best-practices
+- automation
 ---
 网站
 ====

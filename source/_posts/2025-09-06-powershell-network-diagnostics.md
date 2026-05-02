@@ -13,7 +13,7 @@ tags:
 - powertip
 - series
 - network
-- diagnostics
+- monitoring
 - troubleshooting
 ---
 

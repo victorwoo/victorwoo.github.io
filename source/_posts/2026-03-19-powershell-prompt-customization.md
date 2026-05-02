@@ -13,9 +13,8 @@ tags:
 - powertip
 - series
 - prompt
-- oh-my-posh
-- terminal
-- customization
+- tooling
+- best-practices
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

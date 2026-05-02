@@ -7,8 +7,8 @@ description: "JavaScript Best Practices"
 categories:
 - javascript
 tags:
-- javascript
-- bestpractice
+- web
+- best-practices
 ---
 ![](/img/2015-01-21-JavaScript-Best-Practices-001.jpg)
 

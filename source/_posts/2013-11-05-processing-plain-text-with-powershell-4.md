@@ -9,8 +9,7 @@ categories:
 - text
 tags:
 - powershell
-- learning
-- skill
+- best-practices
 - script
 ---
 命题

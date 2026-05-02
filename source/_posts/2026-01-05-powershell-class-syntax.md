@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- class
-- oop
-- advanced
-- types
+- scripting
+- script
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

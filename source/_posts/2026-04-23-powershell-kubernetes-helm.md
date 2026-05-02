@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- kubernetes
-- helm
+- container
 - devops
 - package-management
 ---

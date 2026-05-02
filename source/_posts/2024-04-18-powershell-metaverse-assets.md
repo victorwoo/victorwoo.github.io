@@ -8,8 +8,7 @@ categories:
 - powershell
 - emerging-tech
 tags:
-- metaverse
-- digital-assets
+- best-practices
 - automation
 ---
 

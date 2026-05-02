@@ -9,8 +9,8 @@ tags:
 - powershell
 - geek
 - qq
-- ad
-- block
+- identity
+- best-practices
 ---
 我们在 [用 PowerShell 屏蔽腾讯 QQ 的广告][用 PowerShell 屏蔽腾讯 QQ 的广告] 这篇文章中介绍过了如何屏蔽 QQ 聊天窗口的横幅广告，那么如何屏蔽 QQ 秀的广告呢？请参见 [QQ2013 删除QQ秀广告][QQ2013 删除QQ秀广告]。
 

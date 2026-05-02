@@ -7,11 +7,8 @@ description: PowerShell Tools for Visual Studio - PowerShell integration for Vis
 categories: powershell
 tags:
 - powershell
-- visualstudio
-- develop
-- tool
-- ide
-- extension
+- tooling
+- best-practices
 ---
 Visual Studio的PowerShell扩展工具为Visual Studio 2012和2013 RC增加了PowerShell语言支持。
 

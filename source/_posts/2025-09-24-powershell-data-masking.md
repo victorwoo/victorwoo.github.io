@@ -12,9 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- data-masking
-- anonymization
-- privacy
 - security
 ---
 

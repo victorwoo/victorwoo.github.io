@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- conditional-access
-- entra-id
-- security-policy
-- azure-ad
+- security
+- azure
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- rest-api
-- http
-- web-server
-- api
+- network
+- web
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

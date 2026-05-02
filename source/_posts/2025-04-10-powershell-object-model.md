@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- object-model
+- scripting
 - basics
-- pipeline
 ---
 
 _适用于 PowerShell 所有版本_

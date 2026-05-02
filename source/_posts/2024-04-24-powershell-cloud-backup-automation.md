@@ -9,7 +9,7 @@ categories:
 - cloud
 tags:
 - powershell
-- backup
+- azure
 - automation
 ---
 

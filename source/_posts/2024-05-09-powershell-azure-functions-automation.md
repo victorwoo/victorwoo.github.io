@@ -10,7 +10,7 @@ categories:
 tags:
 - powershell
 - azure
-- serverless
+- cloud
 ---
 
 在无服务器架构日益普及的今天，Azure Functions作为事件驱动的计算服务广受欢迎。本文将演示如何通过PowerShell实现Functions的自动化部署与监控，帮助运维人员提升云端资源管理效率。

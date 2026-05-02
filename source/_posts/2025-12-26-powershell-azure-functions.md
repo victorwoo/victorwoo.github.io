@@ -13,8 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- functions
-- serverless
+- scripting
 - cloud
 ---
 

@@ -7,8 +7,8 @@ description: Generate PowerShell tips automatically
 categories: powershell
 tags:
 - powershell
-- node.js
-- regex
+- web
+- scripting
 ---
 [Tobias Weltner][Tobias Weltner] 博士每个工作日都在 [www.powershell.com][www.powershell.com] 发布一篇 PowerShell 技能。这个系列在 PowerShell 的技术社区里已是家喻户晓，成为关注 PowerShell 技术动态的一扇窗口。
 

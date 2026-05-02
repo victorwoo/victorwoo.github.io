@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- plaster
-- scaffolding
-- module
-- template
+- tooling
+- scripting
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

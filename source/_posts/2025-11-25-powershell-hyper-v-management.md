@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- hyper-v
-- virtual-machine
-- vm
-- windows-server
+- virtualization
+- windows
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows），需要 Hyper-V 角色_

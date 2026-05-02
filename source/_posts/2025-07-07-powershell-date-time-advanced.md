@@ -15,7 +15,7 @@ tags:
 - datetime
 - timespan
 - timezone
-- scheduling
+- system-management
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

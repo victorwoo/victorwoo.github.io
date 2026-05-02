@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- pester
 - testing
-- tdd
 ---
 
 _适用于 PowerShell 5.1 及以上版本，建议安装 Pester 5.x_

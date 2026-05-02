@@ -10,7 +10,7 @@ categories:
 - automation
 tags:
 - powershell
-- openai
+- ai
 - devops
 ---
 

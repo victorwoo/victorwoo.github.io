@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- module
-- development
-- psgallery
+- scripting
+- best-practices
+- package-management
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

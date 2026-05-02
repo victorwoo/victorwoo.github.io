@@ -15,7 +15,7 @@ tags:
 - cross-platform
 - linux
 - macos
-- compatibility
+- best-practices
 ---
 
 _适用于 PowerShell 7.0 及以上版本（Windows / Linux / macOS）_

@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- event-log
+- monitoring
 - analysis
 - security
-- forensics
 ---
 
 _适用于 PowerShell 5.1 及以上版本（Windows）_

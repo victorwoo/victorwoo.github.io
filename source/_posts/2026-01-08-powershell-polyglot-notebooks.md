@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- notebooks
-- jupyter
-- polyglot
-- data-science
+- ai
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

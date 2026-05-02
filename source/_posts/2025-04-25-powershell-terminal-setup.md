@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- terminal
-- windows-terminal
-- oh-my-posh
-- productivity
+- tooling
+- windows
+- automation
 ---
 
 _适用于 Windows 10/11，PowerShell 7.0 及以上版本_

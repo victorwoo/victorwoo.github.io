@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- active-directory
-- ad
-- identity-management
+- identity
 ---
 
 _适用于 Windows Server 2012 R2 及以上版本，需安装 ActiveDirectory 模块_

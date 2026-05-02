@@ -12,8 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- git
-- version-control
 - devops
 ---
 

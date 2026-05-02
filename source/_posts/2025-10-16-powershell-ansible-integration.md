@@ -12,10 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- ansible
-- automation
-- configuration-management
 - devops
+- automation
+- config-management
 ---
 _适用于 PowerShell 5.1 及以上版本（Windows）_
 

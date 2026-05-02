@@ -13,8 +13,7 @@ tags:
 - powertip
 - series
 - azure
-- private-endpoint
-- networking
+- network
 - security
 ---
 

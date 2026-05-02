@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- browser-automation
-- playwright
-- selenium
-- web-scraping
+- web
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

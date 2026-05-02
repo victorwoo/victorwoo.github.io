@@ -8,9 +8,9 @@ categories:
 - powershell
 - cloud
 tags:
-- dsc
-- terraform
-- hybrid-cloud
+- azure
+- devops
+- cloud
 ---
 
 ```powershell

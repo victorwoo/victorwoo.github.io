@@ -13,9 +13,8 @@ tags:
 - powertip
 - series
 - config-management
-- iac
 - devops
-- yaml
+- data-format
 ---
 
 _适用于 PowerShell 7.0 及以上版本_

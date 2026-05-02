@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- module
-- powershell-gallery
+- scripting
 - package-management
 ---
 

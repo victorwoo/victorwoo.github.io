@@ -12,7 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- winrm
 - remoting
 - troubleshooting
 - security

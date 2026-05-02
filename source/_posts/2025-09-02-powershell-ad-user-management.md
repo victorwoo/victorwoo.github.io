@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- active-directory
-- user-management
-- windows-server
+- identity
+- windows
 ---
 
 _适用于 PowerShell 5.1（Windows），需要 ActiveDirectory 模块及管理员权限_

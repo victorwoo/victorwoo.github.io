@@ -8,8 +8,8 @@ categories:
 - powershell
 - core-mechanism
 tags:
-- psprovider
-- filesystem-abstraction
+- scripting
+- system-management
 ---
 
 ## 内存驱动器实现

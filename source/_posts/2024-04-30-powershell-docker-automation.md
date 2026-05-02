@@ -9,7 +9,7 @@ categories:
 - devops
 tags:
 - powershell
-- docker
+- container
 - automation
 ---
 

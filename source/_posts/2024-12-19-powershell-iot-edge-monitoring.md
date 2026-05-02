@@ -9,9 +9,9 @@ categories:
 - iot
 - automation
 tags:
-- edge-computing
-- device-monitoring
-- industrial-iot
+- cloud
+- monitoring
+- best-practices
 ---
 
 ```powershell

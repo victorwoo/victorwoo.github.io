@@ -7,8 +7,7 @@ description: Using CSharp (C#) code in Powershell scripts
 categories: powershell
 tags:
 - powershell
-- csharp
-- c#
+- scripting
 ---
 PowerShell 使我们拥有了一门非常强大的脚本语言。许多产品，例如 SharePoint 以 Cmdlet 的形式提供了它们自己的管理扩展。
 

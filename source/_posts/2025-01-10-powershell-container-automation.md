@@ -8,7 +8,6 @@ categories:
 - powershell
 - devops
 tags:
-- docker
 - container
 - automation
 ---

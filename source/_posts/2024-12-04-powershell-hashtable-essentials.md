@@ -8,8 +8,7 @@ categories:
 - powershell
 - scripting
 tags:
-- data-structure
-- hashtable
+- scripting
 ---
 
 ## 哈希表基础操作

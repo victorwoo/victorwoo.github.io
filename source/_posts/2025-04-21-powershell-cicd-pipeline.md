@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- cicd
 - devops
-- github-actions
 - automation
 ---
 _适用于 PowerShell 7.0 及以上版本，需要 GitHub 账号_

@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- ssh
-- remote-management
+- remoting
 - linux
 ---
 

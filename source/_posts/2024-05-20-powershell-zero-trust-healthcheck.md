@@ -8,9 +8,8 @@ categories:
 - powershell
 - security
 tags:
-- zerotrust
-- compliance
-- healthcheck
+- security
+- monitoring
 ---
 
 ```powershell

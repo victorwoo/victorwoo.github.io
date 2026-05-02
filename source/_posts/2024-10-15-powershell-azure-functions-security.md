@@ -9,9 +9,9 @@ categories:
 - security
 - azure
 tags:
-- serverless
-- security-monitoring
-- azure-functions
+- cloud
+- security
+- azure
 ---
 
 ```powershell

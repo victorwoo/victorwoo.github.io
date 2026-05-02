@@ -10,7 +10,7 @@ categories:
 tags:
 - powershell
 - geek
-- excel
+- office
 ---
 Excel 的列号是采用“A”、“B”……“Z”、“AA”、“AB”……的方式编号。但是我们在自动化操作中，往往希望用数字作为列号。我们可以用 PowerShell 来实现 Excel 的列号和数字之间的互相转换。
 

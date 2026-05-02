@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- data-pipeline
-- etl
 - data-processing
+- database
+- text-processing
 - automation
 ---
 

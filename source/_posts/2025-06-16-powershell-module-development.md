@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- module
-- development
-- packaging
+- scripting
+- best-practices
+- package-management
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

@@ -12,10 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- git
-- workflow
-- automation
 - devops
+- automation
 ---
 
 _适用于 PowerShell 7.0 及以上版本（跨平台）_

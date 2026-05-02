@@ -8,7 +8,7 @@ categories: powershell
 tags:
 - powershell
 - geek
-- vmware
+- virtualization
 ---
 VMware Workstation 想必是很多朋友的必装软件，强大的虚拟机功能已经不用多解释了。这里提点小小的内存优化建议，就是我们在安装完 VMware Workstation 之后，它默认是开机自启动的。那有人会说，打开msconfig，在启动项里将它关闭不就行了吗？其实不然，VMware的几个进程都是以服务方式启动的，vmware-authd.exe、vmnetdhcp.exe、vmnat.exe等等，如不经处理，它们会常驻在系统内存中。而我们并不是每天都会使用虚拟机，所以那些进程大部分时间是在浪费我们的系统资源。
 

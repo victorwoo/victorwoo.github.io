@@ -12,9 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- kubernetes
-- k8s
-- kubectl
+- container
 - devops
 ---
 

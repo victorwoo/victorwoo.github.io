@@ -6,10 +6,9 @@ updated: 2015-03-25 15:54:00
 description: "Guideline to Learn git"
 categories: git
 tags:
-- git
+- devops
 - scm
-- learning
-- guideline
+- best-practices
 ---
 Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。
 

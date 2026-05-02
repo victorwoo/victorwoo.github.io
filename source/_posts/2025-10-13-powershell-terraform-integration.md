@@ -12,9 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- terraform
-- iac
-- infrastructure-as-code
 - devops
 ---
 

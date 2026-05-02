@@ -12,8 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- year-review
-- outlook
+- best-practices
+- office
 - ai
 - future
 ---

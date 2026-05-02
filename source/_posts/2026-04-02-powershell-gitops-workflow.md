@@ -12,10 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- gitops
-- git
 - devops
-- cicd
 - automation
 ---
 

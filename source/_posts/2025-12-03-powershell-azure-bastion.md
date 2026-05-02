@@ -12,9 +12,8 @@ tags:
 - tip
 - powertip
 - series
-- azure-bastion
-- remote-access
-- ssh
+- azure
+- remoting
 - security
 ---
 

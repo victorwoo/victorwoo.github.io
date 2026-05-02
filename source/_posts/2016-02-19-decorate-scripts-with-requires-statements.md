@@ -9,7 +9,7 @@ categories:
 - tip
 tags:
 - powershell
-- tip个
+- tip
 - powertip
 - series
 ---

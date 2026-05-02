@@ -13,8 +13,6 @@ tags:
 - powertip
 - series
 - azure
-- cosmosdb
-- nosql
 - database
 ---
 

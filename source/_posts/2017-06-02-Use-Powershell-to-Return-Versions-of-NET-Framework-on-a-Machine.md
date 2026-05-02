@@ -8,7 +8,7 @@ categories:
 - powershell
 tags:
 - powershell
-- .net
+- scripting
 ---
 以下 PowerShell 代码最高支持 .NET 4.7 版本：
 

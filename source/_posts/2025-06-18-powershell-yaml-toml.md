@@ -12,8 +12,7 @@ tags:
 - tip
 - powertip
 - series
-- yaml
-- toml
+- data-format
 - config-management
 ---
 

@@ -9,8 +9,7 @@ categories:
 - energy
 tags:
 - ics
-- energy-optimization
-- predictive-maintenance
+- best-practices
 ---
 
 ```powershell

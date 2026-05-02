@@ -8,8 +8,7 @@ categories:
 - powershell
 - debugging
 tags:
-- breakpoint
-- stacktrace
+- scripting
 ---
 
 ## 智能断点管理

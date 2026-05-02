@@ -8,8 +8,7 @@ categories:
 - powershell
 tags:
 - powershell
-- QQ
-- community
+- qq
 ---
 By March 2025, the number of "PowerShell Technology interaction" community has reached 1,964 people, very close to the maximum capacity of the community (2,000 people), and maintain the position of PowerShell largest Chinese community. According to Tencent's social platform strategy, the maximum number of people in the community is 2,000, and we will keep the opportunity to provide active users as much as possible.
 

@@ -12,9 +12,9 @@ tags:
 - tip
 - powertip
 - series
-- windows-service
-- dependency
-- service-management
+- windows
+- best-practices
+- system-management
 ---
 
 _适用于 PowerShell 5.1 及以上版本_

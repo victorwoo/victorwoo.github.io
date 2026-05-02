@@ -6,9 +6,9 @@ date: 2014-08-02 14:09:28
 updated: 2014-08-02 14:09:28
 categories: angularjs
 tags:
-- angularjs
-- guideline
-- link
+- web
+- best-practices
+- script
 ---
 [AngularJS](http://angularjs.org/) 是Google开源的一款JavaScript MVC框架，弥补了HTML在构建应用方面的不足，诞生以来吸引了大量的目光，也迅速成为了Web开发领域的新宠。
 

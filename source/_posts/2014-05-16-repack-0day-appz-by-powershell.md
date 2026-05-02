@@ -8,10 +8,9 @@ categories: powershell
 tags:
 - powershell
 - script
-- batch
-- 0day
-- appz
-- repack
+- automation
+- security
+- tooling
 ---
 从 0day 服务器下载下来的 appz 文件夹是这样的形态：
 

@@ -12,9 +12,6 @@ tags:
 - tip
 - powertip
 - series
-- review
-- year-review
-- summary
 - best-practices
 ---
 

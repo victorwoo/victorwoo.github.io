@@ -10,7 +10,7 @@ categories:
 - kubernetes
 tags:
 - powershell
-- kubernetes
+- container
 - automation
 ---
 
